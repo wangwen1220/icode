@@ -1,0 +1,16 @@
+<script>
+	// iframe 跨域自适应中介页
+	(function() {
+		var ifrmae = window.top.document.getElementById('iframe-content-domain');
+			pre_height = +window.location.hash.split('#')[1],
+			//pre_height = parseInt(window.location.hash.substring(1), 10),
+		ifrmae.height = pre_height;
+		setInterval(function() {
+			var new_height = parseInt(window.location.hash.substring(1), 10);
+			if (new_height !== pre_height) {
+				ifrmae.height = new_height;
+				pre_height = new_height;
+			}
+		}, 300);
+	})();
+</script>

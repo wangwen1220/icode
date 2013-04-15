@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' />
+	<title>HTML5网页模板</title>
+	<meta name='keywords' content='html5,html5网站,html5中国' />
+	<meta name='description' content='又一个html5网页－逍遥子。' />
+	<meta name='author' content='steven' />
+	<link rel='stylesheet' href='/css/main.css' />
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js'></script>
+	<script type='text/javascript' src='/js/main.js'></script>
+
+	<link rel='icon' href='/favicon.ico' />
+</head>
+
+<body class='home'>
+
+	<object width="575" height="460" type="application/x-shockwave-flash" data="http://d1.ofweek.com/www/images/e19a93914c34ab8b4767bd04ee573865.swf" id="flash_youku_player_53247" style="visibility: visible;"><param name="quality" value="high"><param name="allowScriptAccess" value="always"><param name="allowFullScreen" value="true"><param name="bgcolor" value="#FFFFFF"><param name="wmode" value="transparent"><param name="flashvars" value="winType=interior&amp;isShowRelatedVideo=false&amp;isAutoPlay=true&amp;isLoop=false&amp;UserID=0&amp;VideoIDS=XNDc0NDY4NjI4"></object>
+
+	<footer>
+		<p>Author: <cite>Louis Lazaris</cite></p>
+	</footer>
+	<script>
+		(function () {
+    var flash = document.getElementById('flash_youku_player_53247');
+		//if (flash)	alert('test');
+
+    var interval = setInterval(function () {
+        try {
+            if(flash.IsPlaying()) { //轮询flash的某个方法即可
+                //callBack && callBack.call(flash, args);  //回调函数
+                clearInterval(interval);
+								alert('loaded');
+            }
+        } catch (ex) {
+
+        }
+    }, 1000);
+
+    var callBack = function () {
+        alert('loaded');
+    }
+})();
+	</script>
+</body>
+</html>

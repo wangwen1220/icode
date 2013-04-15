@@ -1,0 +1,180 @@
+Content-Type: multipart/related; start=<op.mhtml.1351098093953.f53d6d7e667ae448@192.168.1.111>; boundary=----------i0HxqbGw4fLHVxrzsRFOmN
+Content-Location: http://www.planeart.cn/demo/imgReady/
+Subject: =?utf-8?Q?img=20ready=20demo?=
+MIME-Version: 1.0
+
+------------i0HxqbGw4fLHVxrzsRFOmN
+Content-Disposition: inline; filename=default.htm
+Content-Type: text/html; charset=utf-8; name=default.htm
+Content-ID: <op.mhtml.1351098093953.f53d6d7e667ae448@192.168.1.111>
+Content-Location: http://www.planeart.cn/demo/imgReady/
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>img ready demo</title>
+<script src="imgReady.js"></script>
+<style>
+/*demo style*/
+body { font:12px 'Microsoft Yahei', Tahoma, Arial; _font-family:Tahoma, Arial; }
+a { color:#0259C4; }
+a:hover { color:#900; }
+.tips { color:#CCC; }
+h1 { font-family:'Constantia';}
+#path { width:36em; padding:5px; border:2px solid #0259C4; background:#FAFAFA;-webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; }
+#path:focus { background:#FFFFF7; outline:0; }
+#submit { padding:5px 10px; border:2px solid #0259C4; background:#0259C4; color:#FFF; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; cursor:pointer; }
+#submit.disabled { background:#D7D7D7; color:#ABABAB; border-color:#ABABAB; cursor:default; }
+</style>
+<script>
+/* demo script */
+window.onload = function () {
+	
+	var $ = function (id) {
+		return document.getElementById(id);
+	};
+	
+	var Timer = function (){
+		this.startTime = (new Date()).getTime();
+	};
+	Timer.prototype.stop = function(){
+		return (new Date()).getTime() - this.startTime;
+	};
+	
+	var imgUrl,
+		checkboxFn,
+		path		= $('path'),
+		submit		= $('submit'),
+		checkbox	= $('checkbox'),
+		clsCache	= $('clsCache'),
+		status		= $('status'),
+		statusReady	= $('statusReady'),
+		statusLoad	= $('statusLoad'),
+		imgWrap		= $('imgWrap');
+	
+	submit.disabled = false;	
+	submit.onclick = function () {
+		var that = this,
+			time = new Timer();
+		
+		imgUrl = path.value;
+		status.style.display = 'block';
+		statusLoad.innerHTML = statusReady.innerHTML = 'Loading...';
+		
+		// 参数: 图片地址, 尺寸就绪事件, 完全加载事件, 加载错误事件
+		imgReady(imgUrl, function () {
+			statusReady.innerHTML = '耗时 ' + (time.stop() / 1000) +' 秒. 宽度: ' + this.width + '; 高度: ' + this.height;
+			checkboxFn();
+		}, function () {
+			statusLoad.innerHTML = '耗时 ' + (time.stop() / 1000) +' 秒. 宽度: ' + this.width + '; 高度: ' + this.height;
+		}, function () {
+			statusLoad.innerHTML = statusReady.innerHTML = '耗时 ' + (time.stop() / 1000) +' 秒. 加载错误！';
+		});
+	};
+	
+	clsCache.onclick = function () {
+		var value = path.value;
+		path.value = (value.split('?')[1] ? value.split('?')[0] : value) + '?' + new Date().getTime();
+		status.style.display = 'none';
+		imgWrap.innerHTML = '';
+		return false;
+	};
+	
+	checkbox.onclick = checkbox.onchange = checkboxFn = function () {
+		imgWrap.innerHTML = imgUrl && checkbox.checked ? '<img src="' + imgUrl + '" />' : '';
+	};
+	checkbox.checked = false;
+
+	$('down').onclick = function () {
+		window.open(this.getAttribute('data-href') || this.href);	
+		return false;
+	}
+};
+
+</script>
+</head>
+
+<body>
+<div class="demoInfo">
+<h1>imgReady</h1>
+<p class="tips">图片头数据加载就绪事件</p>
+<p><strong>下载：</strong></p>
+<p><a id="down" data-href="http://goo.gl/KBp5a" href="http://www.planeart.cn/demo/imgReady/imgReady.js">imgReady.js</a></p>
+<p><strong>相关文章：</strong></p>
+<p><a href="http://www.planeart.cn/?p=1121">再谈javascript图片预加载技术</a></p>
+<p><strong>演示：</strong></p>
+</div>
+
+<div style="height:40px; line-height:40px;"><input type="text" id="path" value="http://www.planeart.cn/demo/imgReady/vistas24.jpg" /> <input type="button" id="submit" value="加 载" /> <label><input id="checkbox" type="checkbox">显示图片</label> 
+<a id="clsCache" href="#" style="color:#0259C4;">清空缓存</a><em class="tips">（浏览器会缓存加载过后的图片）</em></div>
+<div id="status" style="display:none">
+  <p><strong>通过文件头信息获取尺寸：</strong> <span id="statusReady"></span><p>
+	<p><strong>通过加载完毕后获取尺寸：</strong> <span id="statusLoad"></span></p>
+</div>
+
+<div id="imgWrap"></div>
+
+<div><script type="text/javascript">document.write('<scr'+'ipt src="http://s86.cnzz.com/stat.php?id=1581115&web_id=1581115" type="text/javascript" charset="gb2312"></sc'+'ript>')</div> 
+</body>
+</html>
+
+
+------------i0HxqbGw4fLHVxrzsRFOmN
+Content-Disposition: inline; filename=imgReady.js
+Content-Type: application/x-javascript; name=imgReady.js
+Content-Location: http://www.planeart.cn/demo/imgReady/imgReady.js
+Content-Transfer-Encoding: Base64
+
+LyoqDQogKiDlm77niYflpLTmlbDmja7liqDovb3lsLHnu6rkuovku7YgLSDmm7Tl
+v6vojrflj5blm77niYflsLrlr7gNCiAqIEB2ZXJzaW9uCTIwMTEuMDUuMjcNCiAq
+IEBhdXRob3IJVGFuZ0Jpbg0KICogQHNlZQkJaHR0cDovL3d3dy5wbGFuZWFydC5j
+bi8/cD0xMTIxDQogKiBAcGFyYW0Je1N0cmluZ30J5Zu+54mH6Lev5b6EDQogKiBA
+cGFyYW0Je0Z1bmN0aW9ufQnlsLrlr7jlsLHnu6oNCiAqIEBwYXJhbQl7RnVuY3Rp
+b259CeWKoOi9veWujOavlSAo5Y+v6YCJKQ0KICogQHBhcmFtCXtGdW5jdGlvbn0J
+5Yqg6L296ZSZ6K+vICjlj6/pgIkpDQogKiBAZXhhbXBsZSBpbWdSZWFkeSgnaHR0
+cDovL3d3dy5nb29nbGUuY29tLmhrL2ludGwvemgtQ04vaW1hZ2VzL2xvZ29fY24u
+cG5nJywgZnVuY3Rpb24gKCkgew0KCQlhbGVydCgnc2l6ZSByZWFkeTogd2lkdGg9
+JyArIHRoaXMud2lkdGggKyAnOyBoZWlnaHQ9JyArIHRoaXMuaGVpZ2h0KTsNCgl9
+KTsNCiAqLw0KdmFyIGltZ1JlYWR5ID0gKGZ1bmN0aW9uICgpIHsNCgl2YXIgbGlz
+dCA9IFtdLCBpbnRlcnZhbElkID0gbnVsbCwNCg0KCS8vIOeUqOadpeaJp+ihjOmY
+n+WIlw0KCXRpY2sgPSBmdW5jdGlvbiAoKSB7DQoJCXZhciBpID0gMDsNCgkJZm9y
+ICg7IGkgPCBsaXN0Lmxlbmd0aDsgaSsrKSB7DQoJCQlsaXN0W2ldLmVuZCA/IGxp
+c3Quc3BsaWNlKGktLSwgMSkgOiBsaXN0W2ldKCk7DQoJCX07DQoJCSFsaXN0Lmxl
+bmd0aCAmJiBzdG9wKCk7DQoJfSwNCg0KCS8vIOWBnOatouaJgOacieWumuaXtuWZ
+qOmYn+WIlw0KCXN0b3AgPSBmdW5jdGlvbiAoKSB7DQoJCWNsZWFySW50ZXJ2YWwo
+aW50ZXJ2YWxJZCk7DQoJCWludGVydmFsSWQgPSBudWxsOw0KCX07DQoNCglyZXR1
+cm4gZnVuY3Rpb24gKHVybCwgcmVhZHksIGxvYWQsIGVycm9yKSB7DQoJCXZhciBv
+bnJlYWR5LCB3aWR0aCwgaGVpZ2h0LCBuZXdXaWR0aCwgbmV3SGVpZ2h0LA0KCQkJ
+aW1nID0gbmV3IEltYWdlKCk7DQoJCQ0KCQlpbWcuc3JjID0gdXJsOw0KDQoJCS8v
+IOWmguaenOWbvueJh+iiq+e8k+WtmO+8jOWImeebtOaOpei/lOWbnue8k+WtmOaV
+sOaNrg0KCQlpZiAoaW1nLmNvbXBsZXRlKSB7DQoJCQlyZWFkeS5jYWxsKGltZyk7
+DQoJCQlsb2FkICYmIGxvYWQuY2FsbChpbWcpOw0KCQkJcmV0dXJuOw0KCQl9Ow0K
+CQkNCgkJd2lkdGggPSBpbWcud2lkdGg7DQoJCWhlaWdodCA9IGltZy5oZWlnaHQ7
+DQoJCQ0KCQkvLyDliqDovb3plJnor6/lkI7nmoTkuovku7YNCgkJaW1nLm9uZXJy
+b3IgPSBmdW5jdGlvbiAoKSB7DQoJCQllcnJvciAmJiBlcnJvci5jYWxsKGltZyk7
+DQoJCQlvbnJlYWR5LmVuZCA9IHRydWU7DQoJCQlpbWcgPSBpbWcub25sb2FkID0g
+aW1nLm9uZXJyb3IgPSBudWxsOw0KCQl9Ow0KCQkNCgkJLy8g5Zu+54mH5bC65a+4
+5bCx57uqDQoJCW9ucmVhZHkgPSBmdW5jdGlvbiAoKSB7DQoJCQluZXdXaWR0aCA9
+IGltZy53aWR0aDsNCgkJCW5ld0hlaWdodCA9IGltZy5oZWlnaHQ7DQoJCQlpZiAo
+bmV3V2lkdGggIT09IHdpZHRoIHx8IG5ld0hlaWdodCAhPT0gaGVpZ2h0IHx8DQoJ
+CQkJLy8g5aaC5p6c5Zu+54mH5bey57uP5Zyo5YW25LuW5Zyw5pa55Yqg6L295Y+v
+5L2/55So6Z2i56ev5qOA5rWLDQoJCQkJbmV3V2lkdGggKiBuZXdIZWlnaHQgPiAx
+MDI0DQoJCQkpIHsNCgkJCQlyZWFkeS5jYWxsKGltZyk7DQoJCQkJb25yZWFkeS5l
+bmQgPSB0cnVlOw0KCQkJfTsNCgkJfTsNCgkJb25yZWFkeSgpOw0KCQkNCgkJLy8g
+5a6M5YWo5Yqg6L295a6M5q+V55qE5LqL5Lu2DQoJCWltZy5vbmxvYWQgPSBmdW5j
+dGlvbiAoKSB7DQoJCQkvLyBvbmxvYWTlnKjlrprml7blmajml7bpl7Tlt67ojIPl
+m7TlhoXlj6/og73mr5RvbnJlYWR55b+rDQoJCQkvLyDov5nph4zov5vooYzmo4Dm
+n6Xlubbkv53or4FvbnJlYWR55LyY5YWI5omn6KGMDQoJCQkhb25yZWFkeS5lbmQg
+JiYgb25yZWFkeSgpOw0KCQkNCgkJCWxvYWQgJiYgbG9hZC5jYWxsKGltZyk7DQoJ
+CQkNCgkJCS8vIElFIGdpZuWKqOeUu+S8muW+queOr+aJp+ihjG9ubG9hZO+8jOe9
+ruepum9ubG9hZOWNs+WPrw0KCQkJaW1nID0gaW1nLm9ubG9hZCA9IGltZy5vbmVy
+cm9yID0gbnVsbDsNCgkJfTsNCg0KCQkvLyDliqDlhaXpmJ/liJfkuK3lrprmnJ/m
+iafooYwNCgkJaWYgKCFvbnJlYWR5LmVuZCkgew0KCQkJbGlzdC5wdXNoKG9ucmVh
+ZHkpOw0KCQkJLy8g5peg6K665L2V5pe25Y+q5YWB6K645Ye6546w5LiA5Liq5a6a
+5pe25Zmo77yM5YeP5bCR5rWP6KeI5Zmo5oCn6IO95o2f6ICXDQoJCQlpZiAoaW50
+ZXJ2YWxJZCA9PT0gbnVsbCkgaW50ZXJ2YWxJZCA9IHNldEludGVydmFsKHRpY2ss
+IDQwKTsNCgkJfTsNCgl9Ow0KfSkoKTs=
+
+------------i0HxqbGw4fLHVxrzsRFOmN--

@@ -1,0 +1,580 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns=http://www.w3.org/1999/xhtml>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="tangram-fe" />
+		<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0;"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<style>
+			body{font-size:14px;font-family:'微软雅黑'}
+		</style>
+		<title>Magic - 离线API</title>
+	</head>
+	<body>
+		<h1>Magic离线文档 -- 滑动条</h1>
+		<h2>滑动条</h2>
+		<p>
+			由一个进度条和一个滑块组成，滑块可在进度条上拖动，多用于播放器展示播放进度，可以设置滑动条的刻度、滑动范围。
+		</p>
+
+		<h2>滑动条插件</h2>
+
+				<h3>cache</h3>
+		<p>
+			为滑动条组件增加缓存进度条
+		</p>
+				<h3>fx</h3>
+		<p>
+			为滑动条组件增加动画滚动功能
+		</p>
+				<h2>参考手册</h2>
+		
+		<dl>
+			<dt><h3>参数配置</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>					
+							<dt><strong>options.orientation </strong>: String</dt>
+							<dd>决定滑动条是水平还是垂直，&#039;horizontal&#039; || &#039;vertical&#039;，默认vertical</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.direction </strong>: String</dt>
+							<dd>决定从哪一端开始移动，&#039;forward&#039;或&#039;backward&#039;，默认backward</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.accuracy </strong>: Float</dt>
+							<dd>精确度，0-1之间的小数，滑动条滑动时会按精确度匹配位置，默认0</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.currentValue </strong>: Number</dt>
+							<dd>滑动条的初始值，即游标初始位置，默认0</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.fx.enable </strong>: Boolean</dt>
+							<dd>插件开关， 默认false</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.fx.duration </strong>: Boolean</dt>
+							<dd>动画持续时间(毫秒)，默认200</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.cache.enable </strong>: Boolean</dt>
+							<dd>插件开关，默认false</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+				<dl>
+			<dt><h3>组件方法</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>
+							<dt>render</dt>
+							<dd>
+								<p>渲染Slider</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>el</strong>: {HtmlElement}</p>
+														<p style="text-indent: 24px;">存放slider的容器对象</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																											
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>disable</dt>
+							<dd>
+								<p>禁用组件</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>enable</dt>
+							<dd>
+								<p>启用组件</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>setValue</dt>
+							<dd>
+								<p>设置组件的值</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>value</strong>: {float}</p>
+														<p style="text-indent: 24px;">要设置的值</p>
+													</li>
+																										<li>
+														<p><strong>noFx</strong>: {boolean}</p>
+														<p style="text-indent: 24px;">不使用动画，true || false 默认会使用</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																											
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getValue</dt>
+							<dd>
+								<p>获取组件的值</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{float}</dt>									
+											<dd>
+												<p>value 组件当前值</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>setRange</dt>
+							<dd>
+								<p>设置范围</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>value</strong>: {float}</p>
+														<p style="text-indent: 24px;">设置组件的取值范围(0-1)</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																											
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>setCache</dt>
+							<dd>
+								<p>设置缓存</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>value</strong>: {float}</p>
+														<p style="text-indent: 24px;">要设置的值</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																											
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>show</dt>
+							<dd>
+								<p>通用展现方法</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>hide</dt>
+							<dd>
+								<p>通用隐藏方法</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>setWidth</dt>
+							<dd>
+								<p>通用设置宽度</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>width</strong>: {Number}</p>
+														<p style="text-indent: 24px;">宽度值:30%|30px|30em|3cm</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																											
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>setHeight</dt>
+							<dd>
+								<p>通用设置高度</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>height</strong>: {Number}</p>
+														<p style="text-indent: 24px;">高度值:30%|30px|30em|3cm</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																											
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>setSize</dt>
+							<dd>
+								<p>通用设置大小</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>size</strong>: {Number}</p>
+														<p style="text-indent: 24px;">{width, height}|[width, height]</p>
+													</li>
+																										<li>
+														<p><strong>size.width</strong>: {Number}</p>
+														<p style="text-indent: 24px;">宽度值:30%|30px|30em|3cm</p>
+													</li>
+																										<li>
+														<p><strong>size.height</strong>: {Number}</p>
+														<p style="text-indent: 24px;">高度值:30%|30px|30em|3cm</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																											
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getElement</dt>
+							<dd>
+								<p>取得 ui 模块对应的 dom element 对象</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>key</strong>: {String}</p>
+														<p style="text-indent: 24px;">该ID对应的关键字(可选参数)</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Object}</dt>									
+											<dd>
+												<p>ui模块对应的dom element</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getElements</dt>
+							<dd>
+								<p>取得所有 ui 模块对应的 dom element 对象</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Object}</dt>									
+											<dd>
+												<p>取得对象的集合</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+
+		<dl>
+			<dt><h3>组件事件</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>
+							<dt>onslidestart</dt>
+							<dd>
+								<p>拖动开始触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onslide</dt>
+							<dd>
+								<p>拖动中触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onslidestop</dt>
+							<dd>
+								<p>拖动结束触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onchange</dt>
+							<dd>
+								<p>当组件值发生改变时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.value</strong>: {Number}</p>
+														<p style="text-indent: 24px;">组件当前值</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onfxstart</dt>
+							<dd>
+								<p>动画开始触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onfx</dt>
+							<dd>
+								<p>动画中触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onfxstop</dt>
+							<dd>
+								<p>动画结束触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+	</body>
+</html>

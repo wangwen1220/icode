@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="description" content="baidu.get() GET异步请求" />
+		<title>常规用法</title>
+		<link rel="stylesheet" href="../../demos/public.css" type="text/css" />
+		<script type="text/javascript" src="../../demos/tangram2.0-all.js"></script>
+		<script type="text/javascript" src="../../demos/public.js"></script>
+	</head>
+	<body>
+		<div class="demo" id="demo">
+			<h1 class="ac-h1">
+				<strong>baidu.get()</strong> GET异步请求
+			</h1>
+			<div class="pannel">
+				<div class="pannel-title">
+					<span>异步获取源代码</span>
+				</div>
+				<div class="pannel-content">
+					<!--html view start-->
+					<div class="pannel-content-tool">
+						<span id="request-source" class="button">读取联系人信息</span>
+					</div>
+					<div class="pannel-show">
+						运行结果：<span id="demo_execute_result"></span>
+					</div>
+					<!--html view end-->
+				</div>
+			</div>
+		</div>		
+		<script type="text/javascript">
+			function getPersonInfo(){
+				var dataUrl = '../../demos/baidu.get()/person.json';
+				baidu.get(dataUrl, function(person){
+					var ul = baidu('<ul/>');
+					// 填入数据的每个字段
+					baidu.each(person, function(field, value){
+						baidu('<li/>').html(field + ' : ' + value).appendTo(ul);
+					});
+					baidu.dom('#demo_execute_result').empty().append(ul);
+				}, 'json');
+			}
+			baidu.dom('#request-source').on('click', getPersonInfo);
+		</script>
+	</body>
+</html>

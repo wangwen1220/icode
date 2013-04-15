@@ -1,0 +1,1 @@
+{"versioning":{"latest":"1.0.0"},"versions":{"1.0.0":["iframe-shim.js"]},"root":"arale","name":"iframe-shim","tag":"utility","lastUpdated":1352950225563,"type":"","description":"工具类，在 IE6 下生成 iframe 遮挡 select 和 object。此组件对开发者透明，开发者无需再判断浏览器版本。"}

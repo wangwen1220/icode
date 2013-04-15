@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<head>
+
+<meta http-equiv="description" content="powerFloat实现淘宝网我的淘宝下拉 » 张鑫旭-鑫空间-鑫生活">
+<meta name="description" content="张鑫旭web前端学习实例页面">
+<meta name="keywords" content="张鑫旭,张鑫旭-鑫空间-鑫生活,web前端,css,jQuery,javascript,demo页面">
+<meta name="author" content="张鑫旭,zhangxixnu">
+<title>powerFloat实现淘宝网我的淘宝下拉 » 张鑫旭-鑫空间-鑫生活</title>
+<link type="text/css" rel="stylesheet" href="powerFloat实现淘宝网我的淘宝下拉_files/00000000.css">
+<style>
+#header{position:static;}
+.float_list_box {position:absolute;}
+
+.float_list_ul {
+	padding: 8px 10px;
+	border: 1px solid #bfbfbf;
+	background-color: #fff;
+	line-height: 1.7;
+}
+</style>
+</head>
+
+<body>
+<div id="header">
+	<div id="site-nav">
+    	<ul class="quick-menu">
+        	<li class="mytaobao menu-item">
+            	<div class="menu">
+                	<a href="http://www.zhangxinxu.com/study/201012/jquery-power-float-taobao-test.html###" class="menu-hd">我的淘宝<b></b></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<pre style="padding-top:30px;">
+$(function() {
+    $(".menu").powerFloat({
+        width: 96,
+        offsets: {
+            x: 0,
+            y: -1    
+        },
+        targetMode: "list",
+        target: [{
+            href: "#",
+            text: "已买到的宝贝"    
+        },{
+            href: "#",
+            text: "已卖出的宝贝"    
+        }],
+        position: "3-2",
+        showCall: function() {
+            $(this).addClass("hover");    
+        },
+        hideCall: function() {
+            $(this).removeClass("hover");
+        }
+    });    
+});
+</pre>
+<script type="text/javascript" src="powerFloat实现淘宝网我的淘宝下拉_files/jquery00.js"></script>
+<script type="text/javascript" src="powerFloat实现淘宝网我的淘宝下拉_files/jquery-p.js"></script>
+<script>
+$(function() {
+	$(".menu").powerFloat({
+		width: 96,
+		offsets: {
+			x: 0,
+			y: -1	
+		},
+		targetMode: "list",
+		target: [{
+			href: "#",
+			text: "已买到的宝贝"	
+		},{
+			href: "#",
+			text: "已卖出的宝贝"	
+		}],
+		position: "3-2",
+		showCall: function() {
+			$(this).addClass("hover");	
+		},
+		hideCall: function() {
+			$(this).removeClass("hover");
+		}
+	});	
+});
+</script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11205167-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+	 ga.type = 'text/javascript';
+	 ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>
+
+<!-- This document saved from http://www.zhangxinxu.com/study/201012/jquery-power-float-taobao-test.html -->

@@ -1,0 +1,36 @@
+/**
+ * Flowsteps 
+ * @author fool2fish<fool2fish@gmail.com>
+ */
+
+.flowsteps {height:23px;margin-bottom:10px;*zoom:1;}
+.flowsteps ol{position:relative;overflow:hidden;;*zoom:1;background:#e4e4e4;}
+.flowsteps .num3 li, .flowsteps .num3 .last{ width: 33.3%; }
+.flowsteps .num4 li, .flowsteps .num4 .last { width: 24.9%; }
+.flowsteps .num5 li, .flowsteps .num5 .last { width:19.9%;}
+.flowsteps .num6 li, .flowsteps .num6 .last { width: 16.6%; }
+.flowsteps li,
+.flowsteps span{background:url(../img/flowsteps.png) no-repeat 0 0;}
+.flowsteps li{float:left;height:23px;overflow:hidden;font-size:14px;font-weight:bold;line-height:23px;text-align:center;}
+.flowsteps span{display:block;}
+.flowsteps .last{position:absolute;right:0;_right:-1px;_width:100%!important;background-position:100% -92px;}
+.flowsteps a{color:#f60;text-decoration:underline;}
+.flowsteps .current .last{
+    /* background-color:transparent;background-position:100% -115px;
+     * the upper statement it not suitable for opera
+     * opera will convert float to int which is the max one that not greater than the primary float
+     * so the primary background image cannot fill properly
+     */
+    background:url(../img/flowsteps-for-opera.png) no-repeat 100% 0;
+}
+.flowsteps .done span{background-color: #ffe6ba;background-position: 0 -46px; color: #f60;}
+.flowsteps .current,
+.flowsteps .current span {background-color: #f60;background-position: 0 -46px;color: #fff;}
+.flowsteps .next{background-position: 0 -23px;}
+.flowsteps .next span{background-position:0 -22px;}
+.flowsteps .next .last{background-position:100% -92px}
+.flowsteps li .first{background-position:0 -69px}
+
+
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>分享插件 - jquery.HooRay - jQuery插件 - 制作：胡尐睿丶</title>
+<link rel="stylesheet" href="css.css" />
+<link rel="stylesheet" href="jquery.HooRay/jquery.HooRay.css" />
+<script src="jquery-1.6.2.js"></script>
+<script src="jquery.HooRay/jquery.HooRay.js"></script>
+<script>
+$(document).ready(function(){
+	$('#accordion').HRsfq({openRow:1});
+	$('.HRshare1').HRshare();
+	$('.HRshare2').HRshare({hasText:false});
+	$('.HRshare3').HRshare({size:32});
+});
+</script>
+</head>
+
+<body>
+<div id="body">
+	<div id="top"></div>
+	<div id="content">
+		<ul id="accordion">
+			<li>
+				<a class="title">分享按钮&nbsp;HRshare&nbsp;原创</a>
+				<div class="demo">
+					<div class="HRshare1">
+						<a class="hr-share-qzone"></a>
+						<a class="hr-share-renren"></a>
+						<a class="hr-share-baidu"></a>
+						<a class="hr-share-115"></a>
+						<a class="hr-share-tsohu"></a>
+						<a class="hr-share-taobao"></a>
+						<a class="hr-share-xiaoyou"></a>
+						<a class="hr-share-more"></a>
+					</div>
+				</div>
+				<div class="script">$('.HRshare1').HRshare();</div>
+				<div class="demo">
+					<div class="HRshare2">
+						<a class="hr-share-baidu"></a>
+						<a class="hr-share-115"></a>
+						<a class="hr-share-tsohu"></a>
+						<a class="hr-share-xiaoyou"></a>
+						<a class="hr-share-renren"></a>
+						<a class="hr-share-qzone"></a>
+						<a class="hr-share-taobao"></a>
+						<a class="hr-share-more"></a>
+					</div>
+				</div>
+				<div class="script">$('.HRshare2').HRshare({hasText:false});</div>
+				<div class="demo">
+					<div class="HRshare3">
+						<a class="hr-share-xiaoyou"></a>
+						<a class="hr-share-115"></a>
+						<a class="hr-share-tsina"></a>
+						<a class="hr-share-tqq"></a>
+						<a class="hr-share-more"></a>
+					</div>
+				</div>
+				<div class="script">$('.HRshare3').HRshare({size:32});</div>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

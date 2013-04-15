@@ -1,0 +1,767 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns=http://www.w3.org/1999/xhtml>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="tangram-fe" />
+		<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0;"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<style>
+			body{font-size:14px;font-family:'微软雅黑'}
+		</style>
+		<title>Magic - 离线API</title>
+	</head>
+	<body>
+		<h1>Magic离线文档 -- 对话框</h1>
+		<h2>对话框</h2>
+		<p>
+			飘浮在页面主体内容上的窗口，通常包含标题和内容两部分，是人机交互的一种特定表现方式，能起到约束用户操作范围和警示等作用。可以选择在生成对话框时同时生成遮住页面全部内容的灰度层，对话框可以多层嵌套。
+		</p>
+
+		<h2>对话框插件</h2>
+
+				<h3>button</h3>
+		<p>
+			对话框按钮插件
+		</p>
+				<h3>mask</h3>
+		<p>
+			对话框遮罩插件
+		</p>
+				<h2>参考手册</h2>
+		
+		<dl>
+			<dt><h3>参数配置</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>					
+							<dt><strong>options.titleText </strong>: Boolean</dt>
+							<dd>对话框的标题内容</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.content </strong>: HTMLElement|String</dt>
+							<dd>对话框的内容，可以是 html 或 dom 对象</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.contentType </strong>: String</dt>
+							<dd>内容类型，可以是 element|html|text|frame，默认html</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.width </strong>: Number</dt>
+							<dd>Dialog 的宽度，默认400</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.height </strong>: Number</dt>
+							<dd>Dialog 的高度，默认300</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.left </strong>: Number</dt>
+							<dd>Dialog 的左边距，默认0</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.top </strong>: Number</dt>
+							<dd>Dialog 的上边距，默认0</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.draggable </strong>: Boolean</dt>
+							<dd>Dialog 是否可以被拖动，默认 true</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.mask.enable </strong>: Boolean</dt>
+							<dd>插件开关，默认false</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.mask.bgColor </strong>: String</dt>
+							<dd>遮罩的颜色，默认#000</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.mask.opacity </strong>: Number</dt>
+							<dd>遮罩的不透明度，默认0.15</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.buttons.items.text </strong>: String</dt>
+							<dd>按钮名称，默认button</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.buttons.items.disabled </strong>: Boolean</dt>
+							<dd>按钮是否失效，默认false</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.buttons.items.click </strong>: Function</dt>
+							<dd>按钮点击click事件，默认null</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.buttons.items.builder </strong>: Function</dt>
+							<dd>按钮构造，默认null，该属性会读取其他button属性</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.buttons.align </strong>: String</dt>
+							<dd>按钮整体布局，默认right,可选值为left,center,right</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.buttons.enable </strong>: String</dt>
+							<dd>插件开关，默认false</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+				<dl>
+			<dt><h3>组件方法</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>
+							<dt>render</dt>
+							<dd>
+								<p>渲染对话框</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>el</strong>: {HTMLElement|id|dom}</p>
+														<p style="text-indent: 24px;">渲染目标容器，如果缺省，则渲染到 body 尾部</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																											
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>_renderHeader</dt>
+							<dd>
+								<p>窗口头部构建,内部方法调用</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>isShowing</dt>
+							<dd>
+								<p>查询对话框是否处于显示状态</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Boolean}</dt>									
+											<dd>
+												<p>对话框是否处于显示状态</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>show</dt>
+							<dd>
+								<p>显示对话框</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{This}</dt>									
+											<dd>
+												<p>实例本身</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>hide</dt>
+							<dd>
+								<p>隐藏对话框</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{This}</dt>									
+											<dd>
+												<p>实例本身</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>setTitleText</dt>
+							<dd>
+								<p>设置对话框标题</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>title</strong>: {String}</p>
+														<p style="text-indent: 24px;">对话框标题文本内容</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{This}</dt>									
+											<dd>
+												<p>实例本身</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>setContent</dt>
+							<dd>
+								<p>设置对话框内容</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>content</strong>: {HTMLElement|id|dom}</p>
+														<p style="text-indent: 24px;">用于做为对话框内容的节点或字符串 id</p>
+													</li>
+																										<li>
+														<p><strong>contentType</strong>: {string}</p>
+														<p style="text-indent: 24px;">内容类型，可选参数有 element|html|text|frame，分别表示传入的内容类型为 dom 对象、html 字符、文本或 iframe 地址，content 参数的数据类型由 contentType 决定，两个参数配合使用，contentType 参数如果不传或非以上四种情况，一律当 html 处理</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{This}</dt>									
+											<dd>
+												<p>实例本身</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>focus</dt>
+							<dd>
+								<p>聚焦对话框</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>setSize</dt>
+							<dd>
+								<p>设置对话框尺寸</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>size</strong>: {Object}</p>
+														<p style="text-indent: 24px;">尺寸描述对象，必须至少有 width/height 中的一个</p>
+													</li>
+																										<li>
+														<p><strong>size.width</strong>: {Number}</p>
+														<p style="text-indent: 24px;">对话框的宽，单位 px</p>
+													</li>
+																										<li>
+														<p><strong>size.height</strong>: {Number}</p>
+														<p style="text-indent: 24px;">对话框的高，单位 px</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{This}</dt>									
+											<dd>
+												<p>实例本身</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getSize</dt>
+							<dd>
+								<p>获取对话框尺寸</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Object}</dt>									
+											<dd>
+												<p>返回值形如 { width: 100, height: 100 }，单位 px</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>setPosition</dt>
+							<dd>
+								<p>设置对话框的位置</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>pos</strong>: {Object}</p>
+														<p style="text-indent: 24px;">位置描述对象，必须至少有 left/top 中的一个</p>
+													</li>
+																										<li>
+														<p><strong>pos.left</strong>: {Number}</p>
+														<p style="text-indent: 24px;">对话框左边框到 body 左侧的距离，单位 px</p>
+													</li>
+																										<li>
+														<p><strong>pos.top</strong>: {Number}</p>
+														<p style="text-indent: 24px;">对话框上边框到 body 上侧的距离，单位 px</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{This}</dt>									
+											<dd>
+												<p>实例本身</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getPosition</dt>
+							<dd>
+								<p>获取对话框的位置</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Object}</dt>									
+											<dd>
+												<p>返回值形如 { left: 100, top: 100 }，单位 px</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>center</dt>
+							<dd>
+								<p>使对话框居中于浏览器视口显示</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>_createButton</dt>
+							<dd>
+								<p>创建按钮,内部方法调用</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>renderMask</dt>
+							<dd>
+								<p>渲染遮罩层（如果开启 mask 选项，主程序会自动渲染遮罩）</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{This}</dt>									
+											<dd>
+												<p>实例本身</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>showMask</dt>
+							<dd>
+								<p>显示遮罩层（如果开启 mask 选项，主程序会自动关联遮罩显隐）</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{This}</dt>									
+											<dd>
+												<p>实例本身</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>hideMask</dt>
+							<dd>
+								<p>隐藏遮罩层（如果开启 mask 选项，主程序会自动关联遮罩显隐）</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{This}</dt>									
+											<dd>
+												<p>实例本身</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>setWidth</dt>
+							<dd>
+								<p>通用设置宽度</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>width</strong>: {Number}</p>
+														<p style="text-indent: 24px;">宽度值:30%|30px|30em|3cm</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																											
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>setHeight</dt>
+							<dd>
+								<p>通用设置高度</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>height</strong>: {Number}</p>
+														<p style="text-indent: 24px;">高度值:30%|30px|30em|3cm</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																											
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getElement</dt>
+							<dd>
+								<p>取得 ui 模块对应的 dom element 对象</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>key</strong>: {String}</p>
+														<p style="text-indent: 24px;">该ID对应的关键字(可选参数)</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Object}</dt>									
+											<dd>
+												<p>ui模块对应的dom element</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getElements</dt>
+							<dd>
+								<p>取得所有 ui 模块对应的 dom element 对象</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Object}</dt>									
+											<dd>
+												<p>取得对象的集合</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+
+		<dl>
+			<dt><h3>组件事件</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>
+							<dt>onload</dt>
+							<dd>
+								<p>当窗口节点渲染完成后触发</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onbeforeshow</dt>
+							<dd>
+								<p>当即将显示窗口时触发，如果事件回调函数返回值为 false，则阻止显示窗口</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onshow</dt>
+							<dd>
+								<p>当窗口显示后触发</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onbeforehide</dt>
+							<dd>
+								<p>当即将关闭窗口时触发，如果事件回调函数返回值为 false，则阻止关闭窗口</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onhide</dt>
+							<dd>
+								<p>当关闭窗口时触发</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onfocus</dt>
+							<dd>
+								<p>当窗口获得焦点时触发</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onresize</dt>
+							<dd>
+								<p>当窗口发生尺寸修改时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {Object}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.width</strong>: {Number}</p>
+														<p style="text-indent: 24px;">宽度</p>
+													</li>
+																										<li>
+														<p><strong>evt.height</strong>: {Number}</p>
+														<p style="text-indent: 24px;">高度</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onmove</dt>
+							<dd>
+								<p>当窗口发生位置移动时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {Object}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.left</strong>: {Number}</p>
+														<p style="text-indent: 24px;">左边距</p>
+													</li>
+																										<li>
+														<p><strong>evt.top</strong>: {Number}</p>
+														<p style="text-indent: 24px;">右边距</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+	</body>
+</html>

@@ -1,0 +1,103 @@
+/** Main Layout **/
+.jcarousel-skin-video {
+	margin-bottom: 10px;
+	background: #343434;
+}
+.jcarousel-skin-video .jcarousel-list {
+	display: none;
+}
+.jcarousel-skin-video .jcarousel-container .jcarousel-list {
+	display: block;
+}
+.jcarousel-skin-video .jcarousel-container {
+	width: 633px;
+	background: #343434;
+}
+.jcarousel-skin-video .jcarousel-container-horizontal {
+	padding: 25px 16px 21px;
+}
+.jcarousel-skin-video .jcarousel-clip {
+	overflow: hidden;
+}
+.jcarousel-skin-video .jcarousel-clip-horizontal {
+	_width: 100%;
+}
+.jcarousel-skin-video .jcarousel-item {
+	position: relative;
+}
+.jcarousel-skin-video .jcarousel-item a,
+.jcarousel-skin-video .jcarousel-item img {
+	display: block;
+	/* width: 141px; */
+	/* height: 188px; */
+	outline: none;
+	text-decoration: none;
+}
+.jcarousel-skin-video .jcarousel-item:hover img,
+.jcarousel-skin-video .jcarousel-item a:hover img {
+	opacity: .75;
+	filter: alpha(opacity=75);
+}
+.jcarousel-skin-video .jcarousel-item .info,
+.jcarousel-skin-video .jcarousel-item .infomask {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 36px;
+	padding: 8px 0;
+}
+.jcarousel-skin-video .jcarousel-item .infomask {
+	z-index: 1;
+	opacity: .75;
+	filter: alpha(opacity=75);
+	background: #000;
+}
+.jcarousel-skin-video .jcarousel-item .info .title,
+.jcarousel-skin-video .jcarousel-item .info .cnt {
+	margin: 0 10px;
+	height: 18px;
+	line-height: 18px;
+	overflow: hidden;
+	color: #fff;
+}
+.jcarousel-skin-video .jcarousel-item .info .title {
+	font-weight: bold;
+	font-size: 14px;
+}
+.jcarousel-skin-video .jcarousel-item .info .title a {
+	color: #fff;
+}
+.jcarousel-skin-video .jcarousel-item .info .title a:hover {
+	text-decoration: underline;
+}
+.jcarousel-skin-video .jcarousel-item-horizontal {
+	margin-right: 23px;
+	width: 141px;/* 必须设置宽度，否则自动循环会终止 */
+	/* height: 188px; */
+}
+.jcarousel-skin-video .jcarousel-item-placeholder {/* TODO */
+	background: #fff;
+	color: #000;
+}
+
+/** Horizontal Control **/
+.jcarousel-skin-video .jcarousel-control {
+	margin-top: 20px;
+	font-size: 0;
+	text-align: center;
+}
+.jcarousel-skin-video .jcarousel-control a {
+	display: inline-block;
+	margin: 0 2.5px;
+	height: 5px;
+	width: 20px;
+	outline: none;
+	background: #737373;
+}
+.jcarousel-skin-video .jcarousel-control a:hover,
+.jcarousel-skin-video .jcarousel-control a.cur {
+	background: #C91522;
+}

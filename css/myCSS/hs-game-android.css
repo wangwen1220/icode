@@ -1,0 +1,467 @@
+@import "hs-game-global.css";
+@charset "utf-8";
+
+/*
+名称：火秀网络游戏样式
+简介：火秀网络游戏页面样式
+维护：王文 wangwen1220#139.com
+日期：2012-11-12
+*/
+
+/* TPL
+----------------------------------------------------------------------------- */
+/*
+ * @name: ui-ranking-hotgame
+ * @overview: 游戏推荐排行样式
+ * @require: ui-ranking
+ */
+.ui-ranking-hotgame {
+	margin: 5px 10px 15px;
+}
+.ui-ranking-hotgame .ui-ranking-item {
+	margin: 0;
+	overflow: hidden;
+	*zoom: 1;
+}
+.ui-ranking-hotgame .ui-ranking-item .title {
+	display: inline-block;
+	width: 160px;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	color: #666;
+	vertical-align: middle;
+	*display: inline;
+	*zoom: 1;
+}
+.ui-ranking-hotgame .ui-ranking-item .title a {
+	/* display: inline-block; */
+	/* width: 100%; */
+	/* height: 30px; */
+	/* line-height: 30px; */
+	/* overflow: hidden; */
+	color: #666;
+}
+.ui-ranking-hotgame .ui-ranking-item .content {
+	float: right;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 68px;
+	color: #999;
+	text-align: right;
+}
+.ui-ranking-hotgame .ui-ranking-item .ranking,
+.ui-ranking-hotgame .ui-ranking-item .button {
+	display: none;
+}
+.ui-ranking-hotgame .ui-ranking-item-cur {
+	padding: 10px 0;
+	/* border-bottom: 1px dashed #DFDFDF; */
+}
+.ui-ranking-hotgame .ui-ranking-item-cur .fn-hide {
+	display: block;
+}
+.ui-ranking-hotgame .ui-ranking-item-cur .num {
+	left: 0;
+	top: 13px;
+	padding: 0;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+	color: #fff;
+	font-size: 11px;
+	font-weight: normal;
+	font-style: normal;
+	border: 1px solid #B20F0F;
+	background: #C60000;
+}
+.ui-ranking-hotgame .ui-ranking-item-cur .img {
+	float: left;
+	display: inline;
+	margin: 0 10px 0 25px;
+	/* width: auto; */
+	/* height: auto; */
+	/* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); */
+}
+.ui-ranking-hotgame .ui-ranking-item-cur .img img {
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+.ui-ranking-hotgame .ui-ranking-item-cur .title {
+	float: left;
+	margin-left: 0;
+	height: 18px;
+	width: 135px;
+	margin-bottom: 5px;
+}
+.ui-ranking-hotgame .ui-ranking-item-cur .title a {
+	display: block;
+	height: 18px;
+	font: 15px/18px '微软雅黑','黑体','宋体',arial,verdana,sans-serif;
+	color: #666;
+	overflow: hidden;
+}
+.ui-ranking-hotgame .ui-ranking-item-cur .ranking {
+	display: block;
+	float: left;
+	margin-right: 10px;
+	color: #444;
+	font: bold 32px/1 '微软雅黑','黑体','宋体',arial,verdana,sans-serif;
+}
+.ui-ranking-hotgame .ui-ranking-item-cur .content {
+	display: block;
+	margin-left: 0;
+	float: left;
+	line-height: 16px;
+	color: #999;
+	text-align: left;
+	width: auto;
+}
+.ui-ranking-hotgame .ui-ranking-item-cur .content .fn-hide {
+	display: inline;
+}
+.ui-ranking-hotgame .ui-ranking-item-cur .content del {
+	-moz-text-decoration-color: #CF0716;
+	-webkit-text-decoration-color: #CF0716;
+	-ms-text-decoration-color: #CF0716;
+	-o-text-decoration-color: #CF0716;
+	text-decoration-color: #CF0716;
+}
+.ui-ranking-hotgame .ui-ranking-item-cur .button {
+	display: block;
+	float: right;
+	width: 12px;
+	height: 32px;
+	background: url(../images/game/arrow-rt-gray.png) no-repeat 0 center;
+	opacity: .75;
+	filter: alpha(opacity=75);
+}
+.ui-ranking-hotgame .ui-ranking-item-cur .button:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+/* Global
+----------------------------------------------------------------------------- */
+/** Common **/
+.ui-pager .current {
+	/* border-color: #57A928; */
+	/* background-color: #57A928; */
+}
+.ui-img-list-plus .ui-img-list-item .img:hover {
+	border-color: #57A928;
+}
+/* .ui-box-side-title, */
+.ui-header {
+	background-image: url(../images/game/icon-ui-title-green.png);
+}
+
+/** Header **/
+#header {
+	*position: relative;
+	*z-index: 5;
+}
+#nav {
+	/* height: 32px; */
+	height: auto;
+	background: #6FA311 url(../images/game/bg-nav-green.png) repeat-x;
+}
+#nav .nav-item-subnav {
+	bottom: auto;
+	top: 32px;
+	height: 90px;
+	padding: 5px 0;
+}
+#nav .nav-item-subnav .nav-item-subnav-item {
+	margin: 0 18px;
+	height: 30px;
+	line-height: 30px;
+}
+#nav .nav-item-subnav .nav-item-subnav-item dt {
+	float: left;
+	width: 77px;
+	height: 100%;
+	overflow: hidden;
+	color: #6A9C17;
+	text-indent: 5px;
+	background: url(../images/game/bg-game-dt-subnav.png) no-repeat 0 49%;
+}
+#nav .nav-item-subnav .nav-item-subnav-item dd {
+	margin-left: 77px;
+	height: 100%;
+	overflow: hidden;
+}
+#nav .nav-item-subnav .nav-item-subnav-item dd a {
+	margin: 0;
+}
+#nav .nav-item-subnav .nav-item-subnav-item dd em {
+	color: #CF0716;
+}
+#nav .drop-down {
+	border-color: #A4BE75;
+}
+#nav .drop-down h3 a {
+	background-image: url(../images/game/icon-android-white.png);
+}
+#nav .drop-down ul {
+	border: 3px solid rgba(107, 157, 22, .8);
+	border: 3px solid #6B9D17\9;
+	border-top: none;
+}
+
+/** Main **/
+#main.article-box .article-gallery .ui-img-list-plus {
+	left: 28px;
+	margin-left: -28px;
+}
+#main.article-box .article-gallery .ui-img-list-item {
+	margin: 5px 28px 13px 0;
+}
+#main.article-box .article-gallery .ui-img-list-item .img {
+	border: none;
+}
+
+/** Side **/
+#side .ui-tab-sd {
+	margin-bottom: 10px;
+}
+#side .ui-tab-sd .ui-tab-nav-item-cur {
+	border-top-color: #57A928;
+}
+/* TODO: ui-box-gallery 已改为 ui-box-side-gallery 定义在 game_global 中 */
+#side .ui-box-gallery .ui-img-list-plus {
+	left: 18px;
+	margin-left: -18px;
+}
+#side .ui-box-gallery .ui-img-list-item {
+	margin-right: 18px;
+}
+
+/** Aside **/
+#aside {
+	float: left;
+	display: inline;
+	margin: 10px 0 0 -660px;
+	/* padding-bottom: 10px; */
+	width: 138px;
+	border: 1px solid #DFDFDF;
+	background-color: #FBFBFB;
+}
+#aside h2 {
+	background-color: #F6F6F6;
+	border-bottom: 1px solid #DFDFDF;
+}
+#aside h2 a {
+	display: block;
+	margin: 0 15px;
+	padding-left: 22px;
+	height: 53px;
+	overflow: hidden;
+	font: 18px/53px '微软雅黑','黑体','宋体',arial,verdana,sans-serif;
+	color: #444;
+	text-decoration: none;
+	background: url(../images/game/icon-cats-green.png) no-repeat 0 50%;
+}
+#aside dt a {
+	display: block;
+	margin-top: 12px;
+	padding: 0 10px 0 24px;
+	height: 18px;
+	line-height: 18px;
+	overflow: hidden;
+	font-weight: bold;
+	color: #333;
+	text-decoration: none;
+	background: url(../images/game/icon-cellphone-green.png) no-repeat 10px 50%;
+}
+#aside dd a {
+	display: block;
+	margin: 5px 0;
+	padding: 0 10px 0 24px;
+	height: 18px;
+	line-height: 18px;
+	overflow: hidden;
+	color: #666;
+	text-decoration: none;
+	background: url(../images/game/arrow-right-small.png) no-repeat 88% 50%;
+}
+#aside dd.cur a,
+#aside dd a:hover {
+	color: #333;
+	background-color: #EDF6D4;
+	background-image: url(../images/game/arrow-right-small-hover.png);
+}
+
+/* Layout
+----------------------------------------------------------------------------- */
+/** 主页 **/
+/* 通用 */
+body.game-android .ui-box {
+	border-top-color: #57A928;
+}
+body.game-android .ui-box-header .title {
+	color: #222;
+	font-size: 18px;
+}
+
+/* 主内容 */
+#content-android-main {
+	margin-top: 20px;
+}
+#content-android-main .ui-layout-item-center .ui-list-item {
+	height: 25px;
+	line-height: 25px;
+}
+#content-android-main .ui-layout-item-center .ui-list-item.bk {
+	margin-top: 5px;
+}
+#content-android-main .ui-layout-item-right .ui-img {
+	margin: 0 0 10px 0;
+	*zoom: 1;
+}
+#content-android-main .ui-layout-item-right .ui-img .img {
+	display: block;
+	border: 1px solid #E5E5E5;
+}
+#content-android-main .ui-layout-item-right .ui-img .title {
+	_width: 100%;
+	_left: 0;
+}
+#content-android-main .ui-layout-item-right .ui-box {
+	margin-top: 0;
+	background: url(../images/game/bg-ui-header.png) repeat-x 0 0;
+}
+#content-android-main .ui-layout-item-right .ui-step {
+	margin: -2px 10px 0;
+}
+
+/* 安卓游戏&安卓软件 */
+#content-android-game {
+	margin-top: 7px;
+}
+.ui-box-android-app .ui-box-item-main {
+	float: left;
+}
+.ui-box-android-app .ui-box-item-main .filter-list {
+	padding: 5px 9px 5px 15px;;
+	line-height: 20px;
+	color: #C1C1C1;
+	background-color: #F8F8F8;
+}
+.ui-box-android-app .ui-box-item-main .filter-list-item {
+	margin: 6px 0;
+	height: 20px;
+	overflow: hidden;
+}
+.ui-box-android-app .ui-box-item-main .filter-list-item a {
+	display: inline-block;
+	margin-right: 6px;
+	padding: 0 8px;
+	height: 20px;
+	line-height: 20px;
+	color: #333333;
+	text-decoration: none;
+	border-radius: 15px;
+}
+.ui-box-android-app .ui-box-item-main .filter-list-item a.cur,
+.ui-box-android-app .ui-box-item-main .filter-list-item a:hover {
+	color: #fff;
+	background-color: #57A928;
+}
+.ui-box-android-app .ui-box-item-main .filter-list-item a.more {
+	float: right;
+	color: #CF0716;
+	_margin-top: -20px;
+}
+.ui-box-android-app .ui-box-item-main .filter-list-item a.more:hover {
+	color: #CF0716;
+	text-decoration: underline;
+	background: none;
+}
+.ui-box-android-app .ui-box-item-main .ui-art-list-game .ui-art-item {
+	margin: 20px 0 20px 10px;
+	width: 169px;
+}
+
+/* 手机壁纸 */
+#content-android-wallpaper .ui-box-item-main .ui-img-list-plus {
+	left: 40px;
+	margin-left: -40px;
+	margin-top: 15px;
+}
+#content-android-wallpaper .ui-box-item-main .ui-img-list-item {
+	margin-right: 40px;
+}
+#content-android-wallpaper .ui-box-item-right .ui-header {
+	margin-bottom: 0;
+}
+#content-android-wallpaper .ui-box-item-right .ui-img-list-plus {
+	margin-top: 0;
+}
+#content-android-wallpaper .ui-box-item-right .ui-img-list-item {
+	margin-bottom: 10px;
+	padding-bottom: 2px;
+	border-bottom: 1px dashed #DFDFDF;
+}
+#content-android-wallpaper .ui-box-item-right .ui-img-list-item:last-child {
+	border: none;
+}
+
+/** 应用列表页&安卓资讯列表页 **/
+body.game-android-app #main,
+body.game-android-news #main {
+	display: inline;
+	margin-left: 160px;
+	width: 500px;
+}
+body.game-android-app #main .ui-header,
+body.game-android-news #main .ui-header {
+	padding-left: 10px;
+	background-image: url(../images/game/icon-ui-title-green.png);
+	background-position: 0 50%;
+}
+body.game-android-app #main .ui-content-item .title a:hover,
+body.game-android-app #main .ui-content-item .title a:focus,
+body.game-android-news #main .ui-content-item .title a:hover,
+body.game-android-news #main .ui-content-item .title a:focus {
+	background-color: #7BB61E;
+}
+body.game-android-app #main .ui-pager,
+body.game-android-news #main .ui-pager {
+	margin: 30px 0 0 0;
+}
+body.game-android-news #main .ui-list-content .ui-list-item .cnt {
+	width: 320px;
+}
+
+/** 安卓主题页 **/
+body.game-android-theme #main {
+	display: inline;
+	margin: 0 0 0 160px;
+	width: 800px;
+}
+body.game-android-theme #main .ui-img-list-plus {
+	left: 40px;
+	margin-left: -40px;
+}
+body.game-android-theme #main .ui-img-list-item {
+	margin-right: 40px;
+}
+body.game-android-theme #main .ui-pager {
+	margin-bottom: 0;
+}
+body.game-android-theme #aside {
+	margin-left: -960px;
+}
+
+/** 安卓下载详细页 **/
+#main .article-download .aside .title {
+	padding: 0;
+	background: none;
+	text-align: center;
+}
+#main .article-download .aside .btn-download {
+	background-image: url(../images/game/btn-game-download-green.png);
+}

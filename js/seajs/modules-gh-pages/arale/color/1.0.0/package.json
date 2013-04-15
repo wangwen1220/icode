@@ -1,0 +1,23 @@
+{
+    "name": "color",
+    "root": "arale",
+    "version": "1.0.0",
+    "tag": "utility",
+    "description": "jQuery颜色渐变插件，来自 https://github.com/jquery/jquery-color",
+    "homepage": "http://aralejs.org/color",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/aralejs/color"
+    },
+    "bugs": {
+        "url": "https://github.com/aralejs/color/issues"
+    },
+    "license": "",
+    "dependencies": {
+        "$": "$"
+    },
+    "tests": ["color"],
+    "output": {
+        "color.js": "."
+    }
+}

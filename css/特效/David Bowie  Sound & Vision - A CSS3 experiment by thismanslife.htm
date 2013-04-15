@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>David Bowie: Sound &amp; Vision - A CSS3 experiment by thismanslife</title>
+<style type="text/css">
+body {
+	background: #e8e8e8;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 9px;
+	color: #000;
+}
+#content {
+	position: absolute;
+	top:  50%;
+	left: 50%;
+	background-color: green;
+	width:  960px;
+	padding: 200px 0;
+	margin: -300px -480px;
+	background: -moz-radial-gradient(center, circle contain, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,0)));
+	background: -webkit-radial-gradient(center, circle contain, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	background: -o-radial-gradient(center, circle contain, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	background: -ms-radial-gradient(center, circle contain, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	background: radial-gradient(center, circle contain, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=1 );
+}
+p {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width:  960px;
+	margin: 0 0 0 -480px;
+	padding: 40px 0;
+	text-align: center;
+	color: #aaa;
+	text-shadow: #fff 0 1px 1px;
+	-webkit-transition: all ease-out .3s;
+}
+p:hover {
+	color: #666;
+}
+a {
+	text-decoration: none;
+	color: #429abe;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1, h2 {
+	font-family: "Gill Sans", Helvetica;
+	text-transform: uppercase;
+	font-weight: normal;
+	text-align: center;
+	text-rendering: optimizeLegibility;
+	margin: 0 0 50px 0;
+}
+h1 {
+	line-height: 84px;
+	font-size: 120px;
+	height: 84px;
+	/*-webkit-box-reflect: below 25px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));*/
+	/*background-color: rgba(0,0,0,.3);*/
+	color: rgba(0,0,0,.3);
+	background-image: -webkit-linear-gradient(rgba(0,0,0,.35) 0%, rgba(0,0,0,.25) 100%);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	text-shadow: rgba(255,255,255,0.65) 0 2px 4px;
+}
+h2 {
+	font-size: 14px;
+	color: #aaa;
+	text-shadow: #fff 0 1px 1px;
+	letter-spacing: 12px;
+}
+.eye {
+	width: 84px;
+	height: 84px;
+	margin-left: 6px;
+	display: inline-block;
+	text-shadow: none;
+	color:  transparent;
+}
+.white {
+	background-color: transparent;
+	border-radius: 42px;
+	width: 84px;
+	height: 84px;
+	display: inline-block;
+	box-shadow: 0px 5px 8px rgba(0,0,0,.4);
+	float: left;
+	overflow:hidden;
+	-webkit-transition: all ease-in-out .2s;
+	-webkit-animation-name: blink;
+	-webkit-animation-delay: .6s;
+	-webkit-animation-duration: 7s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+	-moz-transition: all ease-in-out .2s;
+	-moz-animation-name: blink;
+	-moz-animation-delay: .6s;
+	-moz-animation-duration: 7s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-direction: alternate;
+	-moz-animation-timing-function: ease-in-out;
+}
+.d .white {
+	border-radius:  0px 42px 42px 0px;
+}
+.eye:hover .white {
+	/*-webkit-transform: scaleY(0);*/
+	height: 4px;
+	margin: 50px 0;
+	border-radius: 50px / 25px;
+	box-shadow: 0px 3px 6px rgba(255,255,255,1), 0px 3px 12px rgba(255,255,255,1), 0px -2px 6px rgba(0,0,0,.4);
+	box-sizing: border-box;
+	border-top: 2px solid rgba(0,0,0,.3);
+	border-bottom: 2px solid rgba(0,0,0,.2);
+	-webkit-transition: all ease-out .02s;
+	-webkit-animation-name: none;
+	-moz-transition: all ease-out .02s;
+	-moz-animation-name: none;
+}
+.eye:hover .iris {
+	margin: -35px auto 0 auto;
+	-webkit-transition: all ease-out .1s;
+	-moz-transition: all ease-out .1s;
+}
+.iris {
+	display: block;
+	float:none;
+	width: 84px;
+	height: 84px;
+	margin: 0 auto;
+	border-radius: 42px;
+	background-color: #666;
+	-webkit-transition: all ease-out .1s;
+	-moz-transition: all ease-out .1s;
+	background-image: url('images/irisBrown.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.d .iris {
+	background-color: #666;
+	border-radius: 0px 42px 42px 0px;
+	background-image: url('images/irisBlue.png');
+}
+.pupil {
+	display: inline-block;
+	float:none;
+	width: 64px;
+	height: 64px;
+	margin: 10px auto;
+	border-radius: 37px;
+	background-color: #000;
+	background: rgb(69,69,69); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(69,69,69,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(69,69,69,1)), color-stop(100%, rgba(0,0,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(69,69,69,1) 0%, rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(69,69,69,1) 0%, rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(69,69,69,1) 0%, rgba(0,0,0,1) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(69,69,69,1) 0%, rgba(0,0,0,1) 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454545', endColorstr='#000000', GradientType=0 ); /* IE6-9 */
+}
+.d .pupil {
+	width: 28px;
+	height: 28px;
+	border-radius: 14px;
+	margin: 28px auto;
+	-webkit-transition: all ease-out .4s;
+	-moz-transition: all ease-out .4s;
+}
+.eye:hover .pupil {
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	margin: 0px auto 10px auto;
+	-webkit-transition: all ease-out .6s;
+	-moz-transition: all ease-out .6s;
+}
+.pupil:before {
+	display: block;
+	content: '';
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0 ); /* IE6-9 */
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	float: right;
+	margin: -3px 2px 0 0;
+}
+.d .pupil:before {
+	margin: -20px -14px 0 0;
+}
+ @-webkit-keyframes blink {
+ 0% {
+ height: 84px;
+ margin: 0;
+}
+ 1% {
+ height: 0;
+ margin: 50px 0;
+}
+ 2% {
+ height: 84px;
+ margin: 0;
+}
+ 3% {
+ height: 0;
+ margin: 50px 0;
+}
+ 4% {
+ height: 84px;
+ margin: 0;
+}
+ 6% {
+ height: 84px;
+ margin: 0;
+}
+ 7% {
+ height: 0;
+ margin: 50px 0;
+}
+ 9% {
+ height: 84px;
+ margin: 0;
+}
+ 15% {
+ height: 84px;
+ margin: 0;
+}
+ 16% {
+ height: 0;
+ margin: 50px 0;
+}
+ 18% {
+ height: 84px;
+ margin: 0;
+}
+}
+ @-moz-keyframes blink {
+ 0% {
+ height: 84px;
+ margin: 0;
+}
+ 1% {
+ height: 0;
+ margin: 50px 0;
+}
+ 2% {
+ height: 84px;
+ margin: 0;
+}
+ 3% {
+ height: 0;
+ margin: 50px 0;
+}
+ 4% {
+ height: 84px;
+ margin: 0;
+}
+ 6% {
+ height: 84px;
+ margin: 0;
+}
+ 7% {
+ height: 0;
+ margin: 50px 0;
+}
+ 9% {
+ height: 84px;
+ margin: 0;
+}
+ 15% {
+ height: 84px;
+ margin: 0;
+}
+ 16% {
+ height: 0;
+ margin: 50px 0;
+}
+ 18% {
+ height: 84px;
+ margin: 0;
+}
+}
+</style>
+
+</head>
+
+<body>
+<div id="content">
+  <h1><span class="eye d"><span class="white"><span class="iris"><span class="pupil">D</span></span></span></span>avid B<span class="eye o"><span class="white"><span class="iris"><span class="pupil">o</span></span></span></span>wie</h1>
+  <h2>Sound &amp; Vision</h2>
+</div>
+<p>A CSS3 experiment by <a href="http://www.thismanslife.co.uk/">thismanslife</a></p>
+
+<!-- Google Analytics -->
+<script src="David%20Bowie%20%20Sound%20&amp;%20Vision%20-%20A%20CSS3%20experiment%20by%20thismanslife_files/tracker.js" type="text/javascript"></script><script src="David%20Bowie%20%20Sound%20&amp;%20Vision%20-%20A%20CSS3%20experiment%20by%20thismanslife_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-322049-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<!-- GoSquared Analytics -->
+<script type="text/javascript">
+  var GoSquared = {};
+  GoSquared.acct = "GSN-960181-M";
+  (function(w){
+    function gs(){
+      w._gstc_lt = +new Date;
+      var d = document, g = d.createElement("script");
+      g.type = "text/javascript";
+      g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+      var s = d.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(g, s);
+    }
+    w.addEventListener ?
+      w.addEventListener("load", gs, false) :
+      w.attachEvent("onload", gs);
+  })(window);
+</script>
+
+
+<!-- Observer Analytics 
+<script type="text/javascript" src="http://www.observerapp.com/record.js"></script>
+<script type="text/javascript">
+try { Observerapp.record("4c8d283596dcace5330076f2"); } catch(e) {};
+</script>
+-->
+
+
+
+
+</body></html>

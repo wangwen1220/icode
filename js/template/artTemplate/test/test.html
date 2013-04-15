@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>template test</title>
+<script src="../template.js"></script>
+</head>
+
+<body>
+<h1>基本例子</h1>
+<script id="test" type="text/html">
+<ul>
+    <% for (var i = 0; i < list.length; i ++) { %>
+        <li>索引 <%= i + 1 %> ：<%= list[i] %></li>
+    <% } %>
+</ul>
+</script>
+
+<script>
+var html = template.render('test', {
+	list: ['文艺', '博客', '摄影', '电影', '民谣', '旅行', '吉他']
+});
+document.write(html);
+</script>
+</body>
+</html>

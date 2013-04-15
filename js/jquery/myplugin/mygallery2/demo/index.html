@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' />
+	<title>网页游戏 - 火秀网</title>
+	<meta name='keywords' content='火秀网络游戏' />
+	<meta name='description' content='火秀网络游戏' />
+	<meta name='author' content='火秀网' />
+	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
+	<link href='{CSS_PATH}hs-game-gallery.css' rel='stylesheet' />
+	<!-- <script src='{JS_PATH}cssrefresh.js'></script> -->
+	<link href='/favicon.ico' rel='icon' />
+</head>
+
+<body class='game-gallery'>
+	{template 'content', 'hs_topbar'}
+	{template 'content', 'game_header_dev'}
+
+	<!-- 主内容 -->
+	<div id='gallery-main' class='ui-layout fn-clear'>
+		<!-- <div class='ui-tab ui-tab-gallery fn-hide'>
+			<div class='ui-tab-header fn-clear fn-hide'>
+				<ul class='ui-tab-nav fn-clear'>
+					<li class='ui-tab-nav-item ui-tab-nav-item-cur'>1</li>
+					<li class='ui-tab-nav-item'>2</li>
+				</ul>
+			</div>
+			<div class='ui-tab-cnt'>
+				<ul class='ui-tab-cnt-item ui-tab-cnt-item-cur ui-img-list ui-img-list-plus'>
+					<li class='ui-img-list-item'>
+						<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='322' height='305' /></a>
+						<h3 class='header'><a href='#'>大话西游战歌</a></h3>
+					</li>
+					<li class='ui-img-list-item'>
+						<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='322' height='305' /></a>
+						<h3 class='header'><a href='#'>大话西游战歌</a></h3>
+					</li>
+				</ul>
+				<ul class='ui-tab-cnt-item ui-img-list ui-img-list-plus'>
+					<li class='ui-img-list-item'>
+						<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='322' height='305' /></a>
+						<h3 class='header'><a href='#'>大话西游战歌22</a></h3>
+					</li>
+					<li class='ui-img-list-item'>
+						<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='322' height='305' /></a>
+						<h3 class='header'><a href='#'>大话西游战歌22</a></h3>
+					</li>
+				</ul>
+			</div>
+		</div> -->
+
+		<div id='myfocus-gallery' class='ui-myfocus'><!--焦点图盒子-->
+			<div class="loading"></div><!--载入画面(可删除)-->
+			<div class="pic"><!--图片列表-->
+				<ul>
+					<li>
+						<a href='#'><img src='http://i3.17173.itc.cn/2012/newgame/bigeyes/c1110hg04.jpg' width='325' height='305' /><span href='#'>大话西游战歌</span></a>
+						<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='325' height='305' /><span class='title' href='#'>大话西游战歌</span></a>
+					</li>
+					<li>
+						<a href='#'><img src='http://i3.17173.itc.cn/2012/newgame/bigeyes/c1110hg04.jpg' width='325' height='305' /><span href='#'>大话西游战歌</span></a>
+						<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='325' height='305' /><span class='title' href='#'>大话西游战歌</span></a>
+					</li>
+					<li>
+						<a href='#'><img src='http://i3.17173.itc.cn/2012/newgame/bigeyes/c1110hg04.jpg' width='325' height='305' /><span href='#'>大话西游战歌</span></a>
+						<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='325' height='305' /><span class='title' href='#'>大话西游战歌1</span></a>
+					</li>
+					<li>
+						<a href='#'><img src='http://i3.17173.itc.cn/2012/newgame/bigeyes/c1110hg04.jpg' width='325' height='305' /><span href='#'>大话西游战歌</span></a>
+						<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='325' height='305' /><span class='title' href='#'>大话西游战歌2</span></a>
+					</li>
+					<li>
+						<a href='#'><img src='http://i3.17173.itc.cn/2012/newgame/bigeyes/c1110hg04.jpg' width='325' height='305' /><span href='#'>大话西游战歌</span></a>
+						<a class='img' href='#'><img src='http://i3.17173.itc.cn/2012/newgame/bigeyes/c1110hg04.jpg' width='325' height='305' /><span class='title' href='#'>大话西游战歌3</span></a>
+					</li>
+					<li>
+						<a href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='325' height='305' /><span href='#'>大话西游战歌4</span></a>
+						<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='325' height='305' /><span class='title' href='#'>大话西游战歌</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class='ui-tab ui-tab-sd'>
+			<ul class='ui-tab-nav fn-clear'>
+				<li class='ui-tab-nav-item ui-tab-nav-item-cur'>焦点</li>
+				<li class='ui-tab-nav-item'>热图</li>
+			</ul>
+			<div class='ui-tab-cnt'>
+				<div class='ui-tab-cnt-item ui-tab-cnt-item-cur'>
+					<div class='ui-art fn-clear'>
+						<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' alt='' width='102' height='78' /></a>
+						<h3 class='title'><a href='#'>测试文字测试文字测试文字1</a></h3>
+						<p class='content'>专访范冰冰专访《太访张执著（图） <a class='more' href='#'>[详情]</a></p>
+					</div>
+					<ul class='ui-list'>
+						<li class='ui-list-item'><a href='#'>全屏秒杀霸气外露 《梁山豪杰》忠义值技能曝光</a></li>
+						<li class='ui-list-item'><a href='#'>全屏秒杀霸气外露 《梁山豪杰》忠义能曝光</a></li>
+						<li class='ui-list-item'><a href='#'>全屏秒杀霸气外露 极速飞升《传奇世界》飞龙朝天预注册开启</a></li>
+						<li class='ui-list-item'><a href='#'>全屏秒杀霸气外露 《梁山豪杰》忠义值技能曝光</a></li>
+						<li class='ui-list-item'><a href='#'>全屏秒杀霸气外露 极速飞升《传奇世界》飞天预注册开启</a></li>
+						<li class='ui-list-item'><a href='#'>全屏秒杀霸气外露 《梁山豪杰》忠义值技能曝光</a></li>
+					</ul>
+				</div>
+				<div class='ui-tab-cnt-item'>
+					<div class='ui-art fn-clear'>
+						<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' alt='' width='102' height='78' /></a>
+						<h3 class='title'><a href='#'>测试文字测试文字测试文字2</a></h3>
+						<p class='content'>专访范冰冰专访《太极5》主创亮创亮创创亮创亮亮访张执著（图） <a class='more' href='#'>[详情]</a></p>
+					</div>
+					<ul class='ui-list'>
+						<li class='ui-list-item'><a href='#'>全屏秒杀霸气外露 《梁山豪杰》忠义值技能曝光</a></li>
+						<li class='ui-list-item'><a href='#'>全屏秒杀霸气外露 《梁山豪杰》忠义能曝光</a></li>
+						<li class='ui-list-item'><a href='#'>全屏秒杀霸气外露 极速飞升《传奇世界》飞龙朝天预注册开启</a></li>
+						<li class='ui-list-item'><a href='#'>全屏秒杀霸气外露 《梁山豪杰》忠义值技能曝光</a></li>
+						<li class='ui-list-item'><a href='#'>全屏秒杀霸气外露 极速飞升《传奇世界》飞天预注册开启</a></li>
+						<li class='ui-list-item'><a href='#'>全屏秒杀霸气外露 《梁山豪杰》忠义值技能曝光</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 本周推荐 -->
+	<div id='gallery-recommend' class='ui-layout fn-clear'>
+		<div class='ui-gallery fn-clear'>
+			<div class='ui-gallery-header'>
+				<h2 class='title'><em>本周推荐</em> <span>Recommend</span></h2>
+				<div class='link'><a class='more' href='#'>更多&gt;&gt;</a></div>
+			</div>
+
+			<div class='ui-gallery-item-main'>
+				<ul class='ui-img-list ui-img-list-plus'>
+					<li class='ui-img-list-item'>
+						<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+						<a class='title' href='#'>大话西游战歌</a>
+					</li>
+					<li class='ui-img-list-item'>
+						<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+						<a class='title' href='#'>大话西游战歌</a>
+					</li>
+					<li class='ui-img-list-item'>
+						<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+						<a class='title' href='#'>大话西游战歌</a>
+					</li>
+					<li class='ui-img-list-item'>
+						<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+						<a class='title' href='#'>大话西游战歌</a>
+					</li>
+					<li class='ui-img-list-item'>
+						<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+						<a class='title' href='#'>大话西游战歌</a>
+					</li>
+					<li class='ui-img-list-item'>
+						<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+						<a class='title' href='#'>大话西游战歌</a>
+					</li>
+					<li class='ui-img-list-item'>
+						<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+						<a class='title' href='#'>大话西游战歌</a>
+					</li>
+					<li class='ui-img-list-item'>
+						<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+						<a class='title' href='#'>大话西游战歌</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class='ui-gallery-box'>
+			<h2 class='ui-gallery-box-header'>美图排行</h2>
+			<ol class='ui-img-list ui-fimg-list fn-clear'>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://i3.17173.itc.cn/2012/newgame/bigeyes/c1110hg04.jpg' width='128' height='152'/></a>
+					<h4 class='header'><span class='num'>1</span> <a href='#'>大话西游战歌</a></h4>
+				</li>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://i3.17173.itc.cn/2012/newgame/bigeyes/c1110hg04.jpg' width='108' height='72'/></a>
+					<h4 class='header'><span class='num'>2</span> <a href='#'>大话西游大话西游战歌大话西游战歌大话西游战歌战歌</a></h4>
+				</li>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://i3.17173.itc.cn/2012/newgame/bigeyes/c1110hg04.jpg' width='108' height='72'/></a>
+					<h4 class='header'><span class='num'>3</span> <a href='#'>大话西游战歌</a></h4>
+				</li>
+			</ol>
+			<ol class='ui-list-plus'>
+				<li class='ui-list-plus-item'><span class='num'>4</span><a class='title' href='#'>敢死队2预告敢死队2预告敢死队2预告敢</a></li>
+				<li class='ui-list-plus-item'><span class='num'>5</span><a class='title' href='#'>敢死队2预告敢死队2预告敢死队2预告敢</a></li>
+				<li class='ui-list-plus-item'><span class='num'>6</span><a class='title' href='#'>敢死队2预告敢死队2预告敢死队2预告敢</a></li>
+			</ol>
+		</div>
+	</div>
+
+	<!-- 游戏美女 -->
+	<div id='gallery-beauty' class='ui-gallery fn-clear'>
+		<div class='ui-gallery-header'>
+			<h2 class='title'><em>游戏美女</em> <span>Beauty</span></h2>
+			<div class='link'><a class='more' href='#'>更多&gt;&gt;</a></div>
+		</div>
+
+		<div id='myfocus-hsgallery' class='ui-myfocus'><!--焦点图盒子-->
+			<div class="loading"></div><!--载入画面(可删除)-->
+			<div class="pic"><!--图片列表-->
+				<ul>
+					<li><a href="#1"><img src="http://pnews.huoshow.com/uploadfile/2012/1031/thumb_hs_160_158_thumb_254_362_20121031111856822.jpg" thumb="" alt="版权属于作者，图片2来源于网络" text='' width='318' height='388' /></a></li>
+					<li><a href="#2"><img src="http://pnews.huoshow.com/uploadfile/2012/1015/thumb_hs_160_158_thumb_198_276_20121015101801962.jpg" thumb="" alt="版权属于作者，图片2来源于网络" text='' width='318' height='388' /></a></li>
+					<li><a href="#3"><img src="http://pnews.huoshow.com/uploadfile/2012/1031/thumb_hs_160_158_thumb_254_362_20121031111856822.jpg" thumb="" alt="图片3来源于网络，版权属于作者" text='' width='318' height='388' /></a></li>
+					<li><a href="#4"><img src="http://pnews.huoshow.com/uploadfile/2012/1015/thumb_hs_160_158_thumb_198_276_20121015101801962.jpg" thumb="" alt="版权属于作者，图片4来源于网络" text='' width='318' height='388' /></a></li>
+					<li><a href="#5"><img src="http://pnews.huoshow.com/uploadfile/2012/1031/thumb_hs_160_158_thumb_254_362_20121031111856822.jpg" thumb="" alt="图片5来源于网络，版权属于作者" text='' width='318' height='388' /></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<ul class='ui-img-list ui-img-list-plus'>
+			<li class='ui-img-list-item-wrapper'>
+				<div class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='223' height='106' /></a>
+					<h3 class='header'><a href='#'>大话西游战歌</a></h3>
+				</div>
+				<div class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='223' height='118' /></a>
+					<h3 class='header'><a href='#'>大话西游战歌</a></h3>
+				</div>
+				<div class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='223' height='182' /></a>
+					<h3 class='header'><a href='#'>大话西游战歌</a></h3>
+				</div>
+			</li>
+			<li class='ui-img-list-item-wrapper'>
+				<div class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='214' height='266' /></a>
+					<h3 class='header'><a href='#'>大话西游战歌</a></h3>
+				</div>
+				<div class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='214' height='146' /></a>
+					<h3 class='header'><a href='#'>大话西游战歌</a></h3>
+				</div>
+			</li>
+			<li class='ui-img-list-item-wrapper'>
+				<div class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='181' height='206' /></a>
+					<h3 class='header'><a href='#'>大话西游战歌</a></h3>
+				</div>
+				<div class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='181' height='206' /></a>
+					<h3 class='header'><a href='#'>大话西游战歌</a></h3>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<!-- Cosplay -->
+	<div id='gallery-beauty' class='ui-gallery fn-clear'>
+		<div class='ui-gallery-header'>
+			<h2 class='title'><em>Cosplay</em></h2>
+			<div class='link'><a class='more' href='#'>更多&gt;&gt;</a></div>
+		</div>
+
+		<div id='myfocus-hsgallery-two' class='ui-myfocus'><!--焦点图盒子-->
+			<div class="loading"></div><!--载入画面(可删除)-->
+			<div class="pic"><!--图片列表-->
+				<ul>
+					<li><a href="#1"><img src="http://pnews.huoshow.com/uploadfile/2012/1031/thumb_hs_160_158_thumb_254_362_20121031111856822.jpg" thumb="" alt="版权属于作者，图片2来源于网络" text='' width='318' height='388' /></a></li>
+					<li><a href="#2"><img src="http://pnews.huoshow.com/uploadfile/2012/1015/thumb_hs_160_158_thumb_198_276_20121015101801962.jpg" thumb="" alt="版权属于作者，图片2来源于网络" text='' width='318' height='388' /></a></li>
+					<li><a href="#3"><img src="http://pnews.huoshow.com/uploadfile/2012/1031/thumb_hs_160_158_thumb_254_362_20121031111856822.jpg" thumb="" alt="图片3来源于网络，版权属于作者" text='' width='318' height='388' /></a></li>
+					<li><a href="#4"><img src="http://pnews.huoshow.com/uploadfile/2012/1015/thumb_hs_160_158_thumb_198_276_20121015101801962.jpg" thumb="" alt="版权属于作者，图片4来源于网络" text='' width='318' height='388' /></a></li>
+					<li><a href="#5"><img src="http://pnews.huoshow.com/uploadfile/2012/1031/thumb_hs_160_158_thumb_254_362_20121031111856822.jpg" thumb="" alt="图片5来源于网络，版权属于作者" text='' width='318' height='388' /></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<ul class='ui-img-list ui-img-list-plus'>
+			<li class='ui-img-list-item-wrapper'>
+				<div class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='223' height='106' /></a>
+					<h3 class='header'><a href='#'>大话西游战歌</a></h3>
+				</div>
+				<div class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='223' height='118' /></a>
+					<h3 class='header'><a href='#'>大话西游战歌</a></h3>
+				</div>
+				<div class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='223' height='182' /></a>
+					<h3 class='header'><a href='#'>大话西游战歌</a></h3>
+				</div>
+			</li>
+			<li class='ui-img-list-item-wrapper'>
+				<div class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='214' height='266' /></a>
+					<h3 class='header'><a href='#'>大话西游战歌</a></h3>
+				</div>
+				<div class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='214' height='146' /></a>
+					<h3 class='header'><a href='#'>大话西游战歌</a></h3>
+				</div>
+			</li>
+			<li class='ui-img-list-item-wrapper'>
+				<div class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='181' height='206' /></a>
+					<h3 class='header'><a href='#'>大话西游战歌</a></h3>
+				</div>
+				<div class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='181' height='206' /></a>
+					<h3 class='header'><a href='#'>大话西游战歌</a></h3>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<!-- 网络红人 -->
+	<div id='gallery-network' class='ui-gallery'>
+		<div class='ui-gallery-header'>
+			<h2 class='title'><em>网络红人</em> <span>Network</span></h2>
+			<div class='link'><a class='more' href='#'>更多&gt;&gt;</a></div>
+		</div>
+
+		<ul class='ui-img-list ui-img-list-plus'>
+			<li class='ui-img-list-item'>
+				<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='223' height='298' /></a>
+				<h3 class='header'><a href='#'>大话西游战歌</a></h3>
+			</li>
+			<li class='ui-img-list-item'>
+				<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='223' height='298' /></a>
+				<h3 class='header'><a href='#'>大话西游战歌</a></h3>
+			</li>
+			<li class='ui-img-list-item'>
+				<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='223' height='298' /></a>
+				<h3 class='header'><a href='#'>大话西游战歌</a></h3>
+			</li>
+			<li class='ui-img-list-item'>
+				<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='223' height='298' /></a>
+				<h3 class='header'><a href='#'>大话西游战歌</a></h3>
+			</li>
+		</ul>
+	</div>
+
+	<!-- 动漫 -->
+	<div id='gallery-animation' class='ui-layout fn-clear'>
+		<div class='ui-gallery ui-gallery-animation'>
+			<div class='ui-gallery-header'>
+				<h2 class='title'><em>动漫</em> <span>Animation</span></h2>
+			</div>
+			<ul class='ui-img-list ui-img-list-plus'>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</li>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</li>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</li>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class='ui-gallery'>
+			<div class='ui-gallery-header'>
+				<h2 class='title'><em>原画欣赏</em> <span>Original painting</span></h2>
+			</div>
+			<ul class='ui-img-list ui-img-list-plus'>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</li>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</li>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</li>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class='ui-gallery ui-gallery-atlas'>
+			<div class='ui-gallery-header'>
+				<h2 class='title'><em>囧图集</em> <span>Atlas</span></h2>
+			</div>
+			<ul class='ui-img-list ui-img-list-plus'>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</li>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</li>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</li>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 游戏壁纸 -->
+	<div id='gallery-wallpaper' class='ui-layout fn-clear'>
+		<div class='ui-gallery ui-gallery-wallpaper'>
+			<div class='ui-gallery-header'>
+				<h2 class='title'><em>游戏壁纸</em> <span>Animation</span></h2>
+			</div>
+			<div id='myfocus-mygallery' class='ui-myfocus'><!--焦点图盒子-->
+				<div class="loading"></div><!--载入画面(可删除)-->
+				<div class="pic"><!--图片列表-->
+					<ul>
+						<li>
+							<div class='ui-img-list ui-img-list-plus'>
+								<span class='ui-img-list-item'>
+									<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+									<a class='title' href='#'>大话西游战歌</a>
+								</span>
+								<span class='ui-img-list-item'>
+									<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+									<a class='title' href='#'>大话西游战歌</a>
+								</span>
+								<span class='ui-img-list-item'>
+									<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+									<a class='title' href='#'>大话西游战歌</a>
+								</span>
+								<span class='ui-img-list-item'>
+									<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+									<a class='title' href='#'>大话西游战歌</a>
+								</span>
+							</div>
+						</li>
+						<li>
+							<div class='ui-img-list ui-img-list-plus'>
+								<span class='ui-img-list-item'>
+									<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+									<a class='title' href='#'>大话西游战歌</a>
+								</span>
+								<span class='ui-img-list-item'>
+									<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+									<a class='title' href='#'>大话西游战歌</a>
+								</span>
+								<span class='ui-img-list-item'>
+									<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+									<a class='title' href='#'>大话西游战歌</a>
+								</span>
+								<span class='ui-img-list-item'>
+									<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+									<a class='title' href='#'>大话西游战歌</a>
+								</span>
+							</div>
+						</li>
+						<li>
+							<div class='ui-img-list ui-img-list-plus'>
+								<span class='ui-img-list-item'>
+									<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+									<a class='title' href='#'>大话西游战歌</a>
+								</span>
+								<span class='ui-img-list-item'>
+									<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+									<a class='title' href='#'>大话西游战歌</a>
+								</span>
+								<span class='ui-img-list-item'>
+									<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+									<a class='title' href='#'>大话西游战歌</a>
+								</span>
+								<span class='ui-img-list-item'>
+									<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+									<a class='title' href='#'>大话西游战歌</a>
+								</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- <div class='ui-img-list ui-img-list-plus'>
+				<span class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</span>
+				<span class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</span>
+				<span class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</span>
+				<span class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</span>
+			</div> -->
+		</div>
+
+		<div class='ui-gallery ui-gallery-creative'>
+			<div class='ui-gallery-header'>
+				<h2 class='title'><em>创意趣图</em> <span>Creative</span></h2>
+			</div>
+			<ul class='ui-img-list ui-img-list-plus'>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</li>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</li>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</li>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</li>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</li>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</li>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</li>
+				<li class='ui-img-list-item'>
+					<a class='img' href='#'><img src='http://img14.meitudata.com/5060600dc41128585.jpg!thumb235' width='142' height='106' /></a>
+					<a class='title' href='#'>大话西游战歌</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	{template 'content', 'hs_footer'}
+	<script src='{JS_PATH}seajs/sea-debug.js' id='seajsnode' data-main='hs-game-main'></script>
+</body>
+</html>

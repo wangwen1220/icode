@@ -1,0 +1,48 @@
+﻿/*============ 关于火秀 ============*/
+/* 布局 */
+.about_left{ width:184px; height:347px;  float:left; margin-top:19px;_margin-left:-8px
+margin-bottom: 15px; }
+.about_left_help{ width:184px; height:347px;  float:left; margin-top:19px;}
+.about_right{ width:752px;  float:right; margin-top:18px; margin-bottom: 15px; display:inline;}
+
+/* 左边 */
+.about_right_text_bt{ height:25px; border-bottom:2px solid #e9e9e9;}
+.banner_fuw{ background:url(../images/about/about_bj.jpg) left 401px; padding-left:25px; font-size:16px; color:#d10000;font-family:"微软雅黑";}
+.about_fw_hong{ font-size:16px; color:#d10000;font-family:"微软雅黑"; margin-top:25px; margin-bottom:18px;}
+.about_fw_text{ font-size:14px; line-height:26px; margin-top:18px; color: #515151; font-family: "宋体", arial; }
+.about_fw_text img { margin-top:20px;}
+.about_fw_text_01{ font-size:16px; line-height:26px;margin-top:18px;font-family:"微软雅黑";}
+.about_left_nav{ width:184px; float:left;}
+.about_left_nav_texe li{ height:50px; overflow:hidden;}
+.about_left_nav_zi a{ background:url(../images/about/about_bj.jpg) left 367px; width:183px; height:50px; display:inline-block; font-size:18px; color:#515151;font-family:"微软雅黑"; line-height:50px; text-indent:8px;}
+.about_left_nav_zi a:hover{width:183px; height:50px; display:inline-block; background:url(../images/about/about_bj.jpg) right 306px;color:#515151;}
+.about_left_nav .current a{width:183px; height:50px; display:inline-block; background:url(../images/about/about_bj.jpg) right 306px; font-size:18px; color:#d60921;font-family:"微软雅黑"; line-height:50px; text-indent:8px;}
+.about_left_nav .nav_yingwen{ font-size:15px; color:#999999; padding-left:16px;}
+
+/* 右边 */
+.about_right_text{ margin-top:44px;}
+.about_right_text_01{ margin-top:45px;}
+.about_right_text_02{ margin-top:25px;}
+.about_contact_text{ line-height:50px;}
+.about_contact_text_hui{ color:#8a8a8a; margin-top:23px; line-height:26px; }
+.about_contact_text_hui a{ color:#8a8a8a; margin-top:23px; line-height:26px;  margin-right:35px;}
+.about_right_lianjie{ margin-top:20px;}
+.about_right_lianjie_logo{width:210px; height:70px;border:1px solid #ccc; display:inline-block;text-align:center; margin-right:30px;}
+.about_right_lianjie_logo img{  width:164px;margin-top:5px;}
+.chengpin_chengse{ color:#f37f13;}
+.chengpin_hongse{ color:#d60921;}
+.chengpin_dizhi{ margin-top:30px; font-size:14px; line-height:26px;}
+.xing_hong{ color:#d60921; padding-right:5px;}
+
+.about_help_bt{ background:url(../images/about/help_bj.jpg) left 482px; width:183px; height:76px; margin-bottom:5px;}
+.about_left_help_nav{ width:184px; height:345px;}
+.help_nav_01 { float:left; background:url(../images/about/help_bj.jpg) left 364px; width:183px; }
+.help_nav_01 a{ background:url(../images/about/help_bz.jpg) no-repeat 15px 25px;font-size:14px; line-height:56px; height:56px; width:128px; display:block;padding-left:30px}
+.help_nav_01 a:hover{ background: url(../images/about/help_hover.jpg) no-repeat;height:56px;width:174px}
+.went{ float:left; background:url(../images/about/help_bj.jpg) left 307px; width:183px; height:60px;}
+.went a{ background:url(../images/about/help_bz.jpg) no-repeat 15px 25px;font-size:14px; line-height:56px; height:60px; width:128px; display:block;padding-left:30px}
+.went a:hover{ background: url(../images/about/help_hover.jpg) no-repeat;height:60px;width:174px}
+.jianju{ margin-top:100px;}
+
+.subm_anniu{ border:1px solid #e5e5e5; height:24px; width:200px;}
+.subm_anniu_01{ border:1px solid #e5e5e5; width:400px; height:147px;}

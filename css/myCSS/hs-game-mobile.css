@@ -1,0 +1,203 @@
+@import "hs-game-global.css";
+@import "jcarousel-skins/game/skin.css";
+@charset "utf-8";
+
+/*
+名称：火秀网络游戏样式
+简介：火秀网络游戏页面样式
+维护：王文 wangwen1220#139.com
+日期：2012-11-12
+*/
+
+/* Layout
+----------------------------------------------------------------------------- */
+/* commen */
+.ui-box-game .ui-box-header .title {
+	margin-left: 10px;
+	padding-left: 20px;
+	font-size: 20px;
+	background: url(../images/game/icon-apple.png) no-repeat 0 50%;
+}
+.ui-box-game .ui-box-item-center .ui-img-list-plus {
+	left: 22px;
+	*left: 20px;
+	margin-left: -22px;
+	*margin-left: -20px;
+}
+.ui-box-game .ui-box-item-center .ui-img-list-item {
+	margin-right: 22px;
+	*margin-right: 20px;
+	margin-bottom: 5px;
+}
+.ui-box-game .ui-box-item-center .ui-img-list-item .title {
+	color: #666;
+}
+.ui-box-game .ui-box-item-left .box-list {
+	margin: 10px 9px 9px 10px;
+	padding-bottom: 18px;
+	overflow: hidden;
+	*zoom: 1;
+}
+.ui-box-game .ui-box-item-left .box-list-item {
+	float: left;
+	margin: 0 1px 1px 0;
+	padding: 0 5px;
+	width: 86px;
+	height: 28px;
+	line-height: 28px;
+	overflow: hidden;
+	text-align: center;
+	color: #333333;
+	background-color: #F1F1F1;
+}
+.ui-box-game .ui-box-item-left .box-list-item:hover {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	background-color: #CF0716;
+}
+.ui-box-game .ui-box-item-left .ui-art {
+	margin: 10px;
+	background: none;
+}
+.ui-box-game .ui-box-item-left .ui-art .title {
+	height: 18px;
+	line-height: 18px;
+	margin-left: 100px;
+	margin-bottom: 4px;
+}
+.ui-box-game .ui-box-item-left .ui-art .title a {
+	font-weight: bold;
+	color: #333;
+}
+.ui-box-game .ui-box-item-left .ui-art .content {
+	margin-left: 100px;
+	line-height: 18px;
+	height: 54px;
+}
+.ui-box-game .ui-box-item-left .ui-art .content {
+	margin-left: 100px;
+	line-height: 18px;
+	height: 54px;
+}
+.ui-box-game .ui-box-item-left .ui-list-item {
+	height: 28px;
+	line-height: 28px;
+}
+.ui-box-game .ui-box-item-left .ui-list-item a {
+	font-size: 14px;
+	color: #333;
+}
+.ui-box-slider {
+	border: 1px solid #DFDFDF;
+	margin-top: -1px;
+	background-color: #FBFBFB;
+	overflow: hidden;
+	_position: relative;
+}
+
+/* 主内容 */
+#content-main .ui-layout-item-right .ui-box {
+	background: url(../images/game/bg-ui-header.png) repeat-x 0 0;
+}
+#content-main .ui-layout-item-right .ui-header {
+	/* background-color: #F9F9F9; */
+}
+#content-main .ui-layout-item-right .ui-tab-nav-item {
+	padding: 0;
+	width: 71px;
+	text-align: center;
+}
+#content-main .ui-layout-item-right .ui-img-list-plus {
+	left: 10px;
+	margin-left: -10px;
+}
+#content-main .ui-layout-item-right .ui-img-list-item {
+	margin: 3px 10px 0 0;
+}
+
+/* 苹果游戏 */
+#content-iphone {
+	border-top-color: #1E69AA;
+}
+#content-iphone .ui-box-header .title {
+	color: #1E69AA;
+	background-image: url(../images/game/icon-apple.png);
+}
+
+/* 安卓游戏 */
+#content-android {
+	border-top-color: #A3E012;
+}
+#content-android .ui-box-header .title {
+	color: #A3E012;
+	background-image: url(../images/game/icon-android.png);
+}
+
+/* WP游戏 */
+#content-wp {
+	border-top-color: #30A7FF;
+}
+#content-wp .ui-box-header .title {
+	color: #30A7FF;
+	background-image: url(../images/game/icon-wp.png);
+}
+
+/* 热门资讯 */
+#content-rmzx .mobile-news {
+	float: left;
+	display: inline;
+	margin: 15px 24px 5px 10px;
+	width: 290px;
+}
+#content-rmzx .mobile-news-wp {
+	margin-right: 10px;
+}
+#content-rmzx .mobile-news .header {
+	margin: 10px 0;
+	text-align: center;
+}
+#content-rmzx .mobile-news .header a {
+	display: inline-block;
+	padding-left: 27px;
+	height: 19px;
+	color: #444;
+	font: 18px/1 '微软雅黑','黑体','宋体',arial,verdana,sans-serif;
+	background: url(../images/game/icon-apple-gray.png) no-repeat 0 100%;
+	text-decoration: none;
+}
+#content-rmzx .mobile-news-android .header a {
+	background-image: url(../images/game/icon-android.png);
+}
+#content-rmzx .mobile-news-wp .header a {
+	background-image: url(../images/game/icon-wp.png);
+}
+#content-rmzx .mobile-news .ui-art {
+	margin: 10px 0;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #DFDFDF;
+	background-color: #F7F7F7;
+}
+#content-rmzx .mobile-news .ui-art .img {
+	float: none;
+	display: block;
+	margin-bottom: 10px;
+	border: 1px solid #E5E5E5;
+}
+#content-rmzx .mobile-news .ui-art .title {
+	font-weight: bold;
+	margin: 2px 5px;
+	text-align: center;
+}
+#content-rmzx .mobile-news .ui-art .title a {
+	color: #333;
+}
+#content-rmzx .mobile-news .ui-art .content {
+	margin: 2px 5px;
+}
+#content-rmzx .mobile-news .ui-list {
+	margin: 10px 0;
+}
+#content-rmzx .mobile-news .ui-list-item a {
+	color: #666;
+}

@@ -1,0 +1,508 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>javascript中数据类型转换那些事 - 无双 - 博客园</title>
+<link type="text/css" rel="stylesheet" href="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/style.css">
+<link type="text/css" rel="stylesheet" href="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/brown.css">
+<link type="text/css" rel="stylesheet" href="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/common2.css">
+<link type="text/css" rel="stylesheet" href="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/shStyle.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/2050/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/2050/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/2050/wlwmanifest.xml">
+<script src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/gpt.js" type="text/javascript" async=""></script><script src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/ga.js" async="" type="text/javascript"></script><script src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/jquery.js" type="text/javascript"></script>  
+<script type="text/javascript">
+var currentBlogApp = '2050';
+</script>
+<script src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/common.js" type="text/javascript"></script> 
+<script src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/json2.js" type="text/javascript"></script>
+<script type="text/javascript" src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/syntaxHighlighter.js"></script>
+<script src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/google_ads_gpt.js" type="text/javascript" async=""></script><script src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/osd.js" type="text/javascript"></script></head>
+<body>
+<a name="top"></a>
+
+<div id="top">
+
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/2050/">无双</a></h1>
+<p id="tagline">博学善思，自强不息
+
+</p>
+</div>
+<div id="leftmenu">
+
+	
+<h3>导航</h3>
+<ul>
+	<li>
+		<a id="MyLinks1_HomeLink" href="http://www.cnblogs.com/">博客园</a>
+	</li><li><a id="MyLinks1_MyHomeLink" href="http://www.cnblogs.com/2050/">首页</a></li>
+	<li><a id="MyLinks1_NewPostLink" rel="nofollow" href="http://www.cnblogs.com/2050/admin/EditPosts.aspx?opt=1">新随笔</a></li>
+	<li>
+		<a id="MyLinks1_ContactLink" accesskey="9" rel="nofollow" href="http://space.cnblogs.com/msg/send/%e6%97%a0%e5%8f%8c">联系</a>
+	</li><li>
+		<a id="MyLinks1_Syndication" href="http://www.cnblogs.com/2050/rss">订阅</a><a id="MyLinks1_XMLLink" href="http://www.cnblogs.com/2050/rss"><img src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/xml.gif" alt="订阅"></a>
+	</li><li>
+		<a id="MyLinks1_Admin" rel="nofollow" href="http://www.cnblogs.com/2050/admin/EditPosts.aspx">管理</a></li>
+</ul>
+
+	<div id="blog-calendar-block" style=""><div id="blog-calendar"><table id="blogCalendar" class="Cal" title="Calendar" cellpadding="0" cellspacing="0">
+	<tbody><tr><td colspan="7"><table class="CalTitle" cellspacing="0">
+		<tbody><tr><td class="CalNextPrev"><a href="javascript:void(0);" onclick="loadBlogCalendar('2012/07/01');return false;">&lt;</a></td><td align="center">2012年8月</td><td class="CalNextPrev" align="right"><a href="javascript:void(0);" onclick="loadBlogCalendar('2012/09/01');return false;">&gt;</a></td></tr>
+	</tbody></table></td></tr><tr><th class="CalDayHeader" abbr="日" scope="col" align="center">日</th><th class="CalDayHeader" abbr="一" scope="col" align="center">一</th><th class="CalDayHeader" abbr="二" scope="col" align="center">二</th><th class="CalDayHeader" abbr="三" scope="col" align="center">三</th><th class="CalDayHeader" abbr="四" scope="col" align="center">四</th><th class="CalDayHeader" abbr="五" scope="col" align="center">五</th><th class="CalDayHeader" abbr="六" scope="col" align="center">六</th></tr><tr><td class="CalOtherMonthDay" align="center">29</td><td class="CalOtherMonthDay" align="center">30</td><td class="CalOtherMonthDay" align="center">31</td><td align="center">1</td><td align="center">2</td><td align="center">3</td><td class="CalWeekendDay" align="center">4</td></tr><tr><td class="CalWeekendDay" align="center">5</td><td align="center">6</td><td align="center">7</td><td align="center">8</td><td align="center">9</td><td align="center"><a href="http://www.cnblogs.com/2050/archive/2012/08/10.html"><u>10</u></a></td><td class="CalWeekendDay" align="center">11</td></tr><tr><td class="CalWeekendDay" align="center">12</td><td align="center"><a href="http://www.cnblogs.com/2050/archive/2012/08/13.html"><u>13</u></a></td><td align="center">14</td><td align="center">15</td><td align="center">16</td><td align="center"><a href="http://www.cnblogs.com/2050/archive/2012/08/17.html"><u>17</u></a></td><td class="CalWeekendDay" align="center">18</td></tr><tr><td class="CalWeekendDay" align="center">19</td><td align="center">20</td><td align="center">21</td><td align="center">22</td><td align="center">23</td><td align="center">24</td><td class="CalWeekendDay" align="center">25</td></tr><tr><td class="CalWeekendDay" align="center">26</td><td align="center">27</td><td align="center">28</td><td align="center"><a href="http://www.cnblogs.com/2050/archive/2012/08/29.html"><u>29</u></a></td><td align="center">30</td><td align="center">31</td><td class="CalOtherMonthDay" align="center">1</td></tr><tr><td class="CalOtherMonthDay" align="center">2</td><td class="CalOtherMonthDay" align="center">3</td><td class="CalOtherMonthDay" align="center">4</td><td class="CalOtherMonthDay" align="center">5</td><td class="CalOtherMonthDay" align="center">6</td><td class="CalOtherMonthDay" align="center">7</td><td class="CalOtherMonthDay" align="center">8</td></tr>
+</tbody></table></div>
+</div>
+	
+<h3>统计</h3>
+<ul>
+	<li>
+		随笔 -
+		99
+	</li><li>
+		文章 -
+		0
+	</li><li>
+		评论 -
+		49
+	</li><li>
+		引用 -
+		0
+	</li>
+</ul>
+
+	
+<h3>公告</h3>
+	<div id="blog-news"><div id="profile_block">昵称：<a href="http://home.cnblogs.com/u/2050/">无双</a><br>园龄：<a href="http://home.cnblogs.com/u/2050/" title="入园时间：2010-05-03">2年11个月</a><br>粉丝：<a href="http://home.cnblogs.com/u/2050/followers/">44</a><br>关注：<a href="http://home.cnblogs.com/u/2050/followees/">2</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="cnblogs.UserManager.FollowBlogger('8c3fc9fe-9856-df11-ba8f-001cf0cd104b')">+加关注</a></div></div></div>
+
+	<div id="blog-sidecolumn">
+
+<div class="mySearch">
+<h3 class="catListTitle">搜索</h3>
+<div id="widget_my_zzk" class="div_my_zzk"><input id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk" type="text">&nbsp;<input onclick="zzk_go()" value="找找看" id="btnZzk" class="btn_my_zzk" type="button"></div>
+<div id="widget_my_google" class="div_my_zzk"><input name="google_q" id="google_q" onkeydown="return google_go_enter(event)" class="input_my_zzk" type="text">&nbsp;<input onclick="google_go()" value="谷歌搜索" class="btn_my_zzk" type="button"></div>
+</div>
+
+
+<h3 class="catListTitle">常用链接</h3>
+<ul>
+
+		<li><a id="ctl01_rptMainLinks_lnkLinkItem_0" href="http://www.cnblogs.com/2050/MyPosts.html">我的随笔</a></li>
+	
+		<li><a id="ctl01_rptMainLinks_lnkLinkItem_1" href="http://www.cnblogs.com/2050/MyComments.html">我的评论</a></li>
+	
+		<li><a id="ctl01_rptMainLinks_lnkLinkItem_2" title="我发表过评论的随笔" href="http://www.cnblogs.com/2050/OtherPosts.html">我的参与</a></li>
+	
+		<li><a id="ctl01_rptMainLinks_lnkLinkItem_3" href="http://www.cnblogs.com/2050/RecentComments.html">最新评论</a></li>
+	
+		<li><a id="ctl01_rptMainLinks_lnkLinkItem_4" href="http://www.cnblogs.com/2050/tag/">我的标签</a></li>
+	
+</ul>
+<div id="itemListLin_con" style="display:none;">
+
+</div>
+<h3 class="catListTitle">我的标签</h3>
+<div id="MyTag">
+<ul>
+<li><a href="http://www.cnblogs.com/2050/tag/js%E5%8A%A0%E8%BD%BD/">js加载</a>(1)</li>
+</ul>
+</div>
+		<h3>随笔分类<span style="font-size:11px;font-weight:normal">(78)</span></h3>
+		
+				<ul>
+			
+				<li><a id="ctl03_CatList_LinkList_0_Link_0" href="http://www.cnblogs.com/2050/category/248460.html">ae</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_0_Link_1" href="http://www.cnblogs.com/2050/category/248462.html">as(9)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_0_Link_2" href="http://www.cnblogs.com/2050/category/245709.html">css+html(25)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_0_Link_3" href="http://www.cnblogs.com/2050/category/245566.html">js(39)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_0_Link_4" href="http://www.cnblogs.com/2050/category/248463.html">php(3)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_0_Link_5" href="http://www.cnblogs.com/2050/category/248461.html">ps(2)</a> </li>
+			
+				</ul>
+			
+	
+		<h3>随笔档案<span style="font-size:11px;font-weight:normal">(99)</span></h3>
+		
+				<ul>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_0" href="http://www.cnblogs.com/2050/archive/2013/03.html">2013年3月 (1)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_1" href="http://www.cnblogs.com/2050/archive/2013/01.html">2013年1月 (2)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_2" href="http://www.cnblogs.com/2050/archive/2012/11.html">2012年11月 (1)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_3" href="http://www.cnblogs.com/2050/archive/2012/08.html">2012年8月 (4)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_4" href="http://www.cnblogs.com/2050/archive/2012/07.html">2012年7月 (6)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_5" href="http://www.cnblogs.com/2050/archive/2012/06.html">2012年6月 (4)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_6" href="http://www.cnblogs.com/2050/archive/2012/05.html">2012年5月 (2)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_7" href="http://www.cnblogs.com/2050/archive/2012/04.html">2012年4月 (3)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_8" href="http://www.cnblogs.com/2050/archive/2012/02.html">2012年2月 (1)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_9" href="http://www.cnblogs.com/2050/archive/2012/01.html">2012年1月 (1)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_10" href="http://www.cnblogs.com/2050/archive/2011/12.html">2011年12月 (1)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_11" href="http://www.cnblogs.com/2050/archive/2011/03.html">2011年3月 (3)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_12" href="http://www.cnblogs.com/2050/archive/2011/02.html">2011年2月 (7)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_13" href="http://www.cnblogs.com/2050/archive/2011/01.html">2011年1月 (2)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_14" href="http://www.cnblogs.com/2050/archive/2010/12.html">2010年12月 (1)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_15" href="http://www.cnblogs.com/2050/archive/2010/11.html">2010年11月 (3)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_16" href="http://www.cnblogs.com/2050/archive/2010/10.html">2010年10月 (8)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_17" href="http://www.cnblogs.com/2050/archive/2010/09.html">2010年9月 (3)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_18" href="http://www.cnblogs.com/2050/archive/2010/08.html">2010年8月 (17)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_19" href="http://www.cnblogs.com/2050/archive/2010/07.html">2010年7月 (16)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_20" href="http://www.cnblogs.com/2050/archive/2010/06.html">2010年6月 (1)</a> </li>
+			
+				<li><a id="ctl03_CatList_LinkList_1_Link_21" href="http://www.cnblogs.com/2050/archive/2010/05.html">2010年5月 (12)</a> </li>
+			
+				</ul>
+			
+	
+<h3 class="catListTitle">最新评论</h3>
+<div class="RecentComment" id="RecentComments">
+	<div id="RecentCommentsBlock"><ul>
+    <li class="recent_comment_title"><a href="http://www.cnblogs.com/2050/archive/2012/08/29/2662932.html#2631220">1. Re:文件上传利器SWFUpload使用指南</a></li>
+    <li class="recent_comment_body">mark</li>
+    <li class="recent_comment_author">--wykuger</li>
+    <li class="recent_comment_title"><a href="http://www.cnblogs.com/2050/archive/2012/07/31/2616460.html#2620682">2. Re:CSS布局奇淫技巧之-多列等高</a></li>
+    <li class="recent_comment_body">由于.container { overflow:hidden;} <br><br>这个布局有个后遗症：<br><br>页面中若含有特殊的UI组件需要超出.container显示，比如<br>- 日期选择器<br>- 某隐藏的绝对定位的超长菜单<br>此情况下，超出部分会被截去。<br><br>不知有无更完美方案？</li>
+    <li class="recent_comment_author">--qbx</li>
+    <li class="recent_comment_title"><a href="http://www.cnblogs.com/2050/archive/2012/05/03/2480702.html#2618937">3. Re:Jquery瀑布流插件</a></li>
+    <li class="recent_comment_body">博主，请教个问题如果这个瀑布流我在一个区域里，页面没有滚动条，在那个区域
+中有滚动条是不是就不能展示图片了啊！500) 
+this.width=500;"/&gt;如图，必须是外部那个滚动条滚动一次，内部的图片才会继续加载！内部的滚动条滚动，图片不加载的！LZ，怎么
+解决啊！</li>
+    <li class="recent_comment_author">--风行大地</li>
+    <li class="recent_comment_title"><a href="http://www.cnblogs.com/2050/archive/2012/08/29/2662932.html#2605337">4. Re:文件上传利器SWFUpload使用指南</a></li>
+    <li class="recent_comment_body">赞</li>
+    <li class="recent_comment_author">--胡大叔</li>
+    <li class="recent_comment_title"><a href="http://www.cnblogs.com/2050/archive/2012/08/29/2662932.html#2604610">5. Re:文件上传利器SWFUpload使用指南</a></li>
+    <li class="recent_comment_body">mark</li>
+    <li class="recent_comment_author">--无屁不成风</li>
+</ul>
+</div>
+</div>
+
+<h3 class="catListTitle">阅读排行榜</h3>
+<div class="RecentComment" id="TopViewPosts"> 
+	<div id="TopViewPostsBlock"><ul><li><a href="http://www.cnblogs.com/2050/archive/2012/05/03/2480702.html">1. Jquery瀑布流插件(8637)</a></li><li><a href="http://www.cnblogs.com/2050/archive/2012/08/29/2662932.html">2. 文件上传利器SWFUpload使用指南(7899)</a></li><li><a href="http://www.cnblogs.com/2050/archive/2012/08/13/2636467.html">3. CSS布局奇淫巧计之-强大的负边距(2416)</a></li><li><a href="http://www.cnblogs.com/2050/archive/2010/10/10/1846983.html">4. GreenSock动画平台学习笔记（一）TweenLite(2293)</a></li><li><a href="http://www.cnblogs.com/2050/archive/2010/10/19/1855253.html">5. GreenSock动画平台学习笔记（4）LoaderMax-ImageLoader(2000)</a></li></ul></div>
+</div>
+
+<h3 class="catListTitle">评论排行榜</h3>
+<div class="RecentComment" id="TopCommentsPosts">
+	<div id="TopFeedbackPostsBlock"><ul><li><a href="http://www.cnblogs.com/2050/archive/2012/05/03/2480702.html">1. Jquery瀑布流插件(19)</a></li><li><a href="http://www.cnblogs.com/2050/archive/2012/08/29/2662932.html">2. 文件上传利器SWFUpload使用指南(11)</a></li><li><a href="http://www.cnblogs.com/2050/archive/2012/08/10/2632256.html">3. 你真的了解word-wrap和word-break的区别吗？(5)</a></li><li><a href="http://www.cnblogs.com/2050/archive/2012/07/30/2615260.html">4. CSS布局奇淫技巧之-高度自适应(3)</a></li><li><a href="http://www.cnblogs.com/2050/archive/2012/08/17/2644189.html">5. javascript中数据类型转换那些事(2)</a></li></ul></div>
+</div>
+<h3 class="catListTitle">推荐排行榜</h3>
+<div class="RecentComment">
+	<div id="TopDiggPostsBlock"><ul><li><a href="http://www.cnblogs.com/2050/archive/2012/08/29/2662932.html">1. 文件上传利器SWFUpload使用指南(9)</a></li><li><a href="http://www.cnblogs.com/2050/archive/2012/08/13/2636467.html">2. CSS布局奇淫巧计之-强大的负边距(6)</a></li><li><a href="http://www.cnblogs.com/2050/archive/2012/05/03/2480702.html">3. Jquery瀑布流插件(4)</a></li><li><a href="http://www.cnblogs.com/2050/archive/2012/08/10/2632256.html">4. 你真的了解word-wrap和word-break的区别吗？(2)</a></li><li><a href="http://www.cnblogs.com/2050/archive/2012/08/17/2644189.html">5. javascript中数据类型转换那些事(2)</a></li></ul></div>
+</div></div>
+
+</div>
+<div id="main">
+	
+	
+	<div class="post">
+		<h2>
+			<a id="cb_post_title_url" href="http://www.cnblogs.com/2050/archive/2012/08/17/2644189.html">javascript中数据类型转换那些事</a>
+		</h2>
+		<div id="cnblogs_post_body"><p>在js中，总的来说数据类型分为两大类，一类是原始值类型的，一类是引用类型的。原始值类型的包括：<font color="#800000"><strong>字符串(String)</strong></font> 、<font color="#800000"><strong>数字(Number)</strong></font> 、<strong><font color="#800000">布尔值(Boolean)</font></strong> 以及两个特殊的值 <strong><font color="#800000">null</font></strong> 和 <font color="#800000"><strong>undefined</strong></font><font color="#000000"> 。引用类型的主要是指对象，在js中，对象的范围很广，甚至有js中一切都是对象这样的说法。对象可以分为 <font color="#800000"><strong>对象(Object)</strong></font> 以及更具体的<strong><font color="#800000">数组(Array)</font></strong> 、 <font color="#800000"><strong>函数(Function) </strong></font>等类型。要注意的是，js中typeof运算符返回的类型只有：sting、number、boolean、object、function、undefined几种,typeof null 返回的是 object,但一般认为null是不属于对象的 .</font></p>  <p>关于js中是不是一切都是对象这句话，其实是有争议的。例如，我们可以直接在通过单引号或双引号定义的字符串字面量上调用方法：</p>  <div><div id="highlighter_293689" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js string">'this is a string'</code><code class="js plain">.charAt(0);</code></div></div></td></tr></tbody></table></div></div>
+
+<p>这条语句是能够执行并得到正确结果的。字符串的确是个对象，但是问题在于没有通过构造函数而是直接使用字面量的字符串又算不算对象呢？这还要说吗，这个语句不就是在字符串字面量上调用的方法嘛，能调用方法的当然是对象了。是的，我们看到的的确是这样，但事实又是如何呢？</p>
+
+<p>事实就是，通过字面量定义的字符串并不是对象，或者最多只能说它是个伪对象，因为当在字符串字面量上调用方法或属性时，程序会在背后默默的创建一个
+与这个字面量的值相等的临时字符串对象，然后再在这个临时对象上调用属性或方法，最后把结果返回去，这个临时字符串对象完成使命后也随之会被销毁。</p>
+
+<p>还有一个有力的证据就是，你可以在字符串字面量上添加一个属性，或者是改变一个属性值，但结果是无法成功的：</p>
+
+<div><div id="highlighter_900389" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js keyword">var</code> <code class="js plain">s = </code><code class="js string">'this is a string'</code><code class="js plain">;</code></div><div class="line number2 index1 alt1"><code class="js plain">s.bar = </code><code class="js string">'hello'</code><code class="js plain">; </code><code class="js comments">//给这个字符串添加一个属性</code></div><div class="line number3 index2 alt2"><code class="js plain">alert(s.bar); </code><code class="js comments">//结果得到的是 undefined,不是 'hello'</code></div></div></td></tr></tbody></table></div></div>
+
+<p>得到undefined的原因是，s.bar 这个属性是加在了程序偷偷创建的那个临时字符串对象上，但我们无法得到这个临时字符创对象的引用，而且这个临时字符串对象很快就被销毁了。所以给字符串字面量添加属性或改变属性值是没有任何意义的，因为它根本不会受到影响。</p>
+
+<p>数字字面量以及布尔值字面量也是类似的原理，这里就不再赘述了。</p>
+
+<p>下面进入正题了---js中各种数据类型间的相互转换。</p>
+
+<p><strong><font size="4"></font></strong></p>
+
+<p><strong><font size="4">一、转换成布尔值</font></strong></p>
+
+<p>程序在 if 语句 以及 ||、&amp;&amp;、! 等逻辑判断的环境下会把表达式自动转换成布尔值。 
+  <br>想要手动转换某个东西为布尔值有两种方法：1、使用 !! ； 2、使用 Boolean(),记住前面不要加new；</p>
+
+<p>1、数字转换成布尔值</p>
+
+<p><a href="http://images.cnblogs.com/cnblogs_com/2050/201208/201208171545579269.png"><img title="01" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="01" src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/20120817154559773.png" height="53" width="600" border="0"></a> </p>
+
+<p>除了0被转换成false外，所有自他数字都会被转换成true, NaN 也总是被转换成false</p>
+
+<p>2、字符串转换成布尔值</p>
+
+<p><a href="http://images.cnblogs.com/cnblogs_com/2050/201208/201208171546003083.png"><img title="01" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="01" src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/201208171546057081.png" height="87" width="811" border="0"></a> </p>
+
+<p>这个更简单，除了空字符串被转换成false外，所有字符串都会被转换成true</p>
+
+<p>3、其他类型转换成布尔值</p>
+
+<p><a href="http://images.cnblogs.com/cnblogs_com/2050/201208/201208171546063950.png"><img title="01" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="01" src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/201208171546078835.png" height="85" width="455" border="0"></a> </p>
+
+<p>undefined和null会被转换成false, 任何对象(包括数组)和函数都会被转换成true，记住，是任何</p>
+
+<div><div id="highlighter_574645" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js keyword">var</code> <code class="js plain">o = </code><code class="js keyword">new</code> <code class="js plain">Boolean(</code><code class="js keyword">false</code><code class="js plain">);</code></div><div class="line number2 index1 alt1"><code class="js plain">alert(o);</code><code class="js comments">//转换成字符串，结果是false</code></div><div class="line number3 index2 alt2"><code class="js plain">alert(!!o); </code><code class="js comments">//转换成布尔值,结果是 true</code></div></div></td></tr></tbody></table></div></div>
+
+<p>&nbsp;</p>
+
+<p><strong><font size="4">二、转换成字符串</font></strong></p>
+
+<p>把某一个东西强制转换成字符串有两种方法：</p>
+
+<div><div id="highlighter_806419" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js string">''</code> <code class="js plain">+ x </code><code class="js comments">//方法一，用一个空字符串与之相加</code></div><div class="line number2 index1 alt1"><code class="js plain">String(x) </code><code class="js comments">//方法二，使用不带new的字符串构造函数</code></div></div></td></tr></tbody></table></div></div>
+
+<p>1、数字转换成字符串</p>
+
+<p><a href="http://images.cnblogs.com/cnblogs_com/2050/201208/201208171546087340.png"><img title="01" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="01" src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/201208171546095049.png" height="53" width="525" border="0"></a> </p>
+
+<p>这个没什么要说的，数字都是按原样转换成字符串，但用科学计数法表示的数字(也就是带e的)会转换成它内部代表的真实的数字的字符串。</p>
+
+<p>还需要注意的是，当使用二元的加号运算符时，如果两个运算数中有一个不是数字，则会进行字符串的连接操作，而不是数学加法操作，两个运算数都会被转换成字符串。当null与数字相加时，不会进行字符串连接，而是会把null转换成0来进行数学元素。</p>
+
+<div><div id="highlighter_224563" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js plain">[]+1+3&nbsp; </code><code class="js comments">//结果为13</code></div><div class="line number2 index1 alt1"><code class="js plain">[1]+3&nbsp;&nbsp; </code><code class="js comments">//结果为13</code></div><div class="line number3 index2 alt2"><code class="js keyword">null</code><code class="js plain">+1+3&nbsp; </code><code class="js comments">//结果为4</code></div></div></td></tr></tbody></table></div></div>
+
+<p>2、其他类型转换成字符串</p>
+
+<p><a href="http://images.cnblogs.com/cnblogs_com/2050/201208/201208171546107109.png"><img title="01" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="01" src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/201208171546175793.png" height="113" width="487" border="0"></a> </p>
+
+<p>当对象或函数转换成字符串时，会调用它们的 toString() 方法来进行转换，默认的是 
+Object.prototype.toString 和 
+Function.prototype.toString,但它们是可以被我们自定义的toString方法覆盖的。当把一个函数转换成一个字符串时，不
+一定就要显示函数的源代码，Function.prototype.toString 方法的结果依赖于它的环境是怎么实现它的。</p>
+
+<p>&nbsp;</p>
+
+<p><strong><font size="4">三、转换成数字</font></strong></p>
+
+<p>除了加号以外的其他数学运算符，都会进行转换为数字的操作。把一个东西强制转换成数字也有两种方法：</p>
+
+<div><div id="highlighter_56122" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js plain">+x </code><code class="js comments">//使用一个一元的加号运算符，这是最快的方法</code></div><div class="line number2 index1 alt1"><code class="js plain">x-0 或 x*1 </code><code class="js comments">//另一种形式</code></div><div class="line number3 index2 alt2"><code class="js plain">Number(x)&nbsp; </code><code class="js comments">//使用不带new的数字构造函数进行转换</code></div></div></td></tr></tbody></table></div></div>
+
+<p>1、字符串转换成数字</p>
+
+<p><a href="http://images.cnblogs.com/cnblogs_com/2050/201208/201208171546199216.png"><img title="01" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="01" src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/201208171546318735.png" height="85" width="795" border="0"></a> </p>
+
+<p>除了空字符串会被转换成0以外，如果字符串中是正确的数字书写形式，那么都可以顺利转换成相应的数字，不管是小数、科学计数还是八进制、十六进制形式等。但是如果参杂了其他不能构成数字或不符合数字书写规则的东西，则会被转换成NaN。</p>
+
+<p>NaN是指不是数字的意思，任何数字数字跟NaN进行运算得到的结果都是NaN,NaN甚至跟自己也不相等。</p>
+
+<p>2、其它类型转换成数字 </p>
+
+<p><img title="01" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="01" src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/201208171546332997.png" height="83" width="447" border="0"></p>
+
+<p>对象和函数总是被转换成NaN, undefined也会被转换成NaN, 但null会被转换成0</p>
+
+<p>上面的表遗漏了数组的情况。数组会首先被转换成字符串，然后再转换成数字。</p>
+
+<div><div id="highlighter_459446" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js plain">alert(+[]);&nbsp; </code><code class="js comments">//结果为0</code></div><div class="line number2 index1 alt1"><code class="js plain">alert(+[1]); </code><code class="js comments">//结果为1</code></div><div class="line number3 index2 alt2"><code class="js plain">alert(+[1,2]); </code><code class="js comments">//结果为NaN</code></div><div class="line number4 index3 alt1"><code class="js plain">alert(+</code><code class="js keyword">new</code> <code class="js plain">Array(1)); </code><code class="js comments">//结果为0 </code></div><div class="line number5 index4 alt2"><code class="js plain">alert(+</code><code class="js keyword">new</code> <code class="js plain">Array(1,2)); </code><code class="js comments">//结果为NaN</code></div></div></td></tr></tbody></table></div></div>
+
+<p></p>
+
+<p></p>
+
+<p>3、两个数字转换函数</p>
+
+<p>parseInt</p>
+
+<p><a href="http://images.cnblogs.com/cnblogs_com/2050/201208/201208171546345090.png"><img title="01" style="border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px" alt="01" src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/201208171546352798.png" height="53" width="566" border="0"></a> </p>
+
+<p><a href="http://images.cnblogs.com/cnblogs_com/2050/201208/201208171546376221.png"><img title="01" style="border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px" alt="01" src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/201208171546385533.png" height="92" width="875" border="0"></a> </p>
+
+<p><a href="http://images.cnblogs.com/cnblogs_com/2050/201208/201208171546394038.png"><img title="01" style="border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px" alt="01" src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/201208171546403906.png" height="88" width="516" border="0"></a> </p>
+
+<p>parseFloat</p>
+
+<p><a href="http://images.cnblogs.com/cnblogs_com/2050/201208/201208171546434448.png"><img title="01" style="border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px" alt="01" src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/20120817154647639.png" height="86" width="882" border="0"></a> </p>
+
+<p><a href="http://images.cnblogs.com/cnblogs_com/2050/201208/201208171546519196.png"><img title="01" style="border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px" alt="01" src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/201208171546576027.png" height="85" width="534" border="0"></a> </p>
+
+<p>
+  <br></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p>数据类型转换看起来很简单，但有些东西却很容易弄混淆，要想真正掌握它，也还是要花费一些功夫的。</p>
+
+<p>参考资料：<a href="http://jibbering.com/faq/notes/type-conversion/">http://jibbering.com/faq/notes/type-conversion/</a></p></div><div id="MySignature"></div>
+<script type="text/javascript">
+var isLogined = false;
+var cb_blogId = 70308;
+var cb_entryId = 2644189;
+var cb_blogApp = currentBlogApp;
+var cb_blogUserGuid = "8c3fc9fe-9856-df11-ba8f-001cf0cd104b";
+var cb_entryCreatedDate = '2012/8/17 15:47:00';
+var enableGoogleAd = true;
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+</script>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="blog_post_info"><div id="BlogPostCategory">分类: <a href="http://www.cnblogs.com/2050/category/245566.html">js</a></div>
+<div id="EntryTag"></div>
+<div id="green_channel">
+绿色通道：
+<a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(cb_entryId,cb_blogId,1);green_channel_success(this,'谢谢推荐！');">好文要顶</a>
+<a id="green_channel_follow" onclick="c_follow();" href="javascript:void(0);">关注我</a>
+<a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a><a id="green_channel_contact" href="http://space.cnblogs.com/msg/send/%e6%97%a0%e5%8f%8c" target="_blank">与我联系</a>
+<a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/icon_weibo_24.png" alt=""></a>
+</div>
+<div id="digg_block">
+<div id="author_profile">
+<div id="author_profile_info" class="author_profile_info">
+<a href="http://home.cnblogs.com/u/2050/" target="_blank"><img src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/u130623.jpg" class="author_avatar" alt=""></a>
+<div id="author_profile_detail" class="author_profile_info">
+<a href="http://home.cnblogs.com/u/2050/">无双</a><br>
+<a href="http://home.cnblogs.com/u/2050/followees">关注 - 2</a><br>
+<a href="http://home.cnblogs.com/u/2050/followers">粉丝 - 44</a>
+</div>
+</div>
+<div class="clear"></div>
+<div id="author_profile_honor"></div>
+<div id="author_profile_follow">
+<a href="javascript:void(0);" onclick="c_follow();return false;">+加关注</a>
+</div>
+</div>
+<div id="div_digg">										
+	<div class="diggit" onclick="votePost(cb_entryId,'Digg')"> 
+		<span class="diggnum" id="digg_count">2</span>
+	</div>
+	<div class="buryit" onclick="votePost(cb_entryId,'Bury')"> 
+		<span class="burynum" id="bury_count">0</span>
+	</div>
+	<div class="clear"></div>	
+	<div class="diggword" id="digg_tips">
+    (请您对文章做出评价)
+    </div>	
+</div>
+</div></div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/2050/archive/2012/08/13/2636467.html" class="p_n_p_prefix">« </a> 博主上一篇：<a href="http://www.cnblogs.com/2050/archive/2012/08/13/2636467.html" title="发布于2012-08-13 15:26">CSS布局奇淫巧计之-强大的负边距</a><br><a href="http://www.cnblogs.com/2050/archive/2012/08/29/2662932.html" class="p_n_p_prefix">» </a> 博主下一篇：<a href="http://www.cnblogs.com/2050/archive/2012/08/29/2662932.html" title="发布于2012-08-29 23:36">文件上传利器SWFUpload使用指南</a><br><a href="http://www.cnblogs.com/vowei/archive/2012/08/17/2644158.html" class="p_n_p_prefix">« </a> 首页上一篇：<a href="http://www.cnblogs.com/vowei/archive/2012/08/17/2644158.html">如何使用UIAutomation进行iOS 自动化测试（Part II）</a><br><a href="http://www.cnblogs.com/rulee/archive/2012/08/17/2644241.html" class="p_n_p_prefix">» </a> 首页下一篇：<a href="http://www.cnblogs.com/rulee/archive/2012/08/17/2644241.html">KO的反射</a><br></div>
+</div>
+<script type="text/javascript">
+    //SyntaxHighlighter.config.strings.expandSource = '<span><img src="http://static.cnblogs.com/images/expand-code.gif" alt="" class="expand-code-icon"/>View Code</span>';
+    $(function () {             
+        fixPostBodyFormat();
+        loadAdUnderPost();
+        loadBlogSignature();
+        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);        
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);        
+    });
+</script>
+		<p class="postfoot">
+			posted on <span id="post-date">2012-08-17 15:47</span> <a href="http://www.cnblogs.com/2050/">无双</a> 阅读(1749) 评论(<span id="post-comment-count">2</span>)  <a href="http://www.cnblogs.com/2050/admin/EditPosts.aspx?postid=2644189" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(2644189);return false;">收藏</a>
+		</p>
+	</div>
+	<img src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/2644189.jpg" alt="" height="1" width="1">
+	
+<div id="blog-comments-placeholder"><div id="comments_pager_top"></div>
+<a name="评论"></a>
+<div id="comments">
+<h3>评论</h3>
+	
+	
+			<h4>
+				<a href="#2450806" class="layer">#1楼</a><a name="2450806" id="comment_anchor_2450806"></a>
+					<span>
+						 <span class="comment_date">2012-08-17 22:51</span>
+					</span>
+				<a id="a_comment_author_2450806" href="http://www.cnblogs.com/think_fish/" target="_blank">think_fish</a> <a href="http://space.cnblogs.com/msg/send/think_fish" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</h4>
+			<p>
+				</p><div id="comment_body_2450806" class="blog_comment_body"><img id="comment_2450806_avatar" class="comment-avatar" src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/u72288.jpg" alt="" style="display:none;">不错，很全面</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2450806,'Digg',this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2450806,'Bury',this)">反对(0)</a></div>
+				&nbsp;&nbsp;<span class="comment_actions"></span>
+			<p></p>
+		
+			<h4>
+				<a href="#2450928" class="layer">#2楼</a><a name="2450928" id="comment_anchor_2450928"></a><span id="comment-maxId" style="display:none;">2450928</span><span id="comment-maxDate" style="display:none;">2012/8/18 10:23:16</span>
+					<span>
+						 <span class="comment_date">2012-08-18 10:23</span>
+					</span>
+				<a id="a_comment_author_2450928" href="http://www.cnblogs.com/index-html/" target="_blank">EtherDream</a> <a href="http://space.cnblogs.com/msg/send/EtherDream" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</h4>
+			<p>
+				</p><div id="comment_body_2450928" class="blog_comment_body"><img id="comment_2450928_avatar" class="comment-avatar" src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/u273626.jpg" alt="" style="display:none;">MARK</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2450928,'Digg',this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2450928,'Bury',this)">反对(0)</a></div>
+				&nbsp;&nbsp;<span class="comment_actions"></span>
+			<p></p>
+		
+</div><div id="comments_pager_bottom"></div></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.loadComments();</script>
+<div id="comment_form" class="commentform">
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" id="lnk_RefreshComments" onclick="return RefreshCommentList();">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login('commentform');">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+
+<script type="text/javascript">
+    if (typeof commentManager === 'undefined') {
+        commentManager = new blogCommentManager();
+    }
+    commentManager.loadCommentForm();   
+</script>
+
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"><a href="http://job.cnblogs.com/" target="_blank"><b>找优秀程序员，就在博客园</b></a><br></div>
+<div id="site_nav_under"><a href="http://www.cnblogs.com/" target="_blank" title="程序员的网上家园">博客园首页</a><a href="http://q.cnblogs.com/" target="_blank" title="程序员问答社区">博问</a><a href="http://news.cnblogs.com/" target="_blank" title="IT新闻">新闻</a><a href="http://home.cnblogs.com/ing/" target="_blank">闪存</a><a href="http://job.cnblogs.com/" target="_blank">程序员招聘</a><a href="http://kb.cnblogs.com/" target="_blank">知识库</a></div>
+<div id="ad_under_post_holder">
+<div id="google_ad_c1" class="c_ad_block">
+    <!-- cnblogs_blogpost_C1_sitehome -->
+    <div id="div-gpt-ad-1346480159711-0" style="width: 300px; height: 250px;">
+    
+    <iframe src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px none;" marginheight="0" marginwidth="0" name="google_ads_iframe_/1090369/cnblogs_blogpost_C1_sitehome_0" id="google_ads_iframe_/1090369/cnblogs_blogpost_C1_sitehome_0" frameborder="0" height="250" scrolling="no" width="300"></iframe><iframe src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px none; visibility: hidden; display: none;" marginheight="0" marginwidth="0" name="google_ads_iframe_/1090369/cnblogs_blogpost_C1_sitehome_0__hidden__" id="google_ads_iframe_/1090369/cnblogs_blogpost_C1_sitehome_0__hidden__" frameborder="0" height="0" scrolling="no" width="0"></iframe></div>
+</div>
+<div id="blog_news_kb"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="http://news.cnblogs.com/n/174712/" target="_blank">苹果面临10大威胁：法律官司缠身 创新减少</a><br> ·  <a href="http://news.cnblogs.com/n/174711/" target="_blank">告诉你IT大佬都用什么App！微信微博是必备</a><br> ·  <a href="http://news.cnblogs.com/n/174710/" target="_blank">疑似 HTC 为 Facebook 代工的手机谍照曝光，名叫 HTC First</a><br> ·  <a href="http://news.cnblogs.com/n/174709/" target="_blank">老罗的锤子 OS，该如何应对第一波早期用户？</a><br> ·  <a href="http://news.cnblogs.com/n/174708/" target="_blank">航天飞机设计定律</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/174616/" target="_blank">没有错误的错误</a><br> ·  <a href="http://kb.cnblogs.com/page/172986/" target="_blank">苹果公司与分工原理</a><br> ·  <a href="http://kb.cnblogs.com/page/174458/" target="_blank">中国云计算大势图</a><br> ·  <a href="http://kb.cnblogs.com/page/173360/" target="_blank">命令行是你的至交好友</a><br> ·  <a href="http://kb.cnblogs.com/page/174130/" target="_blank">经典论文翻译导读之《Google File System》</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="google_ad_c2" class="c_ad_block">
+    <!-- cnblogs_blogpost_C2_sitehome -->
+    <div id="div-gpt-ad-1346479110744-1" style="width: 468px; height: 60px;">
+    
+    <iframe src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px none;" marginheight="0" marginwidth="0" name="google_ads_iframe_/1090369/cnblogs_blogpost_C2_sitehome_0" id="google_ads_iframe_/1090369/cnblogs_blogpost_C2_sitehome_0" frameborder="0" height="60" scrolling="no" width="468"></iframe></div>
+</div></div>
+<div id="HistoryToday" class="c_ad_block"><b>历史上的今天:</b><br>2010-08-17 <a href="http://www.cnblogs.com/2050/archive/2010/08/17/1801402.html">清除浮动概述</a><br></div>
+</div>
+
+
+
+
+
+</div>
+
+<p id="footer">
+	Powered by: 
+	<br>
+	
+	<a id="Footer1_Hyperlink3" name="Hyperlink1" href="http://www.cnblogs.com/" style="font-family:Verdana;font-size:12px;">博客园</a>
+	<br>
+	Copyright © 无双
+</p>
+<script type="text/javascript" src="javascript%20%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E9%82%A3%E4%BA%9B%E4%BA%8B_files/google-analytics.js"></script>
+
+
+</body></html>

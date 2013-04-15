@@ -1,0 +1,1 @@
+{"versioning":{"latest":"1.0.0"},"versions":{"1.0.0":["events.js"]},"root":"arale","name":"events","tag":"infrastructure","lastUpdated":1352950225525,"type":"","description":"提供基本的事件添加、移除和触发功能。"}

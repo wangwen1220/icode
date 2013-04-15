@@ -1,0 +1,113 @@
+@import "hs-game-global.css";
+@charset "utf-8";
+
+/*
+名称：火秀网络游戏样式
+简介：火秀网络游戏页面样式
+维护：王文 wangwen1220#139.com
+日期：2012-11-12
+*/
+
+/* Layout
+----------------------------------------------------------------------------- */
+/* 主内容 */
+#content-main .ui-layout-item-left .ui-header {
+	/* margin: 0; */
+	/* padding-left: 20px; */
+	/* background-position: 10px 50%; */
+	background-color: #F9F9F9;
+}
+#content-main .ui-layout-item-left .atitle {
+	margin: 10px 0 0;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	color: #DB4550;
+}
+#content-main .ui-layout-item-left .atitle a {
+	color: #DB4550;
+}
+#content-main .ui-layout-item-left .ui-img-list-item {
+	margin-top: 0;
+}
+#content-main .ui-layout-item-left .ui-list {
+	margin: 5px 10px;
+	padding-top: 5px;
+}
+#content-main .ui-layout-item-left .ui-list-item {
+	float: left;
+	width: 44%;
+	height: 22px;
+	line-height: 22px;
+}
+#content-main .ui-layout-item-left .search {
+	padding: 9px 10px;
+	height: 19px;
+	color: #535353;
+	background-color: #F0F0F0;
+}
+#content-main .ui-layout-item-left select {
+	height: 19px;
+	line-height: 19px;
+	width: 95px;
+	border: 1px solid #ACADB4;
+	color: #535353;
+	background-color: #fff;
+}
+#content-main .ui-layout-item-left .search-wd {
+	height: 17px;
+	line-height: 17px;
+	width: 93px;
+	_width: 89px;
+	border: 1px solid #ACADB4;
+	text-indent: 2px;
+	color: #ACADB4;
+	background-color: #fff;
+}
+#content-main .ui-layout-item-left .search-wd:focus {
+	color: #333;
+}
+#content-main .ui-layout-item-left .search-submit {
+	margin-left: -1px;
+	width: 39px;
+	height: 19px;
+	border: none;
+	text-indent: -9999px;
+	vertical-align: top;
+	background: url(../images/game/btn-search-submit-small.png) no-repeat 0 0;
+}
+#content-main .ui-layout-item-right .ui-img-list {
+	margin-top: 5px;
+}
+#content-main .ui-layout-item-right .ui-img-list-item .title {
+	height: 36px;
+	text-align: left;
+}
+
+/* 攻略专区 */
+#content-glzq .ui-box-item-center .ui-newgame-title {
+	margin-top: 10px;
+	padding: 0;
+	background: none;
+}
+#content-glzq .ui-box-item-center .ui-img-list {
+	margin-right: -25px;
+}
+#content-glzq .ui-box-item-center .ui-img-list-item {
+	margin-top: 0;
+	margin-right: 25px;
+}
+
+/* 网游大观 */
+#content-wydg .ui-box-item-left .ui-img {
+	margin: 0 0 18px 10px;
+}
+#content-wydg .ui-box-item-center .ui-img-list-item {
+	margin: 0 14px 14px 0;
+}
+#content-wydg .ui-box-item-right .ui-img-list-item {
+	margin: 0 14px 20px 0;
+}

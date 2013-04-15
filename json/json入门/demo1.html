@@ -1,0 +1,42 @@
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var people =
+  { "programmers": [
+    { "firstName": "Brett", "lastName":"McLaughlin", "email": "brett@newInstance.com" },
+    { "firstName": "Jason", "lastName":"Hunter", "email": "jason@servlets.com" },
+    { "firstName": "Elliotte", "lastName":"Harold", "email": "elharo@macfaq.com" }
+   ],
+  "authors": [
+    { "firstName": "Isaac", "lastName": "Asimov", "genre": "science fiction" },
+    { "firstName": "Tad", "lastName": "Williams", "genre": "fantasy" },
+    { "firstName": "Frank", "lastName": "Peretti", "genre": "christian fiction" }
+   ],
+  "musicians": [
+    { "firstName": "Eric", "lastName": "Clapton", "instrument": "guitar" },
+    { "firstName": "Sergei", "lastName": "Rachmaninoff", "instrument": "piano" }
+   ]
+  };
+ 
+
+
+  alert(people.programmers[0].lastName);  //输出programmers的第一个 属性为 lastName的值
+
+  people.musicians[1].lastName = "CSSRAIN.CN";  //修改属性的值
+ 
+  alert("修改数据json="+people.musicians[1].lastName);
+
+  alert(people);
+
+
+
+
+//-->
+</SCRIPT>
+
+
+注意，数组索引是从零开始的。<br>
+所以，这行代码首先访问 people 变量中的数据；然后移动到称为 programmers 的条目，<br>
+再移动到第一个记录（[0]）；最后，访问 lastName 键的值。结果是字符串值 “McLaughlin”。<br>
+利用这样的语法，可以处理任何 JSON 格式的数据，而不需要使用任何额外的 JavaScript 工具包或 API。<br>

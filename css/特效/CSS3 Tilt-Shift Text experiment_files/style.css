@@ -1,0 +1,149 @@
+/* Tilt-Shift text by @simurai  */
+
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:bold);
+
+
+/* Global ------------------------------------------------------ */
+
+html {
+    height: 100%;
+	font: 62.5%/1 "Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+	background: url(http://files.simurai.com/tumblr/img/bg_glow.png) no-repeat fixed center center,
+				url("http://files.simurai.com/tumblr/img/bg.gif") repeat fixed 0 0;
+	
+	background: url(http://files.simurai.com/tumblr/img/bg_glow.png) no-repeat center center,
+				url(bg.jpg) no-repeat center center;
+	background-size: auto, cover;
+}
+
+body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+    text-align: center;
+    
+    background-color: hsla(30,20%,95%,.9);
+	
+	/* Pixel pattern only enabled for WebKit because of performance */	
+	background-size: 2px 3px;
+	background: hsla(30,20%,95%,.9) -webkit-linear-gradient(45deg, hsla(0,0%,0%,0)  0px, 
+	                                                                hsla(0,0%,0%,0)  1px, 
+	                                                                hsla(0,0%,0%,.1) 2px, 
+	                                                                hsla(0,0%,0%,.1)  3px);
+
+	display: -webkit-box;
+	display:    -moz-box;
+	display:     -ms-box;
+	display:      -o-box;
+	display:         box;
+	
+	-webkit-box-align: center;
+	   -moz-box-align: center;
+	    -ms-box-align: center;
+	     -o-box-align: center;
+	        box-align: center;
+	
+	-webkit-box-pack: center;
+	   -moz-box-pack: center;
+	    -ms-box-pack: center;
+	     -o-box-pack: center;
+	        box-pack: center;
+	}
+
+
+/* Wrapper ------------------------------------------------------ */
+
+#wrapper {
+    position: relative;
+    /z-index: 0;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Yanone Kaffeesatz", "Lucida Grande", Lucida, Verdana, sans-serif;
+	margin: 0 auto;
+	width: 600px;
+	padding: 7em 0;
+	background: url(bg.jpg) no-repeat center center;
+	border-radius: 4px;
+	box-shadow: inset 0 -1px 0  hsla(0,0%,0%,.2), 0 21px 8px -12px rgba(0,0,0,.2);
+	
+	-webkit-perspective: 350;
+	   -moz-perspective: 350;
+	    -ms-perspective: 350;
+	     -o-perspective: 350;
+	        perspective: 350;
+    }
+    
+    #wrapper:focus {
+    	outline: none;
+        }
+
+
+#wrapper p {
+    font-size: 10em;
+	margin: 0;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	text-shadow: 	rgba(0,0,0,0.1) 0 20px 80px;
+	-webkit-transition: -webkit-transform .1s ease-in; /* only WebKit because of performance */
+    }
+
+
+/* Hover ------------------------------------------------------ */
+
+#wrapper:hover p {
+	color: hsla(0,0%,0%,0);
+	
+	-webkit-transform: rotate(6.5deg) rotateX(28deg) skewX(-4deg);
+	   -moz-transform: rotate(6.5deg) rotateX(28deg) skewX(-4deg);
+	    -ms-transform: rotate(6.5deg) rotateX(28deg) skewX(-4deg);
+	     -o-transform: rotate(6.5deg) rotateX(28deg) skewX(-4deg);
+	        transform: rotate(6.5deg) rotateX(28deg) skewX(-4deg);
+	
+	-webkit-transition: -webkit-transform .1s ease-out; /* only WebKit because of performance */
+    }
+
+#wrapper:hover p:nth-child(1) {
+	font-size: 9em;
+	text-shadow: 	#fff 0 0 10px, 
+					#fff 0 4px 3px, #ddd 0 9px 3px,  #ccc 0 12px 1px, 
+					rgba(0,0,0,0.2) 0 14px 5px, rgba(0,0,0,0.1) 0 20px 10px,
+					rgba(0,0,100,0.2) 0 15px 80px;
+	text-indent: 0.3em;
+    }
+
+#wrapper:hover p:nth-child(2) {
+	font-size: 10em;
+	text-shadow: 	#fff 0 0 1px, 
+					#eee 0 4px 3px, #ddd 0 9px 3px,  #ccc 0 12px 1px, 
+					rgba(0,0,0,0.2) 0 14px 3px, rgba(0,0,0,0.1) 0 20px 10px,
+					rgba(0,0,100,0.2) 0 15px 80px;
+    }
+
+#wrapper:hover p:nth-child(3) {
+	font-size: 11em;
+	text-shadow: 	#fff 0 0 2px, 
+					#fff 0 4px 5px, #ddd 0 9px 5px,  #ccc 0 12px 10px, 
+					rgba(0,0,0,0.2) 0 14px 5px, rgba(0,0,0,0.1) 0 20px 10px,
+					rgba(0,0,100,0.2) 0 15px 80px;
+    }
+
+
+/* Middle ------------------------------------------------------ */
+
+#wrapper p:nth-child(2):hover {
+	text-shadow: 	#fff 0 -5px 1px, 
+					#eee 0 -1px 3px, #ddd 0 4px 3px,  #ccc 0 7px 1px, 
+					rgba(0,0,0,0.2) 0 15px 5px, rgba(0,0,0,0.1) 0 20px 10px,
+					rgba(0,0,0,0.2) 0 15px 80px;
+    }
+    
+#wrapper p:nth-child(2):active {
+	text-shadow: 	rgba(0,0,0,0.2) 0 14px 5px, rgba(0,0,0,0.1) 0 20px 10px,
+					rgba(0,0,0,0.2) 0 15px 80px;
+    }
+
+#wrapper p::selection {
+	background-color: red;
+    }
+

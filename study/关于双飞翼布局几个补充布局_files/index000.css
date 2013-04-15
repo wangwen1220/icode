@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+#header{ height:50px; background:#EEEEEE}
+#header h1{ font-size:24px; text-align:center; line-height:1.5}
+#footer{height:50px; background:#EEEEEE;text-align:center; line-height:50px; }
+.grid-c{height: 50px; padding:5px; border:1px solid #CCCCCC;   }
+.grid-c3g-s5e6,.grid-c3h-s5e6,.grid-c3i-s5e6,.grid-c3j-s5e6,.grid-c3k-s12e12,.grid-c3l-s12e12,.grid-c3m-s6e24,.grid-c3m-s24e6{margin-top:10px;}
+.main-wrap{background:#FFF333;height:190px;}
+.col-sub{background:#DBEDF6;height:90px;}
+.col-extra{background:#EAFBEA;height:90px;}
+
+.main-wrap-a{background:#FFF333;height:90px;}
+.col-sub{background:#DBEDF6;height:90px;}
+.col-extra{background:#EAFBEA;height:90px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

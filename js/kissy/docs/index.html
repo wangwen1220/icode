@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KISSY v1.3rc Documentation</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="fragment" content="!">
+
+  
+
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+  <link rel="stylesheet" href="resources/css/app.css" type="text/css" />
+  <link rel="stylesheet" href="resources/prettify/prettify.css" type="text/css" />
+  <script type="text/javascript">
+  (function(){
+    var protocol = (document.location.protocol === "https:") ? "https:" : "http:";
+    document.write("<link href='"+protocol+"//fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css' />");
+  })();
+  </script>
+
+  <script type="text/javascript" src="extjs/ext-all.js"></script>
+  <script type="text/javascript" src="data.js"></script>
+
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="resources/prettify/prettify.js"></script>
+
+  
+
+</head>
+<body id="ext-body">
+
+  <div id="loading"><span class="title"></span><span class="logo"></span></div>
+
+  <div id="header-content">KISSY v1.3rc Documentation</div>
+  
+          <div id='categories-content' style='display:none'>
+            <div class='section'>
+<h1>KISSY</h1>
+<div class='left-column'>
+<h3>Anim</h3>
+<ul class='links'>
+<li><a href="#!/api/KISSY.Anim" rel="KISSY.Anim" class="docClass">KISSY.Anim</a></li>
+<li><a href="#!/api/KISSY.Anim.Easing" rel="KISSY.Anim.Easing" class="docClass">KISSY.Anim.Easing</a></li>
+</ul>
+<h3>Component</h3>
+<ul class='links'>
+<li><a href="#!/api/KISSY.Component" rel="KISSY.Component" class="docClass">KISSY.Component</a></li>
+<li><a href="#!/api/KISSY.Component.Container" rel="KISSY.Component.Container" class="docClass">KISSY.Component.Container</a></li>
+<li><a href="#!/api/KISSY.Component.Controller" rel="KISSY.Component.Controller" class="docClass">KISSY.Component.Controller</a></li>
+<li><a href="#!/api/KISSY.Component.Extension.Align" rel="KISSY.Component.Extension.Align" class="docClass">KISSY.Component.Extension.Align</a></li>
+<li><a href="#!/api/KISSY.Component.Extension.ContentBox" rel="KISSY.Component.Extension.ContentBox" class="docClass">KISSY.Component.Extension.ContentBox</a></li>
+<li><a href="#!/api/KISSY.Component.Extension.Position" rel="KISSY.Component.Extension.Position" class="docClass">KISSY.Component.Extension.Position</a></li>
+<li><a href="#!/api/KISSY.Component.Manager" rel="KISSY.Component.Manager" class="docClass">KISSY.Component.Manager</a></li>
+<li><a href="#!/api/KISSY.Component.UIBase" rel="KISSY.Component.UIBase" class="docClass">KISSY.Component.UIBase</a></li>
+</ul>
+<h3>DD</h3>
+<ul class='links'>
+<li><a href="#!/api/KISSY.DD.Constrain" rel="KISSY.DD.Constrain" class="docClass">KISSY.DD.Constrain</a></li>
+<li><a href="#!/api/KISSY.DD.DDM" rel="KISSY.DD.DDM" class="docClass">KISSY.DD.DDM</a></li>
+<li><a href="#!/api/KISSY.DD.Draggable" rel="KISSY.DD.Draggable" class="docClass">KISSY.DD.Draggable</a></li>
+<li><a href="#!/api/KISSY.DD.Draggable.DropMode" rel="KISSY.DD.Draggable.DropMode" class="docClass">KISSY.DD.Draggable.DropMode</a></li>
+<li><a href="#!/api/KISSY.DD.DraggableDelegate" rel="KISSY.DD.DraggableDelegate" class="docClass">KISSY.DD.DraggableDelegate</a></li>
+<li><a href="#!/api/KISSY.DD.Droppable" rel="KISSY.DD.Droppable" class="docClass">KISSY.DD.Droppable</a></li>
+<li><a href="#!/api/KISSY.DD.DroppableDelegate" rel="KISSY.DD.DroppableDelegate" class="docClass">KISSY.DD.DroppableDelegate</a></li>
+<li><a href="#!/api/KISSY.DD.Proxy" rel="KISSY.DD.Proxy" class="docClass">KISSY.DD.Proxy</a></li>
+<li><a href="#!/api/KISSY.DD.Scroll" rel="KISSY.DD.Scroll" class="docClass">KISSY.DD.Scroll</a></li>
+</ul>
+</div>
+<div class='middle-column'>
+<h3>DOM</h3>
+<ul class='links'>
+<li><a href="#!/api/KISSY.DOM" rel="KISSY.DOM" class="docClass">KISSY.DOM</a></li>
+<li><a href="#!/api/KISSY.DOM.NodeType" rel="KISSY.DOM.NodeType" class="docClass">KISSY.DOM.NodeType</a></li>
+</ul>
+<h3>Event</h3>
+<ul class='links'>
+<li><a href="#!/api/KISSY.Event" rel="KISSY.Event" class="docClass">KISSY.Event</a></li>
+<li><a href="#!/api/KISSY.Event.CustomEventObject" rel="KISSY.Event.CustomEventObject" class="docClass">KISSY.Event.CustomEventObject</a></li>
+<li><a href="#!/api/KISSY.Event.DOMEventObject" rel="KISSY.Event.DOMEventObject" class="docClass">KISSY.Event.DOMEventObject</a></li>
+<li><a href="#!/api/KISSY.Event.Gesture" rel="KISSY.Event.Gesture" class="docClass">KISSY.Event.Gesture</a></li>
+<li><a href="#!/api/KISSY.Event.KeyCodes" rel="KISSY.Event.KeyCodes" class="docClass">KISSY.Event.KeyCodes</a></li>
+<li><a href="#!/api/KISSY.Event.Target" rel="KISSY.Event.Target" class="docClass">KISSY.Event.Target</a></li>
+</ul>
+<h3>Overlay</h3>
+<ul class='links'>
+<li><a href="#!/api/KISSY.Overlay" rel="KISSY.Overlay" class="docClass">KISSY.Overlay</a></li>
+<li><a href="#!/api/KISSY.Overlay.Dialog" rel="KISSY.Overlay.Dialog" class="docClass">KISSY.Overlay.Dialog</a></li>
+<li><a href="#!/api/KISSY.Overlay.Extension.Close" rel="KISSY.Overlay.Extension.Close" class="docClass">KISSY.Overlay.Extension.Close</a></li>
+<li><a href="#!/api/KISSY.Overlay.Extension.Drag" rel="KISSY.Overlay.Extension.Drag" class="docClass">KISSY.Overlay.Extension.Drag</a></li>
+<li><a href="#!/api/KISSY.Overlay.Extension.Loading" rel="KISSY.Overlay.Extension.Loading" class="docClass">KISSY.Overlay.Extension.Loading</a></li>
+<li><a href="#!/api/KISSY.Overlay.Extension.Mask" rel="KISSY.Overlay.Extension.Mask" class="docClass">KISSY.Overlay.Extension.Mask</a></li>
+<li><a href="#!/api/KISSY.Overlay.Extension.Resize" rel="KISSY.Overlay.Extension.Resize" class="docClass">KISSY.Overlay.Extension.Resize</a></li>
+<li><a href="#!/api/KISSY.Overlay.Extension.StdMod" rel="KISSY.Overlay.Extension.StdMod" class="docClass">KISSY.Overlay.Extension.StdMod</a></li>
+<li><a href="#!/api/KISSY.Overlay.Popup" rel="KISSY.Overlay.Popup" class="docClass">KISSY.Overlay.Popup</a></li>
+</ul>
+</div>
+<div class='right-column'>
+<h3>Resizable</h3>
+<ul class='links'>
+<li><a href="#!/api/KISSY.Resizable" rel="KISSY.Resizable" class="docClass">KISSY.Resizable</a></li>
+<li><a href="#!/api/KISSY.Resizable.HANDLER" rel="KISSY.Resizable.HANDLER" class="docClass">KISSY.Resizable.HANDLER</a></li>
+</ul>
+<h3>Uri</h3>
+<ul class='links'>
+<li><a href="#!/api/KISSY.Uri" rel="KISSY.Uri" class="docClass">KISSY.Uri</a></li>
+<li><a href="#!/api/KISSY.Uri.Query" rel="KISSY.Uri.Query" class="docClass">KISSY.Uri.Query</a></li>
+</ul>
+<h3>Others...</h3>
+<ul class='links'>
+<li><a href="#!/api/KISSY" rel="KISSY" class="docClass">KISSY</a></li>
+<li><a href="#!/api/KISSY.Base" rel="KISSY.Base" class="docClass">KISSY.Base</a></li>
+<li><a href="#!/api/KISSY.Cookie" rel="KISSY.Cookie" class="docClass">KISSY.Cookie</a></li>
+<li><a href="#!/api/KISSY.DataLazyload" rel="KISSY.DataLazyload" class="docClass">KISSY.DataLazyload</a></li>
+<li><a href="#!/api/KISSY.Defer" rel="KISSY.Defer" class="docClass">KISSY.Defer</a></li>
+<li><a href="#!/api/KISSY.IO" rel="KISSY.IO" class="docClass">KISSY.IO</a></li>
+<li><a href="#!/api/KISSY.JSON" rel="KISSY.JSON" class="docClass">KISSY.JSON</a></li>
+<li><a href="#!/api/KISSY.NodeList" rel="KISSY.NodeList" class="docClass">KISSY.NodeList</a></li>
+<li><a href="#!/api/KISSY.Path" rel="KISSY.Path" class="docClass">KISSY.Path</a></li>
+<li><a href="#!/api/KISSY.Promise" rel="KISSY.Promise" class="docClass">KISSY.Promise</a></li>
+<li><a href="#!/api/KISSY.UA" rel="KISSY.UA" class="docClass">KISSY.UA</a></li>
+</ul>
+</div>
+<div style='clear:both'></div>
+</div>
+<div class='section'>
+<h1>Others...</h1>
+<div class='left-column'>
+<h3>Others...</h3>
+<ul class='links'>
+<li><a href="#!/api/Array" rel="Array" class="docClass">Array</a></li>
+<li><a href="#!/api/Boolean" rel="Boolean" class="docClass">Boolean</a></li>
+<li><a href="#!/api/Date" rel="Date" class="docClass">Date</a></li>
+<li><a href="#!/api/Function" rel="Function" class="docClass">Function</a></li>
+<li><a href="#!/api/Number" rel="Number" class="docClass">Number</a></li>
+<li><a href="#!/api/Object" rel="Object" class="docClass">Object</a></li>
+<li><a href="#!/api/RegExp" rel="RegExp" class="docClass">RegExp</a></li>
+<li><a href="#!/api/String" rel="String" class="docClass">String</a></li>
+</ul>
+</div>
+<div class='middle-column'>
+</div>
+<div class='right-column'>
+</div>
+<div style='clear:both'></div>
+</div>
+        </div>
+
+  
+  <div id='footer-content' style='display: none'>Generated with <a href='https://github.com/senchalabs/jsduck'>JSDuck</a> 4.3.2.</div>
+
+  
+
+</body>
+</html>

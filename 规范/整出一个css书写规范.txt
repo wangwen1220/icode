@@ -1,0 +1,191 @@
+整出一个css书写规范
+
+上一篇 / 下一篇  2007-11-28 17:32:00 / 个人分类：网页设计 
+查看( 194 ) / 评论( 0 ) / 评分( 0 / 0 ) 
+一、 基本书写规范　　
+
+1、所有的CSS的尽量采用外部调用
+　　 <LINK href="style/style.css" rel="stylesheet" type="text/css">
+　　
+　　书写时重定义的最先，伪类其次，自定义最后（其中a:link a:visited a:hover a:actived 要按照顺序写）便于自己和他人阅读。
+　　
+　　为了保证不同浏览器上字号保持一致，字号建议用点数pt和像素px来定义，pt一般使用中文宋体的9pt和11pt，px一般使用中文宋体12pt 和14.7px 这是经过优化的字号，黑体字或者宋体字加粗时，一般选用11pt和14.7px 的字号比较合适。
+　　
+2、CSS推荐模板:
+　　
+　　<style type="text/css">
+　　<!—
+body { font-size:9pt; font-family:Arial, Helvetica, sans-serif; color:#333333; text-align:center; margin:0px;}
+ul { margin:auto; }
+img { border:0px; }
+a { font-size:9pt; text-decoration:none;color:#FFFFFF; }
+a:hover { font-size:9pt; text-decoration:underline; color:#990000; }
+a.1 { font-size: 9pt; color: #3366cc; text-decoration: none}
+a.1:hover { font-size: 9pt; color: #FF9900; text-decoration: none}
+
+.colorblue,colorblue:hover { color:#003366 ;}
+.blue { font-family: "宋体"; font-size: 9pt; line-height: 20px; color: #0099FF; letter-spacing: 5em}
+
+.colorRed,a.colorRed:hover{      color: #FF0000; }
+.colorLime,a.colorLime:hover{    color: #00FF00; }
+.colorGreen,a.colorGreen:hover{    color: #008000; }
+.colorBlue,a.colorBlue:hover{    color: #0000FF; }
+.colorOrange,a.colorOrange:hover{  color: #FFA500; }
+　　-->
+　　</style>
+　　
+　　
+　　为了保证浏览器的兼容性，必须设置页面背景<body bgcolor="#FFFFFF">
+
+3、其中注释写法，例：/*header begin!*/
+
+
+二、CSS命名参考
+
+1、常用的CSS命名规则：
+头：header
+内容：content/container
+尾：footer
+导航：nav
+侧栏：sidebar
+栏目：column
+
+2、直观命名
+
+当在设计Web页面以及需要对一个div进行标识的时候，最自然的想法就是使用可以描述元素所在页面位置的词汇来对其命名。这种方法使得类以及id的名称如下面所示：
+
+自上而下小组：top-panel
+
+横向：horizontal-nav
+
+左面：left-side
+
+中心-栏目：center-column
+
+右面：right-col
+
+这些是CSS以及XHTML类和id的有效命名方式。这些词汇简单并且能够使人顾名思义，因此满足了标识页面元素以及相应的CSS样式的需要。
+
+但问题是这样的名称同页面内容的特定表达方式相关联。这些命名参考了某种特定页面布局中的页面元素位置，因此在这样的布局之外使用就会显得不合适甚至造成理解混乱。同时，这些命名没有涉及文档内容的结构。因此，下面给出了对CSS类以及ID命名更好的方法。
+
+3、结构化命名
+
+结构化的标记意味着表达方式/位置信息同内容的完全分离——这其中包括出现在标记（markup）中的类和id名称。
+
+有标记的相关信息都是用来描述文档的结构而不是外观。这样的特点使得我们可以通过简单的改变CSS的方式来对不同外观格式下的内容（content）以及标记（markup）进行重用。当你理解这种方式时，很容易就可以发现采用页面位置来为类以及id命名的方式在处理如音频（audio）等外观格式上显得非常不合适。因此，应当根据在文档中的使用目的而非出现位置来对类以及id进行结构化命名。
+
+可以按照如下所示的结构化方式来对类以及id名称命名：
+
+顶部抢眼部分：branding
+
+导航部分：main-nav
+
+主要内容部分：main-content
+
+这些名字同直观命名方式一样非常易懂，但他们描述了页面元素的作用而非位置。这使得代码更加符合使用纯粹的结构化标记（structural markup）的初衷，即开发人员可以在不改变标记的情况下对各种各样媒体下的显示格式进行处理。
+
+即使你不打算在其他的媒体上对Web页面进行格式修改，使用结构化命名方式还可以帮助你在日后的站点升级或重新设计中更为轻松。例如，结构化命名避免了当一个div同id right-column移动到页面左边后所带来的混乱。对div sidebar的采用这样的命名方式就显得更加适当，因为无论它出现在页面的哪一边，这个名字仍然对开发人员来说直观易懂。
+
+4、惯例
+
+Andy Clarke分析了40份由推崇标准化Web设计理念的开发人员所设计的Web站点的源代码。尽管类以及id名称很不统一，但是还是发现了一些频繁出现的常用名称。这里给出了最常用类/id名称的示例列表：
+
+header
+
+content
+
+nav
+
+sidebar
+
+footer
+
+如果要查看完整的列表，可以看看最常见命名惯例表
+
+这些常见的类以及id名称是否标志着一种标准的诞生或是普遍接受惯例的形成呢？尽管这是我所希望的，但我并不这么认为。我的确希望能够看见一整套对于我们每天都可以看到的常用页面元素的命名标准。同时，使用标准化的命名方式可以使得寻找页面元素以及对Web站点升级带来方便，尤其当需要在由不同开发人员在不同时间所开发站点中换来换去工作的时候。
+
+review:
+
+大的布局div可以以外观的方式命名(如header,footer)，其他的我觉得还是应该以描述所含内容的标准来命名（如menu，news）
+
+5、自定义命名：
+
+根据w3c网站上给出的,最好是用意义命名
+比如：是重要的新闻高亮显示（像红色）
+有两种
+.red{color:red}
+.important-news{color:red}
+很显然第二种传达的意义更加明确,所以尽量不要用意义不明确的作为自己自定义的名字
+
+
+
+三、CSS样式书写顺序
+
+1、显示属性
+* display * list-style * position * float * clear
+
+2、自身属性
+* width * height * margin * padding * border * background
+
+3、文本属性
+* color * font * text-decoration * text-align
+* vertical-align * white-space * other text * content
+
+四、修正IE5解释容器宽度的方法
+
+E 6.0 Firefox Opera等是
+真实宽度=width+padding+border+margin
+IE5.X
+真实宽度=width-padding-border-margin
+
+方法1.
+div.content {
+width:400px; //这个是错误的width(对于ie5来说是正确的），所有浏览器都读到了
+voice-family: "\"}\""; //IE5.X/win忽略了"\"}\""后的内容
+voice-family:inherit;
+width:300px; //包括IE6/win在内的部分浏览器读到这句，新的数值(300px)覆盖掉了旧的
+}
+
+方法2.
+div.content {
+width:400px;
+}
+html>body .content { //html>body是CSS2的写法
+width:300px; //支持CSS2该写法的浏览器(非IE5)有幸读到了这一句
+}
+
+方法3.
+div.content {
+width:300px !important; //这个是正确的width，大部分支持!important标记的浏览器使用这里的数值
+width(空格)/**/:400px; //IE6/win不解析这句，所以IE6/win仍然认为width的值是300px；而IE5.X/win读到这句，新的数值(400px)覆盖掉了旧的，因为!important标记对他们不起作用
+}
+
+五、修正iE双倍计算容器内紧靠浮动元素的边距
+
+iE会双倍计算容器内紧靠浮动元素的边距
+即：容器A里有一浮动元素B,哪么容器A与元素B相临的其它元素(c)在ie里显示时，c的边距会被重复计算。
+我们要想解这决这个问题有几中办法：
+>>>>>>>>
+>>>>>>>
+方法１：
+
+我们想要c的正确左边距是12px;
+.left{
+margin-left:6px;
+}
+html>body.left{
+margin-left:12px;
+}
+“>”符号ie不识别，ff、opera可以识别，意思是说html子标签下的body标签里面的left的margin-left为12px;因为ie不识别，就跳过，ff、opera可以识别，后定义的属性就覆盖先前定义的
+left{
+margin-left:6px;
+margin-left:12px;!important;
+}
+!important指定样式规则的应用优先级，但这个我特性ie不支持，但其它标准的浏览器支持
+-------------------------------------------------------------------------------------------------------------
+方法３：
+
+.left{
+display:inline:
+}
+还没有时候验证。

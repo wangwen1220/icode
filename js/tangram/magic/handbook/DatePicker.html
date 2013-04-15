@@ -1,0 +1,280 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns=http://www.w3.org/1999/xhtml>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="tangram-fe" />
+		<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0;"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<style>
+			body{font-size:14px;font-family:'微软雅黑'}
+		</style>
+		<title>Magic - 离线API</title>
+	</head>
+	<body>
+		<h1>Magic离线文档 -- 日历</h1>
+		<h2>日历</h2>
+		<p>
+			通过展示日历方便使用者快速填写日期，多用于需要填写日期的input表单输入控件。
+		</p>
+
+		<h2>日历插件</h2>
+
+				<h3>title</h3>
+		<p>
+			将年份和月份做成select控件，用户可以直接选择年份和月份
+		</p>
+				<h2>参考手册</h2>
+		
+		<dl>
+			<dt><h3>参数配置</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>					
+							<dt><strong>options.format </strong>: String</dt>
+							<dd>输出日期的格式，默认yyyy-MM-dd</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.language </strong>: String</dt>
+							<dd>当前语言，默认zh-CN</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.popupOptions </strong>: Object</dt>
+							<dd>弹出层的配置项</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.popupOptions.hideOnEscape </strong>: Boolean</dt>
+							<dd>在用户按[ESC]键时是否隐藏当前弹出层，默认true</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.popupOptions.offsetX </strong>: Number</dt>
+							<dd>定位时的偏移量，X方向，默认0</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.popupOptions.offsetY </strong>: Number</dt>
+							<dd>定位时的偏移量，Y方向，默认0</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.calendarOptions </strong>: Object</dt>
+							<dd>日历的配置项</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.calendarOptions.weekStart </strong>: String</dt>
+							<dd>定义一周的第一天取值:&#039;Mon&#039;|&#039;Tue&#039;|&#039;Web&#039;|&#039;Thu&#039;|&#039;Fri&#039;|&#039;Sat&#039;|&#039;Sun&#039;，默认&#039;Sun&#039;</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.calendarOptions.initDate </strong>: Date</dt>
+							<dd>初始化日历的日期，默认为new Date()</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.calendarOptions.highlightDates </strong>: Array</dt>
+							<dd>需要高亮的日期或者日期区间，格式:[date, {start:date, end:date}, date, date...]，默认[]</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.calendarOptions.disabledDates </strong>: Array</dt>
+							<dd>不可用的日期或者日期区间，格式:[date, {start:date, end:date}, date, date...]，默认[]</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.title.enable </strong>: Boolean</dt>
+							<dd>插件开关，默认 true</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+				<dl>
+			<dt><h3>组件方法</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>
+							<dt>show</dt>
+							<dd>
+								<p>显示日历</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>hide</dt>
+							<dd>
+								<p>隐藏日历</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getDate</dt>
+							<dd>
+								<p>获取当前日期</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getSelectedDate</dt>
+							<dd>
+								<p>获取当前选中日期</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getElement</dt>
+							<dd>
+								<p>获得DatePicker组件结构里的 HtmlElement对象</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>name</strong>: {String}</p>
+														<p style="text-indent: 24px;">可选的值包括：calendar(calendar节点)</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{HtmlElement}</dt>									
+											<dd>
+												<p>得到的 HtmlElement 对象</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getElements</dt>
+							<dd>
+								<p>取得所有 ui 模块对应的 dom element 对象</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Object}</dt>									
+											<dd>
+												<p>取得对象的集合</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+
+		<dl>
+			<dt><h3>组件事件</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>
+							<dt>titlerender</dt>
+							<dd>
+								<p>年份和月份select控件渲染完成后触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onselectdate</dt>
+							<dd>
+								<p>选中某个日期时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>options</strong>: {Object}</p>
+														<p style="text-indent: 24px;">自定义事件参数</p>
+													</li>
+																										<li>
+														<p><strong>options.date</strong>: {Date}</p>
+														<p style="text-indent: 24px;">选中的日期</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onshow</dt>
+							<dd>
+								<p>日历渲染完成</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onhide</dt>
+							<dd>
+								<p>隐藏日历</p>
+																							</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+	</body>
+</html>

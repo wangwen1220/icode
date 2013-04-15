@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Validform - 一行代码搞定整站的表单验证！- Jquery表单验证插件</title>
+<link rel="stylesheet" href="Validform%20-%20%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E6%90%9E%E5%AE%9A%E6%95%B4%E7%AB%99%E7%9A%84%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%EF%BC%81-%20Jquery%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%E6%8F%92%E4%BB%B6_files/style.css" type="text/css" media="all">
+<link type="image/x-icon" href="http://validform.rjboy.cn/favicon.ico" rel="shortcut icon">
+<link rel="pingback" href="http://validform.rjboy.cn/xmlrpc.php">
+ 
+<link rel="alternate" type="application/rss+xml" title="Validform - 一行代码搞定整站的表单验证！- Jquery表单验证插件 » Feed" href="http://validform.rjboy.cn/?feed=rss2">
+<link rel="alternate" type="application/rss+xml" title="Validform - 一行代码搞定整站的表单验证！- Jquery表单验证插件 » 评论 Feed" href="http://validform.rjboy.cn/?feed=comments-rss2">
+<link rel="alternate" type="application/rss+xml" title="Validform - 一行代码搞定整站的表单验证！- Jquery表单验证插件 » Validform 分类目录Feed" href="http://validform.rjboy.cn/?feed=rss2&amp;cat=1">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://validform.rjboy.cn/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://validform.rjboy.cn/wp-includes/wlwmanifest.xml"> 
+<link rel="index" title="Validform - 一行代码搞定整站的表单验证！- Jquery表单验证插件" href="http://validform.rjboy.cn/">
+<meta name="generator" content="WordPress 2.9.2">
+
+<link rel="stylesheet" href="Validform%20-%20%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E6%90%9E%E5%AE%9A%E6%95%B4%E7%AB%99%E7%9A%84%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%EF%BC%81-%20Jquery%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%E6%8F%92%E4%BB%B6_files/wp-syntax.css" type="text/css" media="screen">
+</head>
+
+<body class="archive category category-validform">
+<div class="header">
+    <div class="wraper">
+    	<h1><a href="http://validform.rjboy.cn/">Validform</a></h1>
+        <ul class="nav">
+            <li><a href="http://validform.rjboy.cn/">关于Validform</a></li>
+            <li><a href="http://validform.rjboy.cn/demo.html">Demo</a></li>
+            <li><a href="http://validform.rjboy.cn/document.html">文档</a></li>
+            <li><a href="http://validform.rjboy.cn/download.html">下载</a></li>
+            <li><a href="http://validform.rjboy.cn/help.html">帮助</a></li>
+            <li><a href="http://validform.rjboy.cn/?p=1" class=" fr">网友讨论</a></li>
+        </ul>
+    </div>
+</div>
+<div class="main post">
+    <div class="wraper">
+        <h2>使用<span>说明</span></h2>
+                
+        <p>你没看错，就一行代码搞定整站的表单验证！</p>
+
+<div class="wp_syntax"><table><tbody><tr><td class="line_numbers"><pre>1
+</pre></td><td class="code"><pre class="javascript" style="font-family:monospace;">$<span style="color: #009900;">(</span><span style="color: #3366CC;">".demoform"</span><span style="color: #009900;">)</span>.<span style="color: #660066;">Validform</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span></pre></td></tr></tbody></table></div>
+
+<p><strong>效果图：</strong><br>
+<img class="alignnone size-full wp-image-674" src="Validform%20-%20%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E6%90%9E%E5%AE%9A%E6%95%B4%E7%AB%99%E7%9A%84%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%EF%BC%81-%20Jquery%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%E6%8F%92%E4%BB%B6_files/webformvalidater_demo.png" alt="" height="476" width="520"></p>
+<p><strong>使用方法：</strong></p>
+
+<div class="wp_syntax"><table><tbody><tr><td class="line_numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+</pre></td><td class="code"><pre class="javascript" style="font-family:monospace;">$<span style="color: #009900;">(</span><span style="color: #3366CC;">".demoform"</span><span style="color: #009900;">)</span>.<span style="color: #660066;">Validform</span><span style="color: #009900;">(</span><span style="color: #009900;">{</span><span style="color: #006600; font-style: italic;">//所有可传入的参数如下：;</span>
+	btnSubmit<span style="color: #339933;">:</span><span style="color: #3366CC;">"#btn_sub"</span><span style="color: #339933;">,</span> 
+	btnReset<span style="color: #339933;">:</span><span style="color: #3366CC;">".btn_reset"</span><span style="color: #339933;">,</span>
+	tiptype<span style="color: #339933;">:</span><span style="color: #CC0000;">1</span><span style="color: #339933;">,</span> 
+	ignoreHidden<span style="color: #339933;">:</span><span style="color: #003366; font-weight: bold;">false</span><span style="color: #339933;">,</span>
+        dragonfly<span style="color: #339933;">:</span><span style="color: #003366; font-weight: bold;">false</span><span style="color: #339933;">,</span>
+	tipSweep<span style="color: #339933;">:</span><span style="color: #003366; font-weight: bold;">true</span><span style="color: #339933;">,</span>
+	showAllError<span style="color: #339933;">:</span><span style="color: #003366; font-weight: bold;">false</span><span style="color: #339933;">,</span>
+	postonce<span style="color: #339933;">:</span><span style="color: #003366; font-weight: bold;">true</span><span style="color: #339933;">,</span>
+	ajaxPost<span style="color: #339933;">:</span><span style="color: #003366; font-weight: bold;">true</span><span style="color: #339933;">,</span>
+	datatype<span style="color: #339933;">:</span><span style="color: #009900;">{</span>
+		<span style="color: #3366CC;">"*6-20"</span><span style="color: #339933;">:</span> <span style="color: #009966; font-style: italic;">/^[^\s]{6,20}$/</span><span style="color: #339933;">,</span>
+		<span style="color: #3366CC;">"z2-4"</span> <span style="color: #339933;">:</span> <span style="color: #009966; font-style: italic;">/^[\u4E00-\u9FA5\uf900-\ufa2d]{2,4}$/</span><span style="color: #339933;">,</span>
+		<span style="color: #3366CC;">"username"</span><span style="color: #339933;">:</span><span style="color: #003366; font-weight: bold;">function</span><span style="color: #009900;">(</span>gets<span style="color: #339933;">,</span>obj<span style="color: #339933;">,</span>curform<span style="color: #339933;">,</span>regxp<span style="color: #009900;">)</span><span style="color: #009900;">{</span>
+			<span style="color: #006600; font-style: italic;">//参数gets是获取到的表单元素值，obj为当前表单元素，curform为当前验证的表单，regxp为内置的一些正则表达式的引用;</span>
+			<span style="color: #003366; font-weight: bold;">var</span> reg1<span style="color: #339933;">=</span><span style="color: #009966; font-style: italic;">/^[\w\.]{4,16}$/</span><span style="color: #339933;">,</span>
+				reg2<span style="color: #339933;">=</span><span style="color: #009966; font-style: italic;">/^[\u4E00-\u9FA5\uf900-\ufa2d]{2,8}$/</span><span style="color: #339933;">;</span>
+&nbsp;
+			<span style="color: #000066; font-weight: bold;">if</span><span style="color: #009900;">(</span>reg1.<span style="color: #660066;">test</span><span style="color: #009900;">(</span>gets<span style="color: #009900;">)</span><span style="color: #009900;">)</span><span style="color: #009900;">{</span><span style="color: #000066; font-weight: bold;">return</span> <span style="color: #003366; font-weight: bold;">true</span><span style="color: #339933;">;</span><span style="color: #009900;">}</span>
+			<span style="color: #000066; font-weight: bold;">if</span><span style="color: #009900;">(</span>reg2.<span style="color: #660066;">test</span><span style="color: #009900;">(</span>gets<span style="color: #009900;">)</span><span style="color: #009900;">)</span><span style="color: #009900;">{</span><span style="color: #000066; font-weight: bold;">return</span> <span style="color: #003366; font-weight: bold;">true</span><span style="color: #339933;">;</span><span style="color: #009900;">}</span>
+			<span style="color: #000066; font-weight: bold;">return</span> <span style="color: #003366; font-weight: bold;">false</span><span style="color: #339933;">;</span>
+&nbsp;
+			<span style="color: #006600; font-style: italic;">//注意return可以返回true 或 false 或 字符串文字，true表示验证通过，返回字符串表示验证失败，字符串作为错误提示显示，返回false则用errmsg或默认的错误提示;</span>
+		<span style="color: #009900;">}</span><span style="color: #339933;">,</span>
+		<span style="color: #3366CC;">"phone"</span><span style="color: #339933;">:</span><span style="color: #003366; font-weight: bold;">function</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #009900;">{</span>
+			<span style="color: #006600; font-style: italic;">// 5.0 版本之后，要实现二选一的验证效果，datatype 的名称 不 需要以 "option_" 开头;	</span>
+		<span style="color: #009900;">}</span>
+	<span style="color: #009900;">}</span><span style="color: #339933;">,</span>
+	usePlugin<span style="color: #339933;">:</span><span style="color: #009900;">{</span>
+		swfupload<span style="color: #339933;">:</span><span style="color: #009900;">{</span><span style="color: #009900;">}</span><span style="color: #339933;">,</span>
+		datepicker<span style="color: #339933;">:</span><span style="color: #009900;">{</span><span style="color: #009900;">}</span><span style="color: #339933;">,</span>
+		passwordstrength<span style="color: #339933;">:</span><span style="color: #009900;">{</span><span style="color: #009900;">}</span><span style="color: #339933;">,</span>
+		jqtransform<span style="color: #339933;">:</span><span style="color: #009900;">{</span>
+			selector<span style="color: #339933;">:</span><span style="color: #3366CC;">"select,input"</span>
+		<span style="color: #009900;">}</span>
+	<span style="color: #009900;">}</span><span style="color: #339933;">,</span>
+	beforeCheck<span style="color: #339933;">:</span><span style="color: #003366; font-weight: bold;">function</span><span style="color: #009900;">(</span>curform<span style="color: #009900;">)</span><span style="color: #009900;">{</span>
+		<span style="color: #006600; font-style: italic;">//在表单提交执行验证之前执行的函数，curform参数是当前表单对象。</span>
+		<span style="color: #006600; font-style: italic;">//这里明确return false的话将不会继续执行验证操作;	</span>
+	<span style="color: #009900;">}</span><span style="color: #339933;">,</span>
+	beforeSubmit<span style="color: #339933;">:</span><span style="color: #003366; font-weight: bold;">function</span><span style="color: #009900;">(</span>curform<span style="color: #009900;">)</span><span style="color: #009900;">{</span>
+		<span style="color: #006600; font-style: italic;">//在验证成功后，表单提交前执行的函数，curform参数是当前表单对象。</span>
+		<span style="color: #006600; font-style: italic;">//这里明确return false的话表单将不会提交;	</span>
+	<span style="color: #009900;">}</span><span style="color: #339933;">,</span>
+	callback<span style="color: #339933;">:</span><span style="color: #003366; font-weight: bold;">function</span><span style="color: #009900;">(</span>data<span style="color: #009900;">)</span><span style="color: #009900;">{</span>
+		<span style="color: #006600; font-style: italic;">//返回数据data是json格式，{"info":"demo info","status":"y"}</span>
+		<span style="color: #006600; font-style: italic;">//info: 输出提示信息;</span>
+		<span style="color: #006600; font-style: italic;">//status: 返回提交数据的状态,是否提交成功。如可以用"y"表示提交成功，"n"表示提交失败，在ajax_post.php文件返回数据里自定字符，主要用在callback函数里根据该值执行相应的回调操作;</span>
+		<span style="color: #006600; font-style: italic;">//你也可以在ajax_post.php文件返回更多信息在这里获取，进行相应操作；</span>
+&nbsp;
+		<span style="color: #006600; font-style: italic;">//这里执行回调操作;</span>
+		<span style="color: #006600; font-style: italic;">//注意：如果不是ajax方式提交表单，传入callback，这时data参数是当前表单对象，回调函数会在表单验证全部通过后执行，然后判断是否提交表单，如果callback里明确return false，则表单不会提交，如果return true或没有return，则会提交表单。</span>
+	<span style="color: #009900;">}</span>
+<span style="color: #009900;">}</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span>
+&nbsp;
+Validform对象的方法和属性：
+tipmsg：自定义提示信息，通过修改Validform对象的这个属性值来让同一个页面的不同表单使用不同的提示文字；
+dataType：获取内置的一些正则；
+eq<span style="color: #009900;">(</span>n<span style="color: #009900;">)</span>：获取Validform对象的第n个元素<span style="color: #339933;">;</span>
+ajaxPost<span style="color: #009900;">(</span>flag<span style="color: #339933;">,</span>sync<span style="color: #009900;">)</span>：以ajax方式提交表单。flag为<span style="color: #003366; font-weight: bold;">true</span>时，跳过验证直接提交，sync为<span style="color: #003366; font-weight: bold;">true</span>时将以同步的方式进行ajax提交；
+abort<span style="color: #009900;">(</span><span style="color: #009900;">)</span>：终止ajax的提交；
+submitForm<span style="color: #009900;">(</span>flag<span style="color: #009900;">)</span>：以参数里设置的方式提交表单，flag为<span style="color: #003366; font-weight: bold;">true</span>时，跳过验证直接提交；
+resetForm<span style="color: #009900;">(</span><span style="color: #009900;">)</span>：重置表单；
+resetStatus<span style="color: #009900;">(</span><span style="color: #009900;">)</span>：重置表单的提交状态。传入了postonce参数的话，表单成功提交后状态会设置为<span style="color: #3366CC;">"posted"</span>，重置提交状态可以让表单继续可以提交；
+getStatus<span style="color: #009900;">(</span><span style="color: #009900;">)</span>：获取表单的提交状态，normal：未提交，posting：正在提交，posted：已成功提交过；
+setStatus<span style="color: #009900;">(</span><span style="color: #000066;">status</span><span style="color: #009900;">)</span>：设置表单的提交状态，可以设置normal，posting，posted三种状态，不传参则设置状态为posting，这个状态表单可以验证，但不能提交；
+ignore<span style="color: #009900;">(</span>selector<span style="color: #009900;">)</span>：忽略对所选择对象的验证；
+unignore<span style="color: #009900;">(</span>selector<span style="color: #009900;">)</span>：将ignore方法所忽略验证的对象重新获取验证效果；
+addRule<span style="color: #009900;">(</span>rule<span style="color: #009900;">)</span>：可以通过Validform对象的这个方法来给表单元素绑定验证规则；</pre></td></tr></tbody></table></div>
+
+<p><strong>参数说明：</strong> 【所有参数均为可选项】</p>
+<ul class="lireset2 mb22">
+<li>必须是表单对象执行Validform方法，示例中“.demoform”就是绑定在form元素上的class名称；</li>
+<li>btnSubmit：指定表单下的哪一个按钮触发表单提交事件，如果表单下有submit按钮可以省略。示例中“.btn_sub”是该表单下要绑定点击提交表单事件的按钮，程序会在btnSubmit所在表单下查找该对象；</li>
+<li>btnReset:”.btn_reset”,//可选项 .btn_reset是该表单下要绑定点击重置表单事件的按钮;</li>
+<li>tiptype:1, //可选项 1=&gt;pop box,2=&gt;side tip，默认为1，也可以传入一个function函数，自定义提示信息的显示方式（可以实现你想要的任何效果，具体参见demo页）;</li>
+<li>ignoreHidden:false,//可选项 true | false 默认为false，当为true时对:hidden的表单元素将不做验证;</li>
+<li>dragonfly:false,//可选项 true | false 默认false，当为true时，值为空时不做验证；</li>
+<li>tipSweep：可选项 true | false ，为true时提示信息将只会在表单提交时触发显示，各表单元素blur时不会被触发显示；</li>
+<li>showAllError：可选项 true | false，true：提交表单时所有错误提示信息都会显示，false：一碰到验证不通过的就停止检测后面的元素，只显示该元素的错误信息；</li>
+<li>postonce：指定是否开启网速慢时的二次提交防御，true开启，不指定则默认关闭；</li>
+<li>ajaxPost：使用ajax方式提交表单数据，可选值 true | false，默认false，将提交到action中指定的地址；</li>
+<li>datatype：传入自定义datatype类型，可以是正则，也可以是函数（函数内会传入一个参数），具体使用方法请参考demo页；</li>
+<li>usePlugin：目前已整合swfupload、datepicker、passwordstrength和jqtransform四个插
+件，在这里传入这些插件使用时需要传入的参数。datepicker在Validform内调用时另外扩展了几个比较实用的参数，具体请参考demo页；</li>
+<li>beforeCheck：在表单提交执行验证之前执行的函数，data参数获取到的是当前表单对象。</li>
+<li>beforeSubmit：在表单验证通过，提交表单数据之前执行的函数，data参数是当前表单对象。</li>
+<li>callback：在使用ajax提交表单数据时，数据提交后的回调函数。返回数据data是Json格式，{“info”:”demo 
+info”,”status”:”y”}，info: 输出提示信息，status: 
+返回提交数据的状态,是否提交成功，”y”表示提交成功，”n”表示提交失败，在ajax_post.php文件返回数据里自定字符，主要用在
+callback函数里根据该值执行相应的回调操作。你也可以在ajax_post.php文件返回更多信息在这里获取，进行相应操作；如果不是ajax
+方式提交表单，传入callback，这时data参数是当前表单对象，回调函数会在表单验证全部通过后执行，然后判断是否提交表单，如果
+callback里明确return false，则表单不会提交，如果return true或没有return，则会提交表单。</li>
+</ul>
+<p><strong>怎样给表单元素绑定验证类型？</strong><br>
+示例代码：</p>
+
+<div class="wp_syntax"><table><tbody><tr><td class="line_numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="code"><pre class="html" style="font-family:monospace;">&lt;!--ajax实时验证用户名--&gt;
+&lt;input type="text" value="" name="name" datatype="s5-16" ajaxurl="valid.php" nullmsg="请输入用户名！" errormsg="昵称至少5个字符,最多16个字符！" /&gt;
+&nbsp;
+&lt;!--密码--&gt;
+&lt;input type="password" value="" name="userpassword" datatype="*6-15" errormsg="密码范围在6~15位之间,不能使用空格！" /&gt;
+&lt;!--确认密码--&gt;
+&lt;input type="password" value="" name="userpassword2" datatype="*" recheck="userpassword" errormsg="您两次输入的账号密码不一致！" /&gt;
+&nbsp;
+&lt;!--默认提示文字--&gt;
+&lt;textarea tip="请在这里输入您的意见。" errormsg="很感谢您花费宝贵时间给我们提供反馈，请填写有效内容！"  datatype="s" altercss="gray" class="gray" name="msg" value=""&gt;请在这里输入您的意见。&lt;/textarea&gt;
+&nbsp;
+&lt;!--使用swfupload插件--&gt;
+&lt;input type="text" plugin="swfupload" class="inputxt" disabled="disabled" value=""&gt;
+&lt;input type="hidden" value="" pluginhidden="swfupload"&gt;
+&nbsp;
+&lt;!--使用passwordStrength插件--&gt;
+&lt;input type="password" errormsg="密码至少6个字符,最多18个字符！" datatype="*6-18" plugin="passwordStrength" class="inputxt" name="password" value=""&gt;
+&lt;div class="passwordStrength" style="display:none;"&gt;&lt;b&gt;密码强度：&lt;/b&gt; &lt;span&gt;弱&lt;/span&gt;&lt;span&gt;中&lt;/span&gt;&lt;span class="last"&gt;强&lt;/span&gt;&lt;/div&gt;
+&nbsp;
+&lt;!--使用DatePicker插件--&gt;
+&lt;input type="text" plugin="datepicker" class="inputxt" name="birthday" value=""&gt;</pre></td></tr></tbody></table></div>
+
+<p><strong>说明：</strong><br>
+凡要验证格式的元素均需添加datatype属性，datatype可选值内置有10类，用来指定不同的验证格式【如果还不能满足您的验证需求，可以传入
+自定义datatype，自定义datatype是一个非常强大的功能，有了这个基本可以实现你需要的任何验证需求，具体请参考demo页】。</p>
+<p><strong>datatype：</strong>* | *6-16 | n | n6-16 | s | s6-18 | p | m | e | url<br>
+*：检测是否有输入，可以输入任何字符，不留空即可通过验证；<br>
+*6-16：检测是否为6到16位任意字符；<br>
+n：数字类型；<br>
+n6-16：6到16位数字；<br>
+s：字符串类型；<br>
+s6-18：6到18位字符串；<br>
+p：验证是否为邮政编码；<br>
+m：手机号码格式；<br>
+e：email格式；<br>
+url：验证字符串是否为网址。<br>
+<span style="color: red;">注意radio，checkbox，select这三类datatype从5.0版本开始删除，可以给这三类表单元素绑定其他任何内置或自定义的datatype。radio和checkbox元素只需给该组的第一个元素绑定datatype属性即可。</span></p>
+<p><strong>其他的附加属性：</strong></p>
+<ul class="lireset2">
+<li>nullmsg：是指定没有填入内容时出现的提示信息，不指定默认是“请填入信息！”，另外当datatype为radio、checkbox或select时，因为这三种类型只要为空值就表示出错，提示errormsg所指定信息，所以这三类不需要绑定该属性；</li>
+<li>errormsg：是指定验证格式不符时出现的提示信息，不指定默认是“请输入正确信息！”；</li>
+<li>ignore：绑定ignore=”ignore”的表单元素，当有输入时会验证所填数据是否符合datatype所指定数据类型（格式不对不能通过验证），当没有输入数据时也可以通过验证；</li>
+<li>recheck：是用来指定两个表单元素值一致性检测的另外一个对象，赋给它另外一个对象的name属性值即可；</li>
+<li>tip：是指定表单元素的提示信息;指定后该元素会有focus时提示信息消去，没有输入内容blur时出现提示信息的效果，请参看demo页的“备注”效果；</li>
+<li>altercss：是指定有tip属性的元素默认提示文字显示时的样式，当该元素focus时程序会把这个样式去掉，blur时如果值为空或者跟提示文字一样则再加上该样式；</li>
+<li>ajaxurl：指定ajax实时验证的后台文件路径，给需要后台数据库验证信息的对象绑定该属性。注意该文件输出的内容就是前台显示的验证出错的反馈信息，<span style="color:red">如果验证通过请输出小写字母”y”</span>。后台页面如valid.php文件中可以用 $_POST["param"] 接收到值，Ajax中会POST过来变量param；</li>
+<li>plugin：指定需要使用的插件。</li>
+</ul>
+        
+                
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="wraper">
+        <p class="fl">Copyright © <a href="http://www.eloocor.com/" target="_blank">易罗客</a></p>
+        <p class="fr"><a href="http://www.rjboy.cn/" target="_blank">瑞金佬的前端路</a><b> | </b><a href="http://validform.rjboy.cn/">Validform</a><b> | </b><a href="http://www.rjboy.cn/?p=789" target="_blank">hScrollpane</a><b> | </b><a href="http://www.rjboy.cn/?p=708" target="_blank">Xslider</a></p>
+    </div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="Validform%20-%20%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E6%90%9E%E5%AE%9A%E6%95%B4%E7%AB%99%E7%9A%84%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%EF%BC%81-%20Jquery%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%E6%8F%92%E4%BB%B6_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try{
+var pageTracker = _gat._getTracker("UA-2920412-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body></html>

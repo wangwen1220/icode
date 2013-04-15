@@ -1,0 +1,21 @@
+推荐使用的元素
+
+ 1. 结构元素：blockquote, body, br, div, h1 - h6, head, hr, html, p
+ 2. 头部元素：base, link, meta, script, style, title
+ 3. 列表元素：ul, ol, li, dl, dt, dd
+ 4. 文本格式元素：a, abbr, acronym, address, bdo, cite, code, del, dfn, em, ins, kbd, noscript, pre, q, samp, small, span, strong, sub, sup, var
+ 5. 表单元素：button, fieldset, legend, form, input, label, optgroup, option, select, textarea
+ 6. 多媒体元素：area, img, map, object, param
+ 7. 表格元素：caption, col, colgroup, table, tbody, td, tfoot, th, thead, tr
+ 8. 窗体元素：iframe 
+
+不推荐使用的元素
+
+ 1. 结构元素：无
+ 2. 头部元素：无
+ 3. 列表元素：dir, menu
+ 4. 文本格式元素：b, basefont, big, blink, center, comment, font, i, marquee, nobr, plaintext, ruby, s, strike, u, wbr, xmp
+ 5. 表单元素：isindex
+ 6. 多媒体元素：applet, bgsound, embed, noembed
+ 7. 表格元素：无
+ 8. 窗体元素：frame, frameset, noframes

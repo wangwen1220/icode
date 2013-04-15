@@ -1,0 +1,381 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Slide Show 焦点图轮换 - 前端开发仓库</title>
+<meta name="keywords" content="jquery插件,jquery焦点图,jquery幻灯片">
+<meta name="description" content="一款基于jQuery的焦点图轮换插件，可自定义外观及调用参数，兼容主流浏览器。">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/code.css" rel="stylesheet">
+<style>
+/* 焦点图 水平滚动
+------------------------------ */
+.slide_x{overflow:hidden;position:relative;width:600px;height:280px;border:1px solid #777;background:#000;}
+.slide_x a{color:#eee;text-decoration:none;}
+.slide_x .box{overflow:hidden;position:relative;width:600px;height:280px;}
+.slide_x .list{overflow:hidden;width:9999px;}
+.slide_x .list li{float:left;position:relative;width:600px;}
+.slide_x .list img{_vertical-align:top;}
+.slide_x .list p{position:absolute;bottom:0;left:0;width:100%;height:24px;color:#eee;font:12px/24px "\5b8b\4f53";text-indent:12px;
+filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#99000000',endColorstr='#99000000');background:rgba(0,0,0,0.6);}
+.slide_x .btn{overflow:hidden;position:absolute;bottom:4px;right:6px;}
+.slide_x .btn li{float:left;width:16px;height:16px;margin:0 0 0 10px;border-radius:2px;background:#eee;color:#333;font:11px/16px Tahoma;text-align:center;cursor:pointer;}
+.slide_x .btn .selected{background:#f30;color:#fff;}
+.slide_x .minus,
+.slide_x .plus{position:absolute;top:110px;width:40px;height:50px;background-image:url(img/control.png);background-repeat:no-repeat;text-align:center;cursor:pointer;}
+.slide_x .minus{left:0;background-position:0 0;}
+.slide_x .plus{right:0;background-position:-40px 0;}
+.slide_x .minus:hover{background-position:0 -50px;}
+.slide_x .plus:hover{background-position:-40px -50px;}
+
+
+/* 焦点图 垂直滚动
+------------------------------ */
+.slide_y{overflow:hidden;position:relative;width:780px;height:420px;border:1px solid #777;}
+.slide_y .box{overflow:hidden;position:relative;width:780px;height:420px;background:#000;}
+.slide_y .list{overflow:hidden;height:9999px}
+.slide_y .list li{overflow:hidden;position:relative;width:780px;height:420px;_vertical-align:top;}
+.slide_y .list img{_vertical-align:top;}
+.slide_y .list:hover img{filter:alpha(opacity=70);opacity:0.7;}
+.slide_y .list:hover img:hover{filter:alpha(opacity=100);opacity:1;}
+.slide_y .btn{overflow:hidden;position:absolute;bottom:0;left:0;width:100%;height:20px;padding:5px 0;filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#99000000',endColorstr='#99000000');background:rgba(0,0,0,0.6);}
+.slide_y .btn li{float:left;width:20px;height:20px;margin:0 0 0 10px;border-radius:2px;background:#eee;color:#333;font:14px/20px Tahoma;text-align:center;cursor:pointer;}
+.slide_y .btn .selected{background:#f30;color:#fff;}
+
+
+/* 焦点图 透明过度
+------------------------------ */
+.slide_fade{overflow:hidden;position:relative;width:960px;height:370px;background:#bbb;}
+.slide_fade .box{overflow:hidden;position:relative;width:960px;height:270px;background:#000;z-index:4;}
+.slide_fade .box a{color:#fff;}
+.slide_fade .box a:hover{text-decoration:none;}
+.slide_fade .list{overflow:hidden;height:9999px;}
+.slide_fade .list li{position:relative;width:960px;height:270px;}
+.slide_fade .list img{_vertical-align:top;}
+.slide_fade .txt{cursor:pointer;position:absolute;top:20px;left:45px;font:14px/24px "\5fae\8f6f\96c5\9ed1";}
+.slide_fade .txt h3{font:40px/80px "\5fae\8f6f\96c5\9ed1";}
+.slide_fade .btn{position:absolute;bottom:0;left:0;height:97px;background:#fff;z-index:5;}
+.slide_fade .btn a{color:#555;text-decoration:none;}
+.slide_fade .btn li{overflow:hidden;float:left;width:150px;height:90px;margin:0 0 0 12px;padding-top:7px;color:#333;
+_margin:0 10px 0 0;_height:87px;}
+.slide_fade .btn li:first-child{margin-left:0;}
+.slide_fade .btn .selected{position:relative;top:-3px;border-top:3px solid #f32465;}
+.slide_fade .btn h3{padding:4px 0 0 0;font:12px/20px "\5b8b\4f53";text-indent:2px;}
+.slide_fade .btn p{color:#999;font:12px/20px "\5b8b\4f53";text-indent:2px;}
+.slide_fade .btn p a{color:#999;}
+.slide_fade .btn p a:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+<div id="header" class="header">
+	<p class="breadcrumb"><a href="../../">前端开发仓库</a> &raquo; <a href="../../jquery">jQuery</a> &raquo; <strong>Slide Show 焦点图轮换</strong></p>
+</div>
+<div class="content">
+	<h1>jQuery Slide Show 焦点图轮换 v2</h1>
+	<ul class="intro">
+		<li><em>·</em>基于jQuery v1.4.4</li>
+		<li><em>·</em>支持4种轮换方式</li>
+		<li><em>·</em>支持自定义切换事件</li>
+		<li><em>·</em>支持自定义渐变速度</li>
+		<li><em>·</em>支持自定义轮换时间</li>
+	</ul>
+	<div class="intro">
+		<p>注意事项：</p>
+		<p>1.内部会自动创建切换按钮元素，也可在外部直接创建，若外部已创建，内部将跳过此步骤；</p>
+		<p>2.展示图片未超过1张时，会隐藏切换按钮元素。</p>
+	</div>
+	<div class="intro">
+		<p><a class="source_download" href="version/jquery.slideshow_20120409_f3691859.rar">jQuery Slide Show 焦点图轮换</a></p>
+	</div>
+
+	<h2>【示例】</h2>
+	<div class="intro">
+		<!-- 焦点图 -->
+		<div id="slide_x" class="slide_x">
+			<div class="box">
+				<ul class="list">
+					<li><a href="#1"><img src="img/slide_1.jpg" width="600" height="280"></a><p>焦点图说明文字 111</p></li>
+					<li><a href="#2"><img src="img/slide_2.jpg" width="600" height="280"></a><p>焦点图说明文字 222</p></li>
+					<li><a href="#3"><img src="img/slide_3.jpg" width="600" height="280"></a><p>焦点图说明文字 333</p></li>
+					<li><a href="#4"><img src="img/slide_4.jpg" width="600" height="280"></a><p>焦点图说明文字 444</p></li>
+					<li><a href="#5"><img src="img/slide_5.jpg" width="600" height="280"></a><p>焦点图说明文字 555</p></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<h2>【settings 参数说明】（可选）</h2>
+	<div class="intro">
+		<table class="manual_table table_form">
+			<thead>
+				<tr>
+					<th width="80">名称</th>
+					<th width="120">默认值</th>
+					<th>说明</th>
+				</tr>
+			</thead>
+			<tr>
+				<td>events</td>
+				<td>"click"</td>
+				<td>触发按钮事件的方式</td>
+			</tr>
+			<tr>
+				<td>type</td>
+				<td>"x"</td>
+				<td>轮换效果类型。可设置为："x"|"y"|"fade"|"toggle"</td>
+			</tr>
+			<tr>
+				<td>start</td>
+				<td>0</td>
+				<td>首次展示序号</td>
+			</tr>
+			<tr>
+				<td>speed</td>
+				<td>800</td>
+				<td>切换速度（单位：毫秒）</td>
+			</tr>
+			<tr>
+				<td>time</td>
+				<td>5000</td>
+				<td>自动轮播间隔时间（单位：毫秒）</td>
+			</tr>
+			<tr>
+				<td>auto</td>
+				<td>true</td>
+				<td>是否自动轮播</td>
+			</tr>
+			<tr>
+				<td>btn</td>
+				<td>true</td>
+				<td>是否使用切换按钮</td>
+			</tr>
+			<tr>
+				<td>plus</td>
+				<td>false</td>
+				<td>是否使用 plus 按钮</td>
+			</tr>
+			<tr>
+				<td>minus</td>
+				<td>false</td>
+				<td>是否使用 minus 按钮</td>
+			</tr>
+		</table>
+	</div>
+
+<h2>【DOM 结构】</h2>
+<div class="example">
+<pre><code class="html">&lt;!-- 焦点图 --&gt;
+&lt;div id="element_id"&gt;
+	&lt;div class="box"&gt;
+		&lt;ul class="list"&gt;
+			&lt;li&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;/li&gt;
+			...
+			&lt;li&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+
+	&lt;!-- 内部自动创建的切换按钮元素 开始 --&gt;
+	&lt;ul class="btn"&gt;
+		&lt;li class="b_1"&gt;1&lt;/li&gt;
+		&lt;li class="b_2"&gt;2&lt;/li&gt;
+		...
+		&lt;li class="b_n"&gt;n&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;div class="plus"&gt;&lt;/div&gt;
+	&lt;div class="minus"&gt;&lt;/div&gt;
+	&lt;!-- 内部自动创建的切换按钮元素 结束 --&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+
+<h2>【JavaScript 调用方式】</h2>
+<div class="example">
+<pre><code class="js">// 直接调用
+$("#element_id").slideShow();
+
+// 自定义参数调用
+$("#element_id").slideShow({
+	events:"click",
+	type:"x",
+	speed:800,
+	time:5000,
+	auto:true,
+	btn:true,
+	plus:false,
+	minus:false
+});
+</code></pre>
+</div>
+
+	<h2>【更多示例】</h2>
+	<div class="example">
+		<blockquote>大模块展示</blockquote>
+		<!-- 焦点图 -->
+		<div id="slide_y" class="slide_y">
+			<div class="box">
+				<ul class="list">
+					<li><a href="#"><img src="img/y1.jpg" width="780" height="420"></a></li>
+					<li>
+						<div style="float:left;width:560px;">
+							<a href="#"><img src="img/y2-1.jpg" width="560" height="420"></a>
+						</div>
+						<div style="float:left;width:220px;">
+							<a href="#"><img src="img/y2-2.jpg" width="220" height="140"></a>
+							<a href="#"><img src="img/y2-3.jpg" width="220" height="140"></a>
+							<a href="#"><img src="img/y2-4.jpg" width="220" height="140"></a>
+						</div>
+					</li>
+					<li>
+						<div style="float:left;width:520px;">
+							<a href="#"><img src="img/y3-1.jpg" width="260" height="210"></a><a href="#"><img src="img/y3-2.jpg" width="260" height="210"></a>
+							<a href="#"><img src="img/y3-3.jpg" width="520" height="210"></a>
+						</div>
+						<div style="float:left;width:260px;">
+							<a href="#"><img src="img/y3-4.jpg" width="260" height="420"></a>
+						</div>
+					</li>
+					<li>
+						<div style="float:left;width:560px;">
+							<a href="#"><img src="img/y4-1.jpg" width="560" height="420"></a>
+						</div>
+						<div style="float:left;width:220px;">
+							<a href="#"><img src="img/y4-2.jpg" width="220" height="140"></a>
+							<a href="#"><img src="img/y4-3.jpg" width="220" height="140"></a>
+							<a href="#"><img src="img/y4-4.jpg" width="220" height="140"></a>
+						</div>
+					</li>
+					<li><a href="#"><img src="img/y5.jpg" width="780" height="420"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="example">
+		<blockquote>自定义按钮内容</blockquote>
+		<!-- 焦点图 -->
+		<div id="slide_fade" class="slide_fade">
+			<div class="box">
+				<ul class="list">
+					<li><a href="#">
+						<img src="img/fade1.jpg">
+						<div class="txt">
+							<h3>玩转早春自驾游</h3>
+							<p>春暖花开，万物复苏；</p>
+							<p>到处洋溢着花香的气息；</p>
+							<p>连上七天班的心蠢蠢欲动；</p>
+							<p>不如趁着清明小长假，来次放松心情的自驾游吧！</p>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<img src="img/fade2.jpg">
+						<div class="txt">
+							<h3 style="color:#9E6452;">十二星座屌丝男把妹秘籍</h3>
+							<p style="color:#9E6452;">窈窕淑女，屌丝好逑。</p>
+							<p style="color:#9E6452;">那么多美好的妹子，为什么一个都不是你的？</p>
+							<p style="color:#9E6452;">全速武装起来，妹子和机会一样，都喜欢有准备的人。</p>
+							<p style="color:#9E6452;">十二星座的单身男人们，发福利啦！</p>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<img src="img/fade3.jpg">
+						<div class="txt">
+							<h3>风调日和清明天</h3>
+							<p>气清景明，万物皆显，春意正浓</p>
+							<p>包含了扫墓祭祀的悼念哀思</p>
+							<p>和踏青游玩的欢笑嬉戏</p>
+							<p>好一派风调日和清明天~</p>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<img src="img/fade4.jpg">
+						<div class="txt">
+							<h3 style="color:#68262C;">愚人节玩具大作战</h3>
+							<p style="color:#333333;">每年的愚人节都是整蛊搞笑玩具纷纷现身的时候，</p>
+							<p style="color:#333333;">今年又有哪些意想不到的玩意呢？</p>
+							<p style="color:#333333;">小编为你搜罗了本年度大热的整蛊玩具，</p>
+							<p style="color:#333333;">在愚人节这天选上几样，"愚"乐一下你的朋友们吧~</p>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<img src="img/fade5.jpg">
+						<div class="txt">
+							<h3 style="color:#8D5930;">家居大换装</h3>
+							<p style="color:#8D5930;">春天已经姗姗而来</p>
+							<p style="color:#8D5930;">青青小草破土而出，花儿争奇斗放</p>
+							<p style="color:#8D5930;">大自然到处都换上了春装</p>
+							<p style="color:#8D5930;">是不是该给家居也换个装了呢！</p>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<img src="img/fade6.jpg">
+						<div class="txt">
+							<h3 style="color:#0C6796;">正是赏花好时节</h3>
+							<p style="color:#0C6796;">天气逐渐回暖，花朵开始绽放</p>
+							<p style="color:#0C6796;">或素雅，或娇艳，斑斓自若</p>
+							<p style="color:#0C6796;">春风暖意花香，直把游人熏醉</p>
+							<p style="color:#0C6796;">烟花三月下江南，正是赏花好时节。</p>
+						</div>
+					</a></li>
+				</ul>
+			</div>
+			<ul class="btn clearfix">
+				<li>
+					<a href="#">
+						<img src="img/fade1.jpg" width="150" height="42">
+						<h3>玩转早春自驾游</h3>
+					</a>
+					<p>by <a href="#">不二周助</a></p>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/fade2.jpg" width="150" height="42">
+						<h3>十二星座屌丝男把妹秘籍</h3>
+					</a>
+					<p>by <a href="#">阿布大人</a></p>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/fade3.jpg" width="150" height="42">
+						<h3>风调日和清明天</h3>
+					</a>
+					<p>by <a href="#">伊丽莎白酱</a></p>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/fade4.jpg" width="150" height="42">
+						<h3>愚人节玩具大作战</h3>
+					</a>
+					<p>by <a href="#">不二周助</a></p>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/fade5.jpg" width="150" height="42">
+						<h3>家居大换装</h3>
+					</a>
+					<p>by <a href="#">樱桃小丸子</a></p>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/fade6.jpg" width="150" height="42">
+						<h3>正是赏花好时节</h3>
+					</a>
+					<p>by <a href="#">伊丽莎白酱</a></p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery-1.4.4.min.js"></script>
+<script src="js/chili/jquery.chili-2.2.min.js"></script>
+<script src="js/chili/recipes.js"></script>
+<script src="js/jquery.slideshow.js"></script>
+<script>
+// 焦点图
+$("#slide_x").slideShow({time:3000,plus:true,minus:true});
+$("#slide_y").slideShow({type:"y"});
+$("#slide_fade").slideShow({events:"mouseover",type:"fade",speed:300});
+</script>
+</body>
+</html>

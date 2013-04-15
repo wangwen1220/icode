@@ -1,0 +1,1145 @@
+Content-Type: multipart/related; start=<op.mhtml.1351095464861.1e26885d183cc078@192.168.1.111>; boundary=----------XHWOqwZAbipgCbY99hAYeI
+Content-Location: http://www.planeart.cn/demo/artDialog/_doc/plugin.iframe.html
+Subject: =?utf-8?Q?artDialog=20iframe=20Tools=204.1.2?=
+MIME-Version: 1.0
+
+------------XHWOqwZAbipgCbY99hAYeI
+Content-Disposition: inline; filename=plugin.iframe.html
+Content-Type: text/html; charset=utf-8; name=plugin.iframe.html
+Content-ID: <op.mhtml.1351095464861.1e26885d183cc078@192.168.1.111>
+Content-Location: http://www.planeart.cn/demo/artDialog/_doc/plugin.iframe.html
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>artDialog iframe Tools</title>
+<style>
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; }
+body { font-family:  'Microsoft Yahei', Tahoma, Arial !important; font-family:  Tahoma, Arial; line-height:1.75; }
+strong, em, b, i { font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif; }
+h1, .site-title, h2, h3 { font-family:  'Microsoft Yahei', Tahoma, Arial !important; font-family:  Tahoma, Arial; }
+h4, h5, h6 { font-family: Verdana, sans-serif; }
+body { font-size: 14px; color: #444; background: #eee; text-align: center; }
+p { padding:8px 0; }
+#page { background: white; }
+#page { max-width:760px; _width: 700px; text-align: left; margin: 0 auto; padding-top: 20px; position: relative; border: 1px solid #ddd; border-top: none; clear: both; background-color:#FFF; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; -moz-border-radius-bottomleft: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-left-radius: 5px; -webkit-border-bottom-right-radius: 5px; -moz-box-shadow:0 0 3px rgba(0, 0, 0, .1); -webkit-box-shadow::0 0 3px rgba(0, 0, 0, .1);
+box-shadow::0 0 3px rgba(0, 0, 0, .1);
+}
+#header { position: relative; height: 200px; background: #3371A3; background-position: top right; background-repeat: no-repeat; overflow: hidden; }
+.content { padding: 0 20px 30px; }
+html, body { _overflow-x:hidden }
+pre { line-height:1.3em!important; font:12px!important; *zoom:1;
+}
+h1 { font-size: 26px; }
+h3 { padding:10px 0; margin-top:36px; margin-bottom:8px; text-indent:0; border-radius:5px; font-size:18px; }
+.site-title { font-size: 36px; font-weight: bold; padding: 48px 40px 0; }
+.site-title a, #header .description { text-decoration: none; color: white; font-family:'Constantia'; text-shadow:0 0 1px rgba(0, 0, 0, .8); }
+.site-title a:hover { text-decoration: underline; }
+#header .description { font-size: 12px; margin: 0 40px; text-shadow:none; }
+#header .description a { color:#FFF; }
+h2 { font-size: 18px; }
+#footer { clear: both; margin: 0 auto; padding: 20px 0 40px; text-align: center; color: #777; }
+#footer p { line-height: 1.6em; }
+#footer a { color: #888; font-weight: bold; }
+#footer a:hover { border: none; text-decoration: none; color: #000; }
+a:hover, a:visited:hover { text-decoration: underline; }
+h2 a:hover, h2 span a:hover { color: #27d !important; }
+a { color: #27d; text-decoration: none; }
+.msg {
+*zoom:1; padding:15px; margin-top:15px; font-size:14px; background:#EEF7F5; border:1px solid #D7EAE2; color:#333; }
+.msg ol { margin:0 20px; }
+.msg { font-size:14px; }
+/*各行变色表格*/
+table.zebra, .zebra th, .zebra td { border-width: 1px; border-style: solid; margin: 0; font-family:'Microsoft Yahei', Tahoma, Arial!important; font-family:'宋体', Tahoma, Arial; }
+table.zebra { table-layout: fixed; width: 100%; margin-bottom: 6px; padding: 0 1px 1px 0; border-spacing: 0; border-collapse: separate; *border-collapse:collapse;
+border-color: #abb8ce; background: #EDEDED; }
+.zebra th { padding: 5px 4px; font-weight: bold; border-color: #f8f8f8 #abb8ce #abb8ce #f8f8f8; text-align: left; text-shadow: 1px 1px 0 #e4edfb; vertical-align: middle; background: #d0dbee; }
+.zebra thead th { text-align:center; }
+.zebra th strong { color:#090; border-bottom:1px dashed #090; text-decoration:underline; }
+.zebra td { padding:0; }
+.zebra th.separate { text-align:center; border-color: #E1F196 #AECD1B #AECD1B #F3FAD6; background-color: #f3f7fd; }
+.zebra td { padding: 4px; font: 12px/18px Consolas, "Courier New", Courier, monospace; text-align: left; vertical-align: top; }
+.zebra td { border-color: #f8f8f8 #abb8ce #abb8ce #f8f8f8; background: #e0e8f5; }
+.zebra tr.odd th { background: #dbe4f4; }
+.zebra tr.odd td { background: #e6eef9; }
+.zebra br { margin-bottom:1.8em; }
+table.zebra .parameter, table.zebra .type, table.zebra .default { width:7em; }
+</style>
+<script>
+// skin demo
+(function() {
+	var _skin, _jQuery;
+	var _search = window.location.search;
+	if (_search) {
+		_skin = _search.split('demoSkin=')[1];
+		_jQuery = _search.indexOf('jQuery=true') !== -1;
+		if (_jQuery) document.write('<scr'+'ipt src="../jquery-1.6.2.min.js"></sc'+'ript>');
+	};
+	
+	document.write('<scr'+'ipt src="../artDialog.source.js?skin=' + (_skin || 'default') +'"></sc'+'ript>');
+	window._isDemoSkin = !!_skin;	
+	window.onload = function () {
+		_skin && art.dialog({
+			content: '欢迎使用"artDialog"对话框组件!',
+			icon: 'succeed',
+			fixed: true
+		}, function () {
+			this.title('2秒后自动关闭').lock().time(2);
+			return false;
+		});
+	};
+})();
+</script>
+<script src="../plugins/iframeTools.source.js"></script>
+<script src="demo.js"></script>
+<script src="highlight/highlight.pack.js"></script>
+<script src="highlight/languages/javascript.js"></script>
+<script>
+hljs.tabReplace = '    ';
+hljs.initHighlightingOnLoad();
+</script>
+<link rel="stylesheet" href="highlight/styles/magula.css">
+</head>
+
+<body>
+<div id="page">
+  <div id="header">
+    <div class='site-title'> <a href="?" accesskey="1">artDialog<span style=" margin-left:10px; font-size:12px; font-weight:bold;">iframe Tools</span></a> </div>
+    <p class="description"><a href="../index.html" target="_blank">返回首页</a> | <a href="iframeTop.html" target="_top">在框架中演示本页面</a></p>
+  </div>
+  <div class="content">
+    <div id="primary-wrapper">
+      
+<table class="zebra" style="margin-top:20px;">
+      <colgroup>
+      <col class="col1" />
+      <col class="col2" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th class="name" style="width:22em">名称</th>
+          <th class="note" colspan="3">描述</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="separate" colspan="4"><abbrev>核心方法</abbrev></th>
+        </tr>
+        <tr class="odd">
+          <th><a href="#top">art.dialog.top</a></th>
+          <td colspan="3">获取artDialog可用最高层window对象。这与直接使用window.top不同，它能排除artDialog对象不存在已经或者顶层页面为框架集的情况<br />
+            这是iframe应用工具集中的核心方法，你可以用它来操作父页面对象（包括上面的对话框）</td>
+        </tr>
+        <tr>
+          <th><a href="#data">art.dialog.data(name, value)</a></th>
+          <td colspan="3">跨框架数据共享写入接口。<br />框架与框架之间以及与主页面之间进行数据交换是非常头疼的事情，常规情况下你必须知道框架的名称才能进行数据交换，如果是在复杂的多层框架下操作简直就是噩梦。<br />而data方法就是为了解决这个问题，你完全不用管框架层级问题，它可以写入任何类型的数据，而做到各个页面之间数据共享。</td>
+        </tr>
+        <tr class="odd">
+          <th><a href="#data">art.dialog.data(name)</a></th>
+          <td colspan="3">跨框架数据共享读取接口。指定name即返回数据，任何引用了artDialog的页面都有效</td>
+        </tr>
+        <tr>
+          <th><a href="#removeData">art.dialog.removeData(name)</a></th>
+          <td colspan="3">跨框架数据共享删除接口。删除指定名称的数据，任何引用了artDialog的页面都有效</td>
+        </tr>
+        <tr>
+          <th class="separate" colspan="4"><abbrev>异步数据对话框</abbrev></th>
+        </tr>
+        <tr class="odd">
+          <th><a href="#open">art.dialog.open(url, options, cache)</a></th>
+          <td colspan="3">创建一个iframe页面<br />
+            参数: 地址, 配置参数, 缓存开关(默认true)</td>
+        </tr>
+        <tr>
+          <th><a href="#api">art.dialog.open.api</a></th>
+          <td colspan="3">iframe页面获取open方法扩展方法。 <br />(注意这个iframe中也必须引用artDialog脚本文件)</td>
+        </tr>
+        <tr class="odd">
+          <th><a href="#opener">art.dialog.opener</a></th>
+          <td colspan="3">iframe页面获取open方法触发来源页面window对象。 <br />(注意这个iframe中也必须引用artDialog脚本文件)</td>
+        </tr>
+        <tr>
+          <th><a href="#close">art.dialog.close()</a></th>
+          <td colspan="3">iframe页面关闭open方法创建的对话框的快捷方式。<br />close方法等同于：<div>var api = art.dialog.open.api;</div><div>api && api.close();</div><br />(注意这个iframe中也必须引用artDialog脚本文件)</td>
+        </tr>
+        <tr class="odd">
+          <th><a href="#load">art.dialog.load(url, options, cache)</a></th>
+          <td colspan="3">Ajax加载内容<br />
+            参数：地址, 配置参数, 缓存开关(默认true)</td>
+        </tr>
+        <tr>
+          <th class="separate" colspan="4"><abbrev>基础交互对话框</abbrev></th>
+        </tr>
+        <tr>
+          <th><a href="#alert">art.dialog.alert(content)</a></th>
+          <td colspan="3">警告消息 (同时只允许一个alert)<br />
+            参数: 内容</td>
+        </tr>
+        <tr class="odd">
+          <th><a href="#confirm">art.dialog.confirm(content, ok, cancel)</a></th>
+          <td colspan="3">确认 (同时只允许一个confirm)<br />
+            参数: 内容, 确定按钮回调函数, 取消按钮回调函数</td>
+        </tr>
+        <tr>
+          <th><a href="#prompt">art.dialog.prompt(content, ok, value)</a></th>
+          <td colspan="3">提问 (同时只允许一个prompt)<br />
+            参数: 内容, 确定按钮回调函数, 文本框默认值</td>
+        </tr>
+        <tr>
+          <th><a href="#tips">art.dialog.tips(content, time)</a></th>
+          <td colspan="3">短暂提示(同时只允许一个tips)<br />
+            参数: 内容、显示时间(单位秒, 默认1.5)</td>
+        </tr>
+        <tr>
+          <th class="separate" colspan="4"><abbrev>自定义</abbrev></th>
+        </tr>
+        <tr>
+          <th><a href="#through">art.dialog.through(options)</a></th>
+          <td colspan="3">创建一个普通可穿越框架的对话框<br />
+            不鼓励直接使用window.top这样的方式穿越，这样可能因为对话框触发页面重置导致其创建的对象在内存中被清空而发生异常</td>
+        </tr> 
+      </tbody>
+    </table>
+<div class="msg">
+        <ol>
+          <li>顶层面需要引用了artDialog才能实现穿越框架</li>
+          <li>chrome浏览器本地运行会有安全限制，请在服务器上查看本页面</li>
+          <li>artDialog不支持怪异模式，请用主流网站采用的XHTML1.0或者HTML5的DOCTYPE申明，如：<br>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;<br>或者<br>&lt;!DOCTYPE HTML&gt;</li>
+        </ol>
+      </div>
+      <div id="demo">
+        <h3 id="top">获取artDialog可用顶层页面window对象[top]</h3>
+        art.dialog.top默认引用的是widnow.top（如果window.top是框架集、跨域、artDialog对象不存，否则可能为window.parent或者当前window）这里页面所有穿越的对话框最终是在这个window上。
+        </p>
+        <div id="DOM-top">
+          <pre><code class="javascript">var win = art.dialog.top;
+win.document.title = '我修改了页面标题';
+win.document.getElementById('testInput').value = 'hello world!';
+</code></pre>
+        </div>
+        <p class="buttons">
+          <button class="runCode" id="btn8" title="btn8" name="DOM-top">运行&raquo;</button>
+        </p>
+        <h3 id="through">可穿越框架的标准对话框[through]</h3>
+        <p>如果iframe刷新或者被关闭，它创建的对话框会自动回收，防止因内存清空而导致错误。不鼓励直接使用window.top.art.dialog()与art.dialog.top.art.dialog()这样的方式穿越框架，它们会带来潜在的错误。</p>
+        <div id="demoCode-through">
+          <pre><code class="javascript">var throughBox = art.dialog.through;
+throughBox({
+	content: '我是一个普通的对话框，只是能穿越框架而已',
+    lock: true
+});
+</code></pre>
+        </div>
+        <p class="buttons">
+          <button class="runCode" id="btn8" title="btn8" name="demoCode-through">运行&raquo;</button>
+        </p>
+        <h3 id="open">嵌入网页[open] <span id="api"></span><span id="opener"></span></h3>
+        <p>同域下能够自适应iframe大小，但chrome 浏览器本地运行会认为跨域而无法适应大小 </p>
+        <p>open方法有如下这几个私有个功能</p>
+        <table class="zebra">
+          <colgroup>
+          <col class="col1">
+          <col class="col2">
+          </colgroup>
+          <thead>
+            <tr>
+              <th class="name" style="width:22em">名称</th>
+              <th class="note">类型</th>
+              <th class="note" colspan="3">描述</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="separate" colspan="5">iframe内部静态方法</th>
+            </tr>
+            <tr class="odd">
+              <th>art.dialog.open.api</th>
+              <td>Object</td>
+              <td colspan="3">从iframe页面引用对话框扩展方法</td>
+            </tr>
+            <tr>
+              <th>art.dialog.opener </th>
+              <td>object Window</td>
+              <td colspan="3">从iframe页面引用对话框触发页面的window</td>
+            </tr>
+            <tr>
+              <th class="separate" colspan="5"><abbrev>扩展方法</abbrev></th>
+            </tr>
+            <tr>
+              <th>iframe</th>
+              <td>HTMLElement</td>
+              <td colspan="3">引用open创建的iframe（4.0.1新增）</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>其他扩展方法：<a href="API.html#API" target="_blank">API.html#API</a></p>
+        <h4>一、使用iframe内部脚本控制对话框</h4>
+        <p>请打开 <a href="login_iframe.html" target="_blank">login_iframe.html</a> 查看源码</p>
+        <div id="demoCode04">
+          <pre><code class="javascript">art.dialog.open('login_iframe.html', {title: '提示'});</code></pre>
+        </div>
+        <p class="buttons">
+          <button class="runCode" id="btn4" title="btn4" name="demoCode04">运行&raquo;</button>
+        </p>
+        <p>google maps (示例来自KindEditor)</p>
+        <div id="demoCode04-5">
+          <pre><code class="javascript">art.dialog.open('googleMaps.html');</code></pre>
+        </div>
+        <p class="buttons">
+          <button class="runCode" name="demoCode04-5">运行&raquo;</button>
+        </p>
+        <h4>二、在外部对iframe进行控制</h4>
+        <p>对iframe控制需要用到open私有的this.iframe扩展方法：</p>
+        <div id="demoCode04-2">
+          <pre><code class="javascript">art.dialog.open('login_iframe_2.html', {
+    title: '登录',
+	// 在open()方法中，init会等待iframe加载完毕后执行
+	init: function () {
+    	var iframe = this.iframe.contentWindow;
+    	var top = art.dialog.top;// 引用顶层页面window对象
+        var username = iframe.document.getElementById('login-form-username');
+        username.value = 'guest';
+        setTimeout(function () {
+        	username.select();
+        }, 80);
+        top.document.title = '测试';
+    },
+    ok: function () {
+    	var iframe = this.iframe.contentWindow;
+    	if (!iframe.document.body) {
+        	alert('iframe还没加载完毕呢')
+        	return false;
+        };
+    	var form = iframe.document.getElementById('login-form'),
+            username = iframe.document.getElementById('login-form-username'),
+    		password = iframe.document.getElementById('login-form-password');
+		if (check(username) && check(password)) form.submit();
+       	return false;
+    },
+    cancel: true
+});
+
+// 表单验证
+var check = function (input) {
+	if (input.value === '') {
+		inputError(input);
+		input.focus();
+		return false;
+	} else {
+		return true;
+	};
+};
+
+// 输入错误提示
+var inputError = function (input) {
+	clearTimeout(inputError.timer);
+	var num = 0;
+	var fn = function () {
+		inputError.timer = setTimeout(function () {
+			input.className = input.className === '' ? 'login-form-error' : '';
+			if (num === 5) {
+				input.className === '';
+			} else {
+				fn(num ++);
+			};
+		}, 150);
+	};
+	fn();
+};
+</code></pre>
+        </div>
+        <p class="buttons">
+          <button class="runCode" name="demoCode04-2">运行&raquo;</button>
+        </p>
+        <h4>三、跨域访问</h4>
+        <p>跨域访问无法自适应大小，也无法进行父页面与子页面数据交换</p>
+        <div id="demoCode_open_domain">
+          <pre><code class="javascript">art.dialog.open('http://www.connect.renren.com/igadget/renren/index.html',
+	{title: '人人网', width: 320, height: 400});</code></pre>
+        </div>
+        <p class="buttons">
+          <button class="runCode" name="demoCode_open_domain">运行&raquo;</button>
+        </p>
+        <h2 id="data" style="color:#00C">框架与框架、主页面数据共享[data &amp; removeData]</h2>
+        <p>框架与框架之间以及与主页面之间进行数据交换是非常头疼的事情，常规情况下你必须知道框架的名称才能进行数据交换，如果是在复杂的多层框架下操作简直就是开发人员噩梦，而这样的问题在CMS多框架应用中十分常见。</p>
+        <p>在artDialog中这一切完全被简化，它有一个简单易用的数据共享接口，可以共享任意类型的数据供各个框架页面读取，它与页面名称、层级毫无关系。<a href="http://www.planeart.cn/?p=1554" target="_blank">相关原理</a></p>
+        <p>请打开 <a href="iframeA.html" target="_blank">iframeA.html</a> 源码查看范例。由于art.dialog.open方法打开的iframe加剧了框架的层级的复杂性，所以请特别重视这个data方法！</p>
+        <div id="demoCode04-3">
+          <pre><code class="javascript">art.dialog.data('test', document.getElementById('demoInput04-3').value);
+art.dialog.open('iframeA.html', null, false);
+
+// 此时 iframeA.html 页面可以使用 art.dialog.data('test') 获取到数据，如：
+// document.getElementById('aInput').value = art.dialog.data('test');
+</code></pre>
+        </div>
+        <p class="buttons">
+          <button class="runCode" name="demoCode04-3">运行&raquo;</button>
+          <input id="demoInput04-3" title="demoInput04-3" type="text" value="数据共享机制" style="padding:4px; width:16em" />
+          （请输入测试文字） 
+          <script>var _data = art.dialog.data('iframeTools'); if (_data) document.getElementById('demoInput04-3').value = _data;</script> 
+        </p>
+        <h3 id="load">Ajax[load]</h3>
+        <p>特别说明：第三个参数为ajax缓存开关，默认为true。由于浏览器限制，ajax需要在服务端运行才能正确运行本例子。</p>
+        <h4>一、加载网页片段</h4>
+        <div id="demoCode05">
+          <pre><code class="javascript">art.dialog.load('./ajaxContent/content.html', {
+	title: '远程载入HTML片段',
+	ok: function(topWin){
+    	art.dialog('hello world');
+    },
+	close: function(){
+    	art.dialog.tips('close')
+    }
+}, false);</code></pre>
+        </div>
+        <p class="buttons">
+          <button class="runCode" id="btn5" title="btn5" name="demoCode05">运行&raquo;</button>
+        </p>
+        <div id="demoCode05-2">
+          <pre><code class="javascript">art.dialog.load('./ajaxContent/login.html', false);</code></pre>
+        </div>
+        <p class="buttons">
+          <button class="runCode" id="btn5" title="btn5" name="demoCode05-2">运行&raquo;</button>
+        </p>
+        <h3 id="alert">警告消息[alert]</h3>
+        <div id="demoCode01">
+          <pre><code class="javascript">art.dialog.alert('警察叔叔会请你喝茶！');</code></pre>
+        </div>
+        <p class="buttons">
+          <button class="runCode" name="demoCode01">运行&raquo;</button>
+        </p>
+        <h3 id="confirm">确认消息[confirm]</h3>
+        <div></div>
+        <div id="demoCode02">
+          <pre><code class="javascript">art.dialog.confirm('你确认删除操作？', function(){
+	var top = art.dialog.top,
+		input = document.getElementById('demoInput02'),
+		photo = top.document.getElementById('photo');
+		
+	if (input) input.parentNode.removeChild(input);
+	if (photo) photo.innerHTML = '&lt;img src="images/lixiaolong.png" /&gt;';
+}, function(){
+	art.dialog.tips('你取消了操作');
+});</code></pre>
+        </div>
+        <p class="buttons">
+          <button class="runCode" name="demoCode02">运行&raquo;</button>
+          <button disabled id="demoInput02" title="demoInput02">点运行按钮删掉我</button>
+        </p>
+        <h3 id="prompt">提问消息[prompt]</h3>
+        <p>特别说明：回调函数第一个参数为输入的值</p>
+        <div id="demoCode03">
+          <pre><code class="javascript">art.dialog.prompt('你的名字是什么？', function(data){
+	// data 代表输入数据;
+	var input = document.getElementById('demoInput03'),
+		topVal = art.dialog.top.document.getElementById('testInput');
+	if (input) input.value = data;
+	if (topVal) topVal.value = data;
+}, '我是糖饼');</code></pre>
+        </div>
+        <p class="buttons">
+          <button class="runCode" name="demoCode03">运行&raquo;</button>
+          <input disabled id="demoInput03" title="demoInput03" type="text" />
+        </p>
+        <h3 id="tips">提示消息[tips]</h3>
+        <div id="demoCode07">
+          <pre><code class="javascript">art.dialog.tips('提交成功！', 1.5);</code></pre>
+        </div>
+        <p class="buttons">
+          <button class="runCode" name="demoCode07">运行&raquo;</button>
+        </p>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div id="footer">
+  <p>(C)2010~2011</p>
+</div>
+</div>
+</body>
+</html>
+
+------------XHWOqwZAbipgCbY99hAYeI
+Content-Disposition: inline; filename=iframeTools.source.js
+Content-Type: application/x-javascript; name=iframeTools.source.js
+Content-Location: http://www.planeart.cn/demo/artDialog/plugins/iframeTools.source.js
+Content-Transfer-Encoding: Base64
+
+LyohDQogKiBhcnREaWFsb2cgaWZyYW1lVG9vbHMNCiAqIERhdGU6IDIwMTEtMDgt
+MjkgMTc6MjUNCiAqIGh0dHA6Ly9jb2RlLmdvb2dsZS5jb20vcC9hcnRkaWFsb2cv
+DQogKiAoYykgMjAwOS0yMDExIFRhbmdCaW4sIGh0dHA6Ly93d3cucGxhbmVBcnQu
+Y24NCiAqDQogKiBUaGlzIGlzIGxpY2Vuc2VkIHVuZGVyIHRoZSBHTlUgTEdQTCwg
+dmVyc2lvbiAyLjEgb3IgbGF0ZXIuDQogKiBGb3IgZGV0YWlscywgc2VlOiBodHRw
+Oi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9MR1BMLzIuMS8NCiAqLw0K
+IA0KOyhmdW5jdGlvbiAoJCwgd2luZG93LCBhcnREaWFsb2csIHVuZGVmaW5lZCkg
+ew0KDQp2YXIgX3RvcERpYWxvZywgX3Byb3h5RGlhbG9nLCBfekluZGV4LA0KCV9k
+YXRhID0gJ0BBUlRESUFMT0cuREFUQScsDQoJX29wZW4gPSAnQEFSVERJQUxPRy5P
+UEVOJywNCglfb3BlbmVyID0gJ0BBUlRESUFMT0cuT1BFTkVSJywNCglfd2luTmFt
+ZSA9IHdpbmRvdy5uYW1lID0gd2luZG93Lm5hbWUNCgl8fCAnQEFSVERJQUxPRy5X
+SU5OQU1FJyArIChuZXcgRGF0ZSkuZ2V0VGltZSgpLA0KCV9pc0lFNiA9IHdpbmRv
+dy5WQkFycmF5ICYmICF3aW5kb3cuWE1MSHR0cFJlcXVlc3Q7DQoNCiQoZnVuY3Rp
+b24gKCkgew0KCSF3aW5kb3cualF1ZXJ5ICYmIGRvY3VtZW50LmNvbXBhdE1vZGUg
+PT09ICdCYWNrQ29tcGF0Jw0KCS8vIOS4jeaUr+aMgeaAquW8guaooeW8j++8jOiv
+t+eUqOS4u+a1geeahFhIVE1MMS4w5oiW6ICFSFRNTDXnmoRET0NUWVBF55Sz5piO
+DQoJJiYgYWxlcnQoJ2FydERpYWxvZyBFcnJvcjogZG9jdW1lbnQuY29tcGF0TW9k
+ZSA9PT0gIkJhY2tDb21wYXQiJyk7DQp9KTsNCgkNCgkNCi8qKiDojrflj5YgYXJ0
+RGlhbG9nIOWPr+i3qOe6p+iwg+eUqOeahOacgOmrmOWxgueahCB3aW5kb3cg5a+5
+6LGhICovDQp2YXIgX3RvcCA9IGFydERpYWxvZy50b3AgPSBmdW5jdGlvbiAoKSB7
+DQoJdmFyIHRvcCA9IHdpbmRvdywNCgl0ZXN0ID0gZnVuY3Rpb24gKG5hbWUpIHsN
+CgkJdHJ5IHsNCgkJCXZhciBkb2MgPSB3aW5kb3dbbmFtZV0uZG9jdW1lbnQ7CS8v
+IOi3qOWfn3zml6DmnYPpmZANCgkJCWRvYy5nZXRFbGVtZW50c0J5VGFnTmFtZTsg
+CQkJLy8gY2hyb21lIOacrOWcsOWuieWFqOmZkOWItg0KCQl9IGNhdGNoIChlKSB7
+DQoJCQlyZXR1cm4gZmFsc2U7DQoJCX07DQoJCQ0KCQlyZXR1cm4gd2luZG93W25h
+bWVdLmFydERpYWxvZw0KCQkvLyDmoYbmnrbpm4bml6Dms5XmmL7npLrnrKzkuInm
+lrnlhYPntKANCgkJJiYgZG9jLmdldEVsZW1lbnRzQnlUYWdOYW1lKCdmcmFtZXNl
+dCcpLmxlbmd0aCA9PT0gMDsNCgl9Ow0KCQ0KCWlmICh0ZXN0KCd0b3AnKSkgew0K
+CQl0b3AgPSB3aW5kb3cudG9wOw0KCX0gZWxzZSBpZiAodGVzdCgncGFyZW50Jykp
+IHsNCgkJdG9wID0gd2luZG93LnBhcmVudDsNCgl9Ow0KCQ0KCXJldHVybiB0b3A7
+DQp9KCk7DQphcnREaWFsb2cucGFyZW50ID0gX3RvcDsgLy8g5YW85a65djQuMeS5
+i+WJjeeJiOacrO+8jOacquadpeeJiOacrOWwhuWIoOmZpOatpA0KDQoNCl90b3BE
+aWFsb2cgPSBfdG9wLmFydERpYWxvZzsNCg0KDQovLyDojrflj5bpobblsYLpobXp
+naLlr7nor53moYblj6DliqDlgLwNCl96SW5kZXggPSBmdW5jdGlvbiAoKSB7DQoJ
+cmV0dXJuIF90b3BEaWFsb2cuZGVmYXVsdHMuekluZGV4Ow0KfTsNCg0KDQoNCi8q
+Kg0KICog6Leo5qGG5p625pWw5o2u5YWx5Lqr5o6l5Y+jDQogKiBAc2VlCQlodHRw
+Oi8vd3d3LnBsYW5lYXJ0LmNuLz9wPTE1NTQNCiAqIEBwYXJhbQl7U3RyaW5nfQnl
+rZjlgqjnmoTmlbDmja7lkI0NCiAqIEBwYXJhbQl7QW55fQkJ5bCG6KaB5a2Y5YKo
+55qE5Lu75oSP5pWw5o2uKOaXoOatpOmhueWImei/lOWbnuiiq+afpeivoueahOaV
+sOaNrikNCiAqLw0KYXJ0RGlhbG9nLmRhdGEgPSBmdW5jdGlvbiAobmFtZSwgdmFs
+dWUpIHsNCgl2YXIgdG9wID0gYXJ0RGlhbG9nLnRvcCwNCgkJY2FjaGUgPSB0b3Bb
+X2RhdGFdIHx8IHt9Ow0KCXRvcFtfZGF0YV0gPSBjYWNoZTsNCgkNCglpZiAodmFs
+dWUpIHsNCgkJY2FjaGVbbmFtZV0gPSB2YWx1ZTsNCgl9IGVsc2Ugew0KCQlyZXR1
+cm4gY2FjaGVbbmFtZV07DQoJfTsNCglyZXR1cm4gY2FjaGU7DQp9Ow0KDQoNCi8q
+Kg0KICog5pWw5o2u5YWx5Lqr5Yig6Zmk5o6l5Y+jDQogKiBAcGFyYW0Je1N0cmlu
+Z30J5Yig6Zmk55qE5pWw5o2u5ZCNDQogKi8NCmFydERpYWxvZy5yZW1vdmVEYXRh
+ID0gZnVuY3Rpb24gKG5hbWUpIHsNCgl2YXIgY2FjaGUgPSBhcnREaWFsb2cudG9w
+W19kYXRhXTsNCglpZiAoY2FjaGUgJiYgY2FjaGVbbmFtZV0pIGRlbGV0ZSBjYWNo
+ZVtuYW1lXTsNCn07DQoNCg0KLyoqIOi3qOahhuaetuaZrumAmuWvueivneahhiAq
+Lw0KYXJ0RGlhbG9nLnRocm91Z2ggPSBfcHJveHlEaWFsb2cgPSBmdW5jdGlvbiAo
+KSB7DQoJdmFyIGFwaSA9IF90b3BEaWFsb2cuYXBwbHkodGhpcywgYXJndW1lbnRz
+KTsNCgkJDQoJLy8g57yT5a2Y5LuO5b2T5YmNd2luZG9377yI5Y+v6IO95Li6aWZy
+YW1l77yJ6LCD5Ye65omA5pyJ6Leo5qGG5p625a+56K+d5qGG77yMd2luZG935Y24
+6L295ZCO5YWo6YOo5YWz6Zet6L+Z5Lqb5a+56K+d5qGGDQoJLy8g5Zug5Li6aWZy
+YW1l5rOo6ZSA5ZCO5Lmf5Lya5LuO5YaF5a2Y5Lit5Yig6Zmk5YW25Yib5bu655qE
+5a+56LGh77yM6L+Z5qC35Y+v5Lul6Ziy5q2i5Zue6LCD5Ye95pWw5oql6ZSZDQoJ
+aWYgKF90b3AgIT09IHdpbmRvdykgYXJ0RGlhbG9nLmxpc3RbYXBpLmNvbmZpZy5p
+ZF0gPSBhcGk7DQoJcmV0dXJuIGFwaTsNCn07DQoNCi8vIOahhuaetumhtemdouWN
+uOi9veWJjeWFs+mXreaJgOacieepv+i2iueahOWvueivneahhg0KX3RvcCAhPT0g
+d2luZG93ICYmICQod2luZG93KS5iaW5kKCd1bmxvYWQnLCBmdW5jdGlvbiAoKSB7
+DQoJdmFyIGxpc3QgPSBhcnREaWFsb2cubGlzdCwgY29uZmlnOw0KCWZvciAodmFy
+IGkgaW4gbGlzdCkgew0KCQlpZiAobGlzdFtpXSkgew0KCQkJY29uZmlnID0gbGlz
+dFtpXS5jb25maWc7DQoJCQlpZiAoY29uZmlnKSBjb25maWcuZHVyYXRpb24gPSAw
+OyAvLyDlj5bmtojliqjnlLsNCgkJCWxpc3RbaV0uY2xvc2UoKTsNCgkJCWRlbGV0
+ZSBsaXN0W2ldOw0KCQl9Ow0KCX07DQp9KTsNCg0KDQovKioNCiAqIOW8ueeqlyAo
+aWZyYW1lKQ0KICogQHBhcmFtCXtTdHJpbmd9CeWcsOWdgA0KICogQHBhcmFtCXtP
+YmplY3R9CemFjee9ruWPguaVsC4g6L+Z6YeM5Lyg5YWl55qE5Zue6LCD5Ye95pWw
+5o6l5pS255qE56ysMeS4quWPguaVsOS4umlmcmFtZeWGhemDqHdpbmRvd+Wvueix
+oQ0KICogQHBhcmFtCXtCb29sZWFufQnmmK/lkKblhYHorrjnvJPlrZguIOm7mOiu
+pHRydWUNCiAqLw0KYXJ0RGlhbG9nLm9wZW4gPSBmdW5jdGlvbiAodXJsLCBvcHRp
+b25zLCBjYWNoZSkgew0KCW9wdGlvbnMgPSBvcHRpb25zIHx8IHt9Ow0KCQ0KCXZh
+ciBhcGksIERPTSwNCgkJJGNvbnRlbnQsICRtYWluLCBpZnJhbWUsICRpZnJhbWUs
+ICRpZG9jLCBpd2luLCBpYm9keSwNCgkJdG9wID0gYXJ0RGlhbG9nLnRvcCwNCgkJ
+aW5pdENzcyA9ICdwb3NpdGlvbjphYnNvbHV0ZTtsZWZ0Oi05OTk5ZW07dG9wOi05
+OTk5ZW07Ym9yZGVyOm5vbmUgMDtiYWNrZ3JvdW5kOnRyYW5zcGFyZW50JywNCgkJ
+bG9hZENzcyA9ICd3aWR0aDoxMDAlO2hlaWdodDoxMDAlO2JvcmRlcjpub25lIDAn
+Oy8vdGl0bGUgPSBvcHRpb25zLnRpdGxlOw0KCQkNCglpZiAoY2FjaGUgPT09IGZh
+bHNlKSB7DQoJCXZhciB0cyA9IChuZXcgRGF0ZSgpKS5nZXRUaW1lKCksDQoJCQly
+ZXQgPSB1cmwucmVwbGFjZSgvKFs/Jl0pXz1bXiZdKi8sICIkMV89IiArIHRzICk7
+DQoJCXVybCA9IHJldCArICgocmV0ID09PSB1cmwpID8gKC9cPy8udGVzdCh1cmwp
+ID8gIiYiIDogIj8iKSArICJfPSIgKyB0cyA6ICIiKTsNCgl9Ow0KCQkNCgl2YXIg
+bG9hZCA9IGZ1bmN0aW9uICgpIHsNCgkJdmFyIGlXaWR0aCwgaUhlaWdodCwNCgkJ
+CWxvYWRpbmcgPSBET00uY29udGVudC5maW5kKCcuYXVpX2xvYWRpbmcnKSwNCgkJ
+CWFDb25maWcgPSBhcGkuY29uZmlnOw0KCQkJDQoJCSRjb250ZW50LmFkZENsYXNz
+KCdhdWlfc3RhdGVfZnVsbCcpOw0KCQkNCgkJbG9hZGluZyAmJiBsb2FkaW5nLmhp
+ZGUoKTsNCgkJDQoJCXRyeSB7DQoJCQlpd2luID0gaWZyYW1lLmNvbnRlbnRXaW5k
+b3c7DQoJCQkkaWRvYyA9ICQoaXdpbi5kb2N1bWVudCk7DQoJCQlpYm9keSA9IGl3
+aW4uZG9jdW1lbnQuYm9keTsNCgkJfSBjYXRjaCAoZSkgey8vIOi3qOWfnw0KCQkJ
+aWZyYW1lLnN0eWxlLmNzc1RleHQgPSBsb2FkQ3NzOw0KCQkJDQoJCQlhQ29uZmln
+LmZvbGxvdw0KCQkJPyBhcGkuZm9sbG93KGFDb25maWcuZm9sbG93KQ0KCQkJOiBh
+cGkucG9zaXRpb24oYUNvbmZpZy5sZWZ0LCBhQ29uZmlnLnRvcCk7DQoJCQkNCgkJ
+CW9wdGlvbnMuaW5pdCAmJiBvcHRpb25zLmluaXQuY2FsbChhcGksIGl3aW4sIHRv
+cCk7DQoJCQlvcHRpb25zLmluaXQgPSBudWxsOw0KCQkJcmV0dXJuOw0KCQl9Ow0K
+CQkNCgkJLy8g6I635Y+WaWZyYW1l5YaF6YOo5bC65a+4DQoJCWlXaWR0aCA9IGFD
+b25maWcud2lkdGggPT09ICdhdXRvJw0KCQk/ICRpZG9jLndpZHRoKCkgKyAoX2lz
+SUU2ID8gMCA6IHBhcnNlSW50KCQoaWJvZHkpLmNzcygnbWFyZ2luTGVmdCcpKSkN
+CgkJOiBhQ29uZmlnLndpZHRoOw0KCQkNCgkJaUhlaWdodCA9IGFDb25maWcuaGVp
+Z2h0ID09PSAnYXV0bycNCgkJPyAkaWRvYy5oZWlnaHQoKQ0KCQk6IGFDb25maWcu
+aGVpZ2h0Ow0KCQkNCgkJLy8g6YCC5bqUaWZyYW1l5bC65a+4DQoJCXNldFRpbWVv
+dXQoZnVuY3Rpb24gKCkgew0KCQkJaWZyYW1lLnN0eWxlLmNzc1RleHQgPSBsb2Fk
+Q3NzOw0KCQl9LCAwKTsvLyBzZXRUaW1lb3V0OiDpmLLmraJJRTZ+N+Wvueivneah
+huagt+W8j+a4suafk+W8guW4uA0KCQlhcGkuc2l6ZShpV2lkdGgsIGlIZWlnaHQp
+Ow0KCQkNCgkJLy8g6LCD5pW05a+56K+d5qGG5L2N572uDQoJCWFDb25maWcuZm9s
+bG93DQoJCT8gYXBpLmZvbGxvdyhhQ29uZmlnLmZvbGxvdykNCgkJOiBhcGkucG9z
+aXRpb24oYUNvbmZpZy5sZWZ0LCBhQ29uZmlnLnRvcCk7DQoJCQ0KCQlvcHRpb25z
+LmluaXQgJiYgb3B0aW9ucy5pbml0LmNhbGwoYXBpLCBpd2luLCB0b3ApOw0KCQlv
+cHRpb25zLmluaXQgPSBudWxsOw0KCX07DQoJCQ0KCXZhciBjb25maWcgPSB7DQoJ
+CXpJbmRleDogX3pJbmRleCgpLA0KCQlpbml0OiBmdW5jdGlvbiAoKSB7DQoJCQlh
+cGkgPSB0aGlzOw0KCQkJRE9NID0gYXBpLkRPTTsNCgkJCSRtYWluID0gRE9NLm1h
+aW47DQoJCQkkY29udGVudCA9IERPTS5jb250ZW50Ow0KCQkJDQoJCQlpZnJhbWUg
+PSBhcGkuaWZyYW1lID0gdG9wLmRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2lmcmFt
+ZScpOw0KCQkJaWZyYW1lLnNyYyA9IHVybDsNCgkJCWlmcmFtZS5uYW1lID0gJ09w
+ZW4nICsgYXBpLmNvbmZpZy5pZDsNCgkJCWlmcmFtZS5zdHlsZS5jc3NUZXh0ID0g
+aW5pdENzczsNCgkJCWlmcmFtZS5zZXRBdHRyaWJ1dGUoJ2ZyYW1lYm9yZGVyJywg
+MCwgMCk7DQoJCQlpZnJhbWUuc2V0QXR0cmlidXRlKCdhbGxvd1RyYW5zcGFyZW5j
+eScsIHRydWUpOw0KCQkJDQoJCQkkaWZyYW1lID0gJChpZnJhbWUpOw0KCQkJYXBp
+LmNvbnRlbnQoKS5hcHBlbmRDaGlsZChpZnJhbWUpOw0KCQkJaXdpbiA9IGlmcmFt
+ZS5jb250ZW50V2luZG93Ow0KCQkJDQoJCQl0cnkgew0KCQkJCWl3aW4ubmFtZSA9
+IGlmcmFtZS5uYW1lOw0KCQkJCWFydERpYWxvZy5kYXRhKGlmcmFtZS5uYW1lICsg
+X29wZW4sIGFwaSk7DQoJCQkJYXJ0RGlhbG9nLmRhdGEoaWZyYW1lLm5hbWUgKyBf
+b3BlbmVyLCB3aW5kb3cpOw0KCQkJfSBjYXRjaCAoZSkge307DQoJCQkNCgkJCSRp
+ZnJhbWUuYmluZCgnbG9hZCcsIGxvYWQpOw0KCQl9LA0KCQljbG9zZTogZnVuY3Rp
+b24gKCkgew0KCQkJJGlmcmFtZS5jc3MoJ2Rpc3BsYXknLCAnbm9uZScpLnVuYmlu
+ZCgnbG9hZCcsIGxvYWQpOw0KCQkJDQoJCQlpZiAob3B0aW9ucy5jbG9zZSAmJiBv
+cHRpb25zLmNsb3NlLmNhbGwodGhpcywgaWZyYW1lLmNvbnRlbnRXaW5kb3csIHRv
+cCkgPT09IGZhbHNlKSB7DQoJCQkJcmV0dXJuIGZhbHNlOw0KCQkJfTsNCgkJCSRj
+b250ZW50LnJlbW92ZUNsYXNzKCdhdWlfc3RhdGVfZnVsbCcpOw0KCQkJDQoJCQkv
+LyDph43opoHvvIHpnIDopoHph43nva5pZnJhbWXlnLDlnYDvvIzlkKbliJnkuIvm
+rKHlh7rnjrDnmoTlr7nor53moYblnKhJRTbjgIE35peg5rOV6IGa54SmaW5wdXQN
+CgkJCS8vIElF5Yig6ZmkaWZyYW1l5ZCO77yMaWZyYW1l5LuN54S25Lya55WZ5Zyo
+5YaF5a2Y5Lit5Ye6546w5LiK6L+w6Zeu6aKY77yM572u5o2ic3Jj5piv5pyA5a65
+5piT6Kej5Yaz55qE5pa55rOVDQoJCQkkaWZyYW1lWzBdLnNyYyA9ICdhYm91dDpi
+bGFuayc7DQoJCQkkaWZyYW1lLnJlbW92ZSgpOw0KCQkJDQoJCQl0cnkgew0KCQkJ
+CWFydERpYWxvZy5yZW1vdmVEYXRhKGlmcmFtZS5uYW1lICsgX29wZW4pOw0KCQkJ
+CWFydERpYWxvZy5yZW1vdmVEYXRhKGlmcmFtZS5uYW1lICsgX29wZW5lcik7DQoJ
+CQl9IGNhdGNoIChlKSB7fTsNCgkJfQ0KCX07DQoJDQoJLy8g5Zue6LCD5Ye95pWw
+56ys5LiA5Liq5Y+C5pWw5oyH5ZCRaWZyYW1l5YaF6YOod2luZG935a+56LGhDQoJ
+aWYgKHR5cGVvZiBvcHRpb25zLm9rID09PSAnZnVuY3Rpb24nKSBjb25maWcub2sg
+PSBmdW5jdGlvbiAoKSB7DQoJCXJldHVybiBvcHRpb25zLm9rLmNhbGwoYXBpLCBp
+ZnJhbWUuY29udGVudFdpbmRvdywgdG9wKTsNCgl9Ow0KCWlmICh0eXBlb2Ygb3B0
+aW9ucy5jYW5jZWwgPT09ICdmdW5jdGlvbicpIGNvbmZpZy5jYW5jZWwgPSBmdW5j
+dGlvbiAoKSB7DQoJCXJldHVybiBvcHRpb25zLmNhbmNlbC5jYWxsKGFwaSwgaWZy
+YW1lLmNvbnRlbnRXaW5kb3csIHRvcCk7DQoJfTsNCgkNCglkZWxldGUgb3B0aW9u
+cy5jb250ZW50Ow0KDQoJZm9yICh2YXIgaSBpbiBvcHRpb25zKSB7DQoJCWlmIChj
+b25maWdbaV0gPT09IHVuZGVmaW5lZCkgY29uZmlnW2ldID0gb3B0aW9uc1tpXTsN
+Cgl9Ow0KCQ0KCXJldHVybiBfcHJveHlEaWFsb2coY29uZmlnKTsNCn07DQoNCg0K
+LyoqIOW8leeUqG9wZW7mlrnms5XmianlsZXmlrnms5Uo5Zyob3BlbuaJk+W8gOea
+hGlmcmFtZeWGhemDqOengeacieaWueazlSkgKi8NCmFydERpYWxvZy5vcGVuLmFw
+aSA9IGFydERpYWxvZy5kYXRhKF93aW5OYW1lICsgX29wZW4pOw0KDQoNCi8qKiDl
+vJXnlKhvcGVu5pa55rOV6Kem5Y+R5p2l5rqQ6aG16Z2id2luZG93KOWcqG9wZW7m
+iZPlvIDnmoRpZnJhbWXlhoXpg6jnp4HmnInmlrnms5UpICovDQphcnREaWFsb2cu
+b3BlbmVyID0gYXJ0RGlhbG9nLmRhdGEoX3dpbk5hbWUgKyBfb3BlbmVyKSB8fCB3
+aW5kb3c7DQphcnREaWFsb2cub3Blbi5vcmlnaW4gPSBhcnREaWFsb2cub3BlbmVy
+OyAvLyDlhbzlrrl2NC4x5LmL5YmN54mI5pys77yM5pyq5p2l54mI5pys5bCG5Yig
+6Zmk5q2kDQoNCi8qKiBhcnREaWFsb2cub3BlbiDmiZPlvIDnmoRpZnJhbWXpobXp
+naLph4zlhbPpl63lr7nor53moYblv6vmjbfmlrnms5UgKi8NCmFydERpYWxvZy5j
+bG9zZSA9IGZ1bmN0aW9uICgpIHsNCgl2YXIgYXBpID0gYXJ0RGlhbG9nLmRhdGEo
+X3dpbk5hbWUgKyBfb3Blbik7DQoJYXBpICYmIGFwaS5jbG9zZSgpOw0KCXJldHVy
+biBmYWxzZTsNCn07DQoNCi8vIOeCueWHu2lmcmFtZeWGheWuueWIh+aNouWPoOWK
+oOmrmOW6pg0KX3RvcCAhPSB3aW5kb3cgJiYgJChkb2N1bWVudCkuYmluZCgnbW91
+c2Vkb3duJywgZnVuY3Rpb24gKCkgew0KCXZhciBhcGkgPSBhcnREaWFsb2cub3Bl
+bi5hcGk7DQoJYXBpICYmIGFwaS5mb2N1cyh0cnVlKTsNCn0pOw0KDQoNCi8qKg0K
+ICogQWpheOWhq+WFheWGheWuuQ0KICogQHBhcmFtCXtTdHJpbmd9CQkJ5Zyw5Z2A
+DQogKiBAcGFyYW0Je09iamVjdH0JCQnphY3nva7lj4LmlbANCiAqIEBwYXJhbQl7
+Qm9vbGVhbn0JCQnmmK/lkKblhYHorrjnvJPlrZguIOm7mOiupHRydWUNCiAqLw0K
+YXJ0RGlhbG9nLmxvYWQgPSBmdW5jdGlvbih1cmwsIG9wdGlvbnMsIGNhY2hlKXsN
+CgljYWNoZSA9IGNhY2hlIHx8IGZhbHNlOw0KCXZhciBvcHQgPSBvcHRpb25zIHx8
+IHt9Ow0KCQkNCgl2YXIgY29uZmlnID0gew0KCQl6SW5kZXg6IF96SW5kZXgoKSwN
+CgkJaW5pdDogZnVuY3Rpb24oaGVyZSl7DQoJCQl2YXIgYXBpID0gdGhpcywNCgkJ
+CQlhQ29uZmlnID0gYXBpLmNvbmZpZzsNCgkJCQ0KCQkJJC5hamF4KHsNCgkJCQl1
+cmw6IHVybCwNCgkJCQlzdWNjZXNzOiBmdW5jdGlvbiAoY29udGVudCkgew0KCQkJ
+CQlhcGkuY29udGVudChjb250ZW50KTsNCgkJCQkJb3B0LmluaXQgJiYgb3B0Lmlu
+aXQuY2FsbChhcGksIGhlcmUpOwkJDQoJCQkJfSwNCgkJCQljYWNoZTogY2FjaGUN
+CgkJCX0pOw0KCQkJDQoJCX0NCgl9Ow0KCQ0KCWRlbGV0ZSBvcHRpb25zLmNvbnRl
+bnQ7DQoJDQoJZm9yICh2YXIgaSBpbiBvcHQpIHsNCgkJaWYgKGNvbmZpZ1tpXSA9
+PT0gdW5kZWZpbmVkKSBjb25maWdbaV0gPSBvcHRbaV07DQoJfTsNCgkNCglyZXR1
+cm4gX3Byb3h5RGlhbG9nKGNvbmZpZyk7DQp9Ow0KDQoNCi8qKg0KICog6K2m5ZGK
+DQogKiBAcGFyYW0Je1N0cmluZ30J5raI5oGv5YaF5a65DQogKi8NCmFydERpYWxv
+Zy5hbGVydCA9IGZ1bmN0aW9uIChjb250ZW50KSB7DQoJcmV0dXJuIF9wcm94eURp
+YWxvZyh7DQoJCWlkOiAnQWxlcnQnLA0KCQl6SW5kZXg6IF96SW5kZXgoKSwNCgkJ
+aWNvbjogJ3dhcm5pbmcnLA0KCQlmaXhlZDogdHJ1ZSwNCgkJbG9jazogdHJ1ZSwN
+CgkJY29udGVudDogY29udGVudCwNCgkJb2s6IHRydWUNCgl9KTsNCn07DQoNCg0K
+LyoqDQogKiDnoa7orqQNCiAqIEBwYXJhbQl7U3RyaW5nfQnmtojmga/lhoXlrrkN
+CiAqIEBwYXJhbQl7RnVuY3Rpb259CeehruWumuaMiemSruWbnuiwg+WHveaVsA0K
+ICogQHBhcmFtCXtGdW5jdGlvbn0J5Y+W5raI5oyJ6ZKu5Zue6LCD5Ye95pWwDQog
+Ki8NCmFydERpYWxvZy5jb25maXJtID0gZnVuY3Rpb24gKGNvbnRlbnQsIHllcywg
+bm8pIHsNCglyZXR1cm4gX3Byb3h5RGlhbG9nKHsNCgkJaWQ6ICdDb25maXJtJywN
+CgkJekluZGV4OiBfekluZGV4KCksDQoJCWljb246ICdxdWVzdGlvbicsDQoJCWZp
+eGVkOiB0cnVlLA0KCQlsb2NrOiB0cnVlLA0KCQlvcGFjaXR5OiAuMSwNCgkJY29u
+dGVudDogY29udGVudCwNCgkJb2s6IGZ1bmN0aW9uIChoZXJlKSB7DQoJCQlyZXR1
+cm4geWVzLmNhbGwodGhpcywgaGVyZSk7DQoJCX0sDQoJCWNhbmNlbDogZnVuY3Rp
+b24gKGhlcmUpIHsNCgkJCXJldHVybiBubyAmJiBuby5jYWxsKHRoaXMsIGhlcmUp
+Ow0KCQl9DQoJfSk7DQp9Ow0KDQoNCi8qKg0KICog5o+Q6ZeuDQogKiBAcGFyYW0J
+e1N0cmluZ30J5o+Q6Zeu5YaF5a65DQogKiBAcGFyYW0Je0Z1bmN0aW9ufQnlm57o
+sIPlh73mlbAuIOaOpeaUtuWPguaVsO+8mui+k+WFpeWAvA0KICogQHBhcmFtCXtT
+dHJpbmd9Cem7mOiupOWAvA0KICovDQphcnREaWFsb2cucHJvbXB0ID0gZnVuY3Rp
+b24gKGNvbnRlbnQsIHllcywgdmFsdWUpIHsNCgl2YWx1ZSA9IHZhbHVlIHx8ICcn
+Ow0KCXZhciBpbnB1dDsNCgkNCglyZXR1cm4gX3Byb3h5RGlhbG9nKHsNCgkJaWQ6
+ICdQcm9tcHQnLA0KCQl6SW5kZXg6IF96SW5kZXgoKSwNCgkJaWNvbjogJ3F1ZXN0
+aW9uJywNCgkJZml4ZWQ6IHRydWUsDQoJCWxvY2s6IHRydWUsDQoJCW9wYWNpdHk6
+IC4xLA0KCQljb250ZW50OiBbDQoJCQknPGRpdiBzdHlsZT0ibWFyZ2luLWJvdHRv
+bTo1cHg7Zm9udC1zaXplOjEycHgiPicsDQoJCQkJY29udGVudCwNCgkJCSc8L2Rp
+dj4nLA0KCQkJJzxkaXY+JywNCgkJCQknPGlucHV0IHZhbHVlPSInLA0KCQkJCQl2
+YWx1ZSwNCgkJCQknIiBzdHlsZT0id2lkdGg6MThlbTtwYWRkaW5nOjZweCA0cHgi
+IC8+JywNCgkJCSc8L2Rpdj4nDQoJCQldLmpvaW4oJycpLA0KCQlpbml0OiBmdW5j
+dGlvbiAoKSB7DQoJCQlpbnB1dCA9IHRoaXMuRE9NLmNvbnRlbnQuZmluZCgnaW5w
+dXQnKVswXTsNCgkJCWlucHV0LnNlbGVjdCgpOw0KCQkJaW5wdXQuZm9jdXMoKTsN
+CgkJfSwNCgkJb2s6IGZ1bmN0aW9uIChoZXJlKSB7DQoJCQlyZXR1cm4geWVzICYm
+IHllcy5jYWxsKHRoaXMsIGlucHV0LnZhbHVlLCBoZXJlKTsNCgkJfSwNCgkJY2Fu
+Y2VsOiB0cnVlDQoJfSk7DQp9Ow0KDQoNCi8qKg0KICog55+t5pqC5o+Q56S6DQog
+KiBAcGFyYW0Je1N0cmluZ30J5o+Q56S65YaF5a65DQogKiBAcGFyYW0Je051bWJl
+cn0J5pi+56S65pe26Ze0ICjpu5jorqQxLjXnp5IpDQogKi8NCmFydERpYWxvZy50
+aXBzID0gZnVuY3Rpb24gKGNvbnRlbnQsIHRpbWUpIHsNCglyZXR1cm4gX3Byb3h5
+RGlhbG9nKHsNCgkJaWQ6ICdUaXBzJywNCgkJekluZGV4OiBfekluZGV4KCksDQoJ
+CXRpdGxlOiBmYWxzZSwNCgkJY2FuY2VsOiBmYWxzZSwNCgkJZml4ZWQ6IHRydWUs
+DQoJCWxvY2s6IGZhbHNlDQoJfSkNCgkuY29udGVudCgnPGRpdiBzdHlsZT0icGFk
+ZGluZzogMCAxZW07Ij4nICsgY29udGVudCArICc8L2Rpdj4nKQ0KCS50aW1lKHRp
+bWUgfHwgMS41KTsNCn07DQoNCg0KLy8g5aKe5by6YXJ0RGlhbG9n5ouW5ou95L2T
+6aqMDQovLyAtIOmYsuatoum8oOagh+iQveWFpWlmcmFtZeWvvOiHtOS4jea1geeV
+hQ0KLy8gLSDlr7notoXlpKflr7nor53moYbmi5bliqjkvJjljJYNCiQoZnVuY3Rp
+b24gKCkgew0KCXZhciBldmVudCA9IGFydERpYWxvZy5kcmFnRXZlbnQ7DQoJaWYg
+KCFldmVudCkgcmV0dXJuOw0KDQoJdmFyICR3aW5kb3cgPSAkKHdpbmRvdyksDQoJ
+CSRkb2N1bWVudCA9ICQoZG9jdW1lbnQpLA0KCQlwb3NpdGlvblR5cGUgPSBfaXNJ
+RTYgPyAnYWJzb2x1dGUnIDogJ2ZpeGVkJywNCgkJZHJhZ0V2ZW50ID0gZXZlbnQu
+cHJvdG90eXBlLA0KCQltYXNrID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnZGl2
+JyksDQoJCXN0eWxlID0gbWFzay5zdHlsZTsNCgkJDQoJc3R5bGUuY3NzVGV4dCA9
+ICdkaXNwbGF5Om5vbmU7cG9zaXRpb246JyArIHBvc2l0aW9uVHlwZSArICc7bGVm
+dDowO3RvcDowO3dpZHRoOjEwMCU7aGVpZ2h0OjEwMCU7Jw0KCSsgJ2N1cnNvcjpt
+b3ZlO2ZpbHRlcjphbHBoYShvcGFjaXR5PTApO29wYWNpdHk6MDtiYWNrZ3JvdW5k
+OiNGRkYnOw0KCQkNCglkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKG1hc2spOw0K
+CWRyYWdFdmVudC5fc3RhcnQgPSBkcmFnRXZlbnQuc3RhcnQ7DQoJZHJhZ0V2ZW50
+Ll9lbmQgPSBkcmFnRXZlbnQuZW5kOw0KCQ0KCWRyYWdFdmVudC5zdGFydCA9IGZ1
+bmN0aW9uICgpIHsNCgkJdmFyIERPTSA9IGFydERpYWxvZy5mb2N1cy5ET00sDQoJ
+CQltYWluID0gRE9NLm1haW5bMF0sDQoJCQlpZnJhbWUgPSBET00uY29udGVudFsw
+XS5nZXRFbGVtZW50c0J5VGFnTmFtZSgnaWZyYW1lJylbMF07DQoJCQ0KCQlkcmFn
+RXZlbnQuX3N0YXJ0LmFwcGx5KHRoaXMsIGFyZ3VtZW50cyk7DQoJCXN0eWxlLmRp
+c3BsYXkgPSAnYmxvY2snOw0KCQlzdHlsZS56SW5kZXggPSBhcnREaWFsb2cuZGVm
+YXVsdHMuekluZGV4ICsgMzsNCgkJDQoJCWlmIChwb3NpdGlvblR5cGUgPT09ICdh
+YnNvbHV0ZScpIHsNCgkJCXN0eWxlLndpZHRoID0gJHdpbmRvdy53aWR0aCgpICsg
+J3B4JzsNCgkJCXN0eWxlLmhlaWdodCA9ICR3aW5kb3cuaGVpZ2h0KCkgKyAncHgn
+Ow0KCQkJc3R5bGUubGVmdCA9ICRkb2N1bWVudC5zY3JvbGxMZWZ0KCkgKyAncHgn
+Ow0KCQkJc3R5bGUudG9wID0gJGRvY3VtZW50LnNjcm9sbFRvcCgpICsgJ3B4JzsN
+CgkJfTsNCgkJDQoJCWlmIChpZnJhbWUgJiYgbWFpbi5vZmZzZXRXaWR0aCAqIG1h
+aW4ub2Zmc2V0SGVpZ2h0ID4gMzA3MjAwKSB7DQoJCQltYWluLnN0eWxlLnZpc2li
+aWxpdHkgPSAnaGlkZGVuJzsNCgkJfTsNCgl9Ow0KCQ0KCWRyYWdFdmVudC5lbmQg
+PSBmdW5jdGlvbiAoKSB7DQoJCXZhciBkaWFsb2cgPSBhcnREaWFsb2cuZm9jdXM7
+DQoJCWRyYWdFdmVudC5fZW5kLmFwcGx5KHRoaXMsIGFyZ3VtZW50cyk7DQoJCXN0
+eWxlLmRpc3BsYXkgPSAnbm9uZSc7DQoJCWlmIChkaWFsb2cpIGRpYWxvZy5ET00u
+bWFpblswXS5zdHlsZS52aXNpYmlsaXR5ID0gJ3Zpc2libGUnOw0KCX07DQp9KTsN
+Cg0KfSkod2luZG93LmpRdWVyeSB8fCB3aW5kb3cuYXJ0LCB0aGlzLCB0aGlzLmFy
+dERpYWxvZyk7DQoNCg==
+
+------------XHWOqwZAbipgCbY99hAYeI
+Content-Disposition: inline; filename=demo.js
+Content-Type: application/x-javascript; name=demo.js
+Content-Location: http://www.planeart.cn/demo/artDialog/_doc/demo.js
+Content-Transfer-Encoding: Base64
+
+ZG9jdW1lbnQudGl0bGUgKz0gJyAnICsgYXJ0LmRpYWxvZy5mbi52ZXJzaW9uOw0K
+DQovLyDov5DooYzku6PnoIENCiQuZm4ucnVuQ29kZSA9IGZ1bmN0aW9uICgpIHsN
+Cgl2YXIgZ2V0VGV4dCA9IGZ1bmN0aW9uKGVsZW1zKSB7DQoJCXZhciByZXQgPSAi
+IiwgZWxlbTsNCg0KCQlmb3IgKCB2YXIgaSA9IDA7IGVsZW1zW2ldOyBpKysgKSB7
+DQoJCQllbGVtID0gZWxlbXNbaV07DQoJCQlpZiAoIGVsZW0ubm9kZVR5cGUgPT09
+IDMgfHwgZWxlbS5ub2RlVHlwZSA9PT0gNCApIHsNCgkJCQlyZXQgKz0gZWxlbS5u
+b2RlVmFsdWU7DQoJCQl9IGVsc2UgaWYgKCBlbGVtLm5vZGVUeXBlICE9PSA4ICkg
+ew0KCQkJCXJldCArPSBnZXRUZXh0KCBlbGVtLmNoaWxkTm9kZXMgKTsNCgkJCX07
+DQoJCX07DQoNCgkJcmV0dXJuIHJldDsNCgl9Ow0KCQ0KCXZhciBjb2RlID0gZ2V0
+VGV4dCh0aGlzKTsNCgluZXcgRnVuY3Rpb24oY29kZSkuY2FsbCh3aW5kb3cpOw0K
+CQ0KCXJldHVybiB0aGlzOw0KfTsNCg0KJChmdW5jdGlvbigpew0KCS8vIOaMiemS
+ruinpuWPkeS7o+eggei/kOihjA0KCSQoZG9jdW1lbnQpLmJpbmQoJ2NsaWNrJywg
+ZnVuY3Rpb24oZXZlbnQpew0KCQl2YXIgdGFyZ2V0ID0gZXZlbnQudGFyZ2V0LA0K
+CQkJJHRhcmdldCA9ICQodGFyZ2V0KTsNCg0KCQlpZiAoJHRhcmdldC5oYXNDbGFz
+cygncnVuQ29kZScpKSB7DQoJCQkkKCcjJyArIHRhcmdldC5uYW1lKS5ydW5Db2Rl
+KCk7DQoJCX07DQoJfSk7DQoJDQoJLy8g6Lez6L2s5Yiw5aS06YOoDQoJdmFyICRm
+b290ZXIgPSAkKCcjZm9vdGVyJyk7DQoJaWYgKCRmb290ZXJbMF0pICRmb290ZXIu
+YmluZCgnY2xpY2snLCBmdW5jdGlvbiAoKSB7DQoJCXdpbmRvdy5zY3JvbGxUbygw
+LCAwKTsNCgkJcmV0dXJuIGZhbHNlOw0KCX0pLmNzcygnY3Vyc29yJywgJ3BvaW50
+ZXInKVswXS50aXRsZSA9ICflm57liLDpobXlpLQnOw0KfSk7DQoNCi8vIOearuiC
+pOmAieaLqQkNCndpbmRvdy5fZGVtb1NraW4gPSBmdW5jdGlvbiAoKSB7DQoJYXJ0
+LmRpYWxvZyh7DQoJCWlkOiAnZGVtb1NraW4nLA0KCQlwYWRkaW5nOiAnMTVweCcs
+DQoJCXRpdGxlOiAnYXJ0RGlhbG9n55qu6IKk5bGV56S6JywNCgkJY29udGVudDog
+X2RlbW9Ta2luLnRtcGwNCgl9KTsNCn07DQpfZGVtb1NraW4udG1wbCA9IGZ1bmN0
+aW9uIChkYXRhKSB7DQoJdmFyIGh0bWwgPSBbJzx0YWJsZSBjbGFzcz0iemVicmEi
+IHN0eWxlPSJ3aWR0aDo0ODBweCI+PHRib2R5PiddOw0KCWZvciAodmFyIGkgPSAw
+LCBsZW5ndGggPSBkYXRhLmxlbmd0aDsgaSA8IGxlbmd0aDsgaSArKykgew0KCQlo
+dG1sLnB1c2goJzx0ciBjbGFzcz0iJyk7DQoJCWh0bWwucHVzaChpJTIgPyAnb2Rk
+JyA6ICcnKTsNCgkJaHRtbC5wdXNoKCciPjx0aCBzdHlsZT0id2lkdGg6N2VtIj48
+YSBocmVmPSI/ZGVtb1NraW49Jyk7DQoJCWh0bWwucHVzaChkYXRhW2ldLm5hbWUp
+Ow0KCQlodG1sLnB1c2goJyI+Jyk7DQoJCWh0bWwucHVzaChkYXRhW2ldLm5hbWUp
+Ow0KCQlodG1sLnB1c2goJzwvYT48L3RoPjx0ZD4nKTsNCgkJaHRtbC5wdXNoKGRh
+dGFbaV0uYWJvdXQpOw0KCQlodG1sLnB1c2goJzwvdGQ+PC90cj4nKTsNCgl9Ow0K
+CWh0bWwucHVzaCgnPC90Ym9keT48L3RhYmxlPicpOw0KCXJldHVybiBodG1sLmpv
+aW4oJycpOw0KfShbDQoJe25hbWU6ICdkZWZhdWx0JywgYWJvdXQ6ICdhcnREaWFs
+b2fpu5jorqTnmq7ogqTvvIznroDmtIHvvIznuq9DU1Porr7orqHvvIzml6Dlm77n
+iYfvvIzph4fnlKhjc3Mz5riQ6L+b5aKe5by6J30sDQoJe25hbWU6ICdhZXJvJywg
+YWJvdXQ6ICdhcnREaWFsb2cgMivmoIflv5fmgKfnmoTnmq7ogqTvvIx3aW5kb3dz
+N+avm+eOu+eSg+mjjuagvOOAguaPkOS+m1BTROa6kOaWh+S7tiA8YSBocmVmPSJo
+dHRwOi8vY29kZS5nb29nbGUuY29tL3AvYXJ0ZGlhbG9nL2Rvd25sb2Fkcy9kZXRh
+aWw/bmFtZT1hZXJvLnBzZCZjYW49MiZxPSIgdGFyZ2V0PSJfYmxhbmsiPuS4i+i9
+vTwvYT4nfSwNCgl7bmFtZTogJ2Nocm9tZScsIGFib3V0OiAnY2hyb21l5rWP6KeI
+5ZmoKHhwKemjjuagvCd9LA0KCXtuYW1lOiAnb3BlcmEnLCBhYm91dDogJ29wZXJh
+IDEx5rWP6KeI5Zmo5YaF572u5a+56K+d5qGG6aOO5qC8J30sDQoJe25hbWU6ICdz
+aW1wbGUnLCBhYm91dDogJ+eugOWNlemjjuagvO+8jOaXoOWbvueJh++8jOS4jeaY
+vuekuuagh+mimCd9LA0KCXtuYW1lOiAnaWRpYWxvZycsIGFib3V0OiAn6Iu55p6c
+6aOO5qC877yMaVBhZCBTYWZhcmnmiJZNYWMgU2FmYXJp5YWz6Zet5oyJ6ZKu5bCG
+5Zyo5bem6L655pi+56S6J30sDQoJe25hbWU6ICd0d2l0dGVyJywgYWJvdXQ6ICd0
+d2l0dGVy6aOO5qC877yM5peg5Zu+54mHJ30sDQoJe25hbWU6ICdibHVlJywgYWJv
+dXQ6ICfok53oibLpo47moLwnfSwNCgl7bmFtZTogJ2JsYWNrJywgYWJvdXQ6ICfp
+u5HoibLpo47moLwnfSwNCgl7bmFtZTogJ2dyZWVuJywgYWJvdXQ6ICfnu7/oibLp
+o47moLwnfQ0KXSk7DQoNCiQoZnVuY3Rpb24gKCkgew0KCXZhciAkc2tpbiA9ICQo
+JyNuYXYtc2tpbicpOw0KCSRza2luWzBdICYmICRza2luLmJpbmQoJ2NsaWNrJywg
+ZnVuY3Rpb24gKCkgew0KCQlfZGVtb1NraW4oKTsNCgkJcmV0dXJuIGZhbHNlOw0K
+CX0pOw0KCQ0KCS8vIOeCueS6ruWvvOiIqg0KCXZhciBsaW5rcyA9ICQoJyNuYXYn
+KVswXS5nZXRFbGVtZW50c0J5VGFnTmFtZSgiYSIpLA0KCQlVUkwgPSBkb2N1bWVu
+dC5VUkwuc3BsaXQoJyMnKVswXSwNCgkJbGFzdCA9IFVSTC5jaGFyQXQoVVJMLmxl
+bmd0aCAtIDEpOw0KCQkNCglpZiAobGFzdCA9PT0gJy8nKSB7DQoJCWxpbmtzWzBd
+LmNsYXNzTmFtZSArPSAnIHNlbGVjdCc7DQoJfSBlbHNlIHsNCgkJZm9yICh2YXIg
+aT0wOyBpPGxpbmtzLmxlbmd0aDsgaSsrKSB7DQoJCQlpZiAoVVJMLnRvTG93ZXJD
+YXNlKCkuaW5kZXhPZihsaW5rc1tpXS5ocmVmLnRvTG93ZXJDYXNlKCkpICE9PSAt
+MSkgew0KCQkJCWxpbmtzW2ldLmNsYXNzTmFtZSArPSAnIHNlbGVjdCc7DQoJCQl9
+Ow0KCQl9Ow0KCX07CQ0KfSk7DQoNCg0KDQovLyBmaXJlYnVnDQooZnVuY3Rpb24g
+KCkgew0KdmFyIGdhID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7
+IGdhLnR5cGUgPSAndGV4dC9qYXZhc2NyaXB0JzsgZ2EuYXN5bmMgPSB0cnVlOw0K
+Z2Euc3JjID0gJ2h0dHA6Ly9nZXRmaXJlYnVnLmNvbS9maXJlYnVnLWxpdGUtYmV0
+YS5qcyc7DQp2YXIgcyA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCdz
+Y3JpcHQnKVswXTsgcy5wYXJlbnROb2RlLmluc2VydEJlZm9yZShnYSwgcyk7DQp9
+KSgpOw0KDQovLyBnb29nbGUtYW5hbHl0aWNzDQp2YXIgX2dhcSA9IF9nYXEgfHwg
+W107DQpfZ2FxLnB1c2goWydfc2V0QWNjb3VudCcsICdVQS0xOTgyMzc1OS0yJ10p
+Ow0KX2dhcS5wdXNoKFsnX3NldERvbWFpbk5hbWUnLCAnLnBsYW5lYXJ0LmNuJ10p
+Ow0KX2dhcS5wdXNoKFsnX3RyYWNrUGFnZXZpZXcnXSk7DQooZnVuY3Rpb24oKSB7
+DQp2YXIgZ2EgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTsgZ2Eu
+dHlwZSA9ICd0ZXh0L2phdmFzY3JpcHQnOyBnYS5hc3luYyA9IHRydWU7DQpnYS5z
+cmMgPSAoJ2h0dHBzOicgPT0gZG9jdW1lbnQubG9jYXRpb24ucHJvdG9jb2wgPyAn
+aHR0cHM6Ly9zc2wnIDogJ2h0dHA6Ly93d3cnKSArICcuZ29vZ2xlLWFuYWx5dGlj
+cy5jb20vZ2EuanMnOw0KdmFyIHMgPSBkb2N1bWVudC5nZXRFbGVtZW50c0J5VGFn
+TmFtZSgnc2NyaXB0JylbMF07IHMucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUoZ2Es
+IHMpOw0KfSkoKTsNCg==
+
+------------XHWOqwZAbipgCbY99hAYeI
+Content-Disposition: inline; filename=highlight.pack.js
+Content-Type: application/x-javascript; name=highlight.pack.js
+Content-Location: http://www.planeart.cn/demo/artDialog/_doc/highlight/highlight.pack.js
+Content-Transfer-Encoding: Base64
+
+LyoNClN5bnRheCBoaWdobGlnaHRpbmcgd2l0aCBsYW5ndWFnZSBhdXRvZGV0ZWN0
+aW9uLg0KaHR0cDovL3NvZnR3YXJlbWFuaWFjcy5vcmcvc29mdC9oaWdobGlnaHQv
+DQoqLw0KdmFyIGhsanM9bmV3IGZ1bmN0aW9uKCl7dmFyIExBTkdVQUdFUz17fTt2
+YXIgc2VsZWN0ZWRfbGFuZ3VhZ2VzPXt9O2Z1bmN0aW9uIGVzY2FwZSh2YWx1ZSl7
+cmV0dXJuIHZhbHVlLnJlcGxhY2UoLyYvZ20sJyZhbXA7JykucmVwbGFjZSgvPC9n
+bSwnJmx0OycpLnJlcGxhY2UoLz4vZ20sJyZndDsnKX07ZnVuY3Rpb24gY29udGFp
+bnMoYXJyYXksaXRlbSl7aWYoIWFycmF5KXJldHVybiBmYWxzZTtmb3IodmFyIGk9
+MDtpPGFycmF5Lmxlbmd0aDtpKyspaWYoYXJyYXlbaV09PWl0ZW0pcmV0dXJuIHRy
+dWU7cmV0dXJuIGZhbHNlfTtmdW5jdGlvbiBsYW5nUmUobGFuZ3VhZ2UsdmFsdWUs
+Z2xvYmFsKXt2YXIgbW9kZT0nbScrKGxhbmd1YWdlLmNhc2VfaW5zZW5zaXRpdmU/
+J2knOicnKSsoZ2xvYmFsPydnJzonJyk7cmV0dXJuIG5ldyBSZWdFeHAodmFsdWUs
+bW9kZSl9O2Z1bmN0aW9uIGZpbmRDb2RlKHByZSl7dmFyIG5vZGU7Zm9yKHZhciBp
+PTA7aTxwcmUuY2hpbGROb2Rlcy5sZW5ndGg7aSsrKXtub2RlPXByZS5jaGlsZE5v
+ZGVzW2ldO2lmKG5vZGUubm9kZU5hbWU9PSdDT0RFJylyZXR1cm4gbm9kZTtpZigh
+KG5vZGUubm9kZVR5cGU9PTMmJm5vZGUubm9kZVZhbHVlLm1hdGNoKC9ccysvKSkp
+cmV0dXJuIG51bGx9fTtmdW5jdGlvbiBibG9ja1RleHQoYmxvY2spe3ZhciByZXN1
+bHQ9Jyc7Zm9yKHZhciBpPTA7aTxibG9jay5jaGlsZE5vZGVzLmxlbmd0aDtpKysp
+aWYoYmxvY2suY2hpbGROb2Rlc1tpXS5ub2RlVHlwZT09MylyZXN1bHQrPWJsb2Nr
+LmNoaWxkTm9kZXNbaV0ubm9kZVZhbHVlO2Vsc2UgaWYoYmxvY2suY2hpbGROb2Rl
+c1tpXS5ub2RlTmFtZT09J0JSJylyZXN1bHQrPSdcbic7ZWxzZSByZXN1bHQrPWJs
+b2NrVGV4dChibG9jay5jaGlsZE5vZGVzW2ldKTtyZXR1cm4gcmVzdWx0fTtmdW5j
+dGlvbiBibG9ja0xhbmd1YWdlKGJsb2NrKXt2YXIgY2xhc3Nlcz1ibG9jay5jbGFz
+c05hbWUuc3BsaXQoL1xzKy8pO2NsYXNzZXM9Y2xhc3Nlcy5jb25jYXQoYmxvY2su
+cGFyZW50Tm9kZS5jbGFzc05hbWUuc3BsaXQoL1xzKy8pKTtmb3IodmFyIGk9MDtp
+PGNsYXNzZXMubGVuZ3RoO2krKyl7dmFyIGNsYXNzXz1jbGFzc2VzW2ldLnJlcGxh
+Y2UoL15sYW5ndWFnZS0vLCcnKTtpZihjbGFzc189PSduby1oaWdobGlnaHQnKXt0
+aHJvdydObyBoaWdobGlnaHQnfTtpZihMQU5HVUFHRVNbY2xhc3NfXSl7cmV0dXJu
+IGNsYXNzX319fTtmdW5jdGlvbiBub2RlU3RyZWFtKG5vZGUpe3ZhciByZXN1bHQ9
+W107KGZ1bmN0aW9uKG5vZGUsb2Zmc2V0KXtmb3IodmFyIGk9MDtpPG5vZGUuY2hp
+bGROb2Rlcy5sZW5ndGg7aSsrKXtpZihub2RlLmNoaWxkTm9kZXNbaV0ubm9kZVR5
+cGU9PTMpb2Zmc2V0Kz1ub2RlLmNoaWxkTm9kZXNbaV0ubm9kZVZhbHVlLmxlbmd0
+aDtlbHNlIGlmKG5vZGUuY2hpbGROb2Rlc1tpXS5ub2RlTmFtZT09J0JSJylvZmZz
+ZXQrPTE7ZWxzZXtyZXN1bHQucHVzaCh7ZXZlbnQ6J3N0YXJ0JyxvZmZzZXQ6b2Zm
+c2V0LG5vZGU6bm9kZS5jaGlsZE5vZGVzW2ldfSk7b2Zmc2V0PWFyZ3VtZW50cy5j
+YWxsZWUobm9kZS5jaGlsZE5vZGVzW2ldLG9mZnNldCk7cmVzdWx0LnB1c2goe2V2
+ZW50OidzdG9wJyxvZmZzZXQ6b2Zmc2V0LG5vZGU6bm9kZS5jaGlsZE5vZGVzW2ld
+fSl9fTtyZXR1cm4gb2Zmc2V0fSkobm9kZSwwKTtyZXR1cm4gcmVzdWx0fTtmdW5j
+dGlvbiBtZXJnZVN0cmVhbXMoc3RyZWFtMSxzdHJlYW0yLHZhbHVlKXt2YXIgcHJv
+Y2Vzc2VkPTA7dmFyIHJlc3VsdD0nJzt2YXIgbm9kZVN0YWNrPVtdO2Z1bmN0aW9u
+IHNlbGVjdFN0cmVhbSgpe2lmKHN0cmVhbTEubGVuZ3RoJiZzdHJlYW0yLmxlbmd0
+aCl7aWYoc3RyZWFtMVswXS5vZmZzZXQhPXN0cmVhbTJbMF0ub2Zmc2V0KXJldHVy
+bihzdHJlYW0xWzBdLm9mZnNldDxzdHJlYW0yWzBdLm9mZnNldCk/c3RyZWFtMTpz
+dHJlYW0yO2Vsc2UgcmV0dXJuKHN0cmVhbTFbMF0uZXZlbnQ9PSdzdGFydCcmJnN0
+cmVhbTJbMF0uZXZlbnQ9PSdzdG9wJyk/c3RyZWFtMjpzdHJlYW0xfWVsc2V7cmV0
+dXJuIHN0cmVhbTEubGVuZ3RoP3N0cmVhbTE6c3RyZWFtMn19O2Z1bmN0aW9uIG9w
+ZW4obm9kZSl7dmFyIHJlc3VsdD0nPCcrbm9kZS5ub2RlTmFtZS50b0xvd2VyQ2Fz
+ZSgpO2Zvcih2YXIgaT0wO2k8bm9kZS5hdHRyaWJ1dGVzLmxlbmd0aDtpKyspe3Zh
+ciBhdHRyaWJ1dGU9bm9kZS5hdHRyaWJ1dGVzW2ldO3Jlc3VsdCs9JyAnK2F0dHJp
+YnV0ZS5ub2RlTmFtZS50b0xvd2VyQ2FzZSgpO2lmKGF0dHJpYnV0ZS5ub2RlVmFs
+dWUhPXVuZGVmaW5lZCl7cmVzdWx0Kz0nPSInK2VzY2FwZShhdHRyaWJ1dGUubm9k
+ZVZhbHVlKSsnIid9fTtyZXR1cm4gcmVzdWx0Kyc+J307ZnVuY3Rpb24gY2xvc2Uo
+bm9kZSl7cmV0dXJuJzwvJytub2RlLm5vZGVOYW1lLnRvTG93ZXJDYXNlKCkrJz4n
+fTt3aGlsZShzdHJlYW0xLmxlbmd0aHx8c3RyZWFtMi5sZW5ndGgpe3ZhciBjdXJy
+ZW50PXNlbGVjdFN0cmVhbSgpLnNwbGljZSgwLDEpWzBdO3Jlc3VsdCs9ZXNjYXBl
+KHZhbHVlLnN1YnN0cihwcm9jZXNzZWQsY3VycmVudC5vZmZzZXQtcHJvY2Vzc2Vk
+KSk7cHJvY2Vzc2VkPWN1cnJlbnQub2Zmc2V0O2lmKGN1cnJlbnQuZXZlbnQ9PSdz
+dGFydCcpe3Jlc3VsdCs9b3BlbihjdXJyZW50Lm5vZGUpO25vZGVTdGFjay5wdXNo
+KGN1cnJlbnQubm9kZSl9ZWxzZSBpZihjdXJyZW50LmV2ZW50PT0nc3RvcCcpe3Zh
+ciBpPW5vZGVTdGFjay5sZW5ndGg7ZG97aS0tO3ZhciBub2RlPW5vZGVTdGFja1tp
+XTtyZXN1bHQrPWNsb3NlKG5vZGUpfXdoaWxlKG5vZGUhPWN1cnJlbnQubm9kZSk7
+bm9kZVN0YWNrLnNwbGljZShpLDEpO3doaWxlKGk8bm9kZVN0YWNrLmxlbmd0aCl7
+cmVzdWx0Kz1vcGVuKG5vZGVTdGFja1tpXSk7aSsrfX19O3Jlc3VsdCs9dmFsdWUu
+c3Vic3RyKHByb2Nlc3NlZCk7cmV0dXJuIHJlc3VsdH07ZnVuY3Rpb24gaGlnaGxp
+Z2h0KGxhbmd1YWdlX25hbWUsdmFsdWUpe2Z1bmN0aW9uIGNvbXBpbGVTdWJNb2Rl
+cyhtb2RlLGxhbmd1YWdlKXttb2RlLnN1Yl9tb2Rlcz1bXTtmb3IodmFyIGk9MDtp
+PG1vZGUuY29udGFpbnMubGVuZ3RoO2krKyl7Zm9yKHZhciBqPTA7ajxsYW5ndWFn
+ZS5tb2Rlcy5sZW5ndGg7aisrKXtpZihsYW5ndWFnZS5tb2Rlc1tqXS5jbGFzc05h
+bWU9PW1vZGUuY29udGFpbnNbaV0pe21vZGUuc3ViX21vZGVzW21vZGUuc3ViX21v
+ZGVzLmxlbmd0aF09bGFuZ3VhZ2UubW9kZXNbal19fX19O2Z1bmN0aW9uIHN1Yk1v
+ZGUobGV4ZW0sbW9kZSl7aWYoIW1vZGUuY29udGFpbnMpe3JldHVybiBudWxsfTtp
+ZighbW9kZS5zdWJfbW9kZXMpe2NvbXBpbGVTdWJNb2Rlcyhtb2RlLGxhbmd1YWdl
+KX07Zm9yKHZhciBpPTA7aTxtb2RlLnN1Yl9tb2Rlcy5sZW5ndGg7aSsrKXtpZiht
+b2RlLnN1Yl9tb2Rlc1tpXS5iZWdpblJlLnRlc3QobGV4ZW0pKXtyZXR1cm4gbW9k
+ZS5zdWJfbW9kZXNbaV19fTtyZXR1cm4gbnVsbH07ZnVuY3Rpb24gZW5kT2ZNb2Rl
+KG1vZGVfaW5kZXgsbGV4ZW0pe2lmKG1vZGVzW21vZGVfaW5kZXhdLmVuZCYmbW9k
+ZXNbbW9kZV9pbmRleF0uZW5kUmUudGVzdChsZXhlbSkpcmV0dXJuIDE7aWYobW9k
+ZXNbbW9kZV9pbmRleF0uZW5kc1dpdGhQYXJlbnQpe3ZhciBsZXZlbD1lbmRPZk1v
+ZGUobW9kZV9pbmRleC0xLGxleGVtKTtyZXR1cm4gbGV2ZWw/bGV2ZWwrMTowfTty
+ZXR1cm4gMH07ZnVuY3Rpb24gaXNJbGxlZ2FsKGxleGVtLG1vZGUpe3JldHVybiBt
+b2RlLmlsbGVnYWxSZSYmbW9kZS5pbGxlZ2FsUmUudGVzdChsZXhlbSl9O2Z1bmN0
+aW9uIGNvbXBpbGVUZXJtaW5hdG9ycyhtb2RlLGxhbmd1YWdlKXt2YXIgdGVybWlu
+YXRvcnM9W107ZnVuY3Rpb24gYWRkVGVybWluYXRvcihyZSl7aWYoIWNvbnRhaW5z
+KHRlcm1pbmF0b3JzLHJlKSl7dGVybWluYXRvcnNbdGVybWluYXRvcnMubGVuZ3Ro
+XT1yZX19O2lmKG1vZGUuY29udGFpbnMpZm9yKHZhciBpPTA7aTxsYW5ndWFnZS5t
+b2Rlcy5sZW5ndGg7aSsrKXtpZihjb250YWlucyhtb2RlLmNvbnRhaW5zLGxhbmd1
+YWdlLm1vZGVzW2ldLmNsYXNzTmFtZSkpe2FkZFRlcm1pbmF0b3IobGFuZ3VhZ2Uu
+bW9kZXNbaV0uYmVnaW4pfX07dmFyIGluZGV4PW1vZGVzLmxlbmd0aC0xO2Rve2lm
+KG1vZGVzW2luZGV4XS5lbmQpe2FkZFRlcm1pbmF0b3IobW9kZXNbaW5kZXhdLmVu
+ZCl9O2luZGV4LS19d2hpbGUobW9kZXNbaW5kZXgrMV0uZW5kc1dpdGhQYXJlbnQp
+O2lmKG1vZGUuaWxsZWdhbCl7YWRkVGVybWluYXRvcihtb2RlLmlsbGVnYWwpfTt2
+YXIgdGVybWluYXRvcl9yZT0nKCcrdGVybWluYXRvcnNbMF07Zm9yKHZhciBpPTA7
+aTx0ZXJtaW5hdG9ycy5sZW5ndGg7aSsrKXRlcm1pbmF0b3JfcmUrPSd8Jyt0ZXJt
+aW5hdG9yc1tpXTt0ZXJtaW5hdG9yX3JlKz0nKSc7cmV0dXJuIGxhbmdSZShsYW5n
+dWFnZSx0ZXJtaW5hdG9yX3JlKX07ZnVuY3Rpb24gZWF0TW9kZUNodW5rKHZhbHVl
+LGluZGV4KXt2YXIgbW9kZT1tb2Rlc1ttb2Rlcy5sZW5ndGgtMV07aWYoIW1vZGUu
+dGVybWluYXRvcnMpe21vZGUudGVybWluYXRvcnM9Y29tcGlsZVRlcm1pbmF0b3Jz
+KG1vZGUsbGFuZ3VhZ2UpfTt2YWx1ZT12YWx1ZS5zdWJzdHIoaW5kZXgpO3ZhciBt
+YXRjaD1tb2RlLnRlcm1pbmF0b3JzLmV4ZWModmFsdWUpO2lmKCFtYXRjaClyZXR1
+cm5bdmFsdWUsJycsdHJ1ZV07aWYobWF0Y2guaW5kZXg9PTApcmV0dXJuWycnLG1h
+dGNoWzBdLGZhbHNlXTtlbHNlIHJldHVyblt2YWx1ZS5zdWJzdHIoMCxtYXRjaC5p
+bmRleCksbWF0Y2hbMF0sZmFsc2VdfTtmdW5jdGlvbiBrZXl3b3JkTWF0Y2gobW9k
+ZSxtYXRjaCl7dmFyIG1hdGNoX3N0cj1sYW5ndWFnZS5jYXNlX2luc2Vuc2l0aXZl
+P21hdGNoWzBdLnRvTG93ZXJDYXNlKCk6bWF0Y2hbMF07Zm9yKHZhciBjbGFzc05h
+bWUgaW4gbW9kZS5rZXl3b3JkR3JvdXBzKXtpZighbW9kZS5rZXl3b3JkR3JvdXBz
+Lmhhc093blByb3BlcnR5KGNsYXNzTmFtZSkpY29udGludWU7dmFyIHZhbHVlPW1v
+ZGUua2V5d29yZEdyb3Vwc1tjbGFzc05hbWVdLmhhc093blByb3BlcnR5KG1hdGNo
+X3N0cik7aWYodmFsdWUpcmV0dXJuW2NsYXNzTmFtZSx2YWx1ZV19O3JldHVybiBm
+YWxzZX07ZnVuY3Rpb24gcHJvY2Vzc0tleXdvcmRzKGJ1ZmZlcixtb2RlKXtpZigh
+bW9kZS5rZXl3b3Jkc3x8IW1vZGUubGV4ZW1zKXJldHVybiBlc2NhcGUoYnVmZmVy
+KTtpZighbW9kZS5sZXhlbXNSZSl7dmFyIGxleGVtc19yZT0nKCcrbW9kZS5sZXhl
+bXNbMF07Zm9yKHZhciBpPTE7aTxtb2RlLmxleGVtcy5sZW5ndGg7aSsrKWxleGVt
+c19yZSs9J3wnK21vZGUubGV4ZW1zW2ldO2xleGVtc19yZSs9JyknO21vZGUubGV4
+ZW1zUmU9bGFuZ1JlKGxhbmd1YWdlLGxleGVtc19yZSx0cnVlKX07dmFyIHJlc3Vs
+dD0nJzt2YXIgbGFzdF9pbmRleD0wO21vZGUubGV4ZW1zUmUubGFzdEluZGV4PTA7
+dmFyIG1hdGNoPW1vZGUubGV4ZW1zUmUuZXhlYyhidWZmZXIpO3doaWxlKG1hdGNo
+KXtyZXN1bHQrPWVzY2FwZShidWZmZXIuc3Vic3RyKGxhc3RfaW5kZXgsbWF0Y2gu
+aW5kZXgtbGFzdF9pbmRleCkpO3ZhciBrZXl3b3JkX21hdGNoPWtleXdvcmRNYXRj
+aChtb2RlLG1hdGNoKTtpZihrZXl3b3JkX21hdGNoKXtrZXl3b3JkX2NvdW50Kz1r
+ZXl3b3JkX21hdGNoWzFdO3Jlc3VsdCs9JzxzcGFuIGNsYXNzPSInK2tleXdvcmRf
+bWF0Y2hbMF0rJyI+Jytlc2NhcGUobWF0Y2hbMF0pKyc8L3NwYW4+J31lbHNle3Jl
+c3VsdCs9ZXNjYXBlKG1hdGNoWzBdKX07bGFzdF9pbmRleD1tb2RlLmxleGVtc1Jl
+Lmxhc3RJbmRleDttYXRjaD1tb2RlLmxleGVtc1JlLmV4ZWMoYnVmZmVyKX07cmVz
+dWx0Kz1lc2NhcGUoYnVmZmVyLnN1YnN0cihsYXN0X2luZGV4LGJ1ZmZlci5sZW5n
+dGgtbGFzdF9pbmRleCkpO3JldHVybiByZXN1bHR9O2Z1bmN0aW9uIHByb2Nlc3NC
+dWZmZXIoYnVmZmVyLG1vZGUpe2lmKG1vZGUuc3ViTGFuZ3VhZ2UmJnNlbGVjdGVk
+X2xhbmd1YWdlc1ttb2RlLnN1Ykxhbmd1YWdlXSl7dmFyIHJlc3VsdD1oaWdobGln
+aHQobW9kZS5zdWJMYW5ndWFnZSxidWZmZXIpO2tleXdvcmRfY291bnQrPXJlc3Vs
+dC5rZXl3b3JkX2NvdW50O3JlbGV2YW5jZSs9cmVzdWx0LnJlbGV2YW5jZTtyZXR1
+cm4gcmVzdWx0LnZhbHVlfWVsc2V7cmV0dXJuIHByb2Nlc3NLZXl3b3JkcyhidWZm
+ZXIsbW9kZSl9fTtmdW5jdGlvbiBzdGFydE5ld01vZGUobW9kZSxsZXhlbSl7dmFy
+IG1hcmt1cD1tb2RlLm5vTWFya3VwPycnOic8c3BhbiBjbGFzcz0iJyttb2RlLmRp
+c3BsYXlDbGFzc05hbWUrJyI+JztpZihtb2RlLnJldHVybkJlZ2luKXtyZXN1bHQr
+PW1hcmt1cDttb2RlLmJ1ZmZlcj0nJ31lbHNlIGlmKG1vZGUuZXhjbHVkZUJlZ2lu
+KXtyZXN1bHQrPWVzY2FwZShsZXhlbSkrbWFya3VwO21vZGUuYnVmZmVyPScnfWVs
+c2V7cmVzdWx0Kz1tYXJrdXA7bW9kZS5idWZmZXI9bGV4ZW19O21vZGVzW21vZGVz
+Lmxlbmd0aF09bW9kZX07ZnVuY3Rpb24gcHJvY2Vzc01vZGVJbmZvKGJ1ZmZlcixs
+ZXhlbSxlbmQpe3ZhciBjdXJyZW50X21vZGU9bW9kZXNbbW9kZXMubGVuZ3RoLTFd
+O2lmKGVuZCl7cmVzdWx0Kz1wcm9jZXNzQnVmZmVyKGN1cnJlbnRfbW9kZS5idWZm
+ZXIrYnVmZmVyLGN1cnJlbnRfbW9kZSk7cmV0dXJuIGZhbHNlfTt2YXIgbmV3X21v
+ZGU9c3ViTW9kZShsZXhlbSxjdXJyZW50X21vZGUpO2lmKG5ld19tb2RlKXtyZXN1
+bHQrPXByb2Nlc3NCdWZmZXIoY3VycmVudF9tb2RlLmJ1ZmZlcitidWZmZXIsY3Vy
+cmVudF9tb2RlKTtzdGFydE5ld01vZGUobmV3X21vZGUsbGV4ZW0pO3JlbGV2YW5j
+ZSs9bmV3X21vZGUucmVsZXZhbmNlO3JldHVybiBuZXdfbW9kZS5yZXR1cm5CZWdp
+bn07dmFyIGVuZF9sZXZlbD1lbmRPZk1vZGUobW9kZXMubGVuZ3RoLTEsbGV4ZW0p
+O2lmKGVuZF9sZXZlbCl7dmFyIG1hcmt1cD1jdXJyZW50X21vZGUubm9NYXJrdXA/
+Jyc6Jzwvc3Bhbj4nO2lmKGN1cnJlbnRfbW9kZS5yZXR1cm5FbmQpe3Jlc3VsdCs9
+cHJvY2Vzc0J1ZmZlcihjdXJyZW50X21vZGUuYnVmZmVyK2J1ZmZlcixjdXJyZW50
+X21vZGUpK21hcmt1cH1lbHNlIGlmKGN1cnJlbnRfbW9kZS5leGNsdWRlRW5kKXty
+ZXN1bHQrPXByb2Nlc3NCdWZmZXIoY3VycmVudF9tb2RlLmJ1ZmZlcitidWZmZXIs
+Y3VycmVudF9tb2RlKSttYXJrdXArZXNjYXBlKGxleGVtKX1lbHNle3Jlc3VsdCs9
+cHJvY2Vzc0J1ZmZlcihjdXJyZW50X21vZGUuYnVmZmVyK2J1ZmZlcitsZXhlbSxj
+dXJyZW50X21vZGUpK21hcmt1cH07d2hpbGUoZW5kX2xldmVsPjEpe21hcmt1cD1t
+b2Rlc1ttb2Rlcy5sZW5ndGgtMl0ubm9NYXJrdXA/Jyc6Jzwvc3Bhbj4nO3Jlc3Vs
+dCs9bWFya3VwO2VuZF9sZXZlbC0tO21vZGVzLmxlbmd0aC0tfTttb2Rlcy5sZW5n
+dGgtLTttb2Rlc1ttb2Rlcy5sZW5ndGgtMV0uYnVmZmVyPScnO2lmKGN1cnJlbnRf
+bW9kZS5zdGFydHMpe2Zvcih2YXIgaT0wO2k8bGFuZ3VhZ2UubW9kZXMubGVuZ3Ro
+O2krKyl7aWYobGFuZ3VhZ2UubW9kZXNbaV0uY2xhc3NOYW1lPT1jdXJyZW50X21v
+ZGUuc3RhcnRzKXtzdGFydE5ld01vZGUobGFuZ3VhZ2UubW9kZXNbaV0sJycpO2Jy
+ZWFrfX19O3JldHVybiBjdXJyZW50X21vZGUucmV0dXJuRW5kfTtpZihpc0lsbGVn
+YWwobGV4ZW0sY3VycmVudF9tb2RlKSl0aHJvdydJbGxlZ2FsJzt9O3ZhciBsYW5n
+dWFnZT1MQU5HVUFHRVNbbGFuZ3VhZ2VfbmFtZV07dmFyIG1vZGVzPVtsYW5ndWFn
+ZS5kZWZhdWx0TW9kZV07dmFyIHJlbGV2YW5jZT0wO3ZhciBrZXl3b3JkX2NvdW50
+PTA7dmFyIHJlc3VsdD0nJzt0cnl7dmFyIGluZGV4PTA7bGFuZ3VhZ2UuZGVmYXVs
+dE1vZGUuYnVmZmVyPScnO2Rve3ZhciBtb2RlX2luZm89ZWF0TW9kZUNodW5rKHZh
+bHVlLGluZGV4KTt2YXIgcmV0dXJuX2xleGVtPXByb2Nlc3NNb2RlSW5mbyhtb2Rl
+X2luZm9bMF0sbW9kZV9pbmZvWzFdLG1vZGVfaW5mb1syXSk7aW5kZXgrPW1vZGVf
+aW5mb1swXS5sZW5ndGg7aWYoIXJldHVybl9sZXhlbSl7aW5kZXgrPW1vZGVfaW5m
+b1sxXS5sZW5ndGh9fXdoaWxlKCFtb2RlX2luZm9bMl0pO2lmKG1vZGVzLmxlbmd0
+aD4xKXRocm93J0lsbGVnYWwnO3JldHVybntyZWxldmFuY2U6cmVsZXZhbmNlLGtl
+eXdvcmRfY291bnQ6a2V5d29yZF9jb3VudCx2YWx1ZTpyZXN1bHR9fWNhdGNoKGUp
+e2lmKGU9PSdJbGxlZ2FsJyl7cmV0dXJue3JlbGV2YW5jZTowLGtleXdvcmRfY291
+bnQ6MCx2YWx1ZTplc2NhcGUodmFsdWUpfX1lbHNle3Rocm93IGU7fX19O2Z1bmN0
+aW9uIGNvbXBpbGVNb2Rlcygpe2Zvcih2YXIgaSBpbiBMQU5HVUFHRVMpe2lmKCFM
+QU5HVUFHRVMuaGFzT3duUHJvcGVydHkoaSkpY29udGludWU7dmFyIGxhbmd1YWdl
+PUxBTkdVQUdFU1tpXTtmb3IodmFyIGo9MDtqPGxhbmd1YWdlLm1vZGVzLmxlbmd0
+aDtqKyspe3ZhciBtb2RlPWxhbmd1YWdlLm1vZGVzW2pdO2lmKG1vZGUuYmVnaW4p
+bW9kZS5iZWdpblJlPWxhbmdSZShsYW5ndWFnZSwnXicrbW9kZS5iZWdpbik7aWYo
+bW9kZS5lbmQpbW9kZS5lbmRSZT1sYW5nUmUobGFuZ3VhZ2UsJ14nK21vZGUuZW5k
+KTtpZihtb2RlLmlsbGVnYWwpbW9kZS5pbGxlZ2FsUmU9bGFuZ1JlKGxhbmd1YWdl
+LCdeKD86Jyttb2RlLmlsbGVnYWwrJyknKTtsYW5ndWFnZS5kZWZhdWx0TW9kZS5p
+bGxlZ2FsUmU9bGFuZ1JlKGxhbmd1YWdlLCdeKD86JytsYW5ndWFnZS5kZWZhdWx0
+TW9kZS5pbGxlZ2FsKycpJyk7aWYobW9kZS5yZWxldmFuY2U9PXVuZGVmaW5lZCl7
+bW9kZS5yZWxldmFuY2U9MX07aWYoIW1vZGUuZGlzcGxheUNsYXNzTmFtZSl7bW9k
+ZS5kaXNwbGF5Q2xhc3NOYW1lPW1vZGUuY2xhc3NOYW1lfX19fTtmdW5jdGlvbiBj
+b21waWxlS2V5d29yZHMoKXtmdW5jdGlvbiBjb21waWxlTW9kZUtleXdvcmRzKG1v
+ZGUpe2lmKCFtb2RlLmtleXdvcmRHcm91cHMpe2Zvcih2YXIga2V5IGluIG1vZGUu
+a2V5d29yZHMpe2lmKCFtb2RlLmtleXdvcmRzLmhhc093blByb3BlcnR5KGtleSkp
+Y29udGludWU7aWYobW9kZS5rZXl3b3Jkc1trZXldaW5zdGFuY2VvZiBPYmplY3Qp
+bW9kZS5rZXl3b3JkR3JvdXBzPW1vZGUua2V5d29yZHM7ZWxzZSBtb2RlLmtleXdv
+cmRHcm91cHM9eydrZXl3b3JkJzptb2RlLmtleXdvcmRzfTticmVha319fTtmb3Io
+dmFyIGkgaW4gTEFOR1VBR0VTKXtpZighTEFOR1VBR0VTLmhhc093blByb3BlcnR5
+KGkpKWNvbnRpbnVlO3ZhciBsYW5ndWFnZT1MQU5HVUFHRVNbaV07Y29tcGlsZU1v
+ZGVLZXl3b3JkcyhsYW5ndWFnZS5kZWZhdWx0TW9kZSk7Zm9yKHZhciBqPTA7ajxs
+YW5ndWFnZS5tb2Rlcy5sZW5ndGg7aisrKXtjb21waWxlTW9kZUtleXdvcmRzKGxh
+bmd1YWdlLm1vZGVzW2pdKX19fTtmdW5jdGlvbiBpbml0aWFsaXplKCl7aWYoaW5p
+dGlhbGl6ZS5jYWxsZWQpcmV0dXJuO2luaXRpYWxpemUuY2FsbGVkPXRydWU7Y29t
+cGlsZU1vZGVzKCk7Y29tcGlsZUtleXdvcmRzKCk7c2VsZWN0ZWRfbGFuZ3VhZ2Vz
+PUxBTkdVQUdFU307ZnVuY3Rpb24gaGlnaGxpZ2h0QmxvY2soYmxvY2ssdGFiUmVw
+bGFjZSl7aW5pdGlhbGl6ZSgpO3RyeXt2YXIgdGV4dD1ibG9ja1RleHQoYmxvY2sp
+O3ZhciBsYW5ndWFnZT1ibG9ja0xhbmd1YWdlKGJsb2NrKX1jYXRjaChlKXtpZihl
+PT0nTm8gaGlnaGxpZ2h0JylyZXR1cm59O2lmKGxhbmd1YWdlKXt2YXIgcmVzdWx0
+PWhpZ2hsaWdodChsYW5ndWFnZSx0ZXh0KS52YWx1ZX1lbHNle3ZhciBtYXhfcmVs
+ZXZhbmNlPTA7Zm9yKHZhciBrZXkgaW4gc2VsZWN0ZWRfbGFuZ3VhZ2VzKXtpZigh
+c2VsZWN0ZWRfbGFuZ3VhZ2VzLmhhc093blByb3BlcnR5KGtleSkpY29udGludWU7
+dmFyIGxhbmdfcmVzdWx0PWhpZ2hsaWdodChrZXksdGV4dCk7dmFyIHJlbGV2YW5j
+ZT1sYW5nX3Jlc3VsdC5rZXl3b3JkX2NvdW50K2xhbmdfcmVzdWx0LnJlbGV2YW5j
+ZTtpZihyZWxldmFuY2U+bWF4X3JlbGV2YW5jZSl7bWF4X3JlbGV2YW5jZT1yZWxl
+dmFuY2U7dmFyIHJlc3VsdD1sYW5nX3Jlc3VsdC52YWx1ZTtsYW5ndWFnZT1rZXl9
+fX07aWYocmVzdWx0KXt2YXIgY2xhc3NfbmFtZT1ibG9jay5jbGFzc05hbWU7aWYo
+IWNsYXNzX25hbWUubWF0Y2gobGFuZ3VhZ2UpKXtjbGFzc19uYW1lKz0nICcrbGFu
+Z3VhZ2V9O3ZhciBvcmlnaW5hbD1ub2RlU3RyZWFtKGJsb2NrKTtpZihvcmlnaW5h
+bC5sZW5ndGgpe3ZhciBwcmU9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgncHJlJyk7
+cHJlLmlubmVySFRNTD1yZXN1bHQ7cmVzdWx0PW1lcmdlU3RyZWFtcyhvcmlnaW5h
+bCxub2RlU3RyZWFtKHByZSksdGV4dCl9O2lmKHRhYlJlcGxhY2Upe3Jlc3VsdD1y
+ZXN1bHQucmVwbGFjZSgvXigoPFtePl0rPnxcdCkrKS9nbSxmdW5jdGlvbihtYXRj
+aCxwMSxvZmZzZXQscyl7cmV0dXJuIHAxLnJlcGxhY2UoL1x0L2csdGFiUmVwbGFj
+ZSl9KX07dmFyIGNvbnRhaW5lcj1kb2N1bWVudC5jcmVhdGVFbGVtZW50KCdkaXYn
+KTtjb250YWluZXIuaW5uZXJIVE1MPSc8cHJlPjxjb2RlIGNsYXNzPSInK2NsYXNz
+X25hbWUrJyI+JytyZXN1bHQrJzwvY29kZT48L3ByZT4nO3ZhciBlbnZpcm9ubWVu
+dD1ibG9jay5wYXJlbnROb2RlLnBhcmVudE5vZGU7ZW52aXJvbm1lbnQucmVwbGFj
+ZUNoaWxkKGNvbnRhaW5lci5maXJzdENoaWxkLGJsb2NrLnBhcmVudE5vZGUpfX07
+ZnVuY3Rpb24gaW5pdEhpZ2hsaWdodGluZygpe2lmKGluaXRIaWdobGlnaHRpbmcu
+Y2FsbGVkKXJldHVybjtpbml0SGlnaGxpZ2h0aW5nLmNhbGxlZD10cnVlO2luaXRp
+YWxpemUoKTtpZihhcmd1bWVudHMubGVuZ3RoKXtmb3IodmFyIGk9MDtpPGFyZ3Vt
+ZW50cy5sZW5ndGg7aSsrKXtpZihMQU5HVUFHRVNbYXJndW1lbnRzW2ldXSl7c2Vs
+ZWN0ZWRfbGFuZ3VhZ2VzW2FyZ3VtZW50c1tpXV09TEFOR1VBR0VTW2FyZ3VtZW50
+c1tpXV19fX07dmFyIHByZXM9ZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUo
+J3ByZScpO2Zvcih2YXIgaT0wO2k8cHJlcy5sZW5ndGg7aSsrKXt2YXIgY29kZT1m
+aW5kQ29kZShwcmVzW2ldKTtpZihjb2RlKWhpZ2hsaWdodEJsb2NrKGNvZGUsaGxq
+cy50YWJSZXBsYWNlKX19O2Z1bmN0aW9uIGluaXRIaWdobGlnaHRpbmdPbkxvYWQo
+KXt2YXIgb3JpZ2luYWxfYXJndW1lbnRzPWFyZ3VtZW50czt2YXIgaGFuZGxlcj1m
+dW5jdGlvbigpe2luaXRIaWdobGlnaHRpbmcuYXBwbHkobnVsbCxvcmlnaW5hbF9h
+cmd1bWVudHMpfTtpZih3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcil7d2luZG93LmFk
+ZEV2ZW50TGlzdGVuZXIoJ0RPTUNvbnRlbnRMb2FkZWQnLGhhbmRsZXIsZmFsc2Up
+O3dpbmRvdy5hZGRFdmVudExpc3RlbmVyKCdsb2FkJyxoYW5kbGVyLGZhbHNlKX1l
+bHNlIGlmKHdpbmRvdy5hdHRhY2hFdmVudCl3aW5kb3cuYXR0YWNoRXZlbnQoJ29u
+bG9hZCcsaGFuZGxlcik7ZWxzZSB3aW5kb3cub25sb2FkPWhhbmRsZXJ9O3RoaXMu
+TEFOR1VBR0VTPUxBTkdVQUdFUzt0aGlzLmluaXRIaWdobGlnaHRpbmdPbkxvYWQ9
+aW5pdEhpZ2hsaWdodGluZ09uTG9hZDt0aGlzLmhpZ2hsaWdodEJsb2NrPWhpZ2hs
+aWdodEJsb2NrO3RoaXMuaW5pdEhpZ2hsaWdodGluZz1pbml0SGlnaGxpZ2h0aW5n
+O3RoaXMuSURFTlRfUkU9J1thLXpBLVpdW2EtekEtWjAtOV9dKic7dGhpcy5VTkRF
+UlNDT1JFX0lERU5UX1JFPSdbYS16QS1aX11bYS16QS1aMC05X10qJzt0aGlzLk5V
+TUJFUl9SRT0nXFxiXFxkKyhcXC5cXGQrKT8nO3RoaXMuQ19OVU1CRVJfUkU9J1xc
+YigweFtBLVphLXowLTldK3xcXGQrKFxcLlxcZCspPyknO3RoaXMuUkVfU1RBUlRF
+UlNfUkU9JyF8IT18IT09fCV8JT18JnwmJnwmPXxcXCp8XFwqPXxcXCt8XFwrPXws
+fFxcLnwtfC09fC98Lz18Onw7fDx8PDx8PDw9fDw9fD18PT18PT09fD58Pj18Pj58
+Pj49fD4+Pnw+Pj49fFxcP3xcXFt8XFx7fFxcKHxcXF58XFxePXxcXHx8XFx8PXxc
+XHxcXHx8fic7dGhpcy5BUE9TX1NUUklOR19NT0RFPXtjbGFzc05hbWU6J3N0cmlu
+ZycsYmVnaW46J1wnJyxlbmQ6J1wnJyxpbGxlZ2FsOidcXG4nLGNvbnRhaW5zOlsn
+ZXNjYXBlJ10scmVsZXZhbmNlOjB9O3RoaXMuUVVPVEVfU1RSSU5HX01PREU9e2Ns
+YXNzTmFtZTonc3RyaW5nJyxiZWdpbjonIicsZW5kOiciJyxpbGxlZ2FsOidcXG4n
+LGNvbnRhaW5zOlsnZXNjYXBlJ10scmVsZXZhbmNlOjB9O3RoaXMuQkFDS1NMQVNI
+X0VTQ0FQRT17Y2xhc3NOYW1lOidlc2NhcGUnLGJlZ2luOidcXFxcLicsZW5kOide
+Jyxub01hcmt1cDp0cnVlLHJlbGV2YW5jZTowfTt0aGlzLkNfTElORV9DT01NRU5U
+X01PREU9e2NsYXNzTmFtZTonY29tbWVudCcsYmVnaW46Jy8vJyxlbmQ6JyQnLHJl
+bGV2YW5jZTowfTt0aGlzLkNfQkxPQ0tfQ09NTUVOVF9NT0RFPXtjbGFzc05hbWU6
+J2NvbW1lbnQnLGJlZ2luOicvXFwqJyxlbmQ6J1xcKi8nfTt0aGlzLkhBU0hfQ09N
+TUVOVF9NT0RFPXtjbGFzc05hbWU6J2NvbW1lbnQnLGJlZ2luOicjJyxlbmQ6JyQn
+fTt0aGlzLkNfTlVNQkVSX01PREU9e2NsYXNzTmFtZTonbnVtYmVyJyxiZWdpbjp0
+aGlzLkNfTlVNQkVSX1JFLGVuZDonXicscmVsZXZhbmNlOjB9fSgpO3ZhciBpbml0
+SGlnaGxpZ2h0aW5nT25Mb2FkPWhsanMuaW5pdEhpZ2hsaWdodGluZ09uTG9hZDs=
+
+------------XHWOqwZAbipgCbY99hAYeI
+Content-Disposition: inline; filename=javascript.js
+Content-Type: application/x-javascript; name=javascript.js
+Content-Location: http://www.planeart.cn/demo/artDialog/_doc/highlight/languages/javascript.js
+Content-Transfer-Encoding: Base64
+
+LyoKTGFuZ3VhZ2U6IEphdmFzY3JpcHQKKi8KCmhsanMuTEFOR1VBR0VTLmphdmFz
+Y3JpcHQgPSB7CiAgZGVmYXVsdE1vZGU6IHsKICAgIGxleGVtczogW2hsanMuVU5E
+RVJTQ09SRV9JREVOVF9SRV0sCiAgICBjb250YWluczogWydzdHJpbmcnLCAnY29t
+bWVudCcsICdudW1iZXInLCAncmVnZXhwX2NvbnRhaW5lcicsICdmdW5jdGlvbidd
+LAogICAga2V5d29yZHM6IHsKICAgICAgJ2tleXdvcmQnOiB7J2luJzogMSwgJ2lm
+JzogMSwgJ2Zvcic6IDEsICd3aGlsZSc6IDEsICdmaW5hbGx5JzogMSwgJ3Zhcic6
+IDEsICduZXcnOiAxLCAnZnVuY3Rpb24nOiAxLCAnZG8nOiAxLCAncmV0dXJuJzog
+MSwgJ3ZvaWQnOiAxLCAnZWxzZSc6IDEsICdicmVhayc6IDEsICdjYXRjaCc6IDEs
+ICdpbnN0YW5jZW9mJzogMSwgJ3dpdGgnOiAxLCAndGhyb3cnOiAxLCAnY2FzZSc6
+IDEsICdkZWZhdWx0JzogMSwgJ3RyeSc6IDEsICd0aGlzJzogMSwgJ3N3aXRjaCc6
+IDEsICdjb250aW51ZSc6IDEsICd0eXBlb2YnOiAxLCAnZGVsZXRlJzogMX0sCiAg
+ICAgICdsaXRlcmFsJzogeyd0cnVlJzogMSwgJ2ZhbHNlJzogMSwgJ251bGwnOiAx
+fQogICAgfQogIH0sCiAgbW9kZXM6IFsKICAgIGhsanMuQ19MSU5FX0NPTU1FTlRf
+TU9ERSwKICAgIGhsanMuQ19CTE9DS19DT01NRU5UX01PREUsCiAgICBobGpzLkNf
+TlVNQkVSX01PREUsCiAgICBobGpzLkFQT1NfU1RSSU5HX01PREUsCiAgICBobGpz
+LlFVT1RFX1NUUklOR19NT0RFLAogICAgaGxqcy5CQUNLU0xBU0hfRVNDQVBFLAog
+ICAgewogICAgICBjbGFzc05hbWU6ICdyZWdleHBfY29udGFpbmVyJywKICAgICAg
+YmVnaW46ICcoJyArIGhsanMuUkVfU1RBUlRFUlNfUkUgKyAnfGNhc2V8cmV0dXJu
+fHRocm93KVxccyonLCBlbmQ6ICdeJywgbm9NYXJrdXA6IHRydWUsCiAgICAgIGxl
+eGVtczogW2hsanMuSURFTlRfUkVdLAogICAgICBrZXl3b3JkczogeydyZXR1cm4n
+OiAxLCAndGhyb3cnOiAxLCAnY2FzZSc6IDF9LAogICAgICBjb250YWluczogWydj
+b21tZW50JywgJ3JlZ2V4cCddLAogICAgICByZWxldmFuY2U6IDAKICAgIH0sCiAg
+ICB7CiAgICAgIGNsYXNzTmFtZTogJ3JlZ2V4cCcsCiAgICAgIGJlZ2luOiAnLy4q
+P1teXFxcXC9dL1tnaW1dKicsIGVuZDogJ14nCiAgICB9LAogICAgewogICAgICBj
+bGFzc05hbWU6ICdmdW5jdGlvbicsCiAgICAgIGJlZ2luOiAnXFxiZnVuY3Rpb25c
+XGInLCBlbmQ6ICd7JywKICAgICAgbGV4ZW1zOiBbaGxqcy5VTkRFUlNDT1JFX0lE
+RU5UX1JFXSwKICAgICAga2V5d29yZHM6IHsnZnVuY3Rpb24nOiAxfSwKICAgICAg
+Y29udGFpbnM6IFsndGl0bGUnLCAncGFyYW1zJ10KICAgIH0sCiAgICB7CiAgICAg
+IGNsYXNzTmFtZTogJ3RpdGxlJywKICAgICAgYmVnaW46ICdbQS1aYS16JF9dWzAt
+OUEtWmEteiRfXSonLCBlbmQ6ICdeJwogICAgfSwKICAgIHsKICAgICAgY2xhc3NO
+YW1lOiAncGFyYW1zJywKICAgICAgYmVnaW46ICdcXCgnLCBlbmQ6ICdcXCknLAog
+ICAgICBjb250YWluczogWydzdHJpbmcnLCAnY29tbWVudCddCiAgICB9CiAgXQp9
+Owo=
+
+------------XHWOqwZAbipgCbY99hAYeI
+Content-Disposition: inline; filename=magula.css
+Content-Type: text/css; charset=utf-8; name=magula.css
+Content-Location: http://www.planeart.cn/demo/artDialog/_doc/highlight/styles/magula.css
+Content-Transfer-Encoding: 8bit
+
+﻿/*
+Description: Magula style for highligh.js
+Author: Ruslan Keba <rukeba@gmail.com>
+Website: http://rukeba.com/
+Version: 1.0
+Date: 2009-01-03
+Music: Aphex Twin / Xtal
+*/
+
+pre { padding:1em; background-color:#F8F8F8; border:solid 1px #F3F3F3; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius:4px; }
+pre code, pre .ruby .subst, pre .lisp .title { color: black; }
+pre .string, pre .title, pre .parent, pre .tag .attribute .value, pre .rules .value, pre .rules .value .number, pre .preprocessor, pre .ruby .symbol, pre .ruby .symbol .string, pre .ruby .symbol .keyword, pre .ruby .symbol .keymethods, pre .instancevar, pre .aggregate, pre .template_tag, pre .django .variable, pre .smalltalk .class, pre .addition, pre .flow, pre .stream, pre .bash .variable, pre .apache .cbracket { color: #008200; }
+pre .comment, pre .annotation, pre .template_comment, pre .diff .header, pre .chunk { color: #777; }
+pre .number, pre .date, pre .regexp, pre .literal, pre .smalltalk .symbol, pre .smalltalk .char, pre .change, pre .tex .special { color: #B50000; }
+pre .label, pre .javadoc, pre .ruby .string, pre .decorator, pre .filter .argument, pre .localvars, pre .array, pre .attr_selector, pre .pseudo, pre .pi, pre .doctype, pre .deletion, pre .envvar, pre .shebang, pre .apache .sqbracket, pre .nginx .built_in, pre .tex .formula { color: #00e; }
+pre .keyword, pre .id, pre .phpdoc, pre .title, pre .built_in, pre .aggregate, pre .smalltalk .class, pre .winutils, pre .bash .variable, pre .apache .tag, pre .xml .tag, pre .xml .title, pre .tex .command { font-weight: bold; color: navy; }
+pre .nginx .built_in { font-weight: normal; }
+pre .html .css, pre .html .javascript, pre .html .vbscript, pre .tex .formula { opacity: 0.5; }
+/* --- */
+pre .apache .tag { font-weight: bold; color: blue; }
+
+------------XHWOqwZAbipgCbY99hAYeI--

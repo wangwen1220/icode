@@ -1,0 +1,33 @@
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+  var arr="{id:30,name:'60'}";  //字符串
+  arr=eval('('+arr+')');  //这一步必须的 ; 字符串转换为对象或者可以执行的语句，
+  alert("对象为 : "+arr.name);
+
+  var demo="{id:30,name:'60'}";
+  alert(demo.name); //undefined
+
+  //或者
+  var demo={id:30,name:'60'};   //对象
+  alert("对象为 : "+demo.name); //跟第一个只有 一点点区别
+
+  //输出
+  for(var   i   in   demo)   
+  {   
+  alert( "i=="+ i)
+  alert(i.toString())     //输出属性
+  alert(demo[i])          //输出属性的值
+  }   
+//-->
+</SCRIPT>
+
+
+
+
+<!--
+
+for…in 语句是用来循环访问    一个数组的每一个元素  或  一个对象的各个属性值。
+
+-->

@@ -1,0 +1,593 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns=http://www.w3.org/1999/xhtml>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="tangram-fe" />
+		<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0;"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<style>
+			body{font-size:14px;font-family:'微软雅黑'}
+		</style>
+		<title>Magic - 离线API</title>
+	</head>
+	<body>
+		<h1>Magic离线文档 -- 输入框提示</h1>
+		<h2>输入框提示</h2>
+		<p>
+			根据输入框的内容异步获取与该内容的有关的信息，并在其下通过弹出层的方式展示，多用于搜索引擎的搜索框，支持跨域异步获取数据。
+		</p>
+
+		<h2>输入框提示插件</h2>
+
+				<h2>参考手册</h2>
+		
+		<dl>
+			<dt><h3>参数配置</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>					
+							<dt><strong>options.offset </strong>: Object</dt>
+							<dd>suggestion相对于输入框的偏移量，传入的参数中可包括offsetX、 offsetY、width三个值（在CSS中使用margin同样可以定位）。</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.getData </strong>: Function</dt>
+							<dd>在需要获取数据的时候会调用此函数来获取数据，传入的参数query是用户在输入框中输入的数据。在获取到数据后，需要触发ongetdata事件，并传入参数，例如me.fire(&quot;ongetdata&quot;, query, returnValue);</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.prependHTML </strong>: String</dt>
+							<dd>写在下拉框列表前面的html</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.appendHTML </strong>: String</dt>
+							<dd>写在下拉框列表后面的html</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.holdHighLight </strong>: Boolean</dt>
+							<dd>鼠标移出待选项区域后，是否保持条目的高亮状态，默认false</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+				<dl>
+			<dt><h3>组件方法</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>
+							<dt>render</dt>
+							<dd>
+								<p>创建输入框提示组件容器，并渲染到dom树中</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>isShowing</dt>
+							<dd>
+								<p>判断输入框提示是否显示</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>show</dt>
+							<dd>
+								<p>显示输入框提示容器</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>hide</dt>
+							<dd>
+								<p>隐藏输入框提示容器</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getInputValue</dt>
+							<dd>
+								<p>取得input中的值</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{String}</dt>									
+											<dd>
+												<p>value input中的值</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getDataByIndex</dt>
+							<dd>
+								<p>根据index获取对应的输入框提示值</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>index</strong>: {Integer}</p>
+														<p style="text-indent: 24px;">索引</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{String}</dt>									
+											<dd>
+												<p>data 该索引对应的suggestion值</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getData</dt>
+							<dd>
+								<p>取输入框提示数据</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>query</strong>: {String}</p>
+														<p style="text-indent: 24px;">搜索关键字</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																											
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getElement</dt>
+							<dd>
+								<p>获得输入框提示组件结构里的 HtmlElement对象</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>name</strong>: {String}</p>
+														<p style="text-indent: 24px;">可选的值包括：input(输入框)|suggestion(suggestion部分的容器)</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																											
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getElements</dt>
+							<dd>
+								<p>取得所有 ui 模块对应的 dom element 对象</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Object}</dt>									
+											<dd>
+												<p>取得对象的集合</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+
+		<dl>
+			<dt><h3>组件事件</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>
+							<dt>onrender</dt>
+							<dd>
+								<p>渲染输入框提示容器时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onbeforeshow</dt>
+							<dd>
+								<p>试图显示输入框提示时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.returnValue</strong>: {Boolean}</p>
+														<p style="text-indent: 24px;">返回false时，会阻止下拉菜单展现。</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onshow</dt>
+							<dd>
+								<p>输入框提示显示后触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onhide</dt>
+							<dd>
+								<p>输入框提示隐藏时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onhighlight</dt>
+							<dd>
+								<p>高亮某个选项时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">选项的索引</p>
+													</li>
+																										<li>
+														<p><strong>value</strong>: {Object}</p>
+														<p style="text-indent: 24px;">该选项对应的value值</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onclearhighlight</dt>
+							<dd>
+								<p>去除某个选项高亮时触发，若当前没有元素处于高亮状态，则不发出事件</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">选项的索引</p>
+													</li>
+																										<li>
+														<p><strong>value</strong>: {Object}</p>
+														<p style="text-indent: 24px;">该选项对应的value值</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onbeforepick</dt>
+							<dd>
+								<p>试图将某个选项上框时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">选项的索引</p>
+													</li>
+																										<li>
+														<p><strong>value</strong>: {Object}</p>
+														<p style="text-indent: 24px;">该选项对应的value值</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onpick</dt>
+							<dd>
+								<p>将某个选项上框时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">选项的索引</p>
+													</li>
+																										<li>
+														<p><strong>value</strong>: {Object}</p>
+														<p style="text-indent: 24px;">该选项对应的value值</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onconfirm</dt>
+							<dd>
+								<p>提交某个选项时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">选项的索引</p>
+													</li>
+																										<li>
+														<p><strong>value</strong>: {Object}</p>
+														<p style="text-indent: 24px;">该选项对应的value值</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onmouseoveritem</dt>
+							<dd>
+								<p>鼠标移入某个选项时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">选项的索引</p>
+													</li>
+																										<li>
+														<p><strong>value</strong>: {Object}</p>
+														<p style="text-indent: 24px;">该选项对应的value值</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onmouseoutitem</dt>
+							<dd>
+								<p>鼠标移出某个选项时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">选项的索引</p>
+													</li>
+																										<li>
+														<p><strong>value</strong>: {Object}</p>
+														<p style="text-indent: 24px;">该选项对应的value值</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onmousedownitem</dt>
+							<dd>
+								<p>鼠标选中某个选项时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">选项的索引</p>
+													</li>
+																										<li>
+														<p><strong>value</strong>: {Object}</p>
+														<p style="text-indent: 24px;">该选项对应的value值</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onmouseclick</dt>
+							<dd>
+								<p>鼠标点击某个选项时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">选项的索引</p>
+													</li>
+																										<li>
+														<p><strong>value</strong>: {Object}</p>
+														<p style="text-indent: 24px;">该选项对应的value值</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+	</body>
+</html>

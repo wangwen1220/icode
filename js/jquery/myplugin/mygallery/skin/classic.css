@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+/*
+名称：mygallery-classic
+简介：mygallery 经典皮肤样式
+特色：适应中文、基于最新主流浏览器
+依赖：jquery-mygallery 插件；重设浏览器默认样式
+维护：王文 wangwen1220#139.com
+*/
+.mygallery-classic {
+	padding: 10px 0;
+	border: 1px solid #eee;
+	background-color: #fff;
+}
+.mygallery-classic .mygallery-view {
+	position: relative;
+	*height: 460px;
+	min-height: 300px;
+	max-height: 500px;
+	overflow: hidden;
+	text-align: center;
+}
+.mygallery-classic .mygallery-view .mygallery-view-img {
+	height: 100%;
+	margin: 0 20px;
+	background: url(common/loading.gif) no-repeat 50% 50%;
+}
+.mygallery-classic .mygallery-view .mygallery-view-img span {
+	display: inline-block;
+	height: 100%;
+	min-height: 360px;
+	color: #fff;
+	vertical-align: middle;
+}
+.mygallery-classic .mygallery-view .mygallery-view-img img {
+	max-width: 560px;
+	max-height: 560px;
+	vertical-align: middle;
+	_width: 560px;
+	/* *height: 460px; 解决 IE7 下高度变化后滚动条会移位的 BUG */
+	/* _height: auto; */
+	-ms-interpolation-mode: bicubic;
+}
+.mygallery-classic .mygallery-view .mygallery-view-img > img {
+	*height: 460px; /* 解决 IE7 下高度变化后滚动条会移位的 BUG */
+}
+.mygallery-classic .mygallery-view-prev,
+.mygallery-classic .mygallery-view-next {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background: url(classic/bg-view-nav.png) repeat;
+}
+.mygallery-classic .mygallery-view-next {
+	left: auto;
+	right: 0;
+}
+.mygallery-classic .mygallery-view-prev a,
+.mygallery-classic .mygallery-view-next a {
+	display: block;
+	height: 100%;
+	outline: none;
+	cursor: url(/statics/js/mygallery/skin/common/cur-prev.cur), auto;
+}
+.mygallery-classic .mygallery-view-next a {
+	cursor: url(/statics/js/mygallery/skin/common/cur-next.cur), auto;
+}
+.mygallery-classic .mygallery-view-prev a.disabled,
+.mygallery-classic .mygallery-view-next a.disabled {
+	/* cursor: default; */
+}
+
+/* Opera 中的样式 */
+.mygallery-classic .mygallery-view-prev.opera a:hover {
+	background: url(common/cur-prev.png) no-repeat 30% 50%;
+}
+.mygallery-classic .mygallery-view-next.opera a:hover {
+	background: url(common/cur-next.png) no-repeat 70% 50%;
+}
+.mygallery-classic .mygallery-view-prev.opera a.disabled,
+.mygallery-classic .mygallery-view-next.opera a.disabled {
+	/* background: none; */
+}
+
+.mygallery-classic .mygallery-view-loading {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 37px;
+	height: 37px;
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	background: url(common/loading.gif) no-repeat 50% 50%;
+}
+.mygallery-classic .mygallery-view-text {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	_right: 40px;
+	margin: 0 20px;
+	padding: 7px;
+	color: #fff;
+	font-size: 12px;
+	background: url(common/bg-text.png) repeat;
+	_filter: alpha(opacity=75);
+}
+.mygallery-classic .mygallery-view-title {
+	float: left;
+	width: 75%;
+	height: 28px;
+	line-height: 28px;
+	overflow: hidden;
+	text-align: left;
+}
+.mygallery-classic .mygallery-view-title a {
+	color: #fff;
+}
+.mygallery-classic .mygallery-view-index {
+	float: right;
+	width: 15%;
+	text-align: right;
+	line-height: 1;
+	vertical-align: bottom;
+}
+.mygallery-classic .mygallery-view-index .index {
+	color: #FFE455;
+	font-size: 28px;
+}
+.mygallery-classic .mygallery-ctrl {
+	position: relative;
+	margin: 8px 20px 0;
+	padding: 0 20px;
+	_padding-left: 0;
+}
+.mygallery-classic .mygallery-ctrl-thumb {
+	height: 77px;
+	overflow: hidden;
+	_position: relative;
+	_width: 544px;
+}
+.mygallery-classic .mygallery-ctrl-thumb-list {
+	width: 10000px;
+	margin-left: 2px;
+	_margin-left: 20px;
+}
+.mygallery-classic .mygallery-ctrl-thumb-item {
+	float: left;
+	width: 102px;
+	margin-right: 4px;
+	text-align: center;
+}
+.mygallery-classic .mygallery-ctrl-thumb-item .thumb {
+	display: block;
+	outline: none;
+	border: 1px solid #ddd;
+	background: url(common/loading.gif) no-repeat 50% 50%;
+}
+.mygallery-classic .mygallery-ctrl-thumb-item .thumb:hover {
+	filter: alpha(opacity=88);
+	opacity: .88;
+	border-color: #FFE455;
+}
+.mygallery-classic .mygallery-ctrl-thumb-item.cur .thumb {
+	border-color: #FFE455;
+}
+.mygallery-classic .mygallery-ctrl-thumb-item img {
+	display: block;
+	width: 100px;
+	height: 75px;
+}
+.mygallery-classic .mygallery-ctrl-prev,
+.mygallery-classic .mygallery-ctrl-next {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 20px;
+	height: 77px;
+	outline: none;
+	background: url(classic/btn-nav.png) no-repeat 0 50%;
+}
+.mygallery-classic .mygallery-ctrl-next {
+	left: auto;
+	right: 0;
+	_right: 50px;
+	background-position: -42px 50%;
+}
+.mygallery-classic .mygallery-ctrl-prev:hover {
+	background-position: -21px 50%;
+}
+.mygallery-classic .mygallery-ctrl-next:hover {
+	background-position: -63px 50%;
+}
+.mygallery-classic .mygallery-ctrl-prev.disabled,
+.mygallery-classic .mygallery-ctrl-next.disabled {
+	opacity: .55;
+	filter: alpha(opacity=55);
+}
+.mygallery-classic .mygallery-ctrl-bar {
+	position: relative;
+	margin-top: 5px;
+}
+.mygallery-classic .mygallery-ctrl-bar-lt,
+.mygallery-classic .mygallery-ctrl-bar-rt {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	display: block;
+	width: 3px;
+	height: 3px;
+	/* margin-top: -1px; */
+	margin-top: -2px;
+	background: url(classic/bg-scrollbar-dot.png) no-repeat 50% 50%;
+}
+.mygallery-classic .mygallery-ctrl-bar-rt {
+	left: auto;
+	right: 0;
+	background-image: url(classic/bg-scrollbar-dot.png);
+}
+.mygallery-classic .mygallery-ctrl-bar-main {
+	position: relative;
+	margin: 0 3px;
+	height: 21px;
+	background: url(classic/bg-scrollbar.png) repeat-x 0 50%;
+}
+.mygallery-classic .mygallery-ctrl-bar-btn {
+	position: absolute;
+	top: 3px;
+	display: block;
+	outline: none;
+	cursor: pointer;
+}
+.mygallery-classic .mygallery-ctrl-bar-btn-lt,
+.mygallery-classic .mygallery-ctrl-bar-btn-rt,
+.mygallery-classic .mygallery-ctrl-bar-btn-ct {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 10px;
+	height: 15px;
+	background: url(classic/btn-scrollbar.png) no-repeat 0 0;
+}
+.mygallery-classic .mygallery-ctrl-bar-btn:hover .mygallery-ctrl-bar-btn-lt {
+	background-position: 0 -16px;
+}
+.mygallery-classic .mygallery-ctrl-bar-btn-rt {
+	left: auto;
+	right: 0;
+	background-position: 100% 0;
+}
+.mygallery-classic .mygallery-ctrl-bar-btn:hover .mygallery-ctrl-bar-btn-rt {
+	background-position: 100% -16px;
+}
+.mygallery-classic .mygallery-ctrl-bar-btn-ct {
+	position: static;
+	width: 36px;
+	margin: 0 10px;
+	min-height: 1px;
+	background-position: 0 -32px;
+	background-repeat: repeat-x;
+}
+.mygallery-classic .mygallery-ctrl-bar-btn:hover .mygallery-ctrl-bar-btn-ct {
+	background-position: 0 -48px;
+}
+.mygallery-classic .mygallery-ctrl-bar-btn-ct em {
+	display: block;
+	margin: auto;
+	width: 16px;
+	height: 100%;
+	background: url(classic/btn-scrollbar.png) no-repeat 50% 0;
+}
+.mygallery-classic .mygallery-ctrl-bar-btn:hover .mygallery-ctrl-bar-btn-ct em {
+	background-position: 50% -16px;
+}

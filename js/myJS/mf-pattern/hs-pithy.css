@@ -1,0 +1,109 @@
+/*=========hs-pithy========*/
+.hs-pithy {
+	position: relative;
+}
+.hs-pithy .loading {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #fff url(img/loading.gif) center no-repeat;
+	z-index: 9;
+}
+.hs-pithy .pic {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.hs-pithy .pic ul {
+	position: absolute;
+}
+.hs-pithy .pic ul li {
+	width: 100%;
+	overflow: hidden;
+}
+.hs-pithy .thumb {
+	position: absolute;
+	right: 0;
+	overflow: hidden;
+	z-index: 3;
+	background: #fff;
+}
+.hs-pithy .thumb ul {
+	position: absolute;
+	width: 100%;
+	top: 0;
+}
+.hs-pithy .thumb ul li {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	*margin-bottom: -2px;
+}
+.hs-pithy .thumb li a {
+	display: block;
+	padding: 5px;
+	margin-left: 10px;
+	border: 1px solid #f1f1f1;
+	border-left: 0;
+}
+.hs-pithy .thumb li.current {
+	background: url(img/hs-pithy/btn.gif) 3px center no-repeat;
+}
+.hs-pithy .thumb li.current a {
+	border-color: #ccc;
+}
+.hs-pithy .thumb li b {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #f1f1f1;
+	top: 0;
+	left: 10px;
+	z-index: -1;
+}
+.hs-pithy .txt li {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	/* width: 100%; */
+	display: none;
+}
+/*默认标题高度*/
+.hs-pithy .txt li a {
+	display: block;
+	line-height: 30px;
+	position: relative;
+	z-index: 1;
+	color: #fff;
+	padding-left: 16px;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+/*标题样式*/
+.hs-pithy .txt li b {
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000;
+	filter: alpha(opacity=70);
+	opacity: .7;
+}
+.hs-pithy .prev, .hs-pithy .next {
+	overflow: hidden;
+	position: absolute;
+	z-index: 4;
+	right: 0;
+	cursor: pointer;
+	background: #dedede;
+	text-align: center;
+}
+.hs-pithy .prev {
+	top: 0;
+}
+.hs-pithy .next {
+	bottom: 0;
+}

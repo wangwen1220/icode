@@ -1,0 +1,449 @@
+@charset "utf-8";
+
+/*
+名称：mygallery-black
+简介：mygallery 黑色皮肤样式
+特色：适应中文、基于最新主流浏览器
+依赖：jquery-mygallery 插件；重设浏览器默认样式
+维护：王文 wangwen1220#139.com
+*/
+.mygallery-black {
+	position: relative;
+	padding: 25px 30px;
+	overflow: hidden;
+	color: #999;
+	background-color: #303030;
+}
+.mygallery-black .mygallery-header {
+	position: relative;
+	margin-bottom: 25px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #505050;
+	word-wrap: break-word;
+	*zoom: 1;
+}
+.mygallery-black .mygallery-header .mygallery-info {
+	font: 20px/1.5 '微软雅黑','黑体','宋体',arial;
+	color: #f4f4f4;
+	overflow: hidden;
+	/* vertical-align: bottom; */
+}
+.mygallery-black .mygallery-header .mygallery-info .title {
+	display: inline;
+}
+.mygallery-black .mygallery-header .mygallery-info .index {
+	font-size: 22px;
+	color: #CF0716;
+}
+.mygallery-black .mygallery-header .mygallery-info .total {
+	font-size: 14px;
+}
+.mygallery-black .mygallery-header .mygallery-info .time {
+	font-size: 12px;
+	font-family: arial;
+	color: #999;
+}
+.mygallery-black .mygallery-header .cnt {
+	margin-top: 5px;
+}
+.mygallery-black .mygallery-header .search {
+	float: right;
+	margin-top: 7px;
+}
+.mygallery-black .mygallery-header .search .search-wd {
+	width: 115px;
+	height: 18px;
+	line-height: 18px;
+	border: 1px solid #4B4B4B;
+	border-right: none;
+	color: #C6C6C6;
+	text-indent: 4px;
+	background-color: #F7F7F7;
+}
+.mygallery-black .mygallery-header .search .search-wd:focus {
+	color: #444;
+}
+.mygallery-black .mygallery-header .search .search-submit {
+	width: 21px;
+	height: 20px;
+	border: none;
+	vertical-align: top;
+	text-indent: -9999px;
+	background: url(black/btn-search-submit.png) no-repeat 0 0;
+	*margin-top: 1px;
+}
+.mygallery-black .mygallery-view {
+	position: relative;
+	/* max-height: 900px; */
+	min-height: 360px;
+	*height: 460px;
+	overflow: hidden;
+	text-align: center;
+}
+.mygallery-black .mygallery-view .mygallery-view-img {
+	height: 100%;
+	/* margin: 0 20px; */
+	background: url(common/loading.gif) no-repeat 50% 50%;/* 这里定义动态图片会导致在 IE 中输入框中的鼠标不停地闪烁 */
+	background: none\9;
+}
+.mygallery-black .mygallery-view .mygallery-view-img span {
+	display: inline-block;
+	height: 100%;
+	min-height: 360px;
+	color: #fff;
+	vertical-align: middle;
+}
+.mygallery-black .mygallery-view .mygallery-view-img img {
+	max-width: 560px;
+	max-height: 560px;
+	vertical-align: middle;
+	_width: 560px;
+	/* *height: 460px; 解决 IE7 下高度变化后滚动条会移位的 BUG */
+	/* _height: auto; */
+	-ms-interpolation-mode: bicubic;
+}
+.mygallery-black .mygallery-view .mygallery-view-img > img {
+	*height: 460px; /* 解决 IE7 下高度变化后滚动条会移位的 BUG */
+}
+.mygallery-black .mygallery-view-prev,
+.mygallery-black .mygallery-view-next {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background: url(common/bg-view-nav.png) repeat;
+}
+.mygallery-black .mygallery-view-next {
+	left: auto;
+	right: 0;
+}
+.mygallery-black .mygallery-view-prev a,
+.mygallery-black .mygallery-view-next a {
+	display: block;
+	height: 100%;
+	outline: none;
+	cursor: url(/statics/js/mygallery/skin/common/cur-prev.cur), auto;
+}
+.mygallery-black .mygallery-view-next a {
+	cursor: url(/statics/js/mygallery/skin/common/cur-next.cur), auto;
+}
+.mygallery-black .mygallery-view-prev a.disabled,
+.mygallery-black .mygallery-view-next a.disabled {
+	/* cursor: default; */
+}
+
+/* Opera 中的样式 */
+.mygallery-black .mygallery-view-prev.opera a:hover {
+	background: url(common/cur-prev.png) no-repeat 30% 50%;
+}
+.mygallery-black .mygallery-view-next.opera a:hover {
+	background: url(common/cur-next.png) no-repeat 70% 50%;
+}
+.mygallery-black .mygallery-view-prev.opera a.disabled,
+.mygallery-black .mygallery-view-next.opera a.disabled {
+	/* background: none; */
+}
+
+.mygallery-black .mygallery-view-loading {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 37px;
+	height: 37px;
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	background: url(common/loading.gif) no-repeat 50% 50%;
+}
+.mygallery-black .mygallery-view-title {
+	margin: 18px;
+	color: #E5E5E5;
+	font-size: 12px;
+	text-align: center;
+}
+.mygallery-black .mygallery-action {
+	margin-bottom: 25px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #505050;
+	text-align: right;
+}
+.mygallery-black .mygallery-action .share {
+	float: left;
+}
+.mygallery-black .mygallery-action .view-comment,
+.mygallery-black .mygallery-action .view-original,
+.mygallery-black .mygallery-action .view-all {
+	margin-left: 10px;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 20px;
+	color: #666;
+	background: url(black/icon-view-comment.png) no-repeat 0 50%;
+}
+.mygallery-black .mygallery-action .view-comment a {
+	color: #666;
+}
+.mygallery-black .mygallery-action .view-original {
+	background-image: url(black/icon-view-original.png);
+}
+.mygallery-black .mygallery-action .view-all {
+	background-image: url(black/icon-view-all.png);
+}
+.mygallery-black .mygallery-action a:hover {
+	color: #ABABAB;
+}
+.mygallery-black .mygallery-action .view-comment em {
+	color: #CF0716;
+}
+.mygallery-black .mygallery-ctrl {
+	position: relative;
+	margin: 0 150px;
+	_margin: 0 182px 0 186px;
+	padding: 0 32px 0 36px;
+	_padding: 0;
+}
+.mygallery-black .mygallery-ctrl-thumb {
+	height: 77px;
+	overflow: hidden;
+	_position: relative;
+	_width: 528px;
+}
+.mygallery-black .mygallery-ctrl-thumb-list {
+	width: 10000px;
+	margin-left: 2px;/* TODO */
+	/* _margin-left: 36px; */
+}
+.mygallery-black .mygallery-ctrl-thumb-item {
+	float: left;
+	width: 102px;
+	margin-right: 4px;
+	text-align: center;
+}
+.mygallery-black .mygallery-ctrl-thumb-item .thumb {
+	display: block;
+	outline: none;
+	border: 1px solid #ddd;
+	background: url(common/loading.gif) no-repeat 50% 50%;
+	background: none\9;
+}
+.mygallery-black .mygallery-ctrl-thumb-item .thumb:hover {
+	filter: alpha(opacity=88);
+	opacity: .88;
+	border-color: #FFE455;
+}
+.mygallery-black .mygallery-ctrl-thumb-item.cur .thumb {
+	border-color: #FFE455;
+}
+.mygallery-black .mygallery-ctrl-thumb-item img {
+	display: block;
+	width: 100px;
+	height: 75px;
+}
+.mygallery-black .mygallery-ctrl-prev,
+.mygallery-black .mygallery-ctrl-next {
+	position: absolute;
+	left: 0;
+	_left: -36px;
+	top: 0;
+	display: block;
+	width: 20px;
+	height: 77px;
+	outline: none;
+	background: url(black/btn-nav.png) no-repeat 0 50%;
+}
+.mygallery-black .mygallery-ctrl-next {
+	left: auto;
+	right: 0;
+	_right: 180px;
+	background-position: -42px 50%;
+}
+.mygallery-black .mygallery-ctrl-prev:hover {
+	background-position: -21px 50%;
+}
+.mygallery-black .mygallery-ctrl-next:hover {
+	background-position: -63px 50%;
+}
+.mygallery-black .mygallery-ctrl-prev.disabled,
+.mygallery-black .mygallery-ctrl-next.disabled {
+	opacity: .55;
+	filter: alpha(opacity=55);
+}
+.mygallery-black .mygallery-ctrl-bar {
+	position: relative;
+	margin-top: 5px;
+}
+.mygallery-black .mygallery-ctrl-bar-main {
+	position: relative;
+	margin-top: 10px;
+	/* margin: 0 3px; */
+	height: 15px;
+	background-color: #282828;
+}
+.mygallery-black .mygallery-ctrl-bar-btn {
+	position: absolute;
+	/* top: 3px; */
+	display: block;
+	outline: none;
+	cursor: pointer;
+}
+.mygallery-black .mygallery-ctrl-bar-btn-lt,
+.mygallery-black .mygallery-ctrl-bar-btn-rt,
+.mygallery-black .mygallery-ctrl-bar-btn-ct {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 10px;
+	height: 15px;
+	background: url(black/btn-scrollbar.png) no-repeat 0 0;
+}
+.mygallery-black .mygallery-ctrl-bar-btn:hover .mygallery-ctrl-bar-btn-lt {
+	background-position: 0 -16px;
+}
+.mygallery-black .mygallery-ctrl-bar-btn-rt {
+	left: auto;
+	right: 0;
+	background-position: 100% 0;
+}
+.mygallery-black .mygallery-ctrl-bar-btn:hover .mygallery-ctrl-bar-btn-rt {
+	background-position: 100% -16px;
+}
+.mygallery-black .mygallery-ctrl-bar-btn-ct {
+	position: static;
+	width: auto;
+	margin: 0 10px;
+	/* min-height: 1px; */
+	background-position: 0 -32px;
+	background-repeat: repeat-x;
+	text-align: center;
+}
+.mygallery-black .mygallery-ctrl-bar-btn:hover .mygallery-ctrl-bar-btn-ct {
+	background-position: 0 -48px;
+	background-repeat: repeat-x;
+}
+.mygallery-black .mygallery-ctrl-bar-btn-ct em {
+	display: block;
+	margin: 0 auto;
+	width: 16px;
+	height: 100%;
+	background: url(black/btn-scrollbar.png) no-repeat 50% 0;
+}
+.mygallery-black .mygallery-ctrl-bar-btn:hover .mygallery-ctrl-bar-btn-ct em {
+	background-position: 50% -16px;
+}
+.mygallery-black .mygallery-nav-item {
+	position: absolute;
+	width: 110px;
+	height: 85px;
+}
+.mygallery-black .mygallery-nav-next {
+	right: 30px;
+}
+.mygallery-black .mygallery-nav-item .img {
+	display: block;
+	padding: 3px 3px 7px 7px;
+	background: url(black/bg-mygallery-nav-prev.png) no-repeat 0 100%;
+}
+.mygallery-black .mygallery-nav-next .img {
+	padding: 3px 7px 7px 3px;
+	background: url(black/bg-mygallery-nav-next.png) no-repeat 100% 100%;
+}
+.mygallery-black .mygallery-nav-item .img img {
+	display: block;
+	width: 100px;
+	height: 75px;
+}
+.mygallery-black .mygallery-nav-item .img:hover img {
+	opacity: .88;
+	filter: alpha(opacity=88);
+}
+.mygallery-black .mygallery-nav-item .title {
+	display: block;
+	margin-top: 4px;
+	text-align: center;
+	color: #E4E4E4;
+}
+.mygallery-black .mygallery-nav-item .title:hover {
+	color: #FFE455;
+}
+
+/* 全部图片 */
+.mygallery-allpic {
+	min-height: 360px;
+}
+.mygallery-piclist {
+	margin-right: -15px;
+}
+.mygallery-piclist-item {
+	display: table;
+	float: left;
+	margin: 0 15px 40px 0;
+	/* display: none; */
+}
+.mygallery-piclist-item a {
+	display: table-cell;
+	*display: block;
+	vertical-align: middle;
+	padding: 5px;
+	border: 1px solid #D6D6D6;
+	width: 156px;
+	height: 112px;
+	overflow: hidden;
+	background-color: #000;
+}
+.mygallery-piclist-item a:hover {
+	padding: 4px;
+	border: 2px solid #F9DF53;
+}
+.mygallery-piclist-item img {
+	display: block;
+	margin: 0 auto;
+	width: auto;
+	width: 100%\9;
+	height: auto;
+	max-width: 156px;
+	max-height: 112px;
+}
+
+
+/* 分页 */
+.mygallery-pager {
+	margin: 0 0 50px;
+	text-align: center;
+}
+.mygallery-pager a, .mygallery-pager span {
+	display: inline-block;
+	margin-right: 5px;
+	padding: 0 0.5em;
+	border: 1px solid #D6D6D6;
+	color: #D6D6D6;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	background: #4A4A4A;
+}
+.mygallery-pager .current {
+	border-color: #F9DF53;
+	color: #F9DF53;
+	background: #444;
+}
+.mygallery-pager .current.prev, .mygallery-pager .current.next {
+	border-color: #6A6A6A;
+	_border-color: #D6D6D6;
+	color: #6A6A6A;
+	_color: #D6D6D6;
+	background: #4A4A4A;
+}
+.mygallery-pager a:hover, .mygallery-pager a:active {
+	border-color: #fff;
+	color: #fff;
+	text-decoration: none;
+	background: #585858;
+}
+.mygallery-pager .ellipsis {
+	padding: 0;
+	border: none;
+	background: none;
+}

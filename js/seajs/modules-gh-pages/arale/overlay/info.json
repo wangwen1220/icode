@@ -1,0 +1,1 @@
+{"versioning":{"latest":"0.9.12"},"versions":{"0.9.12":["mask.js","overlay.js"]},"root":"arale","name":"overlay","tag":"widget","lastUpdated":1352950225632,"type":"","description":"基础浮层组件，提供浮层显示隐藏、定位和 select 遮挡等特性。"}

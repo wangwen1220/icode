@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gbk" />
+<title>jQuery TAB插件</title>
+<style>
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	background:#e3e3e3;
+	height:100%;
+	font:normal normal 12px/24px "Microsoft yahei", Arial;
+	padding-bottom:30px;
+}
+#title{width:300px;margin:3% auto 0;}
+h1{font-size:18px;}
+h6{ font-size:12px; font-weight:normal; color:#333;margin-bottom:10px; }
+h6 a { color:#09c; }
+#wrapper {
+	width:300px;
+	margin:0 auto;
+	background:#f8f8f8;
+	border:1px solid #a3a3a3;
+	padding:20px 20px 50px;
+	border-radius:5px;-moz-border-radius:5px;
+}
+.box{width:210px;margin:10px auto 0;background:#fff;border:1px solid #d3d3d3;}
+.tab_menu{list-style:none;width:210px;overflow:hidden;}
+.tab_menu li{width:70px;float:left;height:30px;line-height:30px;color:#fff;background:#093;text-align:center;cursor:pointer;}
+.tab_menu li.current{color:#333;background:#fff;}
+.tab_box{padding:20px;height:120px;}
+.tab_box .hide{display:none;}
+h3{color:#333;font-size:14px;width:210px;margin:30px auto 0;}
+</style>
+</head>
+
+<body>
+<div id="title">
+<h1>jQuery TAB插件演示</h1>
+<h6>by:<a href="http://stylechen.com/">Stylechen.com</a></h6>
+</div>
+<div id="wrapper">
+<h3>默认状态</h3>
+<div class="box demo1">
+	<ul class="tab_menu">
+		<li class="current">新闻</li>
+		<li>图片</li>
+		<li>军事</li>
+	</ul>
+	<div class="tab_box">
+		<div>新闻</div>
+		<div class="hide">图片</div>
+		<div class="hide">军事</div>
+	</div>
+</div>
+<h3>鼠标点击</h3>
+<div class="box demo2">
+	<ul class="tab_menu">
+		<li class="current">新闻</li>
+		<li>图片</li>
+		<li>军事</li>
+	</ul>
+	<div class="tab_box">
+		<div>新闻</div>
+		<div class="hide">图片</div>
+		<div class="hide">军事</div>
+	</div>
+</div>
+<h3>事件延迟 300毫秒</h3>
+<div class="box demo3">
+	<ul class="tab_menu">
+		<li class="current">新闻</li>
+		<li>图片</li>
+		<li>军事</li>
+	</ul>
+	<div class="tab_box">
+		<div>新闻</div>
+		<div class="hide">图片</div>
+		<div class="hide">军事</div>
+	</div>
+</div>
+<h3>自动轮换 3秒间隔</h3>
+<div class="box demo4">
+	<ul class="tab_menu">
+		<li class="current">新闻</li>
+		<li>图片</li>
+		<li>军事</li>
+	</ul>
+	<div class="tab_box">
+		<div>新闻</div>
+		<div class="hide">图片</div>
+		<div class="hide">军事</div>
+	</div>
+</div>
+<h3>回调函数</h3>
+<div class="box demo5">
+	<ul class="tab_menu">
+		<li class="current">新闻</li>
+		<li>图片</li>
+		<li>军事</li>
+	</ul>
+	<div class="tab_box">
+		<div>新闻</div>
+		<div class="hide">图片</div>
+		<div class="hide">军事</div>
+	</div>
+</div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="jquery.tabs.js"></script>
+<script>
+$(function(){
+	$('.demo1').Tabs();
+	$('.demo2').Tabs({
+		event:'click',
+		switchBtn : true
+	});
+	$('.demo3').Tabs({
+		timeout:300
+	});
+	$('.demo4').Tabs({
+		auto:3000
+	});
+	$('.demo5').Tabs({
+		event:'click',
+		callback:tabcallback
+	});
+	function tabcallback(){
+		alert( '我是回调！！' );
+	}
+});	
+</script>
+</body>
+</html>

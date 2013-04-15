@@ -1,0 +1,764 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jquery.HooRay - jQuery插件 - 制作：胡尐睿丶</title>
+<link rel="stylesheet" href="css.css" />
+<link rel="stylesheet" href="jquery.HooRay/jquery.HooRay.css" />
+<script src="jquery-1.6.2.js"></script>
+<script src="jquery.HooRay/jquery.HooRay.js"></script>
+<script src="provincesdata.js"></script>
+<script>
+$(document).ready(function(){
+	$('#accordion').HRsfq();
+	
+	$("#ghhs1").HRghhs();
+	$("#ghhs2").HRghhs({useMoreChoose:true});
+	$("#ghhs3").HRghhs({useOver:false});
+	$("#ghhs4").HRcheckbox({skin:5});
+	$("#ghhs4").HRghhs({useClick2Checkbox:true});
+	
+	$("#wfgd1").HRwfgd({isEqual:false});
+	$("#wfgd2").HRwfgd({isEqual:true,direction:'up',scrollDelay:70});
+	
+	$("#fhdb1").HRfhdb();
+	$("#fhdb2").HRfhdb({animation:true,slow:'slow'},function(){alert('看到我了么？');});
+	
+	$("body").HRwltc({classname:'wltc'});
+	
+	$('#HRsfq1').HRsfq({activeClass:'HRsfq-active-class',speed:500,openRow:2});
+	
+	$('.HRtabs1').HRtabs();
+	$('.HRtabs2').HRtabs({showDiv:'tabs2',overOrClick:'click',animation:true,speed:'slow'});
+		
+	$('#HRcheckbox_1').HRcheckbox({skin:1});
+	$('#HRcheckbox_2').HRcheckbox({skin:2});
+	$('#HRcheckbox_3').HRcheckbox({skin:3});
+	$('#HRcheckbox_4').HRcheckbox({skin:4});
+	$('#HRcheckbox_5').HRcheckbox({skin:5});
+	$('#HRcheckbox_6').HRcheckbox({skin:6});
+	$('#HRcheckbox_7').HRcheckbox({skin:7});
+	$('#HRcheckbox_8').HRcheckbox({skin:8});
+	$('#HRcheckbox_9').HRcheckbox({skin:9});
+	$('#HRcheckbox_10').HRcheckbox({skin:10});
+	
+	$('#HRradio_1').HRradio({skin:1});
+	$('#HRradio_2').HRradio({skin:2});
+	$('#HRradio_3').HRradio({skin:3});
+	$('#HRradio_4').HRradio({skin:4});
+	$('#HRradio_5').HRradio({skin:5});
+	$('#HRradio_6').HRradio({skin:6});
+	$('#HRradio_7').HRradio({skin:7});
+	$('#HRradio_8').HRradio({skin:8});
+	$('#HRradio_9').HRradio({skin:9});
+	$('#HRradio_10').HRradio({skin:10});
+	
+	$('#HRchecknum_1').HRcheckbox();
+	$('#HRchecknum_1').HRchecknum();
+	
+	$('#HRxllb_1').HRxllb({skin:1});
+	$('#HRxllb_2').HRxllb({skin:2});
+	$('#HRxllb_3').HRxllb({skin:1,optionsHeight:100});
+	$('#HRxllb_4').HRxllb({skin:1});
+	
+	$('#HRxllb_5').HRxllb({skin:1,optionsHeight:300});
+	
+	$("#language5").append("<option value=''>请选择省份</option>");
+	for(var i=0; i<GP.length; i++){
+		$("#language5").append("<option value='"+i+"'>"+GP[i]+"</option>");
+	}
+	$("#language6").append("<option value=''>请选择城市</option>");
+	$('#HRxllb_6').HRxllb({skin:1,optionsHeight:300});
+	
+	$(".hr-xllb-language5-div").live('click',function(){
+		var gpid = $("#language5 option:selected").attr("value");
+		if(gpid != ""){
+			$("#language6").html("");
+			for(var j=0; j<GT[gpid].length; j++){
+				$("#language6").append("<option value='"+j+"'>"+GT[gpid][j]+"</option>");
+			}
+		}else{
+			$("#language6").html("").append("<option value=''>请选择城市</option>");
+		}
+		$('#HRxllb_6').HRxllb({skin:1,optionsHeight:300,reload:true});
+	});
+	
+	$(".HRglsx1").HRglxs();
+	$(".HRglsx2").HRglxs({opacity:0.5,bgcolor:"#000",speed:"slow"});
+	
+	$('.search').HRinputtip({tipId:'searchtip'});
+	$('.info').HRinputtip({tipId:'infotip'});
+	$('.name').HRinputtip({maxLength:10,maxTipId:'tipname',maxTipText:'你还可以输入%t个字符',maxTipError:'你已经多输入%t个字符'});
+	$('.info2').HRinputtip({maxLength:280,maxTipId:'tipinfo2',maxTipText:'你还可以输入%t个字符',maxTipError:'你已经多输入%t个字符'});
+	$('.pwd').HRinputtip({pwdTipId:'pwd'});
+	
+	$('.HRmdlj').HRmdlj();
+	
+	$('.HRshare1').HRshare();
+	$('.HRshare2').HRshare({size:32});
+});
+</script>
+</head>
+
+<body>
+<div id="body">
+	<div id="top"></div>
+	<div id="content">
+		<ul id="accordion">
+			<li>
+				<a class="title">说明＆下载</a>
+				<div class="demo" style="font-size:14px">
+					<p>　　本插件基本算原创，其中大多数功能是在之前工作中发现经常会使用到的，但使用他人的插件放一起用会出现冲突，或者某个插件不能兼容各个浏览器，于是本人对一些插件进行修改或重写，也有些优秀的插件原封不动的整合进来，但由于插件开源共享，所以没有写明插件的来源地址以及作者信息，望见谅。</p>
+					<p>　　该插件最大的优势就是不会和其他开源jquery插件产生冲突，每一个方法产生的html元素的样式名或者id都是带私有前缀的，所以不用担心样式上会冲突。</p>
+					<p>　　由于没有设计感，所以没有特别为这个插件写API页面，至于使用方法、参数说明以及注意事项都写在jquery.HooRay.js这个JS里。如果你是第一次使用该插件，建议你下载未压缩版的。</p>
+					<p>　　如果在使用中发现bug，希望能及时向我反馈，我的邮箱是：hooray0905@foxmail.com</p>
+				</div>
+				<div class="script">
+					<p align="center"><a href="jquery.HooRay.zip">点击下载</a></p>
+				</div>
+			</li>
+			<li>
+				<a class="title">隔行换色&nbsp;HRghhs&nbsp;原创</a>
+				<div class="demo">
+					<table id="ghhs1" class="ghhs" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+						</tr>
+						<tr>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+						</tr>
+						<tr>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+						</tr>
+						<tr>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+						</tr>
+					</table>
+				</div>
+				<div class="script">$("#ghhs1").HRghhs();</div>
+				<div class="demo">
+					<table id="ghhs2" class="ghhs" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+						</tr>
+						<tr>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+						</tr>
+						<tr>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+						</tr>
+						<tr>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+						</tr>
+					</table> 
+				</div>
+				<div class="script">$("#ghhs1").HRghhs({useMoreChoose:true});</div>
+				<div class="demo">
+					<table id="ghhs3" class="ghhs" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+						</tr>
+						<tr>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+						</tr>
+						<tr>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+						</tr>
+						<tr>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+						</tr>
+					</table> 
+				</div>
+				<div class="script">$("#ghhs1").HRghhs({useOver:false});</div>
+				<div class="demo">
+					<table id="ghhs4" class="ghhs" border="0" cellspacing="0" cellpadding="0">
+						<tr rel='readonly'>
+							<td><input type="checkbox" name="chk" value="1" id="ch1" /><label for="ch1"></label></td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="chk" value="2" id="ch2" /><label for="ch2"></label></td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="chk" value="3" id="ch3" /><label for="ch3"></label></td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="chk" value="4" id="ch4" /><label for="ch4"></label></td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+							<td>----</td>
+						</tr>
+					</table> 
+				</div>
+				<div class="script">$("#ghhs4").HRghhs({useClick2Checkbox:true});</div>
+			</li>
+			<li>
+				<a class="title">无缝滚动&nbsp;HRwfgd&nbsp;修改</a>
+				<div class="demo">
+					<div id="wfgd1" class="wfgd">
+						<ul class="wfgd-ul1">
+							<li>广告位1</li><li>广告位2</li><li>广告位3</li><li>广告位4</li><li>广告位5</li>
+							<li>广告位6</li><li>广告位7</li><li>广告位8</li><li>广告位9</li><li>广告位10</li>
+						</ul>
+					</div>
+				</div>
+				<div class="script">$("#wfgd1").HRwfgd({isEqual:false});</div>
+				<div class="demo">
+					<div id="wfgd2" class="wfgd">
+						<ul class="wfgd-ul2">
+							<li>《电锯惊魂》将完结，狮门再出奇招欲拍3D《异次元》</li>
+							<li>万圣节例牌恐怖饕餮：一区《电锯惊魂7》</li>
+							<li>《潜伏》上线病毒网站 以假乱真调查灵异现象</li>
+						</ul>
+					</div>
+				</div>
+				<div class="script">$("#wfgd2").HRwfgd({direction:'up',scrollDelay:70});</div>
+			</li>
+			<li>
+				<a class="title">返回顶部&nbsp;HRfhdb&nbsp;原创</a>
+				<div class="demo">
+					<a href="javascript:void(0)" id="fhdb1">无动画效果</a>
+				</div>
+				<div class="script">$("#fhdb1").HRfhdb();</div>
+				<div class="demo">
+					<a href="javascript:void(0)" id="fhdb2">有动画效果，执行完成后并弹出提示窗口</a>
+				</div>
+				<div class="script">$("#fhdb2").HRfhdb({animation:true,slow:'slow'},function(){alert('看到我了么？');});</div>
+			</li>
+			<li>
+				<a class="title">外链弹窗&nbsp;HRwltc&nbsp;非原创</a>
+				<div class="demo">
+					<a href="demo.html">这是个内部连接</a>&nbsp;|&nbsp;<a href="http://www.baidu.com">这是个外部连接</a>
+				</div>
+				<div class="script">$("body").HRwltc({classname:'wltc'});</div>
+			</li>
+			<li>
+				<a class="title">手风琴&nbsp;HRsfq&nbsp;修改</a>
+				<div class="demo">
+					<ul id="HRsfq1">
+						<li>
+							<a>北京</a>
+							<div>北京有着三千余年的建城史和八百五十余年的建都史，最初见于记载的名字为"蓟"。民国时期，称北平。新中国成立后，是中华人民共和国的首都，简称"京"，现为中国四个中央直辖市之一，全国第二大城市及政治、交通和文化中心。北京位于华北平原北端，东南局部地区与天津相连，其余为河北省所环绕。它荟萃了元、明、清以来的中华文化，拥有众多名胜古迹和人文景观，是世界上拥有世界文化遗产最多的城市，每年有超过1亿4700万的旅客。</div>
+						</li>
+						<li>
+							<a>上海</a>
+							<div>上海，中国大陆第一大城市；四个中央直辖市之一；是中国大陆的经济、金融、贸易和航运中心。上海创造和打破了中国世界纪录协会多项世界之最、中国之最。上海位于我国大陆海岸线中部的长江口，拥有中国最大的外贸港口、最大的工业基地。有超过2000万人居住和生活在上海地区，其中大部分属汉族江浙民系，通行吴语上海话。上海又是一座新兴的旅游目的地，具有深厚的近代城市文化底蕴和众多的历史古迹。如今上海已经发展成为一个闪耀全球的国际化大都市，并致力于在2020年建设成为国际金融中心和航运中心。</div>
+						</li>
+						<li>
+							<a>重庆</a>
+							<div>重庆是中华人民共和国四个直辖市之一，地处中国西南。是中国重要的中心城市之一，长江上游地区经济中心和金融中心，内陆出口商品加工基地和扩大对外开放的先行区，中国重要的现代制造业基地，长江上游科研成果产业化基地，长江上游生态文明示范区，中西部地区发展循环经济示范区，国家高技术产业基地，长江上游航运中心，中国政府实行西部大开发的开发地区以及国家统筹城乡综合配套改革试验区。历史悠久，国务院公布的第二批国家历史文化名城之一。</div>
+						</li>
+					</ul>
+				</div>
+				<div class="script">$('#HRsfq1').HRsfq({activeClass:'HRsfq-active-class',speed:500,openState:true,openRow:2});</div>
+			</li>
+			<li>
+				<a class="title">Tabs切换&nbsp;HRtabs&nbsp;原创</a>
+				<div class="demo">
+					<div class="HRtabs1">
+						<ul>
+							<li><a href="#tabs1">1</a></li>
+							<li><a href="#tabs2">2</a></li>
+							<li><a href="#tabs3">3</a></li>
+						</ul>
+						<div id="tabs1">111</div>
+						<div id="tabs2">222</div>
+						<div id="tabs3">333</div>
+					</div>
+				</div>
+				<div class="script">$('.HRtabs1').HRtabs();</div>
+				<div class="demo">
+					<div class="HRtabs2">
+						<ul>
+							<li><a href="#tabs1">1</a></li>
+							<li><a href="#tabs2">2</a></li>
+							<li><a href="#tabs3">3</a></li>
+						</ul>
+						<div id="tabs1">111</div>
+						<div id="tabs2">222</div>
+						<div id="tabs3">333</div>
+					</div>
+				</div>
+				<div class="script">$('.HRtabs2').HRtabs({showDiv:'tabs2',overOrClick:'click',animation:true,speed:'slow'});</div>
+			</li>
+			<li>
+				<a class="title">锚点连接&nbsp;HRmdlj&nbsp;原创</a>
+				<div class="demo">
+					<a href="#HRmdlj1" class="HRmdlj">点击我</a>
+					<p id="HRmdlj1">我是个锚点</p>
+				</div>
+				<div class="script">$('.HRmdlj').HRmdlj();</div>
+			</li>
+			<li>
+				<a class="title">多选按钮&nbsp;HRcheckbox&nbsp;修改</a>
+				<div class="demo">
+					<fieldset class="HRcheckbox" id="HRcheckbox_1">
+						<legend class="title">skin:1</legend>
+						<p>
+							<input type="checkbox" name="city1" value="1" id="city_11" /><label for="city_11">北京</label>
+							<input type="checkbox" name="city1" value="2" id="city_12" /><label for="city_12">上海</label>
+							<input type="checkbox" name="city1" value="3" id="city_13" /><label for="city_13">杭州</label>
+						</p>
+					</fieldset>
+					<fieldset class="HRcheckbox" id="HRcheckbox_2">
+						<legend class="title">skin:2</legend>
+						<p>
+							<input type="checkbox" name="city2" value="1" id="city_21" /><label for="city_21">北京</label>
+							<input type="checkbox" name="city2" value="2" id="city_22" /><label for="city_22">上海</label>
+							<input type="checkbox" name="city2" value="3" id="city_23" /><label for="city_23">杭州</label>
+						</p>
+					</fieldset>
+					<fieldset class="HRcheckbox" id="HRcheckbox_3">
+						<legend class="title">skin:3</legend>
+						<p>
+							<input type="checkbox" name="city3" value="1" id="city_31" /><label for="city_31">北京</label>
+							<input type="checkbox" name="city3" value="2" id="city_32" /><label for="city_32">上海</label>
+							<input type="checkbox" name="city3" value="3" id="city_33" /><label for="city_33">杭州</label>
+						</p>
+					</fieldset>
+					<fieldset class="HRcheckbox" id="HRcheckbox_4">
+						<legend class="title">skin:4</legend>
+						<p>
+							<input type="checkbox" name="city4" value="1" id="city_41" /><label for="city_41">北京</label>
+							<input type="checkbox" name="city4" value="2" id="city_42" /><label for="city_42">上海</label>
+							<input type="checkbox" name="city4" value="3" id="city_43" /><label for="city_43">杭州</label>
+						</p>
+					</fieldset>
+					<fieldset class="HRcheckbox" id="HRcheckbox_5">
+						<legend class="title">skin:5</legend>
+						<p>
+							<input type="checkbox" name="city5" value="1" id="city_51" /><label for="city_51">北京</label>
+							<input type="checkbox" name="city5" value="2" id="city_52" /><label for="city_52">上海</label>
+							<input type="checkbox" name="city5" value="3" id="city_53" /><label for="city_53">杭州</label>
+						</p>
+					</fieldset>
+					<fieldset class="HRcheckbox" id="HRcheckbox_6">
+						<legend class="title">skin:6</legend>
+						<p>
+							<input type="checkbox" name="city6" value="1" id="city_61" /><label for="city_61">北京</label>
+							<input type="checkbox" name="city6" value="2" id="city_62" /><label for="city_62">上海</label>
+							<input type="checkbox" name="city6" value="3" id="city_63" /><label for="city_63">杭州</label>
+						</p>
+					</fieldset>
+					<fieldset class="HRcheckbox" id="HRcheckbox_7">
+						<legend class="title">skin:7</legend>
+						<p>
+							<input type="checkbox" name="city7" value="1" id="city_71" /><label for="city_71">北京</label>
+							<input type="checkbox" name="city7" value="2" id="city_72" /><label for="city_72">上海</label>
+							<input type="checkbox" name="city7" value="3" id="city_73" /><label for="city_73">杭州</label>
+						</p>
+					</fieldset>
+					<fieldset class="HRcheckbox" id="HRcheckbox_8">
+						<legend class="title">skin:8</legend>
+						<p>
+							<input type="checkbox" name="city8" value="1" id="city_81" /><label for="city_81">北京</label>
+							<input type="checkbox" name="city8" value="2" id="city_82" /><label for="city_82">上海</label>
+							<input type="checkbox" name="city8" value="3" id="city_83" /><label for="city_83">杭州</label>
+						</p>
+					</fieldset>
+					<fieldset class="HRcheckbox" id="HRcheckbox_9">
+						<legend class="title">skin:9</legend>
+						<p>
+							<input type="checkbox" name="city9" value="1" id="city_91" /><label for="city_91">北京</label>
+							<input type="checkbox" name="city9" value="2" id="city_92" /><label for="city_92">上海</label>
+							<input type="checkbox" name="city9" value="3" id="city_93" /><label for="city_93">杭州</label>
+						</p>
+					</fieldset>
+					<fieldset class="HRcheckbox" id="HRcheckbox_10">
+						<legend class="title">skin:10</legend>
+						<p>
+							<input type="checkbox" name="city10" value="1" id="city_101" /><label for="city_101">北京</label>
+							<input type="checkbox" name="city10" value="2" id="city_102" /><label for="city_102">上海</label>
+							<input type="checkbox" name="city10" value="3" id="city_103" /><label for="city_103">杭州</label>
+						</p>
+					</fieldset>
+				</div>
+				<div class="script">$('#HRcheckbox_1').HRcheckbox({skin:3});</div>
+			</li>
+			<li>
+				<a class="title">单选按钮&nbsp;HRradio&nbsp;修改</a>
+				<div class="demo">
+					<fieldset class="HRradio" id="HRradio_1">
+						<legend class="title">skin:1</legend>
+						<p>
+							<input type="radio" name="sex1" id="sex_11" value="1" /><label for="sex_11">男</label>
+							<input type="radio" name="sex1" id="sex_12" value="2" /><label for="sex_12">女</label>
+						</p>
+					</fieldset>
+					<fieldset class="HRradio" id="HRradio_2">
+						<legend class="title">skin:2</legend>
+						<p>
+							<input type="radio" name="sex2" id="sex_21" value="1" /><label for="sex_21">男</label>
+							<input type="radio" name="sex2" id="sex_22" value="2" /><label for="sex_22">女</label>
+						</p>
+					</fieldset>
+					<fieldset class="HRradio" id="HRradio_3">
+						<legend class="title">skin:3</legend>
+						<p>
+							<input type="radio" name="sex3" id="sex_31" value="1" /><label for="sex_31">男</label>
+							<input type="radio" name="sex3" id="sex_32" value="2" /><label for="sex_32">女</label>
+						</p>
+					</fieldset>
+					<fieldset class="HRradio" id="HRradio_4">
+						<legend class="title">skin:4</legend>
+						<p>
+							<input type="radio" name="sex4" id="sex_41" value="1" /><label for="sex_41">男</label>
+							<input type="radio" name="sex4" id="sex_42" value="2" /><label for="sex_42">女</label>
+						</p>
+					</fieldset>
+					<fieldset class="HRradio" id="HRradio_5">
+						<legend class="title">skin:5</legend>
+						<p>
+							<input type="radio" name="sex5" id="sex_51" value="1" /><label for="sex_51">男</label>
+							<input type="radio" name="sex5" id="sex_52" value="2" /><label for="sex_52">女</label>
+						</p>
+					</fieldset>
+					<fieldset class="HRradio" id="HRradio_6">
+						<legend class="title">skin:6</legend>
+						<p>
+							<input type="radio" name="sex6" id="sex_61" value="1" /><label for="sex_61">男</label>
+							<input type="radio" name="sex6" id="sex_62" value="2" /><label for="sex_62">女</label>
+						</p>
+					</fieldset>
+					<fieldset class="HRradio" id="HRradio_7">
+						<legend class="title">skin:7</legend>
+						<p>
+							<input type="radio" name="sex7" id="sex_71" value="1" /><label for="sex_71">男</label>
+							<input type="radio" name="sex7" id="sex_72" value="2" /><label for="sex_72">女</label>
+						</p>
+					</fieldset>
+					<fieldset class="HRradio" id="HRradio_8">
+						<legend class="title">skin:8</legend>
+						<p>
+							<input type="radio" name="sex8" id="sex_81" value="1" /><label for="sex_81">男</label>
+							<input type="radio" name="sex8" id="sex_82" value="2" /><label for="sex_82">女</label>
+						</p>
+					</fieldset>
+					<fieldset class="HRradio" id="HRradio_9">
+						<legend class="title">skin:9</legend>
+						<p>
+							<input type="radio" name="sex9" id="sex_91" value="1" /><label for="sex_91">男</label>
+							<input type="radio" name="sex9" id="sex_92" value="2" /><label for="sex_92">女</label>
+						</p>
+					</fieldset>
+					<fieldset class="HRradio" id="HRradio_10">
+						<legend class="title">skin:10</legend>
+						<p>
+							<input type="radio" name="sex10" id="sex_101" value="1" /><label for="sex_101">男</label>
+							<input type="radio" name="sex10" id="sex_102" value="2" /><label for="sex_102">女</label>
+						</p>
+					</fieldset>
+				</div>
+				<div class="script">$('#HRradio_1').HRradio({skin:5});</div>
+			</li>
+			<li>
+				<a class="title">控制多选按钮选择数量&nbsp;HRchecknum&nbsp;修改</a>
+				<div class="demo">
+					<fieldset class="HRcheckbox" id="HRchecknum_1">
+						<legend class="title">选择一样你最喜欢的水果</legend>
+						<p>
+							<input type="checkbox" name="food" value="1" id="food_1" /><label for="food_1">苹果</label>
+							<input type="checkbox" name="food" value="2" id="food_2" /><label for="food_2">香蕉</label>
+							<input type="checkbox" name="food" value="3" id="food_3" /><label for="food_3">西瓜</label>
+						</p>
+					</fieldset>
+				</div>
+				<div class="script">$('#HRchecknum_1').HRchecknum({maxnum:1});</div>
+			</li>
+			<li>
+				<a class="title">下拉列表&nbsp;HRxllb&nbsp;原创</a>
+				<div class="demo">
+					<fieldset class="HRxllb">
+						<legend class="title">skin:1</legend>
+						<p id="HRxllb_1">
+							<select name="language1" id="language1">
+								<option value="0">English</option>
+								<option value="1" selected="selected">简体中文</option>
+								<option value="2">日本語</option>
+								<option value="3">Deutsch</option>
+								<option value="4">Espa?ol</option>
+								<option value="5">Fran?ais</option>
+								<option value="6">Italiano</option>
+								<option value="7">Polski</option>
+								<option value="8">Português</option>
+								<option value="9">Svenska</option>
+								<option value="10">Türk?e</option>
+								<option value="11">Руccкий</option>
+							</select>
+						</p>
+					</fieldset>
+					<fieldset class="HRxllb">
+						<legend class="title">skin:2</legend>
+						<p id="HRxllb_2">
+							<select name="language2" id="language2">
+								<option value="0">English</option>
+								<optgroup label="111" disabled>
+									<option value="1">简体中文</option>
+									<option value="2">日本語</option>
+									<option value="3">Deutsch</option>
+								</optgroup>
+								<option value="4">Espa?ol</option>
+								<optgroup label="222">
+									<option value="5" disabled>Fran?ais</option>
+									<option value="6">Italiano</option>
+								</optgroup>
+								<option value="7">Polski</option>
+								<option value="8" selected="selected">Português</option>
+								<option value="9" disabled>Svenska</option>
+								<option value="10">Türk?e</option>
+								<option value="11">Руccкий</option>
+							</select>
+						</p>
+					</fieldset>
+				</div>
+				<div class="script">$('#HRxllb_2').HRxllb({skin:1});</div>
+				<div class="demo">
+					<fieldset class="HRxllb">
+						<legend class="title">设置options最大显示高度</legend>
+						<p id="HRxllb_3">
+							<select name="language3" id="language3">
+								<option value="0">English</option>
+								<optgroup label="111" disabled>
+									<option value="1">简体中文</option>
+									<option value="2">日本語</option>
+									<option value="3">Deutsch</option>
+								</optgroup>
+								<option value="4">Espa?ol</option>
+								<optgroup label="222">
+									<option value="5" disabled>Fran?ais</option>
+									<option value="6">Italiano</option>
+								</optgroup>
+								<option value="7">Polski</option>
+								<option value="8" selected="selected">Português</option>
+								<option value="9" disabled>Svenska</option>
+								<option value="10">Türk?e</option>
+								<option value="11">Руccкий</option>
+							</select>
+						</p>
+					</fieldset>
+				</div>
+				<div class="script">$('#HRxllb_2').HRxllb({skin:1,optionsHeight:100});</div>
+				<div class="demo">
+					<fieldset class="HRxllb">
+						<legend class="title">更新select</legend>
+						<p id="HRxllb_4">
+							<select name="language4" id="language4">
+								<option value="0">English</option>
+								<optgroup label="111" disabled>
+									<option value="1">简体中文</option>
+									<option value="2">日本語</option>
+									<option value="3">Deutsch</option>
+								</optgroup>
+								<option value="4">Espa?ol</option>
+								<optgroup label="222">
+									<option value="5" disabled>Fran?ais</option>
+									<option value="6">Italiano</option>
+								</optgroup>
+								<option value="7">Polski</option>
+								<option value="8" selected="selected">Português</option>
+								<option value="9" disabled>Svenska</option>
+								<option value="10">Türk?e</option>
+								<option value="11">Руccкий</option>
+							</select>
+						</p>
+					</fieldset>
+					<input style="float:left;clear:left;width:400px" type="button" value="1、清空下拉列表里的数据，并添加一条English选择项" onClick="$('#language4').html('<option value=0>English</option>')" />
+					<input style="float:left;clear:left;width:400px" type="button" value="2、更新模拟下拉列表里的数据" onClick="$('#HRxllb_4').HRxllb({skin:1,reload:true})" />
+				</div>
+				<div class="script">$('#HRxllb_4').HRxllb({skin:1,reload:true});</div>
+				<div class="demo">
+					<fieldset class="HRxllb">
+						<legend class="title">联动演示</legend>
+						<p id="HRxllb_5">
+							<select name="language5" id="language5"></select>
+						</p>
+						<p id="HRxllb_6">
+							<select name="language6" id="language6"></select>
+						</p>
+					</fieldset>
+				</div>
+				<div class="script">具体代码请查看源码，需要注意以下几点：
+				<ol>
+					<li>1、初始化时，如果select里的选项是延迟加载的，务必在加载完毕后用reload参数更新下select，或者等加载完毕后再调用HRxllb方法。</li>
+					<li>2、如果AB两个下拉列表联动，通常事件是绑定在A上，如$(A).change(function(){...})，而现在则需要换成$(".hr-xllb-<font style="color:red">xxx</font>-div").live('click',function(){...})，xxx是A的id，因为id是唯一的，所以每个下拉列表是事件不会有冲突，至于function里的实现方法，就按原来的做法就行。</li>
+					<li>3、然后当联动完毕后，继续用reload参数更新下拉列表B，实现联动。</li>
+				</ol>
+				</div>
+			</li>
+			<li>
+				<a class="title">高亮显示&nbsp;HRglsx&nbsp;原创</a>
+				<div class="demo">
+					<p class="HRglsx1">点击我</p>
+				</div>
+				<div class="script">$(".HRglsx1").HRglxs();</div>
+				<div class="demo">
+					<p class="HRglsx2">点击我</p>
+				</div>
+				<div class="script">$(".HRglsx2").HRglxs({opacity:0.5,bgcolor:"#000",speed:"slow"});</div>
+				<div class="demo">
+					<p align="center">下面分别是select、iframe、flash，可以完全遮罩住，IE6下会把select隐藏，当取消遮罩再显示出来。</p>
+					<select name="language1">
+						<option value="0">English</option>
+						<option value="1" selected="selected">简体中文</option>
+						<option value="2">日本語</option>
+						<option value="3">Deutsch</option>
+						<option value="4">Espa?ol</option>
+						<option value="5">Fran?ais</option>
+						<option value="6">Italiano</option>
+						<option value="7">Polski</option>
+						<option value="8">Português</option>
+						<option value="9">Svenska</option>
+						<option value="10">Türk?e</option>
+						<option value="11">Руccкий</option>
+					</select>
+					<iframe src="http://www.baidu.com" width="900" height="300"></iframe>
+					<object width="300" height="300" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="flipper">
+						<param value="tagsbtn.swf" name="movie">
+						<param name="wmode" value="transparent">
+						<param name="flashvars" value="mykeys=aaaa|bbb|ccc|ddd|eee|fff|gggg|hhh|江苏|浙江|安徽|福建|江西|山东|河南|tryet|湖南|广东|广西|海南|重庆|ttt|dde|geg|hrhr|hthy|jyju|ukuku|lili|liill&amp;myurls=http://tv.people.com.cn/GB/182567/182595/index.html">
+						<embed width="300" height="300" flashvars="mykeys=aaaa|bbb|ccc|ddd|eee|fff|gggg|hhh|江苏|浙江|安徽|福建|江西|山东|河南|tryet|湖南|广东|广西|海南|重庆|ttt|dde|geg|hrhr|hthy|jyju|ukuku|lili|liill&amp;myurls=http://tv.people.com.cn/GB/182567/182595/index.html" scale="noscale" wmode="opaque" menu="false" allowscriptaccess="always" bgcolor="#fffcf5" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="High" src="tagsbtn.swf" name="flipper">
+					</object>
+
+				</div>
+			</li>
+			<li>
+				<a class="title">输入框提示&nbsp;HRinputtip&nbsp;原创</a>
+				<div class="demo">
+					<input type="text" name="search" class="search" /><div id="searchtip" style="position:relative;color:#ccc"><div style="position:absolute;top:-18px;left:4px">请输入信息</div></div>
+				</div>
+				<div class="script">$('.search').HRinputtip({tipId:'searchtip'});</div>
+				<div class="demo">
+					<textarea name="info" class="info" style="width:300px;height:100px"></textarea><div id="infotip" style="position:relative;color:#ccc"><div style="position:absolute;top:-18px;left:4px">请输入内容</div></div>
+				</div>
+				<div class="script">$('.search').HRinputtip({tipId:'infotip'});</div>
+				<div class="demo">
+					<input type="text" name="name" class="name" value="123" /><font id="tipname"></font>
+				</div>
+				<div class="script">$('.name').HRinputtip({maxLength:10,maxTipId:'tipname',maxTipText:'你还可以输入%t个字',maxTipError:'你已经多输入%t个字符'});</div>
+				<div class="demo">
+					<textarea name="info2" class="info2" style="width:300px;height:100px"></textarea><font id="tipinfo2"></font>
+				</div>
+				<div class="script">$('.info2').HRinputtip({maxLength:280,maxTipId:'tipinfo2',maxTipText:'你还可以输入%t个字',maxTipError:'你已经多输入%t个字符'});</div>
+				<div class="demo">
+					<input type="password" name="pwd" class="pwd" /><font id="pwd"></font>
+				</div>
+				<div class="script">$('.pwd').HRinputtip({pwdTipId:'pwd'});</div>
+			</li>
+			<li>
+				<a class="title">倒计时&nbsp;HRdjs&nbsp;修改</a>
+				<div class="demo">
+					<a href="HRdjs.html" target="_blank">点击查看详细</a>
+				</div>
+			</li>
+			<li>
+				<a class="title">分享按钮&nbsp;HRshare&nbsp;原创</a>
+				<div class="demo">
+					<div class="HRshare1">
+						<a class="hr-share-tsina"></a>
+						<a class="hr-share-tqq"></a>
+						<a class="hr-share-qzone"></a>
+						<a class="hr-share-renren"></a>
+						<a class="hr-share-baidu"></a>
+						<a class="hr-share-115"></a>
+						<a class="hr-share-tsohu"></a>
+						<a class="hr-share-taobao"></a>
+						<a class="hr-share-xiaoyou"></a>
+						<a class="hr-share-more"></a>
+					</div>
+				</div>
+				<div class="script">$('.HRshare1').HRshare();</div>
+				<div class="demo">
+					<div class="HRshare2">
+						<a class="hr-share-tsina"></a>
+						<a class="hr-share-tqq"></a>
+						<a class="hr-share-more"></a>
+					</div>
+				</div>
+				<div class="script">$('.HRshare2').HRshare({size:32});</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</body>
+</html>

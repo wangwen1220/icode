@@ -1,0 +1,280 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns=http://www.w3.org/1999/xhtml>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="tangram-fe" />
+		<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0;"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<style>
+			body{font-size:14px;font-family:'微软雅黑'}
+		</style>
+		<title>Magic - 离线API</title>
+	</head>
+	<body>
+		<h1>Magic离线文档 -- 选项卡</h1>
+		<h2>选项卡</h2>
+		<p>
+			通过选中不同的标题切换相应的内容，多用于功能相近的区域展示，如点卡充值/手机充值等，支持鼠标悬停或者点击两种方式切换。
+		</p>
+
+		<h2>选项卡插件</h2>
+
+				<h2>参考手册</h2>
+		
+		<dl>
+			<dt><h3>参数配置</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>					
+							<dt><strong>options.items </strong>: Array</dt>
+							<dd>数据项，格式如：[{title: &#039;text-0&#039;, content: &#039;content-0&#039;}, {title: &#039;text-1&#039;, content: &#039;content-1&#039;}...]</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.selectEvent </strong>: String</dt>
+							<dd>触发选项卡切换的事件名称,取值click或mouseover，默认click</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.selectDelay </strong>: Number</dt>
+							<dd>当selectEvent是mouseover时，选项卡之间切换的延迟时间，以毫秒为单位，默认0</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.originalIndex </strong>: Number</dt>
+							<dd>默认选项卡的打开项，默认0</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+				<dl>
+			<dt><h3>组件方法</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>
+							<dt>render</dt>
+							<dd>
+								<p>将Tab选择卡渲染到指定的容器中</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>target</strong>: {String|HTMLElement}</p>
+														<p style="text-indent: 24px;">一个用来渲染组件的容器对象.</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																											
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>select</dt>
+							<dd>
+								<p>切换到某个选项卡</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">选项卡的索引，初始值是0.</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																											
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getCurrentTitle</dt>
+							<dd>
+								<p>获得当前选项卡的标题</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{HTMLElement}</dt>									
+											<dd>
+												<p>取得当前选中项的标题容器.</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getCurrentContent</dt>
+							<dd>
+								<p>获得当前选项卡的内容</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{HTMLElement}</dt>									
+											<dd>
+												<p>取得当前选中项的内容容器.</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getElement</dt>
+							<dd>
+								<p>取得 ui 模块对应的 dom element 对象</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>key</strong>: {String}</p>
+														<p style="text-indent: 24px;">该ID对应的关键字(可选参数)</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Object}</dt>									
+											<dd>
+												<p>ui模块对应的dom element</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getElements</dt>
+							<dd>
+								<p>取得所有 ui 模块对应的 dom element 对象</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Object}</dt>									
+											<dd>
+												<p>取得对象的集合</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+
+		<dl>
+			<dt><h3>组件事件</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>
+							<dt>onbeforeselect</dt>
+							<dd>
+								<p>当焦点发生改变之前触发该事件</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">切换前的焦点索引</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onselect</dt>
+							<dd>
+								<p>当焦点发生改变时触发该事件</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">切换后的焦点索引</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+	</body>
+</html>

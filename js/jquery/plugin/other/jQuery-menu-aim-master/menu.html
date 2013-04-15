@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery.menu-aim-菜单-曾祥展qqzeng.com</title>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="jquery.menu-aim.js" ></script>
+<script type="text/javascript" >
+$(function(){
+	$("#G_chan-panel").menuAim({
+    activate: function(a){$(a).addClass("active")},  
+    deactivate: function(a){$(a).removeClass("active")}, 
+	 enter: function(a) {$(a).addClass("active")},
+	  exit: function(a) {$(a).removeClass("active")},
+});
+});
+
+</script>
+<style type="text/css">
+BODY {
+	background-color: #fff;
+	color: #555;
+	font: 9pt/14px Tahoma, "宋体", Arial, Helvetica, Sans-Serif;
+	letter-spacing: 0;
+	margin: 0;
+}
+html, body, ul, ol, li, dl, dt, dd, p, h1, h2, h3, h4, h5, h6, a, img, th, td, form, fieldset, iframe, object, pre, code, legend, blockquote {
+	border: 0 none;
+	margin: 0;
+	outline: 0 none;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+UL, LI {
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+IMG {
+	border: medium none;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+input, img, select {
+	vertical-align: middle;
+}
+A {
+	color: #666666;
+}
+A:link {
+	color: #666666;
+	text-decoration: none;
+}
+A:visited {
+	color: #666666;
+	text-decoration: none;
+}
+A:hover {
+	color: #C90809;
+	text-decoration: none;
+}
+/*导航*/
+
+
+.pp_channels .root-item, .pp_channels .root-name, .pp_channels .root-name span, .pp_channels .sub-list li a {
+/* background-image: url("bg.png");
+    background-repeat: no-repeat;*/
+}
+.G_chan-panel {
+	position: absolute;
+	z-index: 1000;
+	top: 120px;
+	left: 199px;
+	visibility: hidden;
+}
+.pp_channels {
+	width: 138px;
+	padding: 0;
+	border-width: 0 0 2px 1px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-moz-box-shadow: -1px 1px 1px #ccc;
+	-webkit-box-shadow: 0 1px 5px #ccc;
+	box-shadow: 0 1px 5px #ccc;
+}
+.pp_channels .root-item {
+	zoom: 1;
+	position: relative;
+	width: 139px;
+	height: 34px;
+	background-position: -13px -373px;
+	overflow: visible;
+	vertical-align: middle;
+}
+.pp_channels .root-name {
+	display: block;
+	z-index: 1001;
+	position: relative;
+	border-top: 1px solid #B9F5D2;
+	padding-left: 10px;
+	background-position: -10px -358px;
+	cursor: pointer;
+}
+.pp_channels .root-name span {
+	display: block;
+	border-right: 1px solid #B9F5D2;
+	padding-left: 9px;
+	height: 34px;
+	font-size: 1.2em;
+	line-height: 34px;
+	color: #000;
+	background-position: -167px -358px;
+}
+.pp_channels .active .root-name {
+	background: #fff;
+}
+.pp_channels .active .root-name span {
+	color: #C00;
+	border-color: #fff;
+}
+.pp_channels .no-sub .root-name span {
+	border-color: #fff;
+	background-position: 20px -358px;
+}
+.pp_channels .sub-list {
+	left: 138px;
+	top: -34px;
+	padding: 5px 2px 5px 16px;
+	width: 200px;
+	overflow: hidden;
+	_top: -35px;
+	-moz-box-shadow: -1px 1px 1px #ccc;
+	-webkit-box-shadow: 0 1px 5px #ccc;
+	box-shadow: 0 1px 5px #ccc;
+}
+.pp_channels .active .sub-list {
+	visibility: visible;
+}
+.pp_channels .sub-list li {
+	float: left;
+	width: 83px;
+	margin: 0 10px 5px 0;
+}
+.pp_channels .sub-list .main-cate {
+	width: 200px;
+	margin-right: -10px;
+	font-weight: bold;
+}
+.pp_channels .sub-list a {
+	padding-left: 3px;
+	line-height: 21px;
+	background-position: -169px -418px;
+ *background-position: -169px -420px;
+}
+.pp_channels .sub-list a: hover {
+	background-position: -169px -438px;
+ *background-position: -169px -440px;
+}
+.pop-panel {
+	z-index: 1000;
+	position: absolute;
+	visibility: hidden;
+	border: 1px solid #B9F5D2;
+	padding: 5px 9px;
+	background: #fff;
+	color: #61646E;
+ #margin-left:-0px;
+	_margin-left: -0px;
+}
+.pop-panel a {
+	color: #61646E;
+}
+.pop-panel a: hover {
+	text-decoration: none;
+	color: #C00;
+}
+</style>
+</head>
+
+<body>
+<div id="menu">
+  <ul id="G_chan-panel" class="pop-panel pp_channels Fix" style="position: absolute; visibility: visible; z-index: 1001; top: 175px; left: 189px; ">
+    <li class="root-item  "> <a href="#" class="root-name"><span>餐饮</span></a>
+      <ul class="pop-panel Fix sub-list">
+        <li class="main-cate"><a href="#">餐饮频道</a></li>
+        <li><a href="#">粤菜</a></li>
+        <li><a href="#">粤2菜</a></li>
+        <li><a href="#">粤菜3</a></li>
+        <li><a href="#">粤菜4</a></li>
+      </ul>
+    </li>
+    <li class="root-item"> <a href="#" class="root-name"><span>购物</span></a>
+      <ul class="pop-panel Fix sub-list">
+        <li class="main-cate"><a href="#">购物频道</a></li>
+        <li><a href="#">超市/便利店</a></li>
+        <li><a href="#">超市2菜</a></li>
+        <li><a href="#">超市3</a></li>
+        <li><a href="#">超市4</a></li>
+        <li><a href="#">其他</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

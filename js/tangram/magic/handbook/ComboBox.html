@@ -1,0 +1,765 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns=http://www.w3.org/1999/xhtml>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="tangram-fe" />
+		<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0;"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<style>
+			body{font-size:14px;font-family:'微软雅黑'}
+		</style>
+		<title>Magic - 离线API</title>
+	</head>
+	<body>
+		<h1>Magic离线文档 -- 组合框</h1>
+		<h2>组合框</h2>
+		<p>
+			在原生select下拉控件上增加可编辑选中内容的功能，该组件由一个文本输入控件和一个下拉菜单组成，多用于替代浏览器原生的select下拉组件，支持下拉菜单的内容根据输入的内容自动变化，类似suggestion输入框提示。
+		</p>
+
+		<h2>组合框插件</h2>
+
+				<h3>suggestion</h3>
+		<p>
+			组合框的输入框提示功能插件
+		</p>
+				<h2>参考手册</h2>
+		
+		<dl>
+			<dt><h3>参数配置</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>					
+							<dt><strong>options.items </strong>: Array&lt;Object&gt;</dt>
+							<dd>组合框下拉菜单的数据，每项由value和content组成，默认[]。</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.viewSize </strong>: Number</dt>
+							<dd>下拉菜单最多显示的项目数，若选项多于此配置，则出现纵向滚动条，默认5。</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.readonly </strong>: Boolean</dt>
+							<dd>输入框是否可以编辑输入，默认true。</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.disabled </strong>: Boolean</dt>
+							<dd>组合框是否处于禁用状态，默认false。</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.originIndex </strong>: Number</dt>
+							<dd>初始化后默认选中的值的索引，不选中任何项为-1，当readonly为true时，默认0，反之默认-1。</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.width </strong>: Number|String</dt>
+							<dd>组合框的宽度，默认100%。</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.suggestion.enable </strong>: Boolean</dt>
+							<dd>插件开关，默认true</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+				<dl>
+			<dt><h3>组件方法</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>
+							<dt>render</dt>
+							<dd>
+								<p>将组合框渲染到dom中</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>target</strong>: {String|HTMLElement}</p>
+														<p style="text-indent: 24px;">渲染的容器，默认为document.body。</p>
+													</li>
+																										<li>
+														<p><strong>position</strong>: {String}</p>
+														<p style="text-indent: 24px;">渲染的位置，可以是beforeBegin, afterBegin, beforeEnd, afterEnd，默认beforeEnd。</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																											
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getValue</dt>
+							<dd>
+								<p>获得选中项的值，若输入框的中的值不在下拉菜单中，则返回输入框中的值。</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Number}</dt>									
+											<dd>
+												<p>ComboBox的值</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getSelectIndex</dt>
+							<dd>
+								<p>获得选中项的索引值，若输入框的中的值不在下拉菜单中，则返回-1.</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Number}</dt>									
+											<dd>
+												<p>索引值</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>setByValue</dt>
+							<dd>
+								<p>根据选中项的值设置组合框</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>value</strong>: {String|Number|Boolean}</p>
+														<p style="text-indent: 24px;">选中项的值。</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																											
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>focus</dt>
+							<dd>
+								<p>使组合框获得焦点</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>blur</dt>
+							<dd>
+								<p>使组合框失去焦点</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>reset</dt>
+							<dd>
+								<p>将组合框重置</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>disable</dt>
+							<dd>
+								<p>设置组合框为不可用状态。</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>enable</dt>
+							<dd>
+								<p>设置组合框为可用状态</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>setWidth</dt>
+							<dd>
+								<p>设置组合框的宽度</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>width</strong>: {Number|String}</p>
+														<p style="text-indent: 24px;">宽度数字</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																											
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getElement</dt>
+							<dd>
+								<p>获得 组合框组件结构里的 HtmlElement对象</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>name</strong>: {String}</p>
+														<p style="text-indent: 24px;">可选的值包括：container(combobox节点)|input-container(输入框和右边的箭头整体)|input(输入框)|arrow(输入框右边的箭头)|menu(下拉菜单)</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{HtmlElement}</dt>									
+											<dd>
+												<p>得到的 HtmlElement 对象</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getElements</dt>
+							<dd>
+								<p>取得所有 ui 模块对应的 dom element 对象</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Object}</dt>									
+											<dd>
+												<p>取得对象的集合</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+
+		<dl>
+			<dt><h3>组件事件</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>
+							<dt>onload</dt>
+							<dd>
+								<p>组合框渲染后触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>ondispose</dt>
+							<dd>
+								<p>组合框析构后触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onshow</dt>
+							<dd>
+								<p>下拉菜单展示后触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onbeforeshow</dt>
+							<dd>
+								<p>下拉菜单试图展示时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.returnValue</strong>: {Boolean}</p>
+														<p style="text-indent: 24px;">返回false时，会阻止下拉菜单展现。</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onbeforehide</dt>
+							<dd>
+								<p>下拉菜单试图隐藏时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.returnValue</strong>: {Boolean}</p>
+														<p style="text-indent: 24px;">返回false时，会阻止下拉菜单隐藏。</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onhide</dt>
+							<dd>
+								<p>下拉菜单隐藏后触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onclickitem</dt>
+							<dd>
+								<p>点击下拉菜单某项后触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.result.index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">被点击的选项的索引</p>
+													</li>
+																										<li>
+														<p><strong>evt.result.value</strong>: {Number}</p>
+														<p style="text-indent: 24px;">被点击的选项的值</p>
+													</li>
+																										<li>
+														<p><strong>evt.result.content</strong>: {Number}</p>
+														<p style="text-indent: 24px;">被点击的选项的文字</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onbeforepick</dt>
+							<dd>
+								<p>下拉菜单选项试图上框时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.returnValue</strong>: {Number}</p>
+														<p style="text-indent: 24px;">为false时会阻止选项文字上框</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onpick</dt>
+							<dd>
+								<p>下拉菜单选项上框后触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.result.index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">选项的索引</p>
+													</li>
+																										<li>
+														<p><strong>evt.result.value</strong>: {Number|Boolean|String}</p>
+														<p style="text-indent: 24px;">选项的值</p>
+													</li>
+																										<li>
+														<p><strong>evt.result.content</strong>: {String}</p>
+														<p style="text-indent: 24px;">选项的文字</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onmenufocus</dt>
+							<dd>
+								<p>选中下拉菜单中的某个选项后触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.result.index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">选项的索引</p>
+													</li>
+																										<li>
+														<p><strong>evt.result.value</strong>: {Number|Boolean|String}</p>
+														<p style="text-indent: 24px;">选项的值</p>
+													</li>
+																										<li>
+														<p><strong>evt.result.content</strong>: {String}</p>
+														<p style="text-indent: 24px;">选项的文字</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onconfirm</dt>
+							<dd>
+								<p>确认下拉菜单中的某个选项后触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.result.index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">选项的索引</p>
+													</li>
+																										<li>
+														<p><strong>evt.result.value</strong>: {Number|Boolean|String}</p>
+														<p style="text-indent: 24px;">选项的值</p>
+													</li>
+																										<li>
+														<p><strong>evt.result.content</strong>: {String}</p>
+														<p style="text-indent: 24px;">选项的文字</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onchange</dt>
+							<dd>
+								<p>组合框值变化时触发。有两个途径：1，confirm后若值发生变化；2，blur后若值发生变化。</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.from</strong>: {Number}</p>
+														<p style="text-indent: 24px;">如何触发该事件，可以为comfirm或blur。</p>
+													</li>
+																										<li>
+														<p><strong>evt.result.index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">选项的索引（仅在evt.from为confirm时）</p>
+													</li>
+																										<li>
+														<p><strong>evt.result.value</strong>: {Number|Boolean|String}</p>
+														<p style="text-indent: 24px;">选项的值（仅在evt.from为confirm时）</p>
+													</li>
+																										<li>
+														<p><strong>evt.result.content</strong>: {String}</p>
+														<p style="text-indent: 24px;">选项的文字 （仅在evt.from为confirm时）</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onhighlight</dt>
+							<dd>
+								<p>高亮下拉菜单中的某个选项后触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.result.index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">选项的索引</p>
+													</li>
+																										<li>
+														<p><strong>evt.result.value</strong>: {Number|Boolean|String}</p>
+														<p style="text-indent: 24px;">选项的值</p>
+													</li>
+																										<li>
+														<p><strong>evt.result.content</strong>: {String}</p>
+														<p style="text-indent: 24px;">选项的文字</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onfocus</dt>
+							<dd>
+								<p>组合框聚焦后触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onrelad</dt>
+							<dd>
+								<p>组合框载入新的下拉菜单数据后触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+	</body>
+</html>

@@ -1,0 +1,266 @@
+@import "hs-game-global.css";
+@charset "utf-8";
+
+/*
+名称：火秀网络游戏样式
+简介：火秀网络游戏页面样式
+维护：王文 wangwen1220#139.com
+日期：2012-11-12
+*/
+
+/* Layout
+----------------------------------------------------------------------------- */
+/* 主内容 */
+#content-main .ui-layout-item-left .ui-header {
+	margin-bottom: 2px;
+	background-color: #F9F9F9;
+}
+#content-main .ui-layout-item-left .ui-img-list {
+	margin: 0 3px 10px 10px;
+}
+#content-main .ui-layout-item-left .ui-img-list-item {
+	width: 92px;
+	margin: 0 7px 0 0;
+	*margin-right: 5px;
+}
+#content-main .ui-layout-item-left .ui-img-list-item .img {
+	border: none;
+}
+#content-main .ui-layout-item-left .ui-list {
+	padding-top: 5px;
+}
+
+#content-main .ui-layout-item-center .ui-tab-header {
+	margin-bottom: 5px;
+	padding: 0 5px;
+	border: none;
+	height: 30px;
+	line-height: 30px;
+	background: #EBEBEB;
+}
+#content-main .ui-layout-item-center .ui-tab-nav-item {
+	border: none;
+}
+#content-main .ui-layout-item-center .ui-tab-nav-item-cur {
+	border-bottom: none;
+	border-top: 2px solid #CF0716;
+	background: #fff;
+}
+#content-main .ui-layout-item-center .ui-tab-cnt {
+	padding: 0;
+}
+
+#content-main .ui-layout-item-right .download {
+	padding: 3px 18px 3px 6px;
+	background: #fff url(../images/game/icon-download.png) no-repeat 95% 50%;
+}
+#content-main .ui-layout-item-right .ui-box-lite {
+	margin-top: 0;
+}
+#content-main .ui-layout-item-right .ui-img {
+	margin-top: 12px;
+}
+#content-main .ui-layout-item-right .ui-list {
+	padding-bottom: 3px;
+}
+#content-main .ui-layout-item-right .ui-list-item {
+	height: 27px;
+	line-height: 27px;
+}
+
+/* 单机游戏库 */
+#content-yxq .ui-box-header .search {
+	display: inline-block;
+	margin: 8px 12px 0 0;
+	vertical-align: middle;
+	*display: inline;
+	*zoom: 1;
+	*margin-top: 1px;
+	_margin-top: 5px;
+}
+#content-yxq .ui-box-header .search-wd {
+	height: 17px;
+	line-height: 17px;
+	width: 93px;
+	border: 1px solid #ACADB4;
+	color: #ACADB4;
+	vertical-align: top;
+	text-indent: 2px;
+	background-color: #fff;
+	*vertical-align: middle;
+	_vertical-align: top;
+}
+#content-yxq .ui-box-header .search-wd:focus {
+	color: #333;
+}
+#content-yxq .ui-box-header .search-submit {
+	margin-left: -1px;
+	width: 39px;
+	height: 19px;
+	border: none;
+	text-indent: -9999px;
+	vertical-align: top;
+	background: url(../images/game/btn-search-submit-small.png) no-repeat 0 0;
+	*vertical-align: middle;
+}
+
+#content-yxq .ui-box-item-main .ui-tab-header {
+	height: auto;
+	line-height: 30px;
+	border-bottom: 1px solid #ccc;
+	background: #F5F5F4;
+}
+#content-yxq .ui-box-item-main .ui-tab-nav-item {
+	margin: 0;
+	border: none;
+	border-right: 1px solid #CBCBCB;
+	padding: 0 14px;
+}
+#content-yxq .ui-box-item-main .ui-tab-nav-item-cur {
+	border-bottom: none;
+	color: #fff;
+	background: #D10717;
+}
+#content-yxq .ui-box-item-main .ui-tab-header .link a {
+	padding: 0;
+	background: none;
+}
+#content-yxq .ui-box-item-main .ui-tab-header .order {
+	clear: both;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 6px;
+	border-top: 1px solid #7F7F7F;
+	color: #404040;
+	background-color: #F8F8F8;
+}
+#content-yxq .ui-box-item-main .ui-tab-header .order a {
+	display: inline-block;
+	margin: 0 4px;
+	height: 15px;
+	line-height: 15px;
+	padding: 0 15px 0 6px;
+	border: 1px solid #F8F8F8;
+	color: #404040;
+	text-decoration: none;
+	background: url(../images/game/icon-up-gray.png) no-repeat 95% 40%;
+	_margin-top: 4px;
+}
+#content-yxq .ui-box-item-main .ui-tab-header .order a:hover {
+	color: #D10717;
+}
+#content-yxq .ui-box-item-main .ui-tab-header .order a.cur {
+	color: #404040;
+	border-color: #D0D0D0;
+	background: #fff url(../images/game/icon-down-blue.png) no-repeat 95% 50%;
+	cursor: default;
+}
+#content-yxq .ui-box-item-main .ui-tab-cnt {
+	margin: 10px 0 0 13px;
+	padding: 0;
+}
+#content-yxq .ui-box-item-main .ui-tab-cnt .ui-game-box {
+	float: left;
+	display: inline;
+	margin: 0 13px 0 0;
+	padding: 10px;
+	width: 320px;
+}
+#content-yxq .ui-box-item-main .ui-tab-cnt .ui-game-box:hover {
+	background-color: #F6F6F6;
+}
+#content-yxq .ui-box-item-main .ui-tab-cnt .ui-game-box .img {
+	float: left;
+	width: 152px;
+}
+#content-yxq .ui-box-item-main .ui-tab-cnt .ui-game-box .img img {
+	display: block;
+	border: 1px solid #E5E5E5;
+}
+#content-yxq .ui-box-item-main .ui-tab-cnt .ui-game-box .img h3 {
+	margin-top: 4px;
+	height: 18px;
+	line-height: 18px;
+	overflow: hidden;
+	text-align: center;
+	font-size: 14px;
+}
+#content-yxq .ui-box-item-main .ui-tab-cnt .ui-game-box .cnt {
+	float: right;
+	width: 158px;
+	line-height: 22px;
+}
+#content-yxq .ui-box-item-main .ui-tab-cnt .ui-game-box .cnt .link {
+	margin-top: 4px;
+}
+#content-yxq .ui-box-item-main .ui-tab-cnt .ui-game-box .cnt .link a {
+	margin-right: 5px;
+	color: #CF0716;
+}
+#content-yxq .ui-box-item-main .ui-tab-cnt .ui-game-box .cnt .link a.download {
+	padding-right: 10px;
+	background: url(../images/game/icon-download-gray.png) no-repeat 100% 50%;
+}
+#content-yxq .ui-box-item-main .ui-tab-cnt .ui-game-box .cnt .link a.download:hover {
+	background-image: url(../images/game/icon-download-red.png);
+}
+
+#content-yxq .ui-box-item-right .ui-tab-nav-item {
+	color: #333;
+}
+#content-yxq .ui-box-item-right .ui-tab-nav-item-cur {
+	color: #CF0716;
+	background-color: #fff;
+}
+#content-yxq .ui-box-item-right .ui-tab-nav-item .icon {
+	background-image: url(../images/game/arrow-down-gray.png);
+}
+
+/* 单机游戏攻略 */
+#content-yxgl .ui-box-item-left .ui-img-list-item {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+#content-yxgl .ui-box-item-right .ui-header {
+	margin-bottom: 0;
+}
+#content-yxgl .ui-box-item-right .ui-list-plus {
+	margin: 0 10px 5px;
+}
+
+/* 单机游戏图库 */
+#content-yxtk .ui-box-item-main .ui-myfocus {
+	float: left;
+	display: inline;
+	margin: 12px 0 12px 10px;
+}
+#content-yxtk .ui-box-item-main .ui-img-list {
+	width: 488px;
+	float: left;
+	margin: 12px 0 2px;
+}
+#content-yxtk .ui-box-item-main .ui-img-list-item {
+	margin: 0 7px 10px;
+}
+#content-yxtk .ui-box-item-main .ui-img-list-item .title {
+	margin-top: 2px;
+	height: 32px;
+	line-height: 16px;
+}
+#content-yxtk .ui-box-item-right .ui-tab-nav-item {
+	padding: 0 12px;
+	color: #333;
+}
+#content-yxtk .ui-box-item-right .ui-tab-nav-item-cur {
+	color: #CF0716;
+	background-color: #fff;
+}
+#content-yxtk .ui-box-item-right .ui-tab-nav-item .icon {
+	background-image: url(../images/game/arrow-down-gray.png);
+}
+#content-yxtk .ui-box-item-right .ui-list-plus-item {
+	padding-left: 10px;
+	background: url(../images/game/icon-list-gray.png) no-repeat 0 50%;
+	*background: url(../images/game/icon-list-gray.png) no-repeat 0 14px;
+}

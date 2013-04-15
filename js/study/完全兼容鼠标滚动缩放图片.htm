@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>完全兼容鼠标滚动缩放图片</title>    
+    <meta name="author" content="sohighthesky">
+    <meta name="description" content="完全兼容的鼠标滚动缩放图片，兼容各大浏览器，包括 ie6"><!--[if]2/4/2010-->
+    <meta name="Keywords" content="鼠标滚动缩放图片，兼容IE,FF,Chrome,Safari,Opera,前端,onmousewheel,DOMMouseScroll">
+    <style>
+/*!css reset*/ body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}body,button,input,select,textarea{font:11pt/1.8 tahoma,arial,\5b8b\4f53,sans-serif;}h1,h2,h3,h4,h5,h6{font-size:100%;}code,kbd,pre,samp{font-family:courier new,courier,monospace;}fieldset,img{border:0;}table{border-collapse:collapse;border-spacing:0;}ul,ol{list-style:none;}a{text-decoration:none;outline:none;color:#36c;}a:hover,a:active{text-decoration:underline;color:#FF4E00}
+
+	#div1 {width:600px;margin:100px auto;height:2000px;}
+    </style>
+</head>
+<body>
+<div id="div1">
+<h3>完全兼容的鼠标滚动缩放图片 - 前端效果 - uedsky.com</h3>
+<div>
+1.鼠标滚轴事件，Firefox使用DOMMouseScroll，非firefox用onmousewheel<br>
+2.IE中使用e.wheelDelta获取数组滚动数据，而非IE中使用e.detail，且数据的值相差-40倍<br>
+3.鼠标滚动时默认会调用浏览器窗口的滚动事件，所以需要使用e.preventDefault()阻止默认行为，但是firefox3.6需要额外的使用e.stopPropagation()才能阻止滚动事件
+</div>
+<img style="width: 296px; height: 259.2px;" _zoom="160" _zoomsize="185,162" src="%E5%AE%8C%E5%85%A8%E5%85%BC%E5%AE%B9%E9%BC%A0%E6%A0%87%E6%BB%9A%E5%8A%A8%E7%BC%A9%E6%94%BE%E5%9B%BE%E7%89%87_files/o_smilegirl.jpg" id="testimg1">
+<div>默认最小缩放为原图片的50%</div>
+<div><a href="http://www.cnblogs.com/sohighthesky/archive/2010/02/04/1663590.html">返回blog</a><br><a href="http://www.uedsky.com/">返回首页</a></div>
+</div>
+<script>document.write(unescape("%3Cscript src='http"+("https:"==document.location.protocol? "s://ssl":"://www")+".google-analytics.com/ga.js'%3E%3C/script%3E"))</script><script src="%E5%AE%8C%E5%85%A8%E5%85%BC%E5%AE%B9%E9%BC%A0%E6%A0%87%E6%BB%9A%E5%8A%A8%E7%BC%A9%E6%94%BE%E5%9B%BE%E7%89%87_files/ga.js"></script><script>try {_gat._getTracker("UA-16276920-1")._trackPageview()}catch(e){}</script>
+
+<script type="text/javascript">
+(function(){
+/*!
+ *Author:sohighthesky
+ *Website:http://www.uedsky.com
+ *Date:2010-2-4
+ */
+var zooming=function(e){
+    e=window.event ||e;
+    var o=this,data=e.wheelDelta || -e.detail*40,zoom,size;//FF的e.detail跟wheelDelta是相反的
+    if(!+'\v1'){//IE
+        zoom = parseInt(o.style.zoom) || 100; 
+        zoom += data / 12;
+        if(zoom > zooming.min) 
+            o.style.zoom = zoom + '%';
+        e.returnValue=false;
+    }else {
+        size=o.getAttribute("_zoomsize").split(",");
+        zoom=parseInt(o.getAttribute("_zoom")) ||100;
+        zoom+=data/12;
+        if(zoom>zooming.min){
+            o.setAttribute("_zoom",zoom);
+            o.style.width=size[0]*zoom/100+"px";
+            o.style.height=size[1]*zoom/100+"px";
+        }
+        e.preventDefault();//阻止默认行为
+        e.stopPropagation();//for firefox3.6
+    }
+};
+zooming.add=function(obj,min){//第一个参数指定可以缩放的图片，min指定最小缩放的大小 ,default to 50
+    zooming.min=min || 50;
+    obj.onmousewheel=zooming;
+    if(/Firefox/.test(navigator.userAgent))//if Firefox
+        obj.addEventListener("DOMMouseScroll",zooming,false);
+    if(!!+'\v1'){//if not IE
+        obj.setAttribute("_zoomsize",obj.offsetWidth+","+obj.offsetHeight);
+    }
+};
+
+window.onload=function(){//放在onload中，否则非ie中会无法计算图片大小出错
+    zooming.add(document.getElementById("testimg1"));
+}
+})()
+</script>
+
+</body></html>

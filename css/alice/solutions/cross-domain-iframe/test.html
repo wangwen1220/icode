@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' />
+	<title>同域解决方案</title>
+	<style>
+		body {
+			text-align: center;
+			background-color: #eee;
+		}
+		iframe {
+			display: block;
+			margin: 15px auto;
+			width: 80%;
+		}
+	</style>
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js'></script>
+	<script>
+		(function($) {
+			$(function() {
+				var $iframe = $('#iframe-content');
+				setInterval(resetIframe, 300);
+				function resetIframe() {
+					try {
+						var iframe_content = $iframe[0].contentWindow.document,
+							// 有些情况下得用 Math.min 比如引入的页面变换了高度
+							body_height = Math.max(iframe_content.documentElement.scrollHeight, iframe_content.body.scrollHeight);
+						if (body_height != $iframe.height()) $iframe.height(body_height);
+					} catch (e) {}
+				}
+			});
+		})(jQuery);
+	</script>
+</head>
+<body>
+	<h1>同域解决方案</h1>
+	<iframe id='iframe-content' src='a.html' scrolling='no' frameborder='0'></iframe>
+	<iframe id='iframe-content-domain' src='http://pnews.wwen.huoshow.com/api.php?op=movie&p=test&file=game_picshow_dev' scrolling='no' frameborder='0'></iframe>
+
+	<!-- <iframe id='frame_content' src='http://baidu.com' scrolling='no' frameborder='0'></iframe> -->
+	<iframe id='frame_content' src='a.html' scrolling='no' frameborder='0'></iframe>
+	<script type='text/javascript'>
+		setInterval(function() {
+			try {
+				var iframe = document.getElementById('frame_content'),
+					iframe_content = iframe.contentWindow.document,
+					height = Math.max(iframe_content.body.scrollHeight, iframe_content.documentElement.scrollHeight);
+				if(height && height != iframe.height) iframe.height = height;
+			} catch (e) {}
+		}, 300);
+	</script>
+</body>
+</html>

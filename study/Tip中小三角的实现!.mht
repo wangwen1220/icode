@@ -1,0 +1,146 @@
+Content-Type: multipart/related; start=<op.mhtml.1357055216441.a3f2df71186ee57a@192.168.1.111>; boundary=----------yMv436w8zF2haw4OQMuw0m
+Content-Location: http://www.css88.com/demo/tipbox/
+Subject: =?utf-8?Q?Tip=E4=B8=AD=E5=B0=8F=E4=B8=89=E8=A7=92=E7=9A=84=E5=AE=9E=E7=8E=B0!?=
+MIME-Version: 1.0
+
+------------yMv436w8zF2haw4OQMuw0m
+Content-Disposition: inline; filename=default.htm
+Content-Type: text/html; charset=utf-8; name=default.htm
+Content-ID: <op.mhtml.1357055216441.a3f2df71186ee57a@192.168.1.111>
+Content-Location: http://www.css88.com/demo/tipbox/
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tip中小三角的实现!</title>
+<link rel="stylesheet" type="text/css" href="http://css.sodao.com/home/css/reset.css?v=20101227" />
+<link href="css/tipbox.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div style="position:relative; height:100px">
+  <div class="SD-tipbox"><div class="cntBox"><p><a href=" http://www.css88.com/archives/3904">Tip中小三角的实现!</a></p></div><div class="SD-tipbox-direction SD-tipbox-up"><em>&#9670;</em><span>&#9670;</span></div><div class="SD-tipbox-direction SD-tipbox-down"><em>&#9670;</em><span>&#9670;</span></div><div class="SD-tipbox-direction SD-tipbox-left"><em>&#9670;</em><span>&#9670;</span></div><div class="SD-tipbox-direction SD-tipbox-right"><em>&#9670;</em><span>&#9670;</span></div><a title="关闭" onclick="return false" class="close-ico" href="#">关闭</a></div>
+</div><hr />
+<div style="position:relative; height:100px">
+  <div class="SD-tipbox"><div class="cntBox"><p>可以同步设置展示<br />
+  我的空间内容了~</p></div><div class="SD-tipbox-direction SD-tipbox-up" style="left:20px"><em>◆</em><span>◆</span></div><div class="SD-tipbox-direction SD-tipbox-down"><em>◆</em><span>◆</span></div><div class="SD-tipbox-direction SD-tipbox-left"><em>◆</em><span>◆</span></div><div class="SD-tipbox-direction SD-tipbox-right"><em>◆</em><span>◆</span></div><a title="关闭" onclick="return false" class="close-ico" href="#">关闭</a></div>
+</div>
+<!--统计-->
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-3448069-1");
+        pageTracker._trackPageview();
+    } catch(err) {
+    }</script>
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ff8be45191941378fa9c93900b0d0be23' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+</html>
+
+------------yMv436w8zF2haw4OQMuw0m
+Content-Disposition: inline; filename=reset.css
+Content-Type: text/css; name=reset.css
+Content-Location: http://css.sodao.com/home/css/reset.css?v=20101227
+Content-Transfer-Encoding: 8bit
+
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0;}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,th,var{font-weight:normal;font-style:normal}
+strong, b{ font-weight: bold; }
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-weight:700;}
+h1{font-size:18px}
+h2{font-size:16px}
+h3{font-size:14px}
+h4{font-size:14px}
+h5{font-size:12px}
+h6{font-size:12px}
+q:before,q:after{content:''}
+abbr,acronym{border:0}
+hr {margin: 0;padding: 0;border: 0;color: #CDCDCD;background-color: #CDCDCD;height: 1px}
+blockquote{color:#666;font-style:italic;}
+sup,sub{line-height:0}
+abbr,acronym{border-bottom:1px dotted #666}
+pre{white-space:pre;}
+pre,code,tt{font:12px 'andale mono', 'lucida console', monospace;line-height:1.5}
+
+------------yMv436w8zF2haw4OQMuw0m
+Content-Disposition: inline
+Content-Type: image/png
+Content-Location: http://css.sodao.com/home/img/close-ico.png
+Content-Transfer-Encoding: Base64
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAMAAAFbUDhoAAAAGXRFWHRTb2Z0d2Fy
+ZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAA
+AAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5U
+Y3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6
+eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8w
+Mi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRw
+Oi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpE
+ZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRv
+YmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNv
+bS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20v
+eGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRv
+YmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAu
+aWlkOjA1RURFNTNBNzA5ODExRTA4NkYxQjIyRjUzMEYzMDdGIiB4bXBNTTpEb2N1
+bWVudElEPSJ4bXAuZGlkOjA1RURFNTNCNzA5ODExRTA4NkYxQjIyRjUzMEYzMDdG
+Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6
+MDVFREU1Mzg3MDk4MTFFMDg2RjFCMjJGNTMwRjMwN0YiIHN0UmVmOmRvY3VtZW50
+SUQ9InhtcC5kaWQ6MDVFREU1Mzk3MDk4MTFFMDg2RjFCMjJGNTMwRjMwN0YiLz4g
+PC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBh
+Y2tldCBlbmQ9InIiPz55+nLmAAAACVBMVEXOZwVmZmYAAACt4nFqAAAAA3RSTlP/
+/wDXyg1BAAAAiUlEQVR42mJgYmJgYmQAkQwAAQQmoQgggICCIGEwAZYCQoAAAgqD
+5QgRAAEEJmAMoAloDCYMNQxQSxEMMAAIIGwMRrBJIBGweVCTmVBEEGpwmwOxDYIY
+4M5gQhFBqIEAgACDM/ALMDIiSKgKRkYIF5cAFi2EbCEswIBMQsUZGBhQtKAJYNGC
+xxYA6DgDmzHKQzYAAAAASUVORK5CYII=
+
+------------yMv436w8zF2haw4OQMuw0m
+Content-Disposition: inline; filename=tipbox.css
+Content-Type: text/css; name=tipbox.css
+Content-Location: http://www.css88.com/demo/tipbox/css/tipbox.css
+Content-Transfer-Encoding: 8bit
+
+.SD-tipbox{ background-color: #FFFFE9; border: 1px solid #FFDE8E; padding: 5px 25px 5px 10px; margin:10px; position: absolute; z-index: 100; font-size:12px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; -moz-box-shadow:1px 1px 2px rgba(0,0,0,.2); -webkit-box-shadow:1px 1px 2px rgba(0,0,0,.2); box-shadow:1px 1px 2px rgba(0,0,0,.2);}
+.SD-tipbox .close-ico,.SD-notice-tip  .close-ico  { position:absolute; top:5px; right:5px; display:block; width:16px; height:16px; background-image:url(http://css.sodao.com/home/img/close-ico.png); text-indent:-900px; overflow:hidden; }
+.SD-tipbox .close-ico:hover,.SD-notice-tip .close-ico:hover { background-position:0 -16px; }
+.SD-tipbox p { line-height:1.5 }
+.SD-tipbox .SD-tipbox-direction{position: absolute; }
+.SD-tipbox .SD-tipbox-direction em,.SD-tipbox .SD-tipbox-direction span{ height: 19px; width: 17px; font-family: Simsun; font-size: 16px;line-height: 21px; overflow: hidden;position: absolute;}
+.SD-tipbox .SD-tipbox-direction em{color: #FFDE8E; }
+.SD-tipbox .SD-tipbox-direction span{color: #FFFFE9; }
+.SD-tipbox .SD-tipbox-up{left: 50%; margin-left:-8px; top:-10px;*top:-11px; _top:-10px;}
+.SD-tipbox .SD-tipbox-up span{ top:1px}
+.SD-tipbox .SD-tipbox-down{left: 50%; margin-left:-8px; bottom:9px; }
+.SD-tipbox .SD-tipbox-down span{ top:-1px}
+.SD-tipbox .SD-tipbox-right{top: 50%; margin-top:-8px; right:7px; }
+.SD-tipbox .SD-tipbox-right span{ left:-1px}
+.SD-tipbox .SD-tipbox-left{top: 50%; margin-top:-8px; left:-8px; }
+.SD-tipbox .SD-tipbox-left span{ left:1px}
+/*--------------*/
+.SD-notice-tip { width:200px; margin:0px;}
+.SD-notice-tip  p { line-height:22px }
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------yMv436w8zF2haw4OQMuw0m--

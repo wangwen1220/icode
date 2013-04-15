@@ -1,0 +1,31 @@
+{
+    "name": "validator",
+    "version": "0.8.9",
+    "root": "arale",
+    "author": "Shawn <shaoshuai0102@gmail.com>",
+    "tag": "widget",
+    "description": "Validator 是表单校验组件。",
+    "license": "MIT",
+    "tests": ["rules", "validator-core", "validator"],
+    "output": {
+        "core.js": ".",
+        "validator.js": ["validator.js"]
+    },
+    "dependencies": {
+        "$":"$",
+        "widget": "arale/widget/1.0.2/widget"
+    },
+    "deploy": {
+        "server": "dev",
+        "host": "assets.jf.alipay.net",
+        "path": "/home/admin/wwwroot/assets/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/aralejs/validator"
+    },
+    "bugs": {
+        "email": "shaoshuai0102@gmail.com",
+        "url": "https://github.com/aralejs/validator/issues"
+    }
+}

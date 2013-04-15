@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' />
+	<title>HTML5网页模板</title>
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js'></script>
+	<!--[if lt ie 9]>
+	<script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'></script>
+	<script src='http://html5media.googlecode.com/svn/trunk/src/html5media.min.js'></script>
+	<![endif]-->
+	<link rel='icon' href='/favicon.ico' />
+</head>
+
+<body class='home' style='background: #999'>
+	<header>
+		<hgroup>
+			<h1>Company Name</h1>
+			<h2>An example of HTML5 and CSS3 in action</h2>
+		</hgroup>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href='#'>Home</a></li>
+			<li><a href='#'>About Us</a></li>
+			<li><a href='#'>Services</a></li>
+			<li><a href='#'>Contact Us</a></li>
+		</ul>
+	</nav>
+
+	<article>
+		<header>
+			<time datetime='2010-01-12' pubdate='pubdate'><span>Jan</span>	12</time>
+			<h1><a href='#' title='link to this post' rel='bookmark'>Article Heading</a></h1>
+		</header>
+
+		<p contenteditable='true'>可编辑内容: This is an article that demonstrates some of the new features that HTML5 and CSS3 has to offer. This article contains several sections, each with its own heading, as well as a video element which will play a video without Flash on browsers that support it.</p>
+
+		<section>
+			<header>
+				<h1>This is a section including video</h1>
+			</header>
+
+			<p>
+			</p>
+			<p>This is an example of a basic section of a document. A section can refer to different parts of a document, application, or page. According to the draft W3C spec, HTML5 sections usually have headings.</p>
+		</section>
+
+
+		<section>
+			<header>
+				<h1>这部分是反馈表</h1>
+			</header>
+
+			<form method='post' action='#'>
+				<label for='contact_name'>姓名</label>
+				<input id='contact_name' required='required' placeholder='请输入您的姓名' autofocus='autofocus' />
+
+				<label for='contact_email'>电邮</label>
+				<input type='email' id='contact_email' placeholder='email address' />
+
+				<label for='contact_phone'>电话</label>
+				<input type='tel' id='contact_phone' required='required' pattern='[0-9]{6,12}' placeholder='6到12位数字' />
+
+				<label for='contact_callback'>回拨时间</label>
+				<input type='datetime' id='contact_callback' value='2011-06-18t08:36:35.682z' size='30' />
+
+				<label for='contact_priority'>优先级</label>
+				<input type='range' min='1' max='5' step='1' value='1'	id='contact_priority' />
+				<output id='contact_priority_result' >1</output>
+
+				<input type='submit' value='请求回拨' />
+			</form>
+		</section>
+
+		<footer>
+			Article Footer
+		</footer>
+	</article>
+
+	<aside>
+		<header>
+			<h1>Siderbar Heading</h1>
+		</header>
+	</aside>
+
+	<footer>
+		<p>Author: <cite>Louis Lazaris</cite></p>
+	</footer>
+</body>
+</html>

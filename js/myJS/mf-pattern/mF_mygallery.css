@@ -1,0 +1,50 @@
+/*=========mF_mygallery========*/
+.mF_mygallery {
+	overflow: visible;
+	position: relative;
+}
+.mF_mygallery .loading {
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:#fff url(img/loading.gif) center no-repeat;
+	z-index:9;
+}
+.mF_mygallery .pic,.mF_mygallery .pic ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.mF_mygallery .pic li {
+	position: relative;
+	float: left;
+	overflow: hidden;
+}
+.mF_mygallery .nav {
+	position: absolute;
+	height: 18px;
+	line-height: 18px;
+	z-index: 5;
+	right: 0;
+	top: -25px;
+}
+.mF_mygallery .nav a {
+	padding: 0 6px;
+	border: 1px solid #BBB;
+	border-radius: 2px;
+	text-align: center;
+	color: #9F9F9F;
+	font: 900 16px arial;
+	vertical-align: middle;
+	background-color: #fff;
+}
+.mF_mygallery .nav a:hover {
+	text-decoration: none;
+	color: #CF0716;
+}
+.mF_mygallery .nav .status {
+	color: #666;
+	font-size: 12px;
+	padding: 0 4px;
+}

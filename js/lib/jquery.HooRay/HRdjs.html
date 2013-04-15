@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jquery.HooRay - jQuery插件 - 制作：胡尐睿丶</title>
+<link rel="stylesheet" href="css.css" />
+<link rel="stylesheet" href="jquery.HooRay/jquery.HooRay.css" />
+<script src="jquery-1.6.2.js"></script>
+<script src="jquery.HooRay/jquery.HooRay.js"></script>
+<script src="provincesdata.js"></script>
+<script>
+$(document).ready(function(){
+	$('#accordion').HRsfq({openRow:1});
+	$('.djs').HRdjs();
+	$('.djs2').HRdjs({startFontSize:"12px",endFontSize:"32px",startNumber:20});
+});
+</script>
+</head>
+
+<body>
+<div id="body">
+	<div id="top"></div>
+	<div id="content">
+		<ul id="accordion">
+			<li>
+				<a class="title">倒计时&nbsp;HRdjs&nbsp;修改</a>
+				<div class="demo">
+					<input type="button" name="djs" class="djs" />
+				</div>
+				<div class="script">$('.djs').HRdjs();</div>
+				<div class="demo">
+					<font class="djs2"></font>
+				</div>
+				<div class="script">$('.djs2').HRdjs({startFontSize:"12px",endFontSize:"32px",startNumber:20});</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</body>
+</html>

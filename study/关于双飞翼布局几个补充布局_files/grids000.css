@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+.container{ width:950px; margin:0 auto}
+#header{}
+#content,#footer{margin-top:10px;}
+div.grid-c{}
+.col-sub,.col-extra{float:left;position:relative;}
+.col-main{ float:left; width: 100%; }
+/**/
+.grid-c3g-s5e6{}
+.grid-c3g-s5e6 .col-main .main-wrap{margin-left:240px;}
+.grid-c3g-s5e6 .col-sub{margin-left:-100%;width:230px;}
+.grid-c3g-s5e6 .col-extra{margin-left:-100%; top:100px; width:230px;}
+
+.grid-c3i-s5e6{}
+.grid-c3i-s5e6 .col-main .main-wrap{margin-right:240px;}
+.grid-c3i-s5e6 .col-sub{margin-left:-230px;top:100px;width:230px;}
+.grid-c3i-s5e6 .col-extra{margin-left:-230px;  width:230px;}
+
+.grid-c3h-s5e6{}
+.grid-c3h-s5e6 .col-main .main-wrap{margin-right:240px;}
+.grid-c3h-s5e6 .col-sub{margin-left:-230px;width:230px;}
+.grid-c3h-s5e6 .col-extra{margin-left:-230px; top:100px; width:230px;}
+
+.grid-c3j-s5e6{}
+.grid-c3j-s5e6 .col-main .main-wrap{margin-left:240px;}
+.grid-c3j-s5e6 .col-sub{margin-left:-100%; top:100px;width:230px;}
+.grid-c3j-s5e6 .col-extra{margin-left:-100%; width:230px;}
+
+.grid-c3k-s12e12{}
+.grid-c3k-s12e12 .col-main .main-wrap{}
+/*.grid-c3k-s12e12 .col-sub{margin-right:480px; width:470px; margin-top:10px}
+.grid-c3k-s12e12 .col-extra{left:480px; margin-left:-100%; width:470px; margin-top:10px}*/
+.grid-c3k-s12e12 .col-sub{width:470px; margin-top:10px}
+.grid-c3k-s12e12 .col-extra{margin-left:10px; width:470px; margin-top:10px}
+
+.grid-c3l-s12e12{}
+.grid-c3l-s12e12 .col-main .main-wrap{}
+/*.grid-c3l-s12e12 .col-sub{ margin-left:480px;width:470px; margin-top:10px}
+.grid-c3l-s12e12 .col-extra{ margin-left:-100%; width:470px; margin-top:10px}*/
+.grid-c3l-s12e12 .col-sub{ float:right;width:470px; margin-top:10px}
+.grid-c3l-s12e12 .col-extra{ margin-left:0px; width:470px; margin-top:10px}
+
+.grid-c3m-s6e24{}
+.grid-c3m-s6e24 .col-main .main-wrap-a{margin-left:240px;}
+.grid-c3m-s6e24 .col-sub{ margin-left:-100%;width:230px;}
+.grid-c3m-s6e24 .col-extra{ margin-left:0px; width:100%; margin-top:10px}
+
+.grid-c3m-s24e6{}
+.grid-c3m-s24e6 .col-main .main-wrap-a{margin-right:240px;}
+.grid-c3m-s24e6 .col-sub{ margin-left:-100%;top:100px;width:100%;}
+.grid-c3m-s24e6 .col-extra{margin-left:-230px;  width:230px;}

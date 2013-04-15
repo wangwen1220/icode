@@ -1,0 +1,80 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{font-size:100%;}
+
+#body{width:960px;margin:0 auto 0 auto;font-size:12px;font-family:"Microsoft Yahei","simsun"}
+#top{height:150px;line-height:150px;text-align:center;font-size:80px;clear:both;color:#0CF;background:url(logo.jpg) no-repeat;}
+#content{}
+
+a.title{display:block;border:1px solid #C1D5E5;padding:4px 0 4px 10px;color:#fff;font-size:16px;font-weight:bold;margin-top:5px;cursor:pointer;background:#0CF url('open.gif') no-repeat center right}
+a.title:hover{background:#7FD2FF url('open.gif') no-repeat center right;color:#fff}
+#accordion li{ _display:inline}
+#accordion li.HRsfq-active a.title{background:#7FD2FF url('close.gif') no-repeat center right;color:#fff}
+.demo{width:900px;margin:10px auto;clear:right}
+.script{width:880px;margin:10px auto;padding:10px;border:2px dashed #F8B3D0;background-color:#FFF5FA;clear:left}
+
+/*隔行换色*/
+.ghhs{width:100%;border-top:1px solid #06F;border-left:1px solid #06F}
+.ghhs tr{cursor:pointer}
+.ghhs td{border-bottom:1px solid #06F;border-right:1px solid #06F;text-align:center}
+.ghhs .HRghhs-evenRow{background:#F1FAFA}
+.ghhs .HRghhs-oddRow{background:#0FF}
+.ghhs .HRghhs-overRow{background:#FFFFE1}
+.ghhs .HRghhs-checkRow{background:#FFFFCA}
+
+/*无缝滚动*/
+.wfgd{width:90%;height:32px;overflow:hidden;border:1px solid #0CF;padding:1px}
+.wfgd .wfgd-ul1 li{width:auto;padding:0 30px;height:30px;line-height:30px;text-align:center;float:left}
+.wfgd .wfgd-ul2 li{width:100%;height:30px;line-height:30px;margin-left:20px;float:left;clear:left}
+
+/*外链弹窗*/
+.wltc:hover{background:#0CF}
+
+/*手风琴*/
+#HRsfq1 li a{display:block;padding:1px;margin:1px;cursor:pointer;background:#0CF}
+#HRsfq1 li.HRsfq-active-class a{background:#0FF}
+#HRsfq1 li div{width:890px}
+
+/*Tabs切换*/
+.HRtabs1{height:60px}
+.HRtabs1 li{float:left;width:20px;height:20px;text-align:center}
+.HRtabs1 li a{display:block;width:20px;height:20px;line-height:20px;text-decoration:none}
+.HRtabs1 li a:hover,.HRtabs1 li a.HRtabs-active{background:#09F;color:#fff}
+.HRtabs1 div{padding:5px;width:300px;height:30px;float:left;clear:left;border:1px solid #09F}
+.HRtabs2{height:60px; position:relative}
+.HRtabs2 li{float:left;width:20px;height:20px;text-align:center}
+.HRtabs2 li a{display:block;width:20px;height:20px;line-height:20px;text-decoration:none}
+.HRtabs2 li a:hover,.HRtabs2 li a.HRtabs-active{background:#09F;color:#fff}
+.HRtabs2 div{position:absolute;top:20px;padding:5px;width:300px;height:30px;float:left;clear:left;border:1px solid #09F}
+
+/*多选按钮*/
+.HRcheckbox{width:210px;border:1px solid #09F;margin:0 5px;float:left;margin-bottom:10px}
+.HRcheckbox .title{margin-left:10px;color:#09F;padding:0 5px}
+.HRcheckbox p{color:#333;height:26px}
+.HRcheckbox div{float:left}
+
+/*单选按钮*/
+.HRradio{width:120px;border:1px solid #09F;margin:0 5px;float:left;margin-bottom:10px}
+.HRradio .title{margin-left:10px;color:#09F;padding:0 5px}
+.HRradio p{color:#333;height:26px}
+.HRradio div{float:left}
+
+/**/
+.HRcheckbox label.disabled{color:#CCC}
+
+/*下拉列表*/
+.HRxllb{width:200px;border:1px solid #09F;margin:0 5px;float:left;margin-bottom:10px}
+.HRxllb .title{margin-left:10px;color:#09F;padding:0 5px}
+.HRxllb p{color:#333;height:26px;padding-left:20px}
+
+/*图片缩放*/
+.HRtpsf{border:1px solid #0CF;width:250px;height:150px;line-height:150px;float:left;overflow:hidden;margin-right:30px;margin-bottom:10px}
+.HRtpsf img{float:left}
+
+/*高亮显示*/
+.HRglsx1{background:#FFF;border:1px solid #0CF;color:#0CF;width:100%;height:100px;font-size:24px;text-align:center;line-height:100px;cursor:pointer}
+.HRglsx2{background:#FFF;border:1px solid #0CF;color:#0CF;width:100%;height:100px;font-size:24px;text-align:center;line-height:100px;cursor:pointer}
+
+/*图片展示1*/
+.HRtpzs1{position:relative;overflow:hidden}
+.HRtpzs1 p{text-align:center;height:250px;line-height:250px}
+.HRtpzs2{position:relative;overflow:hidden}
+.HRtpzs2 p{color:#fff;text-align:center;height:250px;line-height:250px}

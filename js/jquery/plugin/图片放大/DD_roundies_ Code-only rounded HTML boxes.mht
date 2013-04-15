@@ -1,0 +1,1449 @@
+Content-Type: multipart/related; start=<op.mhtml.1350814522092.5fcc8d5d3665ee69@192.168.1.111>; boundary=----------iPgX44psirM4drV5MRoS2o
+Content-Location: http://www.dillerdesign.com/experiment/DD_roundies/
+Subject: =?utf-8?Q?DD=5Froundies:=20Code-only=20rounded=20HTML=20boxes?=
+MIME-Version: 1.0
+
+------------iPgX44psirM4drV5MRoS2o
+Content-Disposition: inline; filename=default.htm
+Content-Type: text/html; name=default.htm
+Content-ID: <op.mhtml.1350814522092.5fcc8d5d3665ee69@192.168.1.111>
+Content-Location: http://www.dillerdesign.com/experiment/DD_roundies/
+Content-Transfer-Encoding: Quoted-Printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+				<!--
+			DD_roundies is free software under the MIT License: http://dillerdesi=
+gn.com/experiment/DD_roundies/#license
+			Author: Drew Diller
+			Email: drew.diller@gmail.com
+			URL: http://www.dillerdesign.com
+		-->
+		=
+
+		<title>DD_roundies: Code-only rounded HTML boxes</title>
+		=
+
+		<script src=3D"DD_roundies_0.0.2a-min.js"></script>
+		<script>
+			DD_roundies.addRule('#diggbox, code.box, #background_conditions_test'=
+, '12px 0', true);
+			DD_roundies.addRule('a.download, #morph', '10px', true);
+			DD_roundies.addRule('a.big_link', '20px', true);
+			DD_roundies.addRule('#totally_round', '10000px', true);
+			DD_roundies.addRule('#multiple_borderwidth_and_radii', '20px 100px 15=
+px 50px', true);
+		</script>
+		=
+
+		<style type=3D"text/css">
+			html {filter:expression(document.execCommand("BackgroundImageCache", =
+false, true));} /* enable background image caching in IE6 */
+			body {margin:0; padding:0; background:#FFF; font:normal 80%/1.3 arial=
+,sans-serif; color:#FFF; text-align:center;}
+			form {margin:0; padding:0; text-align:center;}
+			.box {display:block; position:relative; overflow:hidden; zoom:1;}
+			ul, ol {margin:0; padding:0 0 10px 25px;}
+			li ul, li ol {padding-bottom:0}
+			=
+
+			#doc {margin:0 auto; width:700px; background:#369; text-align:left;}
+			#content {position:relative; padding:125px 20px; border-left:256px so=
+lid #000;}
+			a#rss {padding-left:18px; background-image:url(rss.gif); background-p=
+osition:left center; background-repeat:no-repeat;}
+			#diggbox {float:left; position:relative; margin:0 8px 8px 0; width:62=
+px; height:90px; text-align:center; background:#FFF;}
+			#diggbox iframe {position:relative; top:5px; width:52px; height:80px;=
+}
+			=
+
+			hr {clear:both; overflow:hidden; height:0px; border:none; visibility:=
+hidden; margin-bottom:20px;}
+			p {margin:0; padding:0 0 10px 0;}
+			code {padding:0px 3px; font-size:100%; background:#58B; font-weight:b=
+old; font-family:"Courier New",sans-serif;}
+			code.box {padding:4px 6px; font-size:80%;}
+			acronym {border-bottom:1px solid #9CF;}
+			=
+
+			h1, h2, h3 {margin:0; padding:0 0 10px 0; font-size:140%;}
+			h1 {padding:0;}
+			=
+
+			.left_align_item {float:left; position:relative; margin-left:-256px; =
+_display:inline; width:216px; padding-bottom:20px; text-align:right;}
+			.left_align_item a {padding:1px 5px; background:#333; color:#FFF; tex=
+t-decoration:none;}
+			.left_align_item a:hover {background:#555;}
+			a {color:#FFF;}
+			#content h3 a {padding:0; background:none;}
+			=
+
+			a.download {position:relative; float:left; margin:0 5px 5px 0; paddin=
+g:20px 20px 20px 40px; border:2px solid #7CBF4D; background:#AFF32A; col=
+or:#000; text-decoration:none;}
+			a.download:hover {background:#BFF43B; border-color:#8DCF5E;}
+			a.download big {position:absolute; left:10px; top:5px; line-height:1;=
+ font-size:300%; cursor:pointer;}
+			a.download * {color:#7CBF4D; font-weight:bold;}
+			a.download:hover * {color:#8DCF5E}
+			=
+
+			#tests .box {margin:0 0 10px 0px; padding:10px; overflow:hidden; bord=
+er:1px solid #000;}
+			.png_bg {background:url(boxbg2.png);}
+			=
+
+			input.text, select {border:1px inset;}
+			input.radio {border:none;}
+			input.png_bg {background-position:20px 20px; color:#000;}
+
+			a.big_link {position:relative; zoom:1; float:left; margin:8px 5px 0 0=
+; padding:50px; border:0px solid #000; color:#FFF; background-color:red;=
+}
+			a.png_bg {background-position:left top; background-repeat:no-repeat;}=
+
+			a.png_bg:hover {background-image:url(boxbg.png); color:#FFF;}
+			=
+
+			img.png_img {vertical-align:middle;}
+			img.img1 {border:5px solid orange;}
+			img.img2 {border:none;}
+			img.img3 {border:10px solid #333; border-right:10px solid #777; backg=
+round:#070;}
+			img.pa {z-index:100; margin:10px 0;}
+			=
+
+			.pa {position:absolute;}
+			.L0 {left:0px}
+			.T0 {top:0px}
+			=
+
+			#background_conditions_test select, #background_conditions_test input=
+ {display:block; float:left; clear:left; width:130px; margin:2px 20px 2p=
+x 0;}
+			=
+
+			#totally_round {width:100px; height:100px; background:#FA0;}
+			#multiple_borderwidth_and_radii {height:200px; border:solid white; bo=
+rder-width:10px 40px 3px 0; background:#617bad;}
+		</style> =
+
+	</head>
+	<body>
+		<div id=3D"doc" class=3D"box">
+			<div id=3D"content">
+				<div class=3D"left_align_item">
+					<h1>DD_roundies</h1>
+					by <a href=3D"http://www.dillerdesign.com">Drew Diller</a><br>
+					<br>
+					<b>0.0.1a</b> released 2008.12.07<br>
+					Current: <b>0.0.2a</b> on 2009.01.01<br>
+					<a href=3D"feed.rss" id=3D"rss">release updates</a> / <a href=3D"#c=
+hangelog">changelog</a><br>
+				</div>
+				<h2>Code-only rounded HTML boxes</h2>				=
+
+				<div>
+					DD_roundies is free software under the <a href=3D"#license">MIT Lic=
+ense</a>.<br>
+					Please familiarize yourself with <a href=3D"#lacking">known issues<=
+/a>.<br>
+					You might also enjoy <a href=3D"http://dillerdesign.com/experiment/=
+DD_belatedPNG">DD_belatedPNG</a>.<br>
+				</div>
+				<hr>
+				<div class=3D"left_align_item">
+					<h3><a style=3D"color:red;" name=3D"end_of_life">END OF LIFE STATEM=
+ENT</a></h3>
+				</div>
+				<p>2011/4/8: It is high time I update the documentation here. This p=
+lugin got as far as supporting IE8 Release Candidate 1. That was a while=
+ ago. Things have changed.</p>
+				<p>I spent some time away from the project before IE8 final was rele=
+ased. When I came back to it, much had changed. Too much. The <a href=3D=
+"http://en.wikipedia.org/wiki/Pareto_principle">80/20 rule</a> was repla=
+ced with what I'd call the 95:5 rule. The cost/benefit ratio was too rid=
+iculous for me to continue work on this project.</p>
+				<p>Foolishly, I never wrote anything to this effect because I'd hope=
+d to give it a new college try at some point.</p>
+				<p>Turns out I like riding my bicycle during my free time more than =
+maintaining this project.</p>
+				<p>That said, IE9 is <a href=3D"http://www.computerworld.com/s/artic=
+le/9215614/Users_find_IE9_upgrade_in_Windows_Update">supposedly offering=
+ itself as an update</a>. Native support for border-radius is going to b=
+e much more fun than VML.</p>
+				<p>This was a neat experiment, but note that I never took the versio=
+n numbers out of "alpha" mode. If you feel that my having abandoned this=
+ project is in poor taste, let me know, as I have all the records of peo=
+ple who kindly made donations here, and I will refund your money.</p>
+				<p>If I were truly sore on this subject, I would take this page down=
+; I will leave it up for posterity instead.</p>
+				<hr>
+				<div class=3D"left_align_item">
+					<h3><a name=3D"what">What?</a></h3>
+				</div>
+				<p>This is a Javascript library that makes creation of rounded-corne=
+r HTML boxes easier, with a focus on Internet Explorer.</p>
+				<p>IE is supported through use of <acronym title=3D"Vector Markup La=
+nguage">VML</acronym>.  Standards-compliant browsers are, by default, ig=
+nored.  If you wish it so, each call to <code>DD_roundies.addRule</code>=
+ can take an optional third parameter that will spit out appropriate pro=
+prietary code for browsers that are known to support the CSS <code>borde=
+r-radius</code> property.</p>
+				<p>Since Opera doesn't currently (time of writing: 2009-01-01) suppo=
+rt <code>border-radius</code>, this library doesn't do anything in Opera=
+.  If you need something truly cross browser, use this library only for =
+IE (through <a href=3D"http://www.quirksmode.org/css/condcom.html">condi=
+tional comments</a>), and use an SVG background image for other browsers=
+.</p>
+				<p>As of 0.0.2a, IE now supports varying border thicknesses, matchin=
+g Mozilla's implementation almost pixel-for-pixel.</p>
+				<p>It also happens to include correct support for PNG images in IE6,=
+ using code borrowed from my other free software, <a href=3D"http://dill=
+erdesign.com/experiment/DD_belatedPNG">DD_belatedPNG</a>.</p>
+				<hr>
+				<div class=3D"left_align_item">
+					<h3>Table of Contents</h3>
+				</div>
+				<div class=3D"box toc">
+					<ul>
+						<li><a href=3D"#how">How?</a></li>
+						<li><a href=3D"#usage">Usage</a></li>
+						<li><a href=3D"#additional_usage">Additional Usage</a></li>
+						<li><a href=3D"#DD_belatedPNG_compatibility">Compatibility with DD=
+_belatedPNG</a></li>
+						<li><a href=3D"#technical_summary">Technical Summary</a></li>
+						<li><a href=3D"#lacking">Known Issues</a></li>
+						<li><a href=3D"#supported_browsers">Supported Browsers</a></li>
+						<li><a href=3D"#needs">To-Do List</a></li>
+						<li><a href=3D"#license">License</a></li>
+						<li><a href=3D"#credits">Credits</a></li>
+						<li><a href=3D"#download">Download</a></li>
+						<li><a href=3D"#donate">Donate</a></li>
+						<li><a href=3D"#changelog">Changelog</a></li>
+						<li>
+							<a href=3D"#examples">Examples</a>
+							<ul>
+								<li><a href=3D"#background_properties">CSS Background Properties=
+</a></li>
+								<li><a href=3D"#animation">Javascript Animation</a></li>
+								<li><a href=3D"#pseudo_class">Pseudo Class Support</a></li>
+								<li><a href=3D"#totally_round_example">Totally Round Example</a>=
+</li>
+								<li><a href=3D"#multiple_borderwidth_and_radii">Multiple Border =
+Widths / Radii</a></li>
+							</ul>
+						</li>
+						<li><a href=3D"#mirror">Contact / Comments</a></li>
+					</ul>
+				</div>
+				<hr>
+				<div class=3D"left_align_item">
+					<h3><a name=3D"how">How?</a></h3>
+				</div>
+				<p>Quick summary:</p>
+				<p>This uses Microsoft's implementation of <acronym title=3D"Vector =
+Markup Language">VML</acronym> for Internet Explorer.  For other browser=
+s, this adds simple <code>border-radius</code> styles to the document (I=
+F and only if you specify the third argument in <code>DD_belatedPNG.addR=
+ule</code>).</p>
+				<p>The third argument in <code>addRule</code> defaults to false.  Th=
+is library does focus primarily on IE.</p>
+				<hr>
+				<div class=3D"left_align_item">
+					<h3><a name=3D"usage">Usage</a></h3>
+				</div>
+				<p>The intended implementation is pretty easy:</p>
+				<ul>
+					<li><a href=3D"#download">Download</a> a copy of the DD_roundies Ja=
+vascript file - please do not hotlink mine, I am on a shared host.</li>
+					<li>Refer to it in your document (second line of the example code a=
+ few bullets down).</li>
+					<li>In another script node, add function calls to <code>DD_roundies=
+.addRule()</code>.</li>
+					<li><code>addRule</code> can take up to three arguments:
+						<ul>
+							<li><b>(REQUIRED)</b> A text string representing a CSS selector</=
+li>
+							<li><b>(REQUIRED)</b> A text string representing a border radius =
+or radii (anywhere from 1 to 4, separated by commas)</li>
+							<li><b>(OPTIONAL)</b> A boolean indicating whether or not you wan=
+t to make roundies just in IE (set to false), or attempt to make roundie=
+s in "all" browsers (set to true).</li>
+						</ul>
+					<li>
+						Here is an example:
+						<code class=3D"box">
+							&#60;script src=3D"DD_roundies.js"&#62;&#60;/script&#62;<br>
+							&#60;script&#62;<br>
+								&#160;&#160;/* EXAMPLES */<br>
+								<br>
+								&#160;&#160;/* IE only */<br>
+								&#160;&#160;DD_roundies.addRule('.roundify', '10px');<br>
+								<br>
+								&#160;&#160;/* varying radii, IE only */<br>
+								&#160;&#160;DD_roundies.addRule('.something_else', '10px 4px');<=
+br>
+								<br>
+								&#160;&#160;/* varying radii, "all" browsers */<br>
+								&#160;&#160;DD_roundies.addRule('.yet_another', '5px', true);<br=
+>
+							&#60;/script&#62;<br>
+						</code>
+					</li>
+					<li>As of 0.0.3a, you can roll a bunch of CSS selectors into one ar=
+gument, just like how you'd do a selector group in a CSS file: <code>fix=
+('.example1, .example2, img');</code>
+				</ul>
+				<hr>
+				<div class=3D"left_align_item">
+					<h3><a name=3D"additional_usage">Additional Usage</a></h3>
+				</div>
+				<p>Specifically regarding the second argument in the <code>addRule()=
+</code>, values for the topleft, topright, bottomright, and bottomleft a=
+re implied, in that order.</p>
+				<p>This is modeled after how CSS <code>border-width</code> is implie=
+d (where one value sets all, two values sets the top/bottom and right/le=
+ft, etc):</p>
+				<ul>
+					<li><code>'10px'</code> sets all corner radii to 10px.</li>
+					<li><code>'10px 5px'</code> sets the top-left and bottom-right corn=
+er radii to 10px, and the other corners to 5px.</li>
+					<li><code>'10px 5px 3px'</code> sets the top-left to 10px, the top-=
+right to 5px, the bottom-right to 3px, and the bottom-left to 5px.</li>
+					<li><code>'10px 5px 3px 0'</code> sets the top-left to 10px, the to=
+p-right to 5px, the bottom-right to 3px, and the bottom-left to 0px.</li=
+>
+				</ul>
+				<hr>
+				<div class=3D"left_align_item">
+					<h3><a name=3D"DD_belatedPNG_compatibility">Compatibility with DD_b=
+elatedPNG</a></h3>
+				</div>
+				If you want to, you can forgo using both DD_belatedPNG and DD_roundi=
+es together.  Just use DD_roundies, and make a call like this for boxes =
+whose corners you don't wish to round but <b>would</b> like to fix the P=
+NG within:
+				<code class=3D"box">
+					/* notice the lacking second and third argument? */<br>
+					/* the radii will default to zero */<br>
+					DD_roundies.addRule('.your .example img');
+				</code>
+				<hr>
+				<div class=3D"left_align_item">
+					<h3><a name=3D"technical_summary">Technical Summary</a></h3>
+				</div>
+				<ul>
+					<li>Invoking <code>DD_roundies.addRule()</code> adds a line of CSS =
+to the document via DOM.</li>
+				</ul>
+				<p>That's where the similarities between IE's implementation and oth=
+er browsers' implementation end.</p>
+				<p>If the third argument of <code>addRule</code> is specified and <c=
+ode>true</code>, non-IE browsers simply add some rules: <code>-moz-borde=
+r-radius</code>, <code>-webkit-border-radius</code>, and vanilla <code>b=
+order-radius</code>.</p>
+				<p>IE, on the other hand, has to do a lot more:</p>
+				<ul>
+					<li>The selector of this CSS is provided by the first argument for =
+<code>addRule</code>, which should be a string (such as <code>#content d=
+iv</code>).</li>
+					<li>The declaration of this CSS is an MSIE-proprietary <a href=3D"h=
+ttp://msdn.microsoft.com/en-us/library/ms532147.aspx">behavior</a> - bas=
+ically a Javascript expression bound to elements on the fly, without wal=
+king through a NodeList collection.</li>
+					<li>The content of the behavior executes a function in the scope of=
+ each element matched, along with an array of radius values.</li>
+					<li>The first duty of this function is to reset its own <code>style=
+.behavior</code> to no longer have a value; allowing behaviors to contin=
+ue unchallenged is a recipe of for CPU-eating disaster.</li>
+					<li>The function then examines the element's dimensions, location, =
+and styles using <code>offsetWidth</code>, <code>offsetHeight</code>, <c=
+ode>offsetLeft</code>, <code>offsetTop</code>, and <code>currentStyle</c=
+ode></li>
+					<li>Using the above information, a <acronym title=3D"Vector Markup =
+Language">VML</acronym> <code>&#60;DD_roundies:rect/&#62;</code> node is=
+ constructed and prepended (<code>insertBefore</code>) to the element.  =
+Well, three VML elements actually: one for the stroke and its varying th=
+ickness, one for the background color (if present), and one for the back=
+ground image.</li>
+					<li>The border thicknesses are erased and added to their respective=
+ padding (left border gets added to left padding, etc), allowing the out=
+er stroke to be visible.</li>
+					<li>The <acronym title=3D"Vector Markup Language">VML</acronym> nod=
+e is absolutely positioned to follow behind the element like a lost litt=
+le puppy. It copies the matched element's <code>z-index</code>.</li>
+					<li>To support various positioning and repeat background properties=
+, some of the <acronym title=3D"Vector Markup Language">VML</acronym> el=
+ement gets a <code>style.clip</code> rectangle.</li>
+				</ul>
+				<hr>
+				<div class=3D"left_align_item">
+					<h3><a name=3D"lacking">Known Issues</a></h3>
+				</div>				=
+
+				<ul>
+					<li>This cannot be used on the <code>&#60;BODY&#62;</code> element,=
+ due to next/previousSibling DOM relationships.</li>
+					<li><code>&#60;TABLE&#62;</code>, <code>&#60;TR&#62;</code>, <code>=
+&#60;TD&#62;</code>, <code>&#60;SELECT&#62;</code>, <code>&#60;OPTION&#6=
+2;</code>, <code>&#60;TEXTAREA&#62;</code> elements do not play nicely y=
+et.  Do not attempt.</li>
+					<li>This script does not address <code>background-position: fixed;<=
+/code> functionality.</li>
+					<li>"Fixed" <code>&#60;IMG/&#62;</code> elements must take on <code=
+>visibility:hidden;</code>, and thus become unclickable.  I see no worka=
+round other than using clear pixel GIF replacements, and that is code th=
+at I am not going to write.</li>
+					<li><code>&#60;INPUT type=3D"image"/&#62;</code> nodes are not supp=
+orted.  The node with the original PNG <code>SRC</code> must take on <co=
+de>visibility:hidden;</code></li>
+					<li>Testing for PNG image presence is done by Javascript string sea=
+rch.  If you have a URL that doesn't end in .png, you're not in luck.  I=
+ suppose I could add a 'force' option - let me know if you need it.</li>=
+
+					<li>The corners will sometimes revert to square in WebKit.  Examine=
+ your padding versus your border-radius - WebKit will cut things short i=
+f the radius is bigger than the padding value.</li>
+					<li>IE8 beta 2 is incredibly slow at implementing this, and lacks b=
+ackground images.</li>
+				</ul>
+				<p>Found something wrong?  <a href=3D"mailto:drew.diller@gmail.com">=
+Send me bugs!</a></p>
+				<hr>
+				<div class=3D"left_align_item">
+					<h3><a name=3D"supported_browsers">Supported Browsers</a></h3>
+				</div>
+				<p>This has been tested to work in IE6, IE7, Firefox 3.0.x, Safari 3=
+.1.2, and Google Chrome 1.0.  Opera has no support at the moment, but it=
+ <a href=3D"http://dev.opera.com/articles/view/new-development-technique=
+s-using-opera-k/">looks like it will at some point in the future</a>, so=
+ hang tight.</p>
+				<p>There is partial support for IE8 beta 2.  A lot doesn't work: bac=
+kground images, resizing (seriously, the <code>window.onresize</code> ev=
+ent doesn't fire, what the &#60;expletive/&#62; ?), etc.  Also NOTE that=
+ IE8 is INCREDIBLY slow at implementing roundies, for reasons I have yet=
+ to discover.</p>
+				<hr>
+				<div class=3D"left_align_item">
+					<h3><a name=3D"needs">To-Do List</a></h3>
+				</div>				=
+
+				<ul>
+					<li>Find bugs.</li>
+					<li>???</li>
+					<li><strike>Profit!</strike></li>
+					<li>Test for memory leaks.</li>
+					<li>This item will always persist: find performance improvements.</=
+li>
+					<li>Pray that IE8 beta 3 will be better.</li>
+				</ul>
+				<hr>
+				<div class=3D"left_align_item">
+					<h3><a name=3D"license">License</a></h3>
+				</div>
+				<p><b>DD_roundies</b> is free software under the MIT License.</p>
+				<p>The License shall remain addressable at this URL:<br/><a href=3D"=
+http://dillerdesign.com/experiment/DD_roundies/#license">http://dillerde=
+sign.com/experiment/DD_roundies/#license</a></p>
+				<p>Copyright (c) 2008 Drew Diller</p>
+				<p>Permission is hereby granted, free of charge, to any person obtai=
+ning a copy of this software and associated documentation files (the "So=
+ftware"), to deal in the Software without restriction, including without=
+ limitation the rights to use, copy, modify, merge, publish, distribute,=
+ sublicense, and/or sell copies of the Software, and to permit persons t=
+o whom the Software is furnished to do so, subject to the following cond=
+itions:</p>
+				<p>The above copyright notice and this permission notice shall be in=
+cluded in all copies or substantial portions of the Software.</p>
+				<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, E=
+XPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHA=
+NTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO E=
+VENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAM=
+AGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHER=
+WISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE=
+ OR OTHER DEALINGS IN THE SOFTWARE.</p>
+				<hr>
+				<div class=3D"left_align_item">
+					<h3><a name=3D"credits">Credits</a></h3>
+				</div>
+				<p>My thanks to <a href=3D"http://snook.ca/">Jonathan Snook</a> for =
+pointing out something else I had written was almost there for good PNG =
+support.</p>
+				<hr>
+				<div class=3D"left_align_item">
+					<h3><a name=3D"download">Download</a></h3>
+				</div>
+				<a class=3D"download" href=3D"DD_roundies_0.0.2a.js"><big>&darr;</bi=
+g>0.0.2a.js <em>(Uncompressed, ~17Kb)</em></a><br clear=3D"both">
+				<a class=3D"download" href=3D"DD_roundies_0.0.2a-min.js"><big>&darr;=
+</big>0.0.2a-min.js <em>(Compressed, ~9Kb)</em></a><br clear=3D"both">
+				<br>
+				<hr>
+				<div class=3D"left_align_item">
+					<h3><a name=3D"donate">Donate</a></h3>
+				</div>
+				<p>Any donations are sincerely appreciated, and help reduce the occu=
+rrence of glares from my wife when I am staying up past her bedtime writ=
+ing software.</p>
+<form action=3D"https://www.paypal.com/cgi-bin/webscr" method=3D"post">
+<input type=3D"hidden" name=3D"cmd" value=3D"_s-xclick">
+<input type=3D"hidden" name=3D"encrypted" value=3D"-----BEGIN PKCS7-----=
+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-----END PKCS7-----"=
+>
+<input type=3D"image" src=3D"https://www.paypal.com/en_US/i/btn/btn_dona=
+teCC_LG.gif" border=3D"0" name=3D"submit" alt=3D"">
+<img alt=3D"" border=3D"0" src=3D"https://www.paypal.com/en_US/i/scr/pix=
+el.gif" width=3D"1" height=3D"1">
+</form>
+				<hr>
+				<div class=3D"left_align_item">
+					<h3><a name=3D"changelog">Changelog</a></h3>
+				</div>
+				<div id=3D"changelog" class=3D"box item">
+					<ul>
+						<li>
+							<a name=3D"release0.0.2a"></a>
+							<b>0.0.2a / 2008.12.09</b> <small>(<a href=3D"DD_roundies_0.0.2a.=
+js">source.js</a> / <a href=3D"DD_roundies_0.0.2a-min.js">packed.js</a>)=
+</small>
+							<ul>
+								<li>Each matched element and its offsetParent is now forced into=
+ receiving hasLayout.</li>
+								<li>If a z-index is specified on the matched element, it is now =
+copied to the <acronym title=3D"Vector Markup Language">VML</acronym>.</=
+li>
+								<li>Munged in proper background-(image/position/repeat) PNG supp=
+ort for IE6.</li>
+								<li>Tentative support for element opacity in IE.</li>
+								<li>Multiple radii support.</li>
+								<li>Multiple border-width support in IE.</li>
+								<li>Proof-of-concept but <b>very incomplete</b> support for IE8.=
+</li>
+								<li>"Size finder" images in IE are created in a much less lazy/a=
+ggressive, as-needed basis.</li>
+							</ul>
+						</li>
+						<li>
+							<a name=3D"release0.0.1a"></a>
+							<b>0.0.1a / 2008.12.02</b> <small>(<a href=3D"DD_roundies_0.0.1a.=
+js">source.js</a> / <a href=3D"DD_roundies_0.0.1a-min.js">packed.js</a>)=
+</small>
+							<ul>
+								<li>Initial release.</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<hr>
+				<div class=3D"left_align_item">
+					<h3><a name=3D"examples">Examples</a></h3>
+				</div>
+				=
+
+				<div id=3D"tests">
+					<h3><a name=3D"background_properties">CSS Background Properties (re=
+levant for IE6)</a></h3>
+					<p>Use these fields to change background properties.</p>
+					<p>The last field is a text field and will accept 'red' or '#F00' o=
+r '#FF0000'.</p>
+					<div id=3D"background_conditions_test" class=3D"png_bg box">
+						<select id=3D"change_background_position" rel=3D"Position">
+							<option>left top</option>
+							<option>left center</option>
+							<option>left bottom</option>
+							<option>right top</option>
+							<option>right center</option>
+							<option>right bottom</option>
+							<option>center top</option>
+							<option>center center</option>
+							<option>center bottom</option>
+							<option>20% top</option>
+							<option>20% center</option>
+							<option>20% bottom</option>
+							<option>20px 30px</option>
+							<option>-20px -30px</option>
+						</select>
+						<select id=3D"change_background_repeat" rel=3D"Repeat">
+							<option>repeat</option>
+							<option>no-repeat</option>
+							<option>repeat-x</option>
+							<option>repeat-y</option>
+						</select>
+						<input id=3D"change_background_color" rel=3D"Color" type=3D"text" =
+value=3D"#FF0000" />
+					</div>
+					<script src=3D'http://www.dillerdesign.com/pics/js/DD_Base.js'></sc=
+ript>
+					<script>
+						var test =3D DD.dom.id('background_conditions_test');
+						var setup =3D function() {
+							DD.event.add(this, 'change', function() {
+								var options =3D this.getElementsByTagName('option');
+								var rel =3D this.getAttribute('rel');
+								var self =3D this;
+								DD.fade(test, false, {time:100, end:function() {
+									test.style['background' + rel] =3D options[self.selectedIndex].=
+innerHTML;
+									DD.fade(test, true, {time:100})
+								}});
+							});
+						};
+						var selects =3D {position: true, repeat: true};
+						for (var s in selects) {
+							setup.call(DD.dom.id('change_background_' + s));
+						}
+						var changeBgColor =3D function() {							=
+
+							try {
+								test.style.backgroundColor =3D this.value;
+							} catch(err) {}
+						};
+						var bgColorTextField =3D DD.dom.id('change_background_color');
+						DD.event.add(bgColorTextField, 'keyup', changeBgColor);
+						changeBgColor.call(bgColorTextField);
+					</script>
+					<hr>
+					<h3><a name=3D"animation">Javascript Animation</a></h3>
+					<div id=3D"morph" class=3D"png_bg box">
+						Click on me.
+					</div>
+					<script>
+						var d =3D 0;
+						var c =3D 0;
+						var upOrDown =3D true;
+						var setBorder =3D function() {
+							var obj =3D this;
+							var windDown =3D setInterval(function() {
+								d +=3D upOrDown ? 1 : (-1);
+								if (d >=3D 0 && d <=3D 10) {
+									obj.style.borderWidth =3D d + 'px';
+									c =3D d%11;
+									if (c =3D=3D 10) {
+										c =3D 'A';
+									}
+									c =3D c.toString();
+									obj.style.marginLeft =3D d + 'px';
+									obj.style.marginRight =3D d + 'px';
+									obj.style.backgroundColor =3D '#' + c + c + c;
+									obj.style.fontSize =3D (100 + (d*5)) + '%';
+								}
+								else {
+									upOrDown =3D !upOrDown;
+									clearInterval(windDown);
+								}
+							}, 10);
+						};
+						var morph =3D DD.dom.id('morph');
+						DD.event.add(morph, 'click', function() {
+							setBorder.call(morph);
+						});
+					</script>
+					<hr>
+					<h3><a name=3D"pseudo_class"><code>A:hover</code> Psuedo-Class Supp=
+ort</a></h3>
+					<p>Run your mouse over these:</p>
+					<a href=3D"#nogo" class=3D"big_link png_bg">psuedo</a>
+					<a href=3D"#nogo" class=3D"big_link png_bg">class</a>
+					<br clear=3D"both"/>
+					<hr>
+					<h3><a name=3D"totally_round_example">Totally Round Example</a></h3=
+>
+					<div id=3D"totally_round"></div>
+					<hr>
+					<h3><a name=3D"multiple_borderwidth_and_radii">Multiple Border Widt=
+hs / Radii</a></h3>
+					<p>Warning: This doesn't look so good in WebKit browsers.</p>
+					<div id=3D"multiple_borderwidth_and_radii"></div>
+					<br />
+					<br />
+				</div>
+				<hr>
+				<div class=3D"left_align_item">
+					<h3><a name=3D"mirror">Contact / Comments</a></h3>
+				</div>
+				<p>There is a blog post about this at <a href=3D"http://dillerdesign=
+.wordpress.com">dillerdesign.wordpress.com</a>.</p>
+				<p>Otherwise, you can <a href=3D"mailto:drew.diller@gmail.com">email=
+ me</a>.</p>
+				<hr>
+			</div>
+		</div>
+	</body>
+</html>
+------------iPgX44psirM4drV5MRoS2o
+Content-Disposition: inline; filename=DD_roundies_0.0.2a-min.js
+Content-Type: application/javascript; name=DD_roundies_0.0.2a-min.js
+Content-Location: http://www.dillerdesign.com/experiment/DD_roundies/DD_roundies_0.0.2a-min.js
+Content-Transfer-Encoding: Base64
+
+LyoqDQoqIEREX3JvdW5kaWVzLCB0aGlzIGFkZHMgcm91bmRlZC1jb3JuZXIgQ1NT
+IGluIHN0YW5kYXJkIGJyb3dzZXJzIGFuZCBWTUwgc3VibGF5ZXJzIGluIElFIHRo
+YXQgYWNjb21wbGlzaCBhIHNpbWlsYXIgYXBwZWFyYW5jZSB3aGVuIGNvbXBhcmlu
+ZyBzYWlkIGJyb3dzZXJzLg0KKiBBdXRob3I6IERyZXcgRGlsbGVyDQoqIEVtYWls
+OiBkcmV3LmRpbGxlckBnbWFpbC5jb20NCiogVVJMOiBodHRwOi8vd3d3LmRpbGxl
+cmRlc2lnbi5jb20vZXhwZXJpbWVudC9ERF9yb3VuZGllcy8NCiogVmVyc2lvbjog
+MC4wLjJhIC0gIHByZXZpZXcgMjAwOC4xMi4yNg0KKiBMaWNlbnNlZCB1bmRlciB0
+aGUgTUlUIExpY2Vuc2U6IGh0dHA6Ly9kaWxsZXJkZXNpZ24uY29tL2V4cGVyaW1l
+bnQvRERfcm91bmRpZXMvI2xpY2Vuc2UNCioNCiogVXNhZ2U6DQoqIEREX3JvdW5k
+aWVzLmFkZFJ1bGUoJyNkb2MgLmNvbnRhaW5lcicsICcxMHB4IDVweCcpOyAvLyBz
+ZWxlY3RvciBhbmQgbXVsdGlwbGUgcmFkaWkNCiogRERfcm91bmRpZXMuYWRkUnVs
+ZSgnLmJveCcsIDUsIHRydWUpOyAvLyBzZWxlY3RvciwgcmFkaXVzLCBhbmQgb3B0
+aW9uYWwgYWRkaXRpb24gb2YgYm9yZGVyLXJhZGl1cyBjb2RlIGZvciBzdGFuZGFy
+ZCBicm93c2Vycy4NCiogDQoqIEp1c3Qgd2FudCB0aGUgUE5HIGZpeGluZyBlZmZl
+Y3QgZm9yIElFNiwgYW5kIGRvbid0IHdhbnQgdG8gYWxzbyB1c2UgdGhlIEREX2Jl
+bGF0ZWRQTkcgbGlicmFyeT8gIERvbid0IGdpdmUgYW55IGFkZGl0aW9uYWwgYXJn
+dW1lbnRzIGFmdGVyIHRoZSBDU1Mgc2VsZWN0b3IuDQoqIEREX3JvdW5kaWVzLmFk
+ZFJ1bGUoJy55b3VyIC5leGFtcGxlIGltZycpOw0KKiovDQoNCmV2YWwoZnVuY3Rp
+b24ocCxhLGMsayxlLHIpe2U9ZnVuY3Rpb24oYyl7cmV0dXJuKGM8YT8nJzplKHBh
+cnNlSW50KGMvYSkpKSsoKGM9YyVhKT4zNT9TdHJpbmcuZnJvbUNoYXJDb2RlKGMr
+MjkpOmMudG9TdHJpbmcoMzYpKX07aWYoIScnLnJlcGxhY2UoL14vLFN0cmluZykp
+e3doaWxlKGMtLSlyW2UoYyldPWtbY118fGUoYyk7az1bZnVuY3Rpb24oZSl7cmV0
+dXJuIHJbZV19XTtlPWZ1bmN0aW9uKCl7cmV0dXJuJ1xcdysnfTtjPTF9O3doaWxl
+KGMtLSlpZihrW2NdKXA9cC5yZXBsYWNlKG5ldyBSZWdFeHAoJ1xcYicrZShjKSsn
+XFxiJywnZycpLGtbY10pO3JldHVybiBwfSgndCBLPXsxNjpcJ0tcJywxTDpHLDFN
+OkcsMWQ6RywyZjp5KCl7dShELjJnIT04JiZELjFOJiYhRC4xTltxLjE2XSl7cS4x
+TD1NO3EuMU09TX0xNyB1KEQuMmc9PTgpe3EuMWQ9TX19LDJoOkQuMmksMU86W10s
+MWI6e30sMmo6eSgpe3UocS4xTHx8cS4xTSl7RC4xTi4yTChxLjE2LFwnMk06Mk4t
+Mk8tMlA6eFwnKX11KHEuMWQpe0QuMlEoXCc8PzJSIDJTPSJcJytxLjE2K1wnIiAy
+VD0iIzFQIzJrIiA/PlwnKX19LDJsOnkoKXt0IGE9RC4xayhcJ3pcJyk7RC4ybS4x
+dy4xUShhLEQuMm0uMXcuMXcpO3UoYS4xMil7Mm57dCBiPWEuMTI7Yi4xeChxLjE2
+K1wnXFxcXDoqXCcsXCd7MWw6MlUoIzFQIzJrKX1cJyk7cS4xMj1ifTJvKDJwKXt9
+fTE3e3EuMTI9YX19LDF4OnkoYSxiLGMpe3UoMVIgYj09XCcxU1wnfHxiPT09MlYp
+e2I9MH11KGIuMlcuMnEoKS4xeShcJzJYXCcpPT0tMSl7Yj1iLjJxKCkuMlkoL1te
+MC05IF0vZyxcJ1wnKS4xVChcJyBcJyl9SCh0IGk9MDtpPDQ7aSsrKXtiW2ldPSgh
+YltpXSYmYltpXSE9PTApP2JbQy4xZSgoaS0yKSwwKV06YltpXX11KHEuMTIpe3Uo
+cS4xMi4xeCl7dCBkPWEuMVQoXCcsXCcpO0godCBpPTA7aTxkLjFVO2krKyl7cS4x
+Mi4xeChkW2ldLFwnMWw6MlooSy4xVi4ycihxLCBbXCcrYi4xVyhcJyxcJykrXCdd
+KSlcJyl9fTE3IHUoYyl7dCBlPWIuMVcoXCdGIFwnKStcJ0ZcJztxLjEyLjF6KEQu
+MnMoYStcJyB7US0xZjpcJytlK1wnOyAtMzAtUS0xZjpcJytlK1wnO31cJykpO3Eu
+MTIuMXooRC4ycyhhK1wnIHstMUEtUS0xbS0xbi0xZjpcJytiWzBdK1wnRiBcJyti
+WzBdK1wnRjsgLTFBLVEtMW0tMVgtMWY6XCcrYlsxXStcJ0YgXCcrYlsxXStcJ0Y7
+IC0xQS1RLTFZLTFYLTFmOlwnK2JbMl0rXCdGIFwnK2JbMl0rXCdGOyAtMUEtUS0x
+WS0xbi0xZjpcJytiWzNdK1wnRiBcJytiWzNdK1wnRjt9XCcpKX19MTcgdShxLjFk
+KXtxLjFPLjMxKHtcJzJ0XCc6YSxcJzJ1XCc6Yn0pfX0sMnY6eShhKXsydygzMi4z
+Myl7SVwnei5RXCc6SVwnei4zNFwnOklcJ3ouMUJcJzpxLjFvKGEpOzEzO0lcJ3ou
+MnhcJzpxLjFaKGEpOzEzO0lcJ3ouMXBcJzpJXCd6LjJ5XCc6SVwnei4yelwnOnEu
+MW8oYSk7MTM7SVwnei4yMFwnOmEuMTguei4yMD0oYS56LjIwPT1cJ1NcJyk/XCdT
+XCc6XCczNVwnOzEzO0lcJ3ouMjFcJzpxLjIyKGEpOzEzO0lcJ3ouMWNcJzphLjE4
+LnouMWM9YS56LjFjOzEzfX0sMW86eShhKXthLjE0LjIzPVwnXCc7cS4yQShhKTtx
+LjFaKGEpO3EuMUMoYSk7cS4xRChhKTtxLjI0KGEpO3EuMkIoYSk7cS4yMihhKX0s
+MjI6eShhKXt1KGEuVy4yMS4xeShcJzM2XCcpIT0tMSl7dCBiPWEuVy4yMTtiPTFn
+KGIuMzcoYi4yNShcJz1cJykrMSxiLjI1KFwnKVwnKSksMTApLzJDO0godCB2IDFo
+IGEueCl7YS54W3ZdLjFpLjM4PWJ9fX0sMkE6eShhKXt1KCFhLlcpezFxfTE3e3Qg
+Yj1hLld9YS4xNC4xcD1cJ1wnO2EuMTQuMUU9XCdcJzt0IGM9KGIuMXA9PVwnMkRc
+Jyk7dCBkPU07dShiLjFFIT1cJ1NcJ3x8YS4xRil7dSghYS4xRil7YS5KPWIuMUU7
+YS5KPWEuSi4zOSg1LGEuSi4yNShcJyIpXCcpLTUpfTE3e2EuSj1hLjI2fXQgZT1x
+O3UoIWUuMWJbYS5KXSl7dCBmPUQuMWsoXCczYVwnKTtmLjFyKFwnM2JcJyx5KCl7
+cS4xcz1xLjNjO3EuMXQ9cS4zZDtlLjFEKGEpfSk7Zi4zZT1lLjE2K1wnM2ZcJztm
+LjE0LjIzPVwnMWw6UzsgMWo6Mjc7IDFtOi0yRTsgMW46LTJFOyBROlM7XCc7Zi4y
+Nj1hLko7Zi4yRihcJzFzXCcpO2YuMkYoXCcxdFwnKTtELjJHLjFRKGYsRC4yRy4x
+dyk7ZS4xYlthLkpdPWZ9YS54LlouMWkuMjY9YS5KO2Q9R31hLnguWi4ySD0hZDth
+LnguWi4xRz1cJ1NcJzthLnguMXUuMkg9IWM7YS54LjF1LjFHPWIuMXA7YS4xNC4x
+RT1cJ1NcJzthLjE0LjFwPVwnMkRcJ30sMVo6eShhKXthLnguMUguMUc9YS5XLjJ4
+fSwxQzp5KGEpe3QgYz1bXCdOXCcsXCcxOVwnLFwnMWFcJyxcJ09cJ107YS5QPXt9
+O0godCBiPTA7Yjw0O2IrKyl7YS5QW2NbYl1dPTFnKGEuV1tcJ1FcJytjW2JdK1wn
+VVwnXSwxMCl8fDB9fSwxRDp5KGMpe3QgZT1bXCdPXCcsXCdOXCcsXCdVXCcsXCdW
+XCddO0godCBkPTA7ZDw0O2QrKyl7Yy5FW2VbZF1dPWNbXCczZ1wnK2VbZF1dfXQg
+Zj15KGEsYil7YS56LjFuPShiPzA6Yy5FLk8pK1wnRlwnO2Euei4xbT0oYj8wOmMu
+RS5OKStcJ0ZcJzthLnouMXM9Yy5FLlUrXCdGXCc7YS56LjF0PWMuRS5WK1wnRlwn
+fTtIKHQgdiAxaCBjLngpe3QgZz0odj09XCdaXCcpPzE6MjtjLnhbdl0uM2g9KGMu
+RS5VKmcpK1wnLCBcJysoYy5FLlYqZyk7ZihjLnhbdl0sTSl9ZihjLjE4LEcpO3Uo
+Sy4xZCl7Yy54LjFILnouMjg9XCctM2lcJzt1KDFSIGMuUD09XCcxU1wnKXtxLjFD
+KGMpfWMueC4xdS56LjI4PShjLlAuTi0xKStcJ0YgXCcrKGMuUC5PLTEpK1wnRlwn
+fX0sMjQ6eShqKXt0IGs9eShhLHcsaCxyLGIsYyxkKXt0IGU9YT9bXCdtXCcsXCcx
+SVwnLFwnbFwnLFwnMUpcJyxcJ2xcJyxcJzFJXCcsXCdsXCcsXCcxSlwnLFwnbFwn
+XTpbXCcxSlwnLFwnbFwnLFwnMUlcJyxcJ2xcJyxcJzFKXCcsXCdsXCcsXCcxSVwn
+LFwnbFwnLFwnbVwnXTtiKj1kO2MqPWQ7dyo9ZDtoKj1kO3QgUj1yLjJJKCk7SCh0
+IGk9MDtpPDQ7aSsrKXtSW2ldKj1kO1JbaV09Qy4zaih3LzIsaC8yLFJbaV0pfXQg
+Zj1bZVswXStDLjExKDArYikrXCcsXCcrQy4xMShSWzBdK2MpLGVbMV0rQy4xMShS
+WzBdK2IpK1wnLFwnK0MuMTEoMCtjKSxlWzJdK0MuMTUody1SWzFdK2IpK1wnLFwn
+K0MuMTEoMCtjKSxlWzNdK0MuMTUodytiKStcJyxcJytDLjExKFJbMV0rYyksZVs0
+XStDLjE1KHcrYikrXCcsXCcrQy4xNShoLVJbMl0rYyksZVs1XStDLjE1KHctUlsy
+XStiKStcJyxcJytDLjE1KGgrYyksZVs2XStDLjExKFJbM10rYikrXCcsXCcrQy4x
+NShoK2MpLGVbN10rQy4xMSgwK2IpK1wnLFwnK0MuMTUoaC1SWzNdK2MpLGVbOF0r
+Qy4xMSgwK2IpK1wnLFwnK0MuMTEoUlswXStjKV07dSghYSl7Zi4zaygpfXQgZz1m
+LjFXKFwnXCcpOzFxIGd9O3UoMVIgai5QPT1cJzFTXCcpe3EuMUMoail9dCBsPWou
+UDt0IG09ai4ySi4ySSgpO3Qgbj1rKE0sai5FLlUsai5FLlYsbSwwLDAsMik7bVsw
+XS09Qy4xZShsLk8sbC5OKTttWzFdLT1DLjFlKGwuTixsLjE5KTttWzJdLT1DLjFl
+KGwuMTksbC4xYSk7bVszXS09Qy4xZShsLjFhLGwuTyk7SCh0IGk9MDtpPDQ7aSsr
+KXttW2ldPUMuMWUobVtpXSwwKX10IG89ayhHLGouRS5VLWwuTy1sLjE5LGouRS5W
+LWwuTi1sLjFhLG0sbC5PLGwuTiwyKTt0IHA9ayhNLGouRS5VLWwuTy1sLjE5KzEs
+ai5FLlYtbC5OLWwuMWErMSxtLGwuTyxsLk4sMSk7ai54LjF1LjI5PW87ai54Llou
+Mjk9cDtqLnguMUguMjk9bitvO3EuMksoail9LDJCOnkoYSl7dCBzPWEuVzt0IGI9
+W1wnTlwnLFwnT1wnLFwnMTlcJyxcJzFhXCddO0godCBpPTA7aTw0O2krKyl7YS4x
+NFtcJzFCXCcrYltpXV09KDFnKHNbXCcxQlwnK2JbaV1dLDEwKXx8MCkrKDFnKHNb
+XCdRXCcrYltpXStcJ1VcJ10sMTApfHwwKStcJ0ZcJ31hLjE0LlE9XCdTXCd9LDJL
+OnkoZSl7dCBmPUs7dSghZS5KfHwhZi4xYltlLkpdKXsxcX10IGc9ZS5XO3QgaD17
+XCdYXCc6MCxcJ1lcJzowfTt0IGk9eShhLGIpe3QgYz1NOzJ3KGIpe0lcJzFuXCc6
+SVwnMW1cJzpoW2FdPTA7MTM7SVwnM2xcJzpoW2FdPTAuNTsxMztJXCcxWFwnOklc
+JzFZXCc6aFthXT0xOzEzOzFQOnUoYi4xeShcJyVcJykhPS0xKXtoW2FdPTFnKGIs
+MTApKjAuM219MTd7Yz1HfX10IGQ9KGE9PVwnWFwnKTtoW2FdPUMuMTUoYz8oKGUu
+RVtkP1wnVVwnOlwnVlwnXS0oZS5QW2Q/XCdPXCc6XCdOXCddK2UuUFtkP1wnMTlc
+JzpcJzFhXCddKSkqaFthXSktKGYuMWJbZS5KXVtkP1wnMXNcJzpcJzF0XCddKmhb
+YV0pOjFnKGIsMTApKTtoW2FdKz0xfTtIKHQgYiAxaCBoKXtpKGIsZ1tcJzJ5XCcr
+Yl0pfWUueC5aLjFpLjFqPShoLlgvKGUuRS5VLWUuUC5PLWUuUC4xOSsxKSkrXCcs
+XCcrKGguWS8oZS5FLlYtZS5QLk4tZS5QLjFhKzEpKTt0IGo9Zy4yejt0IGM9e1wn
+VFwnOjEsXCdSXCc6ZS5FLlUrMSxcJ0JcJzplLkUuVisxLFwnTFwnOjF9O3Qgaz17
+XCdYXCc6e1wnMmFcJzpcJ0xcJyxcJzJiXCc6XCdSXCcsXCdkXCc6XCdVXCd9LFwn
+WVwnOntcJzJhXCc6XCdUXCcsXCcyYlwnOlwnQlwnLFwnZFwnOlwnVlwnfX07dShq
+IT1cJzJjXCcpe2M9e1wnVFwnOihoLlkpLFwnUlwnOihoLlgrZi4xYltlLkpdLjFz
+KSxcJ0JcJzooaC5ZK2YuMWJbZS5KXS4xdCksXCdMXCc6KGguWCl9O3Uoai4xeShc
+JzJjLVwnKSE9LTEpe3Qgdj1qLjFUKFwnMmMtXCcpWzFdLjNuKCk7Y1trW3ZdLjJh
+XT0xO2Nba1t2XS4yYl09ZS5FW2tbdl0uZF0rMX11KGMuQj5lLkUuVil7Yy5CPWUu
+RS5WKzF9fWUueC5aLnouM289XCczcChcJytjLlQrXCdGIFwnK2MuUitcJ0YgXCcr
+Yy5CK1wnRiBcJytjLkwrXCdGKVwnfSwxdjp5KGEpe3QgYj1xOzJkKHkoKXtiLjFv
+KGEpfSwxKX0sMmU6eShhKXtxLjFEKGEpO3EuMjQoYSl9LDFWOnkoYil7cS56LjFs
+PVwnU1wnO3UoIXEuVyl7MXF9MTd7dCBjPXEuV310IGQ9ezNxOkcsM3I6RywzczpH
+LDN0OkcsM3U6RywzdjpHLDN3Okd9O3UoZFtxLjFLXT09PUcpezFxfXQgZT1xO3Qg
+Zj1LO3EuMko9YjtxLkU9e307dCBnPXszeDpcJzJlXCcsM3k6XCcyZVwnfTt1KHEu
+MUs9PVwnQVwnKXt0IGk9ezN6OlwnMXZcJywzQTpcJzF2XCcsM0I6XCcxdlwnLDND
+OlwnMXZcJ307SCh0IGEgMWggaSl7Z1thXT1pW2FdfX1IKHQgaCAxaCBnKXtxLjFy
+KFwnM0RcJytoLHkoKXtmW2dbaF1dKGUpfSl9cS4xcihcJzNFXCcseSgpe2YuMnYo
+ZSl9KTt0IGo9eShhKXthLnouM0Y9MTt1KGEuVy4xaj09XCczR1wnKXthLnouMWo9
+XCczSFwnfX07aihxLjNJKTtqKHEpO3EuMTg9RC4xayhcJzNKXCcpO3EuMTguMTQu
+MjM9XCcxbDpTOyAxajoyNzsgMjg6MDsgMUI6MDsgUTowOyAzSzpTO1wnO3EuMTgu
+ei4xYz1jLjFjO3EueD17XCcxdVwnOk0sXCdaXCc6TSxcJzFIXCc6TX07SCh0IHYg
+MWggcS54KXtxLnhbdl09RC4xayhmLjE2K1wnOjNMXCcpO3EueFt2XS4xaT1ELjFr
+KGYuMTYrXCc6M01cJyk7cS54W3ZdLjF6KHEueFt2XS4xaSk7cS54W3ZdLjNOPUc7
+cS54W3ZdLnouMWo9XCcyN1wnO3EueFt2XS56LjFjPWMuMWM7cS54W3ZdLjNPPVwn
+MSwxXCc7cS4xOC4xeihxLnhbdl0pfXEueC5aLjFHPVwnU1wnO3EueC5aLjFpLjNQ
+PVwnM1FcJztxLjNSLjFRKHEuMTgscSk7cS4xRj1HO3UocS4xSz09XCczU1wnKXtx
+LjFGPU07cS56LjNUPVwnM1VcJ30yZCh5KCl7Zi4xbyhlKX0sMSl9fTsybntELjNW
+KCIzVyIsRyxNKX0ybygycCl7fUsuMmYoKTtLLjJqKCk7Sy4ybCgpO3UoSy4xZCYm
+RC4xciYmSy4yaCl7RC4xcihcJzNYXCcseSgpe3UoRC4zWT09XCczWlwnKXt0IGQ9
+Sy4xTzt0IGU9ZC4xVTt0IGY9eShhLGIsYyl7MmQoeSgpe0suMVYuMnIoYSxiKX0s
+YyoyQyl9O0godCBpPTA7aTxlO2krKyl7dCBnPUQuMmkoZFtpXS4ydCk7dCBoPWcu
+MVU7SCh0IHI9MDtyPGg7cisrKXt1KGdbcl0uMUshPVwnNDBcJyl7ZihnW3JdLGRb
+aV0uMnUscil9fX19fSl9Jyw2MiwyNDksJ3x8fHx8fHx8fHx8fHx8fHx8fHx8fHx8
+fHx8dGhpc3x8fHZhcnxpZnx8fHZtbHxmdW5jdGlvbnxzdHlsZXx8fE1hdGh8ZG9j
+dW1lbnR8ZGltfHB4fGZhbHNlfGZvcnxjYXNlfHZtbEJnfEREX3JvdW5kaWVzfHx0
+cnVlfFRvcHxMZWZ0fGJXfGJvcmRlcnx8bm9uZXx8V2lkdGh8SGVpZ2h0fGN1cnJl
+bnRTdHlsZXx8fGltYWdlfHxmbG9vcnxzdHlsZVNoZWV0fGJyZWFrfHJ1bnRpbWVT
+dHlsZXxjZWlsfG5zfGVsc2V8dm1sQm94fFJpZ2h0fEJvdHRvbXxpbWdTaXplfHpJ
+bmRleHxJRTh8bWF4fHJhZGl1c3xwYXJzZUludHxpbnxmaWxsZXJ8cG9zaXRpb258
+Y3JlYXRlRWxlbWVudHxiZWhhdmlvcnx0b3B8bGVmdHxhcHBseVZNTHxiYWNrZ3Jv
+dW5kQ29sb3J8cmV0dXJufGF0dGFjaEV2ZW50fHdpZHRofGhlaWdodHxjb2xvcnxw
+c2V1ZG9DbGFzc3xmaXJzdENoaWxkfGFkZFJ1bGV8c2VhcmNofGFwcGVuZENoaWxk
+fHdlYmtpdHxwYWRkaW5nfHZtbFN0cm9rZVdlaWdodHx2bWxPZmZzZXRzfGJhY2tn
+cm91bmRJbWFnZXxpc0ltZ3xmaWxsY29sb3J8c3Ryb2tlfHF5fHF4fG5vZGVOYW1l
+fElFNnxJRTd8bmFtZXNwYWNlc3xzZWxlY3RvcnNUb1Byb2Nlc3N8ZGVmYXVsdHxp
+bnNlcnRCZWZvcmV8dHlwZW9mfHVuZGVmaW5lZHxzcGxpdHxsZW5ndGh8cm91bmRp
+Znl8am9pbnxyaWdodHxib3R0b218dm1sU3Ryb2tlQ29sb3J8ZGlzcGxheXxmaWx0
+ZXJ8dm1sT3BhY2l0eXxjc3NUZXh0fHZtbFBhdGh8bGFzdEluZGV4T2Z8c3JjfGFi
+c29sdXRlfG1hcmdpbnxwYXRofGIxfGIyfHJlcGVhdHxzZXRUaW1lb3V0fHJlcG9z
+aXRpb258SUV2ZXJzaW9ufGRvY3VtZW50TW9kZXxxdWVyeVNlbGVjdG9yfHF1ZXJ5
+U2VsZWN0b3JBbGx8Y3JlYXRlVm1sTmFtZVNwYWNlfFZNTHxjcmVhdGVWbWxTdHls
+ZVNoZWV0fGRvY3VtZW50RWxlbWVudHx0cnl8Y2F0Y2h8ZXJyfHRvU3RyaW5nfGNh
+bGx8Y3JlYXRlVGV4dE5vZGV8c2VsZWN0b3J8cmFkaWl8cmVhZFByb3BlcnR5Q2hh
+bmdlc3xzd2l0Y2h8Ym9yZGVyQ29sb3J8YmFja2dyb3VuZFBvc2l0aW9ufGJhY2tn
+cm91bmRSZXBlYXR8dm1sRmlsbHxuaXhCb3JkZXJ8MTAwfHRyYW5zcGFyZW50fDEw
+MDAwcHh8cmVtb3ZlQXR0cmlidXRlfGJvZHl8ZmlsbGVkfHNsaWNlfEREX3JhZGlp
+fGNsaXBJbWFnZXxhZGR8dXJufHNjaGVtYXN8bWljcm9zb2Z0fGNvbXx3cml0ZWxu
+fGltcG9ydHxuYW1lc3BhY2V8aW1wbGVtZW50YXRpb258dXJsfG51bGx8Y29uc3Ry
+dWN0b3J8QXJyYXl8cmVwbGFjZXxleHByZXNzaW9ufG1venxwdXNofGV2ZW50fHBy
+b3BlcnR5TmFtZXxib3JkZXJXaWR0aHxibG9ja3xscGhhfHN1YnN0cmluZ3xvcGFj
+aXR5fHN1YnN0cnxpbWd8b25sb2FkfG9mZnNldFdpZHRofG9mZnNldEhlaWdodHxj
+bGFzc05hbWV8X3NpemVGaW5kZXJ8b2Zmc2V0fGNvb3Jkc2l6ZXwxcHh8bWlufHJl
+dmVyc2V8Y2VudGVyfDAxfHRvVXBwZXJDYXNlfGNsaXB8cmVjdHxCT0RZfFRBQkxF
+fFRSfFREfFNFTEVDVHxPUFRJT058VEVYVEFSRUF8cmVzaXplfG1vdmV8bW91c2Vs
+ZWF2ZXxtb3VzZWVudGVyfGZvY3VzfGJsdXJ8b258b25wcm9wZXJ0eWNoYW5nZXx6
+b29tfHN0YXRpY3xyZWxhdGl2ZXxvZmZzZXRQYXJlbnR8aWdub3JlfGJhY2tncm91
+bmR8c2hhcGV8ZmlsbHxzdHJva2VkfGNvb3Jkb3JpZ2lufHR5cGV8dGlsZXxwYXJl
+bnROb2RlfElNR3x2aXNpYmlsaXR5fGhpZGRlbnxleGVjQ29tbWFuZHxCYWNrZ3Jv
+dW5kSW1hZ2VDYWNoZXxvbnJlYWR5c3RhdGVjaGFuZ2V8cmVhZHlTdGF0ZXxjb21w
+bGV0ZXxJTlBVVCcuc3BsaXQoJ3wnKSwwLHt9KSk=
+
+------------iPgX44psirM4drV5MRoS2o
+Content-Disposition: inline
+Content-Type: image/gif
+Content-Location: http://www.dillerdesign.com/experiment/DD_roundies/rss.gif
+Content-Transfer-Encoding: Base64
+
+/9j/4AAQSkZJRgABAQEASABIAAD/4gxYSUNDX1BST0ZJTEUAAQEAAAxITGlubwIQ
+AABtbnRyUkdCIFhZWiAHzgACAAkABgAxAABhY3NwTVNGVAAAAABJRUMgc1JHQgAA
+AAAAAAAAAAAAAQAA9tYAAQAAAADTLUhQICAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABFjcHJ0AAABUAAAADNkZXNjAAABhAAA
+AGx3dHB0AAAB8AAAABRia3B0AAACBAAAABRyWFlaAAACGAAAABRnWFlaAAACLAAA
+ABRiWFlaAAACQAAAABRkbW5kAAACVAAAAHBkbWRkAAACxAAAAIh2dWVkAAADTAAA
+AIZ2aWV3AAAD1AAAACRsdW1pAAAD+AAAABRtZWFzAAAEDAAAACR0ZWNoAAAEMAAA
+AAxyVFJDAAAEPAAACAxnVFJDAAAEPAAACAxiVFJDAAAEPAAACAx0ZXh0AAAAAENv
+cHlyaWdodCAoYykgMTk5OCBIZXdsZXR0LVBhY2thcmQgQ29tcGFueQAAZGVzYwAA
+AAAAAAASc1JHQiBJRUM2MTk2Ni0yLjEAAAAAAAAAAAAAABJzUkdCIElFQzYxOTY2
+LTIuMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAWFlaIAAAAAAAAPNRAAEAAAABFsxYWVogAAAAAAAAAAAAAAAAAAAAAFhZ
+WiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAA
+JKAAAA+EAAC2z2Rlc2MAAAAAAAAAFklFQyBodHRwOi8vd3d3LmllYy5jaAAAAAAA
+AAAAAAAAFklFQyBodHRwOi8vd3d3LmllYy5jaAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkZXNjAAAAAAAAAC5JRUMgNjE5NjYt
+Mi4xIERlZmF1bHQgUkdCIGNvbG91ciBzcGFjZSAtIHNSR0IAAAAAAAAAAAAAAC5J
+RUMgNjE5NjYtMi4xIERlZmF1bHQgUkdCIGNvbG91ciBzcGFjZSAtIHNSR0IAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAZGVzYwAAAAAAAAAsUmVmZXJlbmNlIFZpZXdpbmcg
+Q29uZGl0aW9uIGluIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAALFJlZmVyZW5jZSBW
+aWV3aW5nIENvbmRpdGlvbiBpbiBJRUM2MTk2Ni0yLjEAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAHZpZXcAAAAAABOk/gAUXy4AEM8UAAPtzAAEEwsAA1yeAAAAAVhZ
+WiAAAAAAAEwJVgBQAAAAVx/nbWVhcwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA
+Ao8AAAACc2lnIAAAAABDUlQgY3VydgAAAAAAAAQAAAAABQAKAA8AFAAZAB4AIwAo
+AC0AMgA3ADsAQABFAEoATwBUAFkAXgBjAGgAbQByAHcAfACBAIYAiwCQAJUAmgCf
+AKQAqQCuALIAtwC8AMEAxgDLANAA1QDbAOAA5QDrAPAA9gD7AQEBBwENARMBGQEf
+ASUBKwEyATgBPgFFAUwBUgFZAWABZwFuAXUBfAGDAYsBkgGaAaEBqQGxAbkBwQHJ
+AdEB2QHhAekB8gH6AgMCDAIUAh0CJgIvAjgCQQJLAlQCXQJnAnECegKEAo4CmAKi
+AqwCtgLBAssC1QLgAusC9QMAAwsDFgMhAy0DOANDA08DWgNmA3IDfgOKA5YDogOu
+A7oDxwPTA+AD7AP5BAYEEwQgBC0EOwRIBFUEYwRxBH4EjASaBKgEtgTEBNME4QTw
+BP4FDQUcBSsFOgVJBVgFZwV3BYYFlgWmBbUFxQXVBeUF9gYGBhYGJwY3BkgGWQZq
+BnsGjAadBq8GwAbRBuMG9QcHBxkHKwc9B08HYQd0B4YHmQesB78H0gflB/gICwgf
+CDIIRghaCG4IggiWCKoIvgjSCOcI+wkQCSUJOglPCWQJeQmPCaQJugnPCeUJ+woR
+CicKPQpUCmoKgQqYCq4KxQrcCvMLCwsiCzkLUQtpC4ALmAuwC8gL4Qv5DBIMKgxD
+DFwMdQyODKcMwAzZDPMNDQ0mDUANWg10DY4NqQ3DDd4N+A4TDi4OSQ5kDn8Omw62
+DtIO7g8JDyUPQQ9eD3oPlg+zD88P7BAJECYQQxBhEH4QmxC5ENcQ9RETETERTxFt
+EYwRqhHJEegSBxImEkUSZBKEEqMSwxLjEwMTIxNDE2MTgxOkE8UT5RQGFCcUSRRq
+FIsUrRTOFPAVEhU0FVYVeBWbFb0V4BYDFiYWSRZsFo8WshbWFvoXHRdBF2UXiReu
+F9IX9xgbGEAYZRiKGK8Y1Rj6GSAZRRlrGZEZtxndGgQaKhpRGncanhrFGuwbFBs7
+G2MbihuyG9ocAhwqHFIcexyjHMwc9R0eHUcdcB2ZHcMd7B4WHkAeah6UHr4e6R8T
+Hz4faR+UH78f6iAVIEEgbCCYIMQg8CEcIUghdSGhIc4h+yInIlUigiKvIt0jCiM4
+I2YjlCPCI/AkHyRNJHwkqyTaJQklOCVoJZclxyX3JicmVyaHJrcm6CcYJ0kneier
+J9woDSg/KHEooijUKQYpOClrKZ0p0CoCKjUqaCqbKs8rAis2K2krnSvRLAUsOSxu
+LKIs1y0MLUEtdi2rLeEuFi5MLoIuty7uLyQvWi+RL8cv/jA1MGwwpDDbMRIxSjGC
+Mbox8jIqMmMymzLUMw0zRjN/M7gz8TQrNGU0njTYNRM1TTWHNcI1/TY3NnI2rjbp
+NyQ3YDecN9c4FDhQOIw4yDkFOUI5fzm8Ofk6Njp0OrI67zstO2s7qjvoPCc8ZTyk
+POM9Ij1hPaE94D4gPmA+oD7gPyE/YT+iP+JAI0BkQKZA50EpQWpBrEHuQjBCckK1
+QvdDOkN9Q8BEA0RHRIpEzkUSRVVFmkXeRiJGZ0arRvBHNUd7R8BIBUhLSJFI10kd
+SWNJqUnwSjdKfUrESwxLU0uaS+JMKkxyTLpNAk1KTZNN3E4lTm5Ot08AT0lPk0/d
+UCdQcVC7UQZRUFGbUeZSMVJ8UsdTE1NfU6pT9lRCVI9U21UoVXVVwlYPVlxWqVb3
+V0RXklfgWC9YfVjLWRpZaVm4WgdaVlqmWvVbRVuVW+VcNVyGXNZdJ114XcleGl5s
+Xr1fD19hX7NgBWBXYKpg/GFPYaJh9WJJYpxi8GNDY5dj62RAZJRk6WU9ZZJl52Y9
+ZpJm6Gc9Z5Nn6Wg/aJZo7GlDaZpp8WpIap9q92tPa6dr/2xXbK9tCG1gbbluEm5r
+bsRvHm94b9FwK3CGcOBxOnGVcfByS3KmcwFzXXO4dBR0cHTMdSh1hXXhdj52m3b4
+d1Z3s3gReG54zHkqeYl553pGeqV7BHtje8J8IXyBfOF9QX2hfgF+Yn7CfyN/hH/l
+gEeAqIEKgWuBzYIwgpKC9INXg7qEHYSAhOOFR4Wrhg6GcobXhzuHn4gEiGmIzokz
+iZmJ/opkisqLMIuWi/yMY4zKjTGNmI3/jmaOzo82j56QBpBukNaRP5GokhGSepLj
+k02TtpQglIqU9JVflcmWNJaflwqXdZfgmEyYuJkkmZCZ/JpomtWbQpuvnByciZz3
+nWSd0p5Anq6fHZ+Ln/qgaaDYoUehtqImopajBqN2o+akVqTHpTilqaYapoum/adu
+p+CoUqjEqTepqaocqo+rAqt1q+msXKzQrUStuK4trqGvFq+LsACwdbDqsWCx1rJL
+ssKzOLOutCW0nLUTtYq2AbZ5tvC3aLfguFm40blKucK6O7q1uy67p7whvJu9Fb2P
+vgq+hL7/v3q/9cBwwOzBZ8Hjwl/C28NYw9TEUcTOxUvFyMZGxsPHQce/yD3IvMk6
+ybnKOMq3yzbLtsw1zLXNNc21zjbOts83z7jQOdC60TzRvtI/0sHTRNPG1EnUy9VO
+1dHWVdbY11zX4Nhk2OjZbNnx2nba+9uA3AXcit0Q3ZbeHN6i3ynfr+A24L3hROHM
+4lPi2+Nj4+vkc+T85YTmDeaW5x/nqegy6LzpRunQ6lvq5etw6/vshu0R7ZzuKO60
+70DvzPBY8OXxcvH/8ozzGfOn9DT0wvVQ9d72bfb794r4Gfio+Tj5x/pX+uf7d/wH
+/Jj9Kf26/kv+3P9t////2wBDAAEBAQEBAQEBAQEBAQECAgMCAgICAgQDAwIDBQQF
+BQUEBAQFBgcGBQUHBgQEBgkGBwgICAgIBQYJCgkICgcICAj/2wBDAQEBAQICAgQC
+AgQIBQQFCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI
+CAgICAgICAj/wAARCAAOAA4DAREAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAA
+BAcICf/EACMQAAAGAQQDAQEAAAAAAAAAAAECAwQFBhEABwgSEyExIkL/xAAYAQAD
+AQEAAAAAAAAAAAAAAAAGBwkDBP/EACgRAAIBAwIFBAMBAAAAAAAAAAECAwQFEQYh
+ABIxMkEHE1FhFCJxkf/aAAwDAQACEQMRAD8A2K4vccNpblss7sl9oFiVBo4XUc2K
+Al0nDuHagQnVRxCnL2O2Jkwiqn2MIdhx6zqXOjdK2m42OSpropAI2bmmhkDPEo6M
+9P1Ma9Sy5OMnHFTvUn1Du9uvqUtumQ86ryxSxlVkY5yEnG3OfCtgZwM78JjljtfX
+tphZ0yUia5NoqKtZOLlWzRPwSrBVJUU3CJ8ZEpg+hkcCUQ94AdJPUOmLhYby9uqX
+9xSodHG6SRturr/R/hyMnrwx9DamivtALjTgoQSjoe5HXuRvsePkYPAm0XMmN2qq
+G28tUKFHEs0fIkmDy6qAFeSCBm/hUjl1Cqfpob2PXH0CjgBDOu7QusK6xywvR08P
+vRTNIZf2EkiMCphcjrHvnG+4BG4ycdZemlPfHnjrqmT2pIwgjGCiMrBhKgPR9sZ+
+Cd8cR7yf5fSG5Fa2yrb6qsohlWges2CrYxhUVbLODrkRP2MIARHv4yAH8/dFN/1I
+aujpY6mJV/HDIvLntZi4U58J2r9cEmkdC0tqlqpoJWc1LI7BgMBlTlLDHl+5s+eP
+/9k=
+
+------------iPgX44psirM4drV5MRoS2o
+Content-Disposition: inline
+Content-Type: image/png
+Content-Location: http://www.dillerdesign.com/experiment/DD_roundies/boxbg2.png
+Content-Transfer-Encoding: Base64
+
+iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAGXRFWHRTb2Z0d2Fy
+ZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAJQtJREFUeNq0fVusfdtZ1xhjjnnfp+dG
+6Q3bVCwiGImRmKhpfNHoQx8h3noowqGll1NawXpOT1tOL6cVEkzoRY2aWIQQYnwy
+PEiiiSbgAyFoEzQpSAxVmwqelrZ7rXmfw+/y++Yca0sTX/ifjs757bn2WnP+1u+7
+jm+M7ZL9+zX3MTn+inuLHP+d+6gcfxHyv4T8Wfd9cvyM+4gcf8I9JccPuhfk+B73
+Zjn+gPtxOX6v+1ty/KvuA3L8c+5vpD+sf+6vPK3H732vHp/+IT3+nR/V44ffpsd/
+8GN6/Cdv1+PPv0+P//odevy3z+rxV96px19/To//9Rk9/vZz9pFe5P/iX3Cru9C4
+d5tr3eLu6PyKn7Hc03FwE11neSZ5puszXV9cQz+/g3xP5y2NnoZen+Q6y/r7LM+Z
+PEOeSV7wfis+jz/fxYZG71w50iC5IrkiuSa5vqrcZnJNcnNHg2V6fd2qXEFuSK5I
+rgc68u9Drljmz4NckhxZ7miQHEku750rOr2f4urSa34qut/yL7qCb1QGXSAAdjmn
+N3edyInknR4oQubrieRE8k5yJHmj1/P1jQDYBPirC3Re0HV+/yByS6OWz/K4zj/z
+Ig80Ggy6UZLpaXV4uh9Psm8wSA4s08MWjd4rXw+tAl7Q9YLkIpMZkLLDzy4KiIAD
+ma8zOCXLV/19ud6drw+Q8f7+994d3BvS8/Tg9/SQHR0ZjKsrAUaUh+fzgX7W3sh6
+3uK1V7leCGADXtPIKASoKx1rGUGuXwRIHgoejwrjii+vwrjiy6Vzz+OKQV9EQXK4
+4oGqB3ID8AYAwjL9TnlVOeJ6adfb29czkAXAlNHiZwC36F16+Sej+4L/fnqgJ4RZ
+DjefwDSVB7BOwXLCvIbkRoDbAdYm8iBMXAHeCjALYVqDc2NeLWAx8/S8wmfr+yt4
+A0adgUeqGJiFJZg3KvMEQH64UR88VApkHKF29XldWNUAmEwWMMHEArIA2mJADgqu
+/+r7g3stuYWCbFgBJjETSzCxANPiwbQBzNLr8WCayRcaNb22wfupHIV9DJwxr5Jz
+Y17ONO8YmDJjXqngmczAySA5GPNKBSdkTGR7KQAx6yplnowHsgBXn0wrGx0RTJZz
+MC8YU1m+d+nRj0f3v/3H5OGUDco8fzCthQ08mbEDrCTsa/GzK0YDG6jgrlBbU/uF
+gCpkXEWVFcwS9pBtYH2osT+YR+AkMM1DDmASMzFkMj+cgMngTWBNBXAgC1gDmNcq
+wA+ZKPJwygWuF1BrYSHd7/WZ4F6RPiBMYeYVD5h3y8TmYKKysRWmnTazAfuMedXB
+PB3lAZ4CWGbgMfOiyA4OLeVMFCcSMUxmoCJYd1EgY8TDXgEcwCshlyZfwMTMJpZN
+BqbZvAc2tMiZSDaw+1R0X4EN9LB5HjbP39jAJpOvwkxmXjqYyCysiXmDMLEQtW3g
+fIyJlXwRyrwKAA5gXgXw+PNHUWlPr9bPG6HiAC9MysRQQJ7pYWoFkx+unMGiCO8J
+uSwB1KTOwMBjuTJ5OJkm7zGc3rdoThtqNnB5LrjHxQb2N971tGnKvDKzeXxeyc9O
+5pUZWMy6SgC8gtmlDH0vZmbEz8wbF8I+J0Ay+woBL8kXp7LzBVgH2cATVaXzogB4
+VwWyjIjbrgqcMG8A88DE0kKbOmMebB7HlvJe1wdg5kwkG1h+gh5JbODwDZjXgn0W
+WpzMM5uXCKzTBvJ5JeccB27CygpB+SBqreCZDWQWRtjgAfavABMnOJCg9+IndSYh
+QIVmhC0FHm4C0wqAMcMhRATgM5hWQm0n2LjqZCLHiabm5q0LgBcyJsr5NXn3ruB6
+sYH3sH8tmGFMbA4mlrB5FZin57Vc459VYF4pv8vXKxrlIUdhYSnnAUwMMkj2ykRl
+3xVMDBgDmOfpf17BY7sXvILJrAkZEw8bF1WND+9b6qjM5lWZNx5Om2hMszgxZt73
+cCDX5PydT+7T0S1iAx8X5m3CgqucB3hjyxAcmKc2UJnnYPOcME+ZuEksWGEMwj6G
+cSWwFjiQKCws4FDo/RM7kyDAOmFeVMD4vdOMmA/g+UUdRhEQ0M4IVQLAAPOqQsEq
+F8gAk5nJ6V1Vna8Xh5F76w521WyeMY/BHBJlbDvhQQx8lpSIbGCgODAcQa8yMWRx
+nnnnSpjYHEwz5pXy/8rM6uAey8q0MrOBDF08wLsIbPqfhVJemHeYDRaT05tnWYgJ
+MMVJ0HnpsziuAJgXBagu8LOrAlqzMylPmVVYwITNFHtYZTbPMhRiXRgIuHYj8Oh4
+H5P7+9El/9EsDmwxVN4y72tMVOaZTaxJrsTg7wJeddhA9cjKvA0OhmGcBcBBhkIZ
+YINHOBQvYCazgfyP81z6TY353Mk8toER4JUr1NCjSLBqYaGiX2ggiw0stOggzGQm
+liczhXkAr5iUeaFW1vmRvsZuV/AITDcM3r0jkvp8kEzL2ySIzsHzDxyIJvk1zhU8
+S7fSkbuWAp46mZKAi8LaVQC0SJAD6kE4GMVlsDOZBEgDj8FSZ5JQRGC15TAmwYCv
+CFMcwNtUBSWpYbBIrkytBwW3glofMsCLcEjmUAqAVxh4VwJs2gEeA0fHkeU+uZ+O
+i/NvoU95nJSi9cWNDWwQWlwBZA0ZGcINEysJfHcwMQnrOKDR3HgjMHisAE8DGXYh
+o4xCVNghJpwFRv1H9ictGsYEBo9jtFUdhoDHarbBQTgFR8CrwESSazCxDiczhXlQ
+a2aiMK/8A5h3pTebwbyamQfw2Aa2X/XufaQT6WfoRf2myF5TQFUlHHFbg1hPbV7M
+vK2OCv8NYgcrYV0p4KmNLDAGsYklghWziRzxFQLeKJ/JrPPiMkZ44KSDZQaQgeRf
+4IBX2JQUPAFrOBVDztnmMZAe4A4KXF1kNs9s4gCnITYwKXgDjRpjwGgh3z+a3E+S
+FfYfCRrzsV43dN4SG6++OGxigyT/ZN6p1pUk//6omkRhotpEHgXYNwr7OPNdhGMM
+7iRcEyIJC2c4EwUv0W8wE5OoMdu/BQFzgKfcNFQRsMaTefTsIrOpqisAOKjMamzg
+8eslF7b0b9UMI5S7kmneb5nHcgsbyNeH3/XuhyMldB+6d/6tTNMAA0mfcPUMJqmx
+t1BmF+DqzFtWWeJ/RegRUXS4SkzH3NoJDC1xeRkLyTONEtBHsX8z3IcTe+gEZgOP
+A+gNAbRT8AqAJ+xj8Pi5opooqUwnBa/xqERvGsrUYKLYzBZfyKDgFR1RvwRYK72A
+ZEH5moHZZGp898rkPhm/4vz3ebaByr6BB5goBpPZGAqxgZUAucGBGPMUvFLAMyaq
+A4hg4SDAbfT0G8CrYekm+q+kM3UmPCbAzP8l9bz0W5KNiANh8OjeY1Dw6lkJwqwS
+Jk76jE2FYvaI6/UJJmMkVWdkMPxlBGKWjzBjS1KT9v8wcTsdCF+vv+Ddj8bHXfoX
+Lzn/fvrhhe7qCiCbQlVa1JrvlL7/q9eyfHWAmadfar+UeQ657C5s9HQMUOOJuOVk
+MHg1AVSiAqgBzpKp8QPwikXVNgIsSc2S3ipblnYGeKXecgMmMphiF8FUAc+DeQIe
+v+mu9m1lsDb9dlheINcAc8rky+uT+4fxi85/mO6AQhphXxv062QW8s/k7gAsX2cg
+Sx8l9LiKH/UoSXkwT1MyOAAoparxSEcHNZ7lvwl1l1KAXMUIBGHeisHg7VDhDczb
+Ye/APDHbs4LWRk3fWRbwSpjtSWVJ1TxqfztsWgHwNgPPmAjmVZDn7VRjsYGf9+6t
+8dUu/fj/dP6H6F1b3A3ruDGxNpsYFEgOrAYy49cQ4EvDwcSI8MNkDzhGAZDB20VB
+ZxmzwOyFhRVBeqrxIm5H/yVlYeDnZNYktVcHeAwaMbNNevtyBJgGXgOmWpAt5aoE
+b1pAJTdEIgcTAVa1Z0yEGrNWMpj9dyT3mfjbzj8FG8jfBjuPgb9GD+YVCqgYmcJC
+HQRRZBuvcDJRmBeQUXgooTJxAhSsyjPBMYsKK4A8ibnAKCRhIYOnYQyzbwX7vHpf
+yS7oa6BbSwLSegteZ2BG9QFiIx2KBuKAklgTAcKDWQeYkBnMDhQXJj6QJ8SBzX/2
+7r3xW1362d90/jm6wwu/QQH/H/Scf4HVuNpPZrIuRGMmPVYMmoJZsTRIThEEyBFM
+UvCSAKjKudB/k1hFLVNw6UFzFwcnQq9Ku1kBZV5MEtMJeAwWz0Bw8NCz3V8xC1vo
+sVngWEoECPMuvkwia6b0uIpSKHirPuu+KTjldjKvRyhzw0T6wMufSe4fx885/0I4
+1bTZoMb4mTAPwHJgKWrM51E/kA0SxwIDsXEI4UjIjImmyDM456DKDN8qkI4SaXLN
+ekXd2Use4+WVTp0IkwPgiXK0iDL6DDw+doWOdoXjiBpZRVY5Bq8CaAIemMd54Wjg
+mVp/IzVOpzeeftm7p+N3ufTCrzv/9KYOJAev2TI1NhsYEZHvag85Cr0C4IKsVIgR
+ua2y0EuwEgCeqvJCT7DS/yf56YRya3sU7jdxOx7MFefBz8QqyLfYgiR3dH5Hz3O3
+6bEv0BewaAijQTYFAMt6gsdqO0MJGqjxCLnLwBObmE4HsljosquD5dCm/4vMwP/o
+/JvpLh9D6MKe9vrA+16Lk3kDwCoRTzB4Y6FAsrvkisVITPRFJQAqeAFgeLF+qwTI
+eteswpsEOxdUFSvJX7SgpWFMUhXkIJifmUG6o/NH6PjIpkcDkzGQKWUJdZg1qxrS
+CLfO4LFsNnACuB3cPIMnNnE/48AtZ2LmnZtf8u5H4p936ef+g/PP0h3dG/PAxAtC
+lwYFtSvsYoXSL792wHkAsHwDMmFB/m6k9Hz2WiQIAHI5mMWp2iYuJYmlvCfgOpkE
+ULJ5KLv8AocebJrZtt0xcPSuL6OPepTOX8ZgIvblYLkuktRuRQX5WALEFSAyq7i8
+wywSNV71/qdNjS6DEwHmBrWtwMw5nTbx8qbk/il/taxJV4sDvdq9M+5TwEzm8wjw
+RrCS60xsE0ecM1/kw5iV9AJfGHhWpPeI8zaBkdVYK4hfw0w0e2SNB5N64ArP8YhX
+wB7bFbxHWWZQd43/agIiJHrLbVawCqX8CR7AnKHODZg37ScT2UEymDvAMvAWAw8l
+LYkuBMBJ2Sbg+RMsyX2MaQA2Qs0HsDLg+lRoPcgByNnaBwRIAozTfK9x3krgrGAi
+c0yDG1bjr5P8ZVHjpHcmt4gyHKsug/YEnXMnyhMMpFP2dVznDercBTxmWAEQN4BY
+Ql0NzBoB5gzH0mVxYYKhjchItqQ20Wyg2MQcwMYjF3YAL6jLuxYnE0t/qi2XeVl1
+L/QGU9C5RL5pvsbMCwCTgVxLveFA38ZStlKfccg69IvfUH9mNX4Js86FBdL8DPzd
+GnhP0vgmryA+Kg1lO6k43PyOY4FQk8FLyAGZeWzPdqgxM0+YuJ9BNatoytI5Ziar
+sTiUpOCtUIfmAHBUKywtbWBeHU61rgHmBWor4IWTecxKNnVXAmrO1HgieYnoxSAC
+LswOyWLJwUQtdO0AimHUUuyXaTyCuo4AyPC/jEGj4yvo+Eq6lZfT8XEGj8AJUq4Z
+FTw+D8Y81MA8GLdtmQ3c4WCQmgUEyB42sIRD3AEWgzlaoQFMvOQAsopewUIG8OJP
+JpZQ69Gf4PHrxfsGVWNhHlRawIsneA4sFPBqbfDbyB7sde+SL478N4lD+SqdfREs
+FADZtjF4r6Lzb/F6fJIu9HzfXO9PDN6oRUOvkZHbF9UIB7XdVlXLCO+7AkQGQpi4
+q7vvkCRMAM+Yx+DyW4kNdArmmKswNzQe6RvUWCqRLnMoyKcY6BHAhoyJhT9t4GLt
+BKWq9IoWLGbiSgDujc7a+6YhIHkywGwe28Iv0fi8AAgb9xo6fiuN19H5Kwjn+phL
+GJR9DCKzj9WWVTaZA0FMF8C2gLDEI6/l8jazStQ4Ay+Baca8zZ1gMjNnhAMHA1uE
++ExLqcKYQ/HKPAkuAN7kM/BozF6ZmALAC3qNO4GYlRvUOlUK5F6h7ZQA3Ckw2e84
+BH5CJhSVdazGv2E28FV0+BN0/Hb6mG9J96SyX6OffP1snDnAW6DGSM087F1AOYcZ
+tuG8Amgr5gsYPK5UzKC9qS2/7W5q6xRcU+MmZ2Bv4CWAZ8xDBFtCtkafABUX8JCt
+8msZPGZiKtS5bFDxHUBuUGlm4kYfklrtK/YUjOyPkUo/9u1gIjPwl/jkT9Et/QX6
+yl+b/g9JX6Hf+aq2KiTMdQp4q7LOW6q9qwp6DJEBFgMjTITcADwmrKlxCbAYT4kD
+URhZwUTJhW9soPXC+HO2TbqyDDyv1GVncnRN4RpHJMzaxQM8fi4GzyvQySuQe0Cj
+S1Aw9/LsntwJyMQR3TfRhdd9J/nXv03CT/F7PU0m8bXud0j8PTBvQLsCVNQhAHZQ
+TQ9Pyv8YKAeV5FMBL+mvGXgBJV6PnvCIvH1HqGLgbYil6rzKZABe0Eh0gAcmVlmL
+WY3XX/ABFcLiS1LwIup3I24oQLbn9LjZFSADeysaHLJq0XeKOfTZa/9//9nrGSh7
+v91bfnPeC2tWMNnBBnq93+RO8CbcYw8C2fP1NzYQ7u6SdcdXAFLUGAnpgDescHNX
+UD/iW5ZvaleVSLApG771BO8nqoT0abPSIDsD8mTpJXHC/KbfrdbtjY0rf5mCF4fA
+Bc4HDYMpnqyGQ9cupKCdSAnxeoHOpD3cgrcGvbcGr1kAPn8M23k2UVsGHkytJOO3
+NnBH6OIwB5IyJsImXOGBany7V8RFJQyvBJkJszRw/TsCVDbmHIByeCEZw4x0a0Tj
+M9u0r4lq8r2zw/hryqQf1Dv+H59z7ktf19JBf/TdKZCVOqwEz+8AagKwBQDdbVov
+qGnZUSuroD0rQO7AVr49/gJ6mLXJbKA52JyBI5jWIs65gk3NnoG3K/MiJptmBJz8
+JQ+YCiyS8n1C+MBgSm66wiMizNgsdhu1S4iYyB/zmNdQ5bvp+G0K4HfQ+79R1XL5
+b5TpveT815cTwPpcDyGpY4THjwAPoCY4ugJjB1Mb2O0F9rpDeJaDZ2q7+RO8WxvI
+cSBceQ1wDuaBaaN5K5tkRoXiYCKScLed9TQOWhksTpeYeRyXsfFfGcRJ5yg5k4D1
+YPA4ZPljNP4o0jWJoZP7NnrWL0O5CLGFzpeLtko9AJC/hmRAIrA3ZhaICDaEWTXY
+uYGhkq4iksjBm0yNESdLuOkfxoEA0JgmNRGbRAYTI+TJwNuQWGMmy9ns1noL3hHU
+zprOJU2xPOqVHaoqTzqO85z7I07TtTt1CD2B92o6ez3cWRKUvPt9ejMymsuoqSKK
+F6bOIWMiywXYuAPECNnAlGgjKBOZmT1UewbAnOqKGoOt/UMbeIfcbtgzG4jKhBQX
+Oe7BJHODqcALpvoqhBJDxjy2WxPUloNazkk59xTwUCDFHMYjmNN6Jb3dq+j8m1Ek
+qA/GSdGFvcjvS9FBpwkigLyncIZ+xrRG+parsTAPxx1MjGDjjhy+xFgRZnUAb0H4
+dQcmcmi2gIlNyG3ghHlOU2MwTdQYdo8rzxPmA4qsMlsjeL0CvBKB7GjgAUxR4yRf
+unQUYDaNv9hHWV33s8LCqny3HyFmAa/xOIH3zWh+s0nPgFnoq0bVRO+wrkcxg0dh
+xQ2ocllkTIya25cI+HPwZjihnIkrmNkgO5tv6oH7rQ1kO9amTI13LT6aGs/bWU+7
+IjypkLCPpsZQX7KXbOdizMDjSKDQMvwTuwL3OMB8ZNd4PqoNjCgsPEJgPSGRtLIw
+m/x0ilDB/V0JdoJcvjEvAcAKZbeDiYuycYO37lAwZuYZeDXA5Nf0cDojVP2mHnjY
+QLCr3W/Ba80GonJRw8NaI04N5g05E3fJsvjXDvAw4SMTQCQ/irL8o0ErywZeiYQn
+JQGI51f4dh8RJuqc3yJF/yTzzR6TBtamHikamMnurhqEbmcHOn/BrrB5bcSFhc5W
+McALYskOBeQZatzDyUxgI8vtAeCsVLjPwGtg84yJ5XYyT2zgdoJpxUm+vqFtAP17
+0ghUnr0sDSbBZV5jUdBeFjAxhDkPqeW6oy8wYAlOIw6FX+oJc+2cURANQJ2IUiYW
+SNA8uX/u4YhkPxIabaTbHDZQwCpUTTm9TGAigzXjNZ0/mThnTLzmAA7pZJo10nDo
+0mJG/oKCYwMnkYMZzAbu8uQcGXAbLjNPOgKSglejY0Bm1VaAiKnIO8y2dWgcKhAh
+CZ+0VanGKpY7Go9I6JBkpmVDXdssZgB4ykZdSrESeKTyNGQRyQ413vTbZHJsyOkM
+PGaieV/+RrkwYjaQVWQKVg+kEOvtcAg5eOJQoKoGXovZKpkXhRcw5lEGIi2xHi1j
++9lOIc2P6FWRyXB0FNxlYLboKBCmbmr/JKnwwrFCPG6QJrtOmJiOlswFU6QJ/Yjh
+aGkqAWASpi66No9ATFwl2FEs3uFAvH57Al7AJHvGxMUcSFAbKHHgG7x7Nv6mS//o
+dc4/A4ByG2jeeMps4gVZxhEXJklrZflTQIvsdoLHzY8SFZVq+7jxh8HrAV4H8LqI
+9HtT7bKsNqmCFugDq7CSuD/6+rUdfZXJAZ+VJUos4jELqWvxVgWbPFtDQFak1oyl
+s660HUE01LgBeCtsYgsmziZ/gZc5vMb59+1qAy+mxhum7hC6HA5ly5iouTJPfPGS
+U0kvreG7Phu8xXHUCmIH8Lry7F0R5pUneFItiygJqMnyh6dNSDkKLL7QZeETugp5
+YgrG11llSFtLKrS0J7GR69FpuyW1O92ehGkrnEr/ADxTW2NeD8Avr/Hur8f/5dJP
+vtz592Rq22RxoNnAg4laXJQlpjNWLRZnj7GsVbOGboAnxsscfXX270k2a+Ct6J6K
+qr5SgQ9QYZ2GL6TsX4hHriW08aLGk0yS7uiCjZgcOMHzAE/VWleNBnm9k9VYG5GF
+JFZt68aHGq9wGMa8xZjndQpj+t3kfiE+6fw7rYE6ZeBZI00OHha6DFhi2oItOXhY
+l1GhoVvabAe8dQ15xtE6R9FFJUsVvJoAb5ZM63cBNk3VeFfTih0aWmlVUhun83wa
+2th6Y5+Bx6o8Qy5kN5JGuLuJAeh3Xba72tSlORCodgfmSRDNxdYnvXs+vuTSZygy
+eDfQt8LBzboInb4I2NAh5CvDr5rmls25sE9UESuEeKkBg1UbmBOOBuaCJQhY1yFZ
+n0Mqa8VObVPSSfld7GEFLvHjThLSlNKiyW1L2tdVCROlSV3gsj0ZDMxWtltxMsnP
+qt2Ji9r0HQhInmxuUc8UtYV2TogFBcyvJPdipKjg76G96QK1PcBTsAS8Ggv9sIIn
+Ypm9BPNo2H64IqjJlhbIvD3ArKDW0uOss8TadrvCeVSYCUClmBci+oCAxWPNZyF8
+q6Q1TtvUl0ONK6hyQn3aCja2/qTF1gIaAG0E3ipWdZGfbbJii+WZgFzIPnYhA2+H
+DWQfQEny34z3Lv0Evdt7M7Uli3/sjtHpA3ms5L7ZHWM+11mUtlatRUuhrRhqMUc1
+ole5RqA8wkujZ5lXTErgVmtE4cBETBto4uZhvwppgdOu1kpcRA01ZgexCHg7JgZa
+YeM5baDTFgE+2x/grfiMDnZxlnfcJGhqKaaZMMlk4PH5SKr680Ql/y4UR3mdRIM9
+CbC1R2iyDR6yJaC2gcOxO8aCtWcFdgTadEmpgcmElutYaiDMM4czo2u+VrVlk8AM
+ZLomtYHqiWuEMzta2xthYg01VjBLUetN4GikZXM/Sg+34DksIgoZeF7UWAOjHWsH
+zUiQWhMbW/I07I1lnQg9zQfpydOn6f5+BKo6ZMyrVT72CLAdgbKV3vF6gmeLmXnt
+2Q14YGIN5knDd4tCyAjmIY5k5xQ8iljokSYQva+Rrm3IdRtJ2So8Xi2d1qVwRhf0
+NMLRXYIbh3JEjUBnRwBkzJMyPVR7kTY8rzZQgFNAW4A5EoDTxmpN70kG8qP01Yfn
+6F7vbDHxuZ2SxyYztmpR1DZnni1u7tANOsCj5vKmsoFl4ElGNSJka8G8GerbYE7I
+phobqPGKksGpxlGUvBEnUkpvoYK3ysLHDXOePVo3MV0M8NyxdsrAmwGgytq9PQsz
+dwVPvi5T6+QudLdvJiD3TwAogCUAjdneUS0edsQilVYdgICH7ZBk7e0MsDqszbUl
+pS0WuGB5Fb+nLRAsbC8rh+X8tjcWpjgTpj4Q1fljBySrurRQZVtvohti2FY+NT1s
+Ldc3dL+y3MpODrqbQ4/f0aUWJcn6njOGbX81abHsWIzO58zGnyMG1u9CJ0QLu4e9
+ofKtPmz7pKI+tw4psExe4j5jIlY9GhOreC5JNWaWo2aB8v4Ba3Mdtmsq0FzlMXtZ
+yMyAx6S3FgpW2MIGue6K6nQnNnARYJR5K5insWGPrQo0e07KJGFZOOZ522MR2rl+
+epKhNrETJmop485X7gVi4PRp2LgOrMuYaMw75Onc8UfsHrMOu10IQMsJpuxDYEy0
+XdBQzJHt7FrNCHkiT2xue8bOvtOBH5h39EfJqgUbrKu/x7JcXStaYvsqXTqhzKuE
+WSt2czAmLgfzyoN5E5jX4XyUc92cbcAaZ9mkKM3uBWLg3fvpIe6w+0/OvOHBFnIP
+N+oCE2N3MlHUuj+3FhHVRtwYsUpSFjfHbO1vh8B5xLrgTqc12AZJKNdhUewCNe5E
+WQu0DOsuc8q9UvLlTjKMTbiYhIn7wcSTeQnrVs5p5px5Hc5HlHJbWQOzys9aMPXi
+79xT9AT3Hwfrso21BCjbtazDHiqwgcK26QRTmDSfDiXCJkp+259M1CWl+AJQGRPw
+urOl5WCerRGR6gPyiQQmdsgeEjYM6iS0KaQtWGVbtFOCeSqvwrRamHUyr4INNOZV
+N8wzmziKDdStYA4mpnv3s8TAJ5/BYmaokW0yU+Qbbw3ZJjSQBUhsl1RlG3tVtpVI
+d64EjzkTsWw/9EgHUbn2PfZFmE4mapcUgt4eCxtnANhjLfxygFfKSvpZ2tdLsYHG
+xFV2xdSNgjRIVpvYyvsrEzuMCQ0TZhNHDGXmhkLaRjbwCfcRYuBLn4LnxaYyxfXc
+L68Yb3d6lG04R4DRZTaxgxOZlI2HzVx0GPMKTBEXPWwuGkgFvO5cmSkdbx2arBLi
+tA4LZ5OAqUy0NfE97JImcaW7gw1bkSX3sIHKvAo2Mve2Zca80yaOh81T9g0YagO/
+7D5EDHxlZgPN+8Z8p8budiOu3AaKWvfZLmjmjetz+6UCNrIAEwU8yN7UGOniAV6F
+vklumO8QlMxY79mhsjIhP+6RpcyIDTvs8TAL75SJFsfNYgM3UdtJ5vdObzxhxUqP
+La5GMNG88YjpLP197iV6tXsLMfBLHz93ZrTtjUK+c2N32sTygXeOuXeeMqaCiext
+hXnLyTzxuAsGbJ6tyvRgnttOMGVsKGv1YOOGYkCPbfu2g4kqLzIimKnlhvWwkbfM
+a4V5Udh3Mk+HMW/ElljdYQNJTl90P0MMfN27kX925/54N0F05n1tI65y+AbbaNbn
+1iE3crapjXxRC2xgpWZCGgrAPH90gh7NjApYj3BZS6jGPC9B7ikrEGrzSikMjFKr
+KZFRbGDeDjllTFRvfDLPZGOeDtv65c6/3n2UGPg7n7zdWOvhnqHmjUU1x3O322jy
+dO52KwG27T3VATjIAUw05gn7FjTX96fsACY/QMIKhdRDlfLctUN6twrzgjBjBfvM
+Js5gojFnEtVVpqkc4X1P5k1gbQcbOGS/P+Ry+u/ug8TANzyvNjBcsr2iulsbeDBz
+PG1ivllhfv3GW4/KtADmhWxTG4/KNoNV1OixNCaijdYvBxM9OkM9mBaO2ZBe0rso
+nnGGGrcIO2ZszaxM1DJVL5Uay23NBuoGGRPOO6wXGDLvbMwzZt77P+6+nxj4Wy+e
+ocrhLTPmCfssQ8lsou1ZKswzMPsslwZ4YlNnzKHA+5p82Dy0PCdjnjWuQj62quix
+z+uCAqgyzx8LGc0GzhiWQcwyymOb0wnjtHHxJgOxjKPP5CHbKlpt4OfdZ4mBf/Ld
+WWhhm1BnTIwZE8vMJubeOWRyMZxMtYwmTg82L5xPpon3neFMGjAP11ODtuIZ4JlN
+XKDSDZL8BQ6lkURfk/8e+1wPsIPKxAjmqQ3s5Fopua1540E88K08ZDbytIHf5T5G
+DPyNzAaaN44ZE3ObeJPe/QFVm1wuECdKigbZT+feVFK8mDIwOwA3IXSBfMPEGcl+
+dzBPiwGaKyvrpsw7jwhvLGOZ4FE72MhRtqSyDXhLOc+974DNJ81G3jAxfc59gBj4
+p2EDD+ZlNs92sw3dg4ykvZUfxo1W1fFQ6wJMK8aTaUXGPNecDey5DeRGVgGvQRxm
+TDR5Qv3uVtb5ugnD1HYQu2fe+dyeqoOs3ncH82JmAxNef8vEi/+zYgP/04vnptPR
+MgRzKL0O2ypYbFx/bnZouazME2evP/ait7gP6aF42x7nCNp9f1bCJYjucc5g36ld
+TBZa3CGlG6HKd3AiI1S5B6AjNpS8g0cesM2e2rQAuZCMpQfTrof3Pjfc7XHdNty9
+uZ5+1X3WHX9JIr3xGT3+5ffr8U2Qv+c5PT4F+a2Q3/NOPT7/rB5ffIcef/p9evxn
+b9fjL/xdPf7iD+vx3//YH9pfw/hcel7/ikWSP7nh/k2SP8Hh/lWSP8nh/nn6kBw/
+leRPdrhPJPkTHu4DSf6kh3tv+rAc35bkT364p5L8yQ/3PUn+JIh7U5I/CeL+ksr8
+7/8KMAC8Lyf/gKB/RwAAAABJRU5ErkJggg==
+
+------------iPgX44psirM4drV5MRoS2o
+Content-Disposition: inline; filename=btn_donateCC_LG.gif
+Content-Type: image/gif; name=btn_donateCC_LG.gif
+Content-Location: https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhkwAvAOZ6AC89cv+yPP+sLP++Wv+pJv7hqP/KeP/syf/Wlv/z3P/25f/i
+tP7pwC9ss//57v7nussDBP/9+OyLNf7mtf+vNARnzeU3M/7ksDZSdBU6Z/7fopWX
+kgBXoP7enr7BwXqHidHS0+Lj5MnGwdja3Ct8xWg0XQFbx0plfP63RaAQJ1S450hT
+Vbc3QcPHyMjMzcfKzMrd77W7woCs1LSsmOLt9sS7oEA3J5W62qaut4lvS2djULTQ
+52GTx15yh6t9RkqDuyOZ1WrE77iLPr1nKP7Sh9iaN+dbNZHL7MLU4isgDPLz9s+H
+RdbJqKWdjfD2+k5FNYybsffU0e+lM2Ci2O/cs+b0+3dwY/KpdtTm9PHx7+7YqG6i
+yvbCmP308vCmoN/P0IR+c/fhzvjIucrO091hYNezs0iN1+yYQhRZrvPm5t7Knc6Z
+mu7TmvKcavT6/frq2v/gsLhSSvC2t/XGqOaGhv/v0wAAAAAzZv+ZM////////wAA
+AAAAAAAAAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78i
+IGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxu
+czp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4w
+LWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8
+cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjIt
+cmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4
+bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnht
+cE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJl
+Zj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVm
+IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3Mi
+IHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDQzREZFNDg5QTg4MTFFMTlFOTA4
+QkM0NUJFNDFFQzUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDQzREZFNDk5
+QTg4MTFFMTlFOTA4QkM0NUJFNDFFQzUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RS
+ZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowNDNERkU0NjlBODgxMUUxOUU5MDhCQzQ1
+QkU0MUVDNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowNDNERkU0NzlBODgx
+MUUxOUU5MDhCQzQ1QkU0MUVDNSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6
+UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgH//v38+/r5+Pf2
+9fTz8vHw7+7t7Ovq6ejn5uXk4+Lh4N/e3dzb2tnY19bV1NPS0dDPzs3My8rJyMfG
+xcTDwsHAv769vLu6ubi3trW0s7KxsK+urayrqqmop6alpKOioaCfnp2cm5qZmJeW
+lZSTkpGQj46NjIuKiYiHhoWEg4KBgH9+fXx7enl4d3Z1dHNycXBvbm1sa2ppaGdm
+ZWRjYmFgX15dXFtaWVhXVlVUU1JRUE9OTUxLSklIR0ZFRENCQUA/Pj08Ozo5ODc2
+NTQzMjEwLy4tLCsqKSgnJiUkIyIhIB8eHRwbGhkYFxYVFBMSERAPDg0MCwoJCAcG
+BQQDAgEAACH5BAEAAHoALAAAAACTAC8AAAf/gHqCg4SFhoeHeIqLjI2Oj5CRkpOS
+iJaXmJmahooGCwkRoaKjpKWmp6ipqqQHCIqbsLGyhHhECQ64ubq7vL2+v8DBwXB4
+s8bHiQsKy8zNzs/Q0dLT1NXLCcXI2rN4Bwnf4OHi4+Tl5ufo6eF12dvumHgddfP0
+9fb3+Pn6+/z9+O3vAhZCcaCgwYMIEypcyLChw4cLtQicOKgWg4sYM2rMuOGOxzsZ
+PlDZSLKkSQZMZpxcuREgRXcBDDyYSbOmzZof7mA4cSLDnRM3gwoduiFDjaFIhQZ4
+GRAPigETokqdSnXqiTs1olLxyUQqlRpZq05gUoPK1K9hpfo0G5VsV7Fw/6ciQOGS
+qTGnKIhc2Mu3r1++HrXwzblhb06PGQpfqKGzB2Imhj9mgMzk450NWhx7PCH4r+e+
+A+ja3YYXBYICqFOrXl2AMQbVOT8UcIxhRhOfagp0/DkDwx3ZM3TOyHmiwIyrGD5o
+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
+
+------------iPgX44psirM4drV5MRoS2o
+Content-Disposition: inline; filename=pixel.gif
+Content-Type: image/gif; name=pixel.gif
+Content-Location: https://www.paypal.com/en_US/i/scr/pixel.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+
+------------iPgX44psirM4drV5MRoS2o
+Content-Disposition: inline; filename=DD_Base.js
+Content-Type: application/javascript; name=DD_Base.js
+Content-Location: http://www.dillerdesign.com/pics/js/DD_Base.js
+Content-Transfer-Encoding: Base64
+
+dmFyIEREID0gewoJYW5pbWF0ZTogewoJCWVhc2U6IGZ1bmN0aW9uKHR5cGUsIHR3
+ZWVuKSB7CgkJCXN3aXRjaCAodHlwZSkgewoJCQljYXNlICdxdWFkSW4nOgoJCQkJ
+cmV0dXJuIE1hdGgucG93KHR3ZWVuLCA0KTsKCQkJCWJyZWFrOwoJCQljYXNlICdx
+dWFkT3V0JzoKCQkJCXJldHVybiAtKE1hdGgucG93KC0tdHdlZW4sIDQpIC0gMSk7
+CgkJCQlicmVhazsKCQkJY2FzZSAncXVhZEluT3V0JzoKCQkJCXJldHVybiAodHdl
+ZW4gPD0gLjUpPyBNYXRoLnBvdyh0d2VlbioyLCA0KS8yIDogLShNYXRoLnBvdygt
+LXR3ZWVuKjIsIDQpIC0gMikvMjsKCQkJCWJyZWFrOwoJCQl9CgkJfSwKCQlnbzog
+ZnVuY3Rpb24obm9kZSwgdGltZSwgc3RlcCwgZGlyZWN0aW9uLCBmdW5jLCBleHRy
+YXMpIHsKCQkJdmFyIGkgPSAwOwoJCQlpZiAoIW5vZGUuaW5Qcm9ncmVzcykgewoJ
+CQkJY2xlYXJJbnRlcnZhbChub2RlLmxvb3ApOwoJCQkJbm9kZS5pblByb2dyZXNz
+ID0gdHJ1ZTsKCQkJCW5vZGUubG9vcCA9IHNldEludGVydmFsKGZ1bmN0aW9uKCkg
+ewoJCQkJCW5vZGUudHdlZW4gPSBNYXRoLmFicygoKytpKnN0ZXApL3RpbWUgKyAo
+ZGlyZWN0aW9uPyAwIDogLTEpKTsKCQkJCQlmdW5jKG5vZGUsIG5vZGUudHdlZW4p
+OwoJCQkJCWlmIChpID49IE1hdGguY2VpbCh0aW1lL3N0ZXApKSB7CgkJCQkJCW5v
+ZGUuaW5Qcm9ncmVzcyA9IGZhbHNlOwoJCQkJCQljbGVhckludGVydmFsKG5vZGUu
+bG9vcCk7CgkJCQkJCWV4dHJhcyAmJiBleHRyYXMuZW5kPyBleHRyYXMuZW5kKCkg
+OiBudWxsOwoJCQkJCX0KCQkJCX0sIHN0ZXApOwoJCQl9CgkJCXJldHVybiBub2Rl
+OwoJCX0sCgkJc3RvcDogZnVuY3Rpb24obm9kZSkgewoJCQljbGVhckludGVydmFs
+KG5vZGUubG9vcCk7CgkJCW5vZGUuaW5Qcm9ncmVzcyA9IGZhbHNlOwoJCQlyZXR1
+cm4gbm9kZTsKCQl9Cgl9LAoJZGVidWc6IGZ1bmN0aW9uKGVycm9yKSB7CgkJaWYg
+KGRvY3VtZW50LmJvZHkpIHsKCQkJaWYgKGRvY3VtZW50LmdldEVsZW1lbnRCeUlk
+KCdEREpTRVJSQ09OU09MRScpKSB7CgkJCQl2YXIgbmV3RXJyb3IgPSBkb2N1bWVu
+dC5jcmVhdGVFbGVtZW50KCdkaXYnKTsKCQkJCW5ld0Vycm9yLmNsYXNzTmFtZSA9
+ICdlbnRyeSc7CgkJCQluZXdFcnJvci5pbm5lckhUTUwgPSBlcnJvcjsKCQkJCXZh
+ciBlcnJvckNvbnNvbGUgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnRERKU0VS
+UkNPTlNPTEUnKTsKCQkJCWVycm9yQ29uc29sZS5pbnNlcnRCZWZvcmUobmV3RXJy
+b3IsIGVycm9yQ29uc29sZS5maXJzdENoaWxkKTsKCQkJfQoJCQllbHNlIHsKCQkJ
+CXZhciBlcnJvckNvbnNvbGUgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdkaXYn
+KTsKCQkJCWVycm9yQ29uc29sZS5pZCA9ICdEREpTRVJSQ09OU09MRSc7CgkJCQlk
+b2N1bWVudC5ib2R5Lmluc2VydEJlZm9yZShlcnJvckNvbnNvbGUsIGRvY3VtZW50
+LmJvZHkuZmlyc3RDaGlsZCk7CgkJCQlERC5kZWJ1ZyhlcnJvcik7CgkJCX0KCQl9
+CgkJZWxzZSB7CgkJCXNldFRpbWVvdXQoZnVuY3Rpb24oKSB7CgkJCQlERC5kZWJ1
+ZyhlcnJvcik7CgkJCX0sIDEwMCk7CgkJfQoJfSwKCWRvbTogewoJCWFkZENsYXNz
+OiBmdW5jdGlvbihub2RlLCBzdHIpIHsKCQkJCgkJfSwKCQlhbmNlc3RvcjogZnVu
+Y3Rpb24obm9kZSwgdGVzdCkgewoJCQlpZiAobm9kZS5ub2RlVHlwZSA9PSA5KSB7
+CgkJCQlyZXR1cm4gZmFsc2U7CgkJCX0KCQkJdmFyIHF1ZXJpZWQgPSAwOwoJCQl2
+YXIgcGFzc2VkID0gMDsKCQkJZm9yICh2YXIgaSBpbiB0ZXN0KSB7CgkJCQlxdWVy
+aWVkKys7CgkJCQl2YXIgcGFzcyA9IChub2RlW2ldID09IHRlc3RbaV0pOwoJCQkJ
+c3dpdGNoKGkpIHsKCQkJCWNhc2UgJ2NsYXNzJzoKCQkJCQlwYXNzID0gREQuZG9t
+Lmhhc0NsYXNzKG5vZGUsIHRlc3RbaV0pOwoJCQkJCWJyZWFrOwoJCQkJfQoJCQkJ
+cGFzcz8gcGFzc2VkKysgOiBudWxsOwoJCQl9CgkJCXJldHVybiAocXVlcmllZCA9
+PSBwYXNzZWQpPyBub2RlIDogREQuZG9tLmFuY2VzdG9yKG5vZGUucGFyZW50Tm9k
+ZSwgdGVzdCk7CgkJfSwKCQlnZXRDbGFzc05hbWVSZWdleDogZnVuY3Rpb24oc3Ry
+KSB7CgkJCXJldHVybiBSZWdFeHAoJyg/Ol58XFxzKyknICsgc3RyICsgJyg/Olxc
+cyt8JCknKTsKCQl9LAoJCWhhc0NsYXNzOiBmdW5jdGlvbihub2RlLCBzdHIpIHsK
+CQkJcmV0dXJuIG5vZGUuY2xhc3NOYW1lLm1hdGNoKERELmRvbS5nZXRDbGFzc05h
+bWVSZWdleChzdHIpKTsKCQl9LAoJCWlkOiBmdW5jdGlvbihpZCkgewoJCQlyZXR1
+cm4gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoaWQpOwoJCX0sCgkJcmVtb3ZlQ2xh
+c3M6IGZ1bmN0aW9uKG5vZGUsIHN0cikgewoJCQkKCQl9Cgl9LAoJZXZlbnQ6IHsK
+CQlhZGQ6IGZ1bmN0aW9uKG9iaiwgdHlwZSwgZm4pIHsgLyogdGhpcyBkaWZmZXJz
+IGZyb20gSm9obiBSZXNpZydzIGFkZEV2ZW50IGluIHRoYXQgYSByYW5kb20gbnVt
+YmVyIGlzIGluamVjdGVkIGludG8gdGhlIGhhc2ggKi8KCQkJaWYgKG9iaikgewoJ
+CQkJaWYgKG9iai5hdHRhY2hFdmVudCkgewoJCQkJCXZhciByYW5kID0gTWF0aC5y
+YW5kb20oKTsKCQkJCQlvYmpbJ2UnK3R5cGUrZm4rcmFuZF0gPSBmbjsKCQkJCQlv
+YmpbdHlwZStmbityYW5kXSA9IGZ1bmN0aW9uKCkgewoJCQkJCQlvYmpbJ2UnK3R5
+cGUrZm4rcmFuZF0od2luZG93LmV2ZW50KTsKCQkJCQl9OwoJCQkJCW9iai5hdHRh
+Y2hFdmVudCgnb24nK3R5cGUsIG9ialt0eXBlK2ZuK3JhbmRdKTsKCQkJCX0KCQkJ
+CWVsc2UgewoJCQkJCW9iai5hZGRFdmVudExpc3RlbmVyKHR5cGUsIGZuLCBmYWxz
+ZSk7CgkJCQl9CgkJCX0KCQkJZWxzZSB7CgkJCQlERC5kZWJ1Zygnb2JqIGRvZXMg
+bm90IGV4aXN0Jyk7CgkJCX0KCQl9LAoJCWRlbGVnYXRlVHlwZXM6IHt9LAoJCWRl
+bGVnYXRlRnVuY3M6IHt9LAoJCWRlbGVnYXRlOiBmdW5jdGlvbihjc3MsIHR5cGUs
+IGZ1bmMpIHsKCQkJREQuZXZlbnQuZGVsZWdhdGVGdW5jc1tjc3MrdHlwZV0gPSBm
+dW5jOwoJCQlpZiAoIURELmV2ZW50LmRlbGVnYXRlVHlwZXNbdHlwZV0pIHsKCQkJ
+CURELmV2ZW50LmRlbGVnYXRlVHlwZXNbdHlwZV0gPSBuZXcgQXJyYXk7CgkJCQlE
+RC5ldmVudC5hZGQoZG9jdW1lbnQsIHR5cGUsIGZ1bmN0aW9uKGUpIHsKCQkJCQll
+ID0gZT8gZSA6IHdpbmRvdy5ldmVudDsKCQkJCQl2YXIgbm9kZSA9IERELmV2ZW50
+LnRhcmdldChlKTsKCQkJCQl2YXIgdHJ1bmsgPSBub2RlOwoJCQkJCXZhciBvYmog
+PSBmYWxzZTsKCQkJCQl2YXIgaSA9IDA7CgkJCQkJdmFyIHRyZWUgPSB7fTsKCQkJ
+CQlkbyB7CgkJCQkJCWkrKzsKCQkJCQkJaWYgKHRydW5rLm5vZGVUeXBlICE9IDkp
+IHsKCQkJCQkJCXRyZWVbaV0gPSB0cnVuazsKCQkJCQkJCXRyZWVbdHJ1bmsubm9k
+ZU5hbWVdID0gaTsKCQkJCQkJCWlmICh0cnVuay5jbGFzc05hbWUpIHsKCQkJCQkJ
+CQl2YXIgY2xhc3NOYW1lcyA9IHRydW5rLmNsYXNzTmFtZS5zcGxpdCgnICcpOwoJ
+CQkJCQkJCWZvciAodmFyIGMgaW4gY2xhc3NOYW1lcykgewoJCQkJCQkJCQl0cmVl
+W3RydW5rLm5vZGVOYW1lICsgJy4nICsgY2xhc3NOYW1lc1tjXV0gPSBpOwoJCQkJ
+CQkJCQl0cmVlWycuJyArIGNsYXNzTmFtZXNbY11dID0gaTsKCQkJCQkJCQl9CgkJ
+CQkJCQl9CgkJCQkJCQlpZiAodHJ1bmsuaWQpIHsKCQkJCQkJCQl0cmVlW3RydW5r
+Lm5vZGVOYW1lICsgJyMnICsgdHJ1bmsuaWRdID0gaTsKCQkJCQkJCQl0cmVlWycj
+JyArIHRydW5rLmlkXSA9IGk7CgkJCQkJCQl9CgkJCQkJCX0KCQkJCQl9IHdoaWxl
+ICh0cnVuayA9IHRydW5rLnBhcmVudE5vZGUpOwoJCQkJCWZvciAodmFyIF9jc3Mg
+aW4gREQuZXZlbnQuZGVsZWdhdGVUeXBlc1t0eXBlXSkgewoJCQkJCQl2YXIgdGVz
+dHMgPSAwOwoJCQkJCQl2YXIgb3JkZXIgPSAwOwoJCQkJCQl2YXIgcGFydHMgPSBf
+Y3NzLnNwbGl0KCcgJykucmV2ZXJzZSgpOwoJCQkJCQlmb3IgKHZhciBwIGluIHBh
+cnRzKSB7CgkJCQkJCQlpZiAodHJlZVtwYXJ0c1twXV0gJiYgdHJlZVtwYXJ0c1tw
+XV0gPiBvcmRlcikgewoJCQkJCQkJCWlmICghb2JqKSB7CgkJCQkJCQkJCW9iaiA9
+IG5vZGU7CgkJCQkJCQkJCXZhciBmaW5kUGFyZW50ID0gdHJlZVtwYXJ0c1twXV07
+CgkJCQkJCQkJCWZvciAodmFyIG49MTsgbjxmaW5kUGFyZW50OyBuKyspIHsKCQkJ
+CQkJCQkJCW9iaiA9IG5vZGUucGFyZW50Tm9kZTsKCQkJCQkJCQkJfQoJCQkJCQkJ
+CX0KCQkJCQkJCQl0ZXN0cysrOwoJCQkJCQkJCW9yZGVyID0gdHJlZVtwYXJ0c1tw
+XV07CgkJCQkJCQl9CgkJCQkJCX0KCQkJCQkJaWYgKHRlc3RzID09IHBhcnRzLmxl
+bmd0aCkgewoJCQkJCQkJREQuZXZlbnQuZGVsZWdhdGVGdW5jc1tfY3NzK3R5cGVd
+KG9iaiwgZSk7CgkJCQkJCX0KCQkJCQl9CgkJCQl9KTsKCQkJfQoJCQlERC5ldmVu
+dC5kZWxlZ2F0ZVR5cGVzW3R5cGVdW2Nzc10gPSB0cnVlOwoJCX0sCgkJZG9tUmVh
+ZHlRdWV1ZTogQXJyYXkoKSwKCQlkb21SZWFkeTogZnVuY3Rpb24oZnVuYykgewoJ
+CQlERC5ldmVudC5kb21SZWFkeVF1ZXVlLnB1c2goZnVuYyk7CgkJfSwKCQlkb21S
+ZWFkeUNoZWNrOiBmdW5jdGlvbigpIHsKCQkJREQuZXZlbnQuY2hlY2tEb21TdGF0
+ZSA9IHNldEludGVydmFsKGZ1bmN0aW9uKCkgewoJCQkJaWYgKGRvY3VtZW50LmJv
+ZHkgJiYgZG9jdW1lbnQuYm9keS5pbm5lckhUTUwuc2VhcmNoKCc8IS0tIERPTSAt
+LT4nKSAhPSAtMSkgewoJCQkJCURELmV2ZW50LmRvbVJlYWR5RXhlYygpOwoJCQkJ
+fQoJCQl9LCA0MDApOwoJCX0sCgkJZG9tUmVhZHlFeGVjOiBmdW5jdGlvbigpIHsK
+CQkJY2xlYXJJbnRlcnZhbChERC5ldmVudC5jaGVja0RvbVN0YXRlKTsKCQkJZm9y
+ICh2YXIgaSBpbiBERC5ldmVudC5kb21SZWFkeVF1ZXVlKSB7CgkJCQlERC5ldmVu
+dC5kb21SZWFkeVF1ZXVlW2ldKCk7CgkJCX0KCQl9LAoJCW1vdXNlV2hlZWw6IGZ1
+bmN0aW9uKGUpIHsgLy8gYWxwaGEhCgkJCURELmV2ZW50LnByZXZlbnQoZSk7CgkJ
+CXZhciBkZWx0YSA9IGUud2hlZWxEZWx0YT8gZS53aGVlbERlbHRhLzEyMCA6IC1l
+LmRldGFpbC8zOwoJCQlyZXR1cm4gKGRlbHRhID4gMCk7CgkJfSwKCQlwcmV2ZW50
+OiBmdW5jdGlvbihlKSB7CgkJCWUgPSBlPyBlIDogd2luZG93LmV2ZW50OwoJCQlp
+ZiAoZSkgewoJCQkJZS5wcmV2ZW50RGVmYXVsdD8gZS5wcmV2ZW50RGVmYXVsdCgp
+IDogbnVsbDsKCQkJCWUucmV0dXJuVmFsdWUgPSBmYWxzZTsKCQkJfQoJCX0sCgkJ
+dGFyZ2V0OiBmdW5jdGlvbihlKSB7CgkJCWUgPSBlPyBlIDogd2luZG93LmV2ZW50
+OwoJCQlyZXR1cm4gZS50YXJnZXQ/IGUudGFyZ2V0IDogZS5zcmNFbGVtZW50OwoJ
+CX0KCX0sCglmYWRlOiBmdW5jdGlvbihub2RlLCBkaXJlY3Rpb24sIGV4dHJhcykg
+ewoJCXZhciB0aW1lID0gKGV4dHJhcyAmJiBleHRyYXMudGltZSk/IGV4dHJhcy50
+aW1lIDogMTAwOwoJCXZhciBzdGVwID0gKGV4dHJhcyAmJiBleHRyYXMuc3RlcCk/
+IGV4dHJhcy5zdGVwIDogMTA7CgkJREQuYW5pbWF0ZS5nbyhub2RlLCB0aW1lLCBz
+dGVwLCBkaXJlY3Rpb24sIGZ1bmN0aW9uKG9iaiwgdHdlZW4pIHsKCQkJREQub3Bh
+Y2l0eShvYmosIHR3ZWVuKTsKCQl9LCBleHRyYXMpOwoJCXJldHVybiBub2RlOwoJ
+fSwKCWtleTogewoJCWFjdGlvbjoge30sCgkJZGVwcmVzc2VkOiB7fSwKCQlsb2c6
+IGZhbHNlLAoJCXdpbGQ6IG51bGwsCgkJcHJlc3M6IGZ1bmN0aW9uKGUpIHsKCQkJ
+aWYgKERELmtleS53aWxkICE9IG51bGwpIHsKCQkJCXZhciBjb2RlID0gKGRvY3Vt
+ZW50LmFsbCkgPyBlLmtleUNvZGUgOiBlLmNoYXJDb2RlOwoJCQkJREQua2V5Lndp
+bGQoU3RyaW5nLmZyb21DaGFyQ29kZShjb2RlKSk7CgkJCQlpZiAoIURELmtleS5k
+ZXByZXNzZWRbMTZdICYmICFERC5rZXkuZGVwcmVzc2VkWzE3XSkgewoJCQkJCXJl
+dHVybiBmYWxzZTsKCQkJCX0KCQkJfQoJCX0sCgkJZG93bjogZnVuY3Rpb24oZSkg
+ewoJCQlERC5rZXkubG9nPyBERC5kZWJ1ZyhlLmtleUNvZGUpIDogbnVsbDsKCQkJ
+REQua2V5LmRlcHJlc3NlZFtlLmtleUNvZGVdID0gdHJ1ZTsKCQkJaWYgKERELmtl
+eS5hY3Rpb25bZS5rZXlDb2RlXSkgewoJCQkJREQua2V5LmFjdGlvbltlLmtleUNv
+ZGVdKGUpOwoJCQkJcmV0dXJuIGZhbHNlOwoJCQl9CgkJfSwKCQl1cDogZnVuY3Rp
+b24oZSkgewoJCQlERC5rZXkuZGVwcmVzc2VkW2Uua2V5Q29kZV0gPSBmYWxzZTsK
+CQl9Cgl9LAoJbW9kYWw6IHsKCQljcmVhdGU6IGZ1bmN0aW9uKGNvbnRlbnQpIHsK
+CQkJaWYgKCFERC5kb20uaWQoREQubW9kYWwuaWQpKSB7CgkJCQl2YXIgbW9kYWwg
+PSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdkaXYnKTsKCQkJCW1vZGFsLmlkID0g
+REQubW9kYWwuaWQ7CgkJCQl2YXIgY2xvc2VCb3ggPSBkb2N1bWVudC5jcmVhdGVF
+bGVtZW50KCdhJyk7CgkJCQljbG9zZUJveC5ocmVmID0gJyMnOwoJCQkJY2xvc2VC
+b3guaW5uZXJIVE1MID0gJ1gnOwoJCQkJY2xvc2VCb3guY2xhc3NOYW1lID0gJ3Bh
+IGJveCBSMCBUMCBERF9NT0RBTF9DTE9TRSc7CgkJCQltb2RhbC5hcHBlbmRDaGls
+ZChjb250ZW50KTsKCQkJCW1vZGFsLmFwcGVuZENoaWxkKGNsb3NlQm94KTsKCQkJ
+CURELmZhZGUobW9kYWwsIHRydWUsIHt0aW1lOjUwLCBzdGVwOjEwfSk7CgkJCQlk
+b2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKG1vZGFsKTsKCQkJCURELm1vZGFsLnBv
+c2l0aW9uKCk7CgkJCX0KCQl9LAoJCWRlc3Ryb3k6IGZ1bmN0aW9uKCkgewoJCQl2
+YXIgbW9kYWw7CgkJCWlmIChtb2RhbCA9IERELm1vZGFsLmdldCgpKSB7CgkJCQlE
+RC5mYWRlKG1vZGFsLCBmYWxzZSwgIHt0aW1lOjUwLCBzdGVwOjEwLCBlbmQ6IGZ1
+bmN0aW9uKCkgewoJCQkJCW1vZGFsLnBhcmVudE5vZGUucmVtb3ZlQ2hpbGQobW9k
+YWwpOwoJCQkJfX0pOwoJCQl9CgkJfSwKCQlnZXQ6IGZ1bmN0aW9uKCkgewoJCQly
+ZXR1cm4gREQuZG9tLmlkKERELm1vZGFsLmlkKTsKCQl9LAoJCWlkOiAnRERfTU9E
+QUwnLAoJCXBvc2l0aW9uOiBmdW5jdGlvbigpIHsKCQkJdmFyIG1vZGFsID0gREQu
+bW9kYWwuZ2V0KCk7CgkJCXZhciB2aWV3cG9ydEhlaWdodCA9IGRvY3VtZW50LmJv
+ZHkuY2xpZW50SGVpZ2h0OwoJCQl2YXIgc2Nyb2xsVG9wID0gZG9jdW1lbnQuYm9k
+eS5zY3JvbGxUb3A7CgkJCW1vZGFsLnN0eWxlLnRvcCA9IHNjcm9sbFRvcCArIHZp
+ZXdwb3J0SGVpZ2h0LzIgLSBtb2RhbC5vZmZzZXRIZWlnaHQvMiArICdweCc7CgkJ
+CW1vZGFsLnN0eWxlLm1hcmdpbkxlZnQgPSAtbW9kYWwub2Zmc2V0V2lkdGgvMiAr
+ICdweCc7CgkJfQoJfSwKCW9wYWNpdHk6IGZ1bmN0aW9uKG5vZGUsIGRlZ3JlZSkg
+ewoJCW5vZGUuc3R5bGUudmlzaWJpbGl0eSA9IChkZWdyZWUgIT0gMCk/ICd2aXNp
+YmxlJyA6ICdoaWRkZW4nOwoJCW5vZGUuc3R5bGUub3BhY2l0eSA9IGRlZ3JlZTsK
+CQlub2RlLnN0eWxlLmZpbHRlciA9ICdhbHBoYShvcGFjaXR5PScrIGRlZ3JlZSox
+MDAgKycpJzsKCX0KfTsKCkRELmV2ZW50LmFkZChkb2N1bWVudCwgJ2tleWRvd24n
+LCBERC5rZXkuZG93bik7CkRELmV2ZW50LmFkZChkb2N1bWVudCwgJ2tleXByZXNz
+JywgREQua2V5LnByZXNzKTsKREQuZXZlbnQuYWRkKGRvY3VtZW50LCAna2V5dXAn
+LCBERC5rZXkudXApOwoKREQuZXZlbnQuZGVsZWdhdGUoJy5ERF9NT0RBTF9DTE9T
+RScsICdjbGljaycsIGZ1bmN0aW9uKG5vZGUsIGUpIHsKCURELmV2ZW50LnByZXZl
+bnQoZSk7Cglub2RlLmJsdXIoKTsKCURELm1vZGFsLmRlc3Ryb3koKTsKfSk7CgpE
+RC5ldmVudC5kb21SZWFkeUNoZWNrKCk7
+
+------------iPgX44psirM4drV5MRoS2o--

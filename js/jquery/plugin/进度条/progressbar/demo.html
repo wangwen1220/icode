@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Jquery ProgressBar 测试页面-梦三秋，Jquery学习，Jquery插件教程，PHP学习</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/common.css" type="text/css" />
+	<style type="text/css">
+		table tr { vertical-align: top; }
+		table td { padding: 3px; font-size:12px }
+		div.contentblock { padding-bottom: 25px; }
+		#uploadprogressbar { display: none; }
+	</style>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.progressbar.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#pb1").progressBar();
+			$("#pb2").progressBar({ barImage: 'images/progressbg_yellow.gif'} );
+			$("#pb3").progressBar({ barImage: 'images/progressbg_orange.gif', showText: false} );
+			$("#pb4").progressBar(65, { showText: false, barImage: 'images/progressbg_red.gif'} );
+			$(".pb5").progressBar({ max: 2000, textFormat: 'fraction', callback: function(data) { if (data.running_value == data.value) { alert("到达目标点了！"); } }} );
+		});
+	</script>
+</head>
+<body>
+<div class="out_box">
+	<div class="header">
+		<span class="author_time">by <a href="http://www.skygq.com">梦三秋</a> 2010-12-08 14:00</span>
+    </div>
+    <h1 class="title">Jquery ProgressBar 测试页面</h1>
+	<div class="in_box">
+		<div class="main_con">
+			<div class="test_list">
+				<h3 class="mb10_f14">前言^o^</h3>
+				<div class="code">
+					Jquery进度条插件至今我已经发现很多了，但是一直都没怎么研究，为什么？呵呵，因为有的进度条插件，我一看图片展示立马就没了兴趣，因为太丑了。具体那些进度条插件到底好不好用，我还真不知道，但是昨天我偶尔在网上发现了这款插件，立马就被其漂亮的效果，简单的代码所吸引了。
+					目前的最新版本为2.01<br>
+					我一直都想做个上传文件的进度条，但是由于水平有限，一直都做不出来，呵呵~~但是这个插件里面有个现成的将这个插件和上传文件结合起来的进度条功能，遗憾的是，在demo中，没有效果。也在网上找了些关于这个插件的用法，结果还是没能让我满意。<br>
+					所以文件上传的进度条，我还是能没搞定，如果有哪位大神通晓这门技术，还请不吝赐教，小弟感激不尽。<br>
+					此插件由于是外国人写的，所以插件文件中的注释啥的都是英文，而小弟的英文也不咋地，呵呵~于是就自己对于代码的理解以及注释英文的理解，将插件中的注释汉化了，呵呵~英文水平有限，还请各位大神多多担待。<br>
+					此外我对这个插件进行了一点小的修改。
+				</div>
+			</div>
+			<div class="test_list">
+				<h3>废话一大堆了，上效果</h3>
+				<div class="code">
+					<table>
+						<tr>
+							<th>说明</th>
+							<th>效果</th>
+							<th>操作（点击下面的数字）</th>
+						</tr>
+						<tr>
+							<td>默认的多彩进度条</td>
+							<td>
+								<span class="progressBar" id="pb1">100%</span>
+							</td>
+							<td>
+								<a href="javascript:void(0)" onclick="$('#pb1').progressBar(20);">20</a> |
+								<a href="javascript:void(0)" onclick="$('#pb1').progressBar(40);">40</a> |
+								<a href="javascript:void(0)" onclick="$('#pb1').progressBar(60);">60</a> |
+								<a href="javascript:void(0)" onclick="$('#pb1').progressBar(80);">80</a> |
+								<a href="javascript:void(0)" onclick="$('#pb1').progressBar(100);">100</a>
+							</td>
+						</tr>
+						<tr>
+							<td>黄色的进度条</td>
+							<td><span class="progressBar" id="pb2">35%</span></td>
+							<td>
+								<a href="javascript:void(0)" onclick="$('#pb2').progressBar(20);">20</a> |
+								<a href="javascript:void(0)" onclick="$('#pb2').progressBar(40);">40</a> |
+								<a href="javascript:void(0)" onclick="$('#pb2').progressBar(60);">60</a> |
+								<a href="javascript:void(0)" onclick="$('#pb2').progressBar(80);">80</a> |
+								<a href="javascript:void(0)" onclick="$('#pb2').progressBar(100);">100</a>
+							</td>
+						</tr>
+						<tr>
+							<td>橘色的进度条（不带进度百分比提示）</td>
+							<td><span class="progressBar" id="pb3">55%</span></td>
+							<td>
+								<a href="javascript:void(0)" onclick="$('#pb3').progressBar(20);">20</a> |
+								<a href="javascript:void(0)" onclick="$('#pb3').progressBar(40);">40</a> |
+								<a href="javascript:void(0)" onclick="$('#pb3').progressBar(60);">60</a> |
+								<a href="javascript:void(0)" onclick="$('#pb3').progressBar(80);">80</a> |
+								<a href="javascript:void(0)" onclick="$('#pb3').progressBar(100);">100</a>
+							</td>
+						</tr>
+						<tr>
+							<td>红色的进度条（不带进度百分比提示）</td>
+							<td><span class="progressBar" id="pb4">85%</span></td>
+							<td>
+								<a href="javascript:void(0)" onclick="$('#pb4').progressBar(20);">20</a> |
+								<a href="javascript:void(0)" onclick="$('#pb4').progressBar(40);">40</a> |
+								<a href="javascript:void(0)" onclick="$('#pb4').progressBar(60);">60</a> |
+								<a href="javascript:void(0)" onclick="$('#pb4').progressBar(80);">80</a> |
+								<a href="javascript:void(0)" onclick="$('#pb4').progressBar(100);">100</a>
+							</td>
+						</tr>
+						<tr>
+							<td>最大值为2000<br>
+								多彩进度条</td>
+							<td><span class="progressBar pb5">2100</span></td>
+							<td>
+								<a href="javascript:void(0)" onclick="$('.pb5').progressBar(400);">20%</a> |
+								<a href="javascript:void(0)" onclick="$('.pb5').progressBar(800);">40%</a> |
+								<a href="javascript:void(0)" onclick="$('.pb5').progressBar(1200);">60%</a> |
+								<a href="javascript:void(0)" onclick="$('.pb5').progressBar(1600);">80%</a> |
+								<a href="javascript:void(0)" onclick="$('.pb5').progressBar(1800);">90%</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="code">
+					<div class="mb10 f9"><strong>JS代码：</strong></div>
+					<xmp>$(document).ready(function() {
+		$("#pb1").progressBar();
+		$("#pb2").progressBar({ barImage: 'images/progressbg_yellow.gif'} );
+		$("#pb3").progressBar({ barImage: 'images/progressbg_orange.gif', showText: false} );
+		$("#pb4").progressBar(65, { showText: false, barImage: 'images/progressbg_red.gif'} );
+		$(".pb5").progressBar({ max: 2000, textFormat: 'fraction', callback: function(data) { if (data.running_value == data.value) { alert("Callback example: Target reached!"); } }} );
+	});</xmp>
+				</div>
+			</div>
+			<div class="test_list">
+				<h3>关于参数的一些说明</h3>
+				<div class="code">
+					此插件接受两个参数<br>
+					<font color="#Ff0000">参数一</font>:为想要达到的进度值，非必须，如果没带此参数的话，那插件会从html代码中取得。<br>
+					比如:<xmp><span class="progressBar" id="pb1">100%</span></xmp>这里的100%说明要达到的目标进度为100%，如果超过100%，也还是认为是100%（原版插件未做此处理），也可以写为100不带百分号，另外，如果调用插件的时候第一个参数带了，而且html中也写了，那么插件会以参数优先而无视html中写的数值。<br>
+					<br>
+					<font color="#Ff0000">参数二</font>:为数组（json方式），非必须的。<br>
+					关于这个json数组的一些值的意义：<br>
+					<br>
+					<table>
+					<tr>
+						<td>steps:</td>
+						<td>到达目标所采取的步长，设定的值越高，进度越慢</td>
+					</tr>
+					<tr>
+						<td>stepDuration:</td>
+						<td>setInterval的时间参数，单位ms</td>
+					</tr>
+					<tr>
+						<td>max:</td>
+						<td>最大值，默认为100</td>
+					</tr>
+					<tr>
+						<td>showText:</td>
+						<td>在进度条旁边用百分数或者分数显示进度与否，默认为true，显示</td>
+					</tr>
+					<tr>
+						<td>textFormat:</td>
+						<td>ShowText的显示形式，“percentage”表示百分数，“fraction”表示分数</td>
+					</tr>
+					<tr>
+						<td>width:</td>
+						<td>进度条图片的宽度，一般不用改的，除非你不用插件自带的图片，那时您需要计算自己的图的宽度</td>
+					</tr>
+					<tr>
+						<td>height:</td>
+						<td>进度条图片的高度，一般不用改的，除非你不用插件自带的图片，那时您需要计算自己的图的高度</td>
+					</tr>
+					<tr>
+						<td>callback:</td>
+						<td>回调函数，当进度达到目标值的时候触发的函数，默认没有</td>
+					</tr>
+					<tr>
+						<td>boxImage:</td>
+						<td>包着进度条的图片，一般不需要修改，除非你要DIY进度条图片</td>
+					</tr>
+					<tr>
+						<td>barImage:</td>
+						<td>进度条的图片，这个插件自带了5中颜色的进度条分别是：<br>
+							progressbg_black.gif,<br>
+							progressbg_green.gif,<br>
+							progressbg_orange.gif,<br>
+							progressbg_red.gif,<br>
+							progressbg_yellow.gif
+						</td>
+					</tr>
+					</table>
+				</div>
+			</div>
+			<div class="test_list">
+				<h3>下载DEMO</h3>
+				<div class="code">
+					下载英文原版，大家可以点击<a href="http://t.wits.sg/downloadsjquery.progressbar.2.01.zip">这里</a>下载完整的DEMO。<br>
+					梦三秋编辑版，大家可以点击<a href="http://www.skygq.com/demo/progressbar.rar">skygq.progressbar.rar</a>下载。
+				</div>
+			</div>
+			<div class="test_list">
+				<h3>结语了</h3>
+				<div class="code">
+					由于本人文字火候方面的欠缺，以及知识的缺乏，所以在插件的使用方面的介绍很简单。如有不明白的地方，我们可以一起交流。
+					另外如果有牛人知道如何用php和这个插件配合制作上传文件进度条的话，还请赐教，感激不尽！
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+    "name": "switchable",
+    "version": "0.9.11",
+    "root": "arale",
+    "description": "Switchable提供了切换的基本操作，并通过参数配置实现了自动播放，循环，切换等操作，并提供不同的特点封装成了Tabs, Slide, Carousel, Accordion模块。用户可以根据自己的需求引用不同的模块。",
+    "tag": "widget",
+    "homepage": "http://aralejs.org/switchable",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/aralejs/switchable.git"
+    },
+    "bugs": {
+        "url": "https://github.com/aralejs/switchable/issues"
+    },
+    "output": {
+        "switchable.js": ".",
+        "tabs.js": "default",
+        "slide.js": "default",
+        "accordion.js": "default",
+        "carousel.js": "default"
+    },
+    "dependencies": {
+        "$":"$",
+        "widget": "arale/widget/1.0.2/widget",
+        "easing": "arale/easing/1.0.0/easing"
+    },
+    "tests": ["switchable"]
+}

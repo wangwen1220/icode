@@ -1,0 +1,1 @@
+{"versioning":{"latest":"1.0.1"},"versions":{"1.0.1":["base.js"]},"root":"arale","name":"base","tag":"infrastructure","lastUpdated":1352950225191,"type":"","description":"Base 是一个基础类，提供 Class、Events、Attribute 和 Aspect 支持。"}

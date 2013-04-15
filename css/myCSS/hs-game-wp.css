@@ -1,0 +1,305 @@
+@import 'hs-game-global.css';
+@charset 'utf-8';
+
+/*
+名称：火秀网络游戏样式
+简介：火秀网络游戏页面样式
+维护：王文 wangwen1220#139.com
+日期：2012-11-12
+*/
+
+/* TPL
+----------------------------------------------------------------------------- */
+/*
+ * @name: .ui-switch
+ * @overview: 通用滑动图文焦点图模块－可用缩略图或前后导航触发
+ * @require: jquery.switchable-2.0
+ */
+.ui-switch-wrapper {
+	position: relative;
+	width: 700px;
+	height: 320px;
+	overflow: hidden;
+	background-color: #eee;
+}
+.ui-switch {
+	position: relative;
+	width: 100%;
+	height: 240px;
+	overflow: hidden;
+	background-color: #eee;
+}
+.ui-switch-item {
+	float: left;
+	width: 700px;
+	overflow: hidden;
+}
+.ui-switch-item .img {
+	float: left;
+}
+.ui-switch-item img {
+	display: block;
+}
+.ui-switch-item .title,
+.ui-switch-item .cnt {
+	margin: 10px 10px 0 510px;
+	*word-wrap: break-word;
+}
+.ui-switch-item .title {
+	font: 18px/28px '微软雅黑','黑体','宋体',arial,verdana,sans-serif;
+	color: #000;
+	/* min-height: 50px; */
+	/* overflow: hidden; */
+}
+.ui-switch-item .title a {
+	color: #000;
+}
+.ui-switch-item .cnt {
+	line-height: 18px;
+	color: #666;
+}
+.ui-switch-triggers {
+	position: relative;
+	margin: 12px 20px 0;
+	padding: 0 20px;
+	*zoom: 1;
+	_padding-right: 0;
+}
+.ui-switch-triggers .ui-switch-next,
+.ui-switch-triggers .ui-switch-prev {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -16px;
+	display: block;
+	width: 20px;
+	height: 32px;
+	overflow: hidden;
+	text-indent: -9999px;
+	outline: none;
+	background: url(../images/game/btn-switch-next.png) no-repeat 50% 50%;
+}
+.ui-switch-triggers .ui-switch-prev {
+	right: auto;
+	left: 0;
+	background-image: url(../images/game/btn-switch-prev.png);
+}
+.ui-switch-triggers .ui-switch-next-disable {
+	background-image: url(../images/game/btn-switch-next-disable.png);
+}
+.ui-switch-triggers .ui-switch-prev-disable {
+	background-image: url(../images/game/btn-switch-prev-disable.png);
+}
+.ui-switch-triggers-list {
+	margin-left: 20px;
+	padding: 3px 0;
+	overflow: hidden;
+}
+.ui-switch-triggers-item {
+	float: left;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.ui-switch-triggers-item a,
+.ui-switch-triggers-item img {
+	display: block;
+	/* width: 100px; */
+	/* height: 50px; */
+	/* overflow: hidden; */
+}
+.ui-switch-mask {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 37px;
+	width: 100px;
+	height: 50px;
+	border: 3px solid #30A7FF;
+	cursor: pointer;
+	/* border-radius: 4px; */
+}
+
+/*
+ * @name: .ui-header-wp
+ * @overview: WP 标题样式
+ * @require: null
+ */
+.ui-header-wp {
+	margin: 18px 0;
+	height: 32px;
+	line-height: 32px;
+	border-bottom: 1px solid #DFDFDF;
+}
+.ui-header-wp a {
+	display: inline-block;
+	height: 100%;
+	padding: 0 10px;
+	font: 17px/32px '微软雅黑','黑体','宋体',arial,verdana,sans-serif;
+	color: #666;
+	text-decoration: none;
+}
+.ui-header-wp a.cur,
+.ui-header-wp a:hover,
+.ui-header-wp a:focus {
+	color: #fff;
+	background-color: #30A7FF;
+	text-decoration: none;
+}
+
+/* Global
+----------------------------------------------------------------------------- */
+/** Common **/
+.ui-pager .current {
+	border-color: #30A7FF;
+	background-color: #30A7FF;
+}
+.ui-img-list-plus .ui-img-list-item .img:hover {
+	border-color: #30A7FF;
+}
+.ui-header,
+.ui-box-side-title {
+	background-image: url(../images/game/icon-ui-title-gray.png);
+}
+
+/* ui-box-side-step */
+.ui-box-side-step {
+	background-color: #fff;
+}
+.ui-box-side-step .ui-step dd {
+	margin-bottom: 0;
+	padding-bottom: 8px;
+}
+.ui-box-side-step .ui-step dd a {
+	margin-right: 4px;
+	display: inline-block;
+}
+.ui-box-side-step .ui-img-list-plus {
+	left: 10px;
+	margin-left: -10px;
+	margin-top: 10px;
+}
+.ui-box-side-step .ui-img-list-item {
+	margin-right: 10px;
+}
+.ui-box-side-step .ui-img-list-item .img {
+	border: none;
+}
+
+/** Header **/
+#header {
+	*position: relative;
+	*z-index: 5;
+}
+#nav {
+	height: 32px;
+	background: #30A7FF;
+}
+#nav .drop-down {
+	border-color: #85C0EC;
+}
+#nav .drop-down h3 a {
+	background-image: url(../images/game/icon-wp-white.png);
+}
+#nav .drop-down ul {
+	border: 3px solid rgba(81, 170, 255, .8);
+	border: 3px solid #33AAFF\9;
+	border-top: none;
+}
+
+/** Side **/
+#side .ui-box-side-gallery .ui-img-list-plus {
+	left: 16px;
+	margin-left: -16px;
+}
+#side .ui-box-side-gallery .ui-img-list-item {
+	margin-right: 16px;
+}
+
+/* Layout
+----------------------------------------------------------------------------- */
+/** 通用 **/
+body.game-wp .ui-box {
+	border-top-color: #30A7FF;
+}
+body.game-wp .ui-content-item .title a {
+	font-size: 18px;
+}
+body.game-wp .ui-content-item .title a:hover,
+body.game-wp .ui-content-item .title a:focus {
+	background-color: #30A7FF;
+}
+body.game-wp .ui-content-item .status {
+	color: #999;
+}
+body.game-wp .ui-pager {
+	margin: 30px 0;
+	text-align: left;
+}
+
+/** 主页 **/
+/* 主内容 */
+#content-wp-main {
+	/* margin-top: 20px; */
+}
+#content-wp-main .ui-layout-item-right .ui-box {
+	margin-top: 0;
+	height: 317px;
+	background: url(../images/game/bg-ui-header.png) repeat-x 0 0;
+}
+#content-wp-main .ui-layout-item-right .ui-step {
+	margin: -2px 10px 0;
+}
+
+/* WP新闻 */
+#content-wp-news .ui-box-item-main {
+	float: left;
+	padding: 0 15px;
+	width: 689px;
+}
+#content-wp-news .ui-box-item-right {
+	padding-bottom: 34px; /* 对齐 */
+}
+#content-wp-news .ui-box-item-right .ui-box-side {
+	border: none;
+	margin-bottom: 20px;
+}
+#content-wp-news .ui-box-item-right .ui-box-side-gallery .ui-img-list-plus {
+	left: 10px;
+	margin-left: -10px;
+}
+#content-wp-news .ui-box-item-right .ui-box-side-gallery .ui-img-list-item {
+	margin-right: 10px;
+}
+
+/** 列表页 **/
+body.game-wp-list #main .ui-header-wp {
+	margin: 5px 0 0;
+	height: auto;
+}
+body.game-wp-list #main .ui-header-wp a {
+	position: relative;
+	display: inline-block;
+	border: 1px solid #fff;
+	border-bottom: none;
+	background-color: #fff;
+}
+body.game-wp-list #main .ui-header-wp a.cur,
+body.game-wp-list #main .ui-header-wp a:hover,
+body.game-wp-list #main .ui-header-wp a:focus {
+	bottom: -1px;
+	padding-bottom: 3px;
+	border-color: #EBEBEB;
+	border-top: 2px solid #30A7FF;
+	color: #333;
+	background: #fff url(../images/game/bg-ui-header.png) repeat-x 0 -5px;
+}
+body.game-wp-list #side .ui-box-side-step {
+	border-top: 2px solid #30A7FF;
+	background: url(../images/game/bg-ui-header.png) repeat-x 0 0;
+}
+body.game-wp-list #side .ui-box-side-step .ui-box-side-title {
+	border-bottom: none;
+}
+body.game-wp-list #side .ui-box-side-step .ui-step {
+	margin-top: -12px;
+}

@@ -1,0 +1,2589 @@
+Content-Type: multipart/related; start=<op.mhtml.1355632763324.1325a7710d78f023@192.168.1.111>; boundary=----------n1el3FQf6JqvXkVC89N4hL
+Content-Location: http://www.css88.com/doc/underscore/
+Subject: =?utf-8?Q?Underscore.js=20Version=20(1.2.3)=20=E4=B8=AD=E6=96=87=E6=96=87=E6=A1=A3?=
+MIME-Version: 1.0
+
+------------n1el3FQf6JqvXkVC89N4hL
+Content-Disposition: inline; filename=default.htm
+Content-Type: text/html; charset=utf-8; name=default.htm
+Content-ID: <op.mhtml.1355632763324.1325a7710d78f023@192.168.1.111>
+Content-Location: http://www.css88.com/doc/underscore/
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <title>Underscore.js  Version (1.2.3) 中文文档</title>
+  <style>
+    body {
+      font-size: 16px;
+      line-height: 24px;
+      background: #f0f0e5;
+      color: #252519;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
+    }
+    div.container {
+      width: 900px;
+      margin: 50px 0 50px 50px;
+    }
+    p {
+      width: 550px;
+    }
+      #documentation p {
+        margin-bottom: 4px;
+      }
+    a, a:visited {
+      padding: 0 2px;
+      text-decoration: none;
+      background: #dadaba;
+      color: #252519;
+    }
+    a:active, a:hover {
+      color: #000;
+      background: #f0c095;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 40px;
+    }
+    b.header {
+      font-size: 18px;
+    }
+    span.alias {
+      font-size: 14px;
+      font-style: italic;
+      margin-left: 20px;
+    }
+    table, tr, td {
+      margin: 0; padding: 0;
+    }
+      td {
+        padding: 2px 12px 2px 0;
+      }
+    ul {
+      list-style-type: circle;
+      padding: 0 0 0 20px;
+    }
+      li {
+        width: 500px;
+        margin-bottom: 10px;
+      }
+    code, pre, tt {
+      font-family: Monaco, Consolas, "Lucida Console", monospace;
+      font-size: 12px;
+      line-height: 18px;
+      color: #555529;
+    }
+      code {
+        margin-left: 20px;
+      }
+      pre {
+        font-size: 12px;
+        padding: 2px 0 2px 12px;
+        border-left: 6px solid #aaaa99;
+        margin: 0px 0 30px;
+      }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Underscore.js Version (1.2.3) 中文文档</h1>
+<div><script type="text/javascript"><!--
+google_ad_client = "ca-pub-1668200119690891";
+/* DEMO页面大广告 */
+google_ad_slot = "2927776924";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+    <p>
+      <a href="http://github.com/documentcloud/underscore/">Underscore</a> 一个非常实用的JavaScript库，提供许多编程功能的支持，就像你期望
+      <a href="http://prototypejs.org/api">Prototype.js</a>
+      (或者 <a href="http://www.ruby-doc.org/core/classes/Enumerable.html">Ruby</a>),
+     有这些功能且不扩展任何JavaScript的原生对象。 It's the
+      tie to go along with <a href="http://docs.jquery.com">jQuery</a>'s tux.
+    </p>
+
+    <p>
+      Underscore提供60多个方法，即有普通的功能，例如: <b>map</b>, <b>select</b>, <b>invoke</b> &mdash;
+      也有更多特殊的编程辅助方法，例如：函数绑定、javascript模板、绝对相等判断等待。 如果一些现代的浏览器提供了内置的 <b>forEach</b>, <b>map</b>, <b>reduce</b>,
+      <b>filter</b>, <b>every</b>, <b>some</b> 和 <b>indexOf</b>方法，Underscore就委托给浏览器原生的方法。
+    </p>
+
+    <p> 
+	Underscore提供完整的<a href="http://documentcloud.github.com/underscore/test/test.html">测试用例集</a>供你精读。
+    </p> 
+    
+    <p> 
+		你也可以阅读有注释的<a href="http://documentcloud.github.com/underscore/docs/underscore.html">源代码</a>。
+    </p> 
+ 
+    <p> 
+	项目代码放在<a href="http://github.com/documentcloud/underscore/">GitHub</a>上，你可以通过<a href="http://github.com/documentcloud/underscore/issues">issues页</a>、Freenode的<tt>#documentcloud</tt>频道、发送tweets给<a href="http://twitter.com/documentcloud">@documentcloud</a>三个途径报告bug以及参与特性讨论。
+    </p> 
+ 
+    <p> 
+      <i>Underscore是<a href="http://documentcloud.org/">DocumentCloud</a>的一个开源组件。</i> 
+    </p> 
+ 
+    <h2>下载 <i style="padding-left: 12px; font-size:12px;">(Right-click, and use "Save As")</i></h2> 
+
+    <table>
+      <tr>
+        <td><a href="underscore.js">Development Version (1.2.3)</a></td>
+        <td><i>34kb, Uncompressed with Comments</i></td>
+      </tr>
+      <tr>
+        <td><a href="underscore-min.js">Production Version (1.2.3)</a></td>
+        <td><i>&lt; 4kb, Minified and Gzipped</i></td>
+      </tr>
+    </table>
+
+    <h2>Table of Contents</h2>
+    
+    <a href="#styles">Object-Oriented and Functional Styles（面向对象和函数风格）</a>
+
+    <p>
+      <b>Collections（收集）</b>
+      <br />
+      <span class="methods"><a href="#each">each</a>, <a href="#map">map</a>,
+      <a href="#reduce">reduce</a>, <a href="#reduceRight">reduceRight</a>,
+      <a href="#find">find</a>, <a href="#filter">filter</a>,
+      <a href="#reject">reject</a>, <a href="#all">all</a>,
+      <a href="#any">any</a>, <a href="#include">include</a>,
+      <a href="#invoke">invoke</a>, <a href="#pluck">pluck</a>,
+      <a href="#max">max</a>, <a href="#min">min</a>,
+      <a href="#sortBy">sortBy</a>, <a href="#groupBy">groupBy</a>,
+      <a href="#sortedIndex">sortedIndex</a>, <a href="#shuffle">shuffle</a>,
+      <a href="#toArray">toArray</a>, <a href="#size">size</a></span>
+    </p>
+
+    <p>
+      <b>Arrays（数组）</b>
+      <br />
+      <span class="methods"><a href="#first">first</a>, <a href="#initial">initial</a>, <a href="#last">last</a>, <a href="#rest">rest</a>,
+      <a href="#compact">compact</a>, <a href="#flatten">flatten</a>, <a href="#without">without</a>, 
+      <a href="#union">union</a>, <a href="#intersection">intersection</a>, <a href="#difference">difference</a>,
+      <a href="#uniq">uniq</a>, <a href="#zip">zip</a>, <a href="#indexOf">indexOf</a>,
+      <a href="#lastIndexOf">lastIndexOf</a>, <a href="#range">range</a></span>
+    </p>
+
+    <p>
+      <b>Functions（函数）</b>
+      <br />
+      <span class="methods"><a href="#bind">bind</a>, <a href="#bindAll">bindAll</a>, 
+      <a href="#memoize">memoize</a>, <a href="#delay">delay</a>, <a href="#defer">defer</a>, 
+      <a href="#throttle">throttle</a>, <a href="#debounce">debounce</a>, 
+      <a href="#once">once</a>, <a href="#after">after</a>, <a href="#wrap">wrap</a>, <a href="#compose">compose</a></span>
+    </p>
+
+    <p>
+      <b>Objects（对象）</b>
+      <br />
+      <span class="methods"><a href="#keys">keys</a>, <a href="#values">values</a>,
+      <a href="#functions">functions</a>, <a href="#extend">extend</a>, <a href="#defaults">defaults</a>, <a href="#clone">clone</a>, <a href="#tap">tap</a>,
+      <a href="#isEqual">isEqual</a>, <a href="#isEmpty">isEmpty</a>, <a href="#isElement">isElement</a>,
+      <a href="#isArray">isArray</a>, <a href="#isArguments">isArguments</a>, <a href="#isFunction">isFunction</a>, <a href="#isString">isString</a>,
+      <a href="#isNumber">isNumber</a>, <a href="#isBoolean">isBoolean</a>, <a href="#isDate">isDate</a>, <a href="#isRegExp">isRegExp</a>,
+      <a href="#isNaN">isNaN</a>, <a href="#isNull">isNull</a>,
+      <a href="#isUndefined">isUndefined</a>
+      </span>
+    </p>
+
+    <p>
+      <b>Utility（功能）</b>
+      <br />
+      <span class="methods"><a href="#noConflict">noConflict</a>,
+      <a href="#identity">identity</a>, <a href="#times">times</a>, 
+      <a href="#mixin">mixin</a>, <a href="#uniqueId">uniqueId</a>, 
+      <a href="#escape">escape</a>, <a href="#template">template</a></span>
+    </p>
+
+    <p>
+      <b>Chaining</b>
+      <br />
+      <span class="methods"><a href="#chain">chain</a>, <a href="#value">value</a>
+    </p>
+
+    <div id="documentation">
+      
+      <h2 id="styles">Object-Oriented and Functional Styles</h2>
+
+      <p>根据自己的喜好，您可以使用下划线在一个面向对象或函数风格，下面的两行代码相同的效果，都是一组数字乘2。
+      </p>
+    <pre>
+_.map([1, 2, 3], function(n){ return n * 2; });
+_([1, 2, 3]).map(function(n){ return n * 2; });</pre>
+
+      <p>
+      	使用面向对象的风格允许您链式调用多个方法。在一个包装对象上调用调用<tt>chain</tt>，会导致后续所有的方法调用同时返回包装对象。使用<tt>value</tt>方法得到检索的最终值。这里有一个链式使用<b>map/flatten/reduce</b>的例子，为了获得每个单词在歌词中的数量。
+      </p>
+
+<pre>
+var lyrics = [
+  {line : 1, words : "I'm a lumberjack and I'm okay"},
+  {line : 2, words : "I sleep all night and I work all day"},
+  {line : 3, words : "He's a lumberjack and he's okay"},
+  {line : 4, words : "He sleeps all night and he works all day"}
+];
+
+_(lyrics).chain()
+  .map(function(line) { return line.words.split(' '); })
+  .flatten()
+  .reduce(function(counts, word) {
+    counts[word] = (counts[word] || 0) + 1;
+    return counts;
+}, {}).value();
+
+=&gt; {lumberjack : 2, all : 4, night : 2 ... }</pre>
+
+
+      <p> 
+	  另外，<a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/prototype">Array原型的方法</a>通过链式代理Underscore对象，
+，所以也能够在链式中使用数组的<tt>reverse</tt>、<tt>push</tt>方法修改数组。
+      </p> 
+
+      <h2>Collection Functions (Arrays or Objects)</h2>
+
+      <p id="each">
+        <b class="header">each</b><code>_.each(list, iterator, [context])</code>
+        <span class="alias">Alias: <b>forEach</b></span>
+        <br />
+        遍历<b>list</b>中的所有元素，按顺序用遍历输出每个元素。如果传递了<b>context</b>参数，则把<b>iterator</b>绑定到<b>context</b>对象上。每次调用<b>iterator</b>都会传递三个参数：<tt>(element, index, list)</tt>。如果list是个JavaScript对象，<b>iterator</b>的参数是 <tt>(value, key, list)</tt>)。存在原生的<b>forEach</b>方法，Underscore就委托给<b>forEach</b>。
+      </p>
+      <pre>
+_.each([1, 2, 3], function(num){ alert(num); });
+=&gt; alerts each number in turn...
+_.each({one : 1, two : 2, three : 3}, function(num, key){ alert(num); });
+=&gt; alerts each number in turn...</pre>
+
+      <p id="map">
+        <b class="header">map</b><code>_.map(list, iterator, [context])</code>
+        <br />
+        用转换函数把<b>list</b>中的每个值映射到一个新的数组。存在原生的<b>map</b>方法，就用原生<b>map</b>方法代替。如果list是个JavaScript对象，<b>iterator</b>的参数是<tt>(value, key, list)</tt>。
+      </p>
+      <pre>
+_.map([1, 2, 3], function(num){ return num * 3; });
+=&gt; [3, 6, 9]
+_.map({one : 1, two : 2, three : 3}, function(num, key){ return num * 3; });
+=&gt; [3, 6, 9]</pre>
+
+      <p id="reduce">
+        <b class="header">reduce</b><code>_.reduce(list, iterator, memo, [context])</code>
+        <span class="alias">Aliases: <b>inject, foldl</b></span>
+        <br />
+        reduce的别名为inject 和 foldl。<b>reduce</b>方法把列表中元素归结为一个简单的数值。<b>Memo</b>是reduce函数的初始值，reduce的每一步都需要由<b>iterator</b>返回。
+        
+      </p>
+      <pre>
+var sum = _.reduce([1, 2, 3], function(memo, num){ return memo + num; }, 0);
+=&gt; 6
+</pre>
+
+      <p id="reduceRight">
+        <b class="header">reduceRight</b><code>_.reduceRight(list, iterator, memo, [context])</code>
+        <span class="alias">Alias: <b>foldr</b></span>
+        <br />
+        <b>reducRight</b>是从右侧开始组合的元素的<b>reduce</b>函数，如果存在JavaScript 1.8版本的<b>reduceRight</b>，则用其代替。<b>Foldr</b>在javascript中不像其它有懒计算的语言那么有用（lazy evaluation：一种求值策略，只有当表达式的值真正需要时才对表达式进行计算）。
+        
+      </p>
+      <pre>
+var list = [[0, 1], [2, 3], [4, 5]];
+var flat = _.reduceRight(list, function(a, b) { return a.concat(b); }, []);
+=&gt; [4, 5, 2, 3, 0, 1]
+</pre>
+
+      <p id="find">
+        <b class="header">find</b><code>_.find(list, iterator, [context])</code>
+        <span class="alias">Alias: <b>detect</b></span>
+        <br />
+        遍历<b>list</b>，返回第一个通过<b>iterator</b>真值检测的元素值。如果找到匹配的元素立即返回，不会遍历整个list。
+      </p>
+      <pre>
+var even = _.find([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+=&gt; 2
+</pre>
+
+      <p id="filter">
+        <b class="header">filter</b><code>_.filter(list, iterator, [context])</code>
+        <span class="alias">Alias: <b>select</b></span>
+        <br />
+       遍历<b>list</b>，返回包含所有通过<b>iterator</b>真值检测的元素值。如果存在原生<b>filter</b>方法，则委托给<b>filter</b>。。
+      </p>
+      <pre>
+var evens = _.filter([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+=&gt; [2, 4, 6]
+</pre>
+
+      <p id="reject">
+        <b class="header">reject</b><code>_.reject(list, iterator, [context])</code>
+        <br />
+        返回那么没有通过<b>iterator</b>真值检测的元素数组，<b>filter</b>的相反函数。
+      </p>
+      <pre>
+var odds = _.reject([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+=&gt; [1, 3, 5]
+</pre>
+
+      <p id="all">
+        <b class="header">all</b><code>_.all(list, iterator, [context])</code>
+        <span class="alias">Alias: <b>every</b></span>
+        <br />
+       如果<b>list</b>中的所有元素都通过iterator的真值检测就返回<i>true</i>。如果存在原生的<b>every</b>方法，则委托给<b>every</b>。
+      </p>
+      <pre>
+_.all([true, 1, null, 'yes'], _.identity);
+=&gt; false
+</pre>
+
+      <p id="any">
+        <b class="header">any</b><code>_.any(list, [iterator], [context])</code>
+        <span class="alias">Alias: <b>some</b></span>
+        <br />
+        如果有任何一个元素通过通过 <b>iterator</b> 的真值检测就返回<i>true</i>。如果存在原生的<b>some</b>方法，则委托给<b>some</b>
+      </p>
+      <pre>
+_.any([null, 0, 'yes', false]);
+=&gt; true
+</pre>
+
+      <p id="include">
+        <b class="header">include</b><code>_.include(list, value)</code>
+        <span class="alias">Alias: <b>contains</b></span>
+        <br />
+        如果<b>list</b>包含指定的<b>value</b>则返回<i>true</i>，使用===检测是否相等。如果<b>list</b> 是数组，内部使用<b>indexOf</b>判断。
+      </p>
+      <pre>
+_.include([1, 2, 3], 3);
+=&gt; true
+</pre>
+
+      <p id="invoke">
+        <b class="header">invoke</b><code>_.invoke(list, methodName, [*arguments])</code>
+        <br />
+        在list的每个元素上执行<b>methodName</b>方法。任何传递给<b>invoke</b>的额外参数，invoke都会在调用methodName方法的时候传递给它。
+      </p>
+      <pre>
+_.invoke([[5, 1, 7], [3, 2, 1]], 'sort');
+=&gt; [[1, 5, 7], [1, 2, 3]]
+</pre>
+
+      <p id="pluck">
+        <b class="header">pluck</b><code>_.pluck(list, propertyName)</code>
+        <br />
+        <b>pluck</b>是<b>map</b>最常使用的用例模型的版本，即萃取对象数组中某属性值，返回一个数组
+      </p>
+      <pre>
+var stooges = [{name : 'moe', age : 40}, {name : 'larry', age : 50}, {name : 'curly', age : 60}];
+_.pluck(stooges, 'name');
+=&gt; ["moe", "larry", "curly"]
+</pre>
+
+      <p id="max">
+        <b class="header">max</b><code>_.max(list, [iterator], [context])</code>
+        <br />
+        返回<b>list</b>中的最大值。如果传递<b>iterator</b>参数，<b>iterator</b>将作为list排序的依据。
+      </p>
+      <pre>
+var stooges = [{name : 'moe', age : 40}, {name : 'larry', age : 50}, {name : 'curly', age : 60}];
+_.max(stooges, function(stooge){ return stooge.age; });
+=&gt; {name : 'curly', age : 60};
+</pre>
+
+      <p id="min">
+        <b class="header">min</b><code>_.min(list, [iterator], [context])</code>
+        <br />
+        返回<b>list</b>中的最小值。如果传递<b>iterator</b>参数，<b>iterator</b>将作为list排序的依据。
+      </p>
+      <pre>
+var numbers = [10, 5, 100, 2, 1000];
+_.min(numbers);
+=&gt; 2
+</pre>
+
+      <p id="sortBy">
+        <b class="header">sortBy</b><code>_.sortBy(list, iterator, [context])</code>
+        <br />
+        返回一个排序后的<b>list</b>。如果有<b>iterator</b>参数，<b>iterator</b>将作为list排序的依据。
+      </p>
+      <pre>
+_.sortBy([1, 2, 3, 4, 5, 6], function(num){ return Math.sin(num); });
+=&gt; [5, 4, 6, 3, 1, 2]
+</pre>
+
+      <p id="groupBy">
+        <b class="header">groupBy</b><code>_.groupBy(list, iterator)</code>
+        <br />
+        把一个集合分组为多个集合，<b>iterator</b>为分组条件的迭代器
+      </p>
+      <pre>
+_.groupBy([1.3, 2.1, 2.4], function(num){ return Math.floor(num); });
+=&gt; {1: [1.3], 2: [2.1, 2.4]}
+
+_.groupBy(['one', 'two', 'three'], 'length');
+=&gt; {3: ["one", "two"], 5: ["three"]}
+</pre>
+
+      <p id="sortedIndex">
+        <b class="header">sortedIndex</b><code>_.sortedIndex(list, value, [iterator])</code>
+        <br />
+        使用二分查找确定<b>value</b>在<b>list</b>中的位置序号，<b>value</b>按此序号插入能保持<b>list</b>原有的排序。如果传递<b>iterator</b>参数，<b>iterator</b>将作为list排序的依据
+        
+      </p>
+      <pre>
+_.sortedIndex([10, 20, 30, 40, 50], 35);
+=&gt; 3
+</pre>
+
+      <p id="shuffle">
+        <b class="header">shuffle</b><code>_.shuffle(list)</code>
+        <br />
+        返回 <b>list</b> 的序的副本，使用
+        <a href="http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle">Fisher-Yates shuffle</a>版本
+        
+      </p>
+      <pre>
+_.shuffle([1, 2, 3, 4, 5, 6]);
+=&gt; [4, 1, 6, 3, 5, 2]
+</pre>
+
+      <p id="toArray">
+        <b class="header">toArray</b><code>_.toArray(list)</code>
+        <br />
+        把<b>list</b>(任何可以迭代的对象)转换成一个Array，有助于<b>arguments</b>对象的转换。
+      </p>
+      <pre>
+(function(){ return _.toArray(arguments).slice(0); })(1, 2, 3);
+=&gt; [1, 2, 3]
+</pre>
+
+      <p id="size">
+        <b class="header">size</b><code>_.size(list)</code>
+        <br />
+        返回<b>list</b>的长度。
+      </p>
+      <pre>
+_.size({one : 1, two : 2, three : 3});
+=&gt; 3
+</pre>
+
+      <h2>Array Functions</h2>
+
+      <p>
+        <i>注： <b>arguments（参数）</b> 对象将在所有数组函数中工作 。<br />Note: All array functions will also work on the <b>arguments</b> object.</i>
+      </p>
+
+      <p id="first">
+        <b class="header">first</b><code>_.first(array, [n])</code>
+        <span class="alias">Alias: <b>head</b></span>
+        <br />
+        返回<b>array（数组）</b>的第一个元素。传递 <b>n</b>参数将返回数组中从第一个元素开始的<b>n</b>个元素。
+      </p>
+      <pre>
+_.first([5, 4, 3, 2, 1]);
+=&gt; 5
+</pre>
+
+      <p id="initial">
+        <b class="header">initial</b><code>_.initial(array, [n])</code>
+        <br />
+        返回数组中除了最后一个元素外的其他全部元素。尤其用于参数对象。传递 <b>n</b>参数将从结果中排除从最后一个开始的<b>n</b>个元素。
+        
+      </p>
+      <pre>
+_.initial([5, 4, 3, 2, 1]);
+=&gt; [5, 4, 3, 2]
+</pre>
+
+      <p id="last">
+        <b class="header">last</b><code>_.last(array, [n])</code>
+        <br />
+        返回<b>array（数组）</b>的最后一个元素。传递 <b>n</b>参数将返回数组中从最后一个元素开始的<b>n</b>个元素。
+        
+      </p>
+      <pre>
+_.last([5, 4, 3, 2, 1]);
+=&gt; 1
+</pre>
+
+      <p id="rest">
+        <b class="header">rest</b><code>_.rest(array, [index])</code>
+        <span class="alias">Alias: <b>tail</b></span>
+        <br />
+        返回数组中除了第一个元素外的其他全部元素。传递 <b>index</b>参数将返回数组中从<b>index</b>开始的新数组。
+        
+      </p>
+      <pre>
+_.rest([5, 4, 3, 2, 1]);
+=&gt; [4, 3, 2, 1]
+</pre>
+
+      <p id="compact">
+        <b class="header">compact</b><code>_.compact(array)</code>
+        <br />
+       返回一个删除所有<i>false</i>值的 <b>array</b>副本。
+        在javascript中, <i>false</i>, <i>null</i>, <i>0</i>, <i>""</i>,
+        <i>undefined</i> 和 <i>NaN</i> 都是<i>false</i>值.
+      </p>
+      <pre>
+_.compact([0, 1, false, 2, '', 3]);
+=&gt; [1, 2, 3]
+</pre>
+
+      <p id="flatten">
+        <b class="header">flatten</b><code>_.flatten(array)</code>
+        <br />
+        返回一个单嵌套的<b>array（数组）</b>（嵌套可以是任何深度）。
+      </p>
+      <pre>
+_.flatten([1, [2], [3, [[[4]]]]]);
+=&gt; [1, 2, 3, 4];
+</pre>
+
+      <p id="without">
+        <b class="header">without</b><code>_.without(array, [*values])</code>
+        <br />
+        返回一个删除所有实例值的 <b>array</b>副本。使用<i>===</i>表达式做相等测试。
+      </p>
+      <pre>
+_.without([1, 2, 1, 0, 3, 1, 4], 0, 1);
+=&gt; [2, 3, 4]
+</pre>
+
+      <p id="union">
+        <b class="header">union</b><code>_.union(*arrays)</code>
+        <br />
+        计算传入的 <b>arrays（数组）</b>并集：按顺序返回一个存在于一个或多个 <b>arrays（数组）</b>中独一无二的项目列表。
+      </p>
+      <pre>
+_.union([1, 2, 3], [101, 2, 1, 10], [2, 1]);
+=&gt; [1, 2, 3, 101, 10]
+</pre>
+
+      <p id="intersection">
+        <b class="header">intersection</b><code>_.intersection(*arrays)</code>
+        <br />
+        计算传入的 <b>arrays（数组）</b>交集。结果中的每个值是存在于传入的每个<b>arrays（数组）</b>。
+      </p>
+      <pre>
+_.intersection([1, 2, 3], [101, 2, 1, 10], [2, 1]);
+=&gt; [1, 2]
+</pre>
+
+      <p id="difference">
+        <b class="header">difference</b><code>_.difference(array, *others)</code>
+        <br />
+        类似于<b>without</b>，但从返回的值来自<b>array</b>参数数组，不存在于<b>other</b> 数组.
+      </p>
+      <pre>
+_.difference([1, 2, 3, 4, 5], [5, 2, 10]);
+=&gt; [1, 3, 4]
+</pre>
+
+      <p id="uniq">
+        <b class="header">uniq</b><code>_.uniq(array, [isSorted], [iterator])</code>
+        <span class="alias">Alias: <b>unique</b></span>
+        <br />
+        数组去重，生成无重复的<b>array</b>版本，使用<i>===</i>表达式做相等测试。如果您事先知道该  <b>array</b> 进行已经排序，传递<i>true</i>给<b>isSorted</b>将会更快的算法运行，如果您要计算转变类型的唯一项，可以传递一个<b>iterator</b> 函数。
+        If you want to compute unique items based on a transformation, pass an
+        <b>iterator</b> function.
+      </p>
+      <pre>
+_.uniq([1, 2, 1, 3, 1, 4]);
+=&gt; [1, 2, 3, 4]
+</pre>
+
+      <p id="zip">
+        <b class="header">zip</b><code>_.zip(*arrays)</code>
+        <br />
+        将 每个相应位置的<b>arrays</b>的值合并在一起。当你有单独的有用数据源时通过匹配数组索引协调。如果您正在使用嵌套的数组矩阵，<b>zip.apply</b>可以转置矩阵相似的方式。<br />
+        Merges together the values of each of the <b>arrays</b> with the
+        values at the corresponding position. Useful when you have separate
+        data sources that are coordinated through matching array indexes.
+        If you're working with a matrix of nested arrays, <b>zip.apply</b>
+        can transpose the matrix in a similar fashion.
+      </p>
+      <pre>
+_.zip(['moe', 'larry', 'curly'], [30, 40, 50], [true, false, false]);
+=&gt; [["moe", 30, true], ["larry", 40, false], ["curly", 50, false]]
+</pre>
+
+      <p id="indexOf">
+        <b class="header">indexOf</b><code>_.indexOf(array, value, [isSorted])</code>
+        <br />
+        返回<b>value</b>在该 <b>array</b> 中的索引值，如果<b>value</b>不存在 <b>array</b>中就返回<i>-1</i>。使用原生的<b>indexOf</b> 函数，除非它失效。如果您正在使用一个大数组，你知道数组已经排序，传递<tt>true</tt>给<b>isSorted</b>将更快的用二进制搜索
+      </p>
+      <pre>
+_.indexOf([1, 2, 3], 2);
+=&gt; 1
+</pre>
+
+      <p id="lastIndexOf">
+        <b class="header">lastIndexOf</b><code>_.lastIndexOf(array, value)</code>
+        <br />
+        返回<b>value</b>在该 <b>array</b> 中的从最后开始的索引值，如果<b>value</b>不存在 <b>array</b>中就返回<i>-1</i>。如果支持原生的<b>lastIndexOf</b>，将使用原生的<b>lastIndexOf</b>函数。
+      </p>
+      <pre>
+_.lastIndexOf([1, 2, 3, 1, 2, 3], 2);
+=&gt; 4
+</pre>
+
+      <p id="range">
+        <b class="header">range</b><code>_.range([start], stop, [step])</code>
+        <br />
+        一个用来创建整数灵活编号的列表的函数，便于<tt>each</tt> 和 <tt>map</tt>循环。如果省略<b>start</b>则默认为 <i>0</i>；<b>step</b> 默认为 <i>1</i>.返回一个从<b>start</b> 到<b>stop</b>的整数的列表，用<b>step</b>来增加 （或减少）独占。
+      </p>
+      <pre>
+_.range(10);
+=&gt; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+_.range(1, 11);
+=&gt; [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+_.range(0, 30, 5);
+=&gt; [0, 5, 10, 15, 20, 25]
+_.range(0, -10, -1);
+=&gt; [0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
+_.range(0);
+=&gt; []
+</pre>
+
+      <h2>Function (uh, ahem) Functions</h2>
+
+      <p id="bind">
+        <b class="header">bind</b><code>_.bind(function, object, [*arguments])</code>
+        <br />
+        把一个function绑定给一个object，任何时候调用方法，this都指向此object。随意的给函数绑定参数，预先设置这些参数，也称作currying(加脂法,怎么翻译好呢？)。
+      </p>
+      <pre>
+var func = function(greeting){ return greeting + ': ' + this.name };
+func = _.bind(func, {name : 'moe'}, 'hi');
+func();
+=&gt; 'hi: moe'
+</pre>
+
+      <p id="bindAll">
+        <b class="header">bindAll</b><code>_.bindAll(object, [*methodNames])</code>
+        <br />
+        把methodNames参数指定的方法绑定到对象上，这些方法就会在对象的上下文环境中执行。绑定函数用作事件处理函数时非常便利，否则函数被调用时this一点用也没有。如果不设置methodNames参数，对象上的所有方法都会被绑定。
+      </p>
+      <pre>
+var buttonView = {
+  label   : 'underscore',
+  onClick : function(){ alert('clicked: ' + this.label); },
+  onHover : function(){ console.log('hovering: ' + this.label); }
+};
+_.bindAll(buttonView);
+jQuery('#underscore_button').bind('click', buttonView.onClick);
+=&gt; When the button is clicked, this.label will have the correct value...
+</pre>
+
+      <p id="memoize">
+        <b class="header">memoize</b><code>_.memoize(function, [hashFunction])</code>
+        <br />
+        Memoizes方法可以缓存某函数的计算结果。对于耗时较长的计算很有帮助。如果传递了hashFunction参数，就用hashFunction的返回值作为key存储函数的计算结果。
+hashFunction默认使用function的第一个参数作为key
+      </p>
+      <pre>
+var fibonacci = _.memoize(function(n) {
+  return n &lt; 2 ? n : fibonacci(n - 1) + fibonacci(n - 2);
+});
+</pre>
+
+      <p id="delay">
+        <b class="header">delay</b><code>_.delay(function, wait, [*arguments])</code>
+        <br />
+        delay类似setTimeout，等待wait毫秒后调用function。如果传递可选的参数arguments，当function执行时arguments会传递给function。
+      </p>
+      <pre>
+var log = _.bind(console.log, console);
+_.delay(log, 1000, 'logged later');
+=&gt; 'logged later' // Appears after one second.
+</pre>
+
+      <p id="defer">
+        <b class="header">defer</b><code>_.defer(function)</code>
+        <br />
+        延迟调用function直到当前调用栈清空，类似使用延时为0的setTimeout方法。有助于执行开销大的计算和无阻塞UI线程的HTML渲染。
+      </p>
+      <pre>
+_.defer(function(){ alert('deferred'); });
+// Returns from the function before the alert runs.
+</pre>
+
+      <p id="throttle">
+        <b class="header">throttle</b><code>_.throttle(function, wait)</code>
+        <br />
+       返回一个像节流阀一样的函数，当重复调用函数的时候，最多每隔wait毫秒调用一次该函数。
+对于想控制一些触发频率较高的事件有帮助。
+      </p>
+      <pre>
+var throttled = _.throttle(updatePosition, 100);
+$(window).scroll(throttled);
+</pre>
+
+      <p id="debounce">
+        <b class="header">debounce</b><code>_.debounce(function, wait)</code>
+        <br />
+        重复调用一个防反跳的方法，每隔wait毫秒执行一次。所谓防反跳就是setTimeout前先clearTimeout，防止新定时器开始后还执行上次的定时任务。对于必须在一些输入（多是一些用户操作）停止到达后执行的行为有帮助。例如：渲染一个减价评论的预览，window resized后计算布局。
+      </p>
+      <pre>
+var lazyLayout = _.debounce(calculateLayout, 300);
+$(window).resize(lazyLayout);
+</pre>
+
+      <p id="once">
+        <b class="header">once</b><code>_.once(function)</code>
+        <br />
+        创建一个只能调用一次的函数。重复调用改进的方法也没有效果，还是返回第一次执行的结果。有助于初始化类型的方法，代替过去设置一个boolean标记及后续对标记检测。
+      </p>
+      <pre>
+var initialize = _.once(createApplication);
+initialize();
+initialize();
+// Application is only created once.
+</pre>
+
+      <p id="after">
+        <b class="header">after</b><code>_.after(count, function)</code>
+        <br />
+        创建一个某生命体（函数或方法）被调用count次后才可执行的函数。当你想在一组异步请求都返回后执行一段程序时after方法非常有帮助。
+      </p>
+      <pre>
+var renderNotes = _.after(notes.length, render);
+_.each(notes, function(note) {
+  note.asyncSave({success: renderNotes}); 
+});
+// renderNotes is run once, after all notes have saved.
+</pre>
+
+      <p id="wrap">
+        <b class="header">wrap</b><code>_.wrap(function, wrapper)</code>
+        <br />
+        把function包装进wrapper方法，function作为第一个参数。允许wrapper在function运行前后执行代码，并且有条件的执行。
+      </p>
+      <pre>
+var hello = function(name) { return "hello: " + name; };
+hello = _.wrap(hello, function(func) {
+  return "before, " + func("moe") + ", after";
+});
+hello();
+=&gt; 'before, hello: moe, after'
+</pre>
+
+      <p id="compose">
+        <b class="header">compose</b><code>_.compose(*functions)</code>
+        <br />
+        返回一个函数列的组合物，其中每个函数消费其后跟随函数的返回值。在数学关系上，f() g()和h()函数的组合产生f(g(h()))。
+      </p>
+      <pre>
+var greet    = function(name){ return "hi: " + name; };
+var exclaim  = function(statement){ return statement + "!"; };
+var welcome = _.compose(exclaim, greet);
+welcome('moe');
+=&gt; 'hi: moe!'
+</pre>
+
+      <h2>Object Functions</h2>
+
+      <p id="keys">
+        <b class="header">keys</b><code>_.keys(object)</code>
+        <br />
+        检索<b>object</b>的所有的属性名称。
+      </p>
+      <pre>
+_.keys({one : 1, two : 2, three : 3});
+=&gt; ["one", "two", "three"]
+</pre>
+
+      <p id="values">
+        <b class="header">values</b><code>_.values(object)</code>
+        <br />
+        返回 <b>object</b>所有的属性的值。
+      </p>
+      <pre>
+_.values({one : 1, two : 2, three : 3});
+=&gt; [1, 2, 3]
+</pre>
+
+      <p id="functions">
+        <b class="header">functions</b><code>_.functions(object)</code>
+        <span class="alias">Alias: <b>methods</b></span>
+        <br />
+        返回对象中的每个方法的名称排序列表 &mdash;即是说,每个对象的属性函数的名称。
+      </p>
+      <pre>
+_.functions(_);
+=&gt; ["all", "any", "bind", "bindAll", "clone", "compact", "compose" ...
+</pre>
+
+      <p id="extend">
+        <b class="header">extend</b><code>_.extend(destination, *sources)</code>
+        <br />
+        复制<b>source</b>对象中的所有属性覆盖到<b>destination</b>对象上，他是按照循序的，所以最后源将重写在前面参数相同名称的属性。
+        
+      </p>
+      <pre>
+_.extend({name : 'moe'}, {age : 50});
+=&gt; {name : 'moe', age : 50}
+</pre>
+
+      <p id="defaults">
+        <b class="header">defaults</b><code>_.defaults(object, *defaults)</code>
+        <br />
+        
+        用<b>defaults</b> 对象中属性填充<b>object</b>中缺少的属性的默认值。尽快填充属性，进一步的默认值将没有任何效果。
+      </p>
+      <pre>
+var iceCream = {flavor : "chocolate"};
+_.defaults(iceCream, {flavor : "vanilla", sprinkles : "lots"});
+=&gt; {flavor : "chocolate", sprinkles : "lots"}
+</pre>
+
+      <p id="clone">
+        <b class="header">clone</b><code>_.clone(object)</code>
+        <br />
+        创建 一个浅复制（浅拷贝）的克隆<b>object</b>。任何嵌套的对象或数组都通过引用拷贝，不会复制。
+       
+      </p>
+      <pre>
+_.clone({name : 'moe'});
+=&gt; {name : 'moe'};
+</pre>
+
+      <p id="tap">
+        <b class="header">tap</b><code>_.tap(object, interceptor)</code>
+        <br />
+        用 <b>object</b>调用<b>interceptor</b>，然后返回<b>object</b>。这种方法的主要目的是"进入"方法链，为了对中间结果链内执行操作。
+        
+      </p>
+      <pre>
+_([1,2,3,200]).chain().
+  filter(function(num) { return num % 2 == 0; }).
+  tap(console.log).
+  map(function(num) { return num * num }).
+  value();
+=&gt; [2, 200]
+=&gt; [4, 40000]
+</pre>
+
+      <p id="isEqual">
+        <b class="header">isEqual</b><code>_.isEqual(object, other)</code>
+        <br />
+        执行两个对象之间的优化深度比较，确定他们是否应被视为相等。
+      </p>
+      <pre>
+var moe   = {name : 'moe', luckyNumbers : [13, 27, 34]};
+var clone = {name : 'moe', luckyNumbers : [13, 27, 34]};
+moe == clone;
+=&gt; false
+_.isEqual(moe, clone);
+=&gt; true
+</pre>
+
+      <p id="isEmpty">
+        <b class="header">isEmpty</b><code>_.isEmpty(object)</code>
+        <br />
+        如果<b>object</b> 不包含值，返回<i>true</i>
+      </p>
+      <pre>
+_.isEmpty([1, 2, 3]);
+=&gt; false
+_.isEmpty({});
+=&gt; true
+</pre>
+
+      <p id="isElement">
+        <b class="header">isElement</b><code>_.isElement(object)</code>
+        <br />
+        
+        如果<b>object</b>是一个DOM元素，返回<i>true</i>
+      </p>
+      <pre>
+_.isElement(jQuery('body')[0]);
+=&gt; true
+</pre>
+
+      <p id="isArray">
+        <b class="header">isArray</b><code>_.isArray(object)</code>
+        <br />
+        如果<b>object</b>是一个数组，返回<i>true</i>
+      </p>
+      <pre>
+(function(){ return _.isArray(arguments); })();
+=&gt; false
+_.isArray([1,2,3]);
+=&gt; true
+</pre>
+
+      <p id="isArguments">
+        <b class="header">isArguments</b><code>_.isArguments(object)</code>
+        <br />
+        如果<b>object</b>是一个参数对象，返回<i>true</i>
+      </p>
+      <pre>
+(function(){ return _.isArguments(arguments); })(1, 2, 3);
+=&gt; true
+_.isArguments([1,2,3]);
+=&gt; false
+</pre>
+
+      <p id="isFunction">
+        <b class="header">isFunction</b><code>_.isFunction(object)</code>
+        <br />
+        如果<b>object</b>是一个函数，返回<i>true</i>
+      </p>
+      <pre>
+_.isFunction(alert);
+=&gt; true
+</pre>
+
+      <p id="isString">
+        <b class="header">isString</b><code>_.isString(object)</code>
+        <br />
+        如果<b>object</b>是一个字符串，返回<i>true</i>
+      </p>
+      <pre>
+_.isString("moe");
+=&gt; true
+</pre>
+
+      <p id="isNumber">
+        <b class="header">isNumber</b><code>_.isNumber(object)</code>
+        <br />
+        如果<b>object</b>是一个数值，返回<i>true</i>
+      </p>
+      <pre>
+_.isNumber(8.4 * 5);
+=&gt; true
+</pre>
+
+      <p id="isBoolean">
+        <b class="header">isBoolean</b><code>_.isBoolean(object)</code>
+        <br />
+        如果<b>object</b>是一个布尔值，返回<i>true</i>
+      </p>
+      <pre>
+_.isBoolean(null);
+=&gt; false
+</pre>
+
+      <p id="isDate">
+        <b class="header">isDate</b><code>_.isDate(object)</code>
+        <br />
+        如果<b>object</b>是一个日期时间，返回<i>true</i>
+      </p>
+      <pre>
+_.isDate(new Date());
+=&gt; true
+</pre>
+
+      <p id="isRegExp">
+        <b class="header">isRegExp</b><code>_.isRegExp(object)</code>
+        <br />
+        如果<b>object</b>是一个正则表达式，返回<i>true</i>
+      </p>
+      <pre>
+_.isRegExp(/moe/);
+=&gt; true
+</pre>
+
+      <p id="isNaN">
+        <b class="header">isNaN</b><code>_.isNaN(object)</code>
+        <br />
+        如果<b>object</b>是 <i>NaN</i>，返回<i>true</i>。
+        <br /> 注意： 这和原生的<b>isNaN</b> 函数不一样，如果变量是<i>undefined</i>，原生的<b>isNaN</b> 函数也会返回 true。
+      </p>
+      <pre>
+_.isNaN(NaN);
+=&gt; true
+isNaN(undefined);
+=&gt; true
+_.isNaN(undefined);
+=&gt; false
+</pre>
+
+      <p id="isNull">
+        <b class="header">isNull</b><code>_.isNull(object)</code>
+        <br />
+        如果<b>object</b>的值是 <i>null</i>，返回<i>true</i>。
+      </p>
+      <pre>
+_.isNull(null);
+=&gt; true
+_.isNull(undefined);
+=&gt; false
+</pre>
+
+      <p id="isUndefined">
+        <b class="header">isUndefined</b><code>_.isUndefined(variable)</code>
+        <br />
+        如果<b>variable</b>是<i>undefined</i>，返回<i>true</i>。
+      </p>
+      <pre>
+_.isUndefined(window.missingVariable);
+=&gt; true
+</pre>
+
+      <h2>Utility Functions</h2>
+
+      <p id="noConflict">
+        <b class="header">noConflict</b><code>_.noConflict()</code>
+        <br />
+        放弃<b>Underscore</b> 的控制变量"_"。返回<b>Underscore</b> 对象的引用。
+      </p>
+      <pre>
+var underscore = _.noConflict();</pre>
+
+      <p id="identity">
+        <b class="header">identity</b><code>_.identity(value)</code>
+        <br />
+        返回用作参数的相同值。数学
+        
+        <tt>f(x) = x</tt><br />
+        此函数查找无用，但使用整个Underscore作为默认的迭代器。
+      </p>
+      <pre>
+var moe = {name : 'moe'};
+moe === _.identity(moe);
+=&gt; true</pre>
+
+      <p id="times">
+        <b class="header">times</b><code>_.times(n, iterator)</code>
+        <br />
+        调用给定的迭代函数<b>n</b>次
+      </p>
+      <pre>
+_(3).times(function(){ genie.grantWish(); });</pre>
+
+      <p id="mixin">
+        <b class="header">mixin</b><code>_.mixin(object)</code>
+        <br />
+        您可以用您自己的实用程序函数扩展Underscore。传递一个 <tt>{name: function}</tt>定义的哈希添加到Underscore对象，以及面向对象包装。
+        
+      </p>
+      <pre>
+_.mixin({
+  capitalize : function(string) {
+    return string.charAt(0).toUpperCase() + string.substring(1).toLowerCase();
+  }
+});
+_("fabio").capitalize();
+=&gt; "Fabio"
+</pre>
+
+      <p id="uniqueId">
+        <b class="header">uniqueId</b><code>_.uniqueId([prefix])</code>
+        <br />
+        为需要的客户端模型或DOM元素生成一个全局唯一的id。如果<b>prefix</b>参数存在， id 将附加给它 
+      </p>
+      <pre>
+_.uniqueId('contact_');
+=&gt; 'contact_104'</pre>
+
+      <p id="escape">
+        <b class="header">escape</b><code>_.escape(string)</code>
+        <br />
+        转义HTML字符串，替换<tt>&amp;</tt>, <tt>&lt;</tt>, <tt>&gt;</tt>, <tt>&quot;</tt>, <tt>&#x27;</tt>, and <tt>&#x2F;</tt>字符
+        
+      </p>
+      <pre>
+_.escape('Curly, Larry &amp; Moe');
+=&gt; "Curly, Larry &amp;amp; Moe"</pre>
+
+      <p id="template">
+        <b class="header">template</b><code>_.template(templateString, [context])</code>
+        <br />
+        将 JavaScript 模板编译为可以计算用于呈现的函数。 HTML 的复杂的结构用JSON数据源用呈现。模板函数可以是以下两种内部变量：使用<tt>&lt;%= &hellip; %&gt;</tt>，以及用<tt>&lt;% &hellip; %&gt;</tt>执行任意 JavaScript 代码。如果您想插入一个值，它将 HTML 转义，当你使用<tt>&lt;%- &hellip; %&gt;</tt> 评估模板函数，在传递有对应于该模板的属性变量<b>context</b>。如果你在写一次过，你可以传递<b>context</b>作为  <b>template</b> 的第二个参数，以便立即呈现而不是返回的模板函数。<br />
+        Compiles JavaScript templates into functions that can be evaluated
+        for rendering. Useful for rendering complicated bits of HTML from JSON
+        data sources. Template functions can both interpolate variables, using<br />
+        <tt>&lt;%= &hellip; %&gt;</tt>, as well as execute arbitrary JavaScript code, with
+        <tt>&lt;% &hellip; %&gt;</tt>. If you wish to interpolate a value, and have
+        it be HTML-escaped, use <tt>&lt;%- &hellip; %&gt;</tt> When you evaluate a template function, pass in a
+        <b>context</b> object that has properties corresponding to the template's free
+        variables. If you're writing a one-off, you can pass the <b>context</b>
+        object as the second parameter to <b>template</b> in order to render
+        immediately instead of returning a template function.
+      </p>
+      <pre>
+var compiled = _.template("hello: &lt;%= name %&gt;");
+compiled({name : 'moe'});
+=&gt; "hello: moe"
+
+var list = "&lt;% _.each(people, function(name) { %&gt; &lt;li&gt;&lt;%= name %&gt;&lt;/li&gt; &lt;% }); %&gt;";
+_.template(list, {people : ['moe', 'curly', 'larry']});
+=&gt; "&lt;li&gt;moe&lt;/li&gt;&lt;li&gt;curly&lt;/li&gt;&lt;li&gt;larry&lt;/li&gt;"
+
+var template = _.template("&lt;b&gt;&lt;%- value %&gt;&lt;/b&gt;");
+template({value : '&lt;script&gt;'});
+=&gt; "&lt;b&gt;&amp;lt;script&amp;gt;&lt;/b&gt;"</pre>
+
+      <p>
+      您还可以使用 JavaScript 代码内<tt>print</tt> 。这是有时比使用<tt>&lt;%= ... %&gt;</tt>更方便 .
+      </p>
+      
+      <pre>
+var compiled = _.template("&lt;% print('Hello ' + epithet); %&gt;");
+compiled({epithet: "stooge"});
+=&gt; "Hello stooge."</pre>
+
+      <p>
+      If ERB-style delimiters aren't your cup of tea, 您可以更改下划线的模板设置，使用不同的符号来表示插值的代码。定义 <b>interpolate</b> 正则表达式，和 （可选）<b>evaluate</b>正则表达式来匹配，但是必须分别是inserted 和 evaluated,如果不提供<b>evaluate</b>正则表达式，您的模板将只能够的插补值。 
+        例如, 看看
+        <a href="http://github.com/janl/mustache.js#readme">Mustache.js</a>
+        样式模板:
+      </p>
+
+      <pre>
+_.templateSettings = {
+  interpolate : /\{\{(.+?)\}\}/g
+};
+
+var template = _.template("Hello {{ name }}!");
+template({name : "Mustache"});
+=&gt; "Hello Mustache!"</pre>
+
+      <h2>Chaining</h2>
+
+      <p id="chain">
+        <b class="header">chain</b><code>_(obj).chain()</code>
+        <br />
+        返回一个对象被包装的对象。对象上调用方法将继续以返回被包装的对象，直到 <tt>value</tt>被使用。 (<a href="#styles">一个更现实的例子</a>)
+      </p>
+      <pre>
+var stooges = [{name : 'curly', age : 25}, {name : 'moe', age : 21}, {name : 'larry', age : 23}];
+var youngest = _(stooges).chain()
+  .sortBy(function(stooge){ return stooge.age; })
+  .map(function(stooge){ return stooge.name + ' is ' + stooge.age; })
+  .first()
+  .value();
+=&gt; "moe is 21"
+</pre>
+
+      <p id="value">
+        <b class="header">value</b><code>_(obj).value()</code>
+        <br />
+        提取被包装的对象的值。
+      </p>
+      <pre>
+_([1, 2, 3]).value();
+=&gt; [1, 2, 3]
+</pre>
+
+      <h2>Links &amp; Suggested Reading</h2>
+
+      <p>
+        <a href="http://mirven.github.com/underscore.lua/">Underscore.lua</a>,
+        a Lua port of the functions that are applicable in both languages.
+        Includes OOP-wrapping and chaining.
+        The <a href="http://github.com/mirven/underscore.lua">source</a> is
+        available on GitHub.
+      </p>
+      
+      <p>
+        <a href="http://brianhaveri.github.com/Underscore.php/">Underscore.php</a>,
+        a PHP port of the functions that are applicable in both languages.
+        Includes OOP-wrapping and chaining.
+        The <a href="http://github.com/brianhaveri/Underscore.php">source</a> is
+        available on GitHub.
+      </p>
+      
+      <p>
+        <a href="http://vti.github.com/underscore-perl/">Underscore-perl</a>,
+        a Perl port of many of the Underscore.js functions, 
+        aimed at on Perl hashes and arrays, also 
+        <a href="https://github.com/vti/underscore-perl/">available on GitHub</a>.
+      </p>
+      
+      <p>
+        <a href="https://github.com/edtsech/underscore.string">Underscore.string</a>,
+        an Underscore extension that adds functions for string-manipulation: 
+        <tt>trim</tt>, <tt>startsWith</tt>, <tt>contains</tt>, <tt>capitalize</tt>,
+        <tt>reverse</tt>, <tt>sprintf</tt>, and more.
+      </p>
+
+      <p>
+        Ruby's <a href="http://ruby-doc.org/core/classes/Enumerable.html">Enumerable</a> module.
+      </p>
+
+      <p>
+        <a href="http://www.prototypejs.org/">Prototype.js</a>, which provides
+        JavaScript with collection functions in the manner closest to Ruby's Enumerable.
+      </p>
+
+      <p>
+        Oliver Steele's
+        <a href="http://osteele.com/sources/javascript/functional/">Functional JavaScript</a>,
+        which includes comprehensive higher-order function support as well as string lambdas.
+      </p>
+      
+      <p>
+        Michael Aufreiter's <a href="http://substance.io/#michael/data-js">Data.js</a>,
+        a data manipulation + persistence library for JavaScript.
+      </p>
+
+      <p>
+        Python's <a href="http://docs.python.org/library/itertools.html">itertools</a>.
+      </p>
+
+      <h2 id="changelog">Change Log</h2>
+      
+      <p>
+        <b class="header">1.2.3</b> &mdash; <small><i>Dec. 7, 2011</i></small><br />
+        <ul>
+          <li>
+            Dynamic scope is now preserved for compiled <tt>_.template</tt> functions,
+            so you can use the value of <tt>this</tt> if you like.
+          </li>
+          <li>
+            Sparse array support of <tt>_.indexOf</tt>, <tt>_.lastIndexOf</tt>.
+          </li>
+          <li>
+            Both <tt>_.reduce</tt> and <tt>_.reduceRight</tt> can now be passed an
+            explicitly <tt>undefined</tt> value. (There's no reason why you'd 
+            want to do this.)
+          </li>
+        </ul>
+      </p>
+      
+      <p>
+        <b class="header">1.2.2</b> &mdash; <small><i>Nov. 14, 2011</i></small><br />
+        <ul>
+          <li>
+            Continued tweaks to <tt>_.isEqual</tt> semantics. Now JS primitives are
+            considered equivalent to their wrapped versions, and arrays are compared
+            by their numeric properties only <small>(#351)</small>.
+          </li>
+          <li>
+            <tt>_.escape</tt> no longer tries to be smart about not double-escaping
+            already-escaped HTML entities. Now it just escapes regardless <small>(#350)</small>.
+          </li>
+          <li>
+            In <tt>_.template</tt>, you may now leave semicolons out of evaluated
+            statements if you wish: <tt>&lt;% }) %&gt;</tt> <small>(#369)</small>.
+          </li>
+          <li>
+            <tt>_.after(callback, 0)</tt> will now trigger the callback immediately,
+            making "after" easier to use with asynchronous APIs <small>(#366)</small>. 
+          </li>
+        </ul>
+      </p>
+      
+      <p>
+        <b class="header">1.2.1</b> &mdash; <small><i>Oct. 24, 2011</i></small><br />
+        <ul>
+          <li>
+            Several important bug fixes for <tt>_.isEqual</tt>, which should now 
+            do better on mutated Arrays, and on non-Array objects with 
+            <tt>length</tt> properties. <small>(#329)</small>
+          </li>
+          <li>
+            <b>jrburke</b> contributed Underscore exporting for AMD module loaders,
+            and <b>tonylukasavage</b> for Appcelerator Titanium. 
+            <small>(#335, #338)</small>
+          </li>
+          <li>
+            You can now <tt>_.groupBy(list, 'property')</tt> as a shortcut for
+            grouping values by a particular common property.
+          </li>
+          <li>
+            <tt>_.throttle</tt>'d functions now fire immediately upon invocation, 
+            and are rate-limited thereafter <small>(#170, #266)</small>.
+          </li>
+          <li>
+            Most of the <tt>_.is[Type]</tt> checks no longer ducktype.
+          </li>
+          <li>
+            The <tt>_.bind</tt> function now also works on constructors, a-la
+            ES5 ... but you would never want to use <tt>_.bind</tt> on a 
+            constructor function.
+          </li>
+          <li>
+            <tt>_.clone</tt> no longer wraps non-object types in Objects.
+          </li>
+          <li>
+            <tt>_.find</tt> and <tt>_.filter</tt> are now the preferred names for
+            <tt>_.detect</tt> and <tt>_.select</tt>.
+          </li>
+        </ul>
+      </p>
+      
+      <p>
+        <b class="header">1.2.0</b> &mdash; <small><i>Oct. 5, 2011</i></small><br />
+        <ul>
+          <li>
+            The <tt>_.isEqual</tt> function now 
+            supports true deep equality comparisons, with checks for cyclic structures,
+            thanks to Kit Cambridge.
+          </li>
+          <li>
+            Underscore templates now support HTML escaping interpolations, using 
+            <tt>&lt;%- ... %&gt;</tt> syntax. 
+          </li>
+          <li>
+            Ryan Tenney contributed <tt>_.shuffle</tt>, which uses a modified 
+            Fisher-Yates to give you a shuffled copy of an array. 
+          </li>
+          <li>
+            <tt>_.uniq</tt> can now be passed an optional iterator, to determine by 
+            what criteria an object should be considered unique.
+          </li>
+          <li>
+            <tt>_.last</tt> now takes an optional argument which will return the last
+            N elements of the list.
+          </li>
+          <li>
+            A new <tt>_.initial</tt> function was added, as a mirror of <tt>_.rest</tt>,
+            which returns all the initial values of a list (except the last N). 
+          </li>
+        </ul>
+      </p>
+      
+      <p>
+        <b class="header">1.1.7</b> &mdash; <small><i>July 13, 2011</i></small><br />
+        Added <tt>_.groupBy</tt>, which aggregates a collection into groups of like items.
+        Added <tt>_.union</tt> and <tt>_.difference</tt>, to complement the 
+        (re-named) <tt>_.intersection</tt>.
+        Various improvements for support of sparse arrays.
+        <tt>_.toArray</tt> now returns a clone, if directly passed an array.
+        <tt>_.functions</tt> now also returns the names of functions that are present
+        in the prototype chain.
+      </p>
+            
+      <p>
+        <b class="header">1.1.6</b> &mdash; <small><i>April 18, 2011</i></small><br />
+        Added <tt>_.after</tt>, which will return a function that only runs after
+        first being called a specified number of times.
+        <tt>_.invoke</tt> can now take a direct function reference.
+        <tt>_.every</tt> now requires an iterator function to be passed, which
+        mirrors the ECMA5 API.
+        <tt>_.extend</tt> no longer copies keys when the value is undefined.
+        <tt>_.bind</tt> now errors when trying to bind an undefined value.
+      </p>
+      
+      <p>
+        <b class="header">1.1.5</b> &mdash; <small><i>Mar 20, 2011</i></small><br />
+        Added an <tt>_.defaults</tt> function, for use merging together JS objects
+        representing default options.
+        Added an <tt>_.once</tt> function, for manufacturing functions that should
+        only ever execute a single time.
+        <tt>_.bind</tt> now delegates to the native ECMAScript 5 version, 
+        where available.
+        <tt>_.keys</tt> now throws an error when used on non-Object values, as in
+        ECMAScript 5.
+        Fixed a bug with <tt>_.keys</tt> when used over sparse arrays.
+      </p>
+      
+      <p>
+        <b class="header">1.1.4</b> &mdash; <small><i>Jan 9, 2011</i></small><br />
+        Improved compliance with ES5's Array methods when passing <tt>null</tt> 
+        as a value. <tt>_.wrap</tt> now correctly sets <tt>this</tt> for the
+        wrapped function. <tt>_.indexOf</tt> now takes an optional flag for
+        finding the insertion index in an array that is guaranteed to already
+        be sorted. Avoiding the use of <tt>.callee</tt>, to allow <tt>_.isArray</tt>
+        to work properly in ES5's strict mode.
+      </p>
+      
+      <p>
+        <b class="header">1.1.3</b> &mdash; <small><i>Dec 1, 2010</i></small><br />
+        In CommonJS, Underscore may now be required with just: <br />
+        <tt>var _ = require("underscore")</tt>.
+        Added <tt>_.throttle</tt> and <tt>_.debounce</tt> functions.
+        Removed <tt>_.breakLoop</tt>, in favor of an ECMA5-style un-<i>break</i>-able
+        each implementation &mdash; this removes the try/catch, and you'll now have
+        better stack traces for exceptions that are thrown within an Underscore iterator.
+        Improved the <b>isType</b> family of functions for better interoperability
+        with Internet Explorer host objects.
+        <tt>_.template</tt> now correctly escapes backslashes in templates.
+        Improved <tt>_.reduce</tt> compatibility with the ECMA5 version: 
+        if you don't pass an initial value, the first item in the collection is used.
+        <tt>_.each</tt> no longer returns the iterated collection, for improved
+        consistency with ES5's <tt>forEach</tt>.
+      </p>
+      
+      <p>
+        <b class="header">1.1.2</b><br />
+        Fixed <tt>_.contains</tt>, which was mistakenly pointing at 
+        <tt>_.intersect</tt> instead of <tt>_.include</tt>, like it should 
+        have been. Added <tt>_.unique</tt> as an alias for <tt>_.uniq</tt>.
+      </p>
+      
+      <p>
+        <b class="header">1.1.1</b><br />
+        Improved the speed of <tt>_.template</tt>, and its handling of multiline
+        interpolations. Ryan Tenney contributed optimizations to many Underscore 
+        functions. An annotated version of the source code is now available.
+      </p>
+      
+      <p>
+        <b class="header">1.1.0</b><br />
+        The method signature of <tt>_.reduce</tt> has been changed to match
+        the ECMAScript 5 signature, instead of the Ruby/Prototype.js version.
+        This is a backwards-incompatible change. <tt>_.template</tt> may now be
+        called with no arguments, and preserves whitespace. <tt>_.contains</tt>
+        is a new alias for <tt>_.include</tt>.
+      </p>
+      
+      <p>
+        <b class="header">1.0.4</b><br />
+        <a href="http://themoell.com/">Andri Möll</a> contributed the <tt>_.memoize</tt> 
+        function, which can be used to speed up expensive repeated computations 
+        by caching the results.
+      </p>
+      
+      <p>
+        <b class="header">1.0.3</b><br />
+        Patch that makes <tt>_.isEqual</tt> return <tt>false</tt> if any property
+        of the compared object has a <tt>NaN</tt> value. Technically the correct
+        thing to do, but of questionable semantics. Watch out for NaN comparisons.
+      </p>
+      
+      <p>
+        <b class="header">1.0.2</b><br />
+        Fixes <tt>_.isArguments</tt> in recent versions of Opera, which have
+        arguments objects as real Arrays.
+      </p>
+      
+      <p>
+        <b class="header">1.0.1</b><br />
+        Bugfix for <tt>_.isEqual</tt>, when comparing two objects with the same 
+        number of undefined keys, but with different names.
+      </p>
+      
+      <p>
+        <b class="header">1.0.0</b><br />
+        Things have been stable for many months now, so Underscore is now
+        considered to be out of beta, at <b>1.0</b>. Improvements since <b>0.6</b>
+        include <tt>_.isBoolean</tt>, and the ability to have <tt>_.extend</tt>
+        take multiple source objects.
+      </p>
+      
+      <p>
+        <b class="header">0.6.0</b><br />
+        Major release. Incorporates a number of 
+        <a href="http://github.com/ratbeard">Mile Frawley's</a> refactors for
+        safer duck-typing on collection functions, and cleaner internals. A new
+        <tt>_.mixin</tt> method that allows you to extend Underscore with utility
+        functions of your own. Added <tt>_.times</tt>, which works the same as in 
+        Ruby or Prototype.js. Native support for ECMAScript 5's <tt>Array.isArray</tt>, 
+        and <tt>Object.keys</tt>.
+      </p>
+
+      <p>
+        <b class="header">0.5.8</b><br />
+        Fixed Underscore's collection functions to work on
+        <a href="https://developer.mozilla.org/En/DOM/NodeList">NodeLists</a> and
+        <a href="https://developer.mozilla.org/En/DOM/HTMLCollection">HTMLCollections</a>
+        once more, thanks to
+        <a href="http://github.com/jmtulloss">Justin Tulloss</a>.
+      </p>
+
+      <p>
+        <b class="header">0.5.7</b><br />
+        A safer implementation of <tt>_.isArguments</tt>, and a
+        faster <tt>_.isNumber</tt>,<br />thanks to
+        <a href="http://jedschmidt.com/">Jed Schmidt</a>.
+      </p>
+
+      <p>
+        <b class="header">0.5.6</b><br />
+        Customizable delimiters for <tt>_.template</tt>, contributed by
+        <a href="http://github.com/iamnoah">Noah Sloan</a>.
+      </p>
+
+      <p>
+        <b class="header">0.5.5</b><br />
+        Fix for a bug in MobileSafari's OOP-wrapper, with the arguments object.
+      </p>
+
+      <p>
+        <b class="header">0.5.4</b><br />
+        Fix for multiple single quotes within a template string for
+        <tt>_.template</tt>. See:
+        <a href="http://www.west-wind.com/Weblog/posts/509108.aspx">Rick Strahl's blog post</a>.
+      </p>
+
+      <p>
+        <b class="header">0.5.2</b><br />
+        New implementations of <tt>isArray</tt>, <tt>isDate</tt>, <tt>isFunction</tt>,
+        <tt>isNumber</tt>, <tt>isRegExp</tt>, and <tt>isString</tt>, thanks to
+        a suggestion from
+        <a href="http://www.broofa.com/">Robert Kieffer</a>.
+        Instead of doing <tt>Object#toString</tt>
+        comparisons, they now check for expected properties, which is less safe,
+        but more than an order of magnitude faster. Most other Underscore
+        functions saw minor speed improvements as a result.
+        <a href="http://dolzhenko.org/">Evgeniy Dolzhenko</a>
+        contributed <tt>_.tap</tt>,
+        <a href="http://ruby-doc.org/core-1.9/classes/Object.html#M000191">similar to Ruby 1.9's</a>,
+        which is handy for injecting side effects (like logging) into chained calls.
+      </p>
+
+      <p>
+        <b class="header">0.5.1</b><br />
+        Added an <tt>_.isArguments</tt> function. Lots of little safety checks
+        and optimizations contributed by
+        <a href="http://github.com/iamnoah/">Noah Sloan</a> and 
+        <a href="http://themoell.com/">Andri Möll</a>.
+      </p>
+
+      <p>
+        <b class="header">0.5.0</b><br />
+        <b>[API Changes]</b> <tt>_.bindAll</tt> now takes the context object as
+        its first parameter. If no method names are passed, all of the context
+        object's methods are bound to it, enabling chaining and easier binding.
+        <tt>_.functions</tt> now takes a single argument and returns the names
+        of its Function properties. Calling <tt>_.functions(_)</tt> will get you
+        the previous behavior.
+        Added <tt>_.isRegExp</tt> so that <tt>isEqual</tt> can now test for RegExp equality.
+        All of the "is" functions have been shrunk down into a single definition.
+        <a href="http://github.com/grayrest/">Karl Guertin</a> contributed patches.
+      </p>
+
+      <p>
+        <b class="header">0.4.7</b><br />
+        Added <tt>isDate</tt>, <tt>isNaN</tt>, and <tt>isNull</tt>, for completeness.
+        Optimizations for <tt>isEqual</tt> when checking equality between Arrays
+        or Dates. <tt>_.keys</tt> is now <small><i><b>25%&ndash;2X</b></i></small> faster (depending on your
+        browser) which speeds up the functions that rely on it, such as <tt>_.each</tt>.
+      </p>
+
+      <p>
+        <b class="header">0.4.6</b><br />
+        Added the <tt>range</tt> function, a port of the
+        <a href="http://docs.python.org/library/functions.html#range">Python
+        function of the same name</a>, for generating flexibly-numbered lists
+        of integers. Original patch contributed by
+        <a href="http://github.com/kylichuku">Kirill Ishanov</a>.
+      </p>
+
+      <p>
+        <b class="header">0.4.5</b><br />
+        Added <tt>rest</tt> for Arrays and arguments objects, and aliased
+        <tt>first</tt> as <tt>head</tt>, and <tt>rest</tt> as <tt>tail</tt>,
+        thanks to <a href="http://github.com/lukesutton/">Luke Sutton</a>'s patches.
+        Added tests ensuring that all Underscore Array functions also work on
+        <i>arguments</i> objects.
+      </p>
+
+      <p>
+        <b class="header">0.4.4</b><br />
+        Added <tt>isString</tt>, and <tt>isNumber</tt>, for consistency. Fixed
+        <tt>_.isEqual(NaN, NaN)</tt> to return <i>true</i> (which is debatable).
+      </p>
+
+      <p>
+        <b class="header">0.4.3</b><br />
+        Started using the native <tt>StopIteration</tt> object in browsers that support it.
+        Fixed Underscore setup for CommonJS environments.
+      </p>
+
+      <p>
+        <b class="header">0.4.2</b><br />
+        Renamed the unwrapping function to <tt>value</tt>, for clarity.
+      </p>
+
+      <p>
+        <b class="header">0.4.1</b><br />
+        Chained Underscore objects now support the Array prototype methods, so
+        that you can perform the full range of operations on a wrapped array
+        without having to break your chain. Added a <tt>breakLoop</tt> method
+        to <b>break</b> in the middle of any Underscore iteration. Added an
+        <tt>isEmpty</tt> function that works on arrays and objects.
+      </p>
+
+      <p>
+        <b class="header">0.4.0</b><br />
+        All Underscore functions can now be called in an object-oriented style,
+        like so: <tt>_([1, 2, 3]).map(...);</tt>. Original patch provided by
+        <a href="http://macournoyer.com/">Marc-André Cournoyer</a>.
+        Wrapped objects can be chained through multiple
+        method invocations. A <a href="#functions"><tt>functions</tt></a> method
+        was added, providing a sorted list of all the functions in Underscore.
+      </p>
+
+      <p>
+        <b class="header">0.3.3</b><br />
+        Added the JavaScript 1.8 function <tt>reduceRight</tt>. Aliased it
+        as <tt>foldr</tt>, and aliased <tt>reduce</tt> as <tt>foldl</tt>.
+      </p>
+
+      <p>
+        <b class="header">0.3.2</b><br />
+        Now runs on stock <a href="http://www.mozilla.org/rhino/">Rhino</a>
+        interpreters with: <tt>load("underscore.js")</tt>.
+        Added <a href="#identity"><tt>identity</tt></a> as a utility function.
+      </p>
+
+      <p>
+        <b class="header">0.3.1</b><br />
+        All iterators are now passed in the original collection as their third
+        argument, the same as JavaScript 1.6's <b>forEach</b>. Iterating over
+        objects is now called with <tt>(value, key, collection)</tt>, for details
+        see <a href="#each"><tt>_.each</tt></a>.
+      </p>
+
+      <p>
+        <b class="header">0.3.0</b><br />
+        Added <a href="http://github.com/dmitryBaranovskiy">Dmitry Baranovskiy</a>'s
+        comprehensive optimizations, merged in
+        <a href="http://github.com/kriskowal/">Kris Kowal</a>'s patches to make Underscore
+        <a href="http://wiki.commonjs.org/wiki/CommonJS">CommonJS</a> and
+        <a href="http://narwhaljs.org/">Narwhal</a> compliant.
+      </p>
+
+      <p>
+        <b class="header">0.2.0</b><br />
+        Added <tt>compose</tt> and <tt>lastIndexOf</tt>, renamed <tt>inject</tt> to
+        <tt>reduce</tt>, added aliases for <tt>inject</tt>, <tt>filter</tt>,
+        <tt>every</tt>, <tt>some</tt>, and <tt>forEach</tt>.
+      </p>
+
+      <p>
+        <b class="header">0.1.1</b><br />
+        Added <tt>noConflict</tt>, so that the "Underscore" object can be assigned to
+        other variables.
+      </p>
+
+      <p>
+        <b class="header">0.1.0</b><br />
+        Initial release of Underscore.js.
+      </p>
+
+      <p>
+        <a href="http://documentcloud.org/" title="A DocumentCloud Project" style="background:none;">
+          <img src="http://jashkenas.s3.amazonaws.com/images/a_documentcloud_project.png" alt="A DocumentCloud Project" />
+        </a>
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- Include Underscore, so you can play with it in the console. -->
+  <script type="text/javascript" src="underscore.js"></script>
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-3448069-1");
+        pageTracker._trackPageview();
+    } catch(err) {
+    }</script>
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ff8be45191941378fa9c93900b0d0be23' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+</html>
+
+------------n1el3FQf6JqvXkVC89N4hL
+Content-Disposition: inline; filename=a_documentcloud_project.png
+Content-Type: image/png; name=a_documentcloud_project.png
+Content-Location: http://jashkenas.s3.amazonaws.com/images/a_documentcloud_project.png
+Content-Transfer-Encoding: Base64
+
+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
+
+------------n1el3FQf6JqvXkVC89N4hL
+Content-Disposition: inline; filename=underscore.js
+Content-Type: application/javascript; name=underscore.js
+Content-Location: http://www.css88.com/doc/underscore/underscore.js
+Content-Transfer-Encoding: Base64
+
+Ly8gICAgIFVuZGVyc2NvcmUuanMgMS4yLjMKLy8gICAgIChjKSAyMDA5LTIwMTEg
+SmVyZW15IEFzaGtlbmFzLCBEb2N1bWVudENsb3VkIEluYy4KLy8gICAgIFVuZGVy
+c2NvcmUgaXMgZnJlZWx5IGRpc3RyaWJ1dGFibGUgdW5kZXIgdGhlIE1JVCBsaWNl
+bnNlLgovLyAgICAgUG9ydGlvbnMgb2YgVW5kZXJzY29yZSBhcmUgaW5zcGlyZWQg
+b3IgYm9ycm93ZWQgZnJvbSBQcm90b3R5cGUsCi8vICAgICBPbGl2ZXIgU3RlZWxl
+J3MgRnVuY3Rpb25hbCwgYW5kIEpvaG4gUmVzaWcncyBNaWNyby1UZW1wbGF0aW5n
+LgovLyAgICAgRm9yIGFsbCBkZXRhaWxzIGFuZCBkb2N1bWVudGF0aW9uOgovLyAg
+ICAgaHR0cDovL2RvY3VtZW50Y2xvdWQuZ2l0aHViLmNvbS91bmRlcnNjb3JlCgoo
+ZnVuY3Rpb24oKSB7CgogIC8vIEJhc2VsaW5lIHNldHVwCiAgLy8gLS0tLS0tLS0t
+LS0tLS0KCiAgLy8gRXN0YWJsaXNoIHRoZSByb290IG9iamVjdCwgYHdpbmRvd2Ag
+aW4gdGhlIGJyb3dzZXIsIG9yIGBnbG9iYWxgIG9uIHRoZSBzZXJ2ZXIuCiAgdmFy
+IHJvb3QgPSB0aGlzOwoKICAvLyBTYXZlIHRoZSBwcmV2aW91cyB2YWx1ZSBvZiB0
+aGUgYF9gIHZhcmlhYmxlLgogIHZhciBwcmV2aW91c1VuZGVyc2NvcmUgPSByb290
+Ll87CgogIC8vIEVzdGFibGlzaCB0aGUgb2JqZWN0IHRoYXQgZ2V0cyByZXR1cm5l
+ZCB0byBicmVhayBvdXQgb2YgYSBsb29wIGl0ZXJhdGlvbi4KICB2YXIgYnJlYWtl
+ciA9IHt9OwoKICAvLyBTYXZlIGJ5dGVzIGluIHRoZSBtaW5pZmllZCAoYnV0IG5v
+dCBnemlwcGVkKSB2ZXJzaW9uOgogIHZhciBBcnJheVByb3RvID0gQXJyYXkucHJv
+dG90eXBlLCBPYmpQcm90byA9IE9iamVjdC5wcm90b3R5cGUsIEZ1bmNQcm90byA9
+IEZ1bmN0aW9uLnByb3RvdHlwZTsKCiAgLy8gQ3JlYXRlIHF1aWNrIHJlZmVyZW5j
+ZSB2YXJpYWJsZXMgZm9yIHNwZWVkIGFjY2VzcyB0byBjb3JlIHByb3RvdHlwZXMu
+CiAgdmFyIHNsaWNlICAgICAgICAgICAgPSBBcnJheVByb3RvLnNsaWNlLAogICAg
+ICBjb25jYXQgICAgICAgICAgID0gQXJyYXlQcm90by5jb25jYXQsCiAgICAgIHVu
+c2hpZnQgICAgICAgICAgPSBBcnJheVByb3RvLnVuc2hpZnQsCiAgICAgIHRvU3Ry
+aW5nICAgICAgICAgPSBPYmpQcm90by50b1N0cmluZywKICAgICAgaGFzT3duUHJv
+cGVydHkgICA9IE9ialByb3RvLmhhc093blByb3BlcnR5OwoKICAvLyBBbGwgKipF
+Q01BU2NyaXB0IDUqKiBuYXRpdmUgZnVuY3Rpb24gaW1wbGVtZW50YXRpb25zIHRo
+YXQgd2UgaG9wZSB0byB1c2UKICAvLyBhcmUgZGVjbGFyZWQgaGVyZS4KICB2YXIK
+ICAgIG5hdGl2ZUZvckVhY2ggICAgICA9IEFycmF5UHJvdG8uZm9yRWFjaCwKICAg
+IG5hdGl2ZU1hcCAgICAgICAgICA9IEFycmF5UHJvdG8ubWFwLAogICAgbmF0aXZl
+UmVkdWNlICAgICAgID0gQXJyYXlQcm90by5yZWR1Y2UsCiAgICBuYXRpdmVSZWR1
+Y2VSaWdodCAgPSBBcnJheVByb3RvLnJlZHVjZVJpZ2h0LAogICAgbmF0aXZlRmls
+dGVyICAgICAgID0gQXJyYXlQcm90by5maWx0ZXIsCiAgICBuYXRpdmVFdmVyeSAg
+ICAgICAgPSBBcnJheVByb3RvLmV2ZXJ5LAogICAgbmF0aXZlU29tZSAgICAgICAg
+ID0gQXJyYXlQcm90by5zb21lLAogICAgbmF0aXZlSW5kZXhPZiAgICAgID0gQXJy
+YXlQcm90by5pbmRleE9mLAogICAgbmF0aXZlTGFzdEluZGV4T2YgID0gQXJyYXlQ
+cm90by5sYXN0SW5kZXhPZiwKICAgIG5hdGl2ZUlzQXJyYXkgICAgICA9IEFycmF5
+LmlzQXJyYXksCiAgICBuYXRpdmVLZXlzICAgICAgICAgPSBPYmplY3Qua2V5cywK
+ICAgIG5hdGl2ZUJpbmQgICAgICAgICA9IEZ1bmNQcm90by5iaW5kOwoKICAvLyBD
+cmVhdGUgYSBzYWZlIHJlZmVyZW5jZSB0byB0aGUgVW5kZXJzY29yZSBvYmplY3Qg
+Zm9yIHVzZSBiZWxvdy4KICB2YXIgXyA9IGZ1bmN0aW9uKG9iaikgeyByZXR1cm4g
+bmV3IHdyYXBwZXIob2JqKTsgfTsKCiAgLy8gRXhwb3J0IHRoZSBVbmRlcnNjb3Jl
+IG9iamVjdCBmb3IgKipOb2RlLmpzKiogYW5kICoqIkNvbW1vbkpTIioqLCB3aXRo
+CiAgLy8gYmFja3dhcmRzLWNvbXBhdGliaWxpdHkgZm9yIHRoZSBvbGQgYHJlcXVp
+cmUoKWAgQVBJLiBJZiB3ZSdyZSBub3QgaW4KICAvLyBDb21tb25KUywgYWRkIGBf
+YCB0byB0aGUgZ2xvYmFsIG9iamVjdC4KICBpZiAodHlwZW9mIGV4cG9ydHMgIT09
+ICd1bmRlZmluZWQnKSB7CiAgICBpZiAodHlwZW9mIG1vZHVsZSAhPT0gJ3VuZGVm
+aW5lZCcgJiYgbW9kdWxlLmV4cG9ydHMpIHsKICAgICAgZXhwb3J0cyA9IG1vZHVs
+ZS5leHBvcnRzID0gXzsKICAgIH0KICAgIGV4cG9ydHMuXyA9IF87CiAgfSBlbHNl
+IGlmICh0eXBlb2YgZGVmaW5lID09PSAnZnVuY3Rpb24nICYmIGRlZmluZS5hbWQp
+IHsKICAgIC8vIFJlZ2lzdGVyIGFzIGEgbmFtZWQgbW9kdWxlIHdpdGggQU1ELgog
+ICAgZGVmaW5lKCd1bmRlcnNjb3JlJywgZnVuY3Rpb24oKSB7CiAgICAgIHJldHVy
+biBfOwogICAgfSk7CiAgfSBlbHNlIHsKICAgIC8vIEV4cG9ydGVkIGFzIGEgc3Ry
+aW5nLCBmb3IgQ2xvc3VyZSBDb21waWxlciAiYWR2YW5jZWQiIG1vZGUuCiAgICBy
+b290WydfJ10gPSBfOwogIH0KCiAgLy8gQ3VycmVudCB2ZXJzaW9uLgogIF8uVkVS
+U0lPTiA9ICcxLjIuMyc7CgogIC8vIENvbGxlY3Rpb24gRnVuY3Rpb25zCiAgLy8g
+LS0tLS0tLS0tLS0tLS0tLS0tLS0KCiAgLy8gVGhlIGNvcm5lcnN0b25lLCBhbiBg
+ZWFjaGAgaW1wbGVtZW50YXRpb24sIGFrYSBgZm9yRWFjaGAuCiAgLy8gSGFuZGxl
+cyBvYmplY3RzIHdpdGggdGhlIGJ1aWx0LWluIGBmb3JFYWNoYCwgYXJyYXlzLCBh
+bmQgcmF3IG9iamVjdHMuCiAgLy8gRGVsZWdhdGVzIHRvICoqRUNNQVNjcmlwdCA1
+KioncyBuYXRpdmUgYGZvckVhY2hgIGlmIGF2YWlsYWJsZS4KICB2YXIgZWFjaCA9
+IF8uZWFjaCA9IF8uZm9yRWFjaCA9IGZ1bmN0aW9uKG9iaiwgaXRlcmF0b3IsIGNv
+bnRleHQpIHsKICAgIGlmIChvYmogPT0gbnVsbCkgcmV0dXJuOwogICAgaWYgKG5h
+dGl2ZUZvckVhY2ggJiYgb2JqLmZvckVhY2ggPT09IG5hdGl2ZUZvckVhY2gpIHsK
+ICAgICAgb2JqLmZvckVhY2goaXRlcmF0b3IsIGNvbnRleHQpOwogICAgfSBlbHNl
+IGlmIChvYmoubGVuZ3RoID09PSArb2JqLmxlbmd0aCkgewogICAgICBmb3IgKHZh
+ciBpID0gMCwgbCA9IG9iai5sZW5ndGg7IGkgPCBsOyBpKyspIHsKICAgICAgICBp
+ZiAoaSBpbiBvYmogJiYgaXRlcmF0b3IuY2FsbChjb250ZXh0LCBvYmpbaV0sIGks
+IG9iaikgPT09IGJyZWFrZXIpIHJldHVybjsKICAgICAgfQogICAgfSBlbHNlIHsK
+ICAgICAgZm9yICh2YXIga2V5IGluIG9iaikgewogICAgICAgIGlmIChoYXNPd25Q
+cm9wZXJ0eS5jYWxsKG9iaiwga2V5KSkgewogICAgICAgICAgaWYgKGl0ZXJhdG9y
+LmNhbGwoY29udGV4dCwgb2JqW2tleV0sIGtleSwgb2JqKSA9PT0gYnJlYWtlcikg
+cmV0dXJuOwogICAgICAgIH0KICAgICAgfQogICAgfQogIH07CgogIC8vIFJldHVy
+biB0aGUgcmVzdWx0cyBvZiBhcHBseWluZyB0aGUgaXRlcmF0b3IgdG8gZWFjaCBl
+bGVtZW50LgogIC8vIERlbGVnYXRlcyB0byAqKkVDTUFTY3JpcHQgNSoqJ3MgbmF0
+aXZlIGBtYXBgIGlmIGF2YWlsYWJsZS4KICBfLm1hcCA9IGZ1bmN0aW9uKG9iaiwg
+aXRlcmF0b3IsIGNvbnRleHQpIHsKICAgIHZhciByZXN1bHRzID0gW107CiAgICBp
+ZiAob2JqID09IG51bGwpIHJldHVybiByZXN1bHRzOwogICAgaWYgKG5hdGl2ZU1h
+cCAmJiBvYmoubWFwID09PSBuYXRpdmVNYXApIHJldHVybiBvYmoubWFwKGl0ZXJh
+dG9yLCBjb250ZXh0KTsKICAgIGVhY2gob2JqLCBmdW5jdGlvbih2YWx1ZSwgaW5k
+ZXgsIGxpc3QpIHsKICAgICAgcmVzdWx0c1tyZXN1bHRzLmxlbmd0aF0gPSBpdGVy
+YXRvci5jYWxsKGNvbnRleHQsIHZhbHVlLCBpbmRleCwgbGlzdCk7CiAgICB9KTsK
+ICAgIHJldHVybiByZXN1bHRzOwogIH07CgogIC8vICoqUmVkdWNlKiogYnVpbGRz
+IHVwIGEgc2luZ2xlIHJlc3VsdCBmcm9tIGEgbGlzdCBvZiB2YWx1ZXMsIGFrYSBg
+aW5qZWN0YCwKICAvLyBvciBgZm9sZGxgLiBEZWxlZ2F0ZXMgdG8gKipFQ01BU2Ny
+aXB0IDUqKidzIG5hdGl2ZSBgcmVkdWNlYCBpZiBhdmFpbGFibGUuCiAgXy5yZWR1
+Y2UgPSBfLmZvbGRsID0gXy5pbmplY3QgPSBmdW5jdGlvbihvYmosIGl0ZXJhdG9y
+LCBtZW1vLCBjb250ZXh0KSB7CiAgICB2YXIgaW5pdGlhbCA9IGFyZ3VtZW50cy5s
+ZW5ndGggPiAyOwogICAgaWYgKG9iaiA9PSBudWxsKSBvYmogPSBbXTsKICAgIGlm
+IChuYXRpdmVSZWR1Y2UgJiYgb2JqLnJlZHVjZSA9PT0gbmF0aXZlUmVkdWNlKSB7
+CiAgICAgIGlmIChjb250ZXh0KSBpdGVyYXRvciA9IF8uYmluZChpdGVyYXRvciwg
+Y29udGV4dCk7CiAgICAgIHJldHVybiBpbml0aWFsID8gb2JqLnJlZHVjZShpdGVy
+YXRvciwgbWVtbykgOiBvYmoucmVkdWNlKGl0ZXJhdG9yKTsKICAgIH0KICAgIGVh
+Y2gob2JqLCBmdW5jdGlvbih2YWx1ZSwgaW5kZXgsIGxpc3QpIHsKICAgICAgaWYg
+KCFpbml0aWFsKSB7CiAgICAgICAgbWVtbyA9IHZhbHVlOwogICAgICAgIGluaXRp
+YWwgPSB0cnVlOwogICAgICB9IGVsc2UgewogICAgICAgIG1lbW8gPSBpdGVyYXRv
+ci5jYWxsKGNvbnRleHQsIG1lbW8sIHZhbHVlLCBpbmRleCwgbGlzdCk7CiAgICAg
+IH0KICAgIH0pOwogICAgaWYgKCFpbml0aWFsKSB0aHJvdyBuZXcgVHlwZUVycm9y
+KCdSZWR1Y2Ugb2YgZW1wdHkgYXJyYXkgd2l0aCBubyBpbml0aWFsIHZhbHVlJyk7
+CiAgICByZXR1cm4gbWVtbzsKICB9OwoKICAvLyBUaGUgcmlnaHQtYXNzb2NpYXRp
+dmUgdmVyc2lvbiBvZiByZWR1Y2UsIGFsc28ga25vd24gYXMgYGZvbGRyYC4KICAv
+LyBEZWxlZ2F0ZXMgdG8gKipFQ01BU2NyaXB0IDUqKidzIG5hdGl2ZSBgcmVkdWNl
+UmlnaHRgIGlmIGF2YWlsYWJsZS4KICBfLnJlZHVjZVJpZ2h0ID0gXy5mb2xkciA9
+IGZ1bmN0aW9uKG9iaiwgaXRlcmF0b3IsIG1lbW8sIGNvbnRleHQpIHsKICAgIHZh
+ciBpbml0aWFsID0gYXJndW1lbnRzLmxlbmd0aCA+IDI7CiAgICBpZiAob2JqID09
+IG51bGwpIG9iaiA9IFtdOwogICAgaWYgKG5hdGl2ZVJlZHVjZVJpZ2h0ICYmIG9i
+ai5yZWR1Y2VSaWdodCA9PT0gbmF0aXZlUmVkdWNlUmlnaHQpIHsKICAgICAgaWYg
+KGNvbnRleHQpIGl0ZXJhdG9yID0gXy5iaW5kKGl0ZXJhdG9yLCBjb250ZXh0KTsK
+ICAgICAgcmV0dXJuIGluaXRpYWwgPyBvYmoucmVkdWNlUmlnaHQoaXRlcmF0b3Is
+IG1lbW8pIDogb2JqLnJlZHVjZVJpZ2h0KGl0ZXJhdG9yKTsKICAgIH0KICAgIHZh
+ciByZXZlcnNlZCA9IF8udG9BcnJheShvYmopLnJldmVyc2UoKTsKICAgIGlmIChj
+b250ZXh0ICYmICFpbml0aWFsKSBpdGVyYXRvciA9IF8uYmluZChpdGVyYXRvciwg
+Y29udGV4dCk7CiAgICByZXR1cm4gaW5pdGlhbCA/IF8ucmVkdWNlKHJldmVyc2Vk
+LCBpdGVyYXRvciwgbWVtbywgY29udGV4dCkgOiBfLnJlZHVjZShyZXZlcnNlZCwg
+aXRlcmF0b3IpOwogIH07CgogIC8vIFJldHVybiB0aGUgZmlyc3QgdmFsdWUgd2hp
+Y2ggcGFzc2VzIGEgdHJ1dGggdGVzdC4gQWxpYXNlZCBhcyBgZGV0ZWN0YC4KICBf
+LmZpbmQgPSBfLmRldGVjdCA9IGZ1bmN0aW9uKG9iaiwgaXRlcmF0b3IsIGNvbnRl
+eHQpIHsKICAgIHZhciByZXN1bHQ7CiAgICBhbnkob2JqLCBmdW5jdGlvbih2YWx1
+ZSwgaW5kZXgsIGxpc3QpIHsKICAgICAgaWYgKGl0ZXJhdG9yLmNhbGwoY29udGV4
+dCwgdmFsdWUsIGluZGV4LCBsaXN0KSkgewogICAgICAgIHJlc3VsdCA9IHZhbHVl
+OwogICAgICAgIHJldHVybiB0cnVlOwogICAgICB9CiAgICB9KTsKICAgIHJldHVy
+biByZXN1bHQ7CiAgfTsKCiAgLy8gUmV0dXJuIGFsbCB0aGUgZWxlbWVudHMgdGhh
+dCBwYXNzIGEgdHJ1dGggdGVzdC4KICAvLyBEZWxlZ2F0ZXMgdG8gKipFQ01BU2Ny
+aXB0IDUqKidzIG5hdGl2ZSBgZmlsdGVyYCBpZiBhdmFpbGFibGUuCiAgLy8gQWxp
+YXNlZCBhcyBgc2VsZWN0YC4KICBfLmZpbHRlciA9IF8uc2VsZWN0ID0gZnVuY3Rp
+b24ob2JqLCBpdGVyYXRvciwgY29udGV4dCkgewogICAgdmFyIHJlc3VsdHMgPSBb
+XTsKICAgIGlmIChvYmogPT0gbnVsbCkgcmV0dXJuIHJlc3VsdHM7CiAgICBpZiAo
+bmF0aXZlRmlsdGVyICYmIG9iai5maWx0ZXIgPT09IG5hdGl2ZUZpbHRlcikgcmV0
+dXJuIG9iai5maWx0ZXIoaXRlcmF0b3IsIGNvbnRleHQpOwogICAgZWFjaChvYmos
+IGZ1bmN0aW9uKHZhbHVlLCBpbmRleCwgbGlzdCkgewogICAgICBpZiAoaXRlcmF0
+b3IuY2FsbChjb250ZXh0LCB2YWx1ZSwgaW5kZXgsIGxpc3QpKSByZXN1bHRzW3Jl
+c3VsdHMubGVuZ3RoXSA9IHZhbHVlOwogICAgfSk7CiAgICByZXR1cm4gcmVzdWx0
+czsKICB9OwoKICAvLyBSZXR1cm4gYWxsIHRoZSBlbGVtZW50cyBmb3Igd2hpY2gg
+YSB0cnV0aCB0ZXN0IGZhaWxzLgogIF8ucmVqZWN0ID0gZnVuY3Rpb24ob2JqLCBp
+dGVyYXRvciwgY29udGV4dCkgewogICAgdmFyIHJlc3VsdHMgPSBbXTsKICAgIGlm
+IChvYmogPT0gbnVsbCkgcmV0dXJuIHJlc3VsdHM7CiAgICBlYWNoKG9iaiwgZnVu
+Y3Rpb24odmFsdWUsIGluZGV4LCBsaXN0KSB7CiAgICAgIGlmICghaXRlcmF0b3Iu
+Y2FsbChjb250ZXh0LCB2YWx1ZSwgaW5kZXgsIGxpc3QpKSByZXN1bHRzW3Jlc3Vs
+dHMubGVuZ3RoXSA9IHZhbHVlOwogICAgfSk7CiAgICByZXR1cm4gcmVzdWx0czsK
+ICB9OwoKICAvLyBEZXRlcm1pbmUgd2hldGhlciBhbGwgb2YgdGhlIGVsZW1lbnRz
+IG1hdGNoIGEgdHJ1dGggdGVzdC4KICAvLyBEZWxlZ2F0ZXMgdG8gKipFQ01BU2Ny
+aXB0IDUqKidzIG5hdGl2ZSBgZXZlcnlgIGlmIGF2YWlsYWJsZS4KICAvLyBBbGlh
+c2VkIGFzIGBhbGxgLgogIF8uZXZlcnkgPSBfLmFsbCA9IGZ1bmN0aW9uKG9iaiwg
+aXRlcmF0b3IsIGNvbnRleHQpIHsKICAgIHZhciByZXN1bHQgPSB0cnVlOwogICAg
+aWYgKG9iaiA9PSBudWxsKSByZXR1cm4gcmVzdWx0OwogICAgaWYgKG5hdGl2ZUV2
+ZXJ5ICYmIG9iai5ldmVyeSA9PT0gbmF0aXZlRXZlcnkpIHJldHVybiBvYmouZXZl
+cnkoaXRlcmF0b3IsIGNvbnRleHQpOwogICAgZWFjaChvYmosIGZ1bmN0aW9uKHZh
+bHVlLCBpbmRleCwgbGlzdCkgewogICAgICBpZiAoIShyZXN1bHQgPSByZXN1bHQg
+JiYgaXRlcmF0b3IuY2FsbChjb250ZXh0LCB2YWx1ZSwgaW5kZXgsIGxpc3QpKSkg
+cmV0dXJuIGJyZWFrZXI7CiAgICB9KTsKICAgIHJldHVybiByZXN1bHQ7CiAgfTsK
+CiAgLy8gRGV0ZXJtaW5lIGlmIGF0IGxlYXN0IG9uZSBlbGVtZW50IGluIHRoZSBv
+YmplY3QgbWF0Y2hlcyBhIHRydXRoIHRlc3QuCiAgLy8gRGVsZWdhdGVzIHRvICoq
+RUNNQVNjcmlwdCA1KioncyBuYXRpdmUgYHNvbWVgIGlmIGF2YWlsYWJsZS4KICAv
+LyBBbGlhc2VkIGFzIGBhbnlgLgogIHZhciBhbnkgPSBfLnNvbWUgPSBfLmFueSA9
+IGZ1bmN0aW9uKG9iaiwgaXRlcmF0b3IsIGNvbnRleHQpIHsKICAgIGl0ZXJhdG9y
+IHx8IChpdGVyYXRvciA9IF8uaWRlbnRpdHkpOwogICAgdmFyIHJlc3VsdCA9IGZh
+bHNlOwogICAgaWYgKG9iaiA9PSBudWxsKSByZXR1cm4gcmVzdWx0OwogICAgaWYg
+KG5hdGl2ZVNvbWUgJiYgb2JqLnNvbWUgPT09IG5hdGl2ZVNvbWUpIHJldHVybiBv
+Ymouc29tZShpdGVyYXRvciwgY29udGV4dCk7CiAgICBlYWNoKG9iaiwgZnVuY3Rp
+b24odmFsdWUsIGluZGV4LCBsaXN0KSB7CiAgICAgIGlmIChyZXN1bHQgfHwgKHJl
+c3VsdCA9IGl0ZXJhdG9yLmNhbGwoY29udGV4dCwgdmFsdWUsIGluZGV4LCBsaXN0
+KSkpIHJldHVybiBicmVha2VyOwogICAgfSk7CiAgICByZXR1cm4gISFyZXN1bHQ7
+CiAgfTsKCiAgLy8gRGV0ZXJtaW5lIGlmIGEgZ2l2ZW4gdmFsdWUgaXMgaW5jbHVk
+ZWQgaW4gdGhlIGFycmF5IG9yIG9iamVjdCB1c2luZyBgPT09YC4KICAvLyBBbGlh
+c2VkIGFzIGBjb250YWluc2AuCiAgXy5pbmNsdWRlID0gXy5jb250YWlucyA9IGZ1
+bmN0aW9uKG9iaiwgdGFyZ2V0KSB7CiAgICB2YXIgZm91bmQgPSBmYWxzZTsKICAg
+IGlmIChvYmogPT0gbnVsbCkgcmV0dXJuIGZvdW5kOwogICAgaWYgKG5hdGl2ZUlu
+ZGV4T2YgJiYgb2JqLmluZGV4T2YgPT09IG5hdGl2ZUluZGV4T2YpIHJldHVybiBv
+YmouaW5kZXhPZih0YXJnZXQpICE9IC0xOwogICAgZm91bmQgPSBhbnkob2JqLCBm
+dW5jdGlvbih2YWx1ZSkgewogICAgICByZXR1cm4gdmFsdWUgPT09IHRhcmdldDsK
+ICAgIH0pOwogICAgcmV0dXJuIGZvdW5kOwogIH07CgogIC8vIEludm9rZSBhIG1l
+dGhvZCAod2l0aCBhcmd1bWVudHMpIG9uIGV2ZXJ5IGl0ZW0gaW4gYSBjb2xsZWN0
+aW9uLgogIF8uaW52b2tlID0gZnVuY3Rpb24ob2JqLCBtZXRob2QpIHsKICAgIHZh
+ciBhcmdzID0gc2xpY2UuY2FsbChhcmd1bWVudHMsIDIpOwogICAgcmV0dXJuIF8u
+bWFwKG9iaiwgZnVuY3Rpb24odmFsdWUpIHsKICAgICAgcmV0dXJuIChtZXRob2Qu
+Y2FsbCA/IG1ldGhvZCB8fCB2YWx1ZSA6IHZhbHVlW21ldGhvZF0pLmFwcGx5KHZh
+bHVlLCBhcmdzKTsKICAgIH0pOwogIH07CgogIC8vIENvbnZlbmllbmNlIHZlcnNp
+b24gb2YgYSBjb21tb24gdXNlIGNhc2Ugb2YgYG1hcGA6IGZldGNoaW5nIGEgcHJv
+cGVydHkuCiAgXy5wbHVjayA9IGZ1bmN0aW9uKG9iaiwga2V5KSB7CiAgICByZXR1
+cm4gXy5tYXAob2JqLCBmdW5jdGlvbih2YWx1ZSl7IHJldHVybiB2YWx1ZVtrZXld
+OyB9KTsKICB9OwoKICAvLyBSZXR1cm4gdGhlIG1heGltdW0gZWxlbWVudCBvciAo
+ZWxlbWVudC1iYXNlZCBjb21wdXRhdGlvbikuCiAgXy5tYXggPSBmdW5jdGlvbihv
+YmosIGl0ZXJhdG9yLCBjb250ZXh0KSB7CiAgICBpZiAoIWl0ZXJhdG9yICYmIF8u
+aXNBcnJheShvYmopKSByZXR1cm4gTWF0aC5tYXguYXBwbHkoTWF0aCwgb2JqKTsK
+ICAgIGlmICghaXRlcmF0b3IgJiYgXy5pc0VtcHR5KG9iaikpIHJldHVybiAtSW5m
+aW5pdHk7CiAgICB2YXIgcmVzdWx0ID0ge2NvbXB1dGVkIDogLUluZmluaXR5fTsK
+ICAgIGVhY2gob2JqLCBmdW5jdGlvbih2YWx1ZSwgaW5kZXgsIGxpc3QpIHsKICAg
+ICAgdmFyIGNvbXB1dGVkID0gaXRlcmF0b3IgPyBpdGVyYXRvci5jYWxsKGNvbnRl
+eHQsIHZhbHVlLCBpbmRleCwgbGlzdCkgOiB2YWx1ZTsKICAgICAgY29tcHV0ZWQg
+Pj0gcmVzdWx0LmNvbXB1dGVkICYmIChyZXN1bHQgPSB7dmFsdWUgOiB2YWx1ZSwg
+Y29tcHV0ZWQgOiBjb21wdXRlZH0pOwogICAgfSk7CiAgICByZXR1cm4gcmVzdWx0
+LnZhbHVlOwogIH07CgogIC8vIFJldHVybiB0aGUgbWluaW11bSBlbGVtZW50IChv
+ciBlbGVtZW50LWJhc2VkIGNvbXB1dGF0aW9uKS4KICBfLm1pbiA9IGZ1bmN0aW9u
+KG9iaiwgaXRlcmF0b3IsIGNvbnRleHQpIHsKICAgIGlmICghaXRlcmF0b3IgJiYg
+Xy5pc0FycmF5KG9iaikpIHJldHVybiBNYXRoLm1pbi5hcHBseShNYXRoLCBvYmop
+OwogICAgaWYgKCFpdGVyYXRvciAmJiBfLmlzRW1wdHkob2JqKSkgcmV0dXJuIElu
+ZmluaXR5OwogICAgdmFyIHJlc3VsdCA9IHtjb21wdXRlZCA6IEluZmluaXR5fTsK
+ICAgIGVhY2gob2JqLCBmdW5jdGlvbih2YWx1ZSwgaW5kZXgsIGxpc3QpIHsKICAg
+ICAgdmFyIGNvbXB1dGVkID0gaXRlcmF0b3IgPyBpdGVyYXRvci5jYWxsKGNvbnRl
+eHQsIHZhbHVlLCBpbmRleCwgbGlzdCkgOiB2YWx1ZTsKICAgICAgY29tcHV0ZWQg
+PCByZXN1bHQuY29tcHV0ZWQgJiYgKHJlc3VsdCA9IHt2YWx1ZSA6IHZhbHVlLCBj
+b21wdXRlZCA6IGNvbXB1dGVkfSk7CiAgICB9KTsKICAgIHJldHVybiByZXN1bHQu
+dmFsdWU7CiAgfTsKCiAgLy8gU2h1ZmZsZSBhbiBhcnJheS4KICBfLnNodWZmbGUg
+PSBmdW5jdGlvbihvYmopIHsKICAgIHZhciBzaHVmZmxlZCA9IFtdLCByYW5kOwog
+ICAgZWFjaChvYmosIGZ1bmN0aW9uKHZhbHVlLCBpbmRleCwgbGlzdCkgewogICAg
+ICBpZiAoaW5kZXggPT0gMCkgewogICAgICAgIHNodWZmbGVkWzBdID0gdmFsdWU7
+CiAgICAgIH0gZWxzZSB7CiAgICAgICAgcmFuZCA9IE1hdGguZmxvb3IoTWF0aC5y
+YW5kb20oKSAqIChpbmRleCArIDEpKTsKICAgICAgICBzaHVmZmxlZFtpbmRleF0g
+PSBzaHVmZmxlZFtyYW5kXTsKICAgICAgICBzaHVmZmxlZFtyYW5kXSA9IHZhbHVl
+OwogICAgICB9CiAgICB9KTsKICAgIHJldHVybiBzaHVmZmxlZDsKICB9OwoKICAv
+LyBTb3J0IHRoZSBvYmplY3QncyB2YWx1ZXMgYnkgYSBjcml0ZXJpb24gcHJvZHVj
+ZWQgYnkgYW4gaXRlcmF0b3IuCiAgXy5zb3J0QnkgPSBmdW5jdGlvbihvYmosIGl0
+ZXJhdG9yLCBjb250ZXh0KSB7CiAgICByZXR1cm4gXy5wbHVjayhfLm1hcChvYmos
+IGZ1bmN0aW9uKHZhbHVlLCBpbmRleCwgbGlzdCkgewogICAgICByZXR1cm4gewog
+ICAgICAgIHZhbHVlIDogdmFsdWUsCiAgICAgICAgY3JpdGVyaWEgOiBpdGVyYXRv
+ci5jYWxsKGNvbnRleHQsIHZhbHVlLCBpbmRleCwgbGlzdCkKICAgICAgfTsKICAg
+IH0pLnNvcnQoZnVuY3Rpb24obGVmdCwgcmlnaHQpIHsKICAgICAgdmFyIGEgPSBs
+ZWZ0LmNyaXRlcmlhLCBiID0gcmlnaHQuY3JpdGVyaWE7CiAgICAgIHJldHVybiBh
+IDwgYiA/IC0xIDogYSA+IGIgPyAxIDogMDsKICAgIH0pLCAndmFsdWUnKTsKICB9
+OwoKICAvLyBHcm91cHMgdGhlIG9iamVjdCdzIHZhbHVlcyBieSBhIGNyaXRlcmlv
+bi4gUGFzcyBlaXRoZXIgYSBzdHJpbmcgYXR0cmlidXRlCiAgLy8gdG8gZ3JvdXAg
+YnksIG9yIGEgZnVuY3Rpb24gdGhhdCByZXR1cm5zIHRoZSBjcml0ZXJpb24uCiAg
+Xy5ncm91cEJ5ID0gZnVuY3Rpb24ob2JqLCB2YWwpIHsKICAgIHZhciByZXN1bHQg
+PSB7fTsKICAgIHZhciBpdGVyYXRvciA9IF8uaXNGdW5jdGlvbih2YWwpID8gdmFs
+IDogZnVuY3Rpb24ob2JqKSB7IHJldHVybiBvYmpbdmFsXTsgfTsKICAgIGVhY2go
+b2JqLCBmdW5jdGlvbih2YWx1ZSwgaW5kZXgpIHsKICAgICAgdmFyIGtleSA9IGl0
+ZXJhdG9yKHZhbHVlLCBpbmRleCk7CiAgICAgIChyZXN1bHRba2V5XSB8fCAocmVz
+dWx0W2tleV0gPSBbXSkpLnB1c2godmFsdWUpOwogICAgfSk7CiAgICByZXR1cm4g
+cmVzdWx0OwogIH07CgogIC8vIFVzZSBhIGNvbXBhcmF0b3IgZnVuY3Rpb24gdG8g
+ZmlndXJlIG91dCBhdCB3aGF0IGluZGV4IGFuIG9iamVjdCBzaG91bGQKICAvLyBi
+ZSBpbnNlcnRlZCBzbyBhcyB0byBtYWludGFpbiBvcmRlci4gVXNlcyBiaW5hcnkg
+c2VhcmNoLgogIF8uc29ydGVkSW5kZXggPSBmdW5jdGlvbihhcnJheSwgb2JqLCBp
+dGVyYXRvcikgewogICAgaXRlcmF0b3IgfHwgKGl0ZXJhdG9yID0gXy5pZGVudGl0
+eSk7CiAgICB2YXIgbG93ID0gMCwgaGlnaCA9IGFycmF5Lmxlbmd0aDsKICAgIHdo
+aWxlIChsb3cgPCBoaWdoKSB7CiAgICAgIHZhciBtaWQgPSAobG93ICsgaGlnaCkg
+Pj4gMTsKICAgICAgaXRlcmF0b3IoYXJyYXlbbWlkXSkgPCBpdGVyYXRvcihvYmop
+ID8gbG93ID0gbWlkICsgMSA6IGhpZ2ggPSBtaWQ7CiAgICB9CiAgICByZXR1cm4g
+bG93OwogIH07CgogIC8vIFNhZmVseSBjb252ZXJ0IGFueXRoaW5nIGl0ZXJhYmxl
+IGludG8gYSByZWFsLCBsaXZlIGFycmF5LgogIF8udG9BcnJheSA9IGZ1bmN0aW9u
+KGl0ZXJhYmxlKSB7CiAgICBpZiAoIWl0ZXJhYmxlKSAgICAgICAgICAgICAgICBy
+ZXR1cm4gW107CiAgICBpZiAoaXRlcmFibGUudG9BcnJheSkgICAgICAgICByZXR1
+cm4gaXRlcmFibGUudG9BcnJheSgpOwogICAgaWYgKF8uaXNBcnJheShpdGVyYWJs
+ZSkpICAgICAgcmV0dXJuIHNsaWNlLmNhbGwoaXRlcmFibGUpOwogICAgaWYgKF8u
+aXNBcmd1bWVudHMoaXRlcmFibGUpKSAgcmV0dXJuIHNsaWNlLmNhbGwoaXRlcmFi
+bGUpOwogICAgcmV0dXJuIF8udmFsdWVzKGl0ZXJhYmxlKTsKICB9OwoKICAvLyBS
+ZXR1cm4gdGhlIG51bWJlciBvZiBlbGVtZW50cyBpbiBhbiBvYmplY3QuCiAgXy5z
+aXplID0gZnVuY3Rpb24ob2JqKSB7CiAgICByZXR1cm4gXy50b0FycmF5KG9iaiku
+bGVuZ3RoOwogIH07CgogIC8vIEFycmF5IEZ1bmN0aW9ucwogIC8vIC0tLS0tLS0t
+LS0tLS0tLQoKICAvLyBHZXQgdGhlIGZpcnN0IGVsZW1lbnQgb2YgYW4gYXJyYXku
+IFBhc3NpbmcgKipuKiogd2lsbCByZXR1cm4gdGhlIGZpcnN0IE4KICAvLyB2YWx1
+ZXMgaW4gdGhlIGFycmF5LiBBbGlhc2VkIGFzIGBoZWFkYC4gVGhlICoqZ3VhcmQq
+KiBjaGVjayBhbGxvd3MgaXQgdG8gd29yawogIC8vIHdpdGggYF8ubWFwYC4KICBf
+LmZpcnN0ID0gXy5oZWFkID0gZnVuY3Rpb24oYXJyYXksIG4sIGd1YXJkKSB7CiAg
+ICByZXR1cm4gKG4gIT0gbnVsbCkgJiYgIWd1YXJkID8gc2xpY2UuY2FsbChhcnJh
+eSwgMCwgbikgOiBhcnJheVswXTsKICB9OwoKICAvLyBSZXR1cm5zIGV2ZXJ5dGhp
+bmcgYnV0IHRoZSBsYXN0IGVudHJ5IG9mIHRoZSBhcnJheS4gRXNwZWNjaWFseSB1
+c2VmdWwgb24KICAvLyB0aGUgYXJndW1lbnRzIG9iamVjdC4gUGFzc2luZyAqKm4q
+KiB3aWxsIHJldHVybiBhbGwgdGhlIHZhbHVlcyBpbgogIC8vIHRoZSBhcnJheSwg
+ZXhjbHVkaW5nIHRoZSBsYXN0IE4uIFRoZSAqKmd1YXJkKiogY2hlY2sgYWxsb3dz
+IGl0IHRvIHdvcmsgd2l0aAogIC8vIGBfLm1hcGAuCiAgXy5pbml0aWFsID0gZnVu
+Y3Rpb24oYXJyYXksIG4sIGd1YXJkKSB7CiAgICByZXR1cm4gc2xpY2UuY2FsbChh
+cnJheSwgMCwgYXJyYXkubGVuZ3RoIC0gKChuID09IG51bGwpIHx8IGd1YXJkID8g
+MSA6IG4pKTsKICB9OwoKICAvLyBHZXQgdGhlIGxhc3QgZWxlbWVudCBvZiBhbiBh
+cnJheS4gUGFzc2luZyAqKm4qKiB3aWxsIHJldHVybiB0aGUgbGFzdCBOCiAgLy8g
+dmFsdWVzIGluIHRoZSBhcnJheS4gVGhlICoqZ3VhcmQqKiBjaGVjayBhbGxvd3Mg
+aXQgdG8gd29yayB3aXRoIGBfLm1hcGAuCiAgXy5sYXN0ID0gZnVuY3Rpb24oYXJy
+YXksIG4sIGd1YXJkKSB7CiAgICBpZiAoKG4gIT0gbnVsbCkgJiYgIWd1YXJkKSB7
+CiAgICAgIHJldHVybiBzbGljZS5jYWxsKGFycmF5LCBNYXRoLm1heChhcnJheS5s
+ZW5ndGggLSBuLCAwKSk7CiAgICB9IGVsc2UgewogICAgICByZXR1cm4gYXJyYXlb
+YXJyYXkubGVuZ3RoIC0gMV07CiAgICB9CiAgfTsKCiAgLy8gUmV0dXJucyBldmVy
+eXRoaW5nIGJ1dCB0aGUgZmlyc3QgZW50cnkgb2YgdGhlIGFycmF5LiBBbGlhc2Vk
+IGFzIGB0YWlsYC4KICAvLyBFc3BlY2lhbGx5IHVzZWZ1bCBvbiB0aGUgYXJndW1l
+bnRzIG9iamVjdC4gUGFzc2luZyBhbiAqKmluZGV4Kiogd2lsbCByZXR1cm4KICAv
+LyB0aGUgcmVzdCBvZiB0aGUgdmFsdWVzIGluIHRoZSBhcnJheSBmcm9tIHRoYXQg
+aW5kZXggb253YXJkLiBUaGUgKipndWFyZCoqCiAgLy8gY2hlY2sgYWxsb3dzIGl0
+IHRvIHdvcmsgd2l0aCBgXy5tYXBgLgogIF8ucmVzdCA9IF8udGFpbCA9IGZ1bmN0
+aW9uKGFycmF5LCBpbmRleCwgZ3VhcmQpIHsKICAgIHJldHVybiBzbGljZS5jYWxs
+KGFycmF5LCAoaW5kZXggPT0gbnVsbCkgfHwgZ3VhcmQgPyAxIDogaW5kZXgpOwog
+IH07CgogIC8vIFRyaW0gb3V0IGFsbCBmYWxzeSB2YWx1ZXMgZnJvbSBhbiBhcnJh
+eS4KICBfLmNvbXBhY3QgPSBmdW5jdGlvbihhcnJheSkgewogICAgcmV0dXJuIF8u
+ZmlsdGVyKGFycmF5LCBmdW5jdGlvbih2YWx1ZSl7IHJldHVybiAhIXZhbHVlOyB9
+KTsKICB9OwoKICAvLyBSZXR1cm4gYSBjb21wbGV0ZWx5IGZsYXR0ZW5lZCB2ZXJz
+aW9uIG9mIGFuIGFycmF5LgogIF8uZmxhdHRlbiA9IGZ1bmN0aW9uKGFycmF5LCBz
+aGFsbG93KSB7CiAgICByZXR1cm4gXy5yZWR1Y2UoYXJyYXksIGZ1bmN0aW9uKG1l
+bW8sIHZhbHVlKSB7CiAgICAgIGlmIChfLmlzQXJyYXkodmFsdWUpKSByZXR1cm4g
+bWVtby5jb25jYXQoc2hhbGxvdyA/IHZhbHVlIDogXy5mbGF0dGVuKHZhbHVlKSk7
+CiAgICAgIG1lbW9bbWVtby5sZW5ndGhdID0gdmFsdWU7CiAgICAgIHJldHVybiBt
+ZW1vOwogICAgfSwgW10pOwogIH07CgogIC8vIFJldHVybiBhIHZlcnNpb24gb2Yg
+dGhlIGFycmF5IHRoYXQgZG9lcyBub3QgY29udGFpbiB0aGUgc3BlY2lmaWVkIHZh
+bHVlKHMpLgogIF8ud2l0aG91dCA9IGZ1bmN0aW9uKGFycmF5KSB7CiAgICByZXR1
+cm4gXy5kaWZmZXJlbmNlKGFycmF5LCBzbGljZS5jYWxsKGFyZ3VtZW50cywgMSkp
+OwogIH07CgogIC8vIFByb2R1Y2UgYSBkdXBsaWNhdGUtZnJlZSB2ZXJzaW9uIG9m
+IHRoZSBhcnJheS4gSWYgdGhlIGFycmF5IGhhcyBhbHJlYWR5CiAgLy8gYmVlbiBz
+b3J0ZWQsIHlvdSBoYXZlIHRoZSBvcHRpb24gb2YgdXNpbmcgYSBmYXN0ZXIgYWxn
+b3JpdGhtLgogIC8vIEFsaWFzZWQgYXMgYHVuaXF1ZWAuCiAgXy51bmlxID0gXy51
+bmlxdWUgPSBmdW5jdGlvbihhcnJheSwgaXNTb3J0ZWQsIGl0ZXJhdG9yKSB7CiAg
+ICB2YXIgaW5pdGlhbCA9IGl0ZXJhdG9yID8gXy5tYXAoYXJyYXksIGl0ZXJhdG9y
+KSA6IGFycmF5OwogICAgdmFyIHJlc3VsdCA9IFtdOwogICAgXy5yZWR1Y2UoaW5p
+dGlhbCwgZnVuY3Rpb24obWVtbywgZWwsIGkpIHsKICAgICAgaWYgKDAgPT0gaSB8
+fCAoaXNTb3J0ZWQgPT09IHRydWUgPyBfLmxhc3QobWVtbykgIT0gZWwgOiAhXy5p
+bmNsdWRlKG1lbW8sIGVsKSkpIHsKICAgICAgICBtZW1vW21lbW8ubGVuZ3RoXSA9
+IGVsOwogICAgICAgIHJlc3VsdFtyZXN1bHQubGVuZ3RoXSA9IGFycmF5W2ldOwog
+ICAgICB9CiAgICAgIHJldHVybiBtZW1vOwogICAgfSwgW10pOwogICAgcmV0dXJu
+IHJlc3VsdDsKICB9OwoKICAvLyBQcm9kdWNlIGFuIGFycmF5IHRoYXQgY29udGFp
+bnMgdGhlIHVuaW9uOiBlYWNoIGRpc3RpbmN0IGVsZW1lbnQgZnJvbSBhbGwgb2YK
+ICAvLyB0aGUgcGFzc2VkLWluIGFycmF5cy4KICBfLnVuaW9uID0gZnVuY3Rpb24o
+KSB7CiAgICByZXR1cm4gXy51bmlxKF8uZmxhdHRlbihhcmd1bWVudHMsIHRydWUp
+KTsKICB9OwoKICAvLyBQcm9kdWNlIGFuIGFycmF5IHRoYXQgY29udGFpbnMgZXZl
+cnkgaXRlbSBzaGFyZWQgYmV0d2VlbiBhbGwgdGhlCiAgLy8gcGFzc2VkLWluIGFy
+cmF5cy4gKEFsaWFzZWQgYXMgImludGVyc2VjdCIgZm9yIGJhY2stY29tcGF0LikK
+ICBfLmludGVyc2VjdGlvbiA9IF8uaW50ZXJzZWN0ID0gZnVuY3Rpb24oYXJyYXkp
+IHsKICAgIHZhciByZXN0ID0gc2xpY2UuY2FsbChhcmd1bWVudHMsIDEpOwogICAg
+cmV0dXJuIF8uZmlsdGVyKF8udW5pcShhcnJheSksIGZ1bmN0aW9uKGl0ZW0pIHsK
+ICAgICAgcmV0dXJuIF8uZXZlcnkocmVzdCwgZnVuY3Rpb24ob3RoZXIpIHsKICAg
+ICAgICByZXR1cm4gXy5pbmRleE9mKG90aGVyLCBpdGVtKSA+PSAwOwogICAgICB9
+KTsKICAgIH0pOwogIH07CgogIC8vIFRha2UgdGhlIGRpZmZlcmVuY2UgYmV0d2Vl
+biBvbmUgYXJyYXkgYW5kIGEgbnVtYmVyIG9mIG90aGVyIGFycmF5cy4KICAvLyBP
+bmx5IHRoZSBlbGVtZW50cyBwcmVzZW50IGluIGp1c3QgdGhlIGZpcnN0IGFycmF5
+IHdpbGwgcmVtYWluLgogIF8uZGlmZmVyZW5jZSA9IGZ1bmN0aW9uKGFycmF5KSB7
+CiAgICB2YXIgcmVzdCA9IF8uZmxhdHRlbihzbGljZS5jYWxsKGFyZ3VtZW50cywg
+MSkpOwogICAgcmV0dXJuIF8uZmlsdGVyKGFycmF5LCBmdW5jdGlvbih2YWx1ZSl7
+IHJldHVybiAhXy5pbmNsdWRlKHJlc3QsIHZhbHVlKTsgfSk7CiAgfTsKCiAgLy8g
+WmlwIHRvZ2V0aGVyIG11bHRpcGxlIGxpc3RzIGludG8gYSBzaW5nbGUgYXJyYXkg
+LS0gZWxlbWVudHMgdGhhdCBzaGFyZQogIC8vIGFuIGluZGV4IGdvIHRvZ2V0aGVy
+LgogIF8uemlwID0gZnVuY3Rpb24oKSB7CiAgICB2YXIgYXJncyA9IHNsaWNlLmNh
+bGwoYXJndW1lbnRzKTsKICAgIHZhciBsZW5ndGggPSBfLm1heChfLnBsdWNrKGFy
+Z3MsICdsZW5ndGgnKSk7CiAgICB2YXIgcmVzdWx0cyA9IG5ldyBBcnJheShsZW5n
+dGgpOwogICAgZm9yICh2YXIgaSA9IDA7IGkgPCBsZW5ndGg7IGkrKykgcmVzdWx0
+c1tpXSA9IF8ucGx1Y2soYXJncywgIiIgKyBpKTsKICAgIHJldHVybiByZXN1bHRz
+OwogIH07CgogIC8vIElmIHRoZSBicm93c2VyIGRvZXNuJ3Qgc3VwcGx5IHVzIHdp
+dGggaW5kZXhPZiAoSSdtIGxvb2tpbmcgYXQgeW91LCAqKk1TSUUqKiksCiAgLy8g
+d2UgbmVlZCB0aGlzIGZ1bmN0aW9uLiBSZXR1cm4gdGhlIHBvc2l0aW9uIG9mIHRo
+ZSBmaXJzdCBvY2N1cnJlbmNlIG9mIGFuCiAgLy8gaXRlbSBpbiBhbiBhcnJheSwg
+b3IgLTEgaWYgdGhlIGl0ZW0gaXMgbm90IGluY2x1ZGVkIGluIHRoZSBhcnJheS4K
+ICAvLyBEZWxlZ2F0ZXMgdG8gKipFQ01BU2NyaXB0IDUqKidzIG5hdGl2ZSBgaW5k
+ZXhPZmAgaWYgYXZhaWxhYmxlLgogIC8vIElmIHRoZSBhcnJheSBpcyBsYXJnZSBh
+bmQgYWxyZWFkeSBpbiBzb3J0IG9yZGVyLCBwYXNzIGB0cnVlYAogIC8vIGZvciAq
+KmlzU29ydGVkKiogdG8gdXNlIGJpbmFyeSBzZWFyY2guCiAgXy5pbmRleE9mID0g
+ZnVuY3Rpb24oYXJyYXksIGl0ZW0sIGlzU29ydGVkKSB7CiAgICBpZiAoYXJyYXkg
+PT0gbnVsbCkgcmV0dXJuIC0xOwogICAgdmFyIGksIGw7CiAgICBpZiAoaXNTb3J0
+ZWQpIHsKICAgICAgaSA9IF8uc29ydGVkSW5kZXgoYXJyYXksIGl0ZW0pOwogICAg
+ICByZXR1cm4gYXJyYXlbaV0gPT09IGl0ZW0gPyBpIDogLTE7CiAgICB9CiAgICBp
+ZiAobmF0aXZlSW5kZXhPZiAmJiBhcnJheS5pbmRleE9mID09PSBuYXRpdmVJbmRl
+eE9mKSByZXR1cm4gYXJyYXkuaW5kZXhPZihpdGVtKTsKICAgIGZvciAoaSA9IDAs
+IGwgPSBhcnJheS5sZW5ndGg7IGkgPCBsOyBpKyspIGlmIChpIGluIGFycmF5ICYm
+IGFycmF5W2ldID09PSBpdGVtKSByZXR1cm4gaTsKICAgIHJldHVybiAtMTsKICB9
+OwoKICAvLyBEZWxlZ2F0ZXMgdG8gKipFQ01BU2NyaXB0IDUqKidzIG5hdGl2ZSBg
+bGFzdEluZGV4T2ZgIGlmIGF2YWlsYWJsZS4KICBfLmxhc3RJbmRleE9mID0gZnVu
+Y3Rpb24oYXJyYXksIGl0ZW0pIHsKICAgIGlmIChhcnJheSA9PSBudWxsKSByZXR1
+cm4gLTE7CiAgICBpZiAobmF0aXZlTGFzdEluZGV4T2YgJiYgYXJyYXkubGFzdElu
+ZGV4T2YgPT09IG5hdGl2ZUxhc3RJbmRleE9mKSByZXR1cm4gYXJyYXkubGFzdElu
+ZGV4T2YoaXRlbSk7CiAgICB2YXIgaSA9IGFycmF5Lmxlbmd0aDsKICAgIHdoaWxl
+IChpLS0pIGlmIChpIGluIGFycmF5ICYmIGFycmF5W2ldID09PSBpdGVtKSByZXR1
+cm4gaTsKICAgIHJldHVybiAtMTsKICB9OwoKICAvLyBHZW5lcmF0ZSBhbiBpbnRl
+Z2VyIEFycmF5IGNvbnRhaW5pbmcgYW4gYXJpdGhtZXRpYyBwcm9ncmVzc2lvbi4g
+QSBwb3J0IG9mCiAgLy8gdGhlIG5hdGl2ZSBQeXRob24gYHJhbmdlKClgIGZ1bmN0
+aW9uLiBTZWUKICAvLyBbdGhlIFB5dGhvbiBkb2N1bWVudGF0aW9uXShodHRwOi8v
+ZG9jcy5weXRob24ub3JnL2xpYnJhcnkvZnVuY3Rpb25zLmh0bWwjcmFuZ2UpLgog
+IF8ucmFuZ2UgPSBmdW5jdGlvbihzdGFydCwgc3RvcCwgc3RlcCkgewogICAgaWYg
+KGFyZ3VtZW50cy5sZW5ndGggPD0gMSkgewogICAgICBzdG9wID0gc3RhcnQgfHwg
+MDsKICAgICAgc3RhcnQgPSAwOwogICAgfQogICAgc3RlcCA9IGFyZ3VtZW50c1sy
+XSB8fCAxOwoKICAgIHZhciBsZW4gPSBNYXRoLm1heChNYXRoLmNlaWwoKHN0b3Ag
+LSBzdGFydCkgLyBzdGVwKSwgMCk7CiAgICB2YXIgaWR4ID0gMDsKICAgIHZhciBy
+YW5nZSA9IG5ldyBBcnJheShsZW4pOwoKICAgIHdoaWxlKGlkeCA8IGxlbikgewog
+ICAgICByYW5nZVtpZHgrK10gPSBzdGFydDsKICAgICAgc3RhcnQgKz0gc3RlcDsK
+ICAgIH0KCiAgICByZXR1cm4gcmFuZ2U7CiAgfTsKCiAgLy8gRnVuY3Rpb24gKGFo
+ZW0pIEZ1bmN0aW9ucwogIC8vIC0tLS0tLS0tLS0tLS0tLS0tLQoKICAvLyBSZXVz
+YWJsZSBjb25zdHJ1Y3RvciBmdW5jdGlvbiBmb3IgcHJvdG90eXBlIHNldHRpbmcu
+CiAgdmFyIGN0b3IgPSBmdW5jdGlvbigpe307CgogIC8vIENyZWF0ZSBhIGZ1bmN0
+aW9uIGJvdW5kIHRvIGEgZ2l2ZW4gb2JqZWN0IChhc3NpZ25pbmcgYHRoaXNgLCBh
+bmQgYXJndW1lbnRzLAogIC8vIG9wdGlvbmFsbHkpLiBCaW5kaW5nIHdpdGggYXJn
+dW1lbnRzIGlzIGFsc28ga25vd24gYXMgYGN1cnJ5YC4KICAvLyBEZWxlZ2F0ZXMg
+dG8gKipFQ01BU2NyaXB0IDUqKidzIG5hdGl2ZSBgRnVuY3Rpb24uYmluZGAgaWYg
+YXZhaWxhYmxlLgogIC8vIFdlIGNoZWNrIGZvciBgZnVuYy5iaW5kYCBmaXJzdCwg
+dG8gZmFpbCBmYXN0IHdoZW4gYGZ1bmNgIGlzIHVuZGVmaW5lZC4KICBfLmJpbmQg
+PSBmdW5jdGlvbiBiaW5kKGZ1bmMsIGNvbnRleHQpIHsKICAgIHZhciBib3VuZCwg
+YXJnczsKICAgIGlmIChmdW5jLmJpbmQgPT09IG5hdGl2ZUJpbmQgJiYgbmF0aXZl
+QmluZCkgcmV0dXJuIG5hdGl2ZUJpbmQuYXBwbHkoZnVuYywgc2xpY2UuY2FsbChh
+cmd1bWVudHMsIDEpKTsKICAgIGlmICghXy5pc0Z1bmN0aW9uKGZ1bmMpKSB0aHJv
+dyBuZXcgVHlwZUVycm9yOwogICAgYXJncyA9IHNsaWNlLmNhbGwoYXJndW1lbnRz
+LCAyKTsKICAgIHJldHVybiBib3VuZCA9IGZ1bmN0aW9uKCkgewogICAgICBpZiAo
+ISh0aGlzIGluc3RhbmNlb2YgYm91bmQpKSByZXR1cm4gZnVuYy5hcHBseShjb250
+ZXh0LCBhcmdzLmNvbmNhdChzbGljZS5jYWxsKGFyZ3VtZW50cykpKTsKICAgICAg
+Y3Rvci5wcm90b3R5cGUgPSBmdW5jLnByb3RvdHlwZTsKICAgICAgdmFyIHNlbGYg
+PSBuZXcgY3RvcjsKICAgICAgdmFyIHJlc3VsdCA9IGZ1bmMuYXBwbHkoc2VsZiwg
+YXJncy5jb25jYXQoc2xpY2UuY2FsbChhcmd1bWVudHMpKSk7CiAgICAgIGlmIChP
+YmplY3QocmVzdWx0KSA9PT0gcmVzdWx0KSByZXR1cm4gcmVzdWx0OwogICAgICBy
+ZXR1cm4gc2VsZjsKICAgIH07CiAgfTsKCiAgLy8gQmluZCBhbGwgb2YgYW4gb2Jq
+ZWN0J3MgbWV0aG9kcyB0byB0aGF0IG9iamVjdC4gVXNlZnVsIGZvciBlbnN1cmlu
+ZyB0aGF0CiAgLy8gYWxsIGNhbGxiYWNrcyBkZWZpbmVkIG9uIGFuIG9iamVjdCBi
+ZWxvbmcgdG8gaXQuCiAgXy5iaW5kQWxsID0gZnVuY3Rpb24ob2JqKSB7CiAgICB2
+YXIgZnVuY3MgPSBzbGljZS5jYWxsKGFyZ3VtZW50cywgMSk7CiAgICBpZiAoZnVu
+Y3MubGVuZ3RoID09IDApIGZ1bmNzID0gXy5mdW5jdGlvbnMob2JqKTsKICAgIGVh
+Y2goZnVuY3MsIGZ1bmN0aW9uKGYpIHsgb2JqW2ZdID0gXy5iaW5kKG9ialtmXSwg
+b2JqKTsgfSk7CiAgICByZXR1cm4gb2JqOwogIH07CgogIC8vIE1lbW9pemUgYW4g
+ZXhwZW5zaXZlIGZ1bmN0aW9uIGJ5IHN0b3JpbmcgaXRzIHJlc3VsdHMuCiAgXy5t
+ZW1vaXplID0gZnVuY3Rpb24oZnVuYywgaGFzaGVyKSB7CiAgICB2YXIgbWVtbyA9
+IHt9OwogICAgaGFzaGVyIHx8IChoYXNoZXIgPSBfLmlkZW50aXR5KTsKICAgIHJl
+dHVybiBmdW5jdGlvbigpIHsKICAgICAgdmFyIGtleSA9IGhhc2hlci5hcHBseSh0
+aGlzLCBhcmd1bWVudHMpOwogICAgICByZXR1cm4gaGFzT3duUHJvcGVydHkuY2Fs
+bChtZW1vLCBrZXkpID8gbWVtb1trZXldIDogKG1lbW9ba2V5XSA9IGZ1bmMuYXBw
+bHkodGhpcywgYXJndW1lbnRzKSk7CiAgICB9OwogIH07CgogIC8vIERlbGF5cyBh
+IGZ1bmN0aW9uIGZvciB0aGUgZ2l2ZW4gbnVtYmVyIG9mIG1pbGxpc2Vjb25kcywg
+YW5kIHRoZW4gY2FsbHMKICAvLyBpdCB3aXRoIHRoZSBhcmd1bWVudHMgc3VwcGxp
+ZWQuCiAgXy5kZWxheSA9IGZ1bmN0aW9uKGZ1bmMsIHdhaXQpIHsKICAgIHZhciBh
+cmdzID0gc2xpY2UuY2FsbChhcmd1bWVudHMsIDIpOwogICAgcmV0dXJuIHNldFRp
+bWVvdXQoZnVuY3Rpb24oKXsgcmV0dXJuIGZ1bmMuYXBwbHkoZnVuYywgYXJncyk7
+IH0sIHdhaXQpOwogIH07CgogIC8vIERlZmVycyBhIGZ1bmN0aW9uLCBzY2hlZHVs
+aW5nIGl0IHRvIHJ1biBhZnRlciB0aGUgY3VycmVudCBjYWxsIHN0YWNrIGhhcwog
+IC8vIGNsZWFyZWQuCiAgXy5kZWZlciA9IGZ1bmN0aW9uKGZ1bmMpIHsKICAgIHJl
+dHVybiBfLmRlbGF5LmFwcGx5KF8sIFtmdW5jLCAxXS5jb25jYXQoc2xpY2UuY2Fs
+bChhcmd1bWVudHMsIDEpKSk7CiAgfTsKCiAgLy8gUmV0dXJucyBhIGZ1bmN0aW9u
+LCB0aGF0LCB3aGVuIGludm9rZWQsIHdpbGwgb25seSBiZSB0cmlnZ2VyZWQgYXQg
+bW9zdCBvbmNlCiAgLy8gZHVyaW5nIGEgZ2l2ZW4gd2luZG93IG9mIHRpbWUuCiAg
+Xy50aHJvdHRsZSA9IGZ1bmN0aW9uKGZ1bmMsIHdhaXQpIHsKICAgIHZhciBjb250
+ZXh0LCBhcmdzLCB0aW1lb3V0LCB0aHJvdHRsaW5nLCBtb3JlOwogICAgdmFyIHdo
+ZW5Eb25lID0gXy5kZWJvdW5jZShmdW5jdGlvbigpeyBtb3JlID0gdGhyb3R0bGlu
+ZyA9IGZhbHNlOyB9LCB3YWl0KTsKICAgIHJldHVybiBmdW5jdGlvbigpIHsKICAg
+ICAgY29udGV4dCA9IHRoaXM7IGFyZ3MgPSBhcmd1bWVudHM7CiAgICAgIHZhciBs
+YXRlciA9IGZ1bmN0aW9uKCkgewogICAgICAgIHRpbWVvdXQgPSBudWxsOwogICAg
+ICAgIGlmIChtb3JlKSBmdW5jLmFwcGx5KGNvbnRleHQsIGFyZ3MpOwogICAgICAg
+IHdoZW5Eb25lKCk7CiAgICAgIH07CiAgICAgIGlmICghdGltZW91dCkgdGltZW91
+dCA9IHNldFRpbWVvdXQobGF0ZXIsIHdhaXQpOwogICAgICBpZiAodGhyb3R0bGlu
+ZykgewogICAgICAgIG1vcmUgPSB0cnVlOwogICAgICB9IGVsc2UgewogICAgICAg
+IGZ1bmMuYXBwbHkoY29udGV4dCwgYXJncyk7CiAgICAgIH0KICAgICAgd2hlbkRv
+bmUoKTsKICAgICAgdGhyb3R0bGluZyA9IHRydWU7CiAgICB9OwogIH07CgogIC8v
+IFJldHVybnMgYSBmdW5jdGlvbiwgdGhhdCwgYXMgbG9uZyBhcyBpdCBjb250aW51
+ZXMgdG8gYmUgaW52b2tlZCwgd2lsbCBub3QKICAvLyBiZSB0cmlnZ2VyZWQuIFRo
+ZSBmdW5jdGlvbiB3aWxsIGJlIGNhbGxlZCBhZnRlciBpdCBzdG9wcyBiZWluZyBj
+YWxsZWQgZm9yCiAgLy8gTiBtaWxsaXNlY29uZHMuCiAgXy5kZWJvdW5jZSA9IGZ1
+bmN0aW9uKGZ1bmMsIHdhaXQpIHsKICAgIHZhciB0aW1lb3V0OwogICAgcmV0dXJu
+IGZ1bmN0aW9uKCkgewogICAgICB2YXIgY29udGV4dCA9IHRoaXMsIGFyZ3MgPSBh
+cmd1bWVudHM7CiAgICAgIHZhciBsYXRlciA9IGZ1bmN0aW9uKCkgewogICAgICAg
+IHRpbWVvdXQgPSBudWxsOwogICAgICAgIGZ1bmMuYXBwbHkoY29udGV4dCwgYXJn
+cyk7CiAgICAgIH07CiAgICAgIGNsZWFyVGltZW91dCh0aW1lb3V0KTsKICAgICAg
+dGltZW91dCA9IHNldFRpbWVvdXQobGF0ZXIsIHdhaXQpOwogICAgfTsKICB9OwoK
+ICAvLyBSZXR1cm5zIGEgZnVuY3Rpb24gdGhhdCB3aWxsIGJlIGV4ZWN1dGVkIGF0
+IG1vc3Qgb25lIHRpbWUsIG5vIG1hdHRlciBob3cKICAvLyBvZnRlbiB5b3UgY2Fs
+bCBpdC4gVXNlZnVsIGZvciBsYXp5IGluaXRpYWxpemF0aW9uLgogIF8ub25jZSA9
+IGZ1bmN0aW9uKGZ1bmMpIHsKICAgIHZhciByYW4gPSBmYWxzZSwgbWVtbzsKICAg
+IHJldHVybiBmdW5jdGlvbigpIHsKICAgICAgaWYgKHJhbikgcmV0dXJuIG1lbW87
+CiAgICAgIHJhbiA9IHRydWU7CiAgICAgIHJldHVybiBtZW1vID0gZnVuYy5hcHBs
+eSh0aGlzLCBhcmd1bWVudHMpOwogICAgfTsKICB9OwoKICAvLyBSZXR1cm5zIHRo
+ZSBmaXJzdCBmdW5jdGlvbiBwYXNzZWQgYXMgYW4gYXJndW1lbnQgdG8gdGhlIHNl
+Y29uZCwKICAvLyBhbGxvd2luZyB5b3UgdG8gYWRqdXN0IGFyZ3VtZW50cywgcnVu
+IGNvZGUgYmVmb3JlIGFuZCBhZnRlciwgYW5kCiAgLy8gY29uZGl0aW9uYWxseSBl
+eGVjdXRlIHRoZSBvcmlnaW5hbCBmdW5jdGlvbi4KICBfLndyYXAgPSBmdW5jdGlv
+bihmdW5jLCB3cmFwcGVyKSB7CiAgICByZXR1cm4gZnVuY3Rpb24oKSB7CiAgICAg
+IHZhciBhcmdzID0gY29uY2F0LmFwcGx5KFtmdW5jXSwgYXJndW1lbnRzKTsKICAg
+ICAgcmV0dXJuIHdyYXBwZXIuYXBwbHkodGhpcywgYXJncyk7CiAgICB9OwogIH07
+CgogIC8vIFJldHVybnMgYSBmdW5jdGlvbiB0aGF0IGlzIHRoZSBjb21wb3NpdGlv
+biBvZiBhIGxpc3Qgb2YgZnVuY3Rpb25zLCBlYWNoCiAgLy8gY29uc3VtaW5nIHRo
+ZSByZXR1cm4gdmFsdWUgb2YgdGhlIGZ1bmN0aW9uIHRoYXQgZm9sbG93cy4KICBf
+LmNvbXBvc2UgPSBmdW5jdGlvbigpIHsKICAgIHZhciBmdW5jcyA9IGFyZ3VtZW50
+czsKICAgIHJldHVybiBmdW5jdGlvbigpIHsKICAgICAgdmFyIGFyZ3MgPSBhcmd1
+bWVudHM7CiAgICAgIGZvciAodmFyIGkgPSBmdW5jcy5sZW5ndGggLSAxOyBpID49
+IDA7IGktLSkgewogICAgICAgIGFyZ3MgPSBbZnVuY3NbaV0uYXBwbHkodGhpcywg
+YXJncyldOwogICAgICB9CiAgICAgIHJldHVybiBhcmdzWzBdOwogICAgfTsKICB9
+OwoKICAvLyBSZXR1cm5zIGEgZnVuY3Rpb24gdGhhdCB3aWxsIG9ubHkgYmUgZXhl
+Y3V0ZWQgYWZ0ZXIgYmVpbmcgY2FsbGVkIE4gdGltZXMuCiAgXy5hZnRlciA9IGZ1
+bmN0aW9uKHRpbWVzLCBmdW5jKSB7CiAgICBpZiAodGltZXMgPD0gMCkgcmV0dXJu
+IGZ1bmMoKTsKICAgIHJldHVybiBmdW5jdGlvbigpIHsKICAgICAgaWYgKC0tdGlt
+ZXMgPCAxKSB7IHJldHVybiBmdW5jLmFwcGx5KHRoaXMsIGFyZ3VtZW50cyk7IH0K
+ICAgIH07CiAgfTsKCiAgLy8gT2JqZWN0IEZ1bmN0aW9ucwogIC8vIC0tLS0tLS0t
+LS0tLS0tLS0KCiAgLy8gUmV0cmlldmUgdGhlIG5hbWVzIG9mIGFuIG9iamVjdCdz
+IHByb3BlcnRpZXMuCiAgLy8gRGVsZWdhdGVzIHRvICoqRUNNQVNjcmlwdCA1Kion
+cyBuYXRpdmUgYE9iamVjdC5rZXlzYAogIF8ua2V5cyA9IG5hdGl2ZUtleXMgfHwg
+ZnVuY3Rpb24ob2JqKSB7CiAgICBpZiAob2JqICE9PSBPYmplY3Qob2JqKSkgdGhy
+b3cgbmV3IFR5cGVFcnJvcignSW52YWxpZCBvYmplY3QnKTsKICAgIHZhciBrZXlz
+ID0gW107CiAgICBmb3IgKHZhciBrZXkgaW4gb2JqKSBpZiAoaGFzT3duUHJvcGVy
+dHkuY2FsbChvYmosIGtleSkpIGtleXNba2V5cy5sZW5ndGhdID0ga2V5OwogICAg
+cmV0dXJuIGtleXM7CiAgfTsKCiAgLy8gUmV0cmlldmUgdGhlIHZhbHVlcyBvZiBh
+biBvYmplY3QncyBwcm9wZXJ0aWVzLgogIF8udmFsdWVzID0gZnVuY3Rpb24ob2Jq
+KSB7CiAgICByZXR1cm4gXy5tYXAob2JqLCBfLmlkZW50aXR5KTsKICB9OwoKICAv
+LyBSZXR1cm4gYSBzb3J0ZWQgbGlzdCBvZiB0aGUgZnVuY3Rpb24gbmFtZXMgYXZh
+aWxhYmxlIG9uIHRoZSBvYmplY3QuCiAgLy8gQWxpYXNlZCBhcyBgbWV0aG9kc2AK
+ICBfLmZ1bmN0aW9ucyA9IF8ubWV0aG9kcyA9IGZ1bmN0aW9uKG9iaikgewogICAg
+dmFyIG5hbWVzID0gW107CiAgICBmb3IgKHZhciBrZXkgaW4gb2JqKSB7CiAgICAg
+IGlmIChfLmlzRnVuY3Rpb24ob2JqW2tleV0pKSBuYW1lcy5wdXNoKGtleSk7CiAg
+ICB9CiAgICByZXR1cm4gbmFtZXMuc29ydCgpOwogIH07CgogIC8vIEV4dGVuZCBh
+IGdpdmVuIG9iamVjdCB3aXRoIGFsbCB0aGUgcHJvcGVydGllcyBpbiBwYXNzZWQt
+aW4gb2JqZWN0KHMpLgogIF8uZXh0ZW5kID0gZnVuY3Rpb24ob2JqKSB7CiAgICBl
+YWNoKHNsaWNlLmNhbGwoYXJndW1lbnRzLCAxKSwgZnVuY3Rpb24oc291cmNlKSB7
+CiAgICAgIGZvciAodmFyIHByb3AgaW4gc291cmNlKSB7CiAgICAgICAgaWYgKHNv
+dXJjZVtwcm9wXSAhPT0gdm9pZCAwKSBvYmpbcHJvcF0gPSBzb3VyY2VbcHJvcF07
+CiAgICAgIH0KICAgIH0pOwogICAgcmV0dXJuIG9iajsKICB9OwoKICAvLyBGaWxs
+IGluIGEgZ2l2ZW4gb2JqZWN0IHdpdGggZGVmYXVsdCBwcm9wZXJ0aWVzLgogIF8u
+ZGVmYXVsdHMgPSBmdW5jdGlvbihvYmopIHsKICAgIGVhY2goc2xpY2UuY2FsbChh
+cmd1bWVudHMsIDEpLCBmdW5jdGlvbihzb3VyY2UpIHsKICAgICAgZm9yICh2YXIg
+cHJvcCBpbiBzb3VyY2UpIHsKICAgICAgICBpZiAob2JqW3Byb3BdID09IG51bGwp
+IG9ialtwcm9wXSA9IHNvdXJjZVtwcm9wXTsKICAgICAgfQogICAgfSk7CiAgICBy
+ZXR1cm4gb2JqOwogIH07CgogIC8vIENyZWF0ZSBhIChzaGFsbG93LWNsb25lZCkg
+ZHVwbGljYXRlIG9mIGFuIG9iamVjdC4KICBfLmNsb25lID0gZnVuY3Rpb24ob2Jq
+KSB7CiAgICBpZiAoIV8uaXNPYmplY3Qob2JqKSkgcmV0dXJuIG9iajsKICAgIHJl
+dHVybiBfLmlzQXJyYXkob2JqKSA/IG9iai5zbGljZSgpIDogXy5leHRlbmQoe30s
+IG9iaik7CiAgfTsKCiAgLy8gSW52b2tlcyBpbnRlcmNlcHRvciB3aXRoIHRoZSBv
+YmosIGFuZCB0aGVuIHJldHVybnMgb2JqLgogIC8vIFRoZSBwcmltYXJ5IHB1cnBv
+c2Ugb2YgdGhpcyBtZXRob2QgaXMgdG8gInRhcCBpbnRvIiBhIG1ldGhvZCBjaGFp
+biwgaW4KICAvLyBvcmRlciB0byBwZXJmb3JtIG9wZXJhdGlvbnMgb24gaW50ZXJt
+ZWRpYXRlIHJlc3VsdHMgd2l0aGluIHRoZSBjaGFpbi4KICBfLnRhcCA9IGZ1bmN0
+aW9uKG9iaiwgaW50ZXJjZXB0b3IpIHsKICAgIGludGVyY2VwdG9yKG9iaik7CiAg
+ICByZXR1cm4gb2JqOwogIH07CgogIC8vIEludGVybmFsIHJlY3Vyc2l2ZSBjb21w
+YXJpc29uIGZ1bmN0aW9uLgogIGZ1bmN0aW9uIGVxKGEsIGIsIHN0YWNrKSB7CiAg
+ICAvLyBJZGVudGljYWwgb2JqZWN0cyBhcmUgZXF1YWwuIGAwID09PSAtMGAsIGJ1
+dCB0aGV5IGFyZW4ndCBpZGVudGljYWwuCiAgICAvLyBTZWUgdGhlIEhhcm1vbnkg
+YGVnYWxgIHByb3Bvc2FsOiBodHRwOi8vd2lraS5lY21hc2NyaXB0Lm9yZy9kb2t1
+LnBocD9pZD1oYXJtb255OmVnYWwuCiAgICBpZiAoYSA9PT0gYikgcmV0dXJuIGEg
+IT09IDAgfHwgMSAvIGEgPT0gMSAvIGI7CiAgICAvLyBBIHN0cmljdCBjb21wYXJp
+c29uIGlzIG5lY2Vzc2FyeSBiZWNhdXNlIGBudWxsID09IHVuZGVmaW5lZGAuCiAg
+ICBpZiAoYSA9PSBudWxsIHx8IGIgPT0gbnVsbCkgcmV0dXJuIGEgPT09IGI7CiAg
+ICAvLyBVbndyYXAgYW55IHdyYXBwZWQgb2JqZWN0cy4KICAgIGlmIChhLl9jaGFp
+bikgYSA9IGEuX3dyYXBwZWQ7CiAgICBpZiAoYi5fY2hhaW4pIGIgPSBiLl93cmFw
+cGVkOwogICAgLy8gSW52b2tlIGEgY3VzdG9tIGBpc0VxdWFsYCBtZXRob2QgaWYg
+b25lIGlzIHByb3ZpZGVkLgogICAgaWYgKGEuaXNFcXVhbCAmJiBfLmlzRnVuY3Rp
+b24oYS5pc0VxdWFsKSkgcmV0dXJuIGEuaXNFcXVhbChiKTsKICAgIGlmIChiLmlz
+RXF1YWwgJiYgXy5pc0Z1bmN0aW9uKGIuaXNFcXVhbCkpIHJldHVybiBiLmlzRXF1
+YWwoYSk7CiAgICAvLyBDb21wYXJlIGBbW0NsYXNzXV1gIG5hbWVzLgogICAgdmFy
+IGNsYXNzTmFtZSA9IHRvU3RyaW5nLmNhbGwoYSk7CiAgICBpZiAoY2xhc3NOYW1l
+ICE9IHRvU3RyaW5nLmNhbGwoYikpIHJldHVybiBmYWxzZTsKICAgIHN3aXRjaCAo
+Y2xhc3NOYW1lKSB7CiAgICAgIC8vIFN0cmluZ3MsIG51bWJlcnMsIGRhdGVzLCBh
+bmQgYm9vbGVhbnMgYXJlIGNvbXBhcmVkIGJ5IHZhbHVlLgogICAgICBjYXNlICdb
+b2JqZWN0IFN0cmluZ10nOgogICAgICAgIC8vIFByaW1pdGl2ZXMgYW5kIHRoZWly
+IGNvcnJlc3BvbmRpbmcgb2JqZWN0IHdyYXBwZXJzIGFyZSBlcXVpdmFsZW50OyB0
+aHVzLCBgIjUiYCBpcwogICAgICAgIC8vIGVxdWl2YWxlbnQgdG8gYG5ldyBTdHJp
+bmcoIjUiKWAuCiAgICAgICAgcmV0dXJuIGEgPT0gU3RyaW5nKGIpOwogICAgICBj
+YXNlICdbb2JqZWN0IE51bWJlcl0nOgogICAgICAgIC8vIGBOYU5gcyBhcmUgZXF1
+aXZhbGVudCwgYnV0IG5vbi1yZWZsZXhpdmUuIEFuIGBlZ2FsYCBjb21wYXJpc29u
+IGlzIHBlcmZvcm1lZCBmb3IKICAgICAgICAvLyBvdGhlciBudW1lcmljIHZhbHVl
+cy4KICAgICAgICByZXR1cm4gYSAhPSArYSA/IGIgIT0gK2IgOiAoYSA9PSAwID8g
+MSAvIGEgPT0gMSAvIGIgOiBhID09ICtiKTsKICAgICAgY2FzZSAnW29iamVjdCBE
+YXRlXSc6CiAgICAgIGNhc2UgJ1tvYmplY3QgQm9vbGVhbl0nOgogICAgICAgIC8v
+IENvZXJjZSBkYXRlcyBhbmQgYm9vbGVhbnMgdG8gbnVtZXJpYyBwcmltaXRpdmUg
+dmFsdWVzLiBEYXRlcyBhcmUgY29tcGFyZWQgYnkgdGhlaXIKICAgICAgICAvLyBt
+aWxsaXNlY29uZCByZXByZXNlbnRhdGlvbnMuIE5vdGUgdGhhdCBpbnZhbGlkIGRh
+dGVzIHdpdGggbWlsbGlzZWNvbmQgcmVwcmVzZW50YXRpb25zCiAgICAgICAgLy8g
+b2YgYE5hTmAgYXJlIG5vdCBlcXVpdmFsZW50LgogICAgICAgIHJldHVybiArYSA9
+PSArYjsKICAgICAgLy8gUmVnRXhwcyBhcmUgY29tcGFyZWQgYnkgdGhlaXIgc291
+cmNlIHBhdHRlcm5zIGFuZCBmbGFncy4KICAgICAgY2FzZSAnW29iamVjdCBSZWdF
+eHBdJzoKICAgICAgICByZXR1cm4gYS5zb3VyY2UgPT0gYi5zb3VyY2UgJiYKICAg
+ICAgICAgICAgICAgYS5nbG9iYWwgPT0gYi5nbG9iYWwgJiYKICAgICAgICAgICAg
+ICAgYS5tdWx0aWxpbmUgPT0gYi5tdWx0aWxpbmUgJiYKICAgICAgICAgICAgICAg
+YS5pZ25vcmVDYXNlID09IGIuaWdub3JlQ2FzZTsKICAgIH0KICAgIGlmICh0eXBl
+b2YgYSAhPSAnb2JqZWN0JyB8fCB0eXBlb2YgYiAhPSAnb2JqZWN0JykgcmV0dXJu
+IGZhbHNlOwogICAgLy8gQXNzdW1lIGVxdWFsaXR5IGZvciBjeWNsaWMgc3RydWN0
+dXJlcy4gVGhlIGFsZ29yaXRobSBmb3IgZGV0ZWN0aW5nIGN5Y2xpYwogICAgLy8g
+c3RydWN0dXJlcyBpcyBhZGFwdGVkIGZyb20gRVMgNS4xIHNlY3Rpb24gMTUuMTIu
+MywgYWJzdHJhY3Qgb3BlcmF0aW9uIGBKT2AuCiAgICB2YXIgbGVuZ3RoID0gc3Rh
+Y2subGVuZ3RoOwogICAgd2hpbGUgKGxlbmd0aC0tKSB7CiAgICAgIC8vIExpbmVh
+ciBzZWFyY2guIFBlcmZvcm1hbmNlIGlzIGludmVyc2VseSBwcm9wb3J0aW9uYWwg
+dG8gdGhlIG51bWJlciBvZgogICAgICAvLyB1bmlxdWUgbmVzdGVkIHN0cnVjdHVy
+ZXMuCiAgICAgIGlmIChzdGFja1tsZW5ndGhdID09IGEpIHJldHVybiB0cnVlOwog
+ICAgfQogICAgLy8gQWRkIHRoZSBmaXJzdCBvYmplY3QgdG8gdGhlIHN0YWNrIG9m
+IHRyYXZlcnNlZCBvYmplY3RzLgogICAgc3RhY2sucHVzaChhKTsKICAgIHZhciBz
+aXplID0gMCwgcmVzdWx0ID0gdHJ1ZTsKICAgIC8vIFJlY3Vyc2l2ZWx5IGNvbXBh
+cmUgb2JqZWN0cyBhbmQgYXJyYXlzLgogICAgaWYgKGNsYXNzTmFtZSA9PSAnW29i
+amVjdCBBcnJheV0nKSB7CiAgICAgIC8vIENvbXBhcmUgYXJyYXkgbGVuZ3RocyB0
+byBkZXRlcm1pbmUgaWYgYSBkZWVwIGNvbXBhcmlzb24gaXMgbmVjZXNzYXJ5Lgog
+ICAgICBzaXplID0gYS5sZW5ndGg7CiAgICAgIHJlc3VsdCA9IHNpemUgPT0gYi5s
+ZW5ndGg7CiAgICAgIGlmIChyZXN1bHQpIHsKICAgICAgICAvLyBEZWVwIGNvbXBh
+cmUgdGhlIGNvbnRlbnRzLCBpZ25vcmluZyBub24tbnVtZXJpYyBwcm9wZXJ0aWVz
+LgogICAgICAgIHdoaWxlIChzaXplLS0pIHsKICAgICAgICAgIC8vIEVuc3VyZSBj
+b21tdXRhdGl2ZSBlcXVhbGl0eSBmb3Igc3BhcnNlIGFycmF5cy4KICAgICAgICAg
+IGlmICghKHJlc3VsdCA9IHNpemUgaW4gYSA9PSBzaXplIGluIGIgJiYgZXEoYVtz
+aXplXSwgYltzaXplXSwgc3RhY2spKSkgYnJlYWs7CiAgICAgICAgfQogICAgICB9
+CiAgICB9IGVsc2UgewogICAgICAvLyBPYmplY3RzIHdpdGggZGlmZmVyZW50IGNv
+bnN0cnVjdG9ycyBhcmUgbm90IGVxdWl2YWxlbnQuCiAgICAgIGlmICgnY29uc3Ry
+dWN0b3InIGluIGEgIT0gJ2NvbnN0cnVjdG9yJyBpbiBiIHx8IGEuY29uc3RydWN0
+b3IgIT0gYi5jb25zdHJ1Y3RvcikgcmV0dXJuIGZhbHNlOwogICAgICAvLyBEZWVw
+IGNvbXBhcmUgb2JqZWN0cy4KICAgICAgZm9yICh2YXIga2V5IGluIGEpIHsKICAg
+ICAgICBpZiAoaGFzT3duUHJvcGVydHkuY2FsbChhLCBrZXkpKSB7CiAgICAgICAg
+ICAvLyBDb3VudCB0aGUgZXhwZWN0ZWQgbnVtYmVyIG9mIHByb3BlcnRpZXMuCiAg
+ICAgICAgICBzaXplKys7CiAgICAgICAgICAvLyBEZWVwIGNvbXBhcmUgZWFjaCBt
+ZW1iZXIuCiAgICAgICAgICBpZiAoIShyZXN1bHQgPSBoYXNPd25Qcm9wZXJ0eS5j
+YWxsKGIsIGtleSkgJiYgZXEoYVtrZXldLCBiW2tleV0sIHN0YWNrKSkpIGJyZWFr
+OwogICAgICAgIH0KICAgICAgfQogICAgICAvLyBFbnN1cmUgdGhhdCBib3RoIG9i
+amVjdHMgY29udGFpbiB0aGUgc2FtZSBudW1iZXIgb2YgcHJvcGVydGllcy4KICAg
+ICAgaWYgKHJlc3VsdCkgewogICAgICAgIGZvciAoa2V5IGluIGIpIHsKICAgICAg
+ICAgIGlmIChoYXNPd25Qcm9wZXJ0eS5jYWxsKGIsIGtleSkgJiYgIShzaXplLS0p
+KSBicmVhazsKICAgICAgICB9CiAgICAgICAgcmVzdWx0ID0gIXNpemU7CiAgICAg
+IH0KICAgIH0KICAgIC8vIFJlbW92ZSB0aGUgZmlyc3Qgb2JqZWN0IGZyb20gdGhl
+IHN0YWNrIG9mIHRyYXZlcnNlZCBvYmplY3RzLgogICAgc3RhY2sucG9wKCk7CiAg
+ICByZXR1cm4gcmVzdWx0OwogIH0KCiAgLy8gUGVyZm9ybSBhIGRlZXAgY29tcGFy
+aXNvbiB0byBjaGVjayBpZiB0d28gb2JqZWN0cyBhcmUgZXF1YWwuCiAgXy5pc0Vx
+dWFsID0gZnVuY3Rpb24oYSwgYikgewogICAgcmV0dXJuIGVxKGEsIGIsIFtdKTsK
+ICB9OwoKICAvLyBJcyBhIGdpdmVuIGFycmF5LCBzdHJpbmcsIG9yIG9iamVjdCBl
+bXB0eT8KICAvLyBBbiAiZW1wdHkiIG9iamVjdCBoYXMgbm8gZW51bWVyYWJsZSBv
+d24tcHJvcGVydGllcy4KICBfLmlzRW1wdHkgPSBmdW5jdGlvbihvYmopIHsKICAg
+IGlmIChfLmlzQXJyYXkob2JqKSB8fCBfLmlzU3RyaW5nKG9iaikpIHJldHVybiBv
+YmoubGVuZ3RoID09PSAwOwogICAgZm9yICh2YXIga2V5IGluIG9iaikgaWYgKGhh
+c093blByb3BlcnR5LmNhbGwob2JqLCBrZXkpKSByZXR1cm4gZmFsc2U7CiAgICBy
+ZXR1cm4gdHJ1ZTsKICB9OwoKICAvLyBJcyBhIGdpdmVuIHZhbHVlIGEgRE9NIGVs
+ZW1lbnQ/CiAgXy5pc0VsZW1lbnQgPSBmdW5jdGlvbihvYmopIHsKICAgIHJldHVy
+biAhIShvYmogJiYgb2JqLm5vZGVUeXBlID09IDEpOwogIH07CgogIC8vIElzIGEg
+Z2l2ZW4gdmFsdWUgYW4gYXJyYXk/CiAgLy8gRGVsZWdhdGVzIHRvIEVDTUE1J3Mg
+bmF0aXZlIEFycmF5LmlzQXJyYXkKICBfLmlzQXJyYXkgPSBuYXRpdmVJc0FycmF5
+IHx8IGZ1bmN0aW9uKG9iaikgewogICAgcmV0dXJuIHRvU3RyaW5nLmNhbGwob2Jq
+KSA9PSAnW29iamVjdCBBcnJheV0nOwogIH07CgogIC8vIElzIGEgZ2l2ZW4gdmFy
+aWFibGUgYW4gb2JqZWN0PwogIF8uaXNPYmplY3QgPSBmdW5jdGlvbihvYmopIHsK
+ICAgIHJldHVybiBvYmogPT09IE9iamVjdChvYmopOwogIH07CgogIC8vIElzIGEg
+Z2l2ZW4gdmFyaWFibGUgYW4gYXJndW1lbnRzIG9iamVjdD8KICBfLmlzQXJndW1l
+bnRzID0gZnVuY3Rpb24ob2JqKSB7CiAgICByZXR1cm4gdG9TdHJpbmcuY2FsbChv
+YmopID09ICdbb2JqZWN0IEFyZ3VtZW50c10nOwogIH07CiAgaWYgKCFfLmlzQXJn
+dW1lbnRzKGFyZ3VtZW50cykpIHsKICAgIF8uaXNBcmd1bWVudHMgPSBmdW5jdGlv
+bihvYmopIHsKICAgICAgcmV0dXJuICEhKG9iaiAmJiBoYXNPd25Qcm9wZXJ0eS5j
+YWxsKG9iaiwgJ2NhbGxlZScpKTsKICAgIH07CiAgfQoKICAvLyBJcyBhIGdpdmVu
+IHZhbHVlIGEgZnVuY3Rpb24/CiAgXy5pc0Z1bmN0aW9uID0gZnVuY3Rpb24ob2Jq
+KSB7CiAgICByZXR1cm4gdG9TdHJpbmcuY2FsbChvYmopID09ICdbb2JqZWN0IEZ1
+bmN0aW9uXSc7CiAgfTsKCiAgLy8gSXMgYSBnaXZlbiB2YWx1ZSBhIHN0cmluZz8K
+ICBfLmlzU3RyaW5nID0gZnVuY3Rpb24ob2JqKSB7CiAgICByZXR1cm4gdG9TdHJp
+bmcuY2FsbChvYmopID09ICdbb2JqZWN0IFN0cmluZ10nOwogIH07CgogIC8vIElz
+IGEgZ2l2ZW4gdmFsdWUgYSBudW1iZXI/CiAgXy5pc051bWJlciA9IGZ1bmN0aW9u
+KG9iaikgewogICAgcmV0dXJuIHRvU3RyaW5nLmNhbGwob2JqKSA9PSAnW29iamVj
+dCBOdW1iZXJdJzsKICB9OwoKICAvLyBJcyB0aGUgZ2l2ZW4gdmFsdWUgYE5hTmA/
+CiAgXy5pc05hTiA9IGZ1bmN0aW9uKG9iaikgewogICAgLy8gYE5hTmAgaXMgdGhl
+IG9ubHkgdmFsdWUgZm9yIHdoaWNoIGA9PT1gIGlzIG5vdCByZWZsZXhpdmUuCiAg
+ICByZXR1cm4gb2JqICE9PSBvYmo7CiAgfTsKCiAgLy8gSXMgYSBnaXZlbiB2YWx1
+ZSBhIGJvb2xlYW4/CiAgXy5pc0Jvb2xlYW4gPSBmdW5jdGlvbihvYmopIHsKICAg
+IHJldHVybiBvYmogPT09IHRydWUgfHwgb2JqID09PSBmYWxzZSB8fCB0b1N0cmlu
+Zy5jYWxsKG9iaikgPT0gJ1tvYmplY3QgQm9vbGVhbl0nOwogIH07CgogIC8vIElz
+IGEgZ2l2ZW4gdmFsdWUgYSBkYXRlPwogIF8uaXNEYXRlID0gZnVuY3Rpb24ob2Jq
+KSB7CiAgICByZXR1cm4gdG9TdHJpbmcuY2FsbChvYmopID09ICdbb2JqZWN0IERh
+dGVdJzsKICB9OwoKICAvLyBJcyB0aGUgZ2l2ZW4gdmFsdWUgYSByZWd1bGFyIGV4
+cHJlc3Npb24/CiAgXy5pc1JlZ0V4cCA9IGZ1bmN0aW9uKG9iaikgewogICAgcmV0
+dXJuIHRvU3RyaW5nLmNhbGwob2JqKSA9PSAnW29iamVjdCBSZWdFeHBdJzsKICB9
+OwoKICAvLyBJcyBhIGdpdmVuIHZhbHVlIGVxdWFsIHRvIG51bGw/CiAgXy5pc051
+bGwgPSBmdW5jdGlvbihvYmopIHsKICAgIHJldHVybiBvYmogPT09IG51bGw7CiAg
+fTsKCiAgLy8gSXMgYSBnaXZlbiB2YXJpYWJsZSB1bmRlZmluZWQ/CiAgXy5pc1Vu
+ZGVmaW5lZCA9IGZ1bmN0aW9uKG9iaikgewogICAgcmV0dXJuIG9iaiA9PT0gdm9p
+ZCAwOwogIH07CgogIC8vIFV0aWxpdHkgRnVuY3Rpb25zCiAgLy8gLS0tLS0tLS0t
+LS0tLS0tLS0KCiAgLy8gUnVuIFVuZGVyc2NvcmUuanMgaW4gKm5vQ29uZmxpY3Qq
+IG1vZGUsIHJldHVybmluZyB0aGUgYF9gIHZhcmlhYmxlIHRvIGl0cwogIC8vIHBy
+ZXZpb3VzIG93bmVyLiBSZXR1cm5zIGEgcmVmZXJlbmNlIHRvIHRoZSBVbmRlcnNj
+b3JlIG9iamVjdC4KICBfLm5vQ29uZmxpY3QgPSBmdW5jdGlvbigpIHsKICAgIHJv
+b3QuXyA9IHByZXZpb3VzVW5kZXJzY29yZTsKICAgIHJldHVybiB0aGlzOwogIH07
+CgogIC8vIEtlZXAgdGhlIGlkZW50aXR5IGZ1bmN0aW9uIGFyb3VuZCBmb3IgZGVm
+YXVsdCBpdGVyYXRvcnMuCiAgXy5pZGVudGl0eSA9IGZ1bmN0aW9uKHZhbHVlKSB7
+CiAgICByZXR1cm4gdmFsdWU7CiAgfTsKCiAgLy8gUnVuIGEgZnVuY3Rpb24gKipu
+KiogdGltZXMuCiAgXy50aW1lcyA9IGZ1bmN0aW9uIChuLCBpdGVyYXRvciwgY29u
+dGV4dCkgewogICAgZm9yICh2YXIgaSA9IDA7IGkgPCBuOyBpKyspIGl0ZXJhdG9y
+LmNhbGwoY29udGV4dCwgaSk7CiAgfTsKCiAgLy8gRXNjYXBlIGEgc3RyaW5nIGZv
+ciBIVE1MIGludGVycG9sYXRpb24uCiAgXy5lc2NhcGUgPSBmdW5jdGlvbihzdHJp
+bmcpIHsKICAgIHJldHVybiAoJycrc3RyaW5nKS5yZXBsYWNlKC8mL2csICcmYW1w
+OycpLnJlcGxhY2UoLzwvZywgJyZsdDsnKS5yZXBsYWNlKC8+L2csICcmZ3Q7Jyku
+cmVwbGFjZSgvIi9nLCAnJnF1b3Q7JykucmVwbGFjZSgvJy9nLCAnJiN4Mjc7Jyku
+cmVwbGFjZSgvXC8vZywnJiN4MkY7Jyk7CiAgfTsKCiAgLy8gQWRkIHlvdXIgb3du
+IGN1c3RvbSBmdW5jdGlvbnMgdG8gdGhlIFVuZGVyc2NvcmUgb2JqZWN0LCBlbnN1
+cmluZyB0aGF0CiAgLy8gdGhleSdyZSBjb3JyZWN0bHkgYWRkZWQgdG8gdGhlIE9P
+UCB3cmFwcGVyIGFzIHdlbGwuCiAgXy5taXhpbiA9IGZ1bmN0aW9uKG9iaikgewog
+ICAgZWFjaChfLmZ1bmN0aW9ucyhvYmopLCBmdW5jdGlvbihuYW1lKXsKICAgICAg
+YWRkVG9XcmFwcGVyKG5hbWUsIF9bbmFtZV0gPSBvYmpbbmFtZV0pOwogICAgfSk7
+CiAgfTsKCiAgLy8gR2VuZXJhdGUgYSB1bmlxdWUgaW50ZWdlciBpZCAodW5pcXVl
+IHdpdGhpbiB0aGUgZW50aXJlIGNsaWVudCBzZXNzaW9uKS4KICAvLyBVc2VmdWwg
+Zm9yIHRlbXBvcmFyeSBET00gaWRzLgogIHZhciBpZENvdW50ZXIgPSAwOwogIF8u
+dW5pcXVlSWQgPSBmdW5jdGlvbihwcmVmaXgpIHsKICAgIHZhciBpZCA9IGlkQ291
+bnRlcisrOwogICAgcmV0dXJuIHByZWZpeCA/IHByZWZpeCArIGlkIDogaWQ7CiAg
+fTsKCiAgLy8gQnkgZGVmYXVsdCwgVW5kZXJzY29yZSB1c2VzIEVSQi1zdHlsZSB0
+ZW1wbGF0ZSBkZWxpbWl0ZXJzLCBjaGFuZ2UgdGhlCiAgLy8gZm9sbG93aW5nIHRl
+bXBsYXRlIHNldHRpbmdzIHRvIHVzZSBhbHRlcm5hdGl2ZSBkZWxpbWl0ZXJzLgog
+IF8udGVtcGxhdGVTZXR0aW5ncyA9IHsKICAgIGV2YWx1YXRlICAgIDogLzwlKFtc
+c1xTXSs/KSU+L2csCiAgICBpbnRlcnBvbGF0ZSA6IC88JT0oW1xzXFNdKz8pJT4v
+ZywKICAgIGVzY2FwZSAgICAgIDogLzwlLShbXHNcU10rPyklPi9nCiAgfTsKCiAg
+Ly8gSmF2YVNjcmlwdCBtaWNyby10ZW1wbGF0aW5nLCBzaW1pbGFyIHRvIEpvaG4g
+UmVzaWcncyBpbXBsZW1lbnRhdGlvbi4KICAvLyBVbmRlcnNjb3JlIHRlbXBsYXRp
+bmcgaGFuZGxlcyBhcmJpdHJhcnkgZGVsaW1pdGVycywgcHJlc2VydmVzIHdoaXRl
+c3BhY2UsCiAgLy8gYW5kIGNvcnJlY3RseSBlc2NhcGVzIHF1b3RlcyB3aXRoaW4g
+aW50ZXJwb2xhdGVkIGNvZGUuCiAgXy50ZW1wbGF0ZSA9IGZ1bmN0aW9uKHN0ciwg
+ZGF0YSkgewogICAgdmFyIGMgID0gXy50ZW1wbGF0ZVNldHRpbmdzOwogICAgdmFy
+IHRtcGwgPSAndmFyIF9fcD1bXSxwcmludD1mdW5jdGlvbigpe19fcC5wdXNoLmFw
+cGx5KF9fcCxhcmd1bWVudHMpO307JyArCiAgICAgICd3aXRoKG9ianx8e30pe19f
+cC5wdXNoKFwnJyArCiAgICAgIHN0ci5yZXBsYWNlKC9cXC9nLCAnXFxcXCcpCiAg
+ICAgICAgIC5yZXBsYWNlKC8nL2csICJcXCciKQogICAgICAgICAucmVwbGFjZShj
+LmVzY2FwZSwgZnVuY3Rpb24obWF0Y2gsIGNvZGUpIHsKICAgICAgICAgICByZXR1
+cm4gIicsXy5lc2NhcGUoIiArIGNvZGUucmVwbGFjZSgvXFwnL2csICInIikgKyAi
+KSwnIjsKICAgICAgICAgfSkKICAgICAgICAgLnJlcGxhY2UoYy5pbnRlcnBvbGF0
+ZSwgZnVuY3Rpb24obWF0Y2gsIGNvZGUpIHsKICAgICAgICAgICByZXR1cm4gIics
+IiArIGNvZGUucmVwbGFjZSgvXFwnL2csICInIikgKyAiLCciOwogICAgICAgICB9
+KQogICAgICAgICAucmVwbGFjZShjLmV2YWx1YXRlIHx8IG51bGwsIGZ1bmN0aW9u
+KG1hdGNoLCBjb2RlKSB7CiAgICAgICAgICAgcmV0dXJuICInKTsiICsgY29kZS5y
+ZXBsYWNlKC9cXCcvZywgIiciKQogICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAucmVwbGFjZSgvW1xyXG5cdF0vZywgJyAnKSArICI7X19wLnB1c2goJyI7CiAg
+ICAgICAgIH0pCiAgICAgICAgIC5yZXBsYWNlKC9cci9nLCAnXFxyJykKICAgICAg
+ICAgLnJlcGxhY2UoL1xuL2csICdcXG4nKQogICAgICAgICAucmVwbGFjZSgvXHQv
+ZywgJ1xcdCcpCiAgICAgICAgICsgIicpO31yZXR1cm4gX19wLmpvaW4oJycpOyI7
+CiAgICB2YXIgZnVuYyA9IG5ldyBGdW5jdGlvbignb2JqJywgJ18nLCB0bXBsKTsK
+ICAgIGlmIChkYXRhKSByZXR1cm4gZnVuYyhkYXRhLCBfKTsKICAgIHJldHVybiBm
+dW5jdGlvbihkYXRhKSB7CiAgICAgIHJldHVybiBmdW5jLmNhbGwodGhpcywgZGF0
+YSwgXyk7CiAgICB9OwogIH07CgogIC8vIFRoZSBPT1AgV3JhcHBlcgogIC8vIC0t
+LS0tLS0tLS0tLS0tLQoKICAvLyBJZiBVbmRlcnNjb3JlIGlzIGNhbGxlZCBhcyBh
+IGZ1bmN0aW9uLCBpdCByZXR1cm5zIGEgd3JhcHBlZCBvYmplY3QgdGhhdAogIC8v
+IGNhbiBiZSB1c2VkIE9PLXN0eWxlLiBUaGlzIHdyYXBwZXIgaG9sZHMgYWx0ZXJl
+ZCB2ZXJzaW9ucyBvZiBhbGwgdGhlCiAgLy8gdW5kZXJzY29yZSBmdW5jdGlvbnMu
+IFdyYXBwZWQgb2JqZWN0cyBtYXkgYmUgY2hhaW5lZC4KICB2YXIgd3JhcHBlciA9
+IGZ1bmN0aW9uKG9iaikgeyB0aGlzLl93cmFwcGVkID0gb2JqOyB9OwoKICAvLyBF
+eHBvc2UgYHdyYXBwZXIucHJvdG90eXBlYCBhcyBgXy5wcm90b3R5cGVgCiAgXy5w
+cm90b3R5cGUgPSB3cmFwcGVyLnByb3RvdHlwZTsKCiAgLy8gSGVscGVyIGZ1bmN0
+aW9uIHRvIGNvbnRpbnVlIGNoYWluaW5nIGludGVybWVkaWF0ZSByZXN1bHRzLgog
+IHZhciByZXN1bHQgPSBmdW5jdGlvbihvYmosIGNoYWluKSB7CiAgICByZXR1cm4g
+Y2hhaW4gPyBfKG9iaikuY2hhaW4oKSA6IG9iajsKICB9OwoKICAvLyBBIG1ldGhv
+ZCB0byBlYXNpbHkgYWRkIGZ1bmN0aW9ucyB0byB0aGUgT09QIHdyYXBwZXIuCiAg
+dmFyIGFkZFRvV3JhcHBlciA9IGZ1bmN0aW9uKG5hbWUsIGZ1bmMpIHsKICAgIHdy
+YXBwZXIucHJvdG90eXBlW25hbWVdID0gZnVuY3Rpb24oKSB7CiAgICAgIHZhciBh
+cmdzID0gc2xpY2UuY2FsbChhcmd1bWVudHMpOwogICAgICB1bnNoaWZ0LmNhbGwo
+YXJncywgdGhpcy5fd3JhcHBlZCk7CiAgICAgIHJldHVybiByZXN1bHQoZnVuYy5h
+cHBseShfLCBhcmdzKSwgdGhpcy5fY2hhaW4pOwogICAgfTsKICB9OwoKICAvLyBB
+ZGQgYWxsIG9mIHRoZSBVbmRlcnNjb3JlIGZ1bmN0aW9ucyB0byB0aGUgd3JhcHBl
+ciBvYmplY3QuCiAgXy5taXhpbihfKTsKCiAgLy8gQWRkIGFsbCBtdXRhdG9yIEFy
+cmF5IGZ1bmN0aW9ucyB0byB0aGUgd3JhcHBlci4KICBlYWNoKFsncG9wJywgJ3B1
+c2gnLCAncmV2ZXJzZScsICdzaGlmdCcsICdzb3J0JywgJ3NwbGljZScsICd1bnNo
+aWZ0J10sIGZ1bmN0aW9uKG5hbWUpIHsKICAgIHZhciBtZXRob2QgPSBBcnJheVBy
+b3RvW25hbWVdOwogICAgd3JhcHBlci5wcm90b3R5cGVbbmFtZV0gPSBmdW5jdGlv
+bigpIHsKICAgICAgbWV0aG9kLmFwcGx5KHRoaXMuX3dyYXBwZWQsIGFyZ3VtZW50
+cyk7CiAgICAgIHJldHVybiByZXN1bHQodGhpcy5fd3JhcHBlZCwgdGhpcy5fY2hh
+aW4pOwogICAgfTsKICB9KTsKCiAgLy8gQWRkIGFsbCBhY2Nlc3NvciBBcnJheSBm
+dW5jdGlvbnMgdG8gdGhlIHdyYXBwZXIuCiAgZWFjaChbJ2NvbmNhdCcsICdqb2lu
+JywgJ3NsaWNlJ10sIGZ1bmN0aW9uKG5hbWUpIHsKICAgIHZhciBtZXRob2QgPSBB
+cnJheVByb3RvW25hbWVdOwogICAgd3JhcHBlci5wcm90b3R5cGVbbmFtZV0gPSBm
+dW5jdGlvbigpIHsKICAgICAgcmV0dXJuIHJlc3VsdChtZXRob2QuYXBwbHkodGhp
+cy5fd3JhcHBlZCwgYXJndW1lbnRzKSwgdGhpcy5fY2hhaW4pOwogICAgfTsKICB9
+KTsKCiAgLy8gU3RhcnQgY2hhaW5pbmcgYSB3cmFwcGVkIFVuZGVyc2NvcmUgb2Jq
+ZWN0LgogIHdyYXBwZXIucHJvdG90eXBlLmNoYWluID0gZnVuY3Rpb24oKSB7CiAg
+ICB0aGlzLl9jaGFpbiA9IHRydWU7CiAgICByZXR1cm4gdGhpczsKICB9OwoKICAv
+LyBFeHRyYWN0cyB0aGUgcmVzdWx0IGZyb20gYSB3cmFwcGVkIGFuZCBjaGFpbmVk
+IG9iamVjdC4KICB3cmFwcGVyLnByb3RvdHlwZS52YWx1ZSA9IGZ1bmN0aW9uKCkg
+ewogICAgcmV0dXJuIHRoaXMuX3dyYXBwZWQ7CiAgfTsKCn0pLmNhbGwodGhpcyk7
+Cg==
+
+------------n1el3FQf6JqvXkVC89N4hL--

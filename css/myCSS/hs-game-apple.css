@@ -1,0 +1,352 @@
+@import "hs-game-global.css";
+@charset "utf-8";
+
+/*
+名称：火秀网络游戏样式
+简介：火秀网络游戏页面样式
+维护：王文 wangwen1220#139.com
+日期：2012-11-12
+*/
+
+/* TPL
+----------------------------------------------------------------------------- */
+/*
+ * @name: ui-hotgame-list
+ * @overview: 游戏推荐列表样式
+ * @require: null
+ */
+.ui-hotgame-list {
+	margin: 10px;
+}
+.ui-hotgame-list-item {
+	margin: 13px 0;
+	padding-bottom: 13px;
+	border-bottom: 1px dashed #DFDFDF;
+	overflow: hidden;
+	*zoom: 1;
+}
+.ui-hotgame-list-item .img {
+	float: left;
+	margin-right: 12px;
+	/* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); */
+}
+.ui-hotgame-list-item .img img {
+	display: block;
+}
+.ui-hotgame-list-item .title {
+	float: left;
+	margin-bottom: 5px;
+	width: 135px;
+}
+.ui-hotgame-list-item .title a {
+	display: block;
+	height: 1em;
+	font: 15px/1 '微软雅黑','黑体','宋体',arial,verdana,sans-serif;
+	color: #666;
+	overflow: hidden;
+}
+.ui-hotgame-list-item .num {
+	float: left;
+	margin-right: 10px;
+	color: #444;
+	font: bold 32px/1 '微软雅黑','黑体','宋体',arial,verdana,sans-serif;
+}
+.ui-hotgame-list-item .content {
+	float: left;
+	line-height: 16px;
+	color: #999;
+}
+.ui-hotgame-list-item .content del {
+	-moz-text-decoration-color: #CF0716;
+	-webkit-text-decoration-color: #CF0716;
+	-ms-text-decoration-color: #CF0716;
+	-o-text-decoration-color: #CF0716;
+	text-decoration-color: #CF0716;
+}
+.ui-hotgame-list-item .button {
+	float: right;
+	width: 12px;
+	height: 32px;
+	background: url(../images/game/arrow-rt-gray.png) no-repeat 0 center;
+	opacity: .5;
+	filter: alpha(opacity=50);
+}
+.ui-ranking-hotgame .ui-ranking-item-cur .button:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+/* TODO */
+/*
+ * @name: .ui-content-list-download
+ * @overview: 下载页列表样式
+ * @require: ui-content-list
+ */
+.ui-content-list-download {
+	margin: 0;
+}
+.ui-content-list-download .ui-content-item {
+	padding-left: 0;
+	padding-right: 0;
+	border-bottom: 1px solid #EBEBEB;
+}
+.ui-content-list-download .ui-content-item.recommend {
+	background-image: url(../images/game/icon-recommend-download.png);
+	background-repeat: no-repeat;
+	background-position:  100% 72%;
+}
+.ui-content-list-download .ui-content-item .title,
+.ui-content-list-download .ui-content-item .cnt {
+	float: left;
+	display: inline;
+	margin-left: 14px;
+	width: 400px;
+}
+.ui-content-list-download .ui-content-item .title {
+	margin-bottom: 4px;
+}
+.ui-content-list-download .ui-content-item .title a {
+	font: 16px '微软雅黑','黑体','宋体',arial,verdana,sans-serif;
+	color: #222;
+	text-decoration: none;
+}
+.ui-content-list-download .ui-content-item .title a:hover,
+.ui-content-list-download .ui-content-item .title a:focus {
+	color: #fff;
+	background-color: #CF0716;
+}
+.ui-content-list-download .ui-content-item .info-list {
+	margin-left: 510px;
+	padding-left: 20px;
+	width: 100px;
+	overflow: hidden;
+	border-left: 1px dashed #DFDFDF;
+	line-height: 23px;
+	color: #666;
+}
+.ui-content-list-download .ui-content-item .info-list em {
+	font-weight: bold;
+	color: #CF0716;
+}
+
+/* Global
+----------------------------------------------------------------------------- */
+/** Header **/
+#header {
+	*position: relative;
+	*z-index: 5;
+}
+#nav {
+	height: 32px;
+	background: #707070 url(../images/game/bg-nav-gray.png) repeat-x;
+}
+#nav .drop-down {
+	border-color: #9C9C9C;
+}
+#nav .drop-down h3 a {
+	background-image: url(../images/game/icon-ipad-white.png);
+}
+#nav .drop-down ul {
+	border: 3px solid rgba(0, 0, 0, 0.5);
+	border: 3px solid #7F7F7F\9;
+	border-top: none;
+}
+#nav .drop-down ul li {
+	border-left: 1px solid #282828;
+	border-right: 1px solid #282828;
+}
+
+/** Side **/
+#side .ui-hotgame-list-item .title {
+	width: 178px;
+}
+/* TODO */
+#side .ui-box-gallery .ui-img-list-plus {
+	left: 28px;
+	margin-left: -28px;
+}
+#side .ui-box-gallery .ui-img-list-item {
+	margin-right: 28px;
+}
+
+/* Main */
+#main.article-box .article-gallery .ui-img-list-plus {
+	left: 28px;
+	margin-left: -28px;
+}
+#main.article-box .article-gallery .ui-img-list-item {
+	margin: 5px 28px 13px 0;
+}
+#main.article-box .article-gallery .ui-img-list-item .img {
+	border: none;
+}
+
+/* Layout
+----------------------------------------------------------------------------- */
+/** 主页 **/
+.ui-box {
+	border-top-color: #444;
+}
+.ui-box-header .title {
+	color: #222;
+	font-size: 18px;
+}
+
+/* 主内容 */
+#content-main {
+	margin-top: 20px;
+}
+#content-main .ui-layout-item-center .ui-list-item {
+	height: 25px;
+	line-height: 25px;
+}
+#content-main .ui-layout-item-center .ui-list-item.bk {
+	margin-top: 5px;
+}
+#content-main .ui-layout-item-right .ui-img {
+	margin: 0 0 10px 0;
+}
+#content-main .ui-layout-item-right .ui-img .img {
+	display: block;
+	border: 1px solid #E5E5E5;
+}
+
+/* 焦点内容 */
+#content-focus {
+	margin-top: 5px;
+}
+#content-focus .ui-box-item {
+	width: 319px;
+	border-left: 1px solid #DFDFDF;
+	margin-left: -1px;
+}
+#content-focus .ui-art {
+	margin: 15px 10px;
+	background-color: #fff;
+}
+#content-focus .ui-art .img {
+	border: 1px solid #E5E5E5;
+}
+#content-focus .ui-art .title,
+#content-focus .ui-art .content {
+	margin-left: 108px;
+}
+#content-focus .ui-art .title {
+	margin-bottom: 3px;
+	font: 16px '微软雅黑','黑体','宋体',arial,verdana,sans-serif;
+}
+#content-focus .ui-art .content {
+	line-height: 18px;
+	height: 72px;
+	color: #666;
+}
+#content-focus .ui-art .content .more .mark {
+	margin-left: 2px;
+	font-size: 6px;
+	vertical-align: middle;
+}
+#content-focus .ui-list-item {
+	height: 24px;
+	line-height: 24px;
+}
+
+/* iPhone 专区 */
+#content-prefecture .ui-header .link .more {
+	/* color: #CF0716; */
+}
+#content-prefecture .ui-box-item-left .ui-ranking-item {
+	margin: 3px 0;
+}
+#content-prefecture .ui-box-item-left .ui-ranking-item img {
+	width: 72px;
+	height: 72px;
+}
+#content-prefecture .ui-box-item-left .ui-ranking-item .title {
+	display: inline;
+}
+#content-prefecture .ui-box-item-left .ui-ranking-item .title a {
+	color: #666;
+}
+#content-prefecture .ui-box-item-left .ui-ranking-item-cur .title,
+#content-prefecture .ui-box-item-left .ui-ranking-item-cur .content {
+	margin-left: 85px;
+}
+#content-prefecture .ui-box-item-left .ui-ranking-item-cur .title {
+	display: block;
+	margin-bottom: 4px;
+	font-size: 12px;
+}
+#content-prefecture .ui-box-item-left .ui-ranking-item-cur .title a {
+	color: #555;
+}
+#content-prefecture .ui-box-item-center .ui-art {
+	margin-bottom: 15px;
+	background: none;
+}
+#content-prefecture .ui-box-item-center .ui-art .title,
+#content-prefecture .ui-box-item-center .ui-art .content {
+	margin-left: 133px;
+	color: #666;
+}
+#content-prefecture .ui-box-item-center .ui-art .title a {
+	font-weight: bold;
+	color: #333;
+}
+#content-prefecture .ui-box-item-center .ui-list {
+	margin-top: 20px;
+	padding-top: 12px;
+}
+#content-prefecture .ui-box-item-center .ui-list-item {
+	height: 30px;
+	line-height: 30px;
+}
+#content-prefecture .ui-box-item-center .ui-list-item a {
+	font-size: 14px;
+	color: #333;
+}
+#content-prefecture .ui-box-item-right {
+	background-color: #fff;
+}
+
+/* iPhone 壁纸 */
+#content-wallpaper {
+	margin-top: -1px;
+	border-top: 1px solid #DFDFDF;
+	background-color: #FBFBFB;
+}
+#content-wallpaper .ui-box-header {
+	margin: 10px 0;
+	border: none;
+	background: none;
+}
+#content-wallpaper .ui-box-header .title {
+	padding-left: 12px;
+	color: #666;
+	font: 16px/32px '微软雅黑','黑体','宋体',arial,verdana,sans-serif;
+	background: url(../images/game/icon-ui-title.png) no-repeat 10px 50%;
+}
+#content-wallpaper .ui-img-list-plus {
+	left: 34px;
+	margin-left: -34px;
+}
+#content-wallpaper .ui-img-list-item {
+	margin-right: 34px;
+}
+
+/** 新闻页 **/
+body.game-apple-news #main .ui-header-content {
+	margin-top: 0;
+}
+
+/** 应用列表页 **/
+body.game-apple-app #select {
+	*padding-top: 10px;
+	*padding-bottom: 10px;
+}
+body.game-apple-app #select .select-item dt {
+	width: 5em;
+	text-align: right;
+}
+body.game-apple-app #select .select-item dd {
+	margin-left: 5em;
+}

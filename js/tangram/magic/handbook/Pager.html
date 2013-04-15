@@ -1,0 +1,277 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns=http://www.w3.org/1999/xhtml>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="tangram-fe" />
+		<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0;"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<style>
+			body{font-size:14px;font-family:'微软雅黑'}
+		</style>
+		<title>Magic - 离线API</title>
+	</head>
+	<body>
+		<h1>Magic离线文档 -- 分页</h1>
+		<h2>分页</h2>
+		<p>
+			多张图片并列展示，可以采用横排或者竖排的方式，通过两边的按钮切换选中的图片，支持自动滚动和循环滚动，多用于新闻图片轮播和图片产品的图片轮播展示。
+		</p>
+
+		<h2>分页插件</h2>
+
+				<h2>参考手册</h2>
+		
+		<dl>
+			<dt><h3>参数配置</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>					
+							<dt><strong>options.currentPage </strong>: Number</dt>
+							<dd>当前页，默认1</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.totalPage </strong>: Number</dt>
+							<dd>总页数，默认1</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.viewSize </strong>: Number</dt>
+							<dd>页码数，默认显示多少个页面的链接（不包括“首页”等特殊链接），默认10</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.currentPagePos </strong>: Number</dt>
+							<dd>当前页位置，当前页面链接在页面链接列表中的默认位置，必须小于页码数，默认4</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.labelFirst </strong>: String</dt>
+							<dd>首页链接显示的内容，默认“首页”</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.labelPrev </strong>: String</dt>
+							<dd>上一页链接显示的内容，默认“上一页”</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.labelNext </strong>: String</dt>
+							<dd>下一页链接显示的内容，默认“下一页”</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.labelLast </strong>: String</dt>
+							<dd>尾页链接显示的内容，默认“尾页”</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.tplURL </strong>: String</dt>
+							<dd>页码链接中href属性的模版，页码的模版变量为#{pageNum}，默认“##{pageNum}”</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.tplLabelNormal </strong>: String</dt>
+							<dd>普通页码显示模版，页码的模版变量为#{pageNum}，默认#{pageNum}</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.tplLabelCurrent </strong>: String</dt>
+							<dd>当前页码的显示模版，页码的模版变量为#{pageNum}，默认#{pageNum}</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+				<dl>
+			<dt><h3>组件方法</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>
+							<dt>render</dt>
+							<dd>
+								<p>将分页组件渲染到dom中</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>target</strong>: {String|HTMLElement}</p>
+														<p style="text-indent: 24px;">渲染的容器，默认为document.body。</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																											
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getElement</dt>
+							<dd>
+								<p>取得 ui 模块对应的 dom element 对象</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>key</strong>: {String}</p>
+														<p style="text-indent: 24px;">该ID对应的关键字(可选参数)</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Object}</dt>									
+											<dd>
+												<p>ui模块对应的dom element</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getElements</dt>
+							<dd>
+								<p>取得所有 ui 模块对应的 dom element 对象</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Object}</dt>									
+											<dd>
+												<p>取得对象的集合</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+
+		<dl>
+			<dt><h3>组件事件</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>
+							<dt>onpagechange</dt>
+							<dd>
+								<p>页码变换后触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.returnValue</strong>: {Boolean}</p>
+														<p style="text-indent: 24px;">返回false时，会阻止&lt;a&gt;的浏览器默认href跳转。</p>
+													</li>
+																										<li>
+														<p><strong>evt.pageNum</strong>: {Number}</p>
+														<p style="text-indent: 24px;">变化后的页码。</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onload</dt>
+							<dd>
+								<p>渲染后触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>ondispose</dt>
+							<dd>
+								<p>分页组件析构后触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+	</body>
+</html>

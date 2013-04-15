@@ -1,0 +1,347 @@
+css命名及书写规范
+2008-5-22  |  分类：技术言论  |  标签：css hacks、css命名、css技巧  |  2,774 views
+
+CSS命名规范
+
+一．文件命名规范
+
+全局样式：global.css；
+框架布局：layout.css；
+字体样式：font.css；
+链接样式：link.css；
+打印样式：print.css；
+
+二．常用类/ID命名规范
+
+页　眉：header
+内　容：content
+容　器：container
+页　脚：footer
+版　权：copyright　
+导　航：menu
+主导航：mainMenu
+子导航：subMenu
+标　志：logo
+标　语：banner
+标　题：title
+侧边栏：sidebar
+图　标：Icon
+注　释：note
+搜　索：search
+按　钮：btn
+登　录：login
+链　接：link
+信息框：manage
+……
+
+常用类的命名应尽量以常见英文单词为准，做到通俗易懂，并在适当的地方加以注释。对于二级类/ID命名，则采用组合书写的模式，后一个单词的首字母应大写：诸如“搜索框”则应命名为“searchInput”、“搜索图标”命名这“searchIcon”、“搜索按钮”命名为“searchBtn”……
+
+
+CSS书写规范及方法
+
+一. 常规书写规范及方法
+
+1. 选择DOCTYPE：
+
+XHTML 1.0 提供了三种DTD声明可供选择：
+
+过渡的(Transitional):要求非常宽松的DTD，它允许你继续使用HTML4.01的标识(但是要符合xhtml的写法)。完整代码如下：
+
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd“>
+
+严格的(Strict):要求严格的DTD，你不能使用任何表现层的标识和属性，例如<br>。完整代码如下：
+
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN” “http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd“>
+
+框架的(Frameset):专门针对框架页面设计使用的DTD，如果你的页面中包含有框架，需要采用这种DTD。完整代码如下：
+
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Frameset//EN” “http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd“>
+
+理想情况当然是严格的DTD，但对于我们大多数刚接触web标准的设计师来说，过渡的DTD(XHTML 1.0 Transitional)是目前理想选择(包括本站，使用的也是过渡型DTD)。因为这种DTD还允许我们使用表现层的标识、元素和属性，也比较容易通过W3C的代码校验。
+
+2. 指定语言及字符集：
+
+为文档指定语言：
+
+<html xmlns=”http://www.w3.org/1999/xhtml” lang=”en”>
+
+为了被浏览器正确解释和通过W3C代码校验，所有的XHTML文档都必须声明它们所使用的编码语言；如：
+常用的语言定义：
+
+<meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″ />
+标准的XML文档语言定义：
+<?xml version=”1.0″ encoding=” utf-8″?>
+针对老版本的浏览器的语言定义：
+<meta http-equiv=”Content-Language” content=” utf-8″ />
+为提高字符集，建议采用“utf-8”。
+
+3. 调用样式表：
+
+外部样式表调用：
+
+页面内嵌法：就是将样式表直接写在页面代码的head区。 如：
+
+<style type=”text/css”><!– body { background : white ; color : black ; } –> </style>
+外部调用法：将样式表写在一个独立的.css文件中，然后在页面head区用类似以下代码调用。
+
+<link rel=”stylesheet” rev=”stylesheet” href=”css/style.css” type=”text/css” media=”all” />
+
+在符合web标准的设计中，推荐使用外部调用法，可以不修改页面只修改.css文件而改变页面的样式。如果所有页面都调用同一个样式表文件，那么改一个样式表文件，可以改变所有文件的样式。
+
+4、选用恰当的元素：
+
+根据文档的结构来选择HTML元素，而不是根据HTML元素的样式来选择。例如，使用P元素来包含文字段落，而不是为了换行。如果在创建文档时找不到适当的元素，则可以考虑使用通用的div 或者是span；
+
+避免过渡使用div和span。少量、适当的使用div和span元素可以使文档的结构更加清晰合理并且易于使用样式；
+
+尽可能少地使用标签和结构嵌套，这样不但可以使文档结构清晰，同时也可以保持文件的小巧，在提高用户下载速度的同时，也易于浏览器对文档的解释及呈视；
+
+5、派生选择器：
+
+可以使用派生选择器给一个元素里的子元素定义样式，在简化命名的同时也使结构更加的清晰化，如：
+
+.mainMenu ul li {background:url(images/bg.gif;)}
+
+6、辅助图片用背影图处理：
+
+这里的”辅助图片”是指那些不是作为页面要表达的内容的一部分，而仅仅用于修饰、间隔、提醒的图片。将其做背影图处理，可以在不改动页面的情况下通过CSS样式来进行改动，如：
+
+#logo {background:url(images/logo.jpg) #FEFEFE no-repeat right bottom;}
+
+7、结构与样式分离：
+
+在页面里只写入文档的结构，而将样式写于css文件中，通过外部调用CSS样式表来实现结构与样式的分离。
+
+8、文档的结构化书写：
+
+页面CSS文档都应采用结构化的书写方式，逻辑清晰易于阅读。如：
+
+<div id=”mainMenu”>
+<ul>
+<li><a href=”#” >首页</a></li>
+<li><a href=”#” >介绍</a></li>
+<li><a href=”#” >服务</a></li>
+</ul>
+</div>
+
+/*=====主导航=====*/
+#mainMenu {
+width:100%;
+height:30px;
+background:url(images/mainMenu_bg.jpg) repeat-x;
+}
+#mainMenu ul li {
+float:left;
+line-height:30px;
+margin-right:1px;
+cursor:pointer;
+}
+/*=====主导航结束=====*/
+
+9、鼠标手势：
+
+在XHTML标准中，hand只被IE识别，当需要将鼠标手势转换为“手形”时，则将“hand”换为“pointer”，即“cursor:pointer;”
+
+二．注释书写规范
+
+1、行间注释：
+
+直接写于属性值后面，如：
+
+.search{
+border:1px solid #fff;/*定义搜索输入框边框*/
+background:url(../images/icon.gif) no-report #333;/*定义搜索框的背景*/
+}
+
+2、整段注释：
+
+分别在开始及结束地方加入注释，如：
+
+/*=====搜索条=====*/
+.search {
+border:1px solid #fff;
+background:url(../images/icon.gif) no-repeat #333;
+}
+/*=====搜索条结束=====*/
+
+三．样式属性代码缩写
+
+1、不同类有相同属性及属性值的缩写：
+
+对于两个不同的类，但是其中有部分相同甚至是全部相同的属性及属性值时，应对其加以合并缩写，特别是当有多个不同的类而有相同的属性及属性值时，合并缩写可以减少代码量并易于控制。如：
+
+#mainMenu {
+background:url(../images/bg.gif);
+border:1px solid #333;
+width:100%;
+height:30px;
+overflow:hidden;
+}
+#subMenu {
+background:url(../images/bg.gif);
+border:1px solid #333;
+width:100%;
+height:20px;
+overflow:hidden;
+}
+
+两个不同类的属性值有重复之处，刚可以缩写为：
+
+#mainMenu,#subMenu {
+background:url(../images/bg.gif);
+border:1px solid #333;
+width:100%;
+overflow:hidden;
+}
+#mainMenu {height:30px;}
+#subMenu {height:20px;}
+
+2、同一属性的缩写：
+
+同一属性根据它的属性值也可以进行简写，如：
+
+.search {
+background-color:#333;
+background-image:url(../images/icon.gif);
+background-repeat: no-repeat;
+background-position:50% 50%;
+}
+.search {
+background:#333 url(../images/icon.gif) no-repeat 50% 50%;
+}
+
+3、内外侧边框的缩写：
+
+在CSS中关于内外侧边框的距离是按照上、右、下、左的顺序来排列的，当这四个属性值不同时也可直接缩写，如：
+
+.btn {
+margin-top:10px;
+margin-right:8px;
+margin-bottom:12px;
+margin-left:5px;
+padding-top:10px;
+padding-right:8px;
+padding-bottom:12px;
+padding-left:8px;
+}
+
+则可缩写为：
+
+.btn {
+Margin:10px 8px 12px 5px;
+Padding:10px 8px 12px 5px;
+}
+
+而如果当上边与下边、左边与右边的边框属性值相同时，则属性值可以直接缩写为两个，如：
+
+.btn {
+margin-top:10px;
+margin-right:5px;
+margin-bottom:10px;
+margin-left:5px;
+}
+
+缩写为：
+
+.btn {margin:10px 5px;}
+
+而当上下左右四个边框的属性值都相同时，则可以直接缩写成一个，如：
+
+.btn {
+margin-top:10px;
+margin-right:10px;
+margin-bottom:10px;
+margin-left:10px;
+}
+
+缩写为：
+
+.btn{margin:10px;}
+
+4、颜色值的缩写：
+
+当RGB三个颜色值数值相同时，可缩写颜色值代码。如：
+
+.menu { color:#ff3333;}
+
+可缩写为:
+
+.menu {color:#f33;}
+
+四．hack书写规范 
+
+因为不同浏览器对W3C标准的支持不一样，各个浏览器对于页面的解释呈视也不尽相同，比如IE在很多情况下就与FF存在3px的差距，对于这些差异性，就需要利用css 的hack来进行调整，当然在没有必要的情况下，最好不要写hack来进行调整，避免因为hack而导致页面出现问题。
+
+1、 IE6、IE7、Firefox之间的兼容写法：
+
+写法一：
+
+IE都能识别*;标准浏览器(如FF)不能识别*；
+IE6能识别*，但不能识别 !important,
+IE7能识别*，也能识别!important;
+FF不能识别*，但能识别!important;
+根据上述表达，同一类/ID下的CSS 　hack可写为：
+.searchInput {
+background-color:#333;/*三者皆可*/
+*background-color:#666　!important; /*仅IE7*/
+*background-color:#999; /*仅IE6及IE6以下*/
+}
+一般三者的书写顺序为：FF、IE7、IE6.
+
+写法二：
+
+IE6可识别“_”，而IE7及FF皆不能识别，所以当只针对IE6与IE7及FF之间的区别时，可这样书写：
+.searchInput {
+background-color:#333;/*通用*/
+_background-color:#666;/*仅IE6可识别*/
+}
+
+写法三：
+
+*+html 与 *html 是IE特有的标签, Firefox 暂不支持。
+.searchInput {background-color:#333;}
+*html .searchInput {background-color:#666;}/*仅IE6*/
+*+html .searchInput {background-color:#555;}/*仅IE7*/
+
+屏蔽IE浏览器：
+
+select是选择符，根据情况更换。第二句是MAC上safari浏览器独有的。
+
+*:lang(zh) select {font:12px  !important;} /*FF的专用*/
+select:empty {font:12px  !important;} /*safari可见*/
+
+IE6可识别：
+
+这里主要是通过CSS注释分开一个属性与值，注释在冒号前。
+
+select { display /*IE6不识别*/:none;}
+
+IE的if条件hack写法：
+
+所有的IE可识别：
+
+<!–[if IE]> Only IE <![end if]–>
+只有IE5.0可以识别:
+<!–[if IE 5.0]> Only IE 5.0 <![end if]–>
+IE5.0包换IE5.5都可以识别:
+<!–[if gt IE 5.0]> Only IE 5.0+ <![end if]–>
+仅IE6可识别:
+<!–[if lt IE 6]> Only IE 6- <![end if]–>
+IE6以及IE6以下的IE5.x都可识别:
+<!–[if gte IE 6]> Only IE 6/+ <![end if]–>
+仅IE7可识别:
+<!–[if lte IE 7]> Only IE 7/- <![end if]–>
+
+2、清除浮动：
+
+在Firefox中，当子级都为浮动时，那么父级的高度就无法完全的包住整个子级，那么这时用这个清除浮动的HACK来对父级做一次定义，那么就可以解决这个问题。
+
+select:after {
+content:”.”;
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}
+
+———————–分割线———————

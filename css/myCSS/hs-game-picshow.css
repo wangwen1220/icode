@@ -1,0 +1,96 @@
+@import 'hs-game-global.css';
+@import '../js/mygallery/skin/black.css';
+@charset 'utf-8';
+
+/*
+名称: 火秀游戏图片详细页样式
+简介: 火秀游戏图片详细页样式
+维护: 王文 wangwen1220#139.com
+日期: 2013-1-9
+*/
+
+/* Global
+----------------------------------------------------------------------------- */
+body.game-picshow #mygallery-black {
+	margin: 5px auto 10px;
+}
+body.game-picshow #mygallery-black .jiathis .jiathis_button_ishare {
+	text-decoration: none;
+	_color: #999;
+}
+#JIATHISSWF {
+	visibility: hidden;
+}
+body.game-picshow #content .gallery-group {
+	margin: 5px 0;
+	border: 1px solid #ddd;
+	background-color: #FBFBFB;
+}
+body.game-picshow #content .gallery-group .ui-header {
+	margin: 5px 20px 12px;
+}
+body.game-picshow #content .gallery-group .ui-img-list-plus {
+	left: 52px;
+	margin-left: -52px;
+	height: 136px;
+	overflow: hidden;
+}
+body.game-picshow #content .gallery-group .ui-img-list-item {
+	margin-right: 52px;
+	margin-bottom: 15px;
+}
+body.game-picshow #content .gallery-group .ui-img-list-item .img {
+	border: none;
+	padding: 0 4px 4px 0;
+	background: url(../images/game/bg-gallery-group.png) no-repeat 100% 100%;
+}
+body.game-picshow #content .gallery-group .ui-img-list-item img {
+	padding: 2px;
+	border: 1px solid #C6C6C6;
+	background-color: #fff;
+}
+body.game-picshow #content .gallery-group .ui-img-list-item .title {
+	line-height: 16px;
+	height: auto;
+}
+body.game-picshow #main,
+body.game-picshow #side {
+	margin-bottom: 5px;
+}
+body.game-picshow #main .article-gallery {
+	margin: 5px 30px 0;
+}
+body.game-picshow #main .article-gallery .header-news {
+	border: none;
+	margin-bottom: 5px;
+}
+body.game-picshow #main .article-gallery .header-news .title {
+	font-size: 15px;
+	font-weight: normal;
+	color: #444;
+}
+body.game-picshow #main .article-gallery .ui-img-list-plus {
+	left: 8px;
+	margin: 0 0 0 -8px;
+}
+body.game-picshow #main .article-gallery .ui-img-list-item {
+	margin: 0 8px 10px 0;
+}
+body.game-picshow #side .ui-box-side {
+	margin-bottom: 0;
+	padding-bottom: 7px;
+}
+body.game-picshow #side .ui-box-side .ui-art {
+	margin: 10px;
+	background: none;
+}
+body.game-picshow #side .ui-box-side .ui-art .title,
+body.game-picshow #side .ui-box-side .ui-art .content {
+	margin-left: 132px;
+	height: auto;
+	line-height: 20px;
+}
+body.game-picshow #side .ui-box-side .ui-art .content {
+	margin-top: 3px;
+	line-height: 17px;
+}

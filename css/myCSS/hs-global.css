@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+/*
+名称：火秀网全局样式
+说明：火秀网通用样式，包括全局设置、头部导航条、友情链接、页脚等
+维护：王文 wangwen1220#139.com
+日期：2012-11-12
+*/
+
+/* Global
+----------------------------------------------------------------------------- */
+/*
+解决 IE6 绝对定位 Bug，提供一个“不抖动的环境”
+当不是 https 时，可把 # 换成 about:blank 以提升效率
+只需要 html 与 body 标签其一使用背景静止定位即可让IE6下滚动条拖动元素也不会抖动
+注意：如果 body 已经设置了背景图像静止定位后还给 html 标签设置会让 body 设置的背景静止失效
+*/
+html {
+	_background-image: url(about:blank);
+	_background-attachment: fixed;
+}
+
+/** 默认文字和背景颜色 **/
+body {
+	background-color: #fff;
+	color: #444;
+}
+
+/** 默认字体 **/
+body,button,input,select,textarea {
+	font: 12px/1.5 \5b8b\4f53,verdana,arial,sans-serif;
+}
+
+/** 链接样式 **/
+a {
+	color: #444;
+}
+a:hover, a:active {
+	color: #EC6800;
+}
+
+/** 广告图片 **/
+.ad, .ad-side {
+	overflow: hidden;
+}
+.ad a, .ad-side a {
+	display: block;
+}
+.ad img, .ad-side img {
+	vertical-align: bottom; /* 清除图片与容器下边界的空隙 */
+}
+
+/* Layout
+----------------------------------------------------------------------------- */
+/** Topbar **/
+#topbar {
+	position: fixed;
+	z-index: 11;
+	left:0;
+	right:0;
+	top:0;
+	border-bottom: 1px solid #EBEBEB;
+	color: #898989;
+	background: #fafafa url(../images/common/top_nav_bg.png) repeat scroll 0 0;
+	_position: absolute;
+	_top: expression(documentElement.scrollTop);
+}
+#topbar a {
+	color: #414141;
+}
+#topbar a:hover {
+	color: #DA0614;
+}
+#topbar .nav {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+#topbar .nav a {
+	padding: 0 5px;
+}
+
+/* 操蛋的登录样式 */
+#topbar .login-bar { float: right; height: 30px; overflow: hidden; }
+#topbar .login-bar a { color:#414141; }
+#topbar .login-bar .reg { float:left; }
+#topbar .login-bar .reg a{ background: url("../images/common/top_nav_icon.png") no-repeat scroll 0 -111px transparent; display: block; padding: 0 10px 0 30px; line-height:29px;}
+#topbar .login-bar .reg a:hover { background: url("../images/common/top_nav_icon.png") no-repeat scroll -117px -111px transparent; color:#d60921; }
+#topbar .login-bar .signin { float:left; position:relative;}
+#topbar #login_popup_trigger { background: url("../images/common/top_nav_icon.png") no-repeat scroll 14px -148px; display: block; padding: 0 33px 0 40px; line-height:29px;}
+#topbar .hoverbox-on #login_popup_trigger { background-position: -121px -148px; color:#d60921; }
+#topbar #login_popup_trigger:hover { background-position: -121px -148px; color:#d60921; }
+#topbar .login-bar .userinfo {line-height:30px; color:#808080; float:left; margin-right:10px; }
+#topbar .login-bar .userinfo span { color:#00a0e9; margin-left:8px; font-weight:bold; }
+#topbar .login-bar .setting { float:left; position:relative;}
+#topbar .login-bar .top_notice_info {padding-right:5px;padding-left:15px;background:url("../images/common/notice.gif") no-repeat;}
+#topbar .login-bar .top_notice_info a{color:#D60921}
+#topbar .login-bar .top_pm_info{padding-right:5px;padding-left:20px;background:url("../images/common/new_pm.gif") no-repeat;}
+#topbar .login-bar .top_pm_info a{color:#D60921}
+#topbar #setting_panel_tirgger{ line-height:29px; background: url("../images/common/top_nav_icon.png") no-repeat scroll 7px -409px; display: block; width:46px; text-indent:-999em;}
+#topbar .hoverbox-on #setting_panel_tirgger{ background-position:-69px -409px; }
+#topbar .hoverbox-on #panel{display:block;}
+#topbar #login_popup { background: url("../images/common/top_nav_icon.png") no-repeat scroll 0 -213px; color: #666; font-size: 12px; height: 154px; padding: 13px; position: absolute; right: 0; width: 196px; display:none;}
+#topbar .hoverbox-on #login_popup{display:block;}
+#topbar #login_popup .remember { padding: 4px 0 0; height: 24px; line-height: 24px;}
+#topbar .textbox label { display: block; margin: 0 0 5px; }
+#topbar .textbox .txt_input { margin: 5px 0 10px 0; padding: 4px; width: 184px;	background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #CCCCCC; box-shadow: 0 2px 2px #DEDEDE inset; color: #b6b6b6; cursor: text; font-size: 12px; }
+#topbar .fr { float: right; }
+#topbar .fr a {color:#f39800; text-decoration:underline;}
+#topbar .btn2 {cursor: pointer; background: url("../images/common/top_nav_icon.png") no-repeat scroll 0px -185px transparent; border:0; width:64px; height:26px;}
+#topbar .btn2:hover {background: url("../images/common/top_nav_icon.png") no-repeat scroll -69px -185px transparent;}
+#topbar #panel { color: #666666; font-size: 12px; position: absolute; right: 0; top: 29px; width: 189px; z-index: 9999; display:none;background:#fff;}
+#topbar .panel_top { background: url("../images/common/top_nav_icon.png") no-repeat scroll 0 -449px transparent; height: 3px; overflow:hidden; }
+#topbar .panel_center { background: none repeat scroll 0 0 #F4F4F4; border-bottom: 1px solid #D6D6D6; border-left: 1px solid #D6D6D6; border-right: 1px solid #D6D6D6; padding: 0 2px 2px;}
+#topbar .panel_content { background:#fff; padding:4px; display:block;}
+#topbar .panel_info { padding: 7px; }
+#topbar .panel_info li { height:23px; line-height:23px;}
+#topbar .panel_info .number { color:#414141;}
+#topbar .panel_info .usergroup { color:#a40000;}
+#topbar .panel_info .coin { color:#f39800; clear:both;}
+#topbar .panel_info strong { font-weight:normal; color:#8a8a8a; text-align:right; width:50px; margin-right:2px; display:inline-block; }
+#topbar .panel_info_img { float:right; padding: 7px 7px 0 0;}
+#topbar .panel_info_img .avatar { border: 1px solid #dedcdd;}
+#topbar .recharge {float:right; height:20px; width:37px; overflow:hidden; background: url(../images/common/top_nav_icon.png) no-repeat scroll 0 -463px;}
+#topbar .recharge:hover {float:right; height:20px; width:37px; overflow:hidden; background: url(../images/common/top_nav_icon.png) no-repeat scroll -44px -463px;}
+#topbar .withdraw {float:right; height:20px; width:37px; overflow:hidden; background: url(../images/common/top_nav_icon.png) no-repeat scroll 0 -490px;}
+#topbar .withdraw:hover {float:right; height:20px; width:37px; overflow:hidden; background: url(../images/common/top_nav_icon.png) no-repeat scroll -44px -490px;}
+#topbar .panel_content .my_huoshow_top { background: url("../images/common/top_nav_icon.png") no-repeat scroll 0 -518px transparent; height: 29px; overflow:hidden; }
+#topbar .panel_content .my_huoshow_top_box { background: none repeat scroll 0 0 #fafafa; border-bottom: 1px solid #dedcdd; border-left: 1px solid #dedcdd; border-right: 1px solid #dedcdd; padding:5px 10px 10px 10px; }
+#topbar .panel_content .my_huoshow_top_box .menu { border-bottom: 1px solid #e0e0e0; margin-bottom:10px; padding-bottom:5px;}
+#topbar .panel_content .my_huoshow_top_box .menu span { display:inline-block; height: 26px; line-height: 26px; vertical-align: middle; width: 50px; }
+#topbar .panel_content_blog {background: url("../images/common/top_nav_icon.png") no-repeat scroll -284px -32px transparent; padding: 0 0 3px 19px;}
+#topbar .panel_content_photo {background: url("../images/common/top_nav_icon.png") no-repeat scroll -284px -2px transparent; padding: 0 0 3px 19px;}
+#topbar .panel_content_myshow {background: url("../images/common/top_nav_icon.png") no-repeat scroll -284px -92px transparent; padding: 0 0 3px 19px;}
+#topbar .panel_content_topic {background: url("../images/common/top_nav_icon.png") no-repeat scroll -284px -122px transparent; padding: 0 0 3px 19px;}
+#topbar .panel_content_gift {background: url("../images/common/top_nav_icon.png") no-repeat scroll -284px -62px transparent; padding: 0 0 3px 19px;}
+#topbar .panel_content_friend {background: url("../images/common/top_nav_icon.png") no-repeat scroll -284px -152px transparent; padding: 0 0 3px 19px;}
+#topbar .panel_content_task {background: url("../images/common/top_nav_icon.png") no-repeat scroll -284px -182px transparent; padding: 0 0 3px 19px;}
+#topbar .panel_content_config {background: url("../images/common/top_nav_icon.png") no-repeat scroll -284px -212px transparent; padding: 0 0 3px 19px;}
+#topbar .panel_content_common {background: url("../images/common/top_nav_icon.png") no-repeat scroll -284px -242px transparent; padding: 0 0 3px 19px; }
+#topbar .panel_content_notice_nums{width:75px !important;}
+#topbar .panel_content_notice_nums a{font-weight:bold;color:#D60921}
+#topbar .panel_content_newpm_nums{width:75px !important;}
+#topbar .panel_content_newpm_nums a{font-weight:bold;color:#D60921}
+#topbar .panel_content_notice{width:75px !important;}
+#topbar .panel_content .my_huoshow_top_box .manage { padding-bottom:0px;}
+#topbar .panel_content .my_huoshow_top_box .manage span { display:inline-block; height: 26px; line-height: 26px; vertical-align: middle; width: 50px; }
+#topbar .panel_center_quit {overflow:hidden; display:block; text-indent: -999em; background: url("../images/common/top_nav_icon.png") no-repeat scroll 0 -555px ; width:56px; height:20px; margin-top: 5px; }
+
+/** Partners **/
+#partners {
+	clear: both;
+	margin: 12px auto;
+	width: 960px;
+}
+#partners .header {
+	position: relative;
+	z-index: 2;
+	float: left;
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	margin-right: -1px;
+	border: 1px solid #E0E0E0;
+	border-right: none;
+	font-size: 14px;
+	color: #444;
+	text-indent: 5px;
+	background-color: #FAFAFA;
+	/* cursor: pointer; */
+}
+#partners .content {
+	float: right;
+	height: 80px;
+	width: 888px;
+	border: 1px solid #E0E0E0;
+	background-color: #fafafa;
+}
+#partners .content p {
+	line-height: 22px;
+	margin: 5px 10px;
+}
+#partners .content p a {
+	color: #999;
+	padding: 0 3px;
+}
+
+/** Footer **/
+#footer {
+	clear: both;
+	margin-top: 10px;
+	padding-top: 10px;
+	height: 150px;
+	text-align: center;
+	background: #F7F7F7 url(../images/home/bg_footer_home.png) repeat-x 0 0;
+}
+#footer p {
+	margin: 8px 0;
+	color: #999;
+}
+#footer a {
+	padding: 0 2px;
+	color: #444;
+}
+#footer a:hover {
+	color: #D8071A;
+}

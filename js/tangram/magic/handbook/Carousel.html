@@ -1,0 +1,560 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns=http://www.w3.org/1999/xhtml>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="tangram-fe" />
+		<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0;"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<style>
+			body{font-size:14px;font-family:'微软雅黑'}
+		</style>
+		<title>Magic - 离线API</title>
+	</head>
+	<body>
+		<h1>Magic离线文档 -- 图片轮播</h1>
+		<h2>图片轮播</h2>
+		<p>
+			多张图片并列展示，可以采用横排或者竖排的方式，通过两边的按钮切换选中的图片，支持自动滚动和循环滚动，多用于新闻图片轮播和图片产品的图片轮播展示。
+		</p>
+
+		<h2>图片轮播插件</h2>
+
+				<h3>button</h3>
+		<p>
+			为图片轮播组件添加控制前后按钮插件
+		</p>
+				<h3>autoScroll</h3>
+		<p>
+			为图片轮播组件增加自动滚动功能
+		</p>
+				<h3>fx</h3>
+		<p>
+			为图片轮播组件增加动画滚动功能
+		</p>
+				<h2>参考手册</h2>
+		
+		<dl>
+			<dt><h3>参数配置</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>					
+							<dt><strong>options.items </strong>: Array</dt>
+							<dd>描述每个滚动项的字符数据，格式：[{content: &#039;text-0&#039;}, {content: &#039;text-2&#039;}, {content: &#039;text-3&#039;}...].</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.orientation </strong>: Number</dt>
+							<dd>描述该组件是创建一个横向滚动组件或是竖向滚动组件，取值：{horizontal: 横向, vertical: 竖向}，默认horizontal</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.originalIndex </strong>: Number</dt>
+							<dd>默认选项卡的聚焦项，默认0</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.viewSize </strong>: Number</dt>
+							<dd>描述一页显示多少个滚动项，默认3</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.focusRange </strong>: Object</dt>
+							<dd>描述焦点在viewSize参数中的滚动范围，区域起始位从0开始，格式：{min: 0, max: 4}，当焦点超出focusRange指定的范围时才会触发可视区域的滚动动作，默认{min: 0, max: options.viewSize - 1 || 2}</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.isLoop </strong>: Boolean</dt>
+							<dd>是否支持循环滚动，默认false</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.step </strong>: Number</dt>
+							<dd>描述每次调用focusPrev或focusNext方法时一次滚动过多少个项，默认1</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.fx.enable </strong>: Boolean</dt>
+							<dd>插件开关，默认 true</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.fx.duration </strong>: Number</dt>
+							<dd>执行一次动画的时间(毫秒)，默认500</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.fx.interval </strong>: Number</dt>
+							<dd>动画脉冲间隔时间(毫秒)，默认16</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.button.enable </strong>: Boolean</dt>
+							<dd>插件开关，默认true</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.autoScroll.enable </strong>: Boolean</dt>
+							<dd>插件开关，默认true</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.autoScroll.interval </strong>: Number</dt>
+							<dd>以毫秒描述每次滚动的时间间隔，默认1000</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.autoScroll.direction </strong>: String</dt>
+							<dd>取值，forward|backward 描述组件的滚动方向，默认forward</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>					
+							<dt><strong>options.button.buttonLabel </strong>: Object</dt>
+							<dd>前后按钮的文字描述，参考值：{prev: &#039;left&#039;, next: &#039;right&#039;}</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+				<dl>
+			<dt><h3>组件方法</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>
+							<dt>render</dt>
+							<dd>
+								<p>根据参数指定的容器渲染滚动项</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>target</strong>: {String|HTMLElement}</p>
+														<p style="text-indent: 24px;">被渲染的指定容器</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																											
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>focusPrev</dt>
+							<dd>
+								<p>以step为单位翻到上一项</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>focusNext</dt>
+							<dd>
+								<p>以step为单位翻到下一项</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>focus</dt>
+							<dd>
+								<p>根据方向从当前项聚焦到index指定的项</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">滚动项的索引</p>
+													</li>
+																										<li>
+														<p><strong>direction</strong>: {String}</p>
+														<p style="text-indent: 24px;">可选，滚动方向，取值：forward|backward</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																											
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getCurrentIndex</dt>
+							<dd>
+								<p>取得当前得到焦点项在所有数据项中的索引值</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Number}</dt>									
+											<dd>
+												<p>索引值.</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getTotalCount</dt>
+							<dd>
+								<p>取得数据项的总数目</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Number}</dt>									
+											<dd>
+												<p>总数.</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>start</dt>
+							<dd>
+								<p>启动滚动</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>stop</dt>
+							<dd>
+								<p>停止滚动</p>
+																							</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>isFirst</dt>
+							<dd>
+								<p>是否已经滚动到首项</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Boolean}</dt>									
+											<dd>
+												<p>当已经滚动到首项时返回true，否则返回false</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>isLast</dt>
+							<dd>
+								<p>是否已经滚动到末项</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Boolean}</dt>									
+											<dd>
+												<p>当已经滚动到末项时返回true，否则返回false</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getElement</dt>
+							<dd>
+								<p>取得 ui 模块对应的 dom element 对象</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>key</strong>: {String}</p>
+														<p style="text-indent: 24px;">该ID对应的关键字(可选参数)</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																		
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Object}</dt>									
+											<dd>
+												<p>ui模块对应的dom element</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>getElements</dt>
+							<dd>
+								<p>取得所有 ui 模块对应的 dom element 对象</p>
+																<ul>
+																											
+																		<li>
+										<dl>
+											<dt>返回值:&nbsp;{Object}</dt>									
+											<dd>
+												<p>取得对象的集合</p>
+											</dd>
+										</dl>
+									</li>
+																		
+									
+								</ul>
+															</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+
+		<dl>
+			<dt><h3>组件事件</h3></dt>
+			<dd>
+				<ul>
+										<li>
+						<dl>
+							<dt>onclickitem</dt>
+							<dd>
+								<p>鼠标点击单个滚动项时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">取得触发时该滚动项的索引值</p>
+													</li>
+																										<li>
+														<p><strong>evt.DOMEvent</strong>: {Event}</p>
+														<p style="text-indent: 24px;">取得当时触发的浏览器事件对象</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onmouseoveritem</dt>
+							<dd>
+								<p>鼠标划入单个滚动项时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">取得触发时该滚动项的索引值</p>
+													</li>
+																										<li>
+														<p><strong>evt.DOMEvent</strong>: {Event}</p>
+														<p style="text-indent: 24px;">取得当时触发的浏览器事件对象</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onmouseoutitem</dt>
+							<dd>
+								<p>鼠标划出单个滚动项时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.index</strong>: {Number}</p>
+														<p style="text-indent: 24px;">取得触发时该滚动项的索引值</p>
+													</li>
+																										<li>
+														<p><strong>evt.DOMEvent</strong>: {Event}</p>
+														<p style="text-indent: 24px;">取得当时触发的浏览器事件对象</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onfocus</dt>
+							<dd>
+								<p>当一个滚动结束时触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.direction</strong>: {String}</p>
+														<p style="text-indent: 24px;">可以取得当次的滚动方向，取值：forward|backward</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onmouseenter</dt>
+							<dd>
+								<p>当鼠标移入可视区后触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.DOMEvent</strong>: {Event}</p>
+														<p style="text-indent: 24px;">取得当时触发的浏览器事件对象</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+										<li>
+						<dl>
+							<dt>onmouseleave</dt>
+							<dd>
+								<p>当鼠标移出可视区后触发</p>
+																<ul>
+																		<li>
+										<dl>
+											<dt>参数</dt>							
+											<dd>
+												<ul>
+																										<li>
+														<p><strong>evt</strong>: {baidu.lang.Event}</p>
+														<p style="text-indent: 24px;">事件参数</p>
+													</li>
+																										<li>
+														<p><strong>evt.DOMEvent</strong>: {Event}</p>
+														<p style="text-indent: 24px;">取得当时触发的浏览器事件对象</p>
+													</li>
+																									</ul>
+												
+											</dd>
+										</dl>
+									</li>
+																																			</ul>
+															</dd>
+						</dl>
+					</li>
+									</ul>
+			</dd>
+		</dl>
+	</body>
+</html>

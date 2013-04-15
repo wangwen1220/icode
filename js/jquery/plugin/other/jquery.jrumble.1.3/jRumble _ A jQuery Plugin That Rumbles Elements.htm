@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>jRumble | A jQuery Plugin That Rumbles Elements</title>
+		<meta name="description" content="jRumble is a jQuery plugin that rumbles, vibrates, shakes, and rotates any element you choose."> 
+		<meta name="keywords" content="jrumble, jquery, plugin, vibrate, shake, jack rugile">
+		<meta property="og:site_name" content="jRumble | A jQuery Plugin That Rumbles Elements">
+		<meta property="og:image" content="http://jackrugile.com/jrumble/images/fb.png">
+		<meta property="og:url" content="http://jackrugile.com/jrumble/">
+		<meta property="og:title" content="jRumble | A jQuery Plugin That Rumbles Elements">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="jRumble is a jQuery plugin that rumbles, vibrates, shakes, and rotates any element you choose.">
+		<!--[if IE]><script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<link rel="stylesheet" href="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/style.css">
+		<link rel="stylesheet" href="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/prettify.css">
+		<link rel="shortcut icon" type="image/x-icon" href="http://jackrugile.com/jrumble/images/favicon.ico">		
+	<script src="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/ga.js" async="" type="text/javascript"></script><script src="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/bsa.js" async="" type="text/javascript"></script><script async="async" src="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/s_37b1de7c92bae5639db42acabda6975a.js" id="_bsap_js_37b1de7c92bae5639db42acabda6975a" type="text/javascript"></script><script src="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/country.htm" type="text/javascript"></script><style id="bsa_css" type="text/css">.one{position:relative}.one .bsa_it_ad{display:block;padding:15px;border:1px solid #e1e1e1;background:#f9f9f9;font-family:helvetica,arial,sans-serif;line-height:100%;position:relative}.one .bsa_it_ad a{text-decoration:none}.one .bsa_it_ad a:hover{text-decoration:none}.one .bsa_it_ad .bsa_it_t{display:block;font-size:12px;font-weight:bold;color:#212121;line-height:125%;padding:0 0 5px 0}.one .bsa_it_ad .bsa_it_d{display:block;font-size:11px;color:#434343;font-size:12px;line-height:135%}.one .bsa_it_ad .bsa_it_i{float:left;margin:0 15px 10px 0}.one .bsa_it_p{display:block;text-align:right;position:absolute;bottom:10px;right:15px}.one .bsa_it_p a{font-size:10px;color:#666;text-decoration:none}.one .bsa_it_ad .bsa_it_p a:hover{font-style:italic}</style><script src="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/embed.js" async="" type="text/javascript"></script><script charset="UTF-8" async="" src="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/alfie.js"></script></head>
+	<body onload="prettyPrint()">
+		<!-- BuySellAds Ad Code -->
+		<script type="text/javascript">
+		(function(){
+		  var bsa = document.createElement('script');
+			 bsa.type = 'text/javascript';
+			 bsa.async = true;
+			 bsa.src = 'http://s3.buysellads.com/ac/bsa.js';
+		  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+		})();
+		</script>
+		<!-- End BuySellAds Ad Code -->
+		<div id="sidebar">
+			<header>
+				<h1><a style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" href="http://jackrugile.com/jrumble/">jRumble<span>v1.3</span></a></h1>
+			</header>
+			<nav>
+				<ul>
+					<li><a style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" href="#about">About</a></li>
+					<li><a style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" href="#usage">Usage</a></li>
+					<li><a style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" href="#demos">Demos</a></li>
+					<li><a style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" href="#documentation">Documentation</a></li>
+					<li><a style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" href="#contact">Contact</a></li>
+					<li><a style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" href="#discussion">Discussion</a></li>
+				</ul>
+			</nav>
+			<div id="download">
+				<a style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" href="http://jackrugile.com/jrumble/jquery.jrumble.1.3.zip" id="download-link" target="_blank">Download</a>
+				<div id="download-details">
+					<ul>
+						<li><strong>Latest Version</strong>: 1.3</li>
+						<li><strong>Latest Release Date</strong>: December 3, 2011</li>
+						<li><strong>Original Release Date</strong>: March 30, 2011</li>
+						<li><strong>Compressed</strong>: 1.47kb</li>
+						<li><strong>Uncompressed</strong>: 4.84kb</li>
+						<li><strong>Total Downloads: </strong><span id="download-count">20122</span></li>
+						<li><a href="https://github.com/jackrugile/jrumble/">View GitHub Repository</a></li>
+					</ul>					
+				</div>
+				<h3>Sponsors</h3>
+				<!-- BuySellAds Zone Code -->
+				<div id="bsap_1277915" class="bsap_1277915 bsap"><div class="bsa_it one"><div class="bsa_it_ad ad1 odd" id="bsa_2771131"><a href="http://stats.buysellads.com/click.go?z=1277915&amp;b=2771131&amp;g=&amp;s=&amp;sw=1366&amp;sh=768&amp;br=firefox,20,win&amp;r=0.2204069031878837&amp;link=http://www.clockworksms.com/?utm_source=devadpack&amp;utm_medium=banner&amp;utm_content=key&amp;utm_campaign=Oct" onmouseover="window.status = 'http://www.clockworksms.com/?utm_source=devadpack&amp;utm_medium=banner&amp;utm_content=key&amp;utm_campaign=Oct'; return true;" onmouseout="window.status=''; return true;" target="_blank"><span class="bsa_it_i"><img src="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/131038-1349091532.png" alt="Clockwork" height="100" width="130"></span></a><a href="http://stats.buysellads.com/click.go?z=1277915&amp;b=2771131&amp;g=&amp;s=&amp;sw=1366&amp;sh=768&amp;br=firefox,20,win&amp;r=0.7843022565714035&amp;link=http://www.clockworksms.com/?utm_source=devadpack&amp;utm_medium=banner&amp;utm_content=key&amp;utm_campaign=Oct" onmouseover="window.status = 'http://www.clockworksms.com/?utm_source=devadpack&amp;utm_medium=banner&amp;utm_content=key&amp;utm_campaign=Oct'; return true;" onmouseout="window.status=''; return true;" target="_blank"><span class="bsa_it_t">Clockwork</span><span class="bsa_it_d">The new simple Text Message API, exclusively for developers. Signup is free.</span></a><div style="clear:both"></div></div><span class="bsa_it_p"><a href="http://buysellads.com/buy/detail/149223/zone/1277915?utm_source=site_149223&amp;utm_medium=website&amp;utm_campaign=imagetext&amp;utm_content=zone_1277915">ads by BSA</a></span></div></div>
+				<a href="http://adpacks.com/" id="bsap_aplink">via Ad Packs</a>
+				<!-- End BuySellAds Zone Code -->	
+			</div>			
+		</div>	
+		<div id="container">
+			<div id="content">
+				<h2 id="about">About</h2>
+					<h3>The Plugin</h3>
+					<p>jRumble is a <a style="display: inline; position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" href="http://jquery.com/">jQuery</a>
+ plugin that rumbles, vibrates, shakes, and rotates any element you 
+choose. It's great to use as a hover effect or a way to direct attention
+ to an element.</p>
+					<p id="accessibility"><strong>Please <a href="http://webaim.org/articles/seizure/">read this</a> before using jRumble</strong>. Flashing and flickering objects on the web can be dangerous. Please use this plugin responsibly.</p>
+					<h3>The Author</h3>
+					<p>My name is <a href="http://jackrugile.com/">Jack Rugile</a>. I am a web designer/developer living in Denver, Colorado. Feel free to follow me on Twitter: <a style="left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" href="http://twitter.com/jackrugile">@jackrugile</a>.</p>
+					<h3>Like the Plugin?</h3>
+					<p>This plugin is free to use, however, if you enjoy jRumble and 
+want to show some support, feel free share it or make a donation. It 
+would be greatly appreciated!</p>
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" id="paypal-form">
+						<input name="cmd" value="_s-xclick" type="hidden">
+						<input name="hosted_button_id" value="V72F2AAESPCKE" type="hidden">
+						<input src="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/btn_donate_SM.gif" name="submit" alt="PayPal - The safer, easier way to pay online!" type="image">
+						<img alt="PayPal" src="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/pixel.gif" height="1" width="1">
+					</form>
+					<div id="soc-tw">
+						<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="jackrugile">Tweet</a><script type="text/javascript" src="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/widgets.js"></script>
+					</div>
+					<div id="soc-fb">
+						<iframe src="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/like.xhtml" style="border:none; overflow:hidden; width:150px; height:21px;" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+					</div>			
+					<div style="clear: both;"></div>					
+		
+				<h2 id="usage">Usage</h2>
+					<h3>Include jQuery and jRumble</h3>
+					<p>Include jQuery and jRumble just before your closing body tag. 
+Make sure the paths to your files are correct. I recommend including via
+ <a href="http://code.google.com/apis/libraries/devguide.html#jquery">Google Libraries API</a>.</p>
+					<pre class="prettyprint"><code><span class="pln">
+</span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/javascript"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"</span><span class="tag">&gt;&lt;/script&gt;</span><span class="pln">
+</span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/javascript"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"js/jquery.jrumble.1.3.js"</span><span class="tag">&gt;&lt;/script&gt;</span><span class="pln">
+					</span></code></pre>
+					<h3>Initialize jRumble on a Selector and Trigger Start or Stop</h3>
+					<p>You can do this in a script tag within your HTML or in an external JavaScript file.</p>
+					<pre class="prettyprint"><code><span class="pln">
+</span><span class="com">// Initialize jRumble on Selector</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#rumble-element'</span><span class="pun">).</span><span class="pln">jrumble</span><span class="pun">();</span><span class="pln">
+
+</span><span class="com">// Start rumble on element</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#rumble-element'</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'startRumble'</span><span class="pun">);</span><span class="pln">
+
+</span><span class="com">// Stop rumble on element</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#rumble-element'</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'stopRumble'</span><span class="pun">);</span><span class="pln">
+					</span></code></pre>
+				<h2 id="demos">Demos</h2>
+					
+					<h3>Ranges</h3>
+					
+					<div class="demo-box">
+						<h4>x: 2<br>y: 2<br>rotation: 1</h4>
+						<div style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" id="demo1">1</div>
+					</div>
+					
+					<div class="demo-box">
+						<h4>x: 10<br>y: 10<br>rotation: 4</h4>
+						<div style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" id="demo2">2</div>
+					</div>
+					
+					<div class="demo-box">
+						<h4>x: 4<br>y: 0<br>rotation: 0</h4>
+						<div style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" id="demo3">3</div>
+					</div>
+					
+					<div class="demo-box last">
+						<h4>x: 0<br>y: 0<br>rotation: 5</h4>
+						<div style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" id="demo4">4</div>
+					</div>
+					
+					<div class="view-source">
+						<a href="#">View Source</a>
+						<pre style="display: none;" class="prettyprint"><code><span class="pln">
+</span><span class="com">// Demo 1</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#demo1'</span><span class="pun">).</span><span class="pln">jrumble</span><span class="pun">({</span><span class="pln">
+	x</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln">
+	y</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln">
+	rotation</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+</span><span class="com">// Demo 2</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#demo2'</span><span class="pun">).</span><span class="pln">jrumble</span><span class="pun">({</span><span class="pln">
+	x</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10</span><span class="pun">,</span><span class="pln">
+	y</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10</span><span class="pun">,</span><span class="pln">
+	rotation</span><span class="pun">:</span><span class="pln"> </span><span class="lit">4</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+</span><span class="com">// Demo 3</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#demo3'</span><span class="pun">).</span><span class="pln">jrumble</span><span class="pun">({</span><span class="pln">
+	x</span><span class="pun">:</span><span class="pln"> </span><span class="lit">4</span><span class="pun">,</span><span class="pln">
+	y</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+	rotation</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+</span><span class="com">// Demo 4</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#demo4'</span><span class="pun">).</span><span class="pln">jrumble</span><span class="pun">({</span><span class="pln">
+	x</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+	y</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+	rotation</span><span class="pun">:</span><span class="pln"> </span><span class="lit">5</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+$</span><span class="pun">(</span><span class="str">'#demo1, #demo2, #demo3, #demo4'</span><span class="pun">).</span><span class="pln">hover</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+	$</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'startRumble'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">},</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+	$</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'stopRumble'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+						</span></code></pre>
+					</div>
+					
+					<h3>Speeds</h3>
+					
+					<div class="demo-box">
+						<h4>speed: 0</h4>
+						<div style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" id="demo5">5</div>
+					</div>
+					
+					<div class="demo-box">
+						<h4>speed: 50</h4>
+						<div style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" id="demo6">6</div>
+					</div>
+					
+					<div class="demo-box">
+						<h4>speed: 100</h4>
+						<div style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" id="demo7">7</div>
+					</div>
+					
+					<div class="demo-box last">
+						<h4>speed: 200</h4>
+						<div style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" id="demo8">8</div>
+					</div>
+					
+					<div class="view-source">
+						<a href="#">View Source</a>
+						<pre style="display: none;" class="prettyprint"><code><span class="pln">
+</span><span class="com">// Demo 5</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#demo5'</span><span class="pun">).</span><span class="pln">jrumble</span><span class="pun">({</span><span class="pln">
+	speed</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+</span><span class="com">// Demo 6</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#demo6'</span><span class="pun">).</span><span class="pln">jrumble</span><span class="pun">({</span><span class="pln">
+	speed</span><span class="pun">:</span><span class="pln"> </span><span class="lit">50</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+</span><span class="com">// Demo 7</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#demo7'</span><span class="pun">).</span><span class="pln">jrumble</span><span class="pun">({</span><span class="pln">
+	speed</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">,</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+</span><span class="com">// Demo 8</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#demo8'</span><span class="pun">).</span><span class="pln">jrumble</span><span class="pun">({</span><span class="pln">
+	speed</span><span class="pun">:</span><span class="pln"> </span><span class="lit">200</span><span class="pun">,</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+$</span><span class="pun">(</span><span class="str">'#demo5, #demo6, #demo7, #demo8'</span><span class="pun">).</span><span class="pln">hover</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+	$</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'startRumble'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">},</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+	$</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'stopRumble'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+						</span></code></pre>
+					</div>
+					
+					<h3>Opacity</h3>
+					
+					<div class="demo-box">
+						<h4>opacity: true</h4>
+						<div style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" id="demo9">9</div>
+					</div>
+					
+					<div class="demo-box">
+						<h4>opacityMin: .75</h4>
+						<div style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" id="demo10">10</div>
+					</div>
+					
+					<div class="demo-box">
+						<h4>opacityMin: .1</h4>
+						<div id="demo11">11</div>
+					</div>
+					
+					<div class="demo-box last">
+						<h4>Caffeinated</h4>
+						<div id="demo12">12</div>
+					</div>
+					
+					<div class="view-source">
+						<a style="left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" href="#">View Source</a>
+						<pre style="display: none;" class="prettyprint"><code><span class="pln">
+</span><span class="com">// Demo 9</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#demo9'</span><span class="pun">).</span><span class="pln">jrumble</span><span class="pun">({</span><span class="pln">
+	opacity</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+</span><span class="com">// Demo 10</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#demo10'</span><span class="pun">).</span><span class="pln">jrumble</span><span class="pun">({</span><span class="pln">
+	opacity</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+	opacityMin</span><span class="pun">:</span><span class="pln"> </span><span class="pun">.</span><span class="lit">75</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+</span><span class="com">// Demo 11</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#demo11'</span><span class="pun">).</span><span class="pln">jrumble</span><span class="pun">({</span><span class="pln">
+	opacity</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+	opacityMin</span><span class="pun">:</span><span class="pln"> </span><span class="pun">.</span><span class="lit">1</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+</span><span class="com">// Demo 12</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#demo12'</span><span class="pun">).</span><span class="pln">jrumble</span><span class="pun">({</span><span class="pln">
+	x</span><span class="pun">:</span><span class="pln"> </span><span class="lit">6</span><span class="pun">,</span><span class="pln">
+	y</span><span class="pun">:</span><span class="pln"> </span><span class="lit">6</span><span class="pun">,</span><span class="pln">
+	rotation</span><span class="pun">:</span><span class="pln"> </span><span class="lit">6</span><span class="pun">,</span><span class="pln">
+	speed</span><span class="pun">:</span><span class="pln"> </span><span class="lit">5</span><span class="pun">,</span><span class="pln">
+	opacity</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+	opacityMin</span><span class="pun">:</span><span class="pln"> </span><span class="pun">.</span><span class="lit">05</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+$</span><span class="pun">(</span><span class="str">'#demo9, #demo10, #demo11, #demo12'</span><span class="pun">).</span><span class="pln">hover</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+	$</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'startRumble'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">},</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+	$</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'stopRumble'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+						</span></code></pre>
+					</div>
+					
+					<h3>Trigger Examples</h3>
+					
+					<div class="demo-box">
+						<h4>Hover</h4>
+						<div style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" id="demo13">13</div>
+					</div>
+					
+					<div class="demo-box">
+						<h4>Click</h4>
+						<div id="demo14">14</div>
+					</div>
+					
+					<div class="demo-box">
+						<h4>Mousedown</h4>
+						<div id="demo15">15</div>
+					</div>
+					
+					<div class="demo-box last">
+						<h4>Constant</h4>
+						<div style="position: relative; left: 1px; top: -1px; opacity: 1; transform: rotate(0deg);" id="demo16">16</div>
+					</div>
+					
+					<div class="demo-box">
+						<h4>Remote</h4>
+						<div id="demo17">17</div>
+					</div>
+					
+					<div class="demo-box">
+						<h4>Remote</h4>
+						<div style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" id="demo18">18</div>
+					</div>
+					
+					<div class="demo-box">
+						<h4>Timed (Click)</h4>
+						<div id="demo19">19</div>
+					</div>
+					
+					<div class="demo-box last">
+						<h4>Pulse</h4>
+						<div style="left: 0px; top: 0px; opacity: 1; transform: rotate(0deg); position: relative;" id="demo20">20</div>
+					</div>
+					
+					<div class="view-source">
+						<a href="#">View Source</a>
+						<pre style="display: none;" class="prettyprint"><code><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#demo13, #demo14, #demo15, #demo16, #demo17, #demo18, #demo19, #demo20'</span><span class="pun">).</span><span class="pln">jrumble</span><span class="pun">();</span><span class="pln">
+	
+</span><span class="com">// Demo 13	</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#demo13'</span><span class="pun">).</span><span class="pln">hover</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+	$</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'startRumble'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">},</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+	$</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'stopRumble'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+</span><span class="com">// Demo 14</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#demo14'</span><span class="pun">).</span><span class="pln">toggle</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+	$</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'startRumble'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">},</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+	$</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'stopRumble'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+</span><span class="com">// Demo 15</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#demo15'</span><span class="pun">).</span><span class="pln">bind</span><span class="pun">({</span><span class="pln">
+	</span><span class="str">'mousedown'</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+		$</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'startRumble'</span><span class="pun">);</span><span class="pln">
+	</span><span class="pun">},</span><span class="pln">
+	</span><span class="str">'mouseup'</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+		$</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'stopRumble'</span><span class="pun">);</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+</span><span class="com">// Demo 16</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#demo16'</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'startRumble'</span><span class="pun">);</span><span class="pln">
+
+</span><span class="com">// Demo 17</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#demo17'</span><span class="pun">).</span><span class="pln">hover</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+	$</span><span class="pun">(</span><span class="str">'#demo18'</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'startRumble'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">},</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+	$</span><span class="pun">(</span><span class="str">'#demo18'</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'stopRumble'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+</span><span class="com">// Demo 18</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#demo18'</span><span class="pun">).</span><span class="pln">hover</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+	$</span><span class="pun">(</span><span class="str">'#demo17'</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'startRumble'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">},</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+	$</span><span class="pun">(</span><span class="str">'#demo17'</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'stopRumble'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+</span><span class="com">// Demo 19</span><span class="pln">
+</span><span class="kwd">var</span><span class="pln"> demoTimeout</span><span class="pun">;</span><span class="pln">
+$</span><span class="pun">(</span><span class="str">'#demo19'</span><span class="pun">).</span><span class="pln">click</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+	$this </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">);</span><span class="pln">
+	clearTimeout</span><span class="pun">(</span><span class="pln">demoTimeout</span><span class="pun">);</span><span class="pln">
+	$this</span><span class="pun">.</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'startRumble'</span><span class="pun">);</span><span class="pln">
+	demoTimeout </span><span class="pun">=</span><span class="pln"> setTimeout</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">$this</span><span class="pun">.</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'stopRumble'</span><span class="pun">);},</span><span class="pln"> </span><span class="lit">1500</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+</span><span class="com">// Demo 20</span><span class="pln">
+</span><span class="kwd">var</span><span class="pln"> demoStart </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+	$</span><span class="pun">(</span><span class="str">'#demo20'</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'startRumble'</span><span class="pun">);</span><span class="pln">
+	setTimeout</span><span class="pun">(</span><span class="pln">demoStop</span><span class="pun">,</span><span class="pln"> </span><span class="lit">300</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">};</span><span class="pln">
+
+</span><span class="kwd">var</span><span class="pln"> demoStop </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+	$</span><span class="pun">(</span><span class="str">'#demo20'</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">'stopRumble'</span><span class="pun">);</span><span class="pln">
+	setTimeout</span><span class="pun">(</span><span class="pln">demoStart</span><span class="pun">,</span><span class="pln"> </span><span class="lit">300</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">};</span><span class="pln">
+
+demoStart</span><span class="pun">();</span><span class="pln">
+				</span></code></pre>
+					</div>				
+				
+				<h2 id="documentation">Documentation</h2>
+					<h3>Options/Defaults</h3>
+					<table id="options">
+						<thead>
+							<tr>
+								<th>Option</th>
+								<th>Default</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><strong>x</strong></td>
+								<td><em>2</em></td>
+								<td>Set the horizontal rumble range (pixels)</td>
+							</tr>
+							<tr>
+								<td><strong>y</strong></td>
+								<td><em>2</em></td>
+								<td>Set the vertical rumble range (pixels)</td>
+							</tr>
+							<tr>
+								<td><strong>rotation</strong></td>
+								<td><em>1</em></td>
+								<td>Set the rotation range (degrees)</td>
+							</tr>
+							<tr>
+								<td><strong>speed</strong></td>
+								<td><em>15</em></td>
+								<td>Set the speed/frequency in milliseconds between rumble movements (lower number = faster)</td>
+							</tr>					
+							<tr>
+								<td><strong>opacity</strong></td>
+								<td><em>false</em></td>
+								<td>Activate opacity flickering while rumbling</td>
+							</tr>
+							<tr>
+								<td><strong>opacityMin</strong></td>
+								<td><em>.5</em></td>
+								<td>When the opacity option is set to true, this controls the minimum opacity while flickering</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3>Known Issues</h3>
+						<ul>
+							<li>For rumble elements that are position fixed/absolute, they should instead be wrapped in an element that is fixed/absolute</li>
+							<li>Rotation does not work in Internet Explorer 8 and below</li>
+						</ul>
+					<h3>Changelog</h3>
+					<p class="no-margin"><strong>v1.3</strong> - <em>December 3, 2011</em></p>
+					<ul>
+						<li>Internet Explorer filter typo fix ("apha" changed to "alpha")</li>
+					</ul>
+					
+					<p class="no-margin"><strong>v1.2</strong> - <em>October 23, 2011</em></p>
+					<ul>
+						<li>Plugin reworked to provide greater flexibility and easier binding</li>
+						<li>Rumble is now activated with trigger('startRumble') and deactivated with trigger('stopRumble')</li>
+						<li>Added an opacity flicker option</li>
+						<li>IE speed 0 bug fixed</li>
+						<li>IE9+ rotation now supported</li>
+						<li>Removed rumbleEvent option</li>
+						<li>Removed fixed/absolute positioning options, jRumble element requires wrapped div that is positioned properly</li>
+						<li>Compressed code size went from 3.8kb to 1.6kb</li>	
+					</ul>	
+					
+					<p class="no-margin"><strong>v1.1</strong> - <em>March 30, 2011</em></p>
+					<ul>
+						<li>Fixed error that occured each time jRumble was triggered - Thanks to <a href="http://tornography.com/">tornography</a> for finding this</li>
+						<li>Hover bug fixed with release of jQuery 1.5.2 (1.5.1 was leaving hover state in the "on" position)</li>
+					</ul>
+					
+					<p class="no-margin"><strong>v1.0</strong> - <em>March 30, 2011</em></p>
+					<ul>
+						<li>jRumble Initial Release</li>
+					</ul>
+					<h3>License</h3>
+					<pre><code>
+MIT License
+-----------------------------------------------------------------------------
+Copyright (c) 2012 Jack Rugile, http://jackrugile.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+					</code></pre>
+				<h2 id="contact">Contact</h2>
+					<div id="contact-form">
+						<form method="post">
+							<fieldset>
+								<label for="name" id="name_label">Name:</label>
+								<label style="display: none;" class="error" for="name" id="name_error">This field is required.</label>
+								<input name="name" id="name" type="text">
+								<label for="email" id="email_label">Email:</label>
+								<label style="display: none;" class="error" for="email" id="email_error">This field is required.</label>
+								<input name="email" id="email" type="text">
+								<label for="message" id="message_label">Message:</label>
+								<label style="display: none;" class="error" for="message" id="message_error">This field is required.</label>
+								<textarea name="message" id="message"></textarea>
+								<input style="position: relative; left: 0px; top: 0px; opacity: 1; transform: rotate(0deg);" name="submit" id="submit" value="Send Message" type="submit">
+							</fieldset>					
+						</form>				
+					</div>
+					<div id="sentMessage">
+					</div>
+				<h2 id="discussion">Discussion</h2>
+				<div id="disqus_thread"><iframe verticalscrolling="no" horizontalscrolling="no" src="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/a.htm" style="width: 100%; border: medium none; overflow: hidden; height: 6948px;" role="complementary" allowtransparency="true" data-disqus-uid="1" id="dsq1" frameborder="0" scrolling="no" width="100%"></iframe><iframe src="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/client.htm" style="width: 100%; border: medium none; overflow: hidden; display: none;" role="application" allowtransparency="true" data-disqus-uid="3" id="dsq3" frameborder="0" width="100%"></iframe><iframe style="width: 580px; border: medium none; overflow: hidden; top: 0px; min-width: 580px; max-width: 580px; position: fixed; max-height: 29px; min-height: 29px; height: 29px; display: none;" role="alert" allowtransparency="true" data-disqus-uid="-indicator-north" id="dsq-indicator-north" frameborder="0" scrolling="no"></iframe><iframe style="width: 580px; border: medium none; overflow: hidden; bottom: 0px; min-width: 580px; max-width: 580px; position: fixed; max-height: 29px; min-height: 29px; height: 29px; display: none;" role="alert" allowtransparency="true" data-disqus-uid="-indicator-south" id="dsq-indicator-south" frameborder="0" scrolling="no"></iframe></div>
+				<script>
+					var disqus_shortname = 'jackrugile';				
+					var disqus_identifier = 'jrumble';
+					var disqus_url = 'http://jackrugile.com/jrumble/';				
+					(function(){
+						var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+						dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+						(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+					})();
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+				
+			</div>
+		</div>
+		<script src="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/jquery.js"></script>
+		<script src="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/jquery_003.js"></script>
+		<script src="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/jquery_002.js"></script>
+		<script src="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/jquery_004.js"></script> 
+		<script src="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/prettify.js"></script>
+		<script src="jRumble%20_%20A%20jQuery%20Plugin%20That%20Rumbles%20Elements_files/script.js"></script>
+		<script type="text/javascript"> 
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-5693606-7']);
+			_gaq.push(['_trackPageview']); 
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})(); 
+		</script> 
+	
+</body></html>

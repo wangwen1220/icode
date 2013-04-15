@@ -1,0 +1,10 @@
+@import "base.css";
+
+/* 全局样式
+----------------------------------------------------------------------------- */
+body {
+	background: #F3F1F2 url(../images/myshow/bg.jpg) repeat 0 0;
+	color: #444;
+	font-family: "helvetica neue",arial,sans-serif,'宋体';
+	_font-family: '宋体',"helvetica neue",arial,sans-serif;
+}

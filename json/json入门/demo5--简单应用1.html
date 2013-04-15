@@ -1,0 +1,20 @@
+<SCRIPT LANGUAGE="JavaScript" src="json2.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+function makeVariable()
+{
+var car=new Object();
+car.doors=4;
+car.color="blue";
+car.year=1995;
+car.drivers=new Array("a","b","c");
+alert(car)
+document.write(JSON.stringify(car));
+alert(JSON.stringify(car))
+//Êä³ö£º
+//{"doors":4,"color":"blue","year":1995","drivers":["a","b","c"]}
+}
+
+</SCRIPT>
+<BODY onload="makeVariable()">
+</BODY>
