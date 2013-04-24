@@ -1,0 +1,147 @@
+@import "hs-game-global.css";
+@charset "utf-8";
+
+/*
+名称：火秀网络游戏样式
+简介：火秀网络游戏页面样式
+维护：王文 wangwen1220#139.com
+日期：2012-11-12
+*/
+
+/* Layout
+----------------------------------------------------------------------------- */
+/* 主内容 */
+#content-main .ui-layout-item-left .ui-header {
+	background-color: #F9F9F9;
+}
+#content-main .ui-layout-item-left .ui-tab-cnt {
+	margin-bottom: 0;
+}
+#content-main .ui-layout-item-left .ui-tab .ui-img-list {
+	float: left;
+	width: 104px;
+	margin: 0 10px 0 0;
+}
+#content-main .ui-layout-item-left .ui-tab .ui-img-list-item {
+	margin: 0 0 12px 0;
+}
+#content-main .ui-layout-item-left .ui-tab .ui-list {
+	float: left;
+	margin: 0;
+	width: 176px;
+}
+#content-main .ui-layout-item-left .ui-tab .ui-list-item {
+	padding: 0 10px;
+	height: 24px;
+	line-height: 24px;
+	color: #333;
+	background: none;
+	*zoom: 1;
+	_height: 22px;
+	_line-height: 22px;
+}
+#content-main .ui-layout-item-left .ui-tab .ui-list-item:hover {
+	background: #f8f8f8;
+}
+#content-main .ui-layout-item-left .ui-tab .ui-list-item a {
+	color: #333;
+}
+#content-main .ui-layout-item-left .ui-tab .ui-list-item .text {
+	float: left;
+	width: 50%;
+}
+#content-main .ui-layout-item-left .ui-tab .ui-list-item .time {
+	float: right;
+	width: 30%;
+	text-align: right;
+}
+#content-main .ui-layout-item-left .ui-tab .ui-list-item-title {
+	margin: 0 0 2px;
+	height: 22px;
+	line-height: 22px;
+	color: #000;
+	background: #EBEBEB;
+}
+#content-main .ui-layout-item-left .ui-tab .ui-list-item-title:hover {
+	background: #EBEBEB;
+}
+#content-main .ui-layout-item-left .ui-box-hotgame .ui-img-list-item {
+	margin-top: 0;
+}
+#content-main .ui-layout-item-left .ui-box-hotgame .ui-img-list .title a {
+	font-size: 14px;
+	font-weight: bold;
+}
+#content-main .ui-layout-item-right .ui-tab-nav-item {
+	padding: 0 10px;
+}
+
+/* 攻略专区 */
+#content-glzq .ui-box-item-right .ui-img-list-item {
+	margin-top: 0;
+}
+
+/* 页游八卦 */
+#content-yybg .ui-box-item-main .game-gril-box {
+	margin: 0 10px 10px;
+	border-bottom: 1px dashed #DFDFDF;
+}
+#content-yybg .ui-box-item-main .game-gril-box .ui-img-list {
+	float: left;
+	margin-right: -10px;
+	width: 460px;
+}
+#content-yybg .ui-box-item-main .game-gril-box .ui-img-list-item {
+	margin: 0 10px 15px 0;
+	_margin-right: 9px;
+}
+#content-yybg .ui-box-item-main .game-gril-box .ui-img-list-item-main {
+	float: left;
+	margin-bottom: 10px;
+}
+#content-yybg .ui-box-item-main .game-gril-box .ui-list-box {
+	float: right;
+	width: 230px;
+	background-color: #F8F8F8;
+}
+#content-yybg .ui-box-item-main .game-gril-box .ui-list-box .header {
+	height: 25px;
+	line-height: 25px;
+	overflow: hidden;
+	font-size: 14px;
+	font-weight: bold;
+	color: #eee;
+	text-align: center;
+	background-color: #CF0716;
+}
+#content-yybg .ui-box-item-main .game-gril-box .ui-list-box .ui-list-item a {
+	color: #333;
+}
+#content-yybg .ui-box-item-main .ui-img-list {
+	margin-right: -15px;
+}
+#content-yybg .ui-box-item-main .ui-img-list-item {
+	margin: 0 15px 10px 0;
+}
+#content-yybg .ui-box-item-right .ui-ranking-item {
+	height: 28px;
+	line-height: 28px;
+	border: none;
+	padding-left: 10px;
+	background: url(../images/game/icon-list-gray.png) no-repeat 0 50%;
+}
+#content-yybg .ui-box-item-right .ui-ranking-item-cur {
+	height: auto;
+	padding: 10px 8px;
+	background: #FFF9F0;
+}
+#content-yybg .ui-box-item-right .ui-ranking .title {
+	margin-left: 0;
+}
+#content-yybg .ui-box-item-right .ui-ranking .title a {
+	color: #666666;
+}
+#content-yybg .ui-box-item-right .ui-ranking .content {
+	height: 54px;
+	line-height: 18px;
+}

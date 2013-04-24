@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gbk">
+<title>shareSelect模块单元测试</title>
+<link rel="stylesheet" href="http://demo.ued.taobao.net/jianping/test/jasmine/jasmine.css">
+</head>
+<body>
+<script src="http://demo.ued.taobao.net/jianping/test/jasmine/jasmine.js"></script>
+<script src="http://demo.ued.taobao.net/jianping/test/jasmine/jasmine-html.js"></script>
+<script src="http://demo.ued.taobao.net/jianping/test/jasmine/event-simulate.js"></script>
+<script src="http://a.tbcdn.cn/s/kissy/1.2.0/kissy.js"></script>
+<script src="../kissy/template.js"></script>
+<div class="J_ShareList"></div>
+<script>
+    KISSY.Config.base = '../';
+</script>
+<script src="shareSelect-spec.js"></script>
+<script>
+    KISSY.use('shareSelect', function() {
+        jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+        jasmine.getEnv().execute();
+    });
+</script>
+</body>
+</html>

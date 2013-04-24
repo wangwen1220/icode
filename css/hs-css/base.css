@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+/*
+名称：基础样式
+简介：可通用所有项目的基础样式，包含样式重设和定义常用样式
+			参考了 Alice CSS Reset 和 Kissy CSS Reset
+			目的不是清除浏览器的默认样式，这仅是部分工作，清除和重置是紧密不可分的
+			目的不是让默认样式在所有浏览器下一致，而是减少默认样式有可能带来的问题
+特色：简洁明了、适应中文、兼容主流浏览器
+作者：王文 wangwen1220#139.com
+日期：2013-4-17
+*/
+
+/* 样式重设
+----------------------------------------------------------------------------- */
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html {
+	color: #333;
+	background: #fff;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+/* 清除内外边距，内外边距通常让各个浏览器样式的表现位置不同 */
+body,h1,h2,h3,h4,h5,h6,hr,div,p,blockquote, /* structural elements 结构元素 */
+dl,dt,dd,ul,ol,li, /* list elements 列表元素 */
+pre,code, /* text formatting elements 文本格式元素 */
+form,fieldset,legend,input,textarea,button, /* form elements 表单元素 */
+th,td, /* table elements 表格元素 */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section /* HTML5 elements HTML5 元素 */ {
+	margin: 0;
+	padding: 0;
+}
+
+/* 重设 HTML5 标签，IE 需要在 js 中 createElement(TAG) */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display: block;
+}
+
+/* HTML5 媒体文件跟 img 保持一致 */
+audio,canvas,video {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+/* 要注意表单元素并不继承父级 font 的问题 */
+body,button,input,select,textarea {
+	font: 12px/1.5 \5b8b\4f53,tahoma,arial;
+}
+
+/* 使表单元素在 ie 下能继承字体大小 */
+button,input,select,textarea {
+	font-size: 100%;
+}
+
+/* 去掉各Table cell 的边距并让其边重合 */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* IE bug fixed: th 不继承 text-align */
+th {
+	text-align: inherit;
+}
+
+/* 去除默认边框 */
+fieldset,img {
+	border: 0;
+}
+
+/* 解决 IE6-7 图片缩放锯齿问题 */
+img {
+	-ms-interpolation-mode: bicubic;
+}
+
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe {
+	display: block;
+}
+
+/* Firefox 以外，元素没有下划线，需添加 */
+abbr,acronym {
+	border-bottom: 1px dotted;
+	font-variant: normal;
+}
+
+/* 去除button 点击时在火狐下的虚线框 */
+button::-moz-focus-inner {
+	border-color: transparent;
+}
+
+/* 一致的 del 样式 */
+del {
+	text-decoration: line-through;
+}
+
+/* 将斜体扶正 */
+address,caption,cite,code,dfn,em,th,var {
+	font-style: normal;
+	font-weight: 500;
+}
+
+/* 统一等宽字体 */
+code, kbd, pre, samp {
+	font-family: courier new, courier, monospace;
+}
+
+/* 去掉列表前的标识, li 会继承 */
+ul, ol {
+	list-style: none;
+}
+
+/* 对齐是排版最重要的因素，别让什么都居中 */
+caption,th {
+	text-align: left;
+}
+
+/* 来自 yahoo，让标题都自定义，适应多个系统应用 */
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: 500;
+}
+q:before,q:after {
+	content: '';
+}
+
+/* 统一上标和下标 */
+sub, sup {
+	position: relative;
+	font-size: 75%;
+	line-height: 0;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+
+/* 标记，类似于手写的荧光笔的作用 */
+mark {
+	background: #fffdd1;
+}
+
+/* 让链接在 hover 状态下显示下划线 */
+a:hover {
+	text-decoration: underline;
+}
+
+/* 默认不显示下划线，保持页面简洁 */
+ins,a {
+	text-decoration: none;
+}
+
+/* 常用样式
+----------------------------------------------------------------------------- */
+/* 清理浮动 */
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	font-size: 0;
+}
+.clearfix {
+	*zoom: 1; /* for IE6-7 */
+}
+
+/* 更简洁的清理浮动方式 */
+.fn-clear:before, .fn-clear:after { /* :before 伪类，是用来处理 top-margin 边折叠的，跟清理浮动没有多大的关系 */
+	content: "";
+	display: table;/* 隐藏这个空白使用的是 display: table */
+}
+.fn-clear:after {
+	clear: both;
+}
+.fn-clear {
+	*zoom: 1;
+}
+
+/* 隐藏元素，通常用来与 js 配合 */
+.fn-hide {
+	display: none;
+}
+
+/* 设置内联，减少浮动带来的 bug */
+.fn-fl,.fn-fr {
+	display: inline;
+}
+.fn-fl {
+	float: left;
+}
+.fn-fr {
+	float: right;
+}

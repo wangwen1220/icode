@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gbk">
+<title>authority模块单元测试</title>
+<link rel="stylesheet" href="./jasmine/jasmine.css">
+</head>
+<body>
+<script src="./jasmine/jasmine.js"></script>
+<script src="./jasmine/jasmine-html.js"></script>
+<script src="./jasmine/event-simulate.js"></script>
+<script src="http://a.tbcdn.cn/s/kissy/1.2.0/kissy.js"></script>
+<script src="./hello-world-spec.js"></script>
+<script>
+    jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+    jasmine.getEnv().execute();
+</script>
+</body>
+</html>

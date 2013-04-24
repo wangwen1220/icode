@@ -1,0 +1,390 @@
+@import "hs-game-global.css";
+@charset "utf-8";
+
+/*
+名称：火秀网络游戏样式
+简介：火秀网络游戏页面样式
+维护：王文 wangwen1220#139.com
+日期：2012-11-12
+*/
+
+/* TPL
+----------------------------------------------------------------------------- */
+/*
+ * @name: ui-gallery
+ * @overview: 相册框样式
+ * @require: null
+ */
+.ui-gallery {
+	margin-top: 35px;
+	width: 960px;
+	background-color: #fff;
+}
+.ui-gallery-header {
+	position: relative;
+	height: 36px;
+	border-top: 2px solid #CF0716;
+	background-color: #fff;
+}
+.ui-gallery-header .title {
+	margin-top: -2px;
+	color: #666;
+	font-size: 17px;
+}
+.ui-gallery-header .title em {
+	display: inline-block;
+	height: 100%;
+	border-top: 2px solid #2D2D2D;
+	color: #D83642;
+	font: 20px/36px '微软雅黑','黑体','宋体',arial,verdana,sans-serif;
+	vertical-align: bottom;
+}
+.ui-gallery-header .title span {/* only for ie6 */
+	display: inline-block;
+	line-height: 30px;
+	_line-height: 33px;
+	vertical-align: bottom;
+}
+.ui-gallery-header .link {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	line-height: 36px;
+	color: #666;
+}
+.ui-gallery-header .link a {
+	color: #666;
+}
+
+/*
+ * @name: ui-fimg-list
+ * @overview: 通用行内图片样式
+ * @require: ui-img-list
+ */
+.ui-fimg-list {
+	position: relative;
+	left: 4px;
+	margin: 0 0 0 -4px;
+}
+.ui-fimg-list .ui-img-list-item {
+	float: left;
+	margin: 0 4px 6px 0;
+}
+.ui-fimg-list .ui-img-list-item .img:hover {
+	border-color: #CF0716;
+}
+
+/*
+ * @name: ui-gallery-box
+ * @overview: 通用画廊盒子样式
+ * @require: null
+ */
+.ui-gallery-box {
+	padding: 8px 0 0 8px;
+	border-right: 8px solid #EAEAEA;
+	border-bottom: 8px solid #EAEAEA;
+	background: url(../images/game/bg-gallery-box.png) no-repeat 0 0;
+}
+.ui-gallery-box-header {
+	margin: 6px 10px 10px;
+	font: 16px '微软雅黑','黑体','宋体',arial,verdana,sans-serif;
+	color: #444;
+}
+
+/* Common
+----------------------------------------------------------------------------- */
+.ui-layout {
+	margin-top: 15px;
+}
+.ui-gallery .ui-img-list-plus .ui-img-list-item .img {
+	border: 2px solid #fff;
+	border: 3px solid #fff\9;
+}
+.ui-gallery .ui-img-list-plus .ui-img-list-item .img img {
+	border: 1px solid #E5E5E5;
+	border: none\9;
+}
+.ui-gallery .ui-img-list-plus .ui-img-list-item:hover .img,
+.ui-gallery .ui-img-list-plus .ui-img-list-item .img:hover {
+	border: 3px solid #CF0716;
+}
+.ui-gallery .ui-img-list-plus .ui-img-list-item:hover .img img,
+.ui-gallery .ui-img-list-plus .ui-img-list-item .img:hover img {
+	border: none;
+}
+.ui-gallery .ui-img-list-plus .ui-img-list-item .title:hover {
+	color: #CF0716;
+}
+
+/* Layout
+----------------------------------------------------------------------------- */
+/* 主内容 */
+/*#gallery-main .ui-tab-gallery {
+	float: left;
+	width: 665px;
+	height: 315px;
+}
+#gallery-main .ui-tab-gallery .ui-tab-cnt {
+	padding: 0;
+}
+#gallery-main .ui-tab-gallery .ui-img-list-plus {
+	left: 0;
+	margin: 0;
+}
+#gallery-main .ui-tab-gallery .ui-img-list-item {
+	margin: 0;
+}
+#gallery-main .ui-tab-gallery .ui-img-list-item .img {
+	border: 5px solid #EAEAEA;
+}
+#gallery-main .ui-tab-gallery .ui-img-list-item:hover .img,
+#gallery-main .ui-tab-gallery .ui-img-list-item .img:hover {
+	border-color: #CF0716;
+}
+#gallery-main .ui-tab-gallery .ui-img-list-item .header {
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+	height: 35px;
+	line-height: 35px;
+}
+#gallery-main .ui-tab-gallery .ui-img-list-item .header a {
+	font-size: 14px;
+}*/
+#myfocus-gallery {
+	float: left;
+	width: 655px;
+	height: 305px !important;
+	overflow: hidden;
+	border: 5px solid #EAEAEA;
+}
+#myfocus-gallery .dot {
+	display: none;
+}
+#myfocus-gallery .pic a {
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	margin-right: -1px;
+}
+#myfocus-gallery .pic a:first-child {
+	margin-right: 1px;
+	*margin-right: 0;
+}
+#myfocus-gallery .pic a img {
+	vertical-align: bottom;
+}
+#myfocus-gallery .pic a span {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	background-color: #000;
+	opacity: 0.75;
+	filter: alpha(opacity=75);
+	_width: 325px;
+	cursor: pointer;
+}
+#myfocus-gallery .prev, #myfocus-gallery .next {
+	opacity: 0.75;
+	filter: alpha(opacity=75);
+}
+#myfocus-gallery .prev {
+	left: 0;
+}
+#myfocus-gallery .next {
+	right: 0;
+}
+#myfocus-gallery .prev:hover, #myfocus-gallery .next:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+#gallery-main .ui-tab-sd {
+	float: right;
+	width: 278px;
+	padding-bottom: 5px;
+}
+#gallery-main .ui-tab-sd .ui-art {
+	margin: 17px 10px;
+	padding-right: 4px;
+}
+#gallery-main .ui-tab-sd .ui-art .title, #gallery-main .ui-tab-sd .ui-art .content {
+	margin-left: 112px;
+}
+#gallery-main .ui-tab-sd .ui-art .title {
+	height: 18px;
+	line-height: 18px;
+	color: #CF0716;
+	font-size: 12px;
+}
+#gallery-main .ui-tab-sd .ui-art .title a {
+	color: #CF0716;
+}
+
+/* 本周推荐 */
+#gallery-recommend .ui-img-list-plus {
+	left: 24px;
+	margin-left: -24px;
+}
+#gallery-recommend .ui-img-list-plus .ui-img-list-item {
+	margin-right: 24px;
+	margin-bottom: 7px;
+}
+#gallery-recommend .ui-gallery {
+	float: left;
+	margin: 0;
+	width: 665px;
+}
+#gallery-recommend .ui-gallery {
+	float: left;
+	margin: 0;
+	width: 665px;
+}
+#gallery-recommend .ui-gallery-box {
+	float: right;
+	width: 264px;
+}
+#gallery-recommend .ui-gallery-box .ui-fimg-list {
+	margin-left: 6px;
+	margin-right: 10px;
+}
+#gallery-recommend .ui-gallery-box .ui-img-list .header {
+	text-align: left;
+}
+#gallery-recommend .ui-gallery-box .ui-img-list .header .num {
+	_margin: 4px 0 0 2px;
+}
+#gallery-recommend .ui-gallery-box .ui-list-plus {
+	margin: 10px;
+}
+#gallery-recommend .ui-gallery-box .ui-list-plus-item a {
+	width: auto;
+	color: #666;
+}
+#gallery-recommend .ui-gallery-box .ui-list-plus-item .num {
+	display: inline-block;
+	width: 13px;
+	height: 12px;
+	*height: 14px;
+	line-height: 12px;
+	*line-height: 14px;
+	border-radius: 0;
+	border: none;
+	text-align: center;
+	color: #fff;
+	font-size: 11px;
+	background-color: #BCBCBC;
+}
+
+/* 游戏美女 */
+#gallery-beauty {
+	margin-top: 25px;
+}
+#gallery-beauty .ui-myfocus {
+	float: left;
+	width: 318px;
+	height: 420px;
+	overflow: hidden;
+	border: 1px solid #E5E5E5;
+	background-color: #EAEAEA;
+}
+#gallery-beauty .ui-img-list-plus {
+	float: right;
+	width: 640px;
+	left: 0;
+	margin: 0;
+}
+#gallery-beauty .ui-img-list-item-wrapper {
+	float: left;
+	display: inline;
+}
+#gallery-beauty .ui-img-list-item-wrapper .ui-img-list-item {
+	margin: 0;
+}
+#gallery-beauty .ui-img-list-plus .ui-img-list-item .header {
+	display: none;
+	left: 3px;
+	_left: 0;
+	right: 3px;
+	_right: auto;
+	bottom: 3px;
+	bottom: 4px\9\0;
+	height: 24px;
+	line-height: 24px;
+}
+#gallery-beauty .ui-img-list-plus .ui-img-list-item-hover .header,
+#gallery-beauty .ui-img-list-plus .ui-img-list-item:hover .header {
+	display: block;
+}
+
+/* 网络红人 */
+#gallery-network .ui-img-list-plus {
+	left: 14px;
+	margin-left: -14px;
+}
+#gallery-network .ui-img-list-plus .ui-img-list-item {
+	margin-right: 14px;
+	overflow: hidden;
+}
+#gallery-network .ui-img-list-plus .ui-img-list-item .header {
+	left: 3px;
+	_left: 0;
+	right: 3px;
+	_right: auto;
+	bottom: 3px;
+	bottom: 4px\9\0;
+	height: 30px;
+	line-height: 30px;
+}
+#gallery-network .ui-img-list-plus .ui-img-list-item .header a {
+	font: 16px '微软雅黑','黑体','宋体',arial,verdana,sans-serif;
+	text-decoration: none;
+}
+#gallery-network .ui-img-list-plus .ui-img-list-item-hover .header,
+#gallery-network .ui-img-list-plus .ui-img-list-item:hover .header {
+	padding: 4px 0;
+}
+
+/* 动漫 */
+#gallery-animation .ui-gallery {
+	float: left;
+	width: 308px;
+	margin: 0 18px 0 0;
+}
+#gallery-animation .ui-gallery-atlas {
+	margin: 0;
+}
+
+/* 游戏壁纸 */
+#gallery-wallpaper .ui-gallery {
+	float: left;
+	width: 308px;
+	margin: 0 18px 0 0;
+	*overflow: hidden;
+}
+#gallery-wallpaper .ui-myfocus .ui-img-list-plus {
+	left: 6px;
+}
+#gallery-wallpaper .ui-myfocus .nav {
+	right: 12px;
+	height: 22px;
+	line-height: 22px;
+}
+#gallery-wallpaper .ui-gallery-creative {
+	width: 634px;
+	margin: 0;
+}
+#gallery-wallpaper .ui-gallery-creative .ui-img-list-plus {
+	left: 14px;
+	margin-left: -14px;
+}
+#gallery-wallpaper .ui-gallery-creative .ui-img-list-plus .ui-img-list-item {
+	margin-right: 14px;
+}
